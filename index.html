@@ -1,309 +1,174 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="no-js" lang="fr">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>@maxgfr</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-    <![endif]-->
-
+    <title>Maxime Golfier</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">@maxgfr</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#offres">Offre</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#engagement">Engagements</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#pourqui">Pour Qui ?</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">@maxgfr</div>
-                <div class="intro-lead-in">Tu souhaites être présent sur le web à moindre frais, c'est ici</div>            
-                <a href="#offres" class="page-scroll btn btn-xl">En savoir plus</a>
-            </div>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#experience">Expérience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#skills">Compétences</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
     </header>
+    <!-- End header -->
 
-    <!-- Offres Section -->
-    <section id="offres">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Offre</h2>
-                    <h3 class="section-subheading text-muted">Une offre simple et complète.</h3>
-                </div>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Maxime Golfier</h1>
+            <h2>Freelance</h2>
+            <a href="https://www.linkedin.com/in/maxime-golfier/" class="btn-rounded-white"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="Septembre 2017 – Maintenant">
+                <h3>IBM</h3>
+                <h4>Architecte dans le cognitive (IA)</h4>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">User Experience</h4>
-                    <p class="text-muted">Expérience utilisateur mise en avant avec un design épuré et simple.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Certifié responsive design pour être consultable sur tous supports.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-question fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Assistance</h4>
-                    <p class="text-muted">Vous serez guidé(e) étape par étape dans le processus de mise en place du site.</p>
-                </div>
+
+            <div data-date="Mai 2017 – Juillet 2017">
+                <h3>Rober Gordon University</h3>
+                <h4>Student research intern</h4>
+            </div>
+
+            <div data-date="Octobre 2016 – Décembre 2016">
+                <h3>Université d'Auvergne</h3>
+                <h4>Tuteur</h4>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End #experience -->
 
-    <!-- Services Grid Section -->
-    <section id="services" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Une multitude de services pour une unique offre.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-
-                <div class="col-md-4">
-                    <img src="img/domain_100px_3.png" class="img-responsive-center">
-                    <div class="services-caption">
-                        <h4>Content</h4>
-                        <p class="text-muted">Délégation de la gestion de vos publications. Rédaction de nouveaux contenus comme des articles.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/geo_fence_100px.png" class="img-responsive-center">
-                    <div class="services-caption">
-                        <h4>Location</h4>
-                        <p class="text-muted">Possibilité d'indiquer la géolocalisation de l'entreprise via le service Google Maps.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/settings_100px_2.png" class="img-responsive-center">
-                    <div class="services-caption">
-                        <h4>Host</h4>
-                        <p class="text-muted">Mise en place de l'hébergement et nom de domaine.</p>
-                    </div>
-                </div>
-
-            </div>  
-            <div class="row text-center">  
-                
-                <div class="col-md-4">
-                    <img src="img/edit_100px_4.png" class="img-responsive-center">
-                    <div class="services-caption">
-                        <h4>Logos</h4>
-                        <p class="text-muted">Création de logos personnalisés</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/group_100px.png" class="img-responsive-center">
-                    <div class="services-caption">
-                        <h4>Community</h4>
-                        <p class="text-muted">Community Management : twitter, facebook, etc...</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/bath_100px.png" class="img-responsive-center">
-                    <div class="services-caption">
-                        <h4>Clean</h4>
-                        <p class="text-muted">Nettoyeur d'image sur internet.</p>
-                    </div>
-                </div>
-                
-            </div>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Isep</h3>
+            <span class="education-date">Septembre 2017 - Septembre 2020</span>
+            <h4>Diplôme d'ingénieur</h4>
+            <p>
+                Parcours Business Intelligence en alternance.
+            </p>
+            <h3>Université du Québec à Chicoutimi</h3>
+            <span class="education-date">Janvier 2017 - Mai 2017</span>
+            <h4>Baccalauréat en informatique</h4>
+            <h3>IUT de Clermont-Ferrand</h3>
+            <span class="education-date">Septembre 2015 - Juin 2017</span>
+            <h4>DUT Informatique</h4>
         </div>
-    </section>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
 
-    <!-- Engagement Section -->
-    <section id="engagement">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Engagements</h2>
-                    <h3 class="section-subheading text-muted">Plus que des mots, une parole.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                 
-                <div class="col-md-4 col-sm-4 services-item">
-                    <img src="img/trophy_100px_2.png" class="img-responsive-center" alt="">
-                    <div class="services-caption">
-                        <h4>Google referencing</h4>
-                        <p class="text-muted">Exigences de google respectées entraînant un impact sur les résultats de recherche.</p>
-                    </div>
-                </div>
 
-                <div class="col-md-4 col-sm-4 services-item">
-                    <img src="img/time_100px_6.png" class="img-responsive-center" alt="">
-                    <div class="services-caption">
-                        <h4>Deadline</h4>
-                        <p class="text-muted">Délai court et respecté.</p>
-                    </div>
-                </div>
+    <div id="skills">
+        <h2 class="heading">Compétences</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
-                <div class="col-md-4 col-sm-4 services-item">
-                    <img src="img/search_100px_1.png" class="img-responsive-center" alt="">
-                    <div class="services-caption">
-                        <h4>Free</h4>
-                        <p class="text-muted">Devis gratuits et paiements convenus via téléphone après étude des besoins. Le paiement a lieu après résultats.</p>
-                    </div>
-                </div>
-                
-            </div>
+    <div id="contact">
+        <h2>Contact</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/maxgolfier@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from maxime-golfier.github.io" />
+                <input type="email" name="_replyto" placeholder="Ton email" required>
+                <textarea name="message" placeholder="Ton message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </div>
-    </section>
-
-    <!-- Pour Qui ? Section -->
-    <section id="pourqui" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Pour Qui ?</h2>
-                    <h3 class="section-subheading text-muted">Le souhait de répondre à un besoin.</h3>
-                </div>
-            </div>
-
-            <div class="row text-center">
-               
-                <div class="col-md-4 col-sm-4 services-item">
-                    <img src="img/under_computer_100px.png" class="img-responsive-center" alt="">
-                    <div class="services-caption">
-                        <h4>Numeric</h4>
-                        <p class="text-muted">CreatB permet aux entreprises de créer un écosystème numérique.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4 services-item">
-                    <img src="img/shop_100px-crop-u1332.png" class="img-responsive-center" alt="">
-                    <div class="services-caption">
-                        <h4>Everybody</h4>
-                        <p class="text-muted">CreatB est destiné aux sociétés, aux associations, aux artistes, aux artisans, aux professionnels indépendants, aux particuliers, etc...</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4 services-item">
-                    <img src="img/bank_100px_1.png" class="img-responsive-center" alt="">
-                    <div class="services-caption">
-                        <h4>Business</h4>
-                        <p class="text-muted">La meilleure façon pour relancer sa business activity en proposant une alternative web.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; CreatB</span>
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2018 Maxime Golfier
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                    	<li><a href="mailto:maxgolfier@gmail.com"><i class="fa fa-envelope"></i></a>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/maxgfr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="https://www.linkedin.com/in/maxime-golfier/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <li>
+                            <a href="https://www.linkedin.com/in/maxime-golfier/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
-                         <li><a href="https://github.com/maxgfr/" target="_blank"><i class="fa fa-github"></i></a>
+                        <li>
+                            <a href="https://twitter.com/maxgfr" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/107716185636356268729" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- End footer -->
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
