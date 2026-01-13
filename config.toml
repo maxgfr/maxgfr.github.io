@@ -1,0 +1,54 @@
+# General
+base_url = "https://maxgfr.github.io"
+theme = "anemone"
+compile_sass = false
+minify_html = true
+generate_feeds = true
+generate_sitemap = true
+
+# Taxonomies
+taxonomies = [
+    {name = "tags", feed = true, paginate_by = 10},
+]
+
+# Language
+default_language = "en"
+
+[languages.en]
+build_search_index = true
+title = "Maxime Golfier"
+description = "IT Engineer - Independent Software Developer, CTO, and IT Solutions Architect. Building innovative solutions and systems architecture."
+
+[languages.fr]
+build_search_index = true
+title = "Maxime Golfier"
+description = "Ingénieur IT - Développeur Logiciel Indépendant, CTO, et Architecte de Solutions IT. Création de solutions innovantes et d'architecture de systèmes."
+
+[markdown]
+render_emoji = true
+external_links_target_blank = true
+smart_punctuation = true
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[link_checker]
+internal_level = "warn"
+
+# Extra
+[extra]
+author = "Maxime Golfier"
+favicon = "favicon.ico"
+list_pages = false
+twitter_card = true
+enable_search = true
+
+## Navigation
+header_nav = [
+  { url = "/", name_en = "/home/", name_fr = "/accueil/" },
+  { url = "/experience", name_en = "/experience/", name_fr = "/experience/" },
+  { url = "/education", name_en = "/education/", name_fr = "/formation/" },
+  { url = "/contact", name_en = "/contact/", name_fr = "/contact/" }
+]
