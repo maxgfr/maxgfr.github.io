@@ -17,3 +17,10 @@ Stay connected with me:
 
 - GitHub: [maxgfr](https://github.com/maxgfr)
 - LinkedIn: [Maxime Golfier](https://www.linkedin.com/in/maxime-golfier/)
+
+## Mini Game
+
+While you're here, why not play a quick game? (Works offline!)
+
+<canvas id="dino-canvas" width="600" height="200" style="border: 2px solid #ccc; background: #f0f0f0; display: block; margin: 20px 0;"></canvas>
+<p style="font-size: 0.9em; color: #666;">Press <strong>Space</strong> or <strong>tap</strong> to jump. Press <strong>Enter</strong> to restart when game over.</p>
