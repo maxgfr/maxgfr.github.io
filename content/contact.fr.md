@@ -4,7 +4,7 @@ title = "Contact"
 
 ## Contactez-moi
 
-Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire partie de vos visions.
+Je suis toujours ouvert à discuter de nouveaux projets, de nouvelles idées ou d'opportunités.
 
 ### Envoyez-moi un message
 
@@ -27,4 +27,4 @@ Vous pouvez également me contacter sur :
 - **GitHub** : [maxgfr](https://github.com/maxgfr)
 - **LinkedIn** : [Maxime Golfier](https://www.linkedin.com/in/maxime-golfier/)
 
-Au plaisir de vous entendre !
+À bientôt 👋
