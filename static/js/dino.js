@@ -221,8 +221,9 @@
                     }
                 }
             } else {
-                const pad = 8;
-                let collision = 
+                // More forgiving collision for birds (harder to judge in air)
+                const pad = o.type === 'bird' ? 15 : 8;
+                let collision =
                     (dino.x < o.x + o.w - pad &&
                     dino.x + dino.w - pad > o.x &&
                     dino.y < o.y + o.h - pad &&

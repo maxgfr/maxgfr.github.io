@@ -17,48 +17,7 @@
 
         <!-- Add favicon with appropriate sizes -->
         <link rel="icon" href="{{ config.base_url }}/{{ config.extra.favicon | default(value='favicon.ico') }}">
-        
-        <style>
-        .lang-switcher {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-            padding: 0.5rem 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
 
-        .lang-switcher:hover {
-            background-color: #f0f0f0;
-            border-color: #999;
-        }
-
-        .lang-switcher .lang-icon {
-            font-size: 1rem;
-        }
-
-        .lang-switcher .lang-text {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .lang-switcher {
-                border-color: #444;
-                color: #e0e0e0;
-            }
-
-            .lang-switcher:hover {
-                background-color: #2a2a2a;
-                border-color: #666;
-            }
-        }
-        </style>
-        
         {% block extra_head %}{% endblock %}
     </head>
     <body>
