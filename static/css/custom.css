@@ -56,15 +56,33 @@ form button[type="submit"]:active {
 
 /* Language switcher improvements for light mode */
 .lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: #ffffff;
   color: #333;
-  border: 2px solid #d0d0d0 !important;
+  border: 2px solid #d0d0d0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
   transition: all 0.2s ease;
 }
 
+.lang-switcher .lang-icon {
+  font-size: 1rem;
+}
+
+.lang-switcher .lang-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .lang-switcher:hover {
-  background-color: #f8f9fa !important;
-  border-color: #007bff !important;
+  background-color: #f8f9fa;
+  border-color: #007bff;
   transform: translateY(-1px);
 }
 
@@ -98,11 +116,11 @@ form button[type="submit"]:active {
   .lang-switcher {
     background-color: transparent;
     color: #e0e0e0;
-    border-color: #444 !important;
+    border-color: #444;
   }
 
   .lang-switcher:hover {
-    background-color: #2a2a2a !important;
-    border-color: #666 !important;
+    background-color: #2a2a2a;
+    border-color: #666;
   }
 }
