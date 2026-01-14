@@ -22,12 +22,10 @@ class ThemeManager {
     }
 
     setInitialTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const initialTheme = savedTheme || (systemDark ? 'dark' : 'light');
-
-        document.documentElement.setAttribute('data-theme', initialTheme);
-        this.updateIcon(initialTheme === 'dark');
+        // Theme is already set in head script, just update the icon
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const isDark = currentTheme === 'dark';
+        this.updateIcon(isDark);
     }
 
     toggleTheme() {

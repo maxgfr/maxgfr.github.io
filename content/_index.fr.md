@@ -23,5 +23,5 @@ Restez connecté avec moi :
 
 Tant que vous êtes là, pourquoi ne pas faire une petite partie ?
 
-<canvas id="dino-canvas" width="600" height="200" style="border: 2px solid #ccc; background: #f0f0f0; display: block; margin: 20px 0;"></canvas>
-<p style="font-size: 0.9em; color: #666;">Appuyez sur <strong>Espace</strong> ou <strong>touchez</strong> pour sauter. Appuyez sur <strong>Entrée</strong> pour recommencer.</p>
+<canvas id="dino-canvas" width="600" height="200"></canvas>
+<p class="dino-instructions">Appuyez sur <strong>Espace</strong> ou <strong>touchez</strong> pour sauter. Appuyez sur <strong>Entrée</strong> pour recommencer.</p>
