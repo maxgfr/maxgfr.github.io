@@ -32,7 +32,7 @@ smart_punctuation = true
 [slugify]
 paths = "on"
 taxonomies = "on"
-anchors = "on"
+anchors = "off"
 
 [link_checker]
 internal_level = "warn"
@@ -47,8 +47,8 @@ enable_search = true
 
 ## Navigation
 header_nav = [
-  { url = "/", name_en = "/home/", name_fr = "/accueil/" },
-  { url = "/experience", name_en = "/experience/", name_fr = "/experience/" },
-  { url = "/education", name_en = "/education/", name_fr = "/formation/" },
-  { url = "/contact", name_en = "/contact/", name_fr = "/contact/" }
+  { url = "/", name_en = "/home", name_fr = "/accueil", short = "/~" },
+  { url = "/experience", name_en = "/experience", name_fr = "/experience", short = "/xp" },
+  { url = "/education", name_en = "/education", name_fr = "/formation", short = "/ed" },
+  { url = "/contact", name_en = "/contact", name_fr = "/contact", short = "/@" }
 ]
