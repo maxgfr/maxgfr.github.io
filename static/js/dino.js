@@ -264,10 +264,26 @@
         }
     }
 
+    function getThemeColors() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        return {
+            sky: isDark ? '#1a1a1a' : '#f0f0f0',
+            ground: isDark ? '#666' : '#535353',
+            dino: isDark ? '#e0e0e0' : '#2c3e50',
+            dinoGameOver: '#e74c3c',
+            cloud: isDark ? '#333' : '#ddd',
+            obstacle: isDark ? '#888' : '#535353',
+            text: isDark ? '#e0e0e0' : '#535353',
+            bird: isDark ? '#999' : '#555',
+            birdWing: isDark ? '#888' : '#444'
+        };
+    }
+
     function drawDinoModel(x, y) {
         // Draw a somewhat cute T-Rex shape using rectangles
         // Flip color if game over
-        ctx.fillStyle = state.isGameOver ? '#e74c3c' : '#2c3e50';
+        const colors = getThemeColors();
+        ctx.fillStyle = state.isGameOver ? colors.dinoGameOver : colors.dino;
         
         // Main Body / Torso
         ctx.fillRect(x + 10, y + 18, 24, 25);
@@ -282,19 +298,20 @@
         ctx.fillRect(x + 40, y + 8, 8, 12);
         
         // Mouth area / Eye
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
         if (state.isGameOver) {
             // Dead
-            ctx.fillStyle = '#fff';
+            ctx.fillStyle = isDark ? '#1a1a1a' : '#fff';
             ctx.fillRect(x + 28, y + 4, 6, 6); // Eye white
-            ctx.fillStyle = '#2c3e50';
+            ctx.fillStyle = colors.dino;
             ctx.fillText("x", x+29, y+10);
         } else {
             // Alive
-            ctx.fillStyle = '#fff';
+            ctx.fillStyle = isDark ? '#1a1a1a' : '#fff';
             ctx.fillRect(x + 28, y + 4, 4, 4);
         }
-        
-        ctx.fillStyle = state.isGameOver ? '#e74c3c' : '#2c3e50';
+
+        ctx.fillStyle = state.isGameOver ? colors.dinoGameOver : colors.dino;
         
         // Arms
         ctx.fillRect(x + 36, y + 24, 6, 4);
@@ -318,10 +335,11 @@
     }
 
     function drawBird(o) {
-        ctx.fillStyle = '#555';
+        const colors = getThemeColors();
+        ctx.fillStyle = colors.bird;
         const wingAnim = Math.floor(frame / 10) % 2;
         const x = o.x, y = o.y;
-        
+
         // Body
         ctx.fillRect(x + 10, y + 10, 20, 10);
         // Head
@@ -330,9 +348,9 @@
         ctx.fillRect(x - 5, y + 8, 5, 4);
         // Tail
         ctx.fillRect(x + 30, y + 12, 5, 6);
-        
+
         // Wings
-        ctx.fillStyle = '#444';
+        ctx.fillStyle = colors.birdWing;
         if (wingAnim === 0) {
             // Up
             ctx.beginPath();
@@ -351,16 +369,18 @@
     }
 
     function draw() {
+        const colors = getThemeColors();
+
         // Sky
-        ctx.fillStyle = '#f0f0f0';
+        ctx.fillStyle = colors.sky;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Ground
-        ctx.fillStyle = '#535353';
+        ctx.fillStyle = colors.ground;
         ctx.fillRect(0, CONFIG.GroundY, canvas.width, 2);
 
         // Clouds
-        ctx.fillStyle = '#ddd';
+        ctx.fillStyle = colors.cloud;
         clouds.forEach(c => {
              ctx.beginPath();
              ctx.arc(c.x, c.y, c.h, 0, Math.PI * 2); 
@@ -382,7 +402,7 @@
             } else if (o.type === 'bird') {
                 drawBird(o);
             } else {
-                ctx.fillStyle = '#535353';
+                ctx.fillStyle = colors.obstacle;
                 
                 const seed = o.seed || 0.5;
                 const cx = o.x + o.w / 2;
@@ -418,7 +438,7 @@
         drawDinoModel(dino.x, dino.y);
 
         // UI
-        ctx.fillStyle = '#535353';
+        ctx.fillStyle = colors.text;
         ctx.textAlign = 'right';
         ctx.font = 'bold 20px monospace';
         ctx.fillText(`${state.score.toString().padStart(5, '0')}`, canvas.width - 20, 30);
@@ -426,17 +446,17 @@
         ctx.fillText(`HI ${state.highScore}`, canvas.width - 20, 50);
 
         if (!state.isRunning) {
-            ctx.fillStyle = 'rgba(0,0,0,0.5)';
+            ctx.fillStyle = colors.text;
             ctx.textAlign = 'center';
             ctx.font = '20px monospace';
             ctx.fillText("PRESS SPACE TO START", canvas.width/2, canvas.height/2);
         } else if (state.isGameOver) {
-             ctx.fillStyle = '#e74c3c';
+             ctx.fillStyle = colors.dinoGameOver;
              ctx.textAlign = 'center';
              ctx.font = '30px monospace';
              ctx.fillText("GAME OVER", canvas.width/2, canvas.height/2 - 10);
              ctx.font = '16px monospace';
-             ctx.fillStyle = '#535353';
+             ctx.fillStyle = colors.text;
              ctx.fillText("PRESS ENTER TO RETRY", canvas.width/2, canvas.height/2 + 20);
         }
     }
@@ -450,6 +470,20 @@
             draw();
         }
     }
+
+    // Listen for theme changes and redraw
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                draw();
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme']
+    });
 
     // Init
     draw();

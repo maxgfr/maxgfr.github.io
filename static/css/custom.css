@@ -8,29 +8,30 @@ form label {
   display: block;
   margin-bottom: 0.75rem;
   font-weight: bold;
-  color: #333;
+  color: CanvasText;
+  transition: color 0.3s ease;
 }
 
 form input[type="email"],
 form textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 2px solid #d0d0d0;
+  border: 2px solid GrayText;
   border-radius: 6px;
   font-family: inherit;
   font-size: 1rem;
   box-sizing: border-box;
   margin-bottom: 1rem;
-  background-color: #ffffff;
-  color: #333;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: Field;
+  color: FieldText;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 form input[type="email"]:focus,
 form textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  border-color: Highlight;
+  box-shadow: 0 0 0 3px color-mix(in srgb, Highlight 25%, transparent);
 }
 
 form button[type="submit"] {
@@ -42,7 +43,7 @@ form button[type="submit"] {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 form button[type="submit"]:hover {
@@ -54,7 +55,7 @@ form button[type="submit"]:active {
   transform: translateY(0);
 }
 
-/* Language switcher improvements for light mode */
+/* Language switcher using system colors */
 .lang-switcher {
   display: inline-flex;
   align-items: center;
@@ -62,13 +63,13 @@ form button[type="submit"]:active {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: #ffffff;
-  color: #333;
-  border: 2px solid #d0d0d0;
+  background-color: color-mix(in srgb, Canvas 85%, ButtonFace);
+  color: CanvasText;
+  border: 2px solid color-mix(in srgb, CanvasText 25%, transparent);
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .lang-switcher .lang-icon {
@@ -81,46 +82,42 @@ form button[type="submit"]:active {
 }
 
 .lang-switcher:hover {
-  background-color: #f8f9fa;
-  border-color: #007bff;
+  background-color: color-mix(in srgb, ButtonFace 50%, Canvas);
+  border-color: Highlight;
   transform: translateY(-1px);
 }
 
-/* Dark mode adjustments */
+/* Dino game canvas styling */
+#dino-canvas {
+  border: 2px solid color-mix(in srgb, CanvasText 30%, transparent);
+  display: block;
+  margin: 20px 0;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.dino-instructions {
+  font-size: 0.9em;
+  color: color-mix(in srgb, CanvasText 70%, transparent);
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Smooth theme transitions */
+body.theme-transition,
+body.theme-transition *,
+body.theme-transition *::before,
+body.theme-transition *::after {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Dark mode specific tweaks */
 @media (prefers-color-scheme: dark) {
-  form label {
-    color: #e0e0e0;
-  }
-
-  form input[type="email"],
-  form textarea {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-    border-color: #444;
-  }
-
-  form input[type="email"]:focus,
-  form textarea:focus {
-    border-color: #4a9eff;
-    box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.2);
-  }
-
   form button[type="submit"] {
     background-color: #4a9eff;
   }
 
   form button[type="submit"]:hover {
     background-color: #357acc;
-  }
-
-  .lang-switcher {
-    background-color: transparent;
-    color: #e0e0e0;
-    border-color: #444;
-  }
-
-  .lang-switcher:hover {
-    background-color: #2a2a2a;
-    border-color: #666;
   }
 }

@@ -18,6 +18,16 @@
         <!-- Add favicon with appropriate sizes -->
         <link rel="icon" href="{{ config.base_url }}/{{ config.extra.favicon | default(value='favicon.ico') }}">
 
+        <!-- Prevent theme flash on page load -->
+        <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme || (systemDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+        </script>
+
         {% block extra_head %}{% endblock %}
     </head>
     <body>
