@@ -158,7 +158,9 @@
                  if (state.score > 200 && rand < 0.20) {
                      type = 'bird';
                      w = 40; h = 30;
-                     const flyHeight = Math.random() > 0.5 ? 20 : 60; 
+                     // Two bird heights: high (no jump needed) and low (must jump)
+                     const isHighBird = Math.random() > 0.5;
+                     const flyHeight = isHighBird ? 90 : 25;
                      y = CONFIG.GroundY - flyHeight;
                  } else if (state.score > 100 && rand < 0.40) {
                      type = 'water';
@@ -221,8 +223,7 @@
                     }
                 }
             } else {
-                // More forgiving collision for birds (harder to judge in air)
-                const pad = o.type === 'bird' ? 15 : 8;
+                const pad = 8;
                 let collision =
                     (dino.x < o.x + o.w - pad &&
                     dino.x + dino.w - pad > o.x &&

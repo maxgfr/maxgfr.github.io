@@ -121,3 +121,22 @@ body.theme-transition *::after {
     background-color: #357acc;
   }
 }
+
+/* Navigation link responsive behavior */
+.nav-link .nav-short {
+  display: none;
+}
+
+.nav-link .nav-full {
+  display: inline;
+}
+
+@media only screen and (max-width: 720px) {
+  .nav-link .nav-short {
+    display: inline;
+  }
+
+  .nav-link .nav-full {
+    display: none;
+  }
+}
