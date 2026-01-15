@@ -1,5 +1,6 @@
 +++
 title = "Parcours académique"
+language = "fr"
 +++
 
 ---
