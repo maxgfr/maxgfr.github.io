@@ -1,5 +1,6 @@
 +++
 title = "Contactez-moi"
+language = "fr"
 +++
 
 Vous avez une idée ? Un défi technique ? Une opportunité passionnante ? Je suis toujours ouvert à discuter de nouveaux projets, d'innovations ou de collaborations.

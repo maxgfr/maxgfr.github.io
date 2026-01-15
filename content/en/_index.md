@@ -1,5 +1,6 @@
 +++
 title = "👋 Hi, I'm Maxime Golfier"
+language = "en"
 +++
 
 Software engineer specializing in information systems architecture, I started my career at IBM as a developer architect. This experience allowed me to build solid foundations on complex, demanding, and large-scale environments.
@@ -12,10 +13,10 @@ Passionate about open source, I design and share open solutions, with a strong c
 
 ## Learn more
 
-- [My experience](./experience)
-- [My education](./education)
-- [My skills](./skills)
-- [Contact me](./contact)
+- [My experience](/en/experience)
+- [My education](/en/education)
+- [My skills](/en/skills)
+- [Contact me](/en/contact)
 
 ---
 

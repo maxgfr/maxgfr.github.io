@@ -1,5 +1,6 @@
 +++
 title = "Skills"
+language = "en"
 +++
 
 I firmly believe that skills are proven through practice rather than exhaustive lists. That's why I invite you to explore my [GitHub](https://github.com/maxgfr) where you'll find my concrete projects and the technologies I use daily.
