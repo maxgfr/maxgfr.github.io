@@ -23,5 +23,5 @@ Stay connected with me:
 
 While you're here, why not play a quick game?
 
-<canvas id="dino-canvas" width="600" height="200"></canvas>
+<canvas id="dino-canvas" width="650" height="250"></canvas>
 <p class="dino-instructions">Press <strong>Space</strong> or <strong>tap</strong> to jump. Press <strong>Enter</strong> to restart when game over.</p>

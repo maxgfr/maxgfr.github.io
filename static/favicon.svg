@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#1a1a1a"/>
+  
+  <!-- Glow/Shadow effect -->
+  <g fill="#004433" opacity="0.6">
+    <!-- M shadow -->
+    <rect x="1" y="2" width="2" height="2"/><rect x="1" y="3" width="2" height="2"/>
+    <rect x="1" y="4" width="2" height="2"/><rect x="1" y="5" width="2" height="2"/>
+    <rect x="1" y="6" width="2" height="2"/><rect x="1" y="7" width="2" height="2"/>
+    <rect x="1" y="8" width="2" height="2"/><rect x="2" y="2" width="2" height="2"/>
+    <rect x="3" y="2" width="2" height="2"/><rect x="4" y="3" width="2" height="2"/>
+    <rect x="5" y="3" width="2" height="2"/><rect x="7" y="1" width="2" height="2"/>
+    <rect x="8" y="2" width="2" height="2"/><rect x="8" y="3" width="2" height="2"/>
+    <rect x="8" y="4" width="2" height="2"/><rect x="8" y="5" width="2" height="2"/>
+    <rect x="8" y="6" width="2" height="2"/><rect x="8" y="7" width="2" height="2"/>
+    
+    <!-- G shadow -->
+    <rect x="11" y="1" width="2" height="2"/><rect x="12" y="1" width="2" height="2"/>
+    <rect x="13" y="1" width="2" height="2"/><rect x="14" y="1" width="2" height="2"/>
+    <rect x="15" y="1" width="2" height="2"/><rect x="16" y="1" width="2" height="2"/>
+    <rect x="10" y="3" width="2" height="2"/><rect x="10" y="4" width="2" height="2"/>
+    <rect x="10" y="5" width="2" height="2"/><rect x="10" y="6" width="2" height="2"/>
+    <rect x="10" y="7" width="2" height="2"/><rect x="17" y="5" width="2" height="2"/>
+    <rect x="18" y="6" width="2" height="2"/><rect x="18" y="7" width="2" height="2"/>
+  </g>
+  
+  <!-- Letter M (bright green) -->
+  <g fill="#00ff88">
+    <!-- Left vertical -->
+    <rect x="2" y="2" width="2" height="2"/>
+    <rect x="2" y="3" width="2" height="2"/>
+    <rect x="2" y="4" width="2" height="2"/>
+    <rect x="2" y="5" width="2" height="2"/>
+    <rect x="2" y="6" width="2" height="2"/>
+    <rect x="2" y="7" width="2" height="2"/>
+    <rect x="2" y="8" width="2" height="2"/>
+    <!-- Diagonals -->
+    <rect x="3" y="3" width="2" height="2"/>
+    <rect x="4" y="4" width="2" height="2"/>
+    <rect x="5" y="4" width="2" height="2"/>
+    <rect x="6" y="3" width="2" height="2"/>
+    <!-- Right vertical -->
+    <rect x="7" y="2" width="2" height="2"/>
+    <rect x="7" y="3" width="2" height="2"/>
+    <rect x="7" y="4" width="2" height="2"/>
+    <rect x="7" y="5" width="2" height="2"/>
+    <rect x="7" y="6" width="2" height="2"/>
+    <rect x="7" y="7" width="2" height="2"/>
+    <rect x="7" y="8" width="2" height="2"/>
+  </g>
+  
+  <!-- Letter G (bright green) -->
+  <g fill="#00ff88">
+    <!-- Top horizontal -->
+    <rect x="12" y="2" width="2" height="2"/>
+    <rect x="13" y="2" width="2" height="2"/>
+    <rect x="14" y="2" width="2" height="2"/>
+    <rect x="15" y="2" width="2" height="2"/>
+    <rect x="16" y="2" width="2" height="2"/>
+    <!-- Left vertical -->
+    <rect x="11" y="3" width="2" height="2"/>
+    <rect x="11" y="4" width="2" height="2"/>
+    <rect x="11" y="5" width="2" height="2"/>
+    <rect x="11" y="6" width="2" height="2"/>
+    <rect x="11" y="7" width="2" height="2"/>
+    <!-- Bottom horizontal -->
+    <rect x="12" y="8" width="2" height="2"/>
+    <rect x="13" y="8" width="2" height="2"/>
+    <rect x="14" y="8" width="2" height="2"/>
+    <rect x="15" y="8" width="2" height="2"/>
+    <rect x="16" y="8" width="2" height="2"/>
+    <!-- Right side (lower) -->
+    <rect x="17" y="6" width="2" height="2"/>
+    <rect x="17" y="7" width="2" height="2"/>
+    <!-- Middle bar -->
+    <rect x="15" y="5" width="2" height="2"/>
+    <rect x="16" y="5" width="2" height="2"/>
+    <rect x="17" y="5" width="2" height="2"/>
+  </g>
+</svg>
