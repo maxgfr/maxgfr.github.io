@@ -1,27 +1,44 @@
 +++
-title = "Education"
+title = "Parcours académique"
 +++
 
-## Academic Background
+---
 
-### 2017 - 2020
-**Isep - École d'ingénieurs du numérique**
-*Diplôme d'ingénieur, Informatique*
+## Isep - École d'ingénieurs du numérique
 
-Grade: Graduated with High Honours
+**Diplôme d'ingénieur en informatique *(mention : très bien)*** | 2017 - 2020
 
-Specialized training in Information Systems Architecture
+Spécialisation en Architecture des Systèmes d'Information. Une formation qui m'a permis de développer une vision globale des systèmes d'information, de la conception à l'implémentation, en passant par la gestion de projet et l'innovation technologique.
 
-### 2018 - 2018
-**Faculty of Electrical Engineering, Czech Technical University in Prague**
-*Summer school, Network and systems administration*
+---
 
-### 2017 - 2017
-**Université du Québec à Chicoutimi**
-*Baccalauréat Informatique, Informatique*
+## Faculty of Electrical Engineering, Czech Technical University à Prague
 
-Grade: 4.0/4.3 (A)
+**Summer school, Réseaux et administration de systèmes** | 2018 - 2018
 
-### 2015 - 2017
-**Université d'Auvergne**
-*DUT, Informatique*
+Une immersion internationale enrichissant ma perspective technique et culturelle.
+
+---
+
+## Université du Québec à Chicoutimi
+
+**Baccalauréat Informatique *(grade : 4.0/4.3 - A)*** | 2017 - 2017
+
+Une expérience canadienne intense qui m'a permis de perfectionner mes compétences en informatique tout en découvrant de nouvelles approches pédagogiques.
+
+---
+
+## Université d'Auvergne
+
+**DUT Informatique** | 2015 - 2017
+
+Mes premiers pas dans l'informatique, où j'ai développé les bases solides qui m'ont permis de poursuivre vers des études d'ingénieur.
+
+---
+
+## Ce que mon parcours m'a apporté
+
+- **Vision internationale** : Expériences au Canada et en République tchèque
+- **Excellence académique** : Mention Très Bien à l'Isep, de très bonnes notes à l'UQAC
+- **Polyvalence technique** : De l'algorithmie à l'architecture système
+- **Esprit critique** : Capacité à analyser et résoudre des problèmes complexes

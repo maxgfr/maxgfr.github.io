@@ -12,17 +12,17 @@ taxonomies = [
 ]
 
 # Language
-default_language = "en"
-
-[languages.en]
-build_search_index = true
-title = "Maxime Golfier"
-description = "IT Engineer - Independent Software Developer, CTO, and IT Solutions Architect. Building innovative solutions and systems architecture."
+default_language = "fr"
 
 [languages.fr]
 build_search_index = true
 title = "Maxime Golfier"
 description = "Ingénieur IT - Développeur Logiciel Indépendant, CTO, et Architecte de Solutions IT. Création de solutions innovantes et d'architecture de systèmes."
+
+[languages.en]
+build_search_index = true
+title = "Maxime Golfier"
+description = "IT Engineer - Independent Software Developer, CTO, and IT Solutions Architect. Building innovative solutions and systems architecture."
 
 [markdown]
 render_emoji = true
@@ -47,8 +47,9 @@ enable_search = true
 
 ## Navigation
 header_nav = [
-  { url = "/", name_en = "/home", name_fr = "/accueil", short = "/~" },
-  { url = "/experience", name_en = "/experience", name_fr = "/experience", short = "/xp" },
-  { url = "/education", name_en = "/education", name_fr = "/formation", short = "/ed" },
-  { url = "/contact", name_en = "/contact", name_fr = "/contact", short = "/@" }
+  { url = "/", name_en = "/home", name_fr = "/accueil", short_en = "/~", short_fr = "/~" },
+  { url = "/experience", name_en = "/experience", name_fr = "/expérience", short_en = "/xp", short_fr = "/xp" },
+  { url = "/education", name_en = "/education", name_fr = "/formation", short_en = "/lvl", short_fr = "/lvl" },
+  { url = "/skills", name_en = "/skills", name_fr = "/compétences", short_en = "/++", short_fr = "/++" },
+  { url = "/contact", name_en = "/contact", name_fr = "/contact", short_en = "/@", short_fr = "/@" }
 ]

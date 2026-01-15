@@ -55,7 +55,7 @@ form button[type="submit"]:active {
   transform: translateY(0);
 }
 
-/* Language switcher using system colors */
+/* Language switcher tabs */
 .lang-switcher {
   display: inline-flex;
   align-items: center;
@@ -85,6 +85,10 @@ form button[type="submit"]:active {
   background-color: color-mix(in srgb, ButtonFace 50%, Canvas);
   border-color: Highlight;
   transform: translateY(-1px);
+}
+
+.lang-switcher:active {
+  transform: translateY(0);
 }
 
 /* Dino game canvas styling */

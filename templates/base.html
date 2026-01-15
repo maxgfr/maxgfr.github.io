@@ -39,16 +39,18 @@
         {% endif %}
         <nav id="nav-bar">
             {% set lang_prefix = '' %}
-            {% if current_lang == 'fr' %}
-            {% set lang_prefix = '/fr' %}
+            {% if current_lang == 'en' %}
+            {% set lang_prefix = '/en' %}
             {% endif %}
             
             {% for nav_item in config.extra.header_nav %}
             <a href="{{ lang_prefix }}{{ nav_item.url }}" class="nav-link {% if current_url is defined and lang_prefix ~ nav_item.url == current_url %}active{% endif %}">
                 {% set language_key = 'name_' ~ current_lang %}
+                {% set short_key = 'short_' ~ current_lang %}
                 {% set full_name = nav_item[language_key] %}
+                {% set short_name = nav_item[short_key] %}
                 <span class="nav-full">{{ full_name }}</span>
-                <span class="nav-short">{{ nav_item.short }}</span>
+                <span class="nav-short">{{ short_name }}</span>
             </a>
             {% endfor %}
 
@@ -82,29 +84,58 @@
         
         <script>
         (function() {
-            // Detect browser language and redirect if needed
+            // Detect current language
             const currentPath = window.location.pathname;
-            const isFrench = currentPath.startsWith('/fr/');
+            const isEnglish = currentPath.startsWith('/en/');
             
-            // Only redirect on root page and if no language preference is stored
-            if (currentPath === '/' || currentPath === '' || currentPath === '/index.html') {
-                const browserLang = navigator.language || navigator.userLanguage;
-                const isFrenchBrowser = browserLang && (browserLang.startsWith('fr') || browserLang.startsWith('fr-'));
-                
-                // Check if user has a language preference stored
-                const hasPreference = localStorage.getItem('lang-preference');
-                
-                if (isFrenchBrowser && !hasPreference) {
-                    // Redirect to French version
-                    window.location.replace('/fr/');
-                    return;
+            // Get language preference from localStorage or browser language
+            function getPreferredLanguage() {
+                const storedPref = localStorage.getItem('lang-preference');
+                if (storedPref) {
+                    return storedPref;
                 }
+                
+                // Use browser language as fallback
+                const browserLang = navigator.language || navigator.userLanguage;
+                if (browserLang && (browserLang.startsWith('en') || browserLang.startsWith('en-'))) {
+                    return 'en';
+                }
+                return 'fr';
+            }
+            
+            // Redirect to preferred language if needed
+            const preferredLang = getPreferredLanguage();
+            const shouldRedirectToEnglish = preferredLang === 'en' && !isEnglish;
+            const shouldRedirectToFrench = preferredLang === 'fr' && isEnglish;
+            
+            if (shouldRedirectToEnglish) {
+                // Redirect to English version
+                let newPath;
+                if (currentPath === '/' || currentPath === '' || currentPath === '/index.html') {
+                    newPath = '/en/';
+                } else {
+                    newPath = '/en' + currentPath;
+                }
+                window.location.replace(newPath);
+                return;
+            }
+            
+            if (shouldRedirectToFrench) {
+                // Redirect to French version
+                let newPath;
+                if (currentPath === '/en/' || currentPath === '/en') {
+                    newPath = '/';
+                } else {
+                    newPath = currentPath.replace('/en/', '/');
+                }
+                window.location.replace(newPath);
+                return;
             }
             
             // Language switcher functionality
             const langText = document.getElementById('lang-text');
             if (langText) {
-                langText.textContent = isFrench ? 'EN' : 'FR';
+                langText.textContent = isEnglish ? 'FR' : 'EN';
             }
             
             const switcher = document.getElementById('lang-switcher');
@@ -112,25 +143,29 @@
                 function switchLanguage(e) {
                     e.preventDefault();
                     
+                    // Get current path fresh when clicking
+                    const currentPathNow = window.location.pathname;
+                    const isEnglishNow = currentPathNow.startsWith('/en/');
+                    
                     let newPath;
-                    if (isFrench) {
-                        // Switch to English
-                        if (currentPath === '/fr/' || currentPath === '/fr') {
+                    if (isEnglishNow) {
+                        // Switch to French
+                        if (currentPathNow === '/en/' || currentPathNow === '/en') {
                             newPath = '/';
                         } else {
-                            newPath = currentPath.replace('/fr/', '/');
-                        }
-                        // Store preference
-                        localStorage.setItem('lang-preference', 'en');
-                    } else {
-                        // Switch to French
-                        if (currentPath === '/') {
-                            newPath = '/fr/';
-                        } else {
-                            newPath = '/fr' + currentPath;
+                            newPath = currentPathNow.replace('/en/', '/');
                         }
                         // Store preference
                         localStorage.setItem('lang-preference', 'fr');
+                    } else {
+                        // Switch to English
+                        if (currentPathNow === '/') {
+                            newPath = '/en/';
+                        } else {
+                            newPath = '/en' + currentPathNow;
+                        }
+                        // Store preference
+                        localStorage.setItem('lang-preference', 'en');
                     }
                     
                     window.location.href = newPath;

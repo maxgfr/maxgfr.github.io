@@ -2,7 +2,17 @@
 (function() {
     const canvas = document.getElementById('dino-canvas');
     if (!canvas) return;
-    
+
+    // Adjust canvas size for mobile devices to make the game appear larger (zoom in)
+    if (window.innerWidth < 650) {
+        // Set logical width to match specific screen width (minus padding)
+        // This prevents the browser from scaling down the 650px wide canvas,
+        // effectively making the game elements appear larger (1:1 pixel ratio)
+        canvas.width = Math.min(window.innerWidth - 32, 650);
+        // Increase height on mobile for better visibility (making it "bigger" vertically)
+        canvas.height = 300;
+    }
+
     // Config
     const CONFIG = {
         GRAVITY: 0.6,
@@ -484,6 +494,36 @@
     observer.observe(document.documentElement, {
         attributes: true,
         attributeFilter: ['data-theme']
+    });
+
+    // Handle window resize dynamically without reload
+    window.addEventListener('resize', () => {
+        const oldGroundY = CONFIG.GroundY;
+
+        if (window.innerWidth < 650) {
+            canvas.width = Math.min(window.innerWidth - 32, 650);
+            canvas.height = 300;
+        } else {
+            canvas.width = 650;
+            canvas.height = 300;
+        }
+
+        // Update ground level
+        CONFIG.GroundY = canvas.height - 30;
+        const deltaY = CONFIG.GroundY - oldGroundY;
+
+        // Shift existing obstacles so they don't float/sink
+        if (deltaY !== 0) {
+            obstacles.forEach(o => {
+                o.y += deltaY;
+            });
+        }
+
+        // If game is waiting to start, adjust dino position and redraw immediately
+        if (!state.isRunning) {
+            dino.y = CONFIG.GroundY - dino.h;
+            draw();
+        }
     });
 
     // Init
