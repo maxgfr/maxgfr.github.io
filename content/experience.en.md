@@ -25,7 +25,7 @@ Development and maintenance of the Labor Code website, as part of a public servi
 - Integration and experimentation of LLMs (Large Language Models) for assistance in searching and retrieving legal information, relying exclusively on official sources: Légifrance and Code du travail numérique
 - Close collaboration with legal experts to ensure the reliability, traceability, and legal compliance of generated responses
 
-**Skills:** TypeScript, Next.js, React, Jest, TDD, CI/CD, Accessibility (RGAA), DSFR
+**Skills:** TypeScript, Next.js (React), TDD (Jest), e2e testing (Cypress) , CI/CD, accessibility (RGAA), DSFR, PostgreSQL, Hasura
 
 ---
 
@@ -41,7 +41,7 @@ Creation of a social network to help digital content creators generate revenue.
 - Leadership of technological choices, product development, and technical roadmap
 - Startup environment work: rapid iteration, MVP, continuous improvement, and consideration of user feedback
 
-**Skills:** TypeScript, Next.js, NestJS, AWS, CI/CD
+**Skills:** TypeScript, Next.js (React), React Native, NestJS, Redux, AWS, CI/CD, MongoDB, Firestore, React-Admin
 
 ---
 
@@ -56,7 +56,7 @@ Contribution to client projects in pre-sales in the fields of cloud, artificial 
 - Containerization and development of applications for deployment on IBM's Kubernetes cloud
 - Teamwork using agile processes and design thinking to precisely understand client needs
 
-**Skills:** Node.js, Kubernetes, Docker, IBM Cloud, Watson, Hyperledger
+**Skills:** Kubernetes, Docker, IBM Cloud, Watson, Hyperledger, Node.js, Angular, Ionic, React, Agile methodologies
 
 ---
 
@@ -66,7 +66,7 @@ Contribution to client projects in pre-sales in the fields of cloud, artificial 
 
 Development of an application helping high school students orient themselves after the baccalaureate thanks to an innovative matching system between students from business or engineering schools and high school students.
 
-**Skills:** PHP, Laravel, AWS
+**Skills:** PHP, Laravel, AWS, CI /CD, MySQL
 
 ---
 

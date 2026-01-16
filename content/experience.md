@@ -25,7 +25,7 @@ Développement et maintenance du site web du Code du travail numérique, au sein
 - Intégration et expérimentation de LLMs (Large Language Models) pour l'assistance à la recherche et à la restitution d'informations juridiques, en s'appuyant exclusivement sur des sources officielles : Légifrance et Code du travail numérique
 - Travail étroit avec des experts juridiques afin de garantir la fiabilité, la traçabilité et la conformité légale des réponses générées
 
-**Compétences :** TypeScript, Next.js, React, Jest, TDD, CI/CD, Accessibilité (RGAA), DSFR
+**Compétences :** TypeScript, Next.js (React), TDD (Jest), e2e testing (Cypress) , CI/CD, accessibilité (RGAA), DSFR, PostgreSQL, Hasura
 
 ---
 
@@ -41,7 +41,7 @@ Création d'un réseau social pour aider les créateurs de contenus digitaux à 
 - Pilotage des choix technologiques, du développement produit et de la roadmap technique
 - Travail en environnement startup : itération rapide, MVP, amélioration continue et prise en compte des retours utilisateurs
 
-**Compétences :** TypeScript, Next.js, NestJS, AWS, CI/CD
+**Compétences :** TypeScript, Next.js (React), React Native, NestJS, Redux, AWS, CI/CD, MongoDB, Firestore, React-Admin
 
 ---
 
@@ -56,7 +56,7 @@ Contribution à des projets clients en avant-vente dans le domaine du cloud, de 
 - Containerisation et développement d'applications pour leur mise en place sur le cloud Kubernetes d'IBM
 - Travail en équipe utilisant des processus agiles et le design thinking pour comprendre précisément les besoins des clients
 
-**Compétences :** Node.js, Kubernetes, Docker, IBM Cloud, Watson, Hyperledger
+**Compétences :** Kubernetes, Docker, IBM Cloud, Watson, Hyperledger, Node.js, Angular, Ionic, React, Méthodes agiles
 
 ---
 
@@ -66,7 +66,7 @@ Contribution à des projets clients en avant-vente dans le domaine du cloud, de 
 
 Développement d'une application aidant les lycéens à s'orienter après le baccalauréat grâce à un système de matching innovant entre étudiants de grandes écoles de commerce ou d'ingénieurs et lycéens.
 
-**Compétences :** PHP, Laravel, AWS
+**Compétences :** PHP, Laravel, AWS, CI /CD, MySQL
 
 ---
 
