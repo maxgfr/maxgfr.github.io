@@ -30,5 +30,5 @@ Passionate about open source, I design and share open solutions, with a strong c
 
 While you're here, why not play a game?
 
-<canvas id="dino-canvas" width="650" height="300"></canvas>
+<canvas id="dino-canvas" width="850" height="300"></canvas>
 <p class="dino-instructions">Space or tap to jump. Enter to restart.</p>

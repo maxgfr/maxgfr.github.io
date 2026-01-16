@@ -55,82 +55,49 @@ form button[type="submit"]:active {
   transform: translateY(0);
 }
 
-/* Language switcher tabs */
-.lang-switcher {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: color-mix(in srgb, Canvas 85%, ButtonFace);
-  color: CanvasText;
-  border: 2px solid color-mix(in srgb, CanvasText 25%, transparent);
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+/* Language selector */
+.lang-selector {
+  display: inline-block;
 }
 
-.lang-switcher .lang-icon {
-  font-size: 1rem;
-}
-
-.lang-switcher .lang-text {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.lang-switcher:hover {
-  background-color: color-mix(in srgb, ButtonFace 50%, Canvas);
-  border-color: Highlight;
-  transform: translateY(-1px);
-}
-
-.lang-switcher:active {
-  transform: translateY(0);
-}
-
-/* Footer language switcher - improved design */
-.lang-switcher-footer {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
+.lang-selector select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: color-mix(in srgb, Canvas 10%, transparent);
   color: CanvasText;
   border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
   border-radius: 20px;
-  cursor: pointer;
-  font-weight: 600;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
   font-size: 0.9rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px color-mix(in srgb, CanvasText 5%, transparent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23CanvasText' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 12px;
 }
 
-.lang-switcher-footer .lang-icon {
-  font-size: 1.1rem;
-  filter: drop-shadow(0 1px 2px color-mix(in srgb, CanvasText 10%, transparent));
-}
-
-.lang-switcher-footer .lang-text {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.lang-switcher-footer:hover {
+.lang-selector select:hover {
   background-color: color-mix(in srgb, Highlight 15%, Canvas);
   border-color: Highlight;
-  transform: translateY(-2px);
   box-shadow: 0 4px 8px color-mix(in srgb, Highlight 20%, transparent);
 }
 
-.lang-switcher-footer:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 2px color-mix(in srgb, Highlight 10%, transparent);
+.lang-selector select:focus {
+  outline: none;
+  border-color: Highlight;
+  box-shadow: 0 0 0 3px color-mix(in srgb, Highlight 25%, transparent);
+}
+
+.lang-selector select option {
+  background-color: Canvas;
+  color: CanvasText;
+  padding: 0.5rem;
 }
 
 /* Dino game canvas styling */

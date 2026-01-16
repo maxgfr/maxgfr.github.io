@@ -4,11 +4,11 @@
     if (!canvas) return;
 
     // Adjust canvas size for mobile devices to make the game appear larger (zoom in)
-    if (window.innerWidth < 650) {
+    if (window.innerWidth < 850) {
         // Set logical width to match specific screen width (minus padding)
-        // This prevents the browser from scaling down the 650px wide canvas,
+        // This prevents the browser from scaling down the 850px wide canvas,
         // effectively making the game elements appear larger (1:1 pixel ratio)
-        canvas.width = Math.min(window.innerWidth - 32, 650);
+        canvas.width = Math.min(window.innerWidth - 32, 850);
         // Increase height on mobile for better visibility (making it "bigger" vertically)
         canvas.height = 300;
     }
@@ -500,11 +500,11 @@
     window.addEventListener('resize', () => {
         const oldGroundY = CONFIG.GroundY;
 
-        if (window.innerWidth < 650) {
-            canvas.width = Math.min(window.innerWidth - 32, 650);
+        if (window.innerWidth < 850) {
+            canvas.width = Math.min(window.innerWidth - 32, 850);
             canvas.height = 300;
         } else {
-            canvas.width = 650;
+            canvas.width = 850;
             canvas.height = 300;
         }
 
