@@ -1,6 +1,5 @@
 +++
 title = "Compétences"
-language = "fr"
 +++
 
 Je crois fermement que les compétences se prouvent par la pratique plutôt que par des listes exhaustives. C'est pourquoi je vous invite à explorer mon [GitHub](https://github.com/maxgfr) où vous trouverez mes projets concrets et les technologies que j'utilise au quotidien.

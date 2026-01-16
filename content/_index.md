@@ -1,6 +1,5 @@
 +++
 title = "👋 Salut, moi c'est Maxime Golfier"
-language = "fr"
 +++
 
 Ingénieur logiciel spécialisé en architecture des systèmes d'information, j'ai commencé ma carrière chez IBM en tant qu'architecte développeur. Cette expérience m'a permis de construire des bases solides sur des environnements complexes, exigeants et à grande échelle.

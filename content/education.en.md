@@ -1,6 +1,5 @@
 +++
 title = "Academic background"
-language = "en"
 +++
 
 ---
