@@ -1,28 +1,28 @@
 +++
-title = "Academic background"
+title = "Academic Background"
 +++
 
 ---
 
-## Isep - Digital Engineering School
+## Isep, école d'ingénieurs du numérique
 
-**Engineering degree in computer science *(honors: very good)*** | 2017 - 2020
+**Engineering Degree in Computer Science *(graduated with high honors)*** | 2017 - 2020 | Paris, France
 
-Specialization in Information Systems Architecture. A training that allowed me to develop a global vision of information systems, from design to implementation, through project management and technological innovation.
-
----
-
-## Faculty of Electrical Engineering, Czech Technical University in Prague
-
-**Summer school, Networks and system administration** | 2018 - 2018
-
-An international immersion enriching my technical and cultural perspective.
+Specialization in Information Systems Architecture. A program that allowed me to develop a global vision of information systems, from design to implementation, including project management and technological innovation.
 
 ---
 
-## Université du Québec à Chicoutimi
+## Faculty of Electrical Engineering, Czech Technical University
 
-**Bachelor of Computer Science *(grade: 4.0/4.3 - A)*** | 2017 - 2017
+**Summer school, Networks and System Administration** | 2018 - 2018 | Prague, Czech Republic
+
+An international immersion that enriched my technical and cultural perspective.
+
+---
+
+## Université du Québec à Chicoutimi (UQAC)
+
+**Bachelor in Computer Science *(grade: 4.0/4.3 - A)*** | 2017 - 2017 | Chicoutimi, Canada
 
 An intense Canadian experience that allowed me to perfect my computer science skills while discovering new pedagogical approaches.
 
@@ -30,7 +30,7 @@ An intense Canadian experience that allowed me to perfect my computer science sk
 
 ## Université d'Auvergne
 
-**DUT Informatique (Computer Science Diploma)** | 2015 - 2017
+**DUT in Computer Science** | 2015 - 2017 | Clermont-Ferrand, France
 
 My first steps in computer science, where I developed the solid foundations that allowed me to pursue engineering studies.
 
@@ -39,6 +39,6 @@ My first steps in computer science, where I developed the solid foundations that
 ## What my journey has brought me
 
 - **International vision**: Experiences in Canada and the Czech Republic
-- **Academic excellence**: Very Good honors at Isep, very good grades at UQAC
+- **Academic excellence**: Very good honors at Isep, excellent grades at UQAC
 - **Technical versatility**: From algorithms to system architecture
 - **Critical thinking**: Ability to analyze and solve complex problems
