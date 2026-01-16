@@ -1,6 +1,5 @@
 +++
 title = "Expérience professionnelle"
-language = "fr"
 +++
 
 ---

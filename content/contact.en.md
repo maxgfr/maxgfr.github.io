@@ -1,6 +1,5 @@
 +++
 title = "Contact me"
-language = "en"
 +++
 
 You have an idea? A technical challenge? An exciting opportunity? I'm always open to discussing new projects, innovations, or collaborations.
