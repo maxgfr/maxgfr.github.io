@@ -14,7 +14,7 @@ Spécialisation en Architecture des Systèmes d'Information. Une formation qui m
 
 ## Faculty of Electrical Engineering, Czech Technical University
 
-**Summer school, Réseaux et administration de systèmes** | 2018 - 2018 | Prague, République tchèque
+**Summer school, Réseaux et administration de systèmes** | 2018 | Prague, République tchèque
 
 Une immersion internationale enrichissant ma perspective technique et culturelle.
 
@@ -22,7 +22,7 @@ Une immersion internationale enrichissant ma perspective technique et culturelle
 
 ## Université du Québec à Chicoutimi (UQAC)
 
-**Baccalauréat Informatique *(grade : 4.0/4.3 - A)*** | 2017 - 2017 | Chicoutimi, Canada
+**Baccalauréat Informatique *(grade : 4.0/4.3 - A)*** | 2017 | Chicoutimi, Canada
 
 Une expérience canadienne intense qui m'a permis de perfectionner mes compétences en informatique tout en découvrant de nouvelles approches pédagogiques.
 

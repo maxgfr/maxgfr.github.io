@@ -14,7 +14,7 @@ Specialization in Information Systems Architecture. A program that allowed me to
 
 ## Faculty of Electrical Engineering, Czech Technical University
 
-**Summer school, Networks and System Administration** | 2018 - 2018 | Prague, Czech Republic
+**Summer school, Networks and System Administration** | 2018 | Prague, Czech Republic
 
 An international immersion that enriched my technical and cultural perspective.
 
@@ -22,7 +22,7 @@ An international immersion that enriched my technical and cultural perspective.
 
 ## Université du Québec à Chicoutimi (UQAC)
 
-**Bachelor in Computer Science *(grade: 4.0/4.3 - A)*** | 2017 - 2017 | Chicoutimi, Canada
+**Bachelor in Computer Science *(grade: 4.0/4.3 - A)*** | 2017 | Chicoutimi, Canada
 
 An intense Canadian experience that allowed me to perfect my computer science skills while discovering new pedagogical approaches.
 
