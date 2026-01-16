@@ -30,5 +30,5 @@ Passionné par l'open source, je conçois et partage des solutions ouvertes, ave
 
 Tant que vous êtes là, pourquoi ne pas faire une partie ?
 
-<canvas id="dino-canvas" width="650" height="300"></canvas>
+<canvas id="dino-canvas" width="850" height="300"></canvas>
 <p class="dino-instructions">Espace ou touchez pour sauter. Entrée pour recommencer.</p>
