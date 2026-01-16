@@ -47,7 +47,7 @@ Création d'un réseau social pour aider les créateurs de contenus digitaux à 
 
 ## Architecte IT Junior @ IBM France
 
-**2017-11 – 2020-09** - Paris, France
+**2017-11 – 2020-09** | Paris, France
 
 Contribution à des projets clients en avant-vente dans le domaine du cloud, de l'intelligence artificielle et de la blockchain.
 
@@ -72,7 +72,7 @@ Développement d'une application aidant les lycéens à s'orienter après le bac
 
 ## Stage de Recherche @ Robert Gordon University
 
-**2017-05 – 2017-07**  - Aberdeen, Écosse
+**2017-05 – 2017-07** | Aberdeen, Écosse
 
 Stage de recherche dans le domaine de la Data Science et de l'intelligence artificielle.
 
@@ -86,7 +86,7 @@ Stage de recherche dans le domaine de la Data Science et de l'intelligence artif
 
 ## Tuteur @ Université d'Auvergne
 
-**2016-10 – 2016-12** - Clermont-Ferrand, France
+**2016-10 – 2016-12** | Clermont-Ferrand, France
 
 Aide aux étudiants de première année en algorithmie, programmation et mathématiques, rémunéré par l'université.
 

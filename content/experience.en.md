@@ -47,7 +47,7 @@ Creation of a social network to help digital content creators generate revenue.
 
 ## Junior IT Architect @ IBM France
 
-**2017-11 – 2020-09** - Paris, France
+**2017-11 – 2020-09** | Paris, France
 
 Contribution to client projects in pre-sales in the fields of cloud, artificial intelligence, and blockchain.
 
@@ -72,7 +72,7 @@ Development of an application helping high school students orient themselves aft
 
 ## Research Internship @ Robert Gordon University
 
-**2017-05 – 2017-07** - Aberdeen, Scotland
+**2017-05 – 2017-07** | Aberdeen, Scotland
 
 Research internship in the field of Data Science and artificial intelligence.
 
@@ -86,7 +86,7 @@ Research internship in the field of Data Science and artificial intelligence.
 
 ## Tutor @ Université d'Auvergne
 
-**2016-10 – 2016-12** - Clermont-Ferrand, France
+**2016-10 – 2016-12** | Clermont-Ferrand, France
 
 Helping first-year students in algorithms, programming, and mathematics, paid by the university.
 
