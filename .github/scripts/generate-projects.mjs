@@ -10,11 +10,37 @@ import { dirname, join } from 'node:path';
 const USER = 'maxgfr';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(HERE, '..', '..');
-const CONFIG = JSON.parse(readFileSync(join(HERE, '..', 'projects.json'), 'utf8'));
+
+// SINGLE SOURCE OF TRUTH: the canonical (bilingual) projects config lives in the
+// profile repo (maxgfr/maxgfr/.github/projects.json) — there is exactly one file
+// to edit. We fetch it via the GitHub API. Override with
+// PROJECTS_CONFIG_FILE=<path> for local testing.
+const CONFIG_REPO = 'maxgfr/maxgfr';
+const CONFIG_PATH = '.github/projects.json';
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const headers = { Accept: 'application/vnd.github+json', 'User-Agent': `${USER}-site-bot` };
 if (token) headers.Authorization = `Bearer ${token}`;
+
+let CONFIG; // populated by loadConfig() in main()
+
+async function loadConfig() {
+  if (process.env.PROJECTS_CONFIG_FILE) {
+    return JSON.parse(readFileSync(process.env.PROJECTS_CONFIG_FILE, 'utf8'));
+  }
+  const url = `https://api.github.com/repos/${CONFIG_REPO}/contents/${CONFIG_PATH}`;
+  const raw = { Accept: 'application/vnd.github.raw+json', 'User-Agent': `${USER}-site-bot` };
+  // authenticated first (higher rate limit), then anonymous as a fallback
+  const attempts = [{ ...raw, ...(token ? { Authorization: `Bearer ${token}` } : {}) }, raw];
+  for (const h of attempts) {
+    const res = await fetch(url, { headers: h });
+    if (res.ok) return JSON.parse(await res.text());
+    if (res.status !== 401 && res.status !== 403) {
+      throw new Error(`GET ${url} → ${res.status} ${await res.text()}`);
+    }
+  }
+  throw new Error(`Could not read ${CONFIG_REPO}/${CONFIG_PATH} (auth + anonymous both failed)`);
+}
 
 const T = {
   fr: {
@@ -46,9 +72,8 @@ async function allOwnedRepos() {
     out.push(...batch);
     if (batch.length < 100) break;
   }
-  return out.filter(
-    (r) => !r.private && !r.fork && !r.archived && !(CONFIG.exclude || []).includes(r.name)
-  );
+  const excluded = new Set([...(CONFIG.exclude || []), ...(CONFIG.excludeFromSite || [])]);
+  return out.filter((r) => !r.private && !r.fork && !r.archived && !excluded.has(r.name));
 }
 
 function linkKey(url) {
@@ -107,10 +132,12 @@ function buildPage(repos, lang) {
 }
 
 async function main() {
+  CONFIG = await loadConfig();
   const repos = await allOwnedRepos();
   writeFileSync(join(REPO_ROOT, 'content', 'projects.md'), buildPage(repos, 'fr'));
   writeFileSync(join(REPO_ROOT, 'content', 'projects.en.md'), buildPage(repos, 'en'));
-  console.log(`Generated projects pages: ${repos.length} repos.`);
+  const src = process.env.PROJECTS_CONFIG_FILE || `${CONFIG_REPO}/${CONFIG_PATH}`;
+  console.log(`Generated projects pages: ${repos.length} repos (config: ${src}).`);
 }
 
 main().catch((e) => {

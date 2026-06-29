@@ -6,8 +6,10 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
+    # NB: the projects DATA lives in maxgfr/maxgfr/.github/projects.json (single
+    # source of truth). Editing it there does not trigger this workflow — the
+    # site refreshes on the daily schedule, or run this workflow manually.
     paths:
-      - ".github/projects.json"
       - ".github/scripts/generate-projects.mjs"
       - ".github/workflows/update-projects.yml"
 
