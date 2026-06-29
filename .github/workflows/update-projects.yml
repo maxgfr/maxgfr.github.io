@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "37 6 * * *" # daily at 06:37 UTC
   workflow_dispatch: {}
+  # fired by maxgfr/maxgfr when the canonical projects.json changes
+  repository_dispatch:
+    types: [projects-config-updated]
   push:
     branches: [main]
     # NB: the projects DATA lives in maxgfr/maxgfr/.github/projects.json (single
