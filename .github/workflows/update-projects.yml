@@ -1,0 +1,46 @@
+name: Update projects page
+
+on:
+  schedule:
+    - cron: "37 6 * * *" # daily at 06:37 UTC
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - ".github/projects.json"
+      - ".github/scripts/generate-projects.mjs"
+      - ".github/workflows/update-projects.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-projects
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate projects pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/generate-projects.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- content/projects.md content/projects.en.md; then
+            echo "Projects pages already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/projects.md content/projects.en.md
+          git commit -m "chore: auto-update projects page"
+          git push

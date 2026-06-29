@@ -51,5 +51,6 @@ header_nav = [
   { url = "/experience", name_en = "/experience", name_fr = "/expérience", short_en = "/xp", short_fr = "/xp" },
   { url = "/education", name_en = "/education", name_fr = "/formation", short_en = "/lvl", short_fr = "/lvl" },
   { url = "/skills", name_en = "/skills", name_fr = "/compétences", short_en = "/++", short_fr = "/++" },
+  { url = "/projects", name_en = "/projects", name_fr = "/projets", short_en = "/oss", short_fr = "/oss" },
   { url = "/contact", name_en = "/contact", name_fr = "/contact", short_en = "/@", short_fr = "/@" }
 ]
