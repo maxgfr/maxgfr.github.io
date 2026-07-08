@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 57 dépôts publics · ⭐ 288 étoiles**
+**📦 58 dépôts publics · ⭐ 288 étoiles**
 
 ---
 
@@ -102,6 +102,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Non classés
+
+- **[ultraeval](https://github.com/maxgfr/ultraeval)** — Evaluate a skill or codebase with a multi-agent workflow, ground every finding in a real file:line, and generate an AI-exploitable TDD fix backlog. A skills.sh agent skill.
 
 ---
 
