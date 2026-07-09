@@ -8,7 +8,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ---
 
-## 🤖 IA & outils de dev
+## 🪄 Skills d'agent
 
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence vérifiées pour n'importe quel projet open source, à partir de son vrai code, ses issues et PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un dépôt entier en une encyclopédie navigable par l'IA (carte + fiches par module + graphe de liens) pour les très gros codebases.
@@ -17,6 +17,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[ultra11y](https://github.com/maxgfr/ultra11y)** — Audite le HTML/CSS/JSX selon le RGAA 4.1.2 + WCAG 2.1/2.2 AA via un moteur statique zéro-dépendance + le jugement de l'IA.
 - **[construct](https://github.com/maxgfr/construct)** — Transforme une idée produit en un cahier des charges (SRD/PRD) complet et réalisable (skill d'agent skills.sh).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyse n'importe quel dépôt et génère des PRD de reconstruction pour le rebâtir de zéro.
+- **[ultraeval](https://github.com/maxgfr/ultraeval)** — Évalue rigoureusement une skill ou un codebase → constats sourcés (file:line) + backlog de corrections en TDD ; moteur zéro-dépendance avec analyse (hotspots, cycles, churn) et brainstorm.
+
+---
+
+## 🤖 IA & outils de dev
+
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier DMN/FEEL natif IA compilé en Go : un LLM écrit les règles, le moteur les prouve et les exécute de façon déterministe (playground WASM). · [démo](https://maxgfr.github.io/feelc/)
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Lance Claude Code (et Codex) « sous caféine » — garde la machine éveillée le temps de la session, puis restaure la veille. Multi-plateforme, zéro-dépendance.
@@ -102,12 +108,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[ultraeval](https://github.com/maxgfr/ultraeval)** — Evaluate a skill or codebase with a multi-agent workflow, ground every finding in a real file:line, and generate an AI-exploitable TDD fix backlog. A skills.sh agent skill.
 
 ---
 

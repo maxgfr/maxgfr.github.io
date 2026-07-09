@@ -8,7 +8,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ---
 
-## 🤖 AI & dev tooling
+## 🪄 Agent skills
 
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Grounded Q&A + citation-checked reference docs for any OSS project, from its real source, issues & PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a whole repo into an AI-navigable encyclopedia (map + per-module entries + link-graph) for huge codebases.
@@ -17,6 +17,12 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[ultra11y](https://github.com/maxgfr/ultra11y)** — Audits HTML/CSS/JSX for RGAA 4.1.2 + WCAG 2.1/2.2 AA with a zero-dependency static engine + agent judgment.
 - **[construct](https://github.com/maxgfr/construct)** — Turns a product idea into a grounded, buildable SRD/PRD suite (skills.sh agent skill).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyzes any repo and generates reconstruction PRDs to rebuild it from scratch.
+- **[ultraeval](https://github.com/maxgfr/ultraeval)** — Rigorously evaluates a skill or codebase → grounded (file:line) findings + a TDD fix backlog; zero-dep engine with analysis (hotspots, cycles, churn) and brainstorm.
+
+---
+
+## 🤖 AI & dev tooling
+
 - **[feelc](https://github.com/maxgfr/feelc)** — AI-native DMN/FEEL business-rules engine in Go: an LLM writes the rules, the engine proves & runs them deterministically (WASM playground). · [demo](https://maxgfr.github.io/feelc/)
 - **[conforme](https://github.com/maxgfr/conforme)** — Syncs your AI coding config (rules, skills, agents, MCP servers) across Claude Code, Cursor & more (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Runs Claude Code (and Codex) caffeinated — keeps the machine awake for exactly the session, cross-platform & zero-dep.
@@ -102,12 +108,6 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Uncategorized
-
-- **[ultraeval](https://github.com/maxgfr/ultraeval)** — Evaluate a skill or codebase with a multi-agent workflow, ground every finding in a real file:line, and generate an AI-exploitable TDD fix backlog. A skills.sh agent skill.
 
 ---
 
