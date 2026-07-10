@@ -4,7 +4,7 @@ title = "Projects"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 58 public repos · ⭐ 288 stars**
+**📦 58 public repos · ⭐ 290 stars**
 
 ---
 
