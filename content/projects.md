@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 58 dépôts publics · ⭐ 290 étoiles**
+**📦 58 dépôts publics · ⭐ 291 étoiles**
 
 ---
 
