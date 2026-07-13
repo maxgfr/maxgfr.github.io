@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 58 dépôts publics · ⭐ 292 étoiles**
+**📦 59 dépôts publics · ⭐ 293 étoiles**
 
 ---
 
@@ -108,6 +108,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Non classés
+
+- **[crible](https://github.com/maxgfr/crible)** — Self-hosted fundamental stock screener — 161k equities, zero API keys forever, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast (full-universe screens in <1s). · [démo](https://maxgfr.github.io/crible/)
 
 ---
 
