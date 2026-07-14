@@ -4,7 +4,7 @@ title = "Projects"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 59 public repos · ⭐ 293 stars**
+**📦 60 public repos · ⭐ 295 stars**
 
 ---
 
@@ -113,7 +113,8 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🆕 Uncategorized
 
-- **[crible](https://github.com/maxgfr/crible)** — Self-hosted fundamental stock screener — 161k equities, zero API keys forever, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast (full-universe screens in <1s). · [demo](https://maxgfr.github.io/crible/)
+- **[crible](https://github.com/maxgfr/crible)** — Self-hosted fundamental stock screener — 150k+ equities, zero API keys forever, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast (full-universe screens in <1s). · [demo](https://maxgfr.github.io/crible/)
+- **[secretgate](https://github.com/maxgfr/secretgate)** — Local secrets firewall for coding agents — redacts credentials in prompts, file reads & tool output before they reach the LLM (Claude Code, Codex, OpenCode). No proxy, no npm, deterministic hooks.
 
 ---
 
