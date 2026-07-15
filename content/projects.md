@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 60 dépôts publics · ⭐ 295 étoiles**
+**📦 60 dépôts publics · ⭐ 296 étoiles**
 
 ---
 
@@ -25,6 +25,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier DMN/FEEL natif IA compilé en Go : un LLM écrit les règles, le moteur les prouve et les exécute de façon déterministe (playground WASM). · [démo](https://maxgfr.github.io/feelc/)
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).
+- **[secretgate](https://github.com/maxgfr/secretgate)** — Pare-feu local anti-fuite de secrets pour agents de code — masque les identifiants dans les prompts, lectures de fichiers et sorties d'outils avant qu'ils n'atteignent le LLM (Claude Code, Codex, OpenCode). Hooks déterministes, sans proxy.
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Lance Claude Code (et Codex) « sous caféine » — garde la machine éveillée le temps de la session, puis restaure la veille. Multi-plateforme, zéro-dépendance.
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule zéro-dépendance entre fournisseurs pour Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits intelligents, résolution de conflits et rebase auto (Claude/Codex/OpenAI/Gemini/Mistral). 100% Bash.
@@ -57,11 +58,14 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — PWA hors-ligne pour gérer ses cartes de fidélité avec stockage chiffré et scan de codes-barres. · [démo](https://maxgfr.github.io/loyalty-card-vault/)
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Application de bureau d'apprentissage des langues avec tutorat IA multi-fournisseurs.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Générateur local de courtes vidéos quotidiennes (Remotion) avec légendes par plateforme + publication optionnelle sur Shorts/TikTok/Reels.
+- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin indétectable via le Chrome DevTools Protocol et les data routes Next.js — sans Puppeteer, sans détection de bot.
+- **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version GitHub. · [démo](https://maxgfr.github.io/release-notes-finder)
 
 ---
 
 ## 📈 Trading & finance
 
+- **[crible](https://github.com/maxgfr/crible)** — Screener fondamental d'actions auto-hébergé — 150k+ titres, zéro clé d'API, scores Piotroski/Altman/Beneish transparents avec traçabilité complète des données, rapide grâce à DuckDB. · [démo](https://maxgfr.github.io/crible/)
 - **[binance-historical](https://github.com/maxgfr/binance-historical)** — Récupère les bougies (klines) historiques depuis l'API Binance. · [npm](https://www.npmjs.com/package/binance-historical)
 - **[ai-strategy-backtester](https://github.com/maxgfr/ai-strategy-backtester)** — Décrivez une stratégie crypto en langage naturel → fichier de stratégie JSON, backtesté sur 50+ indicateurs avec rapports HTML.
 - **[supertrend](https://github.com/maxgfr/supertrend)** — Implémentation de l'indicateur SuperTrend. · [npm](https://www.npmjs.com/package/supertrend)
@@ -82,7 +86,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[rn-simple-modal](https://github.com/maxgfr/rn-simple-modal)** — Modale React Native légère et zéro-dépendance (sans animation). · [npm](https://www.npmjs.com/package/rn-simple-modal)
 - **[huge-async-storage](https://github.com/maxgfr/huge-async-storage)** — Wrapper d'async-storage pour stocker de grandes quantités de données en React Native. · [npm](https://www.npmjs.com/package/huge-async-storage)
 - **[insta-who-unfollowed-me](https://github.com/maxgfr/insta-who-unfollowed-me)** — Suivez qui vous a unfollow sur Instagram. · [npm](https://www.npmjs.com/package/insta-who-unfollowed-me)
-- **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version GitHub. · [démo](https://maxgfr.github.io/release-notes-finder)
 - **[api-money-node-sdk](https://github.com/maxgfr/api-money-node-sdk)** — SDK Node non-officiel pour api-money.com. · [npm](https://www.npmjs.com/package/api-money-node-sdk)
 
 ---
@@ -104,17 +107,9 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🧩 Autres
 
-- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin indétectable via le Chrome DevTools Protocol et les data routes Next.js — sans Puppeteer, sans détection de bot.
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[crible](https://github.com/maxgfr/crible)** — Self-hosted fundamental stock screener — 150k+ equities, zero API keys forever, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast (full-universe screens in <1s). · [démo](https://maxgfr.github.io/crible/)
-- **[secretgate](https://github.com/maxgfr/secretgate)** — Local secrets firewall for coding agents — redacts credentials in prompts, file reads & tool output before they reach the LLM (Claude Code, Codex, OpenCode). No proxy, no npm, deterministic hooks.
 
 ---
 
