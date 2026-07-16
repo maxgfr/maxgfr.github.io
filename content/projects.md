@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 60 dépôts publics · ⭐ 296 étoiles**
+**📦 61 dépôts publics · ⭐ 296 étoiles**
 
 ---
 
@@ -55,6 +55,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur. · [démo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualiseur de schéma de base de données côté client avec analyse par IA — importez du SQL, visualisez, partagez, exportez, sans backend. · [démo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité (ROI) immobilière pour évaluer la rentabilité d'un bien locatif. · [démo](https://maxgfr.github.io/real-estate-calculator)
+- **[genpass](https://github.com/maxgfr/genpass)** — Générateur de mots de passe et coffre-fort chiffré, 100% dans le navigateur : entropie exacte, phrases secrètes EFF, coffre AES-256-GCM (PBKDF2 600k) avec auto-verrouillage, liens de partage chiffrés et QR — PWA hors-ligne. · [démo](https://maxgfr.github.io/genpass/)
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — PWA hors-ligne pour gérer ses cartes de fidélité avec stockage chiffré et scan de codes-barres. · [démo](https://maxgfr.github.io/loyalty-card-vault/)
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Application de bureau d'apprentissage des langues avec tutorat IA multi-fournisseurs.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Générateur local de courtes vidéos quotidiennes (Remotion) avec légendes par plateforme + publication optionnelle sur Shorts/TikTok/Reels.
