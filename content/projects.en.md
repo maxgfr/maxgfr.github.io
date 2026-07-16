@@ -4,7 +4,7 @@ title = "Projects"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 60 public repos · ⭐ 296 stars**
+**📦 61 public repos · ⭐ 296 stars**
 
 ---
 
@@ -55,6 +55,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer. · [demo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend. · [demo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Real-estate ROI calculator for rental-property profitability. · [demo](https://maxgfr.github.io/real-estate-calculator)
+- **[genpass](https://github.com/maxgfr/genpass)** — Client-side password generator + encrypted vault PWA: exact entropy, EFF passphrases, auto-locking AES-256-GCM vault (PBKDF2 600k), encrypted share links & QR — offline-first. · [demo](https://maxgfr.github.io/genpass/)
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline-first PWA for loyalty cards with encrypted storage and barcode scanning. · [demo](https://maxgfr.github.io/loyalty-card-vault/)
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Desktop language-learning app with multi-provider AI tutoring.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Local-first daily short-video generator (Remotion) with per-platform captions + opt-in Shorts/TikTok/Reels publishing.
