@@ -24,7 +24,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 ## 🤖 IA & outils de dev
 
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier DMN/FEEL natif IA compilé en Go : un LLM écrit les règles, le moteur les prouve et les exécute de façon déterministe (playground WASM). · [démo](https://maxgfr.github.io/feelc/)
-- **[codeindex](https://github.com/maxgfr/codeindex)** — Moteur d'indexation de dépôt zéro-dépendance : symboles, imports, graphe de liens inter-fichiers typé et analytics — un seul engine.mjs embarquable, CLI + serveur MCP inclus. · [npm](https://www.npmjs.com/package/@maxgfr/codeindex)
+- **[codeindex](https://github.com/maxgfr/codeindex)** — Moteur d'indexation de dépôt zéro-dépendance : symboles, imports, graphe de liens inter-fichiers typé et analytics — un seul engine.mjs embarquable, CLI + serveur MCP inclus. · [démo](https://maxgfr.github.io/codeindex/)
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Pare-feu local anti-fuite de secrets pour agents de code — masque les identifiants dans les prompts, lectures de fichiers et sorties d'outils avant qu'ils n'atteignent le LLM (Claude Code, Codex, OpenCode). Hooks déterministes, sans proxy.
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Lance Claude Code (et Codex) « sous caféine » — garde la machine éveillée le temps de la session, puis restaure la veille. Multi-plateforme, zéro-dépendance.
