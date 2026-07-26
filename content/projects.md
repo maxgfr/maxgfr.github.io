@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 62 dépôts publics · ⭐ 300 étoiles**
+**📦 63 dépôts publics · ⭐ 300 étoiles**
 
 ---
 
@@ -53,6 +53,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🌐 Applications web & PWA
 
+- **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois agnostique : brackets, système suisse, ligues, poules et Elo composés depuis six axes — aucun sport codé en dur. 100 % navigateur, sans serveur ni compte : lien partageable, sync P2P, export ICS, impression et hors-ligne. · [démo](https://maxgfr.github.io/bracketeer)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur. · [démo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualiseur de schéma de base de données côté client avec analyse par IA — importez du SQL, visualisez, partagez, exportez, sans backend. · [démo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité (ROI) immobilière pour évaluer la rentabilité d'un bien locatif. · [démo](https://maxgfr.github.io/real-estate-calculator)
