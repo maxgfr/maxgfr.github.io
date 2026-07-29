@@ -30,12 +30,28 @@ const keep = argv.includes('--keep');
 // ENGLISH document under the French filename, with a zero exit code. Telling
 // Chrome which locale it is browsing as makes the site's own logic keep us on
 // the intended page. Verified both ways: en-US on /cv/ does flip to English.
-const TARGETS = [
+const VARIANTS = [
   { name: 'fr-1p', path: '/cv-1page/', locale: 'fr-FR,fr', maxPages: 1 },
   { name: 'fr-full', path: '/cv/', locale: 'fr-FR,fr' },
   { name: 'en-1p', path: '/en/cv-1page/', locale: 'en-US,en', maxPages: 1 },
   { name: 'en-full', path: '/en/cv/', locale: 'en-US,en' },
 ];
+
+// Every variant ships in both typefaces, so the download page can offer the
+// choice. `?font=` is read by the page's own <head> script (templates/cv.html);
+// the static server below parses only the pathname, so the query changes what
+// is rendered without changing what is served. Both have to fit on one page:
+// the site's monospace is wider than the sans-serif, so it is the binding
+// constraint and the one to watch when trimming.
+const FONTS = ['sans', 'mono'];
+
+const TARGETS = VARIANTS.flatMap((variant) =>
+  FONTS.map((font) => ({
+    ...variant,
+    name: `${variant.name}-${font}`,
+    path: `${variant.path}?font=${font}`,
+  }))
+);
 
 const CHROME_TIMEOUT_MS = 90_000;
 
@@ -177,7 +193,7 @@ async function main() {
 
     for (const { name, path, locale, maxPages } of TARGETS) {
       const out = join(outDir, `maxime-golfier-cv-${name}.pdf`);
-      process.stdout.write(`rendering ${path.padEnd(16)} (${locale.split(',')[0]}) … `);
+      process.stdout.write(`rendering ${path.padEnd(28)} (${locale.split(',')[0]}) … `);
       rmSync(out, { force: true });
       // Chrome writes the PDF and then, in some configurations, lingers. Since
       // the artifact is what we actually care about, a timeout is only fatal if
@@ -245,7 +261,7 @@ async function main() {
 
     console.log('');
     for (const r of results) {
-      console.log(`${r.name.padEnd(8)} ${String(r.pages ?? '?').padStart(2)} page(s)  ${String((r.bytes / 1024).toFixed(0)).padStart(4)} KB  ${r.out}`);
+      console.log(`${r.name.padEnd(12)} ${String(r.pages ?? '?').padStart(2)} page(s)  ${String((r.bytes / 1024).toFixed(0)).padStart(4)} KB  ${r.out}`);
     }
 
     // A "one-page CV" that quietly runs to two pages is worse than useless: it

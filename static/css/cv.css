@@ -46,11 +46,68 @@
   content: none;
 }
 
+/* Typeface of the document itself. The site is monospace throughout, which is a
+   deliberate look but a loud one on a CV, so the PDF is offered both ways. The
+   attribute is set on <html> by the header script (or by ?font= for the PDF
+   render), and only the CV subtree follows it — site chrome stays as it is. */
+[data-cv-font="sans"] #cv {
+  font-family: var(--sans-font);
+}
+
+[data-cv-font="mono"] #cv {
+  font-family: var(--mono-font);
+}
+
 .cv-actions {
+  margin: 0 0 0.75rem;
+}
+
+.cv-downloads {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin: 0 0 0.75rem;
+  margin: 0;
+}
+
+/* suCSS gives fieldset a dashed accent border, which shouts next to the two
+   buttons. This is a quiet preference control, so it reads as a caption with
+   two choices under it. */
+.cv-font {
+  border: 0;
+  padding: 0;
+  margin: 0 0 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.9rem;
+}
+
+.cv-font legend {
+  float: left;
+  padding: 0;
+  margin-inline-end: 0.9rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.cv-font label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* suCSS resets appearance on inputs, which leaves radios invisible. */
+.cv-font input[type="radio"] {
+  appearance: revert;
+  -webkit-appearance: revert;
+  accent-color: var(--accent);
+  width: auto;
+  height: auto;
+  margin: 0;
+  cursor: pointer;
 }
 
 .cv-download {

@@ -5,15 +5,26 @@ description: "Use when working on Maxime's CV on the maxgfr.github.io Zola site 
 
 # CV PDFs for maxgfr.github.io
 
-Four PDFs are published at every deploy, rendered by headless Chrome from the
-site's own pages:
+Eight PDFs are published at every deploy, rendered by headless Chrome from the
+site's own pages — two formats × two languages × two typefaces, named
+`maxime-golfier-cv-{fr|en}-{1p|full}-{sans|mono}.pdf`:
 
-| File | Route | Pages |
+| Route | Rendered as | Pages |
 |---|---|---|
-| `maxime-golfier-cv-fr-1p.pdf` | `/cv-1page` | exactly 1 |
-| `maxime-golfier-cv-en-1p.pdf` | `/en/cv-1page` | exactly 1 |
-| `maxime-golfier-cv-fr-full.pdf` | `/cv` | as many as needed |
-| `maxime-golfier-cv-en-full.pdf` | `/en/cv` | as many as needed |
+| `/cv-1page`, `/en/cv-1page` | `…-1p-sans`, `…-1p-mono` | exactly 1 — enforced |
+| `/cv`, `/en/cv` | `…-full-sans`, `…-full-mono` | as many as needed |
+
+The typeface comes from `?font=sans` / `?font=mono` on the URL, read by an inline
+`<head>` script in `templates/cv.html`. Nothing else distinguishes the two, so
+the site's own page previews exactly what the PDF will look like — the radios in
+`.cv-actions` set the same attribute and repoint the download links.
+
+`sans` is the default the download buttons ship with: this CV is read by résumé
+parsers and recruiters, and the site's monospace is a strong stylistic signal.
+It also sets narrower and shorter, so it gets its own `font-size` in
+`cv-compact.css` — otherwise it finished a seventh of the way up the page.
+**The monospace is the binding constraint when trimming**: it is the wider of
+the two, so make it fit and the sans-serif follows.
 
 ## The one rule
 

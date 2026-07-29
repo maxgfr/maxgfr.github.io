@@ -25,6 +25,18 @@
 {% set compact = page.extra.variant | default(value="full") == "compact" %}
 <link rel="stylesheet" href="{{ get_url(path='css/cv.css') }}">
 {% if compact %}<link rel="stylesheet" href="{{ get_url(path='css/cv-compact.css') }}">{% endif %}
+{#
+  Typeface comes from ?font=. This is how render-cv-pdf.mjs asks for each of the
+  two PDF variants — the script's static server ignores the query string, so the
+  same page serves both. In <head> and synchronous on purpose: set any later and
+  the page paints in one font and reflows into the other.
+#}
+<script>
+    (function () {
+        var font = new URLSearchParams(location.search).get("font");
+        if (font === "sans" || font === "mono") document.documentElement.dataset.cvFont = font;
+    })();
+</script>
 {% endblock %}
 
 {% block content %}
@@ -48,16 +60,36 @@
             <li><a href="{{ config.base_url }}">maxgfr.github.io</a></li>
         </ul>
 
-        {# Both PDFs are offered from both pages: a visitor should never have to
-           hunt for the other format. #}
-        <p class="cv-actions">
-            <a class="cv-download" href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-1p.pdf') }}" download>
-                {% if en %}Download — 1 page (PDF){% else %}Télécharger — 1 page (PDF){% endif %}
-            </a>
-            <a class="cv-download cv-download-alt" href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-full.pdf') }}" download>
-                {% if en %}Download — full (PDF){% else %}Télécharger — version complète (PDF){% endif %}
-            </a>
-        </p>
+        {# Both formats are offered from both pages: a visitor should never have
+           to hunt for the other one. Each is rendered in two typefaces, so the
+           choice below picks the file — and previews it on this page, because a
+           font you cannot see before downloading is not really a choice.
+           Default is the sans-serif: this CV is read by résumé parsers and by
+           recruiters, and the site's monospace is a strong stylistic signal
+           that not every reader wants. #}
+        <div class="cv-actions">
+            <fieldset class="cv-font">
+                <legend>{% if en %}PDF typeface{% else %}Police du PDF{% endif %}</legend>
+                <label>
+                    <input type="radio" name="cv-font" value="sans" checked>
+                    {% if en %}Classic{% else %}Classique{% endif %}
+                </label>
+                <label>
+                    <input type="radio" name="cv-font" value="mono">
+                    {% if en %}Same as the site{% else %}Comme le site{% endif %}
+                </label>
+            </fieldset>
+            <p class="cv-downloads">
+                <a class="cv-download" data-cv-pdf="{{ page.lang }}-1p"
+                   href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-1p-sans.pdf') }}" download>
+                    {% if en %}Download — 1 page (PDF){% else %}Télécharger — 1 page (PDF){% endif %}
+                </a>
+                <a class="cv-download cv-download-alt" data-cv-pdf="{{ page.lang }}-full"
+                   href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-full-sans.pdf') }}" download>
+                    {% if en %}Download — full (PDF){% else %}Télécharger — version complète (PDF){% endif %}
+                </a>
+            </p>
+        </div>
         <p class="cv-switch">
             {% set other = "/cv" %}
             {% if not compact %}{% set other = "/cv-1page" %}{% endif %}
@@ -145,6 +177,36 @@
             el.appendChild(link);
             el.removeAttribute("data-cv-email");
         });
+    })();
+</script>
+
+{#
+  The typeface radios: repoint the download links at the matching PDFs, and
+  restyle this page to match so the choice is visible before it is downloaded.
+  Progressive enhancement — with no JS the radios simply do nothing and the
+  links still resolve to the sans-serif files they ship with.
+#}
+<script>
+    (function () {
+        var radios = document.querySelectorAll('input[name="cv-font"]');
+        if (!radios.length) return;
+
+        function apply(font) {
+            document.documentElement.dataset.cvFont = font;
+            document.querySelectorAll("[data-cv-pdf]").forEach(function (link) {
+                link.href = link.href.replace(/-(sans|mono)\.pdf$/, "-" + font + ".pdf");
+            });
+        }
+
+        // ?font= wins over the markup's default, so a shared link keeps its choice.
+        var initial = document.documentElement.dataset.cvFont;
+        radios.forEach(function (radio) {
+            if (initial && radio.value === initial) radio.checked = true;
+            radio.addEventListener("change", function () {
+                if (radio.checked) apply(radio.value);
+            });
+        });
+        apply(document.querySelector('input[name="cv-font"]:checked').value);
     })();
 </script>
 {% endblock %}
