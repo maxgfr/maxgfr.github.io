@@ -1,0 +1,268 @@
+/* CV page — loaded only by templates/cv.html, so nothing here affects the rest
+   of the site. Screen rules first, print rules at the bottom: the print block is
+   what actually produces maxime-golfier-cv-*.pdf via headless Chrome. */
+
+/* ---------- Screen ---------- */
+
+.cv-header {
+  margin-bottom: 2rem;
+}
+
+.cv-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.cv-title {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  margin: 0 0 0.75rem;
+}
+
+.cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* suCSS gives every `ul li` a '» ' marker; the contact line is a list only for
+   semantics, so silence it in both media. */
+.cv-contact li {
+  margin: 0;
+}
+
+.cv-contact li::marker {
+  content: none;
+}
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 0.75rem;
+}
+
+.cv-download {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--accent);
+  border-radius: var(--standard-border-radius, 5px);
+  background-color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* The full CV is the secondary choice: most people want the one-pager. */
+.cv-download-alt {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+.cv-download:hover,
+.cv-download:focus-visible {
+  background-color: var(--link);
+  border-color: var(--link);
+  color: var(--bg);
+}
+
+.cv-switch {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cv-section {
+  margin-top: 2.5rem;
+}
+
+.cv-section > h2 {
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+
+/* Every source page opens with a `---` rule under its frontmatter; it is a
+   separator between the page title and the body there, but redundant here. */
+.cv-body > hr:first-child {
+  display: none;
+}
+
+/* ---------- Print / PDF ---------- */
+
+@page {
+  size: A4;
+  margin: 14mm 12mm;
+}
+
+@media print {
+  /* The theme sets its palette on :root, on [data-theme] and behind
+     prefers-color-scheme. Override all three or a dark-mode visitor prints a
+     black page. */
+  :root,
+  [data-theme="light"],
+  [data-theme="dark"] {
+    --bg: #fff;
+    --bg-light: #fff;
+    --text: #111;
+    --text-light: #444;
+    --accent: #222;
+    --accent-light: #444;
+    --border: #bbb;
+    --link: #14508a;
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 10.5pt;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Site chrome has no place in a CV. */
+  #nav-bar,
+  footer,
+  .theme-toggle,
+  .cv-actions,
+  .cv-switch,
+  #dino-canvas,
+  .dino-instructions {
+    display: none !important;
+  }
+
+  /* Note: do NOT set `body { display: block }` to undo suCSS's 3-column grid.
+     It widens the text column but measurably ADDS pages (EN one-pager went
+     1 -> 2), so the grid stays. */
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* A few millimetres of trailing margin is enough to spill a blank page. */
+  #cv > :last-child,
+  .cv-section:last-child,
+  .cv-body > :last-child,
+  .cv-entry > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* suCSS prefixes every heading with '# ' (h1::before { content: '# ' }).
+     That is the site's terminal look on screen, but on a CV handed to a
+     recruiter it reads as a rendering fault. Screen keeps it; paper does not. */
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    content: none !important;
+  }
+
+  .cv-header {
+    margin-bottom: 1.2rem;
+  }
+
+  .cv-header h1 {
+    font-size: 20pt;
+    margin-bottom: 0.1rem;
+  }
+
+  .cv-title {
+    font-size: 11pt;
+    margin-bottom: 0.4rem;
+  }
+
+  .cv-contact {
+    gap: 0.2rem 0.9rem;
+    font-size: 9pt;
+    margin-bottom: 0;
+  }
+
+  .cv-section {
+    margin-top: 1.1rem;
+  }
+
+  .cv-section > h2 {
+    font-size: 13pt;
+    border-bottom: 1pt solid #999;
+    margin-bottom: 0.5rem;
+  }
+
+  .cv-body h3 {
+    font-size: 11.5pt;
+    margin-bottom: 0.1rem;
+  }
+
+  .cv-body h4 {
+    font-size: 10.5pt;
+    margin-bottom: 0.1rem;
+  }
+
+  .cv-body p,
+  .cv-body li {
+    margin: 0.15rem 0;
+  }
+
+  .cv-body ul {
+    margin: 0.2rem 0 0.5rem;
+  }
+
+  /* One .cv-entry per job/degree (templates/cv.html splits on <hr>). Asking to
+     keep it whole stops a job title being stranded at the foot of a page; when
+     an entry is taller than a page — beta.gouv.fr has eight bullets — the
+     constraint is unsatisfiable and the browser flows it across the break
+     anyway, which is exactly the wanted behaviour. */
+  .cv-entry {
+    break-inside: avoid;
+  }
+
+  /* The split consumed the <hr>s that used to separate roles, so restore a
+     hairline — heavy rules read badly on paper, spacing alone reads as none. */
+  .cv-entry + .cv-entry {
+    border-top: 1px solid #e2e2e2;
+    padding-top: 0.45rem;
+    margin-top: 0.45rem;
+  }
+
+  .cv-body h3,
+  .cv-body h4 {
+    break-after: avoid;
+  }
+
+  .cv-body li {
+    break-inside: avoid;
+  }
+
+  .cv-body p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .cv-section > h2 {
+    break-after: avoid;
+  }
+
+  /* The rules between roles read as heavy horizontal bars on paper. */
+  .cv-body hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.6rem 0;
+  }
+
+  a {
+    color: #14508a !important;
+    text-decoration: none;
+  }
+
+  /* Project links are all github.com/maxgfr/<link text> and the contact block
+     already prints its URLs in full, so expanding every href here would add
+     noise without adding information. */
+}

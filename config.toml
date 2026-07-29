@@ -52,5 +52,14 @@ header_nav = [
   { url = "/education", name_en = "/education", name_fr = "/formation", short_en = "/lvl", short_fr = "/lvl" },
   { url = "/skills", name_en = "/skills", name_fr = "/compétences", short_en = "/++", short_fr = "/++" },
   { url = "/projects", name_en = "/projects", name_fr = "/projets", short_en = "/oss", short_fr = "/oss" },
+  { url = "/cv", name_en = "/cv", name_fr = "/cv", short_en = "/cv", short_fr = "/cv" },
   { url = "/contact", name_en = "/contact", name_fr = "/contact", short_en = "/@", short_fr = "/@" }
 ]
+
+## CV — data that exists nowhere else on the site (the rest of the CV page is
+## assembled from content/*.md by templates/cv.html, so it can never drift).
+[extra.cv]
+github = "https://github.com/maxgfr"
+linkedin = "https://www.linkedin.com/in/maxime-golfier/"
+title_fr = "Ingénieur logiciel · Architecte SI · Freelance"
+title_en = "Software Engineer · IT Architect · Freelance"

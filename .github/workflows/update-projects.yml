@@ -42,14 +42,14 @@ jobs:
       - name: Commit if changed
         id: commit
         run: |
-          if git diff --quiet -- content/projects.md content/projects.en.md; then
+          if git diff --quiet -- content/projects.md content/projects.en.md content/cv-projects.md content/cv-projects.en.md; then
             echo "Projects pages already up to date."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/projects.md content/projects.en.md
+          git add content/projects.md content/projects.en.md content/cv-projects.md content/cv-projects.en.md
           git commit -m "chore: auto-update projects page"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"

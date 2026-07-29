@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{#
+  The CV is a RENDER of the site, never a copy of it. Every section below pulls
+  the already-rendered HTML of an existing content page, so the CV cannot drift
+  from /experience, /education, /skills or /projects. Add nothing here that is
+  not already on the site — edit the source Markdown in content/ instead.
+
+  Two variants share this one template:
+    - full    (content/cv.md)        — everything, runs to several pages
+    - compact (content/cv-1page.md)  — the same DOM, trimmed to one page purely
+                                       by static/css/cv-compact.css
+  The compact variant hides rather than rewrites, so the two can never disagree.
+
+  Headings are shifted down one level (h3->h4, h2->h3, in that order) so the
+  source pages' h2 job titles nest correctly under this page's h2 section
+  titles. Order matters: shifting h2 first would cascade into the h3s.
+#}
+
+{# `compact` is re-derived inside each block on purpose: in Tera a top-level
+   {% set %} in a template that {% extends %} another is not visible inside the
+   blocks. #}
+
+{% block extra_head %}
+{% set compact = page.extra.variant | default(value="full") == "compact" %}
+<link rel="stylesheet" href="{{ get_url(path='css/cv.css') }}">
+{% if compact %}<link rel="stylesheet" href="{{ get_url(path='css/cv-compact.css') }}">{% endif %}
+{% endblock %}
+
+{% block content %}
+{% set compact = page.extra.variant | default(value="full") == "compact" %}
+{% set sfx = "" %}
+{% if page.lang == "en" %}{% set sfx = ".en" %}{% endif %}
+{% set cv = config.extra.cv %}
+{% set en = page.lang == "en" %}
+
+<article id="cv" class="{% if compact %}cv-compact{% else %}cv-full{% endif %}">
+    <header class="cv-header">
+        <h1>{{ config.extra.author }}</h1>
+        <p class="cv-title">{% if en %}{{ cv.title_en }}{% else %}{{ cv.title_fr }}{% endif %}</p>
+        {# No email here on purpose: the site does not publish one either
+           (contact goes through the Formspree form on /contact). #}
+        <ul class="cv-contact">
+            <li><a href="{{ cv.github }}">github.com/maxgfr</a></li>
+            <li><a href="{{ cv.linkedin }}">linkedin.com/in/maxime-golfier</a></li>
+            <li><a href="{{ config.base_url }}">maxgfr.github.io</a></li>
+        </ul>
+
+        {# Both PDFs are offered from both pages: a visitor should never have to
+           hunt for the other format. #}
+        <p class="cv-actions">
+            <a class="cv-download" href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-1p.pdf') }}" download>
+                {% if en %}Download — 1 page (PDF){% else %}Télécharger — 1 page (PDF){% endif %}
+            </a>
+            <a class="cv-download cv-download-alt" href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-full.pdf') }}" download>
+                {% if en %}Download — full (PDF){% else %}Télécharger — version complète (PDF){% endif %}
+            </a>
+        </p>
+        <p class="cv-switch">
+            {% set other = "/cv" %}
+            {% if not compact %}{% set other = "/cv-1page" %}{% endif %}
+            <a href="{% if en %}/en{% endif %}{{ other }}">
+                {% if compact %}
+                {% if en %}See the full version{% else %}Voir la version complète{% endif %}
+                {% else %}
+                {% if en %}See the one-page version{% else %}Voir la version une page{% endif %}
+                {% endif %}
+            </a>
+        </p>
+    </header>
+
+    {#
+      Each source page separates its entries with a Markdown `---`, which
+      renders as <hr>. Splitting on it gives one wrapper element per job or
+      degree — the only way to hand the print stylesheet something to apply
+      `break-inside: avoid` to, so a job title is never stranded alone at the
+      foot of a page. An entry taller than a page still flows across the break,
+      which is what we want for the long roles. It is also what lets the compact
+      variant address entries individually (`.cv-entry:nth-of-type(n)`).
+    #}
+    {% for slug in ["experience", "education", "skills"] %}
+    {% set src = get_page(path=slug ~ sfx ~ ".md") %}
+    <section class="cv-section" id="cv-{{ slug }}">
+        <h2>{{ src.title }}</h2>
+        <div class="cv-body">
+            {% set shifted = src.content | replace(from="<h3", to="<h4") | replace(from="</h3>", to="</h4>") | replace(from="<h2", to="<h3") | replace(from="</h2>", to="</h3>") %}
+            {% for entry in shifted | replace(from="<hr />", to="<hr>") | split(pat="<hr>") %}
+            {% if entry | trim != "" %}
+            <div class="cv-entry">{{ entry | safe }}</div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+
+    {# The open-source list has no `---` separators: render it as one block. #}
+    {% set oss = get_page(path="cv-projects" ~ sfx ~ ".md") %}
+    <section class="cv-section" id="cv-projects">
+        <h2>{{ oss.title }}</h2>
+        <div class="cv-body">{{ oss.content | safe }}</div>
+    </section>
+</article>
+{% endblock %}

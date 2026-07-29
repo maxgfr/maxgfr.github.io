@@ -29,6 +29,21 @@ jobs:
       - name: Build with Zola
         run: zola build
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Renders /cv, /cv-1page and their EN twins to PDF with the Chrome that
+      # ships on the runner, and drops the four files into ./public so they are
+      # published with the site. The PDFs are never committed: they are rebuilt
+      # from the live content on every deploy, which is what keeps them in sync.
+      # The script fails the build if the one-page CV stops fitting on one page.
+      - name: Render CV PDFs
+        run: node .github/scripts/render-cv-pdf.mjs --out ./public
+
+      - name: Check the PDFs landed
+        run: ls -lh public/maxime-golfier-cv-*.pdf
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

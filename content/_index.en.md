@@ -15,6 +15,7 @@ Passionate about open source, I design and share open solutions, with a strong c
 - [My experience](/en/experience)
 - [My education](/en/education)
 - [My skills](/en/skills)
+- [My resume (PDF)](/en/cv)
 - [Contact me](/en/contact)
 
 ---

@@ -4,6 +4,9 @@ public/
 # Zola cache
 .zola/
 
+# Local CV PDF renders (the published ones are built in CI, never committed)
+tmp-cv/
+
 # OS files
 .DS_Store
 Thumbs.db

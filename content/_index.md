@@ -15,6 +15,7 @@ Passionné par l'open source, je conçois et partage des solutions ouvertes, ave
 - [Mon parcours](./experience)
 - [Ma formation](./education)
 - [Mes compétences](./skills)
+- [Mon CV (PDF)](./cv)
 - [Me contacter](./contact)
 
 ---
