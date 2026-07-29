@@ -46,10 +46,14 @@
   content: none;
 }
 
-/* Typeface of the document itself. The site is monospace throughout, which is a
-   deliberate look but a loud one on a CV, so the PDF is offered both ways. The
-   attribute is set on <html> by the header script (or by ?font= for the PDF
-   render), and only the CV subtree follows it — site chrome stays as it is. */
+/* Typeface of the PDF. The site is monospace throughout, which is a deliberate
+   look but a loud one on a CV, so the document is offered both ways.
+
+   This attribute exists for the renderer, not for visitors: it is set on <html>
+   only when the URL carries ?font=, which is how render-cv-pdf.mjs asks for each
+   variant. Browsing /cv normally leaves it unset and the page stays monospace
+   like the rest of the site — the download radios change the file, never the
+   page. Scoped to the CV subtree so site chrome is never involved either way. */
 [data-cv-font="sans"] #cv {
   font-family: var(--sans-font);
 }

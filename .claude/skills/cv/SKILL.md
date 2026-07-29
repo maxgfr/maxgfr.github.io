@@ -15,9 +15,14 @@ site's own pages — two formats × two languages × two typefaces, named
 | `/cv`, `/en/cv` | `…-full-sans`, `…-full-mono` | as many as needed |
 
 The typeface comes from `?font=sans` / `?font=mono` on the URL, read by an inline
-`<head>` script in `templates/cv.html`. Nothing else distinguishes the two, so
-the site's own page previews exactly what the PDF will look like — the radios in
-`.cv-actions` set the same attribute and repoint the download links.
+`<head>` script in `templates/cv.html`. That query is how `render-cv-pdf.mjs`
+asks for each variant, and it is the *only* thing that restyles the page.
+
+The radios in `.cv-actions` deliberately do not: they swap which file the
+download buttons point at and nothing else. Browsing `/cv` leaves the page
+monospace like the rest of the site. Do not "improve" this into a live preview —
+it was built that way once and reverted, because a download preference that
+silently reskins the page you are reading reads as a bug.
 
 `sans` is the default the download buttons ship with: this CV is read by résumé
 parsers and recruiters, and the site's monospace is a strong stylistic signal.

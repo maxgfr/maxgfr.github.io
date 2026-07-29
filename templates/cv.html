@@ -61,12 +61,11 @@
         </ul>
 
         {# Both formats are offered from both pages: a visitor should never have
-           to hunt for the other one. Each is rendered in two typefaces, so the
-           choice below picks the file — and previews it on this page, because a
-           font you cannot see before downloading is not really a choice.
-           Default is the sans-serif: this CV is read by résumé parsers and by
-           recruiters, and the site's monospace is a strong stylistic signal
-           that not every reader wants. #}
+           to hunt for the other one. Each is rendered in two typefaces, and the
+           choice below picks which file the buttons download — it does not
+           touch this page. Default is the sans-serif: this CV is read by résumé
+           parsers and by recruiters, and the site's monospace is a strong
+           stylistic signal that not every reader wants. #}
         <div class="cv-actions">
             <fieldset class="cv-font">
                 <legend>{% if en %}PDF typeface{% else %}Police du PDF{% endif %}</legend>
@@ -181,32 +180,37 @@
 </script>
 
 {#
-  The typeface radios: repoint the download links at the matching PDFs, and
-  restyle this page to match so the choice is visible before it is downloaded.
-  Progressive enhancement — with no JS the radios simply do nothing and the
-  links still resolve to the sans-serif files they ship with.
+  The typeface radios pick the FILE, nothing else. They deliberately do not
+  restyle this page: the site is monospace by design, and having a download
+  preference silently reskin the page you are reading is a surprise, not a
+  feature. The only thing that changes is which of the two PDFs the buttons
+  point at.
+
+  Progressive enhancement — with no JS the radios do nothing and the links still
+  resolve to the sans-serif files they ship with.
 #}
 <script>
     (function () {
         var radios = document.querySelectorAll('input[name="cv-font"]');
         if (!radios.length) return;
 
-        function apply(font) {
-            document.documentElement.dataset.cvFont = font;
+        function pointDownloadsAt(font) {
             document.querySelectorAll("[data-cv-pdf]").forEach(function (link) {
                 link.href = link.href.replace(/-(sans|mono)\.pdf$/, "-" + font + ".pdf");
             });
         }
 
-        // ?font= wins over the markup's default, so a shared link keeps its choice.
-        var initial = document.documentElement.dataset.cvFont;
+        // A ?font= link (what render-cv-pdf.mjs loads) arrives with the page
+        // already in that typeface, so match the radio to it rather than let the
+        // two disagree.
+        var rendered = document.documentElement.dataset.cvFont;
         radios.forEach(function (radio) {
-            if (initial && radio.value === initial) radio.checked = true;
+            if (rendered && radio.value === rendered) radio.checked = true;
             radio.addEventListener("change", function () {
-                if (radio.checked) apply(radio.value);
+                if (radio.checked) pointDownloadsAt(radio.value);
             });
         });
-        apply(document.querySelector('input[name="cv-font"]:checked').value);
+        pointDownloadsAt(document.querySelector('input[name="cv-font"]:checked').value);
     })();
 </script>
 {% endblock %}
