@@ -61,5 +61,12 @@ header_nav = [
 [extra.cv]
 github = "https://github.com/maxgfr"
 linkedin = "https://www.linkedin.com/in/maxime-golfier/"
-title_fr = "Ingénieur logiciel · Architecte SI · Freelance"
-title_en = "Software Engineer · IT Architect · Freelance"
+title_fr = "Ingénieur logiciel full-stack freelance — TypeScript / React / Node.js"
+title_en = "Freelance full-stack software engineer — TypeScript / React / Node.js"
+location_fr = "Paris, France · remote ou hybride"
+location_en = "Paris, France · remote or hybrid"
+# An ATS that finds no address in the header often drops the application, so the
+# CV publishes one. Email only, no phone number: /cv is a public page, so what
+# goes here is scrapable — the PDF's URL is public too, hiding it on screen
+# would buy nothing. Everything else still goes through the /contact form.
+email = "redacted@example.com"

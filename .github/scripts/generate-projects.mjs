@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Generates the bilingual "Projects" pages (content/projects.md FR +
 // content/projects.en.md EN) for this Zola site from the live GitHub API, plus
-// the short top-starred selection the CV page embeds (content/cv-projects.md +
-// content/cv-projects.en.md).
+// the leaner variant of that catalogue the CV page embeds (content/cv-projects.md
+// + content/cv-projects.en.md).
 // Zero dependencies (Node 18+ global fetch). Driven by .github/projects.json.
 // Run from .github/workflows/update-projects.yml or locally.
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -53,7 +53,7 @@ const T = {
     labels: { npm: 'npm', marketplace: 'marketplace', demo: 'démo', site: 'site' },
     cvTitle: 'Projets open source',
     cvIntro: (n, s) =>
-      `Mes dépôts les plus suivis, sur ${n} publics totalisant ${s} étoiles — [github.com/maxgfr](https://github.com/maxgfr).`,
+      `Mes ${n} dépôts publics, totalisant ${s} étoiles — [github.com/maxgfr](https://github.com/maxgfr).`,
   },
   en: {
     title: 'Projects',
@@ -63,17 +63,9 @@ const T = {
     labels: { npm: 'npm', marketplace: 'marketplace', demo: 'demo', site: 'site' },
     cvTitle: 'Open-source projects',
     cvIntro: (n, s) =>
-      `My most-starred repositories, out of ${n} public ones totalling ${s} stars — [github.com/maxgfr](https://github.com/maxgfr).`,
+      `My ${n} public repositories, totalling ${s} stars — [github.com/maxgfr](https://github.com/maxgfr).`,
   },
 };
-
-// A CV needs a shortlist, not the full catalogue. It keeps projects.json's
-// theme grouping and category order — that ordering is the curation, so the CV
-// leads with the same work the site does — and takes the most-starred repos
-// within each theme. Capping per category is what stops the first, largest
-// theme from filling the whole section.
-const CV_TOP_N = 12;
-const CV_PER_CATEGORY = 3;
 
 async function gh(path) {
   const res = await fetch(`https://api.github.com${path}`, { headers });
@@ -147,8 +139,8 @@ function buildPage(repos, lang) {
   return `${fm}\n\n${body}`;
 }
 
-// Keep CV bullets short: a résumé is skimmed, not read, and on the one-page
-// variant every wrapped line costs a repo.
+// Keep CV bullets short: a résumé is skimmed, not read, and the list is long —
+// one repo per line keeps the section scannable instead of turning it into prose.
 function clamp(text, max = 78) {
   const t = text.trim();
   if (t.length <= max) return t;
@@ -166,37 +158,42 @@ function cvBullet(repo, lang) {
   return desc ? `${line} — ${clamp(desc)}` : line;
 }
 
-// Walks the categories in projects.json order, keeping the most-starred repos
-// of each, until CV_TOP_N is reached.
-function cvSelection(repos) {
+// The CV lists the whole catalogue: every public repo, grouped by theme in
+// projects.json order — that ordering is the curation, so the CV leads with the
+// same work the site does. Within a theme the most-starred come first, so a
+// reader who stops after two lines has still seen the best of it. Repos in no
+// category land in the fallback theme at the end, exactly as on /projects.
+function cvSelection(repos, lang) {
   const byName = new Map(repos.map((r) => [r.name, r]));
+  const used = new Set();
   const groups = [];
-  let total = 0;
   for (const cat of CONFIG.categories) {
-    if (total >= CV_TOP_N) break;
     const picked = cat.repos
       .map((n) => byName.get(n))
       .filter(Boolean)
-      .sort((a, b) => b.stargazers_count - a.stargazers_count || a.name.localeCompare(b.name))
-      .slice(0, Math.min(CV_PER_CATEGORY, CV_TOP_N - total));
+      .sort((a, b) => b.stargazers_count - a.stargazers_count || a.name.localeCompare(b.name));
     if (!picked.length) continue;
-    groups.push({ cat, picked });
-    total += picked.length;
+    picked.forEach((r) => used.add(r.name));
+    groups.push({ title: lang === 'fr' ? cat.title_fr : cat.title_en, picked });
   }
+  const leftover = repos
+    .filter((r) => !used.has(r.name))
+    .sort((a, b) => b.stargazers_count - a.stargazers_count || a.name.localeCompare(b.name));
+  if (leftover.length) groups.push({ title: CONFIG.fallback[lang], picked: leftover });
   return groups;
 }
 
-// The short open-source section embedded by templates/cv.html. Generated here
-// rather than curated by hand so it survives the daily refresh, and so it needs
-// no change to maxgfr/maxgfr's projects.json (which lives in another repo).
+// The open-source section embedded by templates/cv.html. Generated here rather
+// than curated by hand so it survives the daily refresh, and so it needs no
+// change to maxgfr/maxgfr's projects.json (which lives in another repo).
 // Category headings are `###` so they nest under the CV page's own `##`.
+// Only the full CV renders this: the one-pager hides the section outright.
 function buildCvPage(repos, lang) {
   const t = T[lang];
   const stars = repos.reduce((a, r) => a + r.stargazers_count, 0);
-  const sections = cvSelection(repos).map(({ cat, picked }) => {
-    const title = lang === 'fr' ? cat.title_fr : cat.title_en;
-    return `### ${title}\n\n${picked.map((r) => cvBullet(r, lang)).join('\n')}`;
-  });
+  const sections = cvSelection(repos, lang).map(
+    ({ title, picked }) => `### ${title}\n\n${picked.map((r) => cvBullet(r, lang)).join('\n')}`
+  );
   const fm = `+++\ntitle = "${t.cvTitle}"\n+++`;
   const body = [t.cvIntro(repos.length, stars), sections.join('\n\n'), ''].join('\n\n');
   return `${fm}\n\n${body}`;
@@ -210,9 +207,7 @@ async function main() {
   writeFileSync(join(REPO_ROOT, 'content', 'cv-projects.md'), buildCvPage(repos, 'fr'));
   writeFileSync(join(REPO_ROOT, 'content', 'cv-projects.en.md'), buildCvPage(repos, 'en'));
   const src = process.env.PROJECTS_CONFIG_FILE || `${CONFIG_REPO}/${CONFIG_PATH}`;
-  console.log(
-    `Generated projects pages: ${repos.length} repos, CV selection: top ${Math.min(CV_TOP_N, repos.length)} (config: ${src}).`
-  );
+  console.log(`Generated projects pages: ${repos.length} repos, CV included (config: ${src}).`);
 }
 
 main().catch((e) => {

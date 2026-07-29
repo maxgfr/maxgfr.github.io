@@ -22,7 +22,7 @@ Une immersion internationale enrichissant ma perspective technique et culturelle
 
 ## Université du Québec à Chicoutimi (UQAC)
 
-**Baccalauréat Informatique *(grade : 4.0/4.3 - A)*** | 2017 | Chicoutimi, Canada
+**Baccalauréat en informatique (équivalent licence) *(grade : 4.0/4.3 - A)*** | 2017 | Chicoutimi, Canada
 
 Une expérience canadienne intense qui m'a permis de perfectionner mes compétences en informatique tout en découvrant de nouvelles approches pédagogiques.
 

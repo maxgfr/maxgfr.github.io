@@ -47,7 +47,7 @@ Création d'un réseau social pour aider les créateurs de contenus digitaux à 
 
 ## Architecte IT Junior @ IBM France
 
-**2017-11 – 2020-09** | Paris, France
+**2017-11 – 2020-09** | Alternance | Paris, France
 
 Contribution à des projets clients en avant-vente dans le domaine du cloud, de l'intelligence artificielle et de la blockchain.
 

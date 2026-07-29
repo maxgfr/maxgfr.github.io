@@ -2,25 +2,77 @@
  *
  * This file HIDES, it never rewrites: the compact CV is the same DOM as the
  * full one, so the two can never disagree about a date or a job title. What is
- * dropped is prose and detail, not facts — every role, degree and language is
- * still there, reduced to its heading, period and technologies.
+ * dropped is detail, not facts — every role, degree and language is still
+ * there, reduced to its heading, period, one-line summary and technologies.
+ *
+ * Everything here is also constrained by ATS parsing: single column, no
+ * generated text carrying information, no icons standing in for words. A
+ * two-column block reads fine on paper and comes out interleaved in
+ * `pdftotext`, which is what a résumé parser sees.
  *
  * The `:has()` selectors below distinguish the two kinds of paragraph the
  * source Markdown produces:
  *   <p><strong>2017-11 – 2020-09</strong> | Paris</p>   → period line, KEPT
  *   <p><strong>Compétences :</strong> Kubernetes, …</p> → tech line,   KEPT
- *   <p>Contribution à des projets clients…</p>          → prose,       DROPPED
+ *   <p>Contribution à des projets clients…</p>          → prose,       KEPT here
  * Both kept forms open with a <strong>; prose does not.
  */
 
 .cv-compact .cv-body ul {
-  margin-block: 0.2rem;
+  margin-block: 0.25rem;
 }
 
-/* --- Experience: keep headings, periods and technologies; drop narrative --- */
-.cv-compact #cv-experience .cv-entry > p:not(:has(> strong:first-child)),
+/* --- Experience: keep headings, periods, the one-line summary of the role and
+       the technologies; drop only the detailed achievement bullets. The summary
+       is what a recruiter actually reads and what an ATS indexes for context —
+       the bullets are what the full CV is for. --- */
 .cv-compact #cv-experience .cv-entry > ul {
   display: none;
+}
+
+/* The two oldest entries — a 2017 research internship and a 2016 tutoring job —
+   are down to their title and dates. For someone eight years in they are
+   corroboration, not argument, and four lines each is the single largest saving
+   available before the page starts costing readability. They stay in full on
+   the full CV. */
+.cv-compact #cv-experience .cv-entry:nth-last-child(-n + 2) > p:not(:first-of-type) {
+  display: none;
+}
+
+/* The "Freelance @ home office" umbrella blurb ("j'ai eu l'opportunité de
+   travailler sur une variété de projets passionnants…") sits above the actual
+   missions and says nothing they do not. Second paragraph of the first entry:
+   the first is the period line. */
+.cv-compact #cv-experience .cv-entry:first-child > p:nth-of-type(2) {
+  display: none;
+}
+
+/* The per-role "Compétences :" line — always the last paragraph of an entry,
+   after the bullets. On the one-pager #cv-stack already lists every one of
+   these technologies under proper ATS category labels, so repeating them six
+   times costs ~7 lines to say nothing new. The full CV keeps them, where they
+   do useful work tying each stack to its mission. */
+.cv-compact #cv-experience .cv-entry > p:last-of-type {
+  display: none;
+}
+
+/* Collapse each "job title / period" pair onto one line — seven of them across
+   the section, so seven lines back. Same heading + following-<p> shape that
+   works for education and languages below; the forced newline on ::after is
+   what keeps the next role from running into this one, and it goes on the <p>
+   because cv.css drops every heading's ::before and ::after. */
+.cv-compact #cv-experience .cv-entry :is(h3, h4),
+.cv-compact #cv-experience .cv-entry :is(h3, h4) + p {
+  display: inline;
+}
+
+.cv-compact #cv-experience .cv-entry :is(h3, h4) + p::before {
+  content: " — ";
+}
+
+.cv-compact #cv-experience .cv-entry :is(h3, h4) + p::after {
+  content: "\A";
+  white-space: pre;
 }
 
 /* --- Education: keep school + degree line, drop the commentary --- */
@@ -28,116 +80,157 @@
   display: none;
 }
 
-/* "Ce que mon parcours m'a apporté" — a takeaways list, not a credential. */
+/* "Ce que mon parcours m'a apporté" — a takeaways list, not a credential.
+   Entry 2 is the Prague summer school: a two-week exchange, listed among three
+   actual degrees, reads as padding on a one-pager. Both stay on the full CV. */
+.cv-compact #cv-education .cv-entry:nth-child(2),
 .cv-compact #cv-education .cv-entry:last-child {
   display: none;
 }
 
-/* --- Skills: keep the four strengths and the languages; drop the intro
-       paragraph and the hackathon write-ups (they are the longest block on the
-       page and read as anecdote on a one-pager). --- */
-.cv-compact #cv-skills .cv-entry:nth-child(1),
-.cv-compact #cv-skills .cv-entry:nth-child(3) {
-  display: none;
-}
-
-/* Languages: collapse each "🇫🇷 Français / Langue maternelle" pair onto one line. */
-.cv-compact #cv-skills .cv-entry:last-child h4 {
+/* Collapse "school / degree | dates | city" onto one line, as the Langues block
+   below does. A degree is a single fact; giving it two lines was spending the
+   page on layout rather than on content. */
+.cv-compact #cv-education .cv-entry h3,
+.cv-compact #cv-education .cv-entry h3 + p {
   display: inline;
 }
 
+.cv-compact #cv-education .cv-entry h3 + p::before {
+  content: " — ";
+}
+
+/* --- Skills: this section now trails the dedicated #cv-stack block, so it is
+       down to the awards and the languages. Dropped: the "skills are proven by
+       practice" intro (a statement of taste), and "Ce que je fais le mieux",
+       whose four claims the Profil paragraph already makes in prose. --- */
+.cv-compact #cv-skills .cv-entry:nth-child(1),
+.cv-compact #cv-skills .cv-entry:nth-child(2) {
+  display: none;
+}
+
+/* Awards (entry 3): each is `#### place - event` + a "Défi" line + a "Solution"
+   line. The headings carry the whole claim — a rank, a named hackathon — so on
+   one page they stand alone and both paragraphs go. Positional, like the rule
+   above: `:has(> h3 + h4)` would also catch the Langues entry. */
+.cv-compact #cv-skills .cv-entry:nth-child(3) > p {
+  display: none;
+}
+
+/* Awards and languages each collapse to a single "Label — a · b · c" line.
+   Between them they are three facts; laid out as blocks they were spending six
+   heading lines to say so. All the generated content here is punctuation, so a
+   parser that strips ::before/::after still reads every word.
+
+   A heading collapses cleanly against a following <p> — that pair shares a line
+   box and `pdftotext` reads it as one line. Collapsing sibling headings against
+   each other does NOT: suCSS gives headings their own line-height, the emoji
+   takes a fallback font with its own baseline, and the run comes out of the PDF
+   in the wrong order. That is precisely the ATS failure this file exists to
+   avoid, so the three awards keep one line each.
+
+   Separators go on ::after, never ::before: cv.css kills every heading ::before
+   with `content: none !important` to strip suCSS's '# ' prefix, and that would
+   take ours with it. */
+.cv-compact #cv-skills .cv-entry:last-child > h3,
+.cv-compact #cv-skills .cv-entry:last-child h4,
 .cv-compact #cv-skills .cv-entry:last-child h4 + p {
   display: inline;
 }
 
-.cv-compact #cv-skills .cv-entry:last-child h4 + p::before {
+.cv-compact #cv-skills .cv-entry:last-child > h3::after,
+.cv-compact #cv-skills .cv-entry:last-child h4::after {
   content: " — ";
 }
 
-.cv-compact #cv-skills .cv-entry:last-child h4 + p::after {
-  content: "\A";
-  white-space: pre;
+.cv-compact #cv-skills .cv-entry:last-child p:not(:last-of-type)::after {
+  content: " · ";
 }
 
-/* --- Open source: keep the first two themes only. The generator emits one
-       `### theme` + `<ul>` pair per category, in projects.json order, so the
-       leading pairs are the work worth leading with. The "63 repos / 299 stars"
-       preamble goes too — the GitHub link in the header implies it. --- */
-.cv-compact #cv-projects .cv-body > p,
-.cv-compact #cv-projects h3:nth-of-type(n + 3),
-.cv-compact #cv-projects ul:nth-of-type(n + 3),
-.cv-compact #cv-projects li:nth-child(n + 3) {
+/* --- Open source: dropped outright. Sixty-three repositories cannot be
+       summarised into a one-pager without becoming a wall of names, and the
+       GitHub link in the header takes a reader straight to the real thing. The
+       full CV lists every one of them. --- */
+.cv-compact #cv-projects {
   display: none;
 }
 
 @media print {
-  /* Tighter than the full CV everywhere: this has to land inside one page. */
+  /* Tighter than the full CV, but not cramped: dropping the open-source block
+     bought back the room to keep this readable at close to normal leading. */
   html,
   body {
-    font-size: 8.2pt;
-    line-height: 1.2;
-  }
-
-  /* The two genuinely list-shaped blocks — four strengths, five repos — waste
-     most of their width on a one-pager. Two columns halves their height. */
-  .cv-compact #cv-skills .cv-entry ul,
-  .cv-compact #cv-projects ul {
-    column-count: 2;
-    column-gap: 6mm;
-  }
-
-  .cv-compact #cv-skills .cv-entry li,
-  .cv-compact #cv-projects li {
-    break-inside: avoid;
+    font-size: 8.6pt;
+    line-height: 1.28;
   }
 
   @page {
-    margin: 9mm 11mm;
+    margin: 10mm 11mm;
   }
 
+  /* suCSS lays the body out as `1fr min(47rem, 90%) 1fr` and drops content in
+     the middle column. At this font size 47rem is ~146mm inside 188mm of
+     printable width, so a fifth of every line was being thrown away as gutter —
+     which on a one-pager is paid for in wrapped lines, not whitespace.
+     Widening the middle column is NOT the same as `body { display: block }`,
+     which the note in cv.css warns against: the grid stays, the columns either
+     side just go to zero. One column, so it costs nothing in ATS parsing. */
+  body {
+    grid-template-columns: 0 100% 0;
+  }
+
+  /* No `column-count` anywhere: see the ATS note at the top of this file. */
+
   .cv-header h1 {
-    font-size: 16pt;
+    font-size: 17pt;
   }
 
   .cv-title {
-    font-size: 9.5pt;
-    margin-bottom: 0.25rem;
+    font-size: 9.8pt;
+    margin-bottom: 0.3rem;
   }
 
   .cv-contact {
-    font-size: 8pt;
+    font-size: 8.2pt;
+    gap: 0.15rem 0.8rem;
+  }
+
+  .cv-header {
+    margin-bottom: 0.55rem;
   }
 
   .cv-section {
-    margin-top: 0.6rem;
+    margin-top: 0.62rem;
   }
 
   .cv-section > h2 {
-    font-size: 10.5pt;
-    margin-bottom: 0.25rem;
-    padding-bottom: 0.1rem;
+    font-size: 10.8pt;
+    margin-bottom: 0.26rem;
+    padding-bottom: 0.12rem;
   }
 
   .cv-body h3 {
-    font-size: 9.4pt;
+    font-size: 9.6pt;
   }
 
   .cv-body h4 {
-    font-size: 8.8pt;
+    font-size: 9pt;
   }
 
   .cv-body p,
   .cv-body li {
-    margin: 0.05rem 0;
+    margin: 0.12rem 0;
   }
 
   .cv-entry + .cv-entry {
-    padding-top: 0.16rem;
-    margin-top: 0.16rem;
+    padding-top: 0.22rem;
+    margin-top: 0.22rem;
   }
 
-  .cv-header {
-    margin-bottom: 0.5rem;
+  /* The stack block is nine label + list lines; a little extra leading between
+     them is what stops it reading as a paragraph of commas. */
+  #cv-stack .cv-body p {
+    margin: 0.18rem 0;
   }
 
   /* On one page there is nothing to break across, and forcing atomicity here

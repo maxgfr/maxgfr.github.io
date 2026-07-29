@@ -38,9 +38,11 @@
     <header class="cv-header">
         <h1>{{ config.extra.author }}</h1>
         <p class="cv-title">{% if en %}{{ cv.title_en }}{% else %}{{ cv.title_fr }}{% endif %}</p>
-        {# No email here on purpose: the site does not publish one either
-           (contact goes through the Formspree form on /contact). #}
+        {# Plain text, no icons: an ATS reading the PDF has to find a location and
+           an email as words. Email but no phone — see the note in config.toml. #}
         <ul class="cv-contact">
+            <li>{% if en %}{{ cv.location_en }}{% else %}{{ cv.location_fr }}{% endif %}</li>
+            <li><a href="mailto:{{ cv.email }}">{{ cv.email }}</a></li>
             <li><a href="{{ cv.github }}">github.com/maxgfr</a></li>
             <li><a href="{{ cv.linkedin }}">linkedin.com/in/maxime-golfier</a></li>
             <li><a href="{{ config.base_url }}">maxgfr.github.io</a></li>
@@ -68,6 +70,21 @@
             </a>
         </p>
     </header>
+
+    {#
+      Profile and technical stack lead, because that is the order a recruiter
+      and an ATS both read in: who this is, then the keywords, then the proof.
+      These two pages exist only for the CV (like cv-projects) — they are not in
+      config.extra.header_nav, so they add no site navigation. Single block each,
+      no `---` separators to split on.
+    #}
+    {% for slug in ["cv-profile", "cv-stack"] %}
+    {% set src = get_page(path=slug ~ sfx ~ ".md") %}
+    <section class="cv-section" id="{{ slug }}">
+        <h2>{{ src.title }}</h2>
+        <div class="cv-body">{{ src.content | safe }}</div>
+    </section>
+    {% endfor %}
 
     {#
       Each source page separates its entries with a Markdown `---`, which

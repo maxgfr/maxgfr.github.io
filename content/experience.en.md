@@ -47,7 +47,7 @@ Creation of a social network to help digital content creators generate revenue.
 
 ## Junior IT Architect @ IBM France
 
-**2017-11 – 2020-09** | Paris, France
+**2017-11 – 2020-09** | Apprenticeship | Paris, France
 
 Contribution to client projects in pre-sales in the fields of cloud, artificial intelligence, and blockchain.
 
