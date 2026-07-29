@@ -109,6 +109,16 @@
   display: none;
 }
 
+/* Hiding those two leaves the awards as the first thing in the section, but it
+   is still an `.cv-entry + .cv-entry` to the selector, so it kept the separator
+   rule meant to divide one entry from the previous — a hairline and a gap
+   directly under the section heading, which reads as a rendering fault. */
+.cv-compact #cv-skills .cv-entry:nth-child(3) {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 /* Awards (entry 3): each is `#### place - event` + a "Défi" line + a "Solution"
    line. The headings carry the whole claim — a rank, a named hackathon — so on
    one page they stand alone and both paragraphs go. Positional, like the rule
@@ -161,7 +171,7 @@
   html,
   body {
     font-size: 8.6pt;
-    line-height: 1.28;
+    line-height: 1.33;
   }
 
   @page {
@@ -196,16 +206,16 @@
   }
 
   .cv-header {
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.7rem;
   }
 
   .cv-section {
-    margin-top: 0.62rem;
+    margin-top: 0.78rem;
   }
 
   .cv-section > h2 {
     font-size: 10.8pt;
-    margin-bottom: 0.26rem;
+    margin-bottom: 0.32rem;
     padding-bottom: 0.12rem;
   }
 
@@ -219,18 +229,18 @@
 
   .cv-body p,
   .cv-body li {
-    margin: 0.12rem 0;
+    margin: 0.15rem 0;
   }
 
   .cv-entry + .cv-entry {
-    padding-top: 0.22rem;
-    margin-top: 0.22rem;
+    padding-top: 0.28rem;
+    margin-top: 0.28rem;
   }
 
   /* The stack block is nine label + list lines; a little extra leading between
      them is what stops it reading as a paragraph of commas. */
   #cv-stack .cv-body p {
-    margin: 0.18rem 0;
+    margin: 0.22rem 0;
   }
 
   /* On one page there is nothing to break across, and forcing atomicity here

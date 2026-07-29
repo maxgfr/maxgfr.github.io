@@ -66,7 +66,15 @@ title_en = "Freelance full-stack software engineer — TypeScript / React / Node
 location_fr = "Paris, France · remote ou hybride"
 location_en = "Paris, France · remote or hybrid"
 # An ATS that finds no address in the header often drops the application, so the
-# CV publishes one. Email only, no phone number: /cv is a public page, so what
-# goes here is scrapable — the PDF's URL is public too, hiding it on screen
-# would buy nothing. Everything else still goes through the /contact form.
-email = "redacted@example.com"
+# PDF carries an email. The website does not: templates/cv.html renders this
+# entry print-only, so /cv shows no address on screen and contact still goes
+# through the /contact form.
+#
+# Stored XOR-obfuscated (key below), never in clear. That keeps a plain address
+# out of three places at once: this file, which is public on GitHub; the served
+# HTML, where `\S+@\S+` is all a bulk harvester looks for; and the site's search
+# index. It is a speed bump, not protection — anything that runs the page's JS
+# can still read it. Regenerate with:
+#   node -e '\''const e="you@example.com",k="cv";console.log([...e].map((c,i)=>(c.charCodeAt(0)^k.charCodeAt(i%k.length)).toString(16).padStart(2,"0")).join(""))'\''
+email_key = "cv"
+email_obfuscated = "0e171b110c1a051f060423110e170a1a4d150c1b"

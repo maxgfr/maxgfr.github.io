@@ -42,7 +42,7 @@
            an email as words. Email but no phone — see the note in config.toml. #}
         <ul class="cv-contact">
             <li>{% if en %}{{ cv.location_en }}{% else %}{{ cv.location_fr }}{% endif %}</li>
-            <li><a href="mailto:{{ cv.email }}">{{ cv.email }}</a></li>
+            <li class="cv-email" data-cv-email="{{ cv.email_obfuscated }}"></li>
             <li><a href="{{ cv.github }}">github.com/maxgfr</a></li>
             <li><a href="{{ cv.linkedin }}">linkedin.com/in/maxime-golfier</a></li>
             <li><a href="{{ config.base_url }}">maxgfr.github.io</a></li>
@@ -117,4 +117,34 @@
         <div class="cv-body">{{ oss.content | safe }}</div>
     </section>
 </article>
+
+{#
+  The address is assembled here rather than shipped in the markup: see the note
+  in config.toml. The element it fills is print-only (cv.css), so the address
+  reaches the PDF — which is the document people actually file — without ever
+  appearing on the page a visitor or a crawler sees.
+
+  Inline and synchronous on purpose: headless Chrome prints once the page is
+  parsed, so a deferred or external script could lose the race and ship a PDF
+  with an empty contact line.
+#}
+<script>
+    (function () {
+        var key = "{{ cv.email_key }}";
+        document.querySelectorAll("[data-cv-email]").forEach(function (el) {
+            var pairs = (el.getAttribute("data-cv-email") || "").match(/../g);
+            if (!pairs) return;
+            var address = pairs
+                .map(function (hex, i) {
+                    return String.fromCharCode(parseInt(hex, 16) ^ key.charCodeAt(i % key.length));
+                })
+                .join("");
+            var link = document.createElement("a");
+            link.href = "mailto:" + address;
+            link.textContent = address;
+            el.appendChild(link);
+            el.removeAttribute("data-cv-email");
+        });
+    })();
+</script>
 {% endblock %}

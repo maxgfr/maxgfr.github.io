@@ -28,6 +28,14 @@
   font-size: 0.95rem;
 }
 
+/* The email exists for the PDF only — an ATS that finds no address in the header
+   tends to drop the application. On screen the site publishes none: /contact is
+   the way in. Hidden here rather than omitted from the markup so that the same
+   DOM still produces both artefacts. */
+.cv-email {
+  display: none;
+}
+
 /* suCSS gives every `ul li` a '» ' marker; the contact line is a list only for
    semantics, so silence it in both media. */
 .cv-contact li {
@@ -184,6 +192,11 @@
     gap: 0.2rem 0.9rem;
     font-size: 9pt;
     margin-bottom: 0;
+  }
+
+  /* Print is the whole point of this element — see .cv-email above. */
+  .cv-email {
+    display: list-item;
   }
 
   .cv-section {
