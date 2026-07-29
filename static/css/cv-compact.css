@@ -184,7 +184,7 @@
   }
 
   @page {
-    margin: 10mm 11mm;
+    margin: 8mm 9mm;
   }
 
   /* suCSS lays the body out as `1fr min(47rem, 90%) 1fr` and drops content in
@@ -206,7 +206,7 @@
 
   .cv-title {
     font-size: 9.8pt;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.22rem;
   }
 
   .cv-contact {
@@ -215,17 +215,17 @@
   }
 
   .cv-header {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.55rem;
   }
 
   .cv-section {
-    margin-top: 0.78rem;
+    margin-top: 1.35rem;
   }
 
   .cv-section > h2 {
     font-size: 10.8pt;
-    margin-bottom: 0.32rem;
-    padding-bottom: 0.12rem;
+    margin-bottom: 0.26rem;
+    padding-bottom: 0.1rem;
   }
 
   .cv-body h3 {
@@ -238,18 +238,18 @@
 
   .cv-body p,
   .cv-body li {
-    margin: 0.15rem 0;
+    margin: 0.1rem 0;
   }
 
   .cv-entry + .cv-entry {
-    padding-top: 0.28rem;
-    margin-top: 0.28rem;
+    padding-top: 0.22rem;
+    margin-top: 0.22rem;
   }
 
   /* The stack block is nine label + list lines; a little extra leading between
      them is what stops it reading as a paragraph of commas. */
   #cv-stack .cv-body p {
-    margin: 0.22rem 0;
+    margin: 0.16rem 0;
   }
 
   /* On one page there is nothing to break across, and forcing atomicity here
