@@ -4,18 +4,18 @@ title = "Compétences techniques"
 
 **Langages :** TypeScript, JavaScript (ES6+), Python, Java, Rust, PHP, C, HTML5, CSS3, SQL, Bash / Shell
 
-**Front-end :** React, Next.js, Angular, architecture en composants, design systems, DSFR (Système de Design de l'État), accessibilité RGAA / WCAG, responsive design
+**Front-end :** React, Next.js, Angular, Redux, Zustand, DSFR (Système de Design de l'État), accessibilité RGAA / WCAG
 
-**Back-end :** Node.js, NestJS, Laravel, API REST, GraphQL, Prisma, Hasura, Strapi, middlewares, authentification
+**Back-end :** Node.js, NestJS, Express, Laravel, API REST, GraphQL, Prisma, Hasura, Strapi, CLI Node & Rust
 
-**Mobile :** React Native, Ionic, Android, développement cross-platform
+**Mobile :** React Native, Expo, Ionic, Android, iOS
 
-**Tests & qualité :** Jest, Cypress, Testing Library, Storybook, TDD, tests unitaires, tests d'intégration, tests end-to-end, revue de code
+**Tests & qualité :** Jest, Cypress, Testing Library, Storybook, TDD, sécurité applicative (SAST)
 
-**Bases de données :** PostgreSQL, MySQL, MongoDB, Firestore, modélisation de données
+**Bases de données :** PostgreSQL, MySQL, MongoDB, Firestore
 
-**Cloud & DevOps :** Docker, Kubernetes, GitHub Actions, CI/CD, AWS, IBM Cloud, OVH, conteneurisation
+**Cloud & DevOps :** Docker, Kubernetes, GitHub Actions, CI/CD, AWS, IBM Cloud, OVH, publication npm & Homebrew
 
-**Data & IA :** intégration de LLM, RAG (Retrieval-Augmented Generation), TensorFlow, Keras, Watson
+**Data & IA :** agents IA (Claude Code, MCP, skills d'agent), intégration de LLM, RAG (Retrieval-Augmented Generation), TensorFlow, Watson
 
-**Méthodologies :** Agile / Scrum, TDD, design patterns, UML, conception d'architecture, Git, GitFlow
+**Méthodologies :** Agile / Scrum, TDD, design patterns, UML, Git / GitFlow, open source (~150 dépôts)

@@ -4,18 +4,18 @@ title = "Technical skills"
 
 **Languages:** TypeScript, JavaScript (ES6+), Python, Java, Rust, PHP, C, HTML5, CSS3, SQL, Bash / Shell
 
-**Front-end:** React, Next.js, Angular, component architecture, design systems, DSFR (French State Design System), RGAA / WCAG accessibility, responsive design
+**Front-end:** React, Next.js, Angular, Redux, Zustand, DSFR (French State Design System), RGAA / WCAG accessibility
 
-**Back-end:** Node.js, NestJS, Laravel, REST APIs, GraphQL, Prisma, Hasura, Strapi, middleware, authentication
+**Back-end:** Node.js, NestJS, Express, Laravel, REST APIs, GraphQL, Prisma, Hasura, Strapi, Node & Rust CLIs
 
-**Mobile:** React Native, Ionic, Android, cross-platform development
+**Mobile:** React Native, Expo, Ionic, Android, iOS
 
-**Testing & quality:** Jest, Cypress, Testing Library, Storybook, TDD, unit testing, integration testing, end-to-end testing, code review
+**Testing & quality:** Jest, Cypress, Testing Library, Storybook, TDD, application security (SAST)
 
-**Databases:** PostgreSQL, MySQL, MongoDB, Firestore, data modelling
+**Databases:** PostgreSQL, MySQL, MongoDB, Firestore
 
-**Cloud & DevOps:** Docker, Kubernetes, GitHub Actions, CI/CD, AWS, IBM Cloud, OVH, containerisation
+**Cloud & DevOps:** Docker, Kubernetes, GitHub Actions, CI/CD, AWS, IBM Cloud, OVH, npm & Homebrew publishing
 
-**Data & AI:** LLM integration, RAG (Retrieval-Augmented Generation), TensorFlow, Keras, Watson
+**Data & AI:** AI agents (Claude Code, MCP, agent skills), LLM integration, RAG (Retrieval-Augmented Generation), TensorFlow, Watson
 
-**Methodologies:** Agile / Scrum, TDD, design patterns, UML, architecture design, Git, GitFlow
+**Methodologies:** Agile / Scrum, TDD, design patterns, UML, Git / GitFlow, open source (~150 public repos)
