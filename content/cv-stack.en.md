@@ -2,7 +2,7 @@
 title = "Technical skills"
 +++
 
-**Languages:** TypeScript, JavaScript (ES6+), Rust, Python, Java, PHP, C, HTML5, CSS3, SQL, Bash / Shell
+**Programming languages:** TypeScript, JavaScript (ES6+), Rust, Python, Java, PHP, C, HTML5, CSS3, SQL, Bash / Shell
 
 **Front-end:** React, Next.js, Angular, Redux, Zustand, DSFR (French State Design System), RGAA / WCAG
 

@@ -147,10 +147,18 @@
       which is what we want for the long roles. It is also what lets the compact
       variant address entries individually (`.cv-entry:nth-of-type(n)`).
     #}
+    {#
+      `extra.cv_title` lets a page be called one thing on the site and another
+      on the CV. /skills is "Compétences" in the navigation, but on the CV that
+      collides with "Compétences techniques" — two sections a résumé parser
+      cannot tell apart, and in English it is worse: the technical block's
+      "Languages" row and the spoken-languages block would both be "Languages".
+      The override is the section heading only; the page keeps its own title.
+    #}
     {% for slug in ["experience", "education", "skills"] %}
     {% set src = get_page(path=slug ~ sfx ~ ".md") %}
     <section class="cv-section" id="cv-{{ slug }}">
-        <h2>{{ src.title }}</h2>
+        <h2>{{ src.extra.cv_title | default(value=src.title) }}</h2>
         <div class="cv-body">
             {% set shifted = src.content | replace(from="<h3", to="<h4") | replace(from="</h3>", to="</h4>") | replace(from="<h2", to="<h3") | replace(from="</h2>", to="</h3>") %}
             {% for entry in shifted | replace(from="<hr />", to="<hr>") | split(pat="<hr>") %}

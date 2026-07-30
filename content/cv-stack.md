@@ -2,7 +2,7 @@
 title = "Compétences techniques"
 +++
 
-**Langages :** TypeScript, JavaScript (ES6+), Rust, Python, Java, PHP, C, HTML5, CSS3, SQL, Bash / Shell
+**Langages de programmation :** TypeScript, JavaScript (ES6+), Rust, Python, Java, PHP, C, HTML5, CSS3, SQL, Bash / Shell
 
 **Front-end :** React, Next.js, Angular, Redux, Zustand, DSFR (Système de Design de l'État), RGAA / WCAG
 

@@ -6,7 +6,7 @@ title = "Education"
 
 ## Isep, école d'ingénieurs du numérique
 
-**Engineering Degree in Computer Science *(graduated with high honors)*** | 2017 – 2020 | Paris, France
+**Engineering Degree in Computer Science, majoring in Information Systems Architecture *(graduated with high honors)*** | 2017-09 – 2020-06 | Paris, France
 
 Specialization in Information Systems Architecture. A program that allowed me to develop a global vision of information systems, from design to implementation, including project management and technological innovation.
 
@@ -22,7 +22,7 @@ An international immersion that enriched my technical and cultural perspective.
 
 ## Université du Québec à Chicoutimi (UQAC)
 
-**Bachelor in Computer Science *(grade: 4.0/4.3 - A)*** | 2017 | Chicoutimi, Canada
+**Bachelor in Computer Science *(grade: 4.0/4.3 - A)*** | 2017-01 – 2017-06 | Chicoutimi, Canada
 
 An intense Canadian experience that allowed me to perfect my computer science skills while discovering new pedagogical approaches.
 
@@ -30,7 +30,7 @@ An intense Canadian experience that allowed me to perfect my computer science sk
 
 ## Université d'Auvergne
 
-**DUT in Computer Science** | 2015 – 2017 | Clermont-Ferrand, France
+**DUT in Computer Science** | 2015-09 – 2017-06 | Clermont-Ferrand, France
 
 My first steps in computer science, where I developed the solid foundations that allowed me to pursue engineering studies.
 

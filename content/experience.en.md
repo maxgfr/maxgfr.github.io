@@ -8,13 +8,13 @@ title = "Professional experience"
 
 **2020-09 – Present** | Remote
 
-As a freelance developer, I've had the opportunity to work on a variety of exciting projects, ranging from web development to software architecture design for startups and the public sector.
+Web development and software architecture assignments for startups and for the public sector.
 
 ### Full stack developer @ beta.gouv.fr
 
 **2021-09 – Present**
 
-Development and maintenance of the Labor Code website, as part of a public service product team.
+Code du travail numérique (code.travail.gouv.fr): full migration to the DSFR, RGAA accessibility taken to 100%, legal simulators built with TDD, LLM integration grounded in Légifrance.
 
 - Design and implementation of front-end and back-end features in TypeScript and Next.js, respecting public digital standards (state design system DSFR)
 - Complete migration of the site to DSFR (Design System de l'État), with component recovery, UI harmonization, and maintenance of accessibility and performance requirements
@@ -33,7 +33,7 @@ Development and maintenance of the Labor Code website, as part of a public servi
 
 **2018-06 – 2022-12**
 
-Creation of a social network to help digital content creators generate revenue.
+Monetisation social network for content creators: full technical architecture, crowdfunding, peer-to-peer donations and sponsorship, product and roadmap ownership.
 
 - Design of the platform's technical architecture (product, infrastructure, security)
 - Development of crowdfunding, donation, and peer-to-peer sponsorship tools
@@ -49,7 +49,7 @@ Creation of a social network to help digital content creators generate revenue.
 
 **2017-11 – 2020-09** | Apprenticeship | Paris, France
 
-Contribution to client projects in pre-sales in the fields of cloud, artificial intelligence, and blockchain.
+Cloud, AI and blockchain pre-sales: containerised client prototypes on Kubernetes (IBM Cloud), Watson and Hyperledger, on Industry 4.0 topics.
 
 - Development of prototypes to demonstrate the relevance of IBM solutions to clients' business needs
 - Work on innovative topics like Industry 4.0 using the latest technologies: AI (Watson), blockchain (Hyperledger), containerized applications (Kubernetes), IoT (Watson IoT)
@@ -64,7 +64,7 @@ Contribution to client projects in pre-sales in the fields of cloud, artificial 
 
 **2018-01 – 2018-06**
 
-Development of an application helping high school students orient themselves after the baccalaureate thanks to an innovative matching system between students from business or engineering schools and high school students.
+Post-baccalaureate guidance app: matching high-school students with business and engineering school students.
 
 **Skills:** PHP, Laravel, AWS, CI /CD, MySQL
 
@@ -74,7 +74,7 @@ Development of an application helping high school students orient themselves aft
 
 **2017-05 – 2017-07** | Aberdeen, Scotland
 
-Research internship in the field of Data Science and artificial intelligence.
+Activity recognition with neural networks (CNN, LSTM) on mobile sensors, within a European lower-back-pain monitoring project.
 
 - Improvement of activity recognition algorithms used by mobile or smartwatch sensors
 - Work with a machine learning research team to create neural networks (CNN and LSTM) used by the Android mobile application

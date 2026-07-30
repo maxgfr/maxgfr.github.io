@@ -100,25 +100,6 @@
   content: " — ";
 }
 
-/* --- Skills: this section now trails the dedicated #cv-stack block, so it is
-       down to the awards and the languages. Dropped: the "skills are proven by
-       practice" intro (a statement of taste), and "Ce que je fais le mieux",
-       whose four claims the Profil paragraph already makes in prose. --- */
-.cv-compact #cv-skills .cv-entry:nth-child(1),
-.cv-compact #cv-skills .cv-entry:nth-child(2) {
-  display: none;
-}
-
-/* Hiding those two leaves the awards as the first thing in the section, but it
-   is still an `.cv-entry + .cv-entry` to the selector, so it kept the separator
-   rule meant to divide one entry from the previous — a hairline and a gap
-   directly under the section heading, which reads as a rendering fault. */
-.cv-compact #cv-skills .cv-entry:nth-child(3) {
-  border-top: none;
-  margin-top: 0;
-  padding-top: 0;
-}
-
 /* Awards (entry 3): each is `#### place - event` + a "Défi" line + a "Solution"
    line. The headings carry the whole claim — a rank, a named hackathon — so on
    one page they stand alone and both paragraphs go. Positional, like the rule

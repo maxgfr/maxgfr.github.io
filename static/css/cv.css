@@ -183,6 +183,29 @@
   display: none;
 }
 
+/* /skills opens with two blocks written for a visitor, not for a CV: the
+   "skills are proven by practice" intro (a statement of taste, pointing at a
+   GitHub link the header already carries) and "Ce que je fais le mieux", whose
+   four claims the Profil paragraph makes in prose a few centimetres above.
+   Both variants drop them, which is what lets this section be titled for what
+   it actually carries — awards and languages — instead of colliding with
+   "Compétences techniques" under a second, vaguer "Compétences". The website
+   page keeps everything; only the CV render is trimmed. */
+#cv-skills .cv-entry:nth-child(1),
+#cv-skills .cv-entry:nth-child(2) {
+  display: none;
+}
+
+/* That leaves the awards first in the section, but they are still an
+   `.cv-entry + .cv-entry` to the selector, so they kept the separator meant to
+   divide one entry from the previous — a hairline and a gap directly under the
+   section heading, which reads as a rendering fault. */
+#cv-skills .cv-entry:nth-child(3) {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 /* ---------- Print / PDF ---------- */
 
 @page {

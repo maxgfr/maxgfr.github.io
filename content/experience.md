@@ -8,13 +8,13 @@ title = "Expérience professionnelle"
 
 **2020-09 – Présent** | Remote
 
-En tant que développeur freelance, j'ai eu l'opportunité de travailler sur une variété de projets passionnants, allant du développement web à la conception d'architectures logicielles pour des startups et le secteur public.
+Missions de développement web et d'architecture logicielle pour des startups et pour le secteur public.
 
 ### Développeur full stack @ beta.gouv.fr
 
 **2021-09 – Présent**
 
-Développement et maintenance du site web du Code du travail numérique, au sein d'une équipe produit du service public.
+Code du travail numérique (code.travail.gouv.fr) : migration complète vers le DSFR, accessibilité RGAA portée à 100 %, simulateurs juridiques développés en TDD, intégration de LLM adossés à Légifrance.
 
 - Conception et implémentation de fonctionnalités front-end et back-end en TypeScript et Next.js, en respectant les standards du numérique public (design système de l'état DSFR)
 - Migration complète du site vers le DSFR (Design System de l'État), avec reprise des composants, harmonisation UI et maintien des exigences d'accessibilité et de performance
@@ -33,7 +33,7 @@ Développement et maintenance du site web du Code du travail numérique, au sein
 
 **2018-06 – 2022-12**
 
-Création d'un réseau social pour aider les créateurs de contenus digitaux à générer du revenu.
+Réseau social de monétisation pour créateurs de contenus : architecture technique complète, financement participatif, dons et sponsoring pair-à-pair, pilotage produit et roadmap.
 
 - Conception de l'architecture technique de la plateforme (produit, infrastructure, sécurité)
 - Développement d'outils de financement participatif, de dons et de sponsoring pair-à-pair
@@ -49,7 +49,7 @@ Création d'un réseau social pour aider les créateurs de contenus digitaux à 
 
 **2017-11 – 2020-09** | Alternance | Paris, France
 
-Contribution à des projets clients en avant-vente dans le domaine du cloud, de l'intelligence artificielle et de la blockchain.
+Avant-vente cloud, IA et blockchain : prototypes clients conteneurisés sur Kubernetes (IBM Cloud), Watson et Hyperledger, sur des sujets Industrie 4.0.
 
 - Développement de prototypes pour démontrer la pertinence des solutions IBM aux besoins business des clients
 - Travail sur des sujets innovants comme l'Industrie 4.0 en utilisant les dernières technologies : IA (Watson), blockchain (Hyperledger), applications conteneurisées (Kubernetes), IoT (Watson IoT)
@@ -64,7 +64,7 @@ Contribution à des projets clients en avant-vente dans le domaine du cloud, de 
 
 **2018-01 – 2018-06**
 
-Développement d'une application aidant les lycéens à s'orienter après le baccalauréat grâce à un système de matching innovant entre étudiants de grandes écoles de commerce ou d'ingénieurs et lycéens.
+Application d'orientation post-bac : matching entre lycéens et étudiants de grandes écoles de commerce et d'ingénieurs.
 
 **Compétences :** PHP, Laravel, AWS, CI /CD, MySQL
 
@@ -74,7 +74,7 @@ Développement d'une application aidant les lycéens à s'orienter après le bac
 
 **2017-05 – 2017-07** | Aberdeen, Écosse
 
-Stage de recherche dans le domaine de la Data Science et de l'intelligence artificielle.
+Reconnaissance d'activité par réseaux de neurones (CNN, LSTM) sur capteurs mobiles, dans un projet européen de suivi des lombalgies.
 
 - Amélioration des algorithmes de reconnaissance d'activité utilisés par les capteurs de mobiles ou montres connectées
 - Travail avec une équipe de recherche en machine learning pour créer des réseaux de neurones (CNN et LSTM) utilisés par l'application mobile Android

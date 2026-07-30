@@ -1,5 +1,9 @@
 +++
 title = "Skills"
+
+[extra]
+# Section heading on the CV only — see the note in templates/cv.html.
+cv_title = "Awards & languages"
 +++
 
 I firmly believe that skills are proven through practice rather than exhaustive lists. That's why I invite you to explore my [GitHub](https://github.com/maxgfr) where you'll find my concrete projects and the technologies I use daily.

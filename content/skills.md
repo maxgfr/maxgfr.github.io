@@ -1,5 +1,9 @@
 +++
 title = "Compétences"
+
+[extra]
+# Section heading on the CV only — see the note in templates/cv.html.
+cv_title = "Distinctions & langues"
 +++
 
 Je crois fermement que les compétences se prouvent par la pratique plutôt que par des listes exhaustives. C'est pourquoi je vous invite à explorer mon [GitHub](https://github.com/maxgfr) où vous trouverez mes projets concrets et les technologies que j'utilise au quotidien.

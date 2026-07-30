@@ -6,7 +6,7 @@ title = "Formation"
 
 ## Isep, école d'ingénieurs du numérique
 
-**Diplôme d'ingénieur en informatique *(mention : très bien)*** | 2017 – 2020 | Paris, France
+**Diplôme d'ingénieur en informatique, spécialité Architecture des Systèmes d'Information *(mention : très bien)*** | 2017-09 – 2020-06 | Paris, France
 
 Spécialisation en Architecture des Systèmes d'Information. Une formation qui m'a permis de développer une vision globale des systèmes d'information, de la conception à l'implémentation, en passant par la gestion de projet et l'innovation technologique.
 
@@ -22,7 +22,7 @@ Une immersion internationale enrichissant ma perspective technique et culturelle
 
 ## Université du Québec à Chicoutimi (UQAC)
 
-**Baccalauréat en informatique (équivalent licence) *(grade : 4.0/4.3 - A)*** | 2017 | Chicoutimi, Canada
+**Baccalauréat en informatique (équivalent licence) *(grade : 4.0/4.3 - A)*** | 2017-01 – 2017-06 | Chicoutimi, Canada
 
 Une expérience canadienne intense qui m'a permis de perfectionner mes compétences en informatique tout en découvrant de nouvelles approches pédagogiques.
 
@@ -30,7 +30,7 @@ Une expérience canadienne intense qui m'a permis de perfectionner mes compéten
 
 ## Université d'Auvergne
 
-**DUT Informatique** | 2015 – 2017 | Clermont-Ferrand, France
+**DUT Informatique** | 2015-09 – 2017-06 | Clermont-Ferrand, France
 
 Mes premiers pas dans l'informatique, où j'ai développé les bases solides qui m'ont permis de poursuivre vers des études d'ingénieur.
 
