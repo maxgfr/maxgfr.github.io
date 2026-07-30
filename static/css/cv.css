@@ -66,11 +66,15 @@
   margin: 0 0 0.75rem;
 }
 
+/* The two fieldsets sit 0.6rem apart because they are one thing — a pair of
+   preferences. The buttons are the next thing, so they stand further off:
+   without the extra room the downloads read as a third row of settings.
+   Collapses against the last fieldset's margin, so this is the whole gap. */
 .cv-downloads {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin: 0;
+  margin: 1.2rem 0 0;
 }
 
 /* The two download preferences — typeface and language — are laid out
