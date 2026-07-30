@@ -51,7 +51,7 @@ or a job title.
 
 ```bash
 node .github/scripts/render-cv-pdf.mjs --out ./tmp-cv
-open tmp-cv/maxime-golfier-cv-fr-1p.pdf
+open tmp-cv/maxime-golfier-cv-fr-1p-sans.pdf
 ```
 
 The script prints a page count per PDF and **exits non-zero if a one-page CV no
@@ -93,6 +93,28 @@ In order of preference — earlier options preserve more information:
 5. Shorten the prose in `content/experience*.md` — this *does* change the
    website, so only when the text is genuinely flabby.
 
+### Judge it by measurement, not by eye
+
+The failure mode is not overflow — the renderer catches that. It is a page that
+stops two centimetres short while the content sits cramped at the top. Read the
+real figure rather than guessing:
+
+```bash
+pdftotext -bbox -f 1 -l 1 <pdf> - | grep -o 'yMax="[0-9.]*"' | grep -o '[0-9.]*' | sort -n | tail -1
+```
+
+A4 is 842pt and the bottom `@page` margin is ~23pt, so the last text should land
+around 780pt. Currently 7–9% of the page is free, most of it the margin itself.
+Below ~5% there is no room left for CI's fonts to differ from yours, and they do.
+
+### The spacing is deliberate — keep the rhythm
+
+Sections are separated by `1.35rem` while everything inside them is tight
+(paragraphs `0.1rem`, entry separators `0.22rem`, page margins `8mm 9mm`). That
+contrast is what gives the eye something to anchor on; an earlier version spaced
+both the same and read as an undifferentiated wash. If you need room, take it
+from the interior, not from the gap above a section heading.
+
 Two traps, both already handled — do not undo them:
 
 - `cv.css` sets `content: none !important` on every heading `::before` and
@@ -117,6 +139,39 @@ sees, and it must read top to bottom with nothing out of order:
   heading + heading is not. This was measured, not assumed.
 - Generated content (`::before`/`::after`) may carry punctuation only, never a
   word — a parser that strips it must still read every fact.
+
+## The email
+
+The PDFs carry an address; the website does not. An ATS that finds none in the
+header tends to drop the application, but `/cv` is a public page and `\S+@\S+` is
+all a bulk harvester looks for.
+
+Three pieces, all of which have to stay in place:
+
+1. `config.toml` holds `email_obfuscated` (XOR against `email_key`, hex) — never
+   a plain address, because that file is public on GitHub. The regeneration
+   one-liner is in the comment above it.
+2. `templates/cv.html` emits an empty `<li class="cv-email" data-cv-email="…">`
+   and an inline script that decodes it into a `mailto:` link. Inline and
+   synchronous: headless Chrome prints as soon as the page is parsed, so a
+   deferred script would ship a PDF with an empty contact line.
+3. `cv.css` hides `.cv-email` on screen and shows it in `@media print`.
+
+**It is a speed bump, not protection** — anything that executes the page's JS
+still reads it. Do not describe it as anything stronger. No phone number: that
+one is simply not published anywhere.
+
+Check after touching any of the three: the address must appear in all eight PDFs
+and in none of the built HTML.
+
+Note the checks match `@` generically rather than spelling the address out —
+writing it here would put a plain copy back into the repository, which is the
+one thing this whole arrangement exists to avoid.
+
+```bash
+grep -rEo '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' public/ | wc -l   # expect 0
+for f in tmp-cv/maxime-golfier-cv-*.pdf; do pdftotext "$f" -; done | grep -c '@gmail'  # expect 8
+```
 
 ## Hard rules
 
@@ -152,5 +207,5 @@ sees, and it must read top to bottom with nothing out of order:
 | `static/css/cv-compact.css` | one-page variant: hides and tightens |
 | `content/cv.md`, `cv-1page.md` (+ `.en.md`) | the four carrier pages |
 | `content/cv-profile.md`, `cv-stack.md` (+ `.en.md`) | CV-only: ATS summary and categorised skills. Hand-edited, both languages together. |
-| `config.toml` `[extra.cv]` | job title, location, email and links — the only CV data not already on the site. Email but **no phone**: `/cv` is public, so anything here is scrapable and the PDF's URL is public too. Everything else still goes through `/contact`. |
+| `config.toml` `[extra.cv]` | job title, location, obfuscated email and links — the only CV data not already on the site. See the email section below. |
 | `.github/scripts/render-cv-pdf.mjs` | the renderer, used identically by CI and locally |
