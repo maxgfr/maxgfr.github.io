@@ -34,7 +34,7 @@ jobs:
           node-version: 20
 
       # Renders /cv, /cv-1page and their EN twins to PDF with the Chrome that
-      # ships on the runner, and drops the four files into ./public so they are
+      # ships on the runner, and drops the eight files into ./public so they are
       # published with the site. The PDFs are never committed: they are rebuilt
       # from the live content on every deploy, which is what keeps them in sync.
       # The script fails the build if the one-page CV stops fitting on one page.
