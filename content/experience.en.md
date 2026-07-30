@@ -4,9 +4,9 @@ title = "Professional experience"
 
 ---
 
-## Freelance @ home office
+## Full-stack software engineer @ Freelance
 
-**2020-09 – Present**
+**2020-09 – Present** | Remote
 
 As a freelance developer, I've had the opportunity to work on a variety of exciting projects, ranging from web development to software architecture design for startups and the public sector.
 

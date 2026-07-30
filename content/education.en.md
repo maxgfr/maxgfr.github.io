@@ -1,12 +1,12 @@
 +++
-title = "Academic Background"
+title = "Education"
 +++
 
 ---
 
 ## Isep, école d'ingénieurs du numérique
 
-**Engineering Degree in Computer Science *(graduated with high honors)*** | 2017 - 2020 | Paris, France
+**Engineering Degree in Computer Science *(graduated with high honors)*** | 2017 – 2020 | Paris, France
 
 Specialization in Information Systems Architecture. A program that allowed me to develop a global vision of information systems, from design to implementation, including project management and technological innovation.
 
@@ -30,7 +30,7 @@ An intense Canadian experience that allowed me to perfect my computer science sk
 
 ## Université d'Auvergne
 
-**DUT in Computer Science** | 2015 - 2017 | Clermont-Ferrand, France
+**DUT in Computer Science** | 2015 – 2017 | Clermont-Ferrand, France
 
 My first steps in computer science, where I developed the solid foundations that allowed me to pursue engineering studies.
 

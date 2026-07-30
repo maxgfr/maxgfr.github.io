@@ -4,9 +4,9 @@ title = "Expérience professionnelle"
 
 ---
 
-## Freelance @ home office
+## Ingénieur logiciel full-stack @ Freelance
 
-**2020-09 – Présent**
+**2020-09 – Présent** | Remote
 
 En tant que développeur freelance, j'ai eu l'opportunité de travailler sur une variété de projets passionnants, allant du développement web à la conception d'architectures logicielles pour des startups et le secteur public.
 

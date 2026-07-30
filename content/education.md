@@ -1,12 +1,12 @@
 +++
-title = "Parcours académique"
+title = "Formation"
 +++
 
 ---
 
 ## Isep, école d'ingénieurs du numérique
 
-**Diplôme d'ingénieur en informatique *(mention : très bien)*** | 2017 - 2020 | Paris, France
+**Diplôme d'ingénieur en informatique *(mention : très bien)*** | 2017 – 2020 | Paris, France
 
 Spécialisation en Architecture des Systèmes d'Information. Une formation qui m'a permis de développer une vision globale des systèmes d'information, de la conception à l'implémentation, en passant par la gestion de projet et l'innovation technologique.
 
@@ -30,7 +30,7 @@ Une expérience canadienne intense qui m'a permis de perfectionner mes compéten
 
 ## Université d'Auvergne
 
-**DUT Informatique** | 2015 - 2017 | Clermont-Ferrand, France
+**DUT Informatique** | 2015 – 2017 | Clermont-Ferrand, France
 
 Mes premiers pas dans l'informatique, où j'ai développé les bases solides qui m'ont permis de poursuivre vers des études d'ingénieur.
 
