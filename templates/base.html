@@ -19,13 +19,16 @@
         <link rel="icon" href="{{ get_url(path='favicon.ico') }}">
         <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg') }}">
 
-        <!-- Prevent theme flash on page load -->
+        <!-- Prevent theme flash on page load. Anything other than an explicit
+             'light'/'dark' preference — including no preference at all — means
+             auto, so the OS decides. data-theme always holds a resolved theme. -->
         <script>
         (function() {
-            const savedTheme = localStorage.getItem('theme');
+            const saved = localStorage.getItem('theme');
+            const explicit = saved === 'light' || saved === 'dark';
             const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const theme = savedTheme || (systemDark ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.setAttribute('data-theme',
+                explicit ? saved : (systemDark ? 'dark' : 'light'));
         })();
         </script>
 
@@ -56,10 +59,25 @@
             </a>
             {% endfor %}
 
-            <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0" aria-label="Toggle theme"
+            {% if current_lang == 'en' %}
+            {% set label_auto = 'Theme: auto (system)' %}
+            {% set label_light = 'Theme: light' %}
+            {% set label_dark = 'Theme: dark' %}
+            {% else %}
+            {% set label_auto = 'Thème : auto (système)' %}
+            {% set label_light = 'Thème : clair' %}
+            {% set label_dark = 'Thème : sombre' %}
+            {% endif %}
+
+            <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0"
+                aria-label="{{ label_auto }}" title="{{ label_auto }}"
                 data-icon-base="{{ get_url(path='icons.svg') }}"
+                data-icon-auto="#autoMode"
                 data-icon-dark="#darkMode"
                 data-icon-light="#lightMode"
+                data-label-auto="{{ label_auto }}"
+                data-label-dark="{{ label_dark }}"
+                data-label-light="{{ label_light }}"
                 data-sound-src="{{ get_url(path='click.ogg') }}">
                 <svg class="icon">
                     <use id="theme-icon"></use>
