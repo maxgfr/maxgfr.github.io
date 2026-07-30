@@ -46,3 +46,7 @@ Langue maternelle
 ### 🇬🇧 Anglais
 
 Niveau professionnel
+
+### 🇩🇪 Allemand
+
+En cours d'apprentissage

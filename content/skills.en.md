@@ -46,3 +46,7 @@ Professional level
 ### 🇫🇷 French
 
 Native language
+
+### 🇩🇪 German
+
+Currently learning
