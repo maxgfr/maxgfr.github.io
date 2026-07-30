@@ -4,15 +4,9 @@ title = "Expérience professionnelle"
 
 ---
 
-## Ingénieur logiciel full-stack @ Freelance
+## Développeur full-stack @ beta.gouv.fr
 
-**2020-09 – Présent** | Remote
-
-Missions de développement web et d'architecture logicielle pour des startups et pour le secteur public.
-
-### Développeur full stack @ beta.gouv.fr
-
-**2021-09 – Présent**
+**2021-09 – Présent** | Freelance | Remote
 
 Code du travail numérique (code.travail.gouv.fr) : migration complète vers le DSFR, accessibilité RGAA portée à 100 %, simulateurs juridiques développés en TDD, intégration de LLM adossés à Légifrance.
 

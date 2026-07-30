@@ -39,14 +39,6 @@
   display: none;
 }
 
-/* The "Freelance @ home office" umbrella blurb ("j'ai eu l'opportunité de
-   travailler sur une variété de projets passionnants…") sits above the actual
-   missions and says nothing they do not. Second paragraph of the first entry:
-   the first is the period line. */
-.cv-compact #cv-experience .cv-entry:first-child > p:nth-of-type(2) {
-  display: none;
-}
-
 /* The per-role "Compétences :" line — always the last paragraph of an entry,
    after the bullets. On the one-pager #cv-stack already lists every one of
    these technologies under proper ATS category labels, so repeating them six

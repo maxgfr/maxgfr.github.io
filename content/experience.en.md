@@ -4,15 +4,9 @@ title = "Professional experience"
 
 ---
 
-## Full-stack software engineer @ Freelance
+## Full-stack developer @ beta.gouv.fr
 
-**2020-09 – Present** | Remote
-
-Web development and software architecture assignments for startups and for the public sector.
-
-### Full stack developer @ beta.gouv.fr
-
-**2021-09 – Present**
+**2021-09 – Present** | Freelance | Remote
 
 Code du travail numérique (code.travail.gouv.fr): full migration to the DSFR, RGAA accessibility taken to 100%, legal simulators built with TDD, LLM integration grounded in Légifrance.
 
