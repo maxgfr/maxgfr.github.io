@@ -73,10 +73,16 @@
   margin: 0;
 }
 
-/* suCSS gives fieldset a dashed accent border, which shouts next to the two
-   buttons. This is a quiet preference control, so it reads as a caption with
-   two choices under it. */
-.cv-font {
+/* The two download preferences — typeface and language — are laid out
+   identically, so they share these rules; `.cv-font` / `.cv-lang` are there to
+   tell them apart, not to style them. Note `.cv-font` the class and
+   `[data-cv-font]` the attribute above are unrelated: the first is this
+   fieldset, the second is what ?font= sets on <html>.
+
+   suCSS gives fieldset a dashed accent border, which shouts next to the two
+   buttons. These are quiet preference controls, so each reads as a caption with
+   its choices beside it. */
+.cv-choice {
   border: 0;
   padding: 0;
   margin: 0 0 0.6rem;
@@ -86,15 +92,20 @@
   gap: 0.3rem 0.9rem;
 }
 
-.cv-font legend {
+/* min-width lines the two rows of radios up under each other; without it they
+   start at different x, which reads as a misalignment rather than as two
+   settings. Sized past the longest of the four legends — the French pair, at 13
+   characters, which is wider than either English one. */
+.cv-choice legend {
   float: left;
   padding: 0;
+  min-width: 8rem;
   margin-inline-end: 0.9rem;
   color: var(--text-light);
   font-size: 0.9rem;
 }
 
-.cv-font label {
+.cv-choice label {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -104,7 +115,7 @@
 }
 
 /* suCSS resets appearance on inputs, which leaves radios invisible. */
-.cv-font input[type="radio"] {
+.cv-choice input[type="radio"] {
   appearance: revert;
   -webkit-appearance: revert;
   accent-color: var(--accent);
@@ -124,6 +135,15 @@
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* The format and the language are a qualifier on the action, not the action:
+   "Télécharger — 1 page" is what you read, "(PDF · FR)" is what you check.
+   Sizing it down says so, and buys back the width the language suffix cost —
+   without it the two buttons no longer fit on one line. */
+.cv-download-tag {
+  font-size: 0.85em;
+  opacity: 0.85;
 }
 
 /* The full CV is the secondary choice: most people want the one-pager. */

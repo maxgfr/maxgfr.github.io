@@ -61,13 +61,18 @@
         </ul>
 
         {# Both formats are offered from both pages: a visitor should never have
-           to hunt for the other one. Each is rendered in two typefaces, and the
-           choice below picks which file the buttons download — it does not
-           touch this page. Default is the sans-serif: this CV is read by résumé
-           parsers and by recruiters, and the site's monospace is a strong
-           stylistic signal that not every reader wants. #}
+           to hunt for the other one. Each is rendered in two typefaces and two
+           languages, and the choices below pick which file the buttons download
+           — they do not touch this page. Typeface defaults to the sans-serif:
+           this CV is read by résumé parsers and by recruiters, and the site's
+           monospace is a strong stylistic signal that not every reader wants.
+           Language defaults to the page's own, so the shipped markup is already
+           consistent before any script runs.
+
+           The language labels stay in their own tongue in both variants, as a
+           language selector always does — and it saves translating them. #}
         <div class="cv-actions">
-            <fieldset class="cv-font">
+            <fieldset class="cv-choice cv-font">
                 <legend>{% if en %}PDF typeface{% else %}Police du PDF{% endif %}</legend>
                 <label>
                     <input type="radio" name="cv-font" value="sans" checked>
@@ -78,14 +83,30 @@
                     {% if en %}Same as the site{% else %}Comme le site{% endif %}
                 </label>
             </fieldset>
+            <fieldset class="cv-choice cv-lang">
+                <legend>{% if en %}PDF language{% else %}Langue du PDF{% endif %}</legend>
+                <label>
+                    <input type="radio" name="cv-lang" value="fr"{% if not en %} checked{% endif %}>
+                    Français
+                </label>
+                <label>
+                    <input type="radio" name="cv-lang" value="en"{% if en %} checked{% endif %}>
+                    English
+                </label>
+            </fieldset>
+            {# The "(PDF · XX)" tag is deliberately outside the translated label:
+               it is the same in both languages, so the script has one text node
+               to rewrite and there is nothing to keep in sync twice. #}
             <p class="cv-downloads">
-                <a class="cv-download" data-cv-pdf="{{ page.lang }}-1p"
+                <a class="cv-download" data-cv-pdf="1p"
                    href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-1p-sans.pdf') }}" download>
-                    {% if en %}Download — 1 page (PDF){% else %}Télécharger — 1 page (PDF){% endif %}
+                    {% if en %}Download — 1 page{% else %}Télécharger — 1 page{% endif %}
+                    <span class="cv-download-tag">(PDF · <span data-cv-pdf-lang>{{ page.lang | upper }}</span>)</span>
                 </a>
-                <a class="cv-download cv-download-alt" data-cv-pdf="{{ page.lang }}-full"
+                <a class="cv-download cv-download-alt" data-cv-pdf="full"
                    href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-full-sans.pdf') }}" download>
-                    {% if en %}Download — full (PDF){% else %}Télécharger — version complète (PDF){% endif %}
+                    {% if en %}Download — full{% else %}Télécharger — complet{% endif %}
+                    <span class="cv-download-tag">(PDF · <span data-cv-pdf-lang>{{ page.lang | upper }}</span>)</span>
                 </a>
             </p>
         </div>
@@ -180,37 +201,61 @@
 </script>
 
 {#
-  The typeface radios pick the FILE, nothing else. They deliberately do not
-  restyle this page: the site is monospace by design, and having a download
-  preference silently reskin the page you are reading is a surprise, not a
-  feature. The only thing that changes is which of the two PDFs the buttons
-  point at.
+  Both radio groups pick the FILE, nothing else. They deliberately do not
+  restyle or reload this page: the site is monospace by design, and having a
+  download preference silently reskin — or worse, navigate away from — the page
+  you are reading is a surprise, not a feature. The only thing that changes is
+  which of the eight PDFs the buttons point at.
+
+  The language radio in particular must not touch localStorage: static/js/
+  language.js keys the whole site's /x <-> /en/x redirect off `lang-preference`,
+  so writing it here would turn "I want the English file" into a sticky
+  site-wide language switch.
 
   Progressive enhancement — with no JS the radios do nothing and the links still
-  resolve to the sans-serif files they ship with.
+  resolve to the sans-serif files, in the page's own language, that they ship
+  with; the "(PDF · XX)" tag ships matching them.
 #}
 <script>
     (function () {
-        var radios = document.querySelectorAll('input[name="cv-font"]');
-        if (!radios.length) return;
+        var fontRadios = document.querySelectorAll('input[name="cv-font"]');
+        var langRadios = document.querySelectorAll('input[name="cv-lang"]');
+        if (!fontRadios.length || !langRadios.length) return;
 
-        function pointDownloadsAt(font) {
+        function pointDownloads() {
+            var font = document.querySelector('input[name="cv-font"]:checked').value;
+            var lang = document.querySelector('input[name="cv-lang"]:checked').value;
+            // Rewrites the whole suffix from whatever it currently is, so the
+            // two groups can be changed in any order any number of times.
             document.querySelectorAll("[data-cv-pdf]").forEach(function (link) {
-                link.href = link.href.replace(/-(sans|mono)\.pdf$/, "-" + font + ".pdf");
+                link.href = link.href.replace(
+                    /-(?:fr|en)-(1p|full)-(?:sans|mono)\.pdf$/,
+                    "-" + lang + "-$1-" + font + ".pdf"
+                );
+            });
+            document.querySelectorAll("[data-cv-pdf-lang]").forEach(function (el) {
+                el.textContent = lang.toUpperCase();
             });
         }
 
         // A ?font= link (what render-cv-pdf.mjs loads) arrives with the page
         // already in that typeface, so match the radio to it rather than let the
-        // two disagree.
+        // two disagree. There is no ?lang= equivalent: the renderer asks for the
+        // English CV by loading /en/cv, where the markup already ships `en`.
         var rendered = document.documentElement.dataset.cvFont;
-        radios.forEach(function (radio) {
+        fontRadios.forEach(function (radio) {
             if (rendered && radio.value === rendered) radio.checked = true;
-            radio.addEventListener("change", function () {
-                if (radio.checked) pointDownloadsAt(radio.value);
-            });
         });
-        pointDownloadsAt(document.querySelector('input[name="cv-font"]:checked').value);
+
+        function wire(radio) {
+            radio.addEventListener("change", function () {
+                if (radio.checked) pointDownloads();
+            });
+        }
+        fontRadios.forEach(wire);
+        langRadios.forEach(wire);
+
+        pointDownloads();
     })();
 </script>
 {% endblock %}
