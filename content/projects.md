@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 63 dépôts publics · ⭐ 298 étoiles**
+**📦 65 dépôts publics · ⭐ 298 étoiles**
 
 ---
 
@@ -15,6 +15,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Agent d'audit de sécurité multi-fichiers : analyse de teinte source→puits + Trivy/Semgrep/gitleaks/osv, vérifiée de façon adversariale en rapport sourcé.
 - **[ultra11y](https://github.com/maxgfr/ultra11y)** — Audite le HTML/CSS/JSX selon le RGAA 4.1.2 + WCAG 2.1/2.2 AA via un moteur statique zéro-dépendance + le jugement de l'IA.
+- **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Trouve toutes les chaînes lisibles d'un dépôt, les classe, les traduit avec des modèles bon marché et prouve qu'aucune n'a été oubliée : moteur zéro-dépendance, le modèle n'ouvre jamais un fichier source.
 - **[construct](https://github.com/maxgfr/construct)** — Transforme une idée produit en un cahier des charges (SRD/PRD) complet et réalisable (skill d'agent skills.sh).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyse n'importe quel dépôt et génère des PRD de reconstruction pour le rebâtir de zéro.
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Évalue rigoureusement une skill ou un codebase → constats sourcés (file:line) + backlog de corrections en TDD ; moteur zéro-dépendance avec analyse (hotspots, cycles, churn) et brainstorm.
@@ -53,6 +54,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🌐 Applications web & PWA
 
+- **[basilico](https://github.com/maxgfr/basilico)** — Minuteur de concentration Pomodoro local-first (PWA + extension Chrome) : tâches, backlog et plan du jour, comptage des interruptions, overtime et Flowtime, heatmap annuelle, heures productives et précision des estimations, export JSON/CSV/Open Pomodoro — sans compte, sans serveur, sans tracking. · [démo](https://maxgfr.github.io/basilico/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois agnostique : brackets, système suisse, ligues, poules et Elo composés depuis six axes — aucun sport codé en dur. 100 % navigateur, sans serveur ni compte : lien partageable, sync P2P, export ICS, impression et hors-ligne. · [démo](https://maxgfr.github.io/bracketeer)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur. · [démo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualiseur de schéma de base de données côté client avec analyse par IA — importez du SQL, visualisez, partagez, exportez, sans backend. · [démo](https://maxgfr.github.io/db-schema-viewer/)

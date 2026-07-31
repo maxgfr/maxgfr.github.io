@@ -4,7 +4,7 @@ title = "Projects"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 63 public repos · ⭐ 298 stars**
+**📦 65 public repos · ⭐ 298 stars**
 
 ---
 
@@ -15,6 +15,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Keyless multi-backend web research → citation-checked, tiered Markdown/HTML report (5 modes + deep-research tier).
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Cross-file security-audit agent: source→sink taint + Trivy/Semgrep/gitleaks/osv, adversarially verified into a cited report.
 - **[ultra11y](https://github.com/maxgfr/ultra11y)** — Audits HTML/CSS/JSX for RGAA 4.1.2 + WCAG 2.1/2.2 AA with a zero-dependency static engine + agent judgment.
+- **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds every human-readable string in a repo, classifies it, translates it with cheap models and proves nothing was missed: zero-dependency engine, the model never opens a source file.
 - **[construct](https://github.com/maxgfr/construct)** — Turns a product idea into a grounded, buildable SRD/PRD suite (skills.sh agent skill).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyzes any repo and generates reconstruction PRDs to rebuild it from scratch.
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Rigorously evaluates a skill or codebase → grounded (file:line) findings + a TDD fix backlog; zero-dep engine with analysis (hotspots, cycles, churn) and brainstorm.
@@ -53,6 +54,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🌐 Web apps & PWAs
 
+- **[basilico](https://github.com/maxgfr/basilico)** — Local-first Pomodoro focus timer (PWA + Chrome extension): tasks, backlog & day plan, interruption counting, overtime and Flowtime, year heatmap, productive hours and estimate accuracy, JSON/CSV/Open Pomodoro export — no account, no server, no tracking. · [demo](https://maxgfr.github.io/basilico/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline. · [demo](https://maxgfr.github.io/bracketeer)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer. · [demo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend. · [demo](https://maxgfr.github.io/db-schema-viewer/)
