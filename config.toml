@@ -63,8 +63,8 @@ github = "https://github.com/maxgfr"
 linkedin = "https://www.linkedin.com/in/maxime-golfier/"
 title_fr = "Ingénieur logiciel full-stack freelance — TypeScript / React / Node.js"
 title_en = "Freelance full-stack software engineer — TypeScript / React / Node.js"
-location_fr = "Paris, France · remote ou hybride"
-location_en = "Paris, France · remote or hybrid"
+location_fr = "France · remote ou hybride"
+location_en = "France · remote or hybrid"
 # An ATS that finds no address in the header often drops the application, so the
 # PDF carries an email. The website does not: templates/cv.html renders this
 # entry print-only, so /cv shows no address on screen and contact still goes
