@@ -57,7 +57,10 @@
             <li class="cv-email" data-cv-email="{{ cv.email_obfuscated }}"></li>
             <li><a href="{{ cv.github }}">github.com/maxgfr</a></li>
             <li><a href="{{ cv.linkedin }}">linkedin.com/in/maxime-golfier</a></li>
-            <li><a href="{{ config.base_url }}">maxgfr.github.io</a></li>
+            {# cv.website, not config.base_url: the PDFs are rendered from a site
+               built against a loopback base_url, which would ship a link to
+               http://127.0.0.1:PORT. See config.toml. #}
+            <li><a href="{{ cv.website }}">maxgfr.github.io</a></li>
         </ul>
 
         {# Both formats are offered from both pages: a visitor should never have
