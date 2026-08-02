@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 65 public repositories, totalling 298 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 66 public repositories, totalling 298 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -27,6 +27,7 @@ My 65 public repositories, totalling 298 stars — [github.com/maxgfr](https://g
 - **[feelc](https://github.com/maxgfr/feelc)** — AI-native DMN/FEEL business-rules engine in Go: an LLM writes the rules, the…
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI-powered git automation: smart commits, conflict resolution & auto-rebase…
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Monthly commit-recap generator with AI summaries, bullet points and commit…
+- **[sift](https://github.com/maxgfr/sift)** — Tells you which quantization of an LLM fits and how fast it will run — before…
 
 ### 🛠️ CLIs & system tools
 

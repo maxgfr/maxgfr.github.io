@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 65 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 66 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -27,6 +27,7 @@ Mes 65 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https:/
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier DMN/FEEL natif IA compilé en Go : un LLM écrit les…
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits intelligents, résolution de conflits et…
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Générateur de récap mensuel des commits : résumés par IA, points clés et…
+- **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle…
 
 ### 🛠️ CLIs & outils système
 

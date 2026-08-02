@@ -4,7 +4,7 @@ title = "Mes projets"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 65 dépôts publics · ⭐ 298 étoiles**
+**📦 66 dépôts publics · ⭐ 298 étoiles**
 
 ---
 
@@ -28,6 +28,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Moteur d'indexation de dépôt zéro-dépendance : symboles, imports, graphe de liens inter-fichiers typé et analytics — un seul engine.mjs embarquable, CLI + serveur MCP inclus. · [démo](https://maxgfr.github.io/codeindex/)
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Pare-feu local anti-fuite de secrets pour agents de code — masque les identifiants dans les prompts, lectures de fichiers et sorties d'outils avant qu'ils n'atteignent le LLM (Claude Code, Codex, OpenCode). Hooks déterministes, sans proxy.
+- **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle tournera — avant de la télécharger. Lit les vrais en-têtes GGUF/safetensors par requêtes HTTP Range, mesure la machine et recommande un moteur. Aucune liste de modèles embarquée (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Lance Claude Code (et Codex) « sous caféine » — garde la machine éveillée le temps de la session, puis restaure la veille. Multi-plateforme, zéro-dépendance.
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule zéro-dépendance entre fournisseurs pour Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits intelligents, résolution de conflits et rebase auto (Claude/Codex/OpenAI/Gemini/Mistral). 100% Bash.

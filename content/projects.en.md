@@ -4,7 +4,7 @@ title = "Projects"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 65 public repos · ⭐ 298 stars**
+**📦 66 public repos · ⭐ 298 stars**
 
 ---
 
@@ -28,6 +28,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Zero-dependency repo-indexing engine: symbols, imports, typed cross-file link-graph & analytics — one vendorable engine.mjs, CLI + MCP server included. · [demo](https://maxgfr.github.io/codeindex/)
 - **[conforme](https://github.com/maxgfr/conforme)** — Syncs your AI coding config (rules, skills, agents, MCP servers) across Claude Code, Cursor & more (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Local secrets firewall for coding agents — redacts credentials in prompts, file reads & tool output before they reach the LLM (Claude Code, Codex, OpenCode). Deterministic hooks, no proxy.
+- **[sift](https://github.com/maxgfr/sift)** — Tells you which quantization of an LLM fits and how fast it will run — before you download it. Reads real GGUF/safetensors headers over HTTP range requests, measures your machine and routes to an engine. No bundled model list (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Runs Claude Code (and Codex) caffeinated — keeps the machine awake for exactly the session, cross-platform & zero-dep.
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Zero-dependency provider switching for Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI-powered git automation: smart commits, conflict resolution & auto-rebase (Claude/Codex/OpenAI/Gemini/Mistral). Pure Bash.
