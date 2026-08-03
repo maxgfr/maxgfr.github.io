@@ -4,7 +4,7 @@ title = "Projects"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 66 public repos · ⭐ 298 stars**
+**📦 67 public repos · ⭐ 298 stars**
 
 ---
 
@@ -55,6 +55,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🌐 Web apps & PWAs
 
+- **[today](https://github.com/maxgfr/today)** — Offline-first, privacy-first daily to-do: nothing rolls over on its own — unfinished tasks wait for a decision the next morning, with their age shown. No account, no server, zero network requests, proven by a CSP and a build gate that fails CI. · [demo](https://maxgfr.github.io/today)
 - **[basilico](https://github.com/maxgfr/basilico)** — Local-first Pomodoro focus timer (PWA + Chrome extension): tasks, backlog & day plan, interruption counting, overtime and Flowtime, year heatmap, productive hours and estimate accuracy, JSON/CSV/Open Pomodoro export — no account, no server, no tracking. · [demo](https://maxgfr.github.io/basilico/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline. · [demo](https://maxgfr.github.io/bracketeer)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer. · [demo](https://maxgfr.github.io/csv-ai-analyzer)

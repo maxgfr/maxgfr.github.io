@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 66 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 67 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -56,6 +56,7 @@ Mes 66 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https:/
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Générateur local de courtes vidéos quotidiennes (Remotion) avec légendes par…
 - **[genpass](https://github.com/maxgfr/genpass)** — Générateur de mots de passe et coffre-fort chiffré, 100% dans le navigateur…
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Application de bureau d'apprentissage des langues avec tutorat IA…
+- **[today](https://github.com/maxgfr/today)** — Todolist du jour, offline-first et privée : rien ne remonte tout seul — ce…
 
 ### 📈 Trading & finance
 
