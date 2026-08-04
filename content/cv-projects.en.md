@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 67 public repositories, totalling 298 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 68 public repositories, totalling 298 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -55,6 +55,7 @@ My 67 public repositories, totalling 298 stars — [github.com/maxgfr](https://g
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo…
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Local-first daily short-video generator (Remotion) with per-platform captions…
 - **[genpass](https://github.com/maxgfr/genpass)** — Client-side password generator + encrypted vault PWA: exact entropy, EFF…
+- **[nook](https://github.com/maxgfr/nook)** — Local-first, encrypted note-taking: nothing leaves the device, and the page…
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Desktop language-learning app with multi-provider AI tutoring.
 - **[today](https://github.com/maxgfr/today)** — Offline-first, privacy-first daily to-do: nothing rolls over on its own —…
 
