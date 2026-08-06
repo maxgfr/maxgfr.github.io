@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 
-{% block head %}
-{{ super() }}
-{% include "partials/schema-article.html" %}
-{% endblock %}
+{# The theme shipped a `{% block head %}` here injecting partials/schema-article.html.
+   templates/base.html — which shadows the theme's and is the one actually extended —
+   only ever declared `extra_head`, so the block matched nothing and the markup was
+   never emitted; Zola 0.23 turns that silent no-op into a build error. Dropped rather
+   than renamed: this site has no blog, so the partial would have stamped
+   schema.org/Article onto /cv, /contact and the rest, which is not what they are. #}
 
 {% block content %}
 <article class="post">

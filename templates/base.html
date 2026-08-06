@@ -7,7 +7,9 @@
         {% block rss %}
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml', trailing_slash=false) }}">
         {% endblock %}
-        <title>{{ config.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+        {# `page` is undefined on sections and on the 404, and Zola 0.23 raises on
+           reaching through an undefined variable instead of treating it as falsy. #}
+        <title>{{ config.title }}{% if page and page.title %} | {{ page.title }}{% endif %}</title>
 
         <link rel="preload" href="{{ get_url(path='css/style.css') }}" as="style">
         <link rel="stylesheet" href="{{ get_url(path='css/reset-min.css') }}">
