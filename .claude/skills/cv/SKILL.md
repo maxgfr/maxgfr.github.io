@@ -67,7 +67,12 @@ work around — the same check runs in CI and will block the deploy.
 the HTML that Chrome actually saw.
 
 Preflight, only if something fails:
-- `zola --version` — needs ≥ 0.22 (`brew install zola`).
+- `zola --version` — needs ≥ 0.23 (`brew install zola`). CI installs whatever is
+  latest, unpinned, so the repo has to track it. 0.23 swapped the template engine
+  for a stricter one: `escape` became `escape_xml`, a `{% block %}` the parent
+  never declared is now a build error rather than a silent no-op, and reaching
+  through an undefined variable (`page.title` on a section) raises instead of
+  reading as false. All three are fixed in `templates/` and `themes/anemone/`.
 - Chrome: set `CHROME_BIN` if it is not on `PATH` or in `/Applications`.
 
 ## Iterate live
@@ -112,6 +117,16 @@ A4 is 842pt and the bottom `@page` margin is ~23pt, so the last text should land
 around 780pt. Currently 7–9% of the page is free, most of it the margin itself.
 Below ~5% there is no room left for CI's fonts to differ from yours, and they do.
 
+That one figure is trustworthy; **per-line gaps derived the same way are not**.
+`-bbox` reports the glyph box, which grows for a capital with a diacritic and
+again for an emoji taking its fallback font, so three lines styled identically
+come out 16.1 / 15.0 / 14.2pt apart and a real defect hides inside the noise. To
+compare two gaps, read the computed boxes instead: drive Chrome over CDP, send
+`Emulation.setEmulatedMedia {media: 'print'}`, and evaluate a walk of `#cv`
+returning each element's `getBoundingClientRect()` and computed margins. That is
+what turned "the spacing looks off" into "`#cv-skills` opens at 6.4px where every
+other section opens at 3.2px".
+
 ### The spacing is deliberate — keep the rhythm
 
 Sections are separated by `1.35rem` while everything inside them is tight
@@ -120,11 +135,24 @@ contrast is what gives the eye something to anchor on; an earlier version spaced
 both the same and read as an undifferentiated wash. If you need room, take it
 from the interior, not from the gap above a section heading.
 
-Two traps, both already handled — do not undo them:
+Every gap in both files is a `rem`, so it resolves identically in the two
+typefaces — which set at different `font-size`s. Anything left in `em` scales
+with its own element instead and silently splits the rhythm in two; that is what
+suCSS's `h1,…,h6 { margin: .5em 0 }` was doing until `cv.css` declared heading
+top margins itself. Keep new values in `rem`.
+
+Three traps, all already handled — do not undo them:
 
 - `cv.css` sets `content: none !important` on every heading `::before` and
   `::after` (to strip suCSS's `'# '`). Separators and line breaks for a collapsed
   pair therefore have to hang off the `<p>`, never the heading.
+- `.cv-entry > :first-child { margin-top: 0 }` is what keeps the separator
+  hairlines centred, and it is easy to mistake for dead weight. A heading's top
+  margin collapses out of the *first* `.cv-entry` of a section, which has neither
+  border nor padding, but not out of the following ones, which have both — so
+  without the reset the same rule carried `0.45rem` above it and `0.45rem` plus
+  the heading's own margin below, and the first entry of a section sat lower
+  under its `h2` than a plain paragraph did.
 - Do **not** set `body { display: block }` to reclaim the width suCSS's grid
   leaves unused: it was measured and it *adds* a page. The compact print block
   instead overrides `grid-template-columns: 0 100% 0`, which keeps the grid and

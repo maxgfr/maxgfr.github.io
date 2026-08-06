@@ -314,6 +314,7 @@
   .cv-section > h2 {
     font-size: 13pt;
     border-bottom: 1pt solid #999;
+    margin-top: 0;
     margin-bottom: 0.5rem;
   }
 
@@ -325,6 +326,30 @@
   .cv-body h4 {
     font-size: 10.5pt;
     margin-bottom: 0.1rem;
+  }
+
+  /* suCSS ends with `h1,…,h6 { margin: .5em 0 }`, and only the bottom half of
+     that was ever overridden above. The top half is em-based, so it resolved to
+     a different number of pixels per level (8.7 / 7.7 / 7.0) and to a different
+     number again in each typeface, while every other gap in this file is rem and
+     therefore identical in both. Declared here so one rhythm governs the page:
+     `.cv-section` owns the space above a section heading, this owns the space
+     above a heading that opens a block inside one. */
+  .cv-body h3,
+  .cv-body h4 {
+    margin-top: 0.45rem;
+  }
+
+  /* Counterpart to the :last-child rule above, and the reason the separator
+     hairlines were off centre: a heading's top margin collapses out of the FIRST
+     .cv-entry of a section (no border, no padding) but not out of the following
+     ones, which have both. Every rule therefore had 0.45rem above it and
+     0.45rem + 0.5em below, and the first entry of a section sat lower under its
+     h2 than a plain paragraph did. The entry's own padding is the gap; the
+     heading must not add to it. */
+  .cv-entry > :first-child,
+  .cv-body > :first-child {
+    margin-top: 0;
   }
 
   .cv-body p,
