@@ -63,18 +63,25 @@
 /* suCSS caps the content column at min(47rem, 90%), which is right for prose and
    far too narrow for a card grid or a ten-year timeline.
 
-   Widening the body grid was the first attempt and it was wrong: it moved the <h1>
-   and the switcher too, so the title jumped 248px left when you went from the list
-   to the cards. The page chrome has to sit where every other page on the site puts
-   it. So the column stays as suCSS set it, and only the CONTENT breaks out of it.
+   So the grid widens — keeping suCSS's own 90% so the gutters stay identical to
+   every other page — and the page CHROME is re-centred inside it at the original
+   47rem. The h1, switcher, intro and footer therefore land on exactly the same
+   pixel as on /skills, while the grids, graph and terminal get the full width.
 
-   The margin is the centring maths for a box wider than its parent: 50% of the
-   column minus half the target width. It resolves to 0 once the viewport is
-   narrower than the target, so on a phone this is inert and everything lines up
-   with the rest of the site automatically. */
-.pv-wide .pv-body {
-    width: min(78rem, 90vw);
-    margin-inline: calc(50% - min(39rem, 45vw));
+   Deliberately no `vw` anywhere. An earlier version sized the content with
+   min(78rem, 90vw) and centred it with a negative margin; that works, but `vw`
+   INCLUDES the scrollbar while the 90% here excludes it, so on any platform with
+   classic (non-overlay) scrollbars the content sat ~7px off-centre and could
+   overflow. Percentages on both sides can never disagree. */
+body:has(.pv-wide) {
+    grid-template-columns: 1fr min(78rem, 90%) 1fr;
+}
+
+.pv-wide .pv-header,
+.pv-wide .pv-intro,
+.pv-wide .pv-foot {
+    max-width: 47rem;
+    margin-inline: auto;
 }
 
 .pv-intro {
