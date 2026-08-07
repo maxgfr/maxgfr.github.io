@@ -80,10 +80,16 @@
    CARD is what gets capped. Capping the track instead cost a whole column at
    1440px, and leaving the card uncapped produced ONE 450px card at a 500px
    viewport — a trading card shaped like a banner, sprite adrift in a letterbox.
-   `min(100%, 15rem)` stops the track exceeding the viewport on a narrow phone. */
+   `min(100%, …)` stops the track exceeding the viewport on a narrow phone.
+
+   14rem, not 15: the content column is 47rem (752px) and the gap 1.25rem (20px), so
+   three columns need a track of at most (752 - 2×20) / 3 = 237px = 14.8rem. At 15rem
+   three came to 760px, eight pixels over, and the row fell back to two very large
+   cards. 14rem lands three across every screen at or above the full column, and
+   still cannot fit a fourth (4×224 + 60 = 956px). */
 .dex-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
     gap: 1.25rem;
     margin: 1rem 0 0;
     padding: 0;
