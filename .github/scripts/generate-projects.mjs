@@ -505,6 +505,14 @@ const TYPE_BY_TOPIC = [
   [/^(database|sql|duckdb|postgres|sqlite|dataset|csv|json|yaml|toml)/, 'poison'],
   [/^(docs|documentation|markdown|zola|blog|readme|changelog|release-notes)/, 'rock'],
   [/^(condorcet|vote|voting|election|tournament|bracket|brackets|elo|sport)/, 'fighting'],
+  // Added after three consecutive Combat cards (ultrai18n, construct, reconstruct):
+  // all three fell through to the generic `cli` rule because nothing described what
+  // they actually do. `search` also rescues ultrasearch, which was Steel by way of
+  // `zero-dependencies` — a poor label for a web-search engine.
+  [/^(search|web-search|serp|research|deep-research|literature-review|rag|citations)/, 'psychic'],
+  [/^(i18n|internationalization|localization|l10n|translation|locale)/, 'fairy'],
+  [/^(prd|spec|specs|requirements|product-management|greenfield|roadmap)/, 'rock'],
+  [/^(code-generation|codegen|scaffold|scaffolding|generator|codemod)/, 'steel'],
   // --- what shape it takes ----------------------------------------------------
   // Mobile outranks date/time on purpose: rn-date is a React Native library that
   // happens to parse dates, and "Vol" describes it better than "Roche".
@@ -555,7 +563,12 @@ function rarity(stars) {
   return 'common';
 }
 
-function pokemon(repo, now, topicFreq) {
+// `descLen` is the length of the repo's curated English description — a genuine
+// proxy for how much there is to a project, and the only signal besides age that
+// varies across the ~42 repos created this year with no stars yet. Without it, HP
+// and level were flat: 55 of 70 cards read "30 PV" or "40 PV", and every recent
+// repo was "niv 3", so the numbers said nothing and the cards felt interchangeable.
+function pokemon(repo, now, topicFreq, descLen) {
   const topics = repo.topics || [];
 
   // The PRIMARY type comes from what the project does, not from what it is written
@@ -607,8 +620,25 @@ function pokemon(repo, now, topicFreq) {
   return {
     type1,
     type2,
-    hp: clampNum(Math.round((30 + repo.stargazers_count * 5) / 10) * 10, 30, 200),
-    level: clampNum(1 + months, 1, 100),
+    // Stars dominate, so a popular repo still gets the biggest number, but forks,
+    // topic count and description length keep the rest from collapsing onto one
+    // value. Multiples of ten, because that is what a card prints.
+    // Measured over the catalogue: 13 distinct values, none on more than 16 cards
+    // (was 9 values with 32 cards sharing one).
+    hp: clampNum(
+      Math.round(
+        (10 + repo.stargazers_count * 10 + repo.forks_count * 10 + topics.length * 5 + descLen / 3) / 10
+      ) * 10,
+      30,
+      250
+    ),
+    // Age still leads — a level is meant to read as maturity — but alone it made
+    // every 2026 repo the same level. 30 distinct values, none on more than 7 cards.
+    level: clampNum(
+      Math.round(months * 0.7 + repo.stargazers_count * 1.5 + repo.forks_count * 2 + topics.length + descLen / 12),
+      1,
+      100
+    ),
     rarity: rarity(repo.stargazers_count),
     weakness: WEAKNESS[type1],
     moves,
@@ -642,6 +672,7 @@ function buildData(repos, now) {
     for (const repo of picked) {
       const d = (CONFIG.descriptions || {})[repo.name] || {};
       const home = (repo.homepage || '').trim();
+      const descEn = (d.en || repo.description || 'No description.').trim();
       out.push({
         name: repo.name,
         url: repo.html_url,
@@ -649,7 +680,7 @@ function buildData(repos, now) {
         homeLabel: home ? { fr: T.fr.labels[linkKey(home)], en: T.en.labels[linkKey(home)] } : null,
         desc: {
           fr: (d.fr || repo.description || 'Sans description.').trim(),
-          en: (d.en || repo.description || 'No description.').trim(),
+          en: descEn,
         },
         cat: catIndex,
         dex: out.length + 1,
@@ -665,7 +696,7 @@ function buildData(repos, now) {
         created: ym(repo.created_at),
         pushed: ym(repo.pushed_at),
         license: (repo.license && repo.license.spdx_id !== 'NOASSERTION' && repo.license.spdx_id) || null,
-        poke: pokemon(repo, now, topicFreq),
+        poke: pokemon(repo, now, topicFreq, descEn.length),
       });
     }
   });
