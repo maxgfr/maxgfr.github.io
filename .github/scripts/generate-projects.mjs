@@ -477,51 +477,51 @@ const TYPE_BY_LANGUAGE = {
   Jupyter: 'psychic',
 };
 
-// Type from what the project DOES.
+// Type from what the project DOES. FIRST MATCH WINS, and the order below is the
+// whole design: it runs from the most DEFINING topic a repo can carry to the most
+// generic, so the topic that actually characterises the project decides its type.
 //
-// Every pattern a repo's topics match becomes a CANDIDATE, and pokemon() picks one
-// of them by hash — see there for why, and why this table has to be wide.
+// Two earlier versions were wrong in opposite directions:
 //
-// Deliberately spread across all eighteen types, and deliberately splitting the
-// clusters that dominate this catalogue: `claude`/`ai` are psychic but `agent-skill`
-// is dragon and `mcp` is steel, so nine agent-skill repos no longer collapse onto
-// one colour. Keys are matched against real GitHub topics, so a type is only ever
-// assigned because the repo actually claims that topic.
+//  - Unordered, first match wins: `ai`/`claude` sit on 24 repos and appeared early,
+//    so a third of the catalogue collapsed onto psychic.
+//  - Every match a candidate, one picked by hash: varied, but meaningless. ultrasec
+//    — a security auditor — came out Dragon, and its printed weakness said Ice.
+//    Variety is worthless if the card stops describing the project.
+//
+// Ordering fixes both without randomness: `appsec` beats `agent-skill`, so ultrasec
+// is Dark; `ai` is near the bottom, so it only decides when nothing more specific
+// applies. The mapping itself is meant to be guessable — security is Dark, tests are
+// Bug, docs are Rock, scraping is Ghost, mobile is Flying, games are Dragon.
 const TYPE_BY_TOPIC = [
-  [/^(ai|llm|gpt|prompt|prompt-engineering|inference|embedding)$/, 'psychic'],
-  [/^(claude|claude-code|anthropic|openai|codex|copilot|cursor)/, 'psychic'],
-  [/^(ai-agent|ai-agents|agent|agents)$/, 'psychic'],
-  [/^(agent-skill|agent-skills|agents-md|skill|skills)$/, 'dragon'],
-  [/^(framework|engine|monorepo|platform|orchestration|compiler|parser)/, 'dragon'],
-  [/^(cli|tui|terminal|command-line|shell|bash|zsh|homebrew|brew)$/, 'fighting'],
+  // --- what the project is ABOUT: the most defining signal there is -----------
   [/^(security|secrets|secret|encryption|crypto|cryptography|privacy|vulnerability|pentest|appsec|no-tracking|ai-safety)/, 'dark'],
-  [/^(github-action|github-actions|actions|ci|cd|devops|automation|bundler|swc|esbuild)/, 'steel'],
-  [/^(mcp|protocol)$/, 'steel'],
-  [/^(pwa|web|webapp|frontend|ui|ux|css|design|nextjs|vue|svelte|astro)/, 'fairy'],
-  [/^(react|hooks|component|components)/, 'fairy'],
-  [/^(react-native|android|ios|mobile|expo|app)$/, 'flying'],
-  [/^(typescript|types|type-safe|npm|node|nodejs|bun|deno|library|lib|sdk|api)$/, 'water'],
-  [/^(javascript|esm|cjs)$/, 'water'],
   [/^(trading|finance|stocks|stock-screener|screener|backtest|binance|investing|fundamental-analysis|piotroski)/, 'ground'],
-  [/^(local-first|offline-first|no-backend|self-hosted|indexeddb|storage|cache|sync)/, 'grass'],
-  [/^(rust|performance|benchmark|apple-silicon|native|wasm)/, 'fire'],
-  [/^(go|golang|static|static-site|snapshot)$/, 'ice'],
-  [/^(github-pages|pages|deploy|deployment|hosting|serverless|edge|vercel|netlify)/, 'electric'],
-  [/^(scraper|scraping|proxy|stealth|undetectable|puppeteer|playwright|devtools|cdp)/, 'ghost'],
-  [/^(docs|documentation|markdown|zola|blog|readme|changelog|release-notes)/, 'rock'],
-  [/^(test|tests|testing|lint|linter|debug|coverage|a11y|accessibility|wcag|rgaa)/, 'bug'],
-  [/^(database|sql|duckdb|postgres|sqlite|data|dataset|csv|json|yaml|toml)/, 'poison'],
-  // The families below exist because the npm-utilities section was 10 water cards
-  // in a row: those repos carry precise maths and algorithm topics that nothing in
-  // the table matched, leaving `typescript`/`node` as their only candidate.
-  [/^(machine-learning|neural-network|knn|regression|linear-regression|logistic-regression|lasso|ols|classification)/, 'psychic'],
+  [/^(game|browser-game|html5-game|rpg|roguelike|monster-taming|creature-collector|pixel-art|turn-based-combat)/, 'dragon'],
+  [/^(scraper|scraping|proxy|stealth|undetectable|puppeteer|playwright|devtools|cdp|instagram|private-api|unfollow)/, 'ghost'],
+  [/^(test|tests|testing|lint|linter|debug|coverage|a11y|accessibility|wcag|rgaa|audit)/, 'bug'],
   [/^(algorithm|algorithms|math|maths|statistics|statistical|gaussian|pearson|benford|combinatorics|distribution|mean|standard-deviation|entropy)/, 'ice'],
-  [/^(condorcet|vote|voting|election|tournament|bracket|brackets|elo|game|sport)/, 'fighting'],
-  [/^(async|promise|concurrency|async-hooks|async-local-storage|context|worker|queue)/, 'flying'],
-  [/^(instagram|social|private-api|unfollow)/, 'ghost'],
-  [/^(zero-dependency|zero-dependencies|minimal|minimalist|lightweight)/, 'steel'],
+  [/^(machine-learning|neural-network|knn|regression|linear-regression|logistic-regression|lasso|ols|classification)/, 'psychic'],
+  [/^(database|sql|duckdb|postgres|sqlite|dataset|csv|json|yaml|toml)/, 'poison'],
+  [/^(docs|documentation|markdown|zola|blog|readme|changelog|release-notes)/, 'rock'],
+  [/^(condorcet|vote|voting|election|tournament|bracket|brackets|elo|sport)/, 'fighting'],
+  // --- what shape it takes ----------------------------------------------------
+  // Mobile outranks date/time on purpose: rn-date is a React Native library that
+  // happens to parse dates, and "Vol" describes it better than "Roche".
+  [/^(react-native|android|ios|mobile|expo)$/, 'flying'],
   [/^(date|time|calendar|timezone|duration)/, 'rock'],
-  [/^(git|commit|push|branch|merge|rebase)/, 'dragon'],
+  [/^(github-pages|pages|deploy|deployment|hosting|serverless|edge|vercel|netlify)/, 'electric'],
+  [/^(local-first|offline-first|no-backend|self-hosted|indexeddb|storage|cache|sync)/, 'grass'],
+  [/^(github-action|github-actions|actions|ci|cd|devops|automation|bundler|swc|esbuild)/, 'steel'],
+  [/^(cli|tui|terminal|command-line|shell|bash|zsh|homebrew|brew)$/, 'fighting'],
+  [/^(pwa|web|webapp|frontend|ui|ux|css|design|nextjs|vue|svelte|astro|react|hooks|component|components)/, 'fairy'],
+  [/^(async|promise|concurrency|async-hooks|async-local-storage|context|worker|queue)/, 'flying'],
+  [/^(framework|engine|monorepo|platform|orchestration|compiler|parser|git|commit|push|branch|merge|rebase)/, 'dragon'],
+  // --- generic ecosystem signals: only decide when nothing above applied ------
+  [/^(ai|llm|gpt|prompt|prompt-engineering|inference|embedding|ai-agent|ai-agents|agent|agents|agent-skill|agent-skills|agents-md|skill|skills|claude|claude-code|anthropic|openai|codex|copilot|cursor|mcp)/, 'psychic'],
+  [/^(rust|performance|benchmark|apple-silicon|native|wasm)/, 'fire'],
+  [/^(zero-dependency|zero-dependencies|minimal|minimalist|lightweight)/, 'steel'],
+  [/^(typescript|types|type-safe|npm|node|nodejs|bun|deno|library|lib|sdk|api|javascript|esm|cjs)$/, 'water'],
 ];
 
 const WEAKNESS = {
@@ -555,35 +555,28 @@ function rarity(stars) {
   return 'common';
 }
 
-function pokemon(repo, now) {
+function pokemon(repo, now, topicFreq) {
   const topics = repo.topics || [];
 
   // The PRIMARY type comes from what the project does, not from what it is written
   // in — and the card's whole colour scheme follows it.
   //
-  // Two earlier attempts were measurably too uniform:
+  // Language first was the obvious reading and measurably too uniform: 36 of 70
+  // repos are TypeScript, so half the binder came out one shade of blue. The
+  // language stays on the card as the secondary type and spelled out in full.
   //
-  //  - Language first: 36 of 70 repos are TypeScript, so half the binder came out
-  //    one shade of blue.
-  //  - Topics, first match wins: better globally, but `ai`/`claude` sit on 24 repos,
-  //    so the two sections a visitor sees FIRST rendered as 19 near-identical pink
-  //    cards — agent-skills was 9 repos of a single type.
-  //
-  // So: collect every type this repo's own topics justify, then pick among them by a
-  // hash of the name. The choice is still honest — each candidate comes from a topic
-  // the repo really carries — but two repos sharing `claude` no longer share a
-  // colour, because one may land on its `cli` and another on its `agent-skill`.
-  // Hashing the NAME (not a counter or the clock) keeps it stable for ever.
+  // The winner is decided by TYPE_BY_TOPIC's order, not by the order this repo
+  // happens to list its topics in — otherwise two repos with the same topics in a
+  // different order would get different types. See that table for the ordering.
   const langType = TYPE_BY_LANGUAGE[repo.language] || 'normal';
-  const candidates = [];
-  for (const topic of topics) {
-    for (const [re, type] of TYPE_BY_TOPIC) {
-      if (re.test(topic) && !candidates.includes(type)) candidates.push(type);
+  let topicType = null;
+  for (const [re, type] of TYPE_BY_TOPIC) {
+    if (topics.some((topic) => re.test(topic))) {
+      topicType = type;
+      break;
     }
   }
-  const type1 = candidates.length
-    ? candidates[fnv1a(`${repo.name}:type`) % candidates.length]
-    : langType;
+  const type1 = topicType || langType;
   const type2 = langType !== type1 ? langType : null;
 
   const created = new Date(repo.created_at);
@@ -592,10 +585,17 @@ function pokemon(repo, now) {
     (now.getUTCFullYear() - created.getUTCFullYear()) * 12 + (now.getUTCMonth() - created.getUTCMonth())
   );
 
-  // Attacks are the repo's own topics, so the flavour text stays truthful. Damage
-  // is mostly hashed from the move name: deriving it from stars or forks alone
-  // stamped a flat "10" on the ~45 repos that have neither, which reads as broken.
-  const moves = (topics.length ? topics.slice(0, 2) : [repo.language || 'commit']).map((name) => ({
+  // Attacks are the repo's own topics, picked RAREST FIRST across the whole
+  // catalogue. Taking the first two alphabetically stamped "agent skill" and "ai
+  // agent" onto most of the agent-skills family, so nine cards listed the same two
+  // moves; the rarest topics are the ones that actually distinguish a repo, which
+  // makes the cards both more varied and more informative.
+  // Damage is mostly hashed from the move name: deriving it from stars or forks
+  // alone stamped a flat "10" on the ~45 repos that have neither.
+  const distinctive = topics
+    .slice()
+    .sort((a, b) => (topicFreq.get(a) || 0) - (topicFreq.get(b) || 0) || a.localeCompare(b));
+  const moves = (distinctive.length ? distinctive.slice(0, 2) : [repo.language || 'commit']).map((name) => ({
     name: String(name).replace(/-/g, ' '),
     dmg: clampNum(
       10 + (fnv1a(`${repo.name}:${name}`) % 6) * 10 + Math.min(repo.stargazers_count, 3) * 10,
@@ -630,6 +630,13 @@ function buildData(repos, now) {
     return { fr: groupTitle(cat, 'fr'), en: groupTitle(cat, 'en'), slug };
   });
 
+  // How common each topic is across the catalogue — pokemon() uses it to pick the
+  // rarest, i.e. most distinguishing, topics as a repo's attacks.
+  const topicFreq = new Map();
+  for (const { picked } of groups) {
+    for (const repo of picked) for (const t of repo.topics || []) topicFreq.set(t, (topicFreq.get(t) || 0) + 1);
+  }
+
   const out = [];
   groups.forEach(({ picked }, catIndex) => {
     for (const repo of picked) {
@@ -658,7 +665,7 @@ function buildData(repos, now) {
         created: ym(repo.created_at),
         pushed: ym(repo.pushed_at),
         license: (repo.license && repo.license.spdx_id !== 'NOASSERTION' && repo.license.spdx_id) || null,
-        poke: pokemon(repo, now),
+        poke: pokemon(repo, now, topicFreq),
       });
     }
   });

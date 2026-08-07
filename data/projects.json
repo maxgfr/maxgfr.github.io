@@ -230,12 +230,12 @@
         "weakness": "water",
         "moves": [
           {
-            "name": "agent skill",
-            "dmg": 30
+            "name": "code search",
+            "dmg": 40
           },
           {
-            "name": "ai agent",
-            "dmg": 20
+            "name": "qdrant",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -274,19 +274,19 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "water",
+        "type1": "rock",
         "type2": "electric",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "water",
         "moves": [
           {
-            "name": "agent skills",
+            "name": "code indexing",
             "dmg": 60
           },
           {
-            "name": "ai",
+            "name": "code navigation",
             "dmg": 60
           }
         ],
@@ -326,20 +326,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "steel",
         "type2": "water",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "fire",
         "moves": [
           {
-            "name": "agent skill",
-            "dmg": 30
+            "name": "citations",
+            "dmg": 60
           },
           {
-            "name": "ai agent",
-            "dmg": 20
+            "name": "deep research",
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -378,20 +378,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "dragon",
+        "type1": "dark",
         "type2": "electric",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "ice",
+        "weakness": "fighting",
         "moves": [
           {
-            "name": "agent skill",
-            "dmg": 60
+            "name": "appsec",
+            "dmg": 10
           },
           {
-            "name": "ai agent",
-            "dmg": 30
+            "name": "code audit",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -430,12 +430,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "dragon",
+        "type1": "bug",
         "type2": "electric",
         "hp": 40,
         "level": 3,
         "rarity": "common",
-        "weakness": "ice",
+        "weakness": "flying",
         "moves": [
           {
             "name": "a11y",
@@ -482,20 +482,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "electric",
         "hp": 30,
         "level": 2,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
-            "name": "agent skill",
-            "dmg": 50
+            "name": "i18n",
+            "dmg": 40
           },
           {
-            "name": "ai agents",
-            "dmg": 30
+            "name": "internationalization",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -534,20 +534,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "dragon",
+        "type1": "fighting",
         "type2": "electric",
         "hp": 40,
         "level": 3,
         "rarity": "common",
-        "weakness": "ice",
+        "weakness": "psychic",
         "moves": [
           {
-            "name": "agent skill",
-            "dmg": 70
+            "name": "greenfield",
+            "dmg": 30
           },
           {
-            "name": "ai agents",
-            "dmg": 70
+            "name": "product management",
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -594,12 +594,12 @@
         "weakness": "psychic",
         "moves": [
           {
-            "name": "agent skill",
-            "dmg": 40
+            "name": "code generation",
+            "dmg": 70
           },
           {
-            "name": "ai agents",
-            "dmg": 80
+            "name": "reconstruct",
+            "dmg": 70
           }
         ],
         "sprite": [
@@ -646,12 +646,12 @@
         "weakness": "dark",
         "moves": [
           {
-            "name": "agent skill",
-            "dmg": 30
+            "name": "code review",
+            "dmg": 40
           },
           {
-            "name": "ai agents",
-            "dmg": 50
+            "name": "evaluation",
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -693,19 +693,19 @@
       "pushed": "2026-08",
       "license": "Apache-2.0",
       "poke": {
-        "type1": "psychic",
+        "type1": "dragon",
         "type2": "ice",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "ice",
         "moves": [
           {
-            "name": "ai",
-            "dmg": 10
+            "name": "ai authoring",
+            "dmg": 50
           },
           {
-            "name": "ai authoring",
+            "name": "brms",
             "dmg": 50
           }
         ],
@@ -756,12 +756,12 @@
         "weakness": "ice",
         "moves": [
           {
-            "name": "ai agents",
+            "name": "call graph",
             "dmg": 40
           },
           {
-            "name": "call graph",
-            "dmg": 40
+            "name": "code index",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -800,12 +800,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
+        "type1": "ghost",
         "type2": "fire",
         "hp": 40,
         "level": 5,
         "rarity": "uncommon",
-        "weakness": "psychic",
+        "weakness": "dark",
         "moves": [
           {
             "name": "agents md",
@@ -852,20 +852,20 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
+        "type1": "dark",
         "type2": "electric",
         "hp": 40,
         "level": 2,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "fighting",
         "moves": [
-          {
-            "name": "agent skills",
-            "dmg": 60
-          },
           {
             "name": "ai safety",
             "dmg": 70
+          },
+          {
+            "name": "credentials",
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -912,11 +912,11 @@
         "weakness": "psychic",
         "moves": [
           {
-            "name": "apple silicon",
-            "dmg": 40
+            "name": "benchmark",
+            "dmg": 10
           },
           {
-            "name": "benchmark",
+            "name": "gguf",
             "dmg": 10
           }
         ],
@@ -964,12 +964,12 @@
         "weakness": "psychic",
         "moves": [
           {
-            "name": "ai",
+            "name": "caffeinate",
             "dmg": 60
           },
           {
-            "name": "caffeinate",
-            "dmg": 60
+            "name": "caffeine",
+            "dmg": 10
           }
         ],
         "sprite": [
@@ -1008,20 +1008,20 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "steel",
         "hp": 30,
         "level": 5,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
-            "name": "ai",
+            "name": "deepseek",
             "dmg": 50
           },
           {
-            "name": "anthropic",
-            "dmg": 10
+            "name": "glm",
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -1060,20 +1060,20 @@
       "pushed": "2026-03",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
-        "type2": "steel",
+        "type1": "steel",
+        "type2": null,
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "fire",
         "moves": [
           {
-            "name": "ai",
-            "dmg": 30
+            "name": "auto commit",
+            "dmg": 40
           },
           {
-            "name": "anthropic",
-            "dmg": 30
+            "name": "commit",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -1112,20 +1112,20 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
+        "type1": "rock",
         "type2": "steel",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "water",
         "moves": [
           {
-            "name": "ai",
+            "name": "commit history",
             "dmg": 40
           },
           {
-            "name": "anthropic",
-            "dmg": 40
+            "name": "changelog",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -1167,20 +1167,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "water",
         "hp": 40,
         "level": 5,
         "rarity": "uncommon",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
-            "name": "ai",
+            "name": "models",
             "dmg": 80
           },
           {
-            "name": "bun",
-            "dmg": 30
+            "name": "zod",
+            "dmg": 70
           }
         ],
         "sprite": [
@@ -1219,12 +1219,12 @@
       "pushed": "2026-06",
       "license": "MIT",
       "poke": {
-        "type1": "fire",
-        "type2": null,
+        "type1": "ghost",
+        "type2": "fire",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "water",
+        "weakness": "dark",
         "moves": [
           {
             "name": "aab",
@@ -1323,20 +1323,20 @@
       "pushed": "2026-03",
       "license": "GPL-3.0",
       "poke": {
-        "type1": "fighting",
+        "type1": "dark",
         "type2": "fire",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "fighting",
         "moves": [
           {
-            "name": "compiler",
-            "dmg": 50
+            "name": "obfuscation",
+            "dmg": 10
           },
           {
-            "name": "encryption",
-            "dmg": 30
+            "name": "rc4",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -1387,8 +1387,8 @@
             "dmg": 40
           },
           {
-            "name": "bash",
-            "dmg": 70
+            "name": "ffsubsync",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -1427,19 +1427,19 @@
       "pushed": "2026-05",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
+        "type1": "ghost",
         "type2": "electric",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "dark",
         "moves": [
           {
-            "name": "bash",
-            "dmg": 10
+            "name": "hls",
+            "dmg": 60
           },
           {
-            "name": "cdp",
+            "name": "m3u8",
             "dmg": 40
           }
         ],
@@ -1491,8 +1491,8 @@
             "dmg": 40
           },
           {
-            "name": "automation",
-            "dmg": 40
+            "name": "change detection",
+            "dmg": 70
           }
         ],
         "sprite": [
@@ -1531,12 +1531,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "water",
+        "type1": "dark",
         "type2": "steel",
         "hp": 50,
         "level": 10,
         "rarity": "uncommon",
-        "weakness": "grass",
+        "weakness": "fighting",
         "moves": [
           {
             "name": "cicd",
@@ -1583,20 +1583,20 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
-        "type2": null,
+        "type1": "ghost",
+        "type2": "steel",
         "hp": 30,
         "level": 5,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "dark",
         "moves": [
           {
-            "name": "automation",
-            "dmg": 60
+            "name": "github api",
+            "dmg": 50
           },
           {
-            "name": "bash",
-            "dmg": 30
+            "name": "github helpers",
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -1632,22 +1632,22 @@
         "poppler"
       ],
       "created": "2026-01",
-      "pushed": "2026-03",
+      "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
-        "type2": "steel",
+        "type1": "steel",
+        "type2": null,
         "hp": 30,
         "level": 8,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "fire",
         "moves": [
           {
-            "name": "automation",
-            "dmg": 30
+            "name": "document processing",
+            "dmg": 10
           },
           {
-            "name": "cli",
+            "name": "ocr",
             "dmg": 40
           }
         ],
@@ -1695,11 +1695,11 @@
         "weakness": "psychic",
         "moves": [
           {
-            "name": "bash",
-            "dmg": 40
+            "name": "bittorent",
+            "dmg": 50
           },
           {
-            "name": "bittorent",
+            "name": "bittorent client",
             "dmg": 50
           }
         ],
@@ -1751,7 +1751,7 @@
             "dmg": 20
           },
           {
-            "name": "node",
+            "name": "preventing sleep",
             "dmg": 40
           }
         ],
@@ -1794,20 +1794,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
+        "type1": "dark",
         "type2": "water",
         "hp": 30,
         "level": 1,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "fighting",
         "moves": [
           {
-            "name": "github pages",
-            "dmg": 50
+            "name": "keyboard shortcuts",
+            "dmg": 20
           },
           {
-            "name": "indexeddb",
-            "dmg": 60
+            "name": "task manager",
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -1857,11 +1857,11 @@
         "weakness": "fighting",
         "moves": [
           {
-            "name": "aes gcm",
-            "dmg": 40
+            "name": "knowledge base",
+            "dmg": 30
           },
           {
-            "name": "encryption",
+            "name": "note taking",
             "dmg": 20
           }
         ],
@@ -1904,12 +1904,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
+        "type1": "rock",
         "type2": "electric",
         "hp": 30,
         "level": 2,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "water",
         "moves": [
           {
             "name": "chrome extension",
@@ -1959,20 +1959,20 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
+        "type1": "fighting",
         "type2": "water",
         "hp": 30,
         "level": 2,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "psychic",
         "moves": [
-          {
-            "name": "agent skills",
-            "dmg": 60
-          },
           {
             "name": "bracket",
             "dmg": 60
+          },
+          {
+            "name": "elimination bracket",
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -2014,20 +2014,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "grass",
+        "type1": "dark",
         "type2": "water",
         "hp": 200,
         "level": 9,
         "rarity": "holo",
-        "weakness": "fire",
+        "weakness": "fighting",
         "moves": [
-          {
-            "name": "ai",
-            "dmg": 90
-          },
           {
             "name": "browser",
             "dmg": 50
+          },
+          {
+            "name": "chatbot",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -2069,20 +2069,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "poison",
         "type2": "water",
         "hp": 60,
         "level": 6,
         "rarity": "uncommon",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
-          {
-            "name": "ai",
-            "dmg": 60
-          },
           {
             "name": "database",
             "dmg": 90
+          },
+          {
+            "name": "schema",
+            "dmg": 70
           }
         ],
         "sprite": [
@@ -2124,12 +2124,12 @@
       "pushed": "2026-05",
       "license": null,
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "fairy",
+        "type2": "water",
         "hp": 40,
         "level": 52,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "steel",
         "moves": [
           {
             "name": "apartments",
@@ -2179,20 +2179,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "dragon",
+        "type1": "dark",
         "type2": "ground",
         "hp": 30,
         "level": 2,
         "rarity": "common",
-        "weakness": "ice",
+        "weakness": "fighting",
         "moves": [
           {
-            "name": "aes gcm",
-            "dmg": 40
+            "name": "passphrase",
+            "dmg": 50
           },
           {
-            "name": "encryption",
-            "dmg": 60
+            "name": "password generator",
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -2234,19 +2234,19 @@
       "pushed": "2026-02",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
+        "type1": "grass",
         "type2": "water",
         "hp": 40,
         "level": 8,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "fire",
         "moves": [
           {
             "name": "barcode scanner",
             "dmg": 60
           },
           {
-            "name": "local first",
+            "name": "loyalty",
             "dmg": 70
           }
         ],
@@ -2286,20 +2286,20 @@
       "pushed": "2026-06",
       "license": "MIT",
       "poke": {
-        "type1": "fire",
+        "type1": "poison",
         "type2": "water",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "water",
+        "weakness": "psychic",
         "moves": [
-          {
-            "name": "ai",
-            "dmg": 40
-          },
           {
             "name": "desktop app",
             "dmg": 40
+          },
+          {
+            "name": "duolingo",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -2338,7 +2338,7 @@
       "pushed": "2026-06",
       "license": null,
       "poke": {
-        "type1": "psychic",
+        "type1": "ghost",
         "type2": "water",
         "hp": 30,
         "level": 3,
@@ -2346,12 +2346,12 @@
         "weakness": "dark",
         "moves": [
           {
-            "name": "ai",
-            "dmg": 40
+            "name": "content automation",
+            "dmg": 30
           },
           {
-            "name": "automation",
-            "dmg": 30
+            "name": "ffmpeg",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -2445,20 +2445,20 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "rock",
+        "type2": "water",
         "hp": 60,
         "level": 46,
         "rarity": "uncommon",
-        "weakness": "grass",
+        "weakness": "water",
         "moves": [
           {
-            "name": "changelog",
-            "dmg": 50
+            "name": "npm package",
+            "dmg": 70
           },
           {
-            "name": "github",
-            "dmg": 60
+            "name": "package version",
+            "dmg": 80
           }
         ],
         "sprite": [
@@ -2500,12 +2500,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "electric",
+        "type2": "water",
         "hp": 30,
         "level": 1,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "ground",
         "moves": [
           {
             "name": "agile",
@@ -2555,12 +2555,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
+        "type1": "dragon",
         "type2": "water",
         "hp": 30,
         "level": 1,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "ice",
         "moves": [
           {
             "name": "browser game",
@@ -2610,12 +2610,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "grass",
-        "type2": null,
+        "type1": "ground",
+        "type2": "grass",
         "hp": 40,
         "level": 2,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "water",
         "moves": [
           {
             "name": "duckdb",
@@ -2665,20 +2665,20 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "poison",
+        "type1": "dark",
         "type2": "water",
         "hp": 200,
         "level": 54,
         "rarity": "holo",
-        "weakness": "psychic",
+        "weakness": "fighting",
         "moves": [
-          {
-            "name": "binance",
-            "dmg": 40
-          },
           {
             "name": "binance api",
             "dmg": 70
+          },
+          {
+            "name": "binance historical",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -2772,20 +2772,20 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "ice",
+        "type1": "ground",
         "type2": "water",
         "hp": 50,
         "level": 45,
         "rarity": "uncommon",
-        "weakness": "fire",
+        "weakness": "water",
         "moves": [
           {
-            "name": "algorithm",
-            "dmg": 80
+            "name": "supertrend",
+            "dmg": 50
           },
           {
-            "name": "javascript",
-            "dmg": 60
+            "name": "technical indicators",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -2827,20 +2827,20 @@
       "pushed": "2026-04",
       "license": null,
       "poke": {
-        "type1": "fire",
+        "type1": "ice",
         "type2": "water",
         "hp": 30,
         "level": 5,
         "rarity": "common",
-        "weakness": "water",
+        "weakness": "fire",
         "moves": [
-          {
-            "name": "bun",
-            "dmg": 20
-          },
           {
             "name": "knn",
             "dmg": 60
+          },
+          {
+            "name": "lasso",
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -2999,12 +2999,12 @@
         "weakness": "fire",
         "moves": [
           {
-            "name": "algorithm",
-            "dmg": 30
-          },
-          {
             "name": "benford",
             "dmg": 20
+          },
+          {
+            "name": "benford analysis",
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -3046,12 +3046,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "ice",
+        "type2": "water",
         "hp": 40,
         "level": 45,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "fire",
         "moves": [
           {
             "name": "gaussian",
@@ -3164,8 +3164,8 @@
             "dmg": 60
           },
           {
-            "name": "hooks",
-            "dmg": 40
+            "name": "useful functions",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -3205,12 +3205,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "steel",
+        "type2": "water",
         "hp": 40,
         "level": 45,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "fire",
         "moves": [
           {
             "name": "essentials functions",
@@ -3260,20 +3260,20 @@
       "pushed": "2026-05",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "flying",
+        "type2": "water",
         "hp": 40,
         "level": 45,
         "rarity": "uncommon",
-        "weakness": "grass",
+        "weakness": "electric",
         "moves": [
-          {
-            "name": "android",
-            "dmg": 40
-          },
           {
             "name": "date",
             "dmg": 30
+          },
+          {
+            "name": "date parsing",
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -3313,20 +3313,20 @@
       "pushed": "2026-04",
       "license": null,
       "poke": {
-        "type1": "steel",
+        "type1": "flying",
         "type2": "water",
         "hp": 30,
         "level": 45,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "electric",
         "moves": [
           {
             "name": "modal",
             "dmg": 40
           },
           {
-            "name": "react",
-            "dmg": 40
+            "name": "rn",
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -3368,12 +3368,12 @@
       "pushed": "2026-04",
       "license": null,
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "flying",
+        "type2": "water",
         "hp": 40,
         "level": 45,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "electric",
         "moves": [
           {
             "name": "async storage",
@@ -3423,20 +3423,20 @@
       "pushed": "2026-06",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
+        "type1": "ghost",
         "type2": "water",
         "hp": 80,
         "level": 46,
         "rarity": "uncommon",
-        "weakness": "psychic",
+        "weakness": "dark",
         "moves": [
           {
             "name": "api",
             "dmg": 80
           },
           {
-            "name": "cli",
-            "dmg": 40
+            "name": "insta",
+            "dmg": 90
           }
         ],
         "sprite": [
@@ -3530,20 +3530,20 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "dragon",
+        "type1": "poison",
         "type2": "water",
         "hp": 70,
         "level": 54,
         "rarity": "uncommon",
-        "weakness": "ice",
+        "weakness": "psychic",
         "moves": [
           {
-            "name": "actions",
-            "dmg": 50
+            "name": "json",
+            "dmg": 40
           },
           {
-            "name": "github",
-            "dmg": 70
+            "name": "key",
+            "dmg": 90
           }
         ],
         "sprite": [
@@ -3592,12 +3592,12 @@
         "weakness": "fire",
         "moves": [
           {
-            "name": "actions",
-            "dmg": 90
+            "name": "commit message",
+            "dmg": 50
           },
           {
-            "name": "commit",
-            "dmg": 70
+            "name": "files",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -3636,20 +3636,20 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "electric",
+        "type2": "water",
         "hp": 40,
         "level": 54,
         "rarity": "uncommon",
-        "weakness": "grass",
+        "weakness": "ground",
         "moves": [
           {
             "name": "deployments",
             "dmg": 80
           },
           {
-            "name": "github",
-            "dmg": 30
+            "name": "multi deployments",
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -3691,20 +3691,20 @@
       "pushed": "2026-02",
       "license": "MIT",
       "poke": {
-        "type1": "fire",
+        "type1": "steel",
         "type2": "water",
         "hp": 190,
         "level": 54,
         "rarity": "holo",
-        "weakness": "water",
+        "weakness": "fire",
         "moves": [
           {
             "name": "biomejs",
             "dmg": 90
           },
           {
-            "name": "boilerplate",
-            "dmg": 70
+            "name": "cjs",
+            "dmg": 80
           }
         ],
         "sprite": [
@@ -3754,12 +3754,12 @@
         "weakness": "flying",
         "moves": [
           {
-            "name": "boilerplate",
-            "dmg": 90
-          },
-          {
             "name": "boilerplate components library",
             "dmg": 60
+          },
+          {
+            "name": "components library",
+            "dmg": 80
           }
         ],
         "sprite": [
@@ -3856,8 +3856,8 @@
             "dmg": 20
           },
           {
-            "name": "devtools",
-            "dmg": 60
+            "name": "maxgfr",
+            "dmg": 70
           }
         ],
         "sprite": [
@@ -3899,12 +3899,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
+        "type1": "fairy",
         "type2": "electric",
         "hp": 40,
         "level": 100,
         "rarity": "uncommon",
-        "weakness": "grass",
+        "weakness": "steel",
         "moves": [
           {
             "name": "golfier",
