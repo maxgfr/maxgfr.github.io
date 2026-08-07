@@ -69,6 +69,13 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Générateur local de courtes vidéos quotidiennes (Remotion) avec légendes par plateforme + publication optionnelle sur Shorts/TikTok/Reels.
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin indétectable via le Chrome DevTools Protocol et les data routes Next.js — sans Puppeteer, sans détection de bot.
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version GitHub. · [démo](https://maxgfr.github.io/release-notes-finder)
+- **[kanbo](https://github.com/maxgfr/kanbo)** — Gestion de projet local-first : kanban, sprints et roadmap dans le navigateur, avec un dépôt git comme seul backend. · [démo](https://maxgfr.github.io/kanbo/)
+
+---
+
+## 🎮 Jeux
+
+- **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde généré procéduralement. Tourne entièrement dans le navigateur — sans serveur ni compte. Le monde se reconstruit depuis une graine, donc une sauvegarde tient en quelques kilo-octets de JSON exportables et réimportables. · [démo](https://maxgfr.github.io/terravia)
 
 ---
 
@@ -119,13 +126,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend. · [démo](https://maxgfr.github.io/kanbo/)
-- **[terravia](https://github.com/maxgfr/terravia)** — Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import. · [démo](https://maxgfr.github.io/terravia)
 
 ---
 

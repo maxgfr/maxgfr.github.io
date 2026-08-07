@@ -60,6 +60,11 @@
       "slug": "web-apps-pwas"
     },
     {
+      "fr": "🎮 Jeux",
+      "en": "🎮 Games",
+      "slug": "games"
+    },
+    {
       "fr": "📈 Trading & finance",
       "en": "📈 Trading & finance",
       "slug": "trading-finance"
@@ -83,56 +88,51 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
-    },
-    {
-      "fr": "🆕 Non classés",
-      "en": "🆕 Uncategorized",
-      "slug": "uncategorized"
     }
   ],
   "timeline": [
     {
       "year": "2017",
       "repos": [
-        67
+        69
       ]
     },
     {
       "year": "2020",
       "repos": [
-        59
+        61
       ]
     },
     {
       "year": "2021",
       "repos": [
-        65
+        67
       ]
     },
     {
       "year": "2022",
       "repos": [
-        44,
-        60,
-        62,
-        41,
-        63,
-        52,
-        61,
-        36,
-        58,
-        42,
-        64,
-        50,
-        49,
-        51,
-        57,
-        53,
-        55,
-        56,
-        48,
         46,
+        62,
+        64,
+        41,
+        65,
         54,
+        63,
+        36,
+        60,
+        42,
+        66,
+        52,
+        51,
+        53,
+        59,
+        55,
+        57,
+        58,
+        50,
+        48,
+        56,
         29
       ]
     },
@@ -141,7 +141,7 @@
       "repos": [
         25,
         34,
-        66
+        68
       ]
     },
     {
@@ -152,7 +152,7 @@
         38,
         28,
         24,
-        45,
+        47,
         35,
         16,
         17,
@@ -164,7 +164,7 @@
         11,
         26,
         18,
-        47,
+        49,
         19,
         14,
         6,
@@ -179,15 +179,15 @@
         32,
         33,
         10,
-        43,
+        45,
         37,
         12,
         8,
         5,
-        68,
+        43,
         31,
         13,
-        69,
+        44,
         30
       ]
     }
@@ -2469,6 +2469,116 @@
       }
     },
     {
+      "name": "kanbo",
+      "url": "https://github.com/maxgfr/kanbo",
+      "home": "https://maxgfr.github.io/kanbo/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Gestion de projet local-first : kanban, sprints et roadmap dans le navigateur, avec un dépôt git comme seul backend.",
+        "en": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend."
+      },
+      "cat": 3,
+      "dex": 44,
+      "dexLabel": "044",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "agile",
+        "end-to-end-encryption",
+        "github-pages",
+        "kanban",
+        "local-first",
+        "no-backend",
+        "offline-first",
+        "project-management"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 30,
+        "level": 1,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "agile",
+            "dmg": 30
+          },
+          {
+            "name": "end to end encryption",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM5 4h2v1h-2zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "terravia",
+      "url": "https://github.com/maxgfr/terravia",
+      "home": "https://maxgfr.github.io/terravia",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "RPG de capture de créatures dans un monde généré procéduralement. Tourne entièrement dans le navigateur — sans serveur ni compte. Le monde se reconstruit depuis une graine, donc une sauvegarde tient en quelques kilo-octets de JSON exportables et réimportables.",
+        "en": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import."
+      },
+      "cat": 4,
+      "dex": 45,
+      "dexLabel": "045",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "browser-game",
+        "canvas",
+        "creature-collector",
+        "game",
+        "github-pages",
+        "html5-game",
+        "monster-taming",
+        "pixel-art"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": "water",
+        "hp": 30,
+        "level": 1,
+        "rarity": "common",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "browser game",
+            "dmg": 30
+          },
+          {
+            "name": "canvas",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM2 9h1v1h-1zM9 9h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "crible",
       "url": "https://github.com/maxgfr/crible",
       "home": "https://maxgfr.github.io/crible/",
@@ -2480,9 +2590,9 @@
         "fr": "Screener fondamental d'actions auto-hébergé — 150k+ titres, zéro clé d'API, scores Piotroski/Altman/Beneish transparents avec traçabilité complète des données, rapide grâce à DuckDB.",
         "en": "Self-hosted fundamental stock screener — 150k+ equities, zero API keys, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast."
       },
-      "cat": 4,
-      "dex": 44,
-      "dexLabel": "044",
+      "cat": 5,
+      "dex": 46,
+      "dexLabel": "046",
       "stars": 1,
       "forks": 0,
       "language": "Python",
@@ -2535,9 +2645,9 @@
         "fr": "Récupère les bougies (klines) historiques depuis l'API Binance.",
         "en": "Fetch historical klines from the Binance API."
       },
-      "cat": 4,
-      "dex": 45,
-      "dexLabel": "045",
+      "cat": 5,
+      "dex": 47,
+      "dexLabel": "047",
       "stars": 46,
       "forks": 6,
       "language": "TypeScript",
@@ -2587,9 +2697,9 @@
         "fr": "Décrivez une stratégie crypto en langage naturel → fichier de stratégie JSON, backtesté sur 50+ indicateurs avec rapports HTML.",
         "en": "Describe a crypto strategy in plain English → JSON strategy, backtested over 50+ indicators with HTML reports."
       },
-      "cat": 4,
-      "dex": 46,
-      "dexLabel": "046",
+      "cat": 5,
+      "dex": 48,
+      "dexLabel": "048",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -2642,9 +2752,9 @@
         "fr": "Implémentation de l'indicateur SuperTrend.",
         "en": "Implementation of the SuperTrend indicator."
       },
-      "cat": 4,
-      "dex": 47,
-      "dexLabel": "047",
+      "cat": 5,
+      "dex": 49,
+      "dexLabel": "049",
       "stars": 4,
       "forks": 4,
       "language": "TypeScript",
@@ -2697,9 +2807,9 @@
         "fr": "Bibliothèque TS zéro-dépendance de régression/classification/stats (OLS, Ridge, Lasso, Logistique, KNN, réseau de neurones) avec moteur Rust/WASM.",
         "en": "Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine."
       },
-      "cat": 5,
-      "dex": 48,
-      "dexLabel": "048",
+      "cat": 6,
+      "dex": 50,
+      "dexLabel": "050",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2752,9 +2862,9 @@
         "fr": "Fonctions pour trouver les similarités entre tableaux.",
         "en": "Functions to find similarities between arrays."
       },
-      "cat": 5,
-      "dex": 49,
-      "dexLabel": "049",
+      "cat": 6,
+      "dex": 51,
+      "dexLabel": "051",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -2807,9 +2917,9 @@
         "fr": "Implémentation de l'algorithme de vote de Condorcet en TypeScript.",
         "en": "Condorcet vote algorithm in TypeScript."
       },
-      "cat": 5,
-      "dex": 50,
-      "dexLabel": "050",
+      "cat": 6,
+      "dex": 52,
+      "dexLabel": "052",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -2862,9 +2972,9 @@
         "fr": "Vérifie si un jeu de données suit la loi de Benford.",
         "en": "Check whether a dataset follows Benford's law."
       },
-      "cat": 5,
-      "dex": 51,
-      "dexLabel": "051",
+      "cat": 6,
+      "dex": 53,
+      "dexLabel": "053",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2916,9 +3026,9 @@
         "fr": "Utilitaires pour les calculs gaussiens.",
         "en": "Helpers for Gaussian calculations."
       },
-      "cat": 5,
-      "dex": 52,
-      "dexLabel": "052",
+      "cat": 6,
+      "dex": 54,
+      "dexLabel": "054",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2971,9 +3081,9 @@
         "fr": "Contexte minimaliste pour Node, inspiré de l'API Context de React.",
         "en": "Minimalist context for Node, inspired by the React Context API."
       },
-      "cat": 5,
-      "dex": 53,
-      "dexLabel": "053",
+      "cat": 6,
+      "dex": 55,
+      "dexLabel": "055",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -3026,9 +3136,9 @@
         "fr": "Hooks et composants utiles pour React.",
         "en": "Useful hooks and components for React."
       },
-      "cat": 5,
-      "dex": 54,
-      "dexLabel": "054",
+      "cat": 6,
+      "dex": 56,
+      "dexLabel": "056",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3077,9 +3187,9 @@
         "fr": "Fonctions TypeScript essentielles, zéro-dépendance.",
         "en": "Essential zero-dependency TypeScript helpers."
       },
-      "cat": 5,
-      "dex": 55,
-      "dexLabel": "055",
+      "cat": 6,
+      "dex": 57,
+      "dexLabel": "057",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3130,9 +3240,9 @@
         "fr": "Correctif zéro-dépendance des problèmes d'analyse de dates en React Native sur Android.",
         "en": "Zero-dependency fix for date-parsing issues in React Native on Android."
       },
-      "cat": 5,
-      "dex": 56,
-      "dexLabel": "056",
+      "cat": 6,
+      "dex": 58,
+      "dexLabel": "058",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3185,9 +3295,9 @@
         "fr": "Modale React Native légère et zéro-dépendance (sans animation).",
         "en": "Lightweight, zero-dependency React Native modal (no animation)."
       },
-      "cat": 5,
-      "dex": 57,
-      "dexLabel": "057",
+      "cat": 6,
+      "dex": 59,
+      "dexLabel": "059",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3238,9 +3348,9 @@
         "fr": "Wrapper d'async-storage pour stocker de grandes quantités de données en React Native.",
         "en": "async-storage wrapper for storing huge data in React Native."
       },
-      "cat": 5,
-      "dex": 58,
-      "dexLabel": "058",
+      "cat": 6,
+      "dex": 60,
+      "dexLabel": "060",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3293,9 +3403,9 @@
         "fr": "Suivez qui vous a unfollow sur Instagram.",
         "en": "Track who unfollowed you on Instagram."
       },
-      "cat": 5,
-      "dex": 59,
-      "dexLabel": "059",
+      "cat": 6,
+      "dex": 61,
+      "dexLabel": "061",
       "stars": 9,
       "forks": 0,
       "language": "TypeScript",
@@ -3348,9 +3458,9 @@
         "fr": "SDK Node non-officiel pour api-money.com.",
         "en": "Unofficial Node SDK for api-money.com."
       },
-      "cat": 5,
-      "dex": 60,
-      "dexLabel": "060",
+      "cat": 6,
+      "dex": 62,
+      "dexLabel": "062",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3400,9 +3510,9 @@
         "fr": "Action pour modifier une valeur dans un fichier JSON (ex. package.json).",
         "en": "Action to change a value in a JSON file (e.g. package.json)."
       },
-      "cat": 6,
-      "dex": 61,
-      "dexLabel": "061",
+      "cat": 7,
+      "dex": 63,
+      "dexLabel": "063",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -3455,9 +3565,9 @@
         "fr": "Action pour committer et pousser un fichier dans un dépôt.",
         "en": "Action to commit and push a file to a repository."
       },
-      "cat": 6,
-      "dex": 62,
-      "dexLabel": "062",
+      "cat": 7,
+      "dex": 64,
+      "dexLabel": "064",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3509,9 +3619,9 @@
         "fr": "Action pour gérer les statuts de déploiement sur plusieurs environnements.",
         "en": "Action to manage deployment statuses across multiple environments."
       },
-      "cat": 6,
-      "dex": 63,
-      "dexLabel": "063",
+      "cat": 7,
+      "dex": 65,
+      "dexLabel": "065",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3561,9 +3671,9 @@
         "fr": "Starter TypeScript + SWC minimaliste générant des paquets CJS et ESM.",
         "en": "Minimalist TypeScript + SWC starter emitting CJS and ESM packages."
       },
-      "cat": 7,
-      "dex": 64,
-      "dexLabel": "064",
+      "cat": 8,
+      "dex": 66,
+      "dexLabel": "066",
       "stars": 32,
       "forks": 5,
       "language": "TypeScript",
@@ -3616,9 +3726,9 @@
         "fr": "Starter TypeScript + SWC minimaliste pour créer des bibliothèques de composants React.",
         "en": "Minimalist TS + SWC starter for building React component libraries."
       },
-      "cat": 7,
-      "dex": 65,
-      "dexLabel": "065",
+      "cat": 8,
+      "dex": 67,
+      "dexLabel": "067",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -3668,9 +3778,9 @@
         "fr": "Liste des dépôts que j'ai aimés sur GitHub.",
         "en": "Curated list of repositories I've liked on GitHub."
       },
-      "cat": 8,
-      "dex": 66,
-      "dexLabel": "066",
+      "cat": 9,
+      "dex": 68,
+      "dexLabel": "068",
       "stars": 22,
       "forks": 3,
       "language": null,
@@ -3716,9 +3826,9 @@
         "fr": "Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).",
         "en": "Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`)."
       },
-      "cat": 8,
-      "dex": 67,
-      "dexLabel": "067",
+      "cat": 9,
+      "dex": 69,
+      "dexLabel": "069",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -3769,9 +3879,9 @@
         "fr": "Code source du site d'un écrivain.",
         "en": "Source of a writer's website."
       },
-      "cat": 8,
-      "dex": 68,
-      "dexLabel": "068",
+      "cat": 9,
+      "dex": 70,
+      "dexLabel": "070",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",
@@ -3809,116 +3919,6 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
-        ]
-      }
-    },
-    {
-      "name": "kanbo",
-      "url": "https://github.com/maxgfr/kanbo",
-      "home": "https://maxgfr.github.io/kanbo/",
-      "homeLabel": {
-        "fr": "démo",
-        "en": "demo"
-      },
-      "desc": {
-        "fr": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend.",
-        "en": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend."
-      },
-      "cat": 9,
-      "dex": 69,
-      "dexLabel": "069",
-      "stars": 0,
-      "forks": 0,
-      "language": "TypeScript",
-      "topics": [
-        "agile",
-        "end-to-end-encryption",
-        "github-pages",
-        "kanban",
-        "local-first",
-        "no-backend",
-        "offline-first",
-        "project-management"
-      ],
-      "created": "2026-08",
-      "pushed": "2026-08",
-      "license": "MIT",
-      "poke": {
-        "type1": "water",
-        "type2": null,
-        "hp": 30,
-        "level": 1,
-        "rarity": "common",
-        "weakness": "grass",
-        "moves": [
-          {
-            "name": "agile",
-            "dmg": 30
-          },
-          {
-            "name": "end to end encryption",
-            "dmg": 20
-          }
-        ],
-        "sprite": [
-          "M2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M0 4h3v1h-3zM5 4h2v1h-2zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
-        ]
-      }
-    },
-    {
-      "name": "terravia",
-      "url": "https://github.com/maxgfr/terravia",
-      "home": "https://maxgfr.github.io/terravia",
-      "homeLabel": {
-        "fr": "démo",
-        "en": "demo"
-      },
-      "desc": {
-        "fr": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import.",
-        "en": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import."
-      },
-      "cat": 9,
-      "dex": 70,
-      "dexLabel": "070",
-      "stars": 0,
-      "forks": 0,
-      "language": "TypeScript",
-      "topics": [
-        "browser-game",
-        "canvas",
-        "creature-collector",
-        "game",
-        "github-pages",
-        "html5-game",
-        "monster-taming",
-        "pixel-art"
-      ],
-      "created": "2026-08",
-      "pushed": "2026-08",
-      "license": "MIT",
-      "poke": {
-        "type1": "steel",
-        "type2": "water",
-        "hp": 30,
-        "level": 1,
-        "rarity": "common",
-        "weakness": "fire",
-        "moves": [
-          {
-            "name": "browser game",
-            "dmg": 30
-          },
-          {
-            "name": "canvas",
-            "dmg": 40
-          }
-        ],
-        "sprite": [
-          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM2 9h1v1h-1zM9 9h1v1h-1z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     }
