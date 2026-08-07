@@ -110,14 +110,24 @@
         el.append(prompt, said);
     }
 
+    // The script replaces the server-rendered listing at boot, so these are the links
+    // actually clicked. Same target/rel as the markup they stand in for, and as
+    // `open` has always used: the shell keeps its screen, you keep your place.
+    function offsite(href, text, cls) {
+        const link = document.createElement('a');
+        link.href = href;
+        link.textContent = text;
+        if (cls) link.className = cls;
+        link.target = '_blank';
+        link.rel = 'noopener external';
+        return link;
+    }
+
     // A repo row: the name is a real link, so a shell listing is still navigable by
     // keyboard and still shows a URL on hover.
     function fileLine(file) {
         const el = line('', 'sh-filerow');
-        const link = document.createElement('a');
-        link.href = file.url;
-        link.className = 'sh-fname';
-        link.textContent = file.name;
+        const link = offsite(file.url, file.name, 'sh-fname');
         const meta = document.createElement('span');
         meta.className = 'sh-meta';
         const bits = [];
@@ -216,15 +226,9 @@
             line(`  ${key.padEnd(width)}  ${value}`, 'sh-kv');
         }
         const links = line('', 'sh-filerow');
-        const code = document.createElement('a');
-        code.href = file.url;
-        code.textContent = L.code;
-        links.append(document.createTextNode('  '), code);
+        links.append(document.createTextNode('  '), offsite(file.url, L.code));
         if (file.home) {
-            const demo = document.createElement('a');
-            demo.href = file.home;
-            demo.textContent = L.demo;
-            links.append(document.createTextNode('  '), demo);
+            links.append(document.createTextNode('  '), offsite(file.home, L.demo));
         }
     }
 

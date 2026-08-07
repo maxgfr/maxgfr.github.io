@@ -21,7 +21,9 @@
     <article class="dex-frame">
         <header class="dex-head">
             <span class="dex-no">#{{ pv_repo.dexLabel }}</span>
-            <h3 class="dex-name"><a href="{{ pv_repo.url }}">{{ pv_repo.name }}</a></h3>
+            {# See partials/projects-card.html: every off-site link on the five views
+               opens in a new tab, matching what Zola does for the /projects list. #}
+            <h3 class="dex-name"><a href="{{ pv_repo.url }}" target="_blank" rel="noopener external">{{ pv_repo.name }}</a></h3>
             <span class="dex-hp">
                 {{ pv_poke.hp }}<abbr title="{% if pv_lang == 'en' %}hit points, from the repo's stars{% else %}points de vie, depuis les étoiles du dépôt{% endif %}">{% if pv_lang == "en" %}HP{% else %}PV{% endif %}</abbr>
                 <span class="dex-type-icon" title="{{ pv_t1[pv_lang] }}">{{ pv_t1.icon }}</span>
@@ -66,7 +68,7 @@
                 <span>{% if pv_lang == "en" %}weak{% else %}faibl.{% endif %} {{ pv_weak[pv_lang] }}</span>
                 <span>{% if pv_lang == "en" %}lv{% else %}niv{% endif %} {{ pv_poke.level }}</span>
                 {% if pv_repo.stars > 0 %}<span>★ {{ pv_repo.stars }}</span>{% endif %}
-                {% if pv_repo.home %}<a href="{{ pv_repo.home }}">{{ pv_repo.homeLabel[pv_lang] }}</a>{% endif %}
+                {% if pv_repo.home %}<a href="{{ pv_repo.home }}" target="_blank" rel="noopener external">{{ pv_repo.homeLabel[pv_lang] }}</a>{% endif %}
             </footer>
         </div>
     </article>

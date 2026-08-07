@@ -147,7 +147,7 @@
                 data-created="{{ repo.created }}"
                 data-pushed="{{ repo.pushed }}"
                 data-topics="{{ repo.topics | join(sep=' ') }}">
-                <a class="sh-fname" href="{{ repo.url }}">{{ repo.name }}</a>
+                <a class="sh-fname" href="{{ repo.url }}" target="_blank" rel="noopener external">{{ repo.name }}</a>
                 <span class="sh-desc">{{ repo.desc[page.lang] }}</span>
             </li>
             {% endif %}

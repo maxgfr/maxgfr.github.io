@@ -19,7 +19,10 @@
     data-pushed="{{ pv_repo.pushed }}"
     data-language="{{ pv_repo.language | default(value='') }}"
     data-search="{{ pv_repo.name }} {{ pv_desc }} {{ pv_repo.topics | join(sep=' ') }} {{ pv_repo.language | default(value='') }}">
-    <h3 class="pvc-name"><a href="{{ pv_repo.url }}">{{ pv_repo.name }}</a></h3>
+    {# target/rel spelled out to match what Zola gives the /projects list for free
+       via `external_links_target_blank` (config.toml). Every link off this site
+       opens in a new tab, whichever of the five views you are reading. #}
+    <h3 class="pvc-name"><a href="{{ pv_repo.url }}" target="_blank" rel="noopener external">{{ pv_repo.name }}</a></h3>
 
     {# Clamped to four lines in CSS rather than truncated here: the full text stays
        in the DOM for the filter box, for search engines and for no-JS readers. #}
@@ -61,7 +64,7 @@
     {% endif %}
 
     <p class="pv-links">
-        <a href="{{ pv_repo.url }}">code</a>
-        {% if pv_repo.home %}<a href="{{ pv_repo.home }}">{{ pv_repo.homeLabel[pv_lang] }}</a>{% endif %}
+        <a href="{{ pv_repo.url }}" target="_blank" rel="noopener external">code</a>
+        {% if pv_repo.home %}<a href="{{ pv_repo.home }}" target="_blank" rel="noopener external">{{ pv_repo.homeLabel[pv_lang] }}</a>{% endif %}
     </p>
 </li>

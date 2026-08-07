@@ -56,7 +56,9 @@
                    the DOM so the exact date is still there for a screen reader and
                    for find-in-page. #}
                 <span class="tl-when pv-sr">{{ repo.created }}</span>
-                <a class="tl-name" href="{{ repo.url }}">{{ repo.name }}</a>
+                {# The legend links above stay in-page; only this one leaves the site,
+                   so only this one opens in a new tab. #}
+                <a class="tl-name" href="{{ repo.url }}" target="_blank" rel="noopener external">{{ repo.name }}</a>
                 <span class="tl-meta">
                     {% if repo.language %}
                     <span class="pv-lang" data-lang="{{ repo.language }}">
