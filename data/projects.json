@@ -3815,8 +3815,11 @@
     {
       "name": "kanbo",
       "url": "https://github.com/maxgfr/kanbo",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://maxgfr.github.io/kanbo/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
       "desc": {
         "fr": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend.",
         "en": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend."
