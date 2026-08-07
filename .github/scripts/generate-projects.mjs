@@ -327,6 +327,30 @@ const SILHOUETTES = [
     eyes: 4,
     mouth: 6,
   },
+  {
+    // long neck
+    rows: ['...oxx', '...xxx', '...xxx', '....xx', '....xx', '...xxx', '..xxxx', '.xxxxx', '.xxxxx', '..xxxx', '..xxxo', '..xx..'],
+    eyes: 2,
+    mouth: 3,
+  },
+  {
+    // stocky, short legs
+    rows: ['......', '..oxxx', '.xxxxx', '.xxxxx', 'xxxxxx', 'xxxxxx', 'xxxxxx', 'oxxxxx', 'xxxxxx', 'xxxxxx', '.xxxxo', '.x..x.'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // twin antennae
+    rows: ['.o..o.', '..x.x.', '..xxx.', '..xxxx', '.xxxxx', '.xxxxx', '..xxxx', '..xxxx', '.oxxxx', '..xxxx', '..xxxo', '.xx.x.'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // hunched, broad shoulders
+    rows: ['......', '...oxx', '..xxxx', '..xxxx', '.xxxxx', 'xxxxxx', 'xxxxxx', '.xxxxx', '..xxxx', '..xxxx', '.oxxxo', '.xx.x.'],
+    eyes: 4,
+    mouth: 6,
+  },
 ];
 
 // Decorative markings, applied before the face is carved so eyes and mouth always
@@ -341,6 +365,10 @@ const MARKINGS = [
   { cells: [[5, 7], [5, 8]], shade: 3 }, // chest stripe
   { cells: [[1, 6], [1, 7]], shade: 3 }, // flank patch
   { cells: [[4, 10], [5, 10]], shade: 1 }, // pale belly band
+  { cells: [[2, 1], [2, 2]], shade: 3 }, // dark brow
+  { cells: [[5, 5], [5, 6]], shade: 1 }, // pale bib
+  { cells: [[1, 9], [2, 9]], shade: 1 }, // pale hocks
+  { cells: [[5, 3], [4, 4]], shade: 3 }, // cheek slash
 ];
 
 // A 10×10 creature. Returns one SVG path per shade (1..3 = the type's
@@ -381,8 +409,16 @@ function spritePaths(name) {
 
   // Carve the face back out. Two eyes always, and a mouth two pixels wide astride
   // the axis, so every sprite has something to look back at you with.
-  grid[shape.eyes][3] = 0;
-  grid[shape.eyes][SPRITE - 1 - 3] = 0;
+  //
+  // The eyes get a hashed height (one or two pixels tall) purely for entropy: with
+  // a single eye style, two of seventy repos produced a byte-identical sprite AND
+  // the same type, so two cards in the binder were indistinguishable. Salted
+  // separately from the silhouette so it varies independently of it.
+  const tallEyes = fnv1a(`${name}:eye`) % 2 === 0;
+  for (const eyeX of [3, SPRITE - 1 - 3]) {
+    grid[shape.eyes][eyeX] = 0;
+    if (tallEyes && shape.eyes + 1 < SPRITE) grid[shape.eyes + 1][eyeX] = 0;
+  }
   grid[shape.mouth][half - 1] = 0;
   grid[shape.mouth][half] = 0;
 
@@ -441,15 +477,51 @@ const TYPE_BY_LANGUAGE = {
   Jupyter: 'psychic',
 };
 
-// Type from what the project DOES. First match wins, in this order.
+// Type from what the project DOES.
+//
+// Every pattern a repo's topics match becomes a CANDIDATE, and pokemon() picks one
+// of them by hash — see there for why, and why this table has to be wide.
+//
+// Deliberately spread across all eighteen types, and deliberately splitting the
+// clusters that dominate this catalogue: `claude`/`ai` are psychic but `agent-skill`
+// is dragon and `mcp` is steel, so nine agent-skill repos no longer collapse onto
+// one colour. Keys are matched against real GitHub topics, so a type is only ever
+// assigned because the repo actually claims that topic.
 const TYPE_BY_TOPIC = [
-  [/^(cli|tui|terminal|command-line|shell)$/, 'fighting'],
-  [/^(ai|llm|agent|agents|claude|mcp|openai|anthropic|prompt)/, 'psychic'],
-  [/^(security|secrets|crypto|vulnerability|pentest|privacy)/, 'dark'],
-  [/^(trading|finance|stocks|screener|backtest|binance)/, 'ground'],
-  [/^(github-action|github-actions|actions|ci|cd|devops)/, 'steel'],
-  [/^(pwa|react|react-native|web|nextjs|frontend|vue|svelte)/, 'fairy'],
-  [/^(docs|documentation|markdown|static-site)/, 'normal'],
+  [/^(ai|llm|gpt|prompt|prompt-engineering|inference|embedding)$/, 'psychic'],
+  [/^(claude|claude-code|anthropic|openai|codex|copilot|cursor)/, 'psychic'],
+  [/^(ai-agent|ai-agents|agent|agents)$/, 'psychic'],
+  [/^(agent-skill|agent-skills|agents-md|skill|skills)$/, 'dragon'],
+  [/^(framework|engine|monorepo|platform|orchestration|compiler|parser)/, 'dragon'],
+  [/^(cli|tui|terminal|command-line|shell|bash|zsh|homebrew|brew)$/, 'fighting'],
+  [/^(security|secrets|secret|encryption|crypto|cryptography|privacy|vulnerability|pentest|appsec|no-tracking|ai-safety)/, 'dark'],
+  [/^(github-action|github-actions|actions|ci|cd|devops|automation|bundler|swc|esbuild)/, 'steel'],
+  [/^(mcp|protocol)$/, 'steel'],
+  [/^(pwa|web|webapp|frontend|ui|ux|css|design|nextjs|vue|svelte|astro)/, 'fairy'],
+  [/^(react|hooks|component|components)/, 'fairy'],
+  [/^(react-native|android|ios|mobile|expo|app)$/, 'flying'],
+  [/^(typescript|types|type-safe|npm|node|nodejs|bun|deno|library|lib|sdk|api)$/, 'water'],
+  [/^(javascript|esm|cjs)$/, 'water'],
+  [/^(trading|finance|stocks|stock-screener|screener|backtest|binance|investing|fundamental-analysis|piotroski)/, 'ground'],
+  [/^(local-first|offline-first|no-backend|self-hosted|indexeddb|storage|cache|sync)/, 'grass'],
+  [/^(rust|performance|benchmark|apple-silicon|native|wasm)/, 'fire'],
+  [/^(go|golang|static|static-site|snapshot)$/, 'ice'],
+  [/^(github-pages|pages|deploy|deployment|hosting|serverless|edge|vercel|netlify)/, 'electric'],
+  [/^(scraper|scraping|proxy|stealth|undetectable|puppeteer|playwright|devtools|cdp)/, 'ghost'],
+  [/^(docs|documentation|markdown|zola|blog|readme|changelog|release-notes)/, 'rock'],
+  [/^(test|tests|testing|lint|linter|debug|coverage|a11y|accessibility|wcag|rgaa)/, 'bug'],
+  [/^(database|sql|duckdb|postgres|sqlite|data|dataset|csv|json|yaml|toml)/, 'poison'],
+  // The families below exist because the npm-utilities section was 10 water cards
+  // in a row: those repos carry precise maths and algorithm topics that nothing in
+  // the table matched, leaving `typescript`/`node` as their only candidate.
+  [/^(machine-learning|neural-network|knn|regression|linear-regression|logistic-regression|lasso|ols|classification)/, 'psychic'],
+  [/^(algorithm|algorithms|math|maths|statistics|statistical|gaussian|pearson|benford|combinatorics|distribution|mean|standard-deviation|entropy)/, 'ice'],
+  [/^(condorcet|vote|voting|election|tournament|bracket|brackets|elo|game|sport)/, 'fighting'],
+  [/^(async|promise|concurrency|async-hooks|async-local-storage|context|worker|queue)/, 'flying'],
+  [/^(instagram|social|private-api|unfollow)/, 'ghost'],
+  [/^(zero-dependency|zero-dependencies|minimal|minimalist|lightweight)/, 'steel'],
+  [/^(date|time|calendar|timezone|duration)/, 'rock'],
+  [/^(git|commit|push|branch|merge|rebase)/, 'dragon'],
 ];
 
 const WEAKNESS = {
@@ -487,25 +559,32 @@ function pokemon(repo, now) {
   const topics = repo.topics || [];
 
   // The PRIMARY type comes from what the project does, not from what it is written
-  // in — and the card's whole colour scheme follows the primary type.
+  // in — and the card's whole colour scheme follows it.
   //
-  // Language first was the obvious reading and it was measurably wrong: 36 of 70
-  // repos are TypeScript, so half the binder came out the same shade of blue and
-  // whole sections rendered as one colour. Topic-first gives 11 types with no
-  // single one over about a third, and it varies WITHIN a section, which is where
-  // a visitor actually compares cards. The language is still on the card, as the
-  // secondary type and spelled out in full.
+  // Two earlier attempts were measurably too uniform:
+  //
+  //  - Language first: 36 of 70 repos are TypeScript, so half the binder came out
+  //    one shade of blue.
+  //  - Topics, first match wins: better globally, but `ai`/`claude` sit on 24 repos,
+  //    so the two sections a visitor sees FIRST rendered as 19 near-identical pink
+  //    cards — agent-skills was 9 repos of a single type.
+  //
+  // So: collect every type this repo's own topics justify, then pick among them by a
+  // hash of the name. The choice is still honest — each candidate comes from a topic
+  // the repo really carries — but two repos sharing `claude` no longer share a
+  // colour, because one may land on its `cli` and another on its `agent-skill`.
+  // Hashing the NAME (not a counter or the clock) keeps it stable for ever.
   const langType = TYPE_BY_LANGUAGE[repo.language] || 'normal';
-  let topicType = null;
+  const candidates = [];
   for (const topic of topics) {
-    const hit = TYPE_BY_TOPIC.find(([re]) => re.test(topic));
-    if (hit) {
-      topicType = hit[1];
-      break;
+    for (const [re, type] of TYPE_BY_TOPIC) {
+      if (re.test(topic) && !candidates.includes(type)) candidates.push(type);
     }
   }
-  const type1 = topicType || langType;
-  const type2 = topicType && langType !== topicType ? langType : null;
+  const type1 = candidates.length
+    ? candidates[fnv1a(`${repo.name}:type`) % candidates.length]
+    : langType;
+  const type2 = langType !== type1 ? langType : null;
 
   const created = new Date(repo.created_at);
   const months = Math.max(

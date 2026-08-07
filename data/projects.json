@@ -222,12 +222,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "rock",
         "type2": "electric",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "water",
         "moves": [
           {
             "name": "agent skill",
@@ -239,9 +239,9 @@
           }
         ],
         "sprite": [
-          "M4 1h4v1h-4zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h4v1h-4zM8 6h4v1h-4zM0 7h4v1h-4zM8 7h4v1h-4zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+          "M4 1h4v1h-4zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM0 7h4v1h-4zM8 7h4v1h-4zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 2h1v1h-1zM9 2h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
         ]
       }
     },
@@ -274,12 +274,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "water",
         "type2": "electric",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "grass",
         "moves": [
           {
             "name": "agent skills",
@@ -291,9 +291,9 @@
           }
         ],
         "sprite": [
-          "M3 3h6v1h-6zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
-          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+          "M2 0h1v1h-1zM4 0h1v1h-1zM7 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -344,7 +344,7 @@
         ],
         "sprite": [
           "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
           "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
@@ -378,12 +378,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "dragon",
         "type2": "electric",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "ice",
         "moves": [
           {
             "name": "agent skill",
@@ -395,9 +395,9 @@
           }
         ],
         "sprite": [
-          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h2v1h-2zM8 10h2v1h-2zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -430,12 +430,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "dragon",
         "type2": "electric",
         "hp": 40,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "ice",
         "moves": [
           {
             "name": "a11y",
@@ -447,9 +447,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M4 0h4v1h-4zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -499,9 +499,9 @@
           }
         ],
         "sprite": [
-          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
         ]
       }
     },
@@ -534,12 +534,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "dragon",
         "type2": "electric",
         "hp": 40,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "ice",
         "moves": [
           {
             "name": "agent skill",
@@ -551,9 +551,9 @@
           }
         ],
         "sprite": [
-          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M3 2h6v1h-6zM1 3h4v1h-4zM7 3h4v1h-4zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM5 4h2v1h-2zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -586,12 +586,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "electric",
         "hp": 50,
         "level": 3,
         "rarity": "uncommon",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "agent skill",
@@ -603,9 +603,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
-          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h8v1h-8zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
+          "M2 1h8v1h-8zM1 2h10v1h-10zM1 3h10v1h-10z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h3v1h-3zM7 6h3v1h-3zM11 6h1v1h-1zM2 7h8v1h-8zM0 8h12v1h-12z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM0 9h12v1h-12zM1 10h4v1h-4zM7 10h4v1h-4zM1 11h1v1h-1zM4 11h1v1h-1zM7 11h1v1h-1zM10 11h1v1h-1z"
         ]
       }
     },
@@ -655,9 +655,9 @@
           }
         ],
         "sprite": [
-          "M2 0h1v1h-1zM4 0h1v1h-1zM7 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
-          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M3 3h6v1h-6z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h2v1h-2zM4 6h4v1h-4zM9 6h2v1h-2zM0 7h5v1h-5zM7 7h5v1h-5zM0 8h12v1h-12z",
+          "M0 9h12v1h-12zM0 10h12v1h-12zM1 11h10v1h-10z"
         ]
       }
     },
@@ -710,9 +710,9 @@
           }
         ],
         "sprite": [
-          "M2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M1 0h1v1h-1zM10 0h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h3v1h-3zM7 3h3v1h-3zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM5 4h2v1h-2zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -748,12 +748,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "dragon",
         "type2": "water",
         "hp": 30,
         "level": 2,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "ice",
         "moves": [
           {
             "name": "ai agents",
@@ -765,9 +765,9 @@
           }
         ],
         "sprite": [
-          "M3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M4 0h4v1h-4zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M4 4h4v1h-4zM3 5h6v1h-6zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -800,12 +800,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "fire",
         "hp": 40,
         "level": 5,
         "rarity": "uncommon",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "agents md",
@@ -817,9 +817,9 @@
           }
         ],
         "sprite": [
-          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
           "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM3 11h1v1h-1zM8 11h1v1h-1z"
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM3 11h1v1h-1zM8 11h1v1h-1z"
         ]
       }
     },
@@ -852,12 +852,12 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fairy",
         "type2": "electric",
         "hp": 40,
         "level": 2,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "steel",
         "moves": [
           {
             "name": "agent skills",
@@ -869,8 +869,8 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
+          "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM5 5h2v1h-2z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h5v1h-5zM7 5h5v1h-5zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
           "M2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
@@ -921,9 +921,9 @@
           }
         ],
         "sprite": [
-          "M3 3h6v1h-6zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
-          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+          "M3 1h6v1h-6zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM1 10h10v1h-10zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -956,12 +956,12 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "steel",
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "ai",
@@ -974,7 +974,7 @@
         ],
         "sprite": [
           "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
           "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h1v1h-1zM9 11h1v1h-1z"
         ]
       }
@@ -1025,9 +1025,9 @@
           }
         ],
         "sprite": [
-          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM5 5h2v1h-2zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -1060,12 +1060,12 @@
       "pushed": "2026-03",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "steel",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "ai",
@@ -1077,9 +1077,9 @@
           }
         ],
         "sprite": [
-          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 10h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM2 8h8v1h-8z",
-          "M2 9h8v1h-8zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4z",
+          "M1 4h2v1h-2zM5 4h2v1h-2zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM2 8h8v1h-8z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -1112,12 +1112,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fighting",
         "type2": "steel",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "ai",
@@ -1129,9 +1129,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM2 6h3v1h-3zM7 6h3v1h-3zM0 7h1v1h-1zM2 7h8v1h-8zM11 7h1v1h-1zM2 8h8v1h-8z",
-          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h8v1h-8zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+          "M2 1h8v1h-8zM1 2h10v1h-10zM1 3h10v1h-10zM1 9h2v1h-2zM9 9h2v1h-2z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h5v1h-5zM7 6h5v1h-5zM1 7h10v1h-10zM0 8h12v1h-12z",
+          "M0 9h1v1h-1zM3 9h6v1h-6zM11 9h1v1h-1zM1 10h10v1h-10zM1 11h1v1h-1zM4 11h1v1h-1zM7 11h1v1h-1zM10 11h1v1h-1z"
         ]
       }
     },
@@ -1184,9 +1184,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -1219,12 +1219,12 @@
       "pushed": "2026-06",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
-        "type2": "fire",
+        "type1": "fire",
+        "type2": null,
         "hp": 30,
         "level": 3,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "water",
         "moves": [
           {
             "name": "aab",
@@ -1236,9 +1236,9 @@
           }
         ],
         "sprite": [
-          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
         ]
       }
     },
@@ -1288,9 +1288,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -1323,12 +1323,12 @@
       "pushed": "2026-03",
       "license": "GPL-3.0",
       "poke": {
-        "type1": "dark",
+        "type1": "fighting",
         "type2": "fire",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "fighting",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "compiler",
@@ -1341,7 +1341,7 @@
         ],
         "sprite": [
           "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
           "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
@@ -1392,9 +1392,9 @@
           }
         ],
         "sprite": [
-          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
-          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M4 3h4v1h-4z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h2v1h-2zM4 6h4v1h-4zM9 6h2v1h-2zM0 7h5v1h-5zM7 7h5v1h-5zM0 8h12v1h-12z",
+          "M0 9h12v1h-12zM0 10h12v1h-12zM1 11h10v1h-10z"
         ]
       }
     },
@@ -1427,12 +1427,12 @@
       "pushed": "2026-05",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
+        "type1": "fighting",
         "type2": "electric",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "bash",
@@ -1444,9 +1444,9 @@
           }
         ],
         "sprite": [
-          "M2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M5 0h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
           "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -1479,12 +1479,12 @@
       "pushed": "2026-03",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
-        "type2": "steel",
+        "type1": "steel",
+        "type2": null,
         "hp": 40,
         "level": 7,
         "rarity": "uncommon",
-        "weakness": "psychic",
+        "weakness": "fire",
         "moves": [
           {
             "name": "api monitoring",
@@ -1496,9 +1496,9 @@
           }
         ],
         "sprite": [
-          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h2v1h-2zM7 7h2v1h-2zM2 8h3v1h-3zM7 8h3v1h-3z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h6v1h-6zM3 10h6v1h-6zM3 11h2v1h-2zM7 11h2v1h-2z"
+          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
+          "M2 9h8v1h-8zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -1531,12 +1531,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
-        "type2": null,
+        "type1": "water",
+        "type2": "steel",
         "hp": 50,
         "level": 10,
         "rarity": "uncommon",
-        "weakness": "fire",
+        "weakness": "grass",
         "moves": [
           {
             "name": "cicd",
@@ -1583,12 +1583,12 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "fighting",
-        "type2": "steel",
+        "type1": "steel",
+        "type2": null,
         "hp": 30,
         "level": 5,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "fire",
         "moves": [
           {
             "name": "automation",
@@ -1600,9 +1600,9 @@
           }
         ],
         "sprite": [
-          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M5 0h2v1h-2zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -1652,9 +1652,9 @@
           }
         ],
         "sprite": [
-          "M3 3h6v1h-6zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
-          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+          "M3 1h6v1h-6zM3 2h6v1h-6zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 2h1v1h-1zM9 2h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM1 10h10v1h-10zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -1687,12 +1687,12 @@
       "pushed": "2026-02",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
-        "type2": null,
+        "type1": "fighting",
+        "type2": "steel",
         "hp": 30,
         "level": 7,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "bash",
@@ -1704,9 +1704,9 @@
           }
         ],
         "sprite": [
-          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M4 1h4v1h-4zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
         ]
       }
     },
@@ -1756,9 +1756,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h1v1h-1zM2 6h2v1h-2zM8 6h2v1h-2zM11 6h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h3v1h-3zM8 11h3v1h-3z"
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h1v1h-1zM9 11h1v1h-1z"
         ]
       }
     },
@@ -1794,12 +1794,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "dark",
+        "type1": "fairy",
         "type2": "water",
         "hp": 30,
         "level": 1,
         "rarity": "common",
-        "weakness": "fighting",
+        "weakness": "steel",
         "moves": [
           {
             "name": "github pages",
@@ -1811,9 +1811,9 @@
           }
         ],
         "sprite": [
-          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M1 0h1v1h-1zM10 0h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -1866,9 +1866,9 @@
           }
         ],
         "sprite": [
-          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM3 8h6v1h-6z",
-          "M3 9h6v1h-6zM3 10h6v1h-6zM3 11h1v1h-1zM8 11h1v1h-1z"
+          "M2 0h1v1h-1zM5 0h2v1h-2zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM2 8h8v1h-8z",
+          "M2 9h8v1h-8zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -1921,9 +1921,9 @@
           }
         ],
         "sprite": [
-          "M4 1h4v1h-4zM2 2h8v1h-8zM1 3h10v1h-10z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h5v1h-5zM7 6h5v1h-5zM1 7h10v1h-10zM2 8h8v1h-8z",
-          "M2 9h8v1h-8zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+          "M3 1h6v1h-6zM1 2h10v1h-10zM1 3h10v1h-10z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h3v1h-3zM7 6h3v1h-3zM11 6h1v1h-1zM0 7h1v1h-1zM2 7h8v1h-8zM11 7h1v1h-1zM0 8h12v1h-12z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM0 9h12v1h-12zM1 10h4v1h-4zM7 10h4v1h-4zM1 11h1v1h-1zM4 11h1v1h-1zM7 11h1v1h-1zM10 11h1v1h-1z"
         ]
       }
     },
@@ -1959,12 +1959,12 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "steel",
         "type2": "water",
         "hp": 30,
         "level": 2,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "fire",
         "moves": [
           {
             "name": "agent skills",
@@ -1976,9 +1976,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM0 7h12v1h-12zM2 8h8v1h-8z",
-          "M2 9h8v1h-8zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+          "M2 1h8v1h-8zM1 2h10v1h-10zM1 3h10v1h-10z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h5v1h-5zM7 6h5v1h-5zM1 7h10v1h-10zM0 8h12v1h-12z",
+          "M0 9h12v1h-12zM1 10h10v1h-10zM1 11h1v1h-1zM4 11h1v1h-1zM7 11h1v1h-1zM10 11h1v1h-1z"
         ]
       }
     },
@@ -2014,12 +2014,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "grass",
         "type2": "water",
         "hp": 200,
         "level": 9,
         "rarity": "holo",
-        "weakness": "dark",
+        "weakness": "fire",
         "moves": [
           {
             "name": "ai",
@@ -2031,9 +2031,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM2 6h2v1h-2zM8 6h2v1h-2zM0 7h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM11 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -2086,9 +2086,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM0 7h12v1h-12zM0 8h12v1h-12z",
-          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M5 0h2v1h-2zM3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
+          "M2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -2124,12 +2124,12 @@
       "pushed": "2026-05",
       "license": null,
       "poke": {
-        "type1": "fairy",
-        "type2": "water",
+        "type1": "water",
+        "type2": null,
         "hp": 40,
         "level": 52,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "grass",
         "moves": [
           {
             "name": "apartments",
@@ -2141,9 +2141,9 @@
           }
         ],
         "sprite": [
-          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M4 1h4v1h-4zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h2v1h-2zM8 6h2v1h-2zM11 6h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM1 10h10v1h-10zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -2179,12 +2179,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "dark",
+        "type1": "dragon",
         "type2": "ground",
         "hp": 30,
         "level": 2,
         "rarity": "common",
-        "weakness": "fighting",
+        "weakness": "ice",
         "moves": [
           {
             "name": "aes gcm",
@@ -2196,9 +2196,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M4 0h4v1h-4zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM4 6h4v1h-4zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M5 4h2v1h-2zM3 5h6v1h-6zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M4 4h1v1h-1zM7 4h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -2251,9 +2251,9 @@
           }
         ],
         "sprite": [
-          "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M1 7h1v1h-1zM10 7h1v1h-1zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h6v1h-6zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 2h1v1h-1zM9 2h1v1h-1zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -2286,12 +2286,12 @@
       "pushed": "2026-06",
       "license": "MIT",
       "poke": {
-        "type1": "psychic",
+        "type1": "fire",
         "type2": "water",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "water",
         "moves": [
           {
             "name": "ai",
@@ -2303,9 +2303,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
+          "M3 1h6v1h-6zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 2h1v1h-1zM9 2h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
         ]
       }
     },
@@ -2355,9 +2355,9 @@
           }
         ],
         "sprite": [
-          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h1v1h-1zM9 11h1v1h-1z"
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM2 9h1v1h-1zM9 9h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM0 7h4v1h-4zM8 7h4v1h-4zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM9 11h2v1h-2z"
         ]
       }
     },
@@ -2390,12 +2390,12 @@
       "pushed": "2026-06",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
+        "type1": "ghost",
         "type2": "ground",
         "hp": 40,
         "level": 54,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "dark",
         "moves": [
           {
             "name": "anti bot",
@@ -2407,8 +2407,8 @@
           }
         ],
         "sprite": [
-          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 0h6v1h-6zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM4 6h4v1h-4zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
+          "M4 4h4v1h-4zM3 5h6v1h-6zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
           "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
@@ -2463,7 +2463,7 @@
         ],
         "sprite": [
           "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
           "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
@@ -2500,12 +2500,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "ground",
-        "type2": "grass",
+        "type1": "grass",
+        "type2": null,
         "hp": 40,
         "level": 2,
         "rarity": "common",
-        "weakness": "water",
+        "weakness": "fire",
         "moves": [
           {
             "name": "duckdb",
@@ -2517,9 +2517,9 @@
           }
         ],
         "sprite": [
-          "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h2v1h-2zM7 10h2v1h-2zM3 11h2v1h-2zM7 11h2v1h-2z"
         ]
       }
     },
@@ -2555,12 +2555,12 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "ground",
+        "type1": "poison",
         "type2": "water",
         "hp": 200,
         "level": 54,
         "rarity": "holo",
-        "weakness": "water",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "binance",
@@ -2607,12 +2607,12 @@
       "pushed": "2026-03",
       "license": null,
       "poke": {
-        "type1": "psychic",
+        "type1": "dark",
         "type2": "water",
         "hp": 30,
         "level": 6,
         "rarity": "common",
-        "weakness": "dark",
+        "weakness": "fighting",
         "moves": [
           {
             "name": "ai generated",
@@ -2624,9 +2624,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h3v1h-3zM7 7h3v1h-3zM3 8h2v1h-2zM7 8h2v1h-2z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M5 0h2v1h-2zM3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
+          "M2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -2662,12 +2662,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "ground",
+        "type1": "ice",
         "type2": "water",
         "hp": 50,
         "level": 45,
         "rarity": "uncommon",
-        "weakness": "water",
+        "weakness": "fire",
         "moves": [
           {
             "name": "algorithm",
@@ -2680,7 +2680,7 @@
         ],
         "sprite": [
           "M3 3h6v1h-6z",
-          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h8v1h-8zM0 7h1v1h-1zM2 7h3v1h-3zM7 7h3v1h-3zM11 7h1v1h-1zM0 8h12v1h-12z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h1v1h-1zM4 6h4v1h-4zM9 6h1v1h-1zM0 7h1v1h-1zM2 7h3v1h-3zM7 7h3v1h-3zM11 7h1v1h-1zM0 8h12v1h-12z",
           "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM0 9h12v1h-12zM0 10h12v1h-12zM1 11h4v1h-4zM7 11h4v1h-4z"
         ]
       }
@@ -2717,12 +2717,12 @@
       "pushed": "2026-04",
       "license": null,
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "fire",
+        "type2": "water",
         "hp": 30,
         "level": 5,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "water",
         "moves": [
           {
             "name": "bun",
@@ -2734,9 +2734,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M1 0h1v1h-1zM4 0h1v1h-1zM7 0h1v1h-1zM10 0h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h2v1h-2zM8 10h2v1h-2zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -2772,12 +2772,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "ice",
+        "type2": "water",
         "hp": 40,
         "level": 45,
         "rarity": "uncommon",
-        "weakness": "grass",
+        "weakness": "fire",
         "moves": [
           {
             "name": "array comparison",
@@ -2789,9 +2789,9 @@
           }
         ],
         "sprite": [
-          "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M4 0h1v1h-1zM7 0h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -2827,12 +2827,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "fighting",
+        "type2": "water",
         "hp": 40,
         "level": 45,
         "rarity": "uncommon",
-        "weakness": "grass",
+        "weakness": "psychic",
         "moves": [
           {
             "name": "condorcet",
@@ -2844,9 +2844,9 @@
           }
         ],
         "sprite": [
-          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM3 11h2v1h-2zM7 11h2v1h-2z"
+          "M3 0h6v1h-6zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM5 5h2v1h-2zM4 6h4v1h-4zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M4 4h4v1h-4zM3 5h2v1h-2zM7 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -2881,12 +2881,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "ice",
+        "type2": "water",
         "hp": 40,
         "level": 45,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "fire",
         "moves": [
           {
             "name": "algorithm",
@@ -2898,9 +2898,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M5 0h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -2954,7 +2954,7 @@
         ],
         "sprite": [
           "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
           "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h1v1h-1zM9 11h1v1h-1z"
         ]
       }
@@ -2991,12 +2991,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "flying",
+        "type2": "water",
         "hp": 40,
         "level": 53,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "electric",
         "moves": [
           {
             "name": "async hooks",
@@ -3008,9 +3008,9 @@
           }
         ],
         "sprite": [
-          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 10h1v1h-1zM7 10h1v1h-1z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM2 8h8v1h-8z",
-          "M3 9h6v1h-6zM3 10h1v1h-1zM8 10h1v1h-1zM3 11h2v1h-2zM7 11h2v1h-2z"
+          "M2 0h1v1h-1zM5 0h2v1h-2zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM1 8h10v1h-10z",
+          "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -3059,9 +3059,9 @@
           }
         ],
         "sprite": [
-          "M2 2h8v1h-8zM1 3h10v1h-10z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM1 7h4v1h-4zM7 7h4v1h-4zM0 8h5v1h-5zM7 8h5v1h-5z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM5 5h2v1h-2z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h5v1h-5zM7 5h5v1h-5zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
+          "M3 9h6v1h-6zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -3112,9 +3112,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -3150,12 +3150,12 @@
       "pushed": "2026-05",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
-        "type2": "water",
+        "type1": "water",
+        "type2": null,
         "hp": 40,
         "level": 45,
         "rarity": "uncommon",
-        "weakness": "steel",
+        "weakness": "grass",
         "moves": [
           {
             "name": "android",
@@ -3203,12 +3203,12 @@
       "pushed": "2026-04",
       "license": null,
       "poke": {
-        "type1": "fairy",
+        "type1": "steel",
         "type2": "water",
         "hp": 30,
         "level": 45,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "fire",
         "moves": [
           {
             "name": "modal",
@@ -3220,9 +3220,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M1 0h1v1h-1zM4 0h1v1h-1zM7 0h1v1h-1zM10 0h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM5 5h2v1h-2zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -3258,12 +3258,12 @@
       "pushed": "2026-04",
       "license": null,
       "poke": {
-        "type1": "fairy",
-        "type2": "water",
+        "type1": "water",
+        "type2": null,
         "hp": 40,
         "level": 45,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "grass",
         "moves": [
           {
             "name": "async storage",
@@ -3275,9 +3275,9 @@
           }
         ],
         "sprite": [
-          "M4 3h4v1h-4zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
-          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h4v1h-4zM7 11h4v1h-4z"
+          "M4 1h4v1h-4zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h2v1h-2zM8 6h2v1h-2zM11 6h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -3330,9 +3330,9 @@
           }
         ],
         "sprite": [
-          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h2v1h-2zM7 10h2v1h-2zM3 11h2v1h-2zM7 11h2v1h-2z"
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h3v1h-3zM7 3h3v1h-3zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M2 4h1v1h-1zM5 4h2v1h-2zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM3 9h1v1h-1zM8 9h1v1h-1zM3 10h2v1h-2zM7 10h2v1h-2zM3 11h2v1h-2zM7 11h2v1h-2z"
         ]
       }
     },
@@ -3382,9 +3382,9 @@
           }
         ],
         "sprite": [
-          "M2 0h1v1h-1zM5 0h2v1h-2zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM5 5h2v1h-2zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h3v1h-3zM7 5h3v1h-3zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM3 11h1v1h-1zM8 11h1v1h-1z"
         ]
       }
     },
@@ -3420,12 +3420,12 @@
       "pushed": "2026-07",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
+        "type1": "dragon",
         "type2": "water",
         "hp": 70,
         "level": 54,
         "rarity": "uncommon",
-        "weakness": "fire",
+        "weakness": "ice",
         "moves": [
           {
             "name": "actions",
@@ -3437,9 +3437,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM0 7h12v1h-12zM0 8h12v1h-12z",
-          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M5 0h2v1h-2zM3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
+          "M2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -3491,9 +3491,9 @@
           }
         ],
         "sprite": [
-          "M2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 10h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM1 8h10v1h-10z",
-          "M2 9h8v1h-8zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4z",
+          "M1 4h2v1h-2zM5 4h2v1h-2zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM1 8h10v1h-10z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -3526,12 +3526,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
-        "type2": "water",
+        "type1": "water",
+        "type2": null,
         "hp": 40,
         "level": 54,
         "rarity": "uncommon",
-        "weakness": "fire",
+        "weakness": "grass",
         "moves": [
           {
             "name": "deployments",
@@ -3543,9 +3543,9 @@
           }
         ],
         "sprite": [
-          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM2 8h8v1h-8z",
-          "M2 9h8v1h-8zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M4 3h4v1h-4z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h2v1h-2zM4 6h4v1h-4zM9 6h2v1h-2zM0 7h5v1h-5zM7 7h5v1h-5zM0 8h12v1h-12z",
+          "M0 9h12v1h-12zM0 10h12v1h-12zM1 11h10v1h-10z"
         ]
       }
     },
@@ -3581,12 +3581,12 @@
       "pushed": "2026-02",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "fire",
+        "type2": "water",
         "hp": 190,
         "level": 54,
         "rarity": "holo",
-        "weakness": "grass",
+        "weakness": "water",
         "moves": [
           {
             "name": "biomejs",
@@ -3598,9 +3598,9 @@
           }
         ],
         "sprite": [
-          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
           "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h2v1h-2zM8 10h2v1h-2zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
@@ -3636,12 +3636,12 @@
       "pushed": "2026-05",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
+        "type1": "bug",
         "type2": "electric",
         "hp": 50,
         "level": 46,
         "rarity": "uncommon",
-        "weakness": "steel",
+        "weakness": "flying",
         "moves": [
           {
             "name": "boilerplate",
@@ -3653,9 +3653,9 @@
           }
         ],
         "sprite": [
-          "M4 0h4v1h-4zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM2 8h8v1h-8z",
-          "M3 9h6v1h-6zM3 10h6v1h-6zM3 11h1v1h-1zM8 11h1v1h-1z"
+          "M2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4z",
+          "M1 4h2v1h-2zM5 4h2v1h-2zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM2 8h8v1h-8z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM2 9h8v1h-8zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -3684,12 +3684,12 @@
       "pushed": "2026-08",
       "license": null,
       "poke": {
-        "type1": "normal",
-        "type2": null,
+        "type1": "dragon",
+        "type2": "normal",
         "hp": 140,
         "level": 59,
         "rarity": "rare",
-        "weakness": "fighting",
+        "weakness": "ice",
         "moves": [
           {
             "name": "awesome",
@@ -3701,9 +3701,9 @@
           }
         ],
         "sprite": [
-          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM3 11h2v1h-2zM7 11h2v1h-2z"
+          "M4 0h4v1h-4zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM4 6h4v1h-4zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M5 4h2v1h-2zM3 5h6v1h-6zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M4 4h1v1h-1zM7 4h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -3734,12 +3734,12 @@
       "pushed": "2026-08",
       "license": null,
       "poke": {
-        "type1": "poison",
-        "type2": null,
+        "type1": "ghost",
+        "type2": "poison",
         "hp": 40,
         "level": 9,
         "rarity": "common",
-        "weakness": "psychic",
+        "weakness": "dark",
         "moves": [
           {
             "name": "cli tools",
@@ -3789,12 +3789,12 @@
       "pushed": "2026-04",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
+        "type1": "water",
         "type2": "electric",
         "hp": 40,
         "level": 100,
         "rarity": "uncommon",
-        "weakness": "steel",
+        "weakness": "grass",
         "moves": [
           {
             "name": "golfier",
@@ -3806,9 +3806,9 @@
           }
         ],
         "sprite": [
-          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM2 8h8v1h-8z",
-          "M3 9h6v1h-6zM3 10h6v1h-6zM3 11h2v1h-2zM7 11h2v1h-2z"
+          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
+          "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -3844,12 +3844,12 @@
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "fairy",
-        "type2": "water",
+        "type1": "water",
+        "type2": null,
         "hp": 30,
         "level": 1,
         "rarity": "common",
-        "weakness": "steel",
+        "weakness": "grass",
         "moves": [
           {
             "name": "agile",
@@ -3861,20 +3861,23 @@
           }
         ],
         "sprite": [
-          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
-          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM5 4h2v1h-2zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },
     {
       "name": "terravia",
       "url": "https://github.com/maxgfr/terravia",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://maxgfr.github.io/terravia",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
       "desc": {
-        "fr": "RPG de capture de créatures dans un monde généré procéduralement — 100% statique, sauvegarde JSON exportable",
-        "en": "RPG de capture de créatures dans un monde généré procéduralement — 100% statique, sauvegarde JSON exportable"
+        "fr": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import.",
+        "en": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import."
       },
       "cat": 9,
       "dex": 70,
@@ -3882,27 +3885,40 @@
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
-      "topics": [],
+      "topics": [
+        "browser-game",
+        "canvas",
+        "creature-collector",
+        "game",
+        "github-pages",
+        "html5-game",
+        "monster-taming",
+        "pixel-art"
+      ],
       "created": "2026-08",
       "pushed": "2026-08",
       "license": "MIT",
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "steel",
+        "type2": "water",
         "hp": 30,
         "level": 1,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "fire",
         "moves": [
           {
-            "name": "TypeScript",
+            "name": "browser game",
             "dmg": 30
+          },
+          {
+            "name": "canvas",
+            "dmg": 40
           }
         ],
         "sprite": [
-          "M4 3h4v1h-4zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
-          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
-          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM2 9h1v1h-1zM9 9h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     }

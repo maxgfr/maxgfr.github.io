@@ -125,7 +125,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 ## 🆕 Non classés
 
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend. · [démo](https://maxgfr.github.io/kanbo/)
-- **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde généré procéduralement — 100% statique, sauvegarde JSON exportable
+- **[terravia](https://github.com/maxgfr/terravia)** — Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import. · [démo](https://maxgfr.github.io/terravia)
 
 ---
 
