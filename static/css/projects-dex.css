@@ -85,7 +85,8 @@
     list-style: none;
 }
 
-.dex-grid li::marker {
+.dex-grid li::marker,
+.dex-grid li:hover::marker {
     content: "";
 }
 
@@ -330,7 +331,8 @@
     border-bottom: 1px solid var(--dex-rule);
 }
 
-.dex-moves li::marker {
+.dex-moves li::marker,
+.dex-moves li:hover::marker {
     content: "";
 }
 

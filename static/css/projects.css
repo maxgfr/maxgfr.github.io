@@ -104,7 +104,9 @@
 
 /* suCSS gives every `ul li` a '» ' marker. These are data rows, not prose. */
 .pv-chips li::marker,
-.pv-metrics li::marker {
+.pv-chips li:hover::marker,
+.pv-metrics li::marker,
+.pv-metrics li:hover::marker {
     content: "";
 }
 
@@ -252,7 +254,8 @@
     list-style: none;
 }
 
-.pvc-grid li::marker {
+.pvc-grid li::marker,
+.pvc-grid li:hover::marker {
     content: "";
 }
 
@@ -324,7 +327,8 @@
     font-size: 0.85rem;
 }
 
-.tl-legend li::marker {
+.tl-legend li::marker,
+.tl-legend li:hover::marker {
     content: "";
 }
 
@@ -369,7 +373,8 @@
     list-style: none;
 }
 
-.tl-rows li::marker {
+.tl-rows li::marker,
+.tl-rows li:hover::marker {
     content: "";
 }
 
@@ -626,7 +631,8 @@
     list-style: none;
 }
 
-.sh-hint-list li::marker {
+.sh-hint-list li::marker,
+.sh-hint-list li:hover::marker {
     content: "";
 }
 
