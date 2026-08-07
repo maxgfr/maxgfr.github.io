@@ -1,0 +1,79 @@
+{% extends "projects-view.html" %}
+
+{#
+  /projects-cards — the view that adds information rather than flavour.
+
+  /projects hides language, stars, forks and activity on purpose (a themed list is
+  not ranked by popularity). This view is where that data lives instead.
+
+  Grouping is the curation: sections follow projects.json's category order, and so
+  do the cards inside them. The controls filter and re-sort WITHIN each section
+  rather than flattening everything into one grid — flattening would throw away
+  the only editorial judgement the dataset carries.
+#}
+
+{% block view_class %}pv-wide{% endblock view_class %}
+
+{# In <head> with `defer` rather than at the end of <body>: base.html hardcodes its
+   three script tags and declares no block there, and templates/cv.html already
+   established that a per-page script belongs in extra_head. `defer` means this
+   still runs after the DOM is parsed, exactly like the site's own scripts. #}
+{% block view_head %}
+<script src="{{ get_url(path='js/projects-cards.js') }}" defer></script>
+{% endblock view_head %}
+
+{% block view %}
+{% set en = page.lang == "en" %}
+
+{# Hidden until static/js/projects-cards.js removes the attribute: a sort control
+   that does nothing is worse than no sort control. #}
+<form class="pvc-controls" data-pv-jsonly aria-label="{% if en %}Filter and sort{% else %}Filtrer et trier{% endif %}"
+      data-empty="{% if en %}No project matches.{% else %}Aucun projet ne correspond.{% endif %}">
+    <p class="pvc-field">
+        <label for="pvc-q">{% if en %}filter{% else %}filtrer{% endif %}</label>
+        <input type="search" id="pvc-q" name="q" autocomplete="off"
+               placeholder="{% if en %}name, topic, language…{% else %}nom, topic, langage…{% endif %}">
+    </p>
+    <p class="pvc-field">
+        <label for="pvc-lang">{% if en %}language{% else %}langage{% endif %}</label>
+        <select id="pvc-lang" name="language">
+            <option value="">{% if en %}all{% else %}tous{% endif %}</option>
+            {# Pre-aggregated by the generator (most-used first), so the list can
+               never offer a language no repo actually uses. #}
+            {% for language in data.languages %}
+            <option value="{{ language.name }}">{{ language.name }} ({{ language.count }})</option>
+            {% endfor %}
+        </select>
+    </p>
+    <p class="pvc-field">
+        <label for="pvc-sort">{% if en %}sort{% else %}trier{% endif %}</label>
+        <select id="pvc-sort" name="sort">
+            <option value="curated">{% if en %}curated{% else %}curation{% endif %}</option>
+            <option value="stars">★ {% if en %}stars{% else %}étoiles{% endif %}</option>
+            <option value="pushed">↻ {% if en %}recent{% else %}récent{% endif %}</option>
+            <option value="name">a→z</option>
+        </select>
+    </p>
+    {# Laid out like the other controls, with its own label: a bare number floating
+       beside the sort dropdown read as part of it. #}
+    <p class="pvc-field pvc-count-field">
+        <span>{% if en %}shown{% else %}affichés{% endif %}</span>
+        <output class="pvc-count" role="status" aria-live="polite"></output>
+    </p>
+</form>
+
+{% for category in data.categories %}
+{% set index = loop.index0 %}
+<section class="pvc-section" id="{{ category.slug }}">
+    <h2>{{ category[page.lang] }}</h2>
+    <ul class="pvc-grid">
+        {% for repo in data.repos %}
+        {% if repo.cat == index %}
+        {% set pv_repo = repo %}
+        {% include "partials/projects-card.html" %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</section>
+{% endfor %}
+{% endblock view %}

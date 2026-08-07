@@ -1,0 +1,414 @@
+/* ==========================================================================
+   projects-dex.css — the trading-card view.
+
+   Loaded ONLY by templates/projects-dex.html. This is the one view that
+   deliberately breaks the site's palette, so it is quarantined here: nothing in
+   this file can reach /projects, the cards view or anything else.
+
+   Every rule is scoped under .dex for the same reason.
+
+   Structure of a card: .dex-frame carries the type colour, .dex-panel is a
+   neutral surface on top of it. That split is what keeps the description legible
+   for all eighteen types without a per-type contrast decision — only the header
+   sits on the colour, in white with a shadow, the way the real cards do it.
+   ========================================================================== */
+
+/* --- type palette -------------------------------------------------------- */
+
+/* The recognisable type hues. Each type only needs one base colour: the sprite's
+   three shades and the frame gradient are derived with color-mix(), an idiom the
+   site already uses in custom.css. */
+.dex [data-type="normal"]   { --t: #a8a77a; }
+.dex [data-type="fire"]     { --t: #ee8130; }
+.dex [data-type="water"]    { --t: #6390f0; }
+.dex [data-type="electric"] { --t: #e0b422; }
+.dex [data-type="grass"]    { --t: #7ac74c; }
+.dex [data-type="ice"]      { --t: #79c7c4; }
+.dex [data-type="fighting"] { --t: #c22e28; }
+.dex [data-type="poison"]   { --t: #a33ea1; }
+.dex [data-type="ground"]   { --t: #cba54e; }
+.dex [data-type="flying"]   { --t: #a98ff3; }
+.dex [data-type="psychic"]  { --t: #f95587; }
+.dex [data-type="bug"]      { --t: #94a516; }
+.dex [data-type="rock"]     { --t: #b6a136; }
+.dex [data-type="ghost"]    { --t: #735797; }
+.dex [data-type="dragon"]   { --t: #6f35fc; }
+.dex [data-type="dark"]     { --t: #705746; }
+.dex [data-type="steel"]    { --t: #8f8fa8; }
+.dex [data-type="fairy"]    { --t: #d685ad; }
+
+/* --- theme surfaces ------------------------------------------------------ */
+
+/* Three tiers, matching the contract the rest of the site follows: a light
+   default, a prefers-color-scheme tier for when the anti-flash script has not run
+   (JS disabled — data-theme is then absent), and the [data-theme] tier that wins
+   whenever it has. Missing the middle tier would leave no-JS dark-mode readers
+   with white card panels. */
+.dex {
+    --dex-panel: #f7f6f2;
+    --dex-panel-text: #23272b;
+    --dex-panel-dim: #5d6268;
+    --dex-rule: #cfcdc6;
+    --dex-gold: #b8912f;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .dex {
+        --dex-panel: #1b1e22;
+        --dex-panel-text: #dcdcd8;
+        --dex-panel-dim: #9a9a95;
+        --dex-rule: #3a3e44;
+        --dex-gold: #e0bd5a;
+    }
+}
+
+[data-theme="dark"] .dex {
+    --dex-panel: #1b1e22;
+    --dex-panel-text: #dcdcd8;
+    --dex-panel-dim: #9a9a95;
+    --dex-rule: #3a3e44;
+    --dex-gold: #e0bd5a;
+}
+
+/* --- layout -------------------------------------------------------------- */
+
+.dex-section {
+    margin-bottom: 2.5rem;
+}
+
+.dex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1.25rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dex-grid li::marker {
+    content: "";
+}
+
+/* --- the card ------------------------------------------------------------ */
+
+.dex-card {
+    /* Written by static/js/projects-dex.js on pointermove; these defaults are what
+       a card looks like with no pointer and with no JS at all. */
+    --rx: 0deg;
+    --ry: 0deg;
+    --mx: 50%;
+    --my: 50%;
+    perspective: 700px;
+}
+
+.dex-frame {
+    position: relative;
+    /* A pseudo-element is a positioned child, and the header and panel are static,
+       so ::before and ::after paint ABOVE them by default — the gloss washed the
+       card's own text out on hover. `isolation` plus explicit z-indexes below put
+       the layers in the order a laminated card actually has them. */
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    padding: 0.55rem;
+    border-radius: 0.7rem;
+    background:
+        linear-gradient(160deg,
+            color-mix(in srgb, var(--t) 78%, white) 0%,
+            var(--t) 45%,
+            color-mix(in srgb, var(--t) 72%, black) 100%);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 25%);
+    transform: rotateX(var(--rx)) rotateY(var(--ry));
+    transform-style: preserve-3d;
+    transition: transform 0.12s ease-out, box-shadow 0.2s ease;
+}
+
+.dex-card:hover .dex-frame,
+.dex-card:focus-within .dex-frame {
+    box-shadow: 0 8px 20px rgb(0 0 0 / 35%);
+}
+
+/* The moving sheen — the only layer that sits ABOVE the card's own content, because
+   that is where gloss physically is. Kept weak on purpose: at the 55% white it
+   started out as, it made the description unreadable under the cursor. */
+.dex-frame::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at var(--mx) var(--my),
+        rgb(255 255 255 / 28%) 0%, rgb(255 255 255 / 6%) 30%, transparent 55%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.dex-card:hover .dex-frame::after,
+.dex-card:focus-within .dex-frame::after {
+    opacity: 1;
+}
+
+.dex-head,
+.dex-panel {
+    position: relative;
+    z-index: 1;
+}
+
+/* Rarity comes straight from the star count, so the shiniest cards really are the
+   ones people starred. Gold edge from `rare` up; the foil only for `holo`. */
+.dex-card[data-rarity="rare"] .dex-frame,
+.dex-card[data-rarity="holo"] .dex-frame {
+    box-shadow: inset 0 0 0 2px var(--dex-gold), 0 2px 6px rgb(0 0 0 / 25%);
+}
+
+/* Foil goes in the art window, not over the whole card — that is where it lives on
+   a real holo, and it keeps the rainbow off the text. */
+.dex-card[data-rarity="holo"] .dex-art::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(115deg,
+        rgb(255 0 128 / 30%) 0 5%,
+        rgb(0 255 255 / 30%) 5% 10%,
+        rgb(255 255 0 / 30%) 10% 15%,
+        rgb(0 255 128 / 30%) 15% 20%);
+    background-position: var(--mx) var(--my);
+    background-size: 260% 260%;
+    mix-blend-mode: color-dodge;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* --- header (on the colour) ---------------------------------------------- */
+
+.dex-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    color: #fff;
+    /* Electric and ice are light enough that white text needs help. A shadow costs
+       nothing and means one rule covers all eighteen types. */
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+}
+
+.dex-no {
+    font-size: 0.75rem;
+    opacity: 0.85;
+    font-variant-numeric: tabular-nums;
+}
+
+.dex-name {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+}
+
+/* suCSS prefixes every heading with '# ' — wrong on a card face. */
+.dex-name::before {
+    content: none;
+}
+
+.dex-name a,
+.dex-name a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* suCSS inverts links on hover to a --link background, which on a coloured frame
+   reads as a rendering glitch. Underline instead. */
+.dex-name a:hover,
+.dex-name a:focus-visible {
+    background: none;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.dex-hp {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.dex-hp abbr {
+    font-size: 0.7rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.dex-type-icon {
+    font-size: 0.9rem;
+    text-shadow: none;
+}
+
+/* --- panel (neutral surface) --------------------------------------------- */
+
+.dex-panel {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 0.5rem;
+    border-radius: 0.45rem;
+    background: var(--dex-panel);
+    color: var(--dex-panel-text);
+}
+
+.dex-art {
+    /* positioned + isolated so the holo foil below can be an ::after inside it */
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    background:
+        radial-gradient(circle at 50% 35%,
+            color-mix(in srgb, var(--t) 30%, transparent) 0%,
+            transparent 70%),
+        color-mix(in srgb, var(--t) 12%, var(--dex-panel));
+}
+
+.dex-sprite {
+    width: 100%;
+    max-width: 7rem;
+    height: auto;
+    /* The site gives every img/svg a dashed accent border; a sprite is art, not a
+       figure. */
+    border: 0;
+    padding: 0;
+    opacity: 1;
+}
+
+.dex-px1 { fill: color-mix(in srgb, var(--t) 45%, white); }
+.dex-px2 { fill: var(--t); }
+.dex-px3 { fill: color-mix(in srgb, var(--t) 62%, black); }
+
+.dex-species {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--dex-panel-dim);
+    text-align: center;
+}
+
+/* Above the foil, which is an ::after on .dex-art. */
+.dex-sprite,
+.dex-species {
+    position: relative;
+    z-index: 1;
+}
+
+.dex-lang::before {
+    content: "(";
+}
+
+.dex-lang::after {
+    content: ")";
+}
+
+/* --- attacks ------------------------------------------------------------- */
+
+.dex-moves {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--dex-rule);
+    border-bottom: 1px solid var(--dex-rule);
+}
+
+.dex-moves li::marker {
+    content: "";
+}
+
+.dex-move {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    padding: 0.25rem 0;
+    font-size: 0.8rem;
+}
+
+.dex-move + .dex-move {
+    border-top: 1px dotted var(--dex-rule);
+}
+
+.dex-cost {
+    font-size: 0.65rem;
+    letter-spacing: -0.1em;
+    white-space: nowrap;
+}
+
+.dex-move-name {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.dex-dmg {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+/* --- flavour + footer ---------------------------------------------------- */
+
+.dex-flavour {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    margin: 0;
+    font-size: 0.72rem;
+    font-style: italic;
+    color: var(--dex-panel-dim);
+}
+
+.dex-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.5rem;
+    margin-top: auto;
+    padding-top: 0.3rem;
+    border-top: 1px solid var(--dex-rule);
+    font-size: 0.7rem;
+    color: var(--dex-panel-dim);
+}
+
+.dex-foot a,
+.dex-foot a:visited {
+    margin-left: auto;
+    color: var(--dex-panel-text);
+}
+
+/* --- motion -------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .dex-frame {
+        transform: none;
+        transition: none;
+    }
+
+    .dex-frame::after {
+        transition: none;
+    }
+
+    /* The rainbow stays — it is colour, not movement — but it stops tracking the
+       pointer, which is the part that moves. */
+    .dex-card[data-rarity="holo"] .dex-frame::before {
+        background-position: 50% 50%;
+    }
+}

@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 68 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 70 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -98,4 +98,9 @@ Mes 68 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https:/
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
+
+### 🆕 Non classés
+
+- **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser…
+- **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde généré procéduralement — 100%…
 

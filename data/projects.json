@@ -1,0 +1,3907 @@
+{
+  "generated": "2026-08",
+  "totals": {
+    "repos": 70,
+    "stars": 298
+  },
+  "languages": [
+    {
+      "name": "TypeScript",
+      "count": 36
+    },
+    {
+      "name": "JavaScript",
+      "count": 13
+    },
+    {
+      "name": "Shell",
+      "count": 10
+    },
+    {
+      "name": "Rust",
+      "count": 5
+    },
+    {
+      "name": "HTML",
+      "count": 2
+    },
+    {
+      "name": "Go",
+      "count": 1
+    },
+    {
+      "name": "Python",
+      "count": 1
+    },
+    {
+      "name": "Ruby",
+      "count": 1
+    }
+  ],
+  "categories": [
+    {
+      "fr": "🪄 Skills d'agent",
+      "en": "🪄 Agent skills",
+      "slug": "agent-skills"
+    },
+    {
+      "fr": "🤖 IA & outils de dev",
+      "en": "🤖 AI & dev tooling",
+      "slug": "ai-dev-tooling"
+    },
+    {
+      "fr": "🛠️ CLIs & outils système",
+      "en": "🛠️ CLIs & system tools",
+      "slug": "clis-system-tools"
+    },
+    {
+      "fr": "🌐 Applications web & PWA",
+      "en": "🌐 Web apps & PWAs",
+      "slug": "web-apps-pwas"
+    },
+    {
+      "fr": "📈 Trading & finance",
+      "en": "📈 Trading & finance",
+      "slug": "trading-finance"
+    },
+    {
+      "fr": "📦 Bibliothèques npm & utilitaires",
+      "en": "📦 npm libraries & utilities",
+      "slug": "npm-libraries-utilities"
+    },
+    {
+      "fr": "⚙️ GitHub Actions",
+      "en": "⚙️ GitHub Actions",
+      "slug": "github-actions"
+    },
+    {
+      "fr": "🚀 Starters & templates",
+      "en": "🚀 Starters & templates",
+      "slug": "starters-templates"
+    },
+    {
+      "fr": "🧩 Autres",
+      "en": "🧩 Other",
+      "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2017",
+      "repos": [
+        67
+      ]
+    },
+    {
+      "year": "2020",
+      "repos": [
+        59
+      ]
+    },
+    {
+      "year": "2021",
+      "repos": [
+        65
+      ]
+    },
+    {
+      "year": "2022",
+      "repos": [
+        44,
+        60,
+        62,
+        41,
+        63,
+        52,
+        61,
+        36,
+        58,
+        42,
+        64,
+        50,
+        49,
+        51,
+        57,
+        53,
+        55,
+        56,
+        48,
+        46,
+        54,
+        29
+      ]
+    },
+    {
+      "year": "2025",
+      "repos": [
+        25,
+        34,
+        66
+      ]
+    },
+    {
+      "year": "2026",
+      "repos": [
+        20,
+        27,
+        38,
+        28,
+        24,
+        45,
+        35,
+        16,
+        17,
+        39,
+        21,
+        23,
+        22,
+        15,
+        11,
+        26,
+        18,
+        47,
+        19,
+        14,
+        6,
+        40,
+        9,
+        7,
+        4,
+        0,
+        1,
+        2,
+        3,
+        32,
+        33,
+        10,
+        43,
+        37,
+        12,
+        8,
+        5,
+        68,
+        31,
+        13,
+        69,
+        30
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "name": "ultradoc",
+      "url": "https://github.com/maxgfr/ultradoc",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Questions-réponses sourcées et docs de référence vérifiées pour n'importe quel projet open source, à partir de son vrai code, ses issues et PRs.",
+        "en": "Grounded Q&A + citation-checked reference docs for any OSS project, from its real source, issues & PRs."
+      },
+      "cat": 0,
+      "dex": 1,
+      "dexLabel": "001",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "ai-agent",
+        "claude",
+        "cli",
+        "code-search",
+        "developer-tools",
+        "documentation",
+        "grounded-generation"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skill",
+            "dmg": 30
+          },
+          {
+            "name": "ai agent",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M4 1h4v1h-4zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h4v1h-4zM8 6h4v1h-4zM0 7h4v1h-4zM8 7h4v1h-4zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "ultraindex",
+      "url": "https://github.com/maxgfr/ultraindex",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Indexe un dépôt entier en une encyclopédie navigable par l'IA (carte + fiches par module + graphe de liens) pour les très gros codebases.",
+        "en": "Indexes a whole repo into an AI-navigable encyclopedia (map + per-module entries + link-graph) for huge codebases."
+      },
+      "cat": 0,
+      "dex": 2,
+      "dexLabel": "002",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "code-indexing",
+        "code-navigation",
+        "codebase"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skills",
+            "dmg": 60
+          },
+          {
+            "name": "ai",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 3h6v1h-6zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+        ]
+      }
+    },
+    {
+      "name": "ultrasearch",
+      "url": "https://github.com/maxgfr/ultrasearch",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).",
+        "en": "Keyless multi-backend web research → citation-checked, tiered Markdown/HTML report (5 modes + deep-research tier)."
+      },
+      "cat": 0,
+      "dex": 3,
+      "dexLabel": "003",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skill",
+        "ai-agent",
+        "citations",
+        "claude",
+        "deep-research",
+        "literature-review",
+        "rag",
+        "research"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skill",
+            "dmg": 30
+          },
+          {
+            "name": "ai agent",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "ultrasec",
+      "url": "https://github.com/maxgfr/ultrasec",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Agent d'audit de sécurité multi-fichiers : analyse de teinte source→puits + Trivy/Semgrep/gitleaks/osv, vérifiée de façon adversariale en rapport sourcé.",
+        "en": "Cross-file security-audit agent: source→sink taint + Trivy/Semgrep/gitleaks/osv, adversarially verified into a cited report."
+      },
+      "cat": 0,
+      "dex": 4,
+      "dexLabel": "004",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "ai-agent",
+        "appsec",
+        "claude",
+        "code-audit",
+        "dependency-scanning",
+        "devsecops",
+        "log-analysis"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skill",
+            "dmg": 60
+          },
+          {
+            "name": "ai agent",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h2v1h-2zM8 10h2v1h-2zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "ultra11y",
+      "url": "https://github.com/maxgfr/ultra11y",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Audite le HTML/CSS/JSX selon le RGAA 4.1.2 + WCAG 2.1/2.2 AA via un moteur statique zéro-dépendance + le jugement de l'IA.",
+        "en": "Audits HTML/CSS/JSX for RGAA 4.1.2 + WCAG 2.1/2.2 AA with a zero-dependency static engine + agent judgment."
+      },
+      "cat": 0,
+      "dex": 5,
+      "dexLabel": "005",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "a11y",
+        "accessibility",
+        "agent-skill",
+        "audit",
+        "autofix",
+        "axe-core",
+        "ci",
+        "claude-code"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 40,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "a11y",
+            "dmg": 60
+          },
+          {
+            "name": "accessibility",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "ultrai18n",
+      "url": "https://github.com/maxgfr/ultrai18n",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Trouve toutes les chaînes lisibles d'un dépôt, les classe, les traduit avec des modèles bon marché et prouve qu'aucune n'a été oubliée : moteur zéro-dépendance, le modèle n'ouvre jamais un fichier source.",
+        "en": "Finds every human-readable string in a repo, classifies it, translates it with cheap models and proves nothing was missed: zero-dependency engine, the model never opens a source file."
+      },
+      "cat": 0,
+      "dex": 6,
+      "dexLabel": "006",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codemod",
+        "developer-tools",
+        "i18n",
+        "internationalization"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 30,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skill",
+            "dmg": 50
+          },
+          {
+            "name": "ai agents",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "construct",
+      "url": "https://github.com/maxgfr/construct",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Transforme une idée produit en un cahier des charges (SRD/PRD) complet et réalisable (skill d'agent skills.sh).",
+        "en": "Turns a product idea into a grounded, buildable SRD/PRD suite (skills.sh agent skill)."
+      },
+      "cat": 0,
+      "dex": 7,
+      "dexLabel": "007",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "cli",
+        "developer-tools",
+        "greenfield"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 40,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skill",
+            "dmg": 70
+          },
+          {
+            "name": "ai agents",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "reconstruct",
+      "url": "https://github.com/maxgfr/reconstruct",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Analyse n'importe quel dépôt et génère des PRD de reconstruction pour le rebâtir de zéro.",
+        "en": "Analyzes any repo and generates reconstruction PRDs to rebuild it from scratch."
+      },
+      "cat": 0,
+      "dex": 8,
+      "dexLabel": "008",
+      "stars": 3,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "cli",
+        "code-generation",
+        "developer-tools"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 50,
+        "level": 3,
+        "rarity": "uncommon",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skill",
+            "dmg": 40
+          },
+          {
+            "name": "ai agents",
+            "dmg": 80
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h8v1h-8zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
+        ]
+      }
+    },
+    {
+      "name": "ultraeval",
+      "url": "https://github.com/maxgfr/ultraeval",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Évalue rigoureusement une skill ou un codebase → constats sourcés (file:line) + backlog de corrections en TDD ; moteur zéro-dépendance avec analyse (hotspots, cycles, churn) et brainstorm.",
+        "en": "Rigorously evaluates a skill or codebase → grounded (file:line) findings + a TDD fix backlog; zero-dep engine with analysis (hotspots, cycles, churn) and brainstorm."
+      },
+      "cat": 0,
+      "dex": 9,
+      "dexLabel": "009",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skill",
+        "ai-agents",
+        "code-review",
+        "evaluation",
+        "llm",
+        "skills-sh",
+        "static-analysis",
+        "subagents"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 30,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skill",
+            "dmg": 30
+          },
+          {
+            "name": "ai agents",
+            "dmg": 50
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM4 0h1v1h-1zM7 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
+          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "feelc",
+      "url": "https://github.com/maxgfr/feelc",
+      "home": "https://maxgfr.github.io/feelc/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Moteur de règles métier DMN/FEEL natif IA compilé en Go : un LLM écrit les règles, le moteur les prouve et les exécute de façon déterministe (playground WASM).",
+        "en": "AI-native DMN/FEEL business-rules engine in Go: an LLM writes the rules, the engine proves & runs them deterministically (WASM playground)."
+      },
+      "cat": 1,
+      "dex": 10,
+      "dexLabel": "010",
+      "stars": 0,
+      "forks": 0,
+      "language": "Go",
+      "topics": [
+        "ai",
+        "ai-authoring",
+        "brms",
+        "business-rules",
+        "compiler",
+        "decision-management",
+        "decision-table",
+        "deterministic"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-08",
+      "license": "Apache-2.0",
+      "poke": {
+        "type1": "psychic",
+        "type2": "ice",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 10
+          },
+          {
+            "name": "ai authoring",
+            "dmg": 50
+          }
+        ],
+        "sprite": [
+          "M2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "codeindex",
+      "url": "https://github.com/maxgfr/codeindex",
+      "home": "https://maxgfr.github.io/codeindex/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Moteur d'indexation de dépôt zéro-dépendance : symboles, imports, graphe de liens inter-fichiers typé et analytics — un seul engine.mjs embarquable, CLI + serveur MCP inclus.",
+        "en": "Zero-dependency repo-indexing engine: symbols, imports, typed cross-file link-graph & analytics — one vendorable engine.mjs, CLI + MCP server included."
+      },
+      "cat": 1,
+      "dex": 11,
+      "dexLabel": "011",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "call-graph",
+        "code-index",
+        "code-intelligence",
+        "link-graph",
+        "mcp",
+        "mcp-server",
+        "monorepo"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 30,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai agents",
+            "dmg": 40
+          },
+          {
+            "name": "call graph",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "conforme",
+      "url": "https://github.com/maxgfr/conforme",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).",
+        "en": "Syncs your AI coding config (rules, skills, agents, MCP servers) across Claude Code, Cursor & more (Rust)."
+      },
+      "cat": 1,
+      "dex": 12,
+      "dexLabel": "012",
+      "stars": 2,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [
+        "agents-md",
+        "ai-coding",
+        "amazonq",
+        "amp",
+        "claude-code",
+        "cli",
+        "codex",
+        "config-sync"
+      ],
+      "created": "2026-04",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "fire",
+        "hp": 40,
+        "level": 5,
+        "rarity": "uncommon",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agents md",
+            "dmg": 70
+          },
+          {
+            "name": "ai coding",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM3 11h1v1h-1zM8 11h1v1h-1z"
+        ]
+      }
+    },
+    {
+      "name": "secretgate",
+      "url": "https://github.com/maxgfr/secretgate",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Pare-feu local anti-fuite de secrets pour agents de code — masque les identifiants dans les prompts, lectures de fichiers et sorties d'outils avant qu'ils n'atteignent le LLM (Claude Code, Codex, OpenCode). Hooks déterministes, sans proxy.",
+        "en": "Local secrets firewall for coding agents — redacts credentials in prompts, file reads & tool output before they reach the LLM (Claude Code, Codex, OpenCode). Deterministic hooks, no proxy."
+      },
+      "cat": 1,
+      "dex": 13,
+      "dexLabel": "013",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skills",
+        "ai-safety",
+        "claude",
+        "claude-code",
+        "cli",
+        "codex",
+        "credentials",
+        "dlp"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "electric",
+        "hp": 40,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skills",
+            "dmg": 60
+          },
+          {
+            "name": "ai safety",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
+          "M2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "sift",
+      "url": "https://github.com/maxgfr/sift",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle tournera — avant de la télécharger. Lit les vrais en-têtes GGUF/safetensors par requêtes HTTP Range, mesure la machine et recommande un moteur. Aucune liste de modèles embarquée (Rust).",
+        "en": "Tells you which quantization of an LLM fits and how fast it will run — before you download it. Reads real GGUF/safetensors headers over HTTP range requests, measures your machine and routes to an engine. No bundled model list (Rust)."
+      },
+      "cat": 1,
+      "dex": 14,
+      "dexLabel": "014",
+      "stars": 0,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [
+        "apple-silicon",
+        "benchmark",
+        "cli",
+        "gguf",
+        "gguf-parser",
+        "huggingface",
+        "inference",
+        "llm"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "fighting",
+        "type2": "fire",
+        "hp": 30,
+        "level": 1,
+        "rarity": "common",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "apple silicon",
+            "dmg": 40
+          },
+          {
+            "name": "benchmark",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M3 3h6v1h-6zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+        ]
+      }
+    },
+    {
+      "name": "claudfeine",
+      "url": "https://github.com/maxgfr/claudfeine",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Lance Claude Code (et Codex) « sous caféine » — garde la machine éveillée le temps de la session, puis restaure la veille. Multi-plateforme, zéro-dépendance.",
+        "en": "Runs Claude Code (and Codex) caffeinated — keeps the machine awake for exactly the session, cross-platform & zero-dep."
+      },
+      "cat": 1,
+      "dex": 15,
+      "dexLabel": "015",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "ai",
+        "caffeinate",
+        "caffeine",
+        "claude",
+        "claude-code",
+        "cli",
+        "codex",
+        "homebrew"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "steel",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 60
+          },
+          {
+            "name": "caffeinate",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h1v1h-1zM9 11h1v1h-1z"
+        ]
+      }
+    },
+    {
+      "name": "claude-code-switch",
+      "url": "https://github.com/maxgfr/claude-code-switch",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Bascule zéro-dépendance entre fournisseurs pour Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…).",
+        "en": "Zero-dependency provider switching for Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…)."
+      },
+      "cat": 1,
+      "dex": 16,
+      "dexLabel": "016",
+      "stars": 0,
+      "forks": 1,
+      "language": "Shell",
+      "topics": [
+        "ai",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "cli",
+        "deepseek",
+        "glm",
+        "homebrew"
+      ],
+      "created": "2026-04",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "steel",
+        "hp": 30,
+        "level": 5,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 50
+          },
+          {
+            "name": "anthropic",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "git-pilot",
+      "url": "https://github.com/maxgfr/git-pilot",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Automatisation git par IA : commits intelligents, résolution de conflits et rebase auto (Claude/Codex/OpenAI/Gemini/Mistral). 100% Bash.",
+        "en": "AI-powered git automation: smart commits, conflict resolution & auto-rebase (Claude/Codex/OpenAI/Gemini/Mistral). Pure Bash."
+      },
+      "cat": 1,
+      "dex": 17,
+      "dexLabel": "017",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "ai",
+        "anthropic",
+        "auto-commit",
+        "automation",
+        "bash",
+        "cli",
+        "commit",
+        "developer-tools"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-03",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "steel",
+        "hp": 30,
+        "level": 6,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 30
+          },
+          {
+            "name": "anthropic",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 10h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM2 8h8v1h-8z",
+          "M2 9h8v1h-8zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "git-recap",
+      "url": "https://github.com/maxgfr/git-recap",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Générateur de récap mensuel des commits : résumés par IA, points clés et liste des commits.",
+        "en": "Monthly commit-recap generator with AI summaries, bullet points and commit lists."
+      },
+      "cat": 1,
+      "dex": 18,
+      "dexLabel": "018",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "ai",
+        "anthropic",
+        "bash",
+        "changelog",
+        "cli",
+        "commit-history",
+        "developer-tools",
+        "gemini"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "steel",
+        "hp": 30,
+        "level": 6,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 40
+          },
+          {
+            "name": "anthropic",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM2 6h3v1h-3zM7 6h3v1h-3zM0 7h1v1h-1zM2 7h8v1h-8zM11 7h1v1h-1zM2 8h8v1h-8z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h8v1h-8zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "llm-models",
+      "url": "https://github.com/maxgfr/llm-models",
+      "home": "https://www.npmjs.com/package/llm-models",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Récupère les derniers modèles LLM depuis les API OpenRouter et models.dev.",
+        "en": "Fetches the latest LLM models from the OpenRouter and models.dev APIs."
+      },
+      "cat": 1,
+      "dex": 19,
+      "dexLabel": "019",
+      "stars": 2,
+      "forks": 1,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "bun",
+        "cli",
+        "llm",
+        "models",
+        "openrouter",
+        "typescript",
+        "zod"
+      ],
+      "created": "2026-04",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 40,
+        "level": 5,
+        "rarity": "uncommon",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 80
+          },
+          {
+            "name": "bun",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "andro",
+      "url": "https://github.com/maxgfr/andro",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Lance des applis Android (mobile & TV) depuis le terminal macOS sur un émulateur jetable et autonome (Apple Silicon, HVF). (Rust)",
+        "en": "Run Android apps (phone & TV) from the macOS CLI on a disposable, self-contained emulator (Apple Silicon, HVF). (Rust)"
+      },
+      "cat": 2,
+      "dex": 20,
+      "dexLabel": "020",
+      "stars": 0,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [
+        "aab",
+        "adb",
+        "andro",
+        "android",
+        "android-app-bundle",
+        "android-emulator",
+        "apk",
+        "apple-silicon"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-06",
+      "license": "MIT",
+      "poke": {
+        "type1": "fighting",
+        "type2": "fire",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "aab",
+            "dmg": 20
+          },
+          {
+            "name": "adb",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "brutifi",
+      "url": "https://github.com/maxgfr/brutifi",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Outil de test de sécurité WiFi haute performance en Rust, pour l'éducation et les audits autorisés.",
+        "en": "High-performance WiFi security-testing tool in Rust for educational and authorized audits."
+      },
+      "cat": 2,
+      "dex": 21,
+      "dexLabel": "021",
+      "stars": 38,
+      "forks": 2,
+      "language": "Rust",
+      "topics": [
+        "brute-force",
+        "bruteforce",
+        "bruteforce-attacks",
+        "cybersecurity",
+        "hashcat",
+        "hcxtools",
+        "iced",
+        "pentesting"
+      ],
+      "created": "2026-01",
+      "pushed": "2026-02",
+      "license": "MIT",
+      "poke": {
+        "type1": "dark",
+        "type2": "fire",
+        "hp": 200,
+        "level": 8,
+        "rarity": "holo",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "brute force",
+            "dmg": 80
+          },
+          {
+            "name": "bruteforce",
+            "dmg": 50
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "rshc",
+      "url": "https://github.com/maxgfr/rshc",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Réimplémentation en Rust de SHC : chiffre des scripts shell en binaires compilés.",
+        "en": "Rust reimplementation of SHC: encrypts shell scripts into compiled binaries."
+      },
+      "cat": 2,
+      "dex": 22,
+      "dexLabel": "022",
+      "stars": 0,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [
+        "compiler",
+        "encryption",
+        "obfuscation",
+        "rc4",
+        "rust",
+        "script-compiler",
+        "security",
+        "shc"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-03",
+      "license": "GPL-3.0",
+      "poke": {
+        "type1": "dark",
+        "type2": "fire",
+        "hp": 30,
+        "level": 6,
+        "rarity": "common",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "compiler",
+            "dmg": 50
+          },
+          {
+            "name": "encryption",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "subtool",
+      "url": "https://github.com/maxgfr/subtool",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "CLI tout-en-un pour les sous-titres : télécharger, traduire, convertir, synchroniser, nettoyer, fusionner, corriger, extraire et intégrer.",
+        "en": "All-in-one subtitle CLI: download, translate, convert, sync, clean, merge, fix, extract & embed."
+      },
+      "cat": 2,
+      "dex": 23,
+      "dexLabel": "023",
+      "stars": 1,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "ass",
+        "bash",
+        "cli",
+        "ffsubsync",
+        "opensubtitles",
+        "srt",
+        "subtitle-tools",
+        "subtitles"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-05",
+      "license": "MIT",
+      "poke": {
+        "type1": "fighting",
+        "type2": "steel",
+        "hp": 40,
+        "level": 6,
+        "rarity": "common",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "ass",
+            "dmg": 40
+          },
+          {
+            "name": "bash",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
+          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "snatch",
+      "url": "https://github.com/maxgfr/snatch",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Téléchargeur de vidéos universel : essaie yt-dlp d'abord, bascule sur l'extraction navigateur (CDP) pour les sites récalcitrants.",
+        "en": "Universal video downloader: yt-dlp first, CDP browser extraction fallback for stubborn sites."
+      },
+      "cat": 2,
+      "dex": 24,
+      "dexLabel": "024",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "bash",
+        "cdp",
+        "chrome-devtools-protocol",
+        "cli",
+        "hls",
+        "homebrew",
+        "m3u8",
+        "streaming"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-05",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": "electric",
+        "hp": 30,
+        "level": 6,
+        "rarity": "common",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "bash",
+            "dmg": 10
+          },
+          {
+            "name": "cdp",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "web-watcher",
+      "url": "https://github.com/maxgfr/web-watcher",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Script Bash qui surveille des API et sites web : détection de différences, seuils et notifications instantanées.",
+        "en": "Bash watcher for APIs & websites with diff detection, thresholds and instant notifications."
+      },
+      "cat": 2,
+      "dex": 25,
+      "dexLabel": "025",
+      "stars": 2,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "api-monitoring",
+        "automation",
+        "bash",
+        "change-detection",
+        "cli",
+        "cron",
+        "diff",
+        "ecommerce-monitoring"
+      ],
+      "created": "2026-02",
+      "pushed": "2026-03",
+      "license": "MIT",
+      "poke": {
+        "type1": "fighting",
+        "type2": "steel",
+        "hp": 40,
+        "level": 7,
+        "rarity": "uncommon",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "api monitoring",
+            "dmg": 40
+          },
+          {
+            "name": "automation",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h2v1h-2zM7 7h2v1h-2zM2 8h3v1h-3zM7 8h3v1h-3z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h6v1h-6zM3 10h6v1h-6zM3 11h2v1h-2zM7 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "package-checker.sh",
+      "url": "https://github.com/maxgfr/package-checker.sh",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Scanne les projets node/bun/deno à la recherche de paquets npm vulnérables via OSV/GHSA (JSON/CSV/PURL/SBOM/SARIF/TRIVY).",
+        "en": "Scans node/bun/deno projects for vulnerable npm packages via OSV/GHSA (JSON/CSV/PURL/SBOM/SARIF/TRIVY)."
+      },
+      "cat": 2,
+      "dex": 26,
+      "dexLabel": "026",
+      "stars": 3,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "cicd",
+        "dependencies",
+        "ghsa",
+        "golang",
+        "maven",
+        "npm",
+        "nuget",
+        "osv"
+      ],
+      "created": "2025-11",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": null,
+        "hp": 50,
+        "level": 10,
+        "rarity": "uncommon",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "cicd",
+            "dmg": 70
+          },
+          {
+            "name": "dependencies",
+            "dmg": 90
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "github-helpers",
+      "url": "https://github.com/maxgfr/github-helpers",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Boîte à outils de maintenance GitHub : unstar en masse, clone d'org, nettoyage des forks, audit de dépôts, etc.",
+        "en": "GitHub maintenance toolkit: bulk unstar, org clone, fork cleanup, repo audit and more."
+      },
+      "cat": 2,
+      "dex": 27,
+      "dexLabel": "027",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "automation",
+        "bash",
+        "cli",
+        "devtools",
+        "git",
+        "github",
+        "github-api",
+        "github-helpers"
+      ],
+      "created": "2026-04",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "fighting",
+        "type2": "steel",
+        "hp": 30,
+        "level": 5,
+        "rarity": "common",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "automation",
+            "dmg": 60
+          },
+          {
+            "name": "bash",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "copyable-pdf",
+      "url": "https://github.com/maxgfr/copyable-pdf",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Convertit des PDF scannés en PDF cherchables et copiables grâce à l'OCR Tesseract (traitement parallèle).",
+        "en": "Converts scanned PDFs into searchable, copyable PDFs with Tesseract OCR (parallel)."
+      },
+      "cat": 2,
+      "dex": 28,
+      "dexLabel": "028",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "automation",
+        "cli",
+        "document-processing",
+        "ocr",
+        "pdf",
+        "pdftoppm",
+        "pdfunite",
+        "poppler"
+      ],
+      "created": "2026-01",
+      "pushed": "2026-03",
+      "license": "MIT",
+      "poke": {
+        "type1": "fighting",
+        "type2": "steel",
+        "hp": 30,
+        "level": 8,
+        "rarity": "common",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "automation",
+            "dmg": 30
+          },
+          {
+            "name": "cli",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 3h6v1h-6zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+        ]
+      }
+    },
+    {
+      "name": "ratio-master",
+      "url": "https://github.com/maxgfr/ratio-master",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Outil de ratio torrent qui envoie de vraies requêtes d'annonce HTTP aux trackers BitTorrent.",
+        "en": "Torrent ratio tool that sends real HTTP announce requests to BitTorrent trackers."
+      },
+      "cat": 2,
+      "dex": 29,
+      "dexLabel": "029",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "topics": [
+        "bash",
+        "bittorent",
+        "bittorent-client",
+        "bittorent-ratio",
+        "cli-tool",
+        "p2p",
+        "ratio",
+        "simulation"
+      ],
+      "created": "2026-02",
+      "pushed": "2026-02",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": null,
+        "hp": 30,
+        "level": 7,
+        "rarity": "common",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "bash",
+            "dmg": 40
+          },
+          {
+            "name": "bittorent",
+            "dmg": 50
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "unsleep",
+      "url": "https://github.com/maxgfr/unsleep",
+      "home": "https://www.npmjs.com/package/unsleep",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Petit exécutable qui empêche la machine de se mettre en veille.",
+        "en": "Tiny executable that prevents the machine from sleeping."
+      },
+      "cat": 2,
+      "dex": 30,
+      "dexLabel": "030",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "executable",
+        "node",
+        "preventing-sleep",
+        "typescript",
+        "unsleep"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 30,
+        "level": 45,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "executable",
+            "dmg": 20
+          },
+          {
+            "name": "node",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h1v1h-1zM2 6h2v1h-2zM8 6h2v1h-2zM11 6h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h3v1h-3zM8 11h3v1h-3z"
+        ]
+      }
+    },
+    {
+      "name": "today",
+      "url": "https://github.com/maxgfr/today",
+      "home": "https://maxgfr.github.io/today",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Todolist du jour, offline-first et privée : rien ne remonte tout seul — ce qui n'est pas fini attend une décision le lendemain, avec son ancienneté affichée. Aucun compte, aucun serveur, zéro requête réseau, prouvé par une CSP et un garde-fou qui casse la CI.",
+        "en": "Offline-first, privacy-first daily to-do: nothing rolls over on its own — unfinished tasks wait for a decision the next morning, with their age shown. No account, no server, zero network requests, proven by a CSP and a build gate that fails CI."
+      },
+      "cat": 3,
+      "dex": 31,
+      "dexLabel": "031",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "github-pages",
+        "indexeddb",
+        "keyboard-shortcuts",
+        "local-first",
+        "no-backend",
+        "no-tracking",
+        "offline-first",
+        "privacy"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "dark",
+        "type2": "water",
+        "hp": 30,
+        "level": 1,
+        "rarity": "common",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "github pages",
+            "dmg": 50
+          },
+          {
+            "name": "indexeddb",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "nook",
+      "url": "https://github.com/maxgfr/nook",
+      "home": "https://maxgfr.github.io/nook/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Notion local-first et chiffré, 100% dans le navigateur : éditeur à blocs, pages imbriquées, wikilinks et backlinks, tags, recherche ⌘K, bases de données (table/kanban/calendrier), historique de versions, carte des liens. Verrouillage par passphrase (Argon2id) avec rotation de clé, et effacement total vérifiable. Aucune requête réseau possible — CSP connect-src 'none', prouvée en CI. PWA hors-ligne.",
+        "en": "Local-first, encrypted Notion in the browser: block editor, nested pages, wikilinks and backlinks, tags, ⌘K search, databases (table/board/calendar), version history, link map. Passphrase locking (Argon2id) that rotates the key, and a wipe you can verify. No network request is possible — CSP connect-src 'none', proven in CI. Offline PWA."
+      },
+      "cat": 3,
+      "dex": 32,
+      "dexLabel": "032",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "aes-gcm",
+        "encryption",
+        "github-pages",
+        "indexeddb",
+        "knowledge-base",
+        "local-first",
+        "no-backend",
+        "no-tracking"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "dark",
+        "type2": "water",
+        "hp": 30,
+        "level": 1,
+        "rarity": "common",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "aes gcm",
+            "dmg": 40
+          },
+          {
+            "name": "encryption",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM3 8h6v1h-6z",
+          "M3 9h6v1h-6zM3 10h6v1h-6zM3 11h1v1h-1zM8 11h1v1h-1z"
+        ]
+      }
+    },
+    {
+      "name": "basilico",
+      "url": "https://github.com/maxgfr/basilico",
+      "home": "https://maxgfr.github.io/basilico/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Minuteur de concentration Pomodoro local-first (PWA + extension Chrome) : tâches, backlog et plan du jour, comptage des interruptions, overtime et Flowtime, heatmap annuelle, heures productives et précision des estimations, export JSON/CSV/Open Pomodoro — sans compte, sans serveur, sans tracking.",
+        "en": "Local-first Pomodoro focus timer (PWA + Chrome extension): tasks, backlog & day plan, interruption counting, overtime and Flowtime, year heatmap, productive hours and estimate accuracy, JSON/CSV/Open Pomodoro export — no account, no server, no tracking."
+      },
+      "cat": 3,
+      "dex": 33,
+      "dexLabel": "033",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "chrome-extension",
+        "focus-timer",
+        "local-first",
+        "offline-first",
+        "pomodoro-timer",
+        "productivity",
+        "pwa",
+        "react"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "electric",
+        "hp": 30,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "chrome extension",
+            "dmg": 20
+          },
+          {
+            "name": "focus timer",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M4 1h4v1h-4zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h5v1h-5zM7 6h5v1h-5zM1 7h10v1h-10zM2 8h8v1h-8z",
+          "M2 9h8v1h-8zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "bracketeer",
+      "url": "https://github.com/maxgfr/bracketeer",
+      "home": "https://maxgfr.github.io/bracketeer",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Moteur de tournois agnostique : brackets, système suisse, ligues, poules et Elo composés depuis six axes — aucun sport codé en dur. 100 % navigateur, sans serveur ni compte : lien partageable, sync P2P, export ICS, impression et hors-ligne.",
+        "en": "Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline."
+      },
+      "cat": 3,
+      "dex": 34,
+      "dexLabel": "034",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "bracket",
+        "claude",
+        "cli",
+        "elimination-bracket",
+        "elo",
+        "glicko2",
+        "league"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 30,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "agent skills",
+            "dmg": 60
+          },
+          {
+            "name": "bracket",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM0 7h12v1h-12zM2 8h8v1h-8z",
+          "M2 9h8v1h-8zM2 10h8v1h-8zM1 11h2v1h-2zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "csv-ai-analyzer",
+      "url": "https://github.com/maxgfr/csv-ai-analyzer",
+      "home": "https://maxgfr.github.io/csv-ai-analyzer",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur.",
+        "en": "Self-hosted, browser-based AI CSV analyzer."
+      },
+      "cat": 3,
+      "dex": 35,
+      "dexLabel": "035",
+      "stars": 83,
+      "forks": 9,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "browser",
+        "chatbot",
+        "chatgpt",
+        "csv",
+        "csv-files",
+        "data-analysis",
+        "data-visualization"
+      ],
+      "created": "2025-12",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 200,
+        "level": 9,
+        "rarity": "holo",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 90
+          },
+          {
+            "name": "browser",
+            "dmg": 50
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM2 6h2v1h-2zM8 6h2v1h-2zM0 7h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM11 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
+        ]
+      }
+    },
+    {
+      "name": "db-schema-viewer",
+      "url": "https://github.com/maxgfr/db-schema-viewer",
+      "home": "https://maxgfr.github.io/db-schema-viewer/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Visualiseur de schéma de base de données côté client avec analyse par IA — importez du SQL, visualisez, partagez, exportez, sans backend.",
+        "en": "Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend."
+      },
+      "cat": 3,
+      "dex": 36,
+      "dexLabel": "036",
+      "stars": 5,
+      "forks": 1,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "database",
+        "github-pages",
+        "nextjs",
+        "open-source",
+        "react",
+        "schema",
+        "sql"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 60,
+        "level": 6,
+        "rarity": "uncommon",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 60
+          },
+          {
+            "name": "database",
+            "dmg": 90
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM0 7h12v1h-12zM0 8h12v1h-12z",
+          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "real-estate-calculator",
+      "url": "https://github.com/maxgfr/real-estate-calculator",
+      "home": "https://maxgfr.github.io/real-estate-calculator",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Calculateur de rentabilité (ROI) immobilière pour évaluer la rentabilité d'un bien locatif.",
+        "en": "Real-estate ROI calculator for rental-property profitability."
+      },
+      "cat": 3,
+      "dex": 37,
+      "dexLabel": "037",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "apartments",
+        "calculation",
+        "calculator",
+        "cashflow",
+        "estate",
+        "investor",
+        "landlord",
+        "next"
+      ],
+      "created": "2022-05",
+      "pushed": "2026-05",
+      "license": null,
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 40,
+        "level": 52,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "apartments",
+            "dmg": 20
+          },
+          {
+            "name": "calculation",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "genpass",
+      "url": "https://github.com/maxgfr/genpass",
+      "home": "https://maxgfr.github.io/genpass/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Générateur de mots de passe et coffre-fort chiffré, 100% dans le navigateur : entropie exacte, phrases secrètes EFF, coffre AES-256-GCM (PBKDF2 600k) avec auto-verrouillage, liens de partage chiffrés et QR — PWA hors-ligne.",
+        "en": "Client-side password generator + encrypted vault PWA: exact entropy, EFF passphrases, auto-locking AES-256-GCM vault (PBKDF2 600k), encrypted share links & QR — offline-first."
+      },
+      "cat": 3,
+      "dex": 38,
+      "dexLabel": "038",
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "topics": [
+        "aes-gcm",
+        "encryption",
+        "github-pages",
+        "offline-first",
+        "passphrase",
+        "password-generator",
+        "password-manager",
+        "privacy"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "dark",
+        "type2": "ground",
+        "hp": 30,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "aes gcm",
+            "dmg": 40
+          },
+          {
+            "name": "encryption",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "loyalty-card-vault",
+      "url": "https://github.com/maxgfr/loyalty-card-vault",
+      "home": "https://maxgfr.github.io/loyalty-card-vault/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "PWA hors-ligne pour gérer ses cartes de fidélité avec stockage chiffré et scan de codes-barres.",
+        "en": "Offline-first PWA for loyalty cards with encrypted storage and barcode scanning."
+      },
+      "cat": 3,
+      "dex": 39,
+      "dexLabel": "039",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "barcode-scanner",
+        "local-first",
+        "loyalty",
+        "loyalty-card",
+        "loyalty-program",
+        "no-cloud",
+        "offline-first",
+        "pwa"
+      ],
+      "created": "2026-01",
+      "pushed": "2026-02",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 40,
+        "level": 8,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "barcode scanner",
+            "dmg": 60
+          },
+          {
+            "name": "local first",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 7h1v1h-1zM10 7h1v1h-1zM1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "omnilingo",
+      "url": "https://github.com/maxgfr/omnilingo",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Application de bureau d'apprentissage des langues avec tutorat IA multi-fournisseurs.",
+        "en": "Desktop language-learning app with multi-provider AI tutoring."
+      },
+      "cat": 3,
+      "dex": 40,
+      "dexLabel": "040",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "desktop-app",
+        "duolingo",
+        "duolingo-alternative",
+        "language-learning",
+        "multilingual",
+        "rust",
+        "sqlite"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-06",
+      "license": "MIT",
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 30,
+        "level": 6,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 40
+          },
+          {
+            "name": "desktop app",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h12v1h-12zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h3v1h-3zM8 11h3v1h-3z"
+        ]
+      }
+    },
+    {
+      "name": "feedreel",
+      "url": "https://github.com/maxgfr/feedreel",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Générateur local de courtes vidéos quotidiennes (Remotion) avec légendes par plateforme + publication optionnelle sur Shorts/TikTok/Reels.",
+        "en": "Local-first daily short-video generator (Remotion) with per-platform captions + opt-in Shorts/TikTok/Reels publishing."
+      },
+      "cat": 3,
+      "dex": 41,
+      "dexLabel": "041",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "automation",
+        "content-automation",
+        "ffmpeg",
+        "instagram-reels",
+        "local-first",
+        "remotion",
+        "rss"
+      ],
+      "created": "2026-06",
+      "pushed": "2026-06",
+      "license": null,
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 30,
+        "level": 3,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai",
+            "dmg": 40
+          },
+          {
+            "name": "automation",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h1v1h-1zM9 11h1v1h-1z"
+        ]
+      }
+    },
+    {
+      "name": "leboncoin-cdp",
+      "url": "https://github.com/maxgfr/leboncoin-cdp",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Scraper Leboncoin indétectable via le Chrome DevTools Protocol et les data routes Next.js — sans Puppeteer, sans détection de bot.",
+        "en": "Undetectable Leboncoin scraper via Chrome DevTools Protocol & Next.js data routes — no Puppeteer, zero bot detection."
+      },
+      "cat": 3,
+      "dex": 42,
+      "dexLabel": "042",
+      "stars": 1,
+      "forks": 0,
+      "language": "HTML",
+      "topics": [
+        "anti-bot",
+        "bot-detection",
+        "browser-automation",
+        "browser-fingerprinting",
+        "cdp",
+        "chrome-devtools-protocol",
+        "leboncoin",
+        "scraping"
+      ],
+      "created": "2022-03",
+      "pushed": "2026-06",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": "ground",
+        "hp": 40,
+        "level": 54,
+        "rarity": "common",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "anti bot",
+            "dmg": 20
+          },
+          {
+            "name": "bot detection",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "release-notes-finder",
+      "url": "https://github.com/maxgfr/release-notes-finder",
+      "home": "https://maxgfr.github.io/release-notes-finder",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Trouve les versions d'un paquet npm avec leurs notes de version GitHub.",
+        "en": "Find npm-package versions with their GitHub release notes."
+      },
+      "cat": 3,
+      "dex": 43,
+      "dexLabel": "043",
+      "stars": 6,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "changelog",
+        "github",
+        "nodejs",
+        "npm",
+        "npm-package",
+        "package",
+        "package-version",
+        "release-notes"
+      ],
+      "created": "2022-11",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 60,
+        "level": 46,
+        "rarity": "uncommon",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "changelog",
+            "dmg": 50
+          },
+          {
+            "name": "github",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "crible",
+      "url": "https://github.com/maxgfr/crible",
+      "home": "https://maxgfr.github.io/crible/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Screener fondamental d'actions auto-hébergé — 150k+ titres, zéro clé d'API, scores Piotroski/Altman/Beneish transparents avec traçabilité complète des données, rapide grâce à DuckDB.",
+        "en": "Self-hosted fundamental stock screener — 150k+ equities, zero API keys, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast."
+      },
+      "cat": 4,
+      "dex": 44,
+      "dexLabel": "044",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "topics": [
+        "duckdb",
+        "fastapi",
+        "finance",
+        "fundamental-analysis",
+        "investing",
+        "piotroski",
+        "self-hosted",
+        "stock-screener"
+      ],
+      "created": "2026-07",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "ground",
+        "type2": "grass",
+        "hp": 40,
+        "level": 2,
+        "rarity": "common",
+        "weakness": "water",
+        "moves": [
+          {
+            "name": "duckdb",
+            "dmg": 70
+          },
+          {
+            "name": "fastapi",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "binance-historical",
+      "url": "https://github.com/maxgfr/binance-historical",
+      "home": "https://www.npmjs.com/package/binance-historical",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Récupère les bougies (klines) historiques depuis l'API Binance.",
+        "en": "Fetch historical klines from the Binance API."
+      },
+      "cat": 4,
+      "dex": 45,
+      "dexLabel": "045",
+      "stars": 46,
+      "forks": 6,
+      "language": "TypeScript",
+      "topics": [
+        "binance",
+        "binance-api",
+        "binance-historical",
+        "binance-historical-candle-data",
+        "binance-history",
+        "cryptocurrency",
+        "data",
+        "historical-data"
+      ],
+      "created": "2022-03",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "ground",
+        "type2": "water",
+        "hp": 200,
+        "level": 54,
+        "rarity": "holo",
+        "weakness": "water",
+        "moves": [
+          {
+            "name": "binance",
+            "dmg": 40
+          },
+          {
+            "name": "binance api",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM9 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 10h1v1h-1zM7 10h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM1 8h10v1h-10z",
+          "M2 9h8v1h-8zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "ai-strategy-backtester",
+      "url": "https://github.com/maxgfr/ai-strategy-backtester",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Décrivez une stratégie crypto en langage naturel → fichier de stratégie JSON, backtesté sur 50+ indicateurs avec rapports HTML.",
+        "en": "Describe a crypto strategy in plain English → JSON strategy, backtested over 50+ indicators with HTML reports."
+      },
+      "cat": 4,
+      "dex": 46,
+      "dexLabel": "046",
+      "stars": 0,
+      "forks": 1,
+      "language": "TypeScript",
+      "topics": [
+        "ai-generated",
+        "backtesting",
+        "binance",
+        "candlestick",
+        "cryptocurrency",
+        "html-report",
+        "json-strategy",
+        "macd"
+      ],
+      "created": "2026-03",
+      "pushed": "2026-03",
+      "license": null,
+      "poke": {
+        "type1": "psychic",
+        "type2": "water",
+        "hp": 30,
+        "level": 6,
+        "rarity": "common",
+        "weakness": "dark",
+        "moves": [
+          {
+            "name": "ai generated",
+            "dmg": 50
+          },
+          {
+            "name": "backtesting",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h3v1h-3zM7 7h3v1h-3zM3 8h2v1h-2zM7 8h2v1h-2z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "supertrend",
+      "url": "https://github.com/maxgfr/supertrend",
+      "home": "https://www.npmjs.com/package/supertrend",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Implémentation de l'indicateur SuperTrend.",
+        "en": "Implementation of the SuperTrend indicator."
+      },
+      "cat": 4,
+      "dex": 47,
+      "dexLabel": "047",
+      "stars": 4,
+      "forks": 4,
+      "language": "TypeScript",
+      "topics": [
+        "algorithm",
+        "javascript",
+        "node",
+        "supertrend",
+        "technical-indicators",
+        "technicalindicators",
+        "trading",
+        "typescript"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "ground",
+        "type2": "water",
+        "hp": 50,
+        "level": 45,
+        "rarity": "uncommon",
+        "weakness": "water",
+        "moves": [
+          {
+            "name": "algorithm",
+            "dmg": 80
+          },
+          {
+            "name": "javascript",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 3h6v1h-6z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h8v1h-8zM0 7h1v1h-1zM2 7h3v1h-3zM7 7h3v1h-3zM11 7h1v1h-1zM0 8h12v1h-12z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM0 9h12v1h-12zM0 10h12v1h-12zM1 11h4v1h-4zM7 11h4v1h-4z"
+        ]
+      }
+    },
+    {
+      "name": "regressio",
+      "url": "https://github.com/maxgfr/regressio",
+      "home": "https://www.npmjs.com/package/regressio",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Bibliothèque TS zéro-dépendance de régression/classification/stats (OLS, Ridge, Lasso, Logistique, KNN, réseau de neurones) avec moteur Rust/WASM.",
+        "en": "Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine."
+      },
+      "cat": 5,
+      "dex": 48,
+      "dexLabel": "048",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "bun",
+        "knn",
+        "lasso",
+        "linear-regression",
+        "logistic-regression",
+        "machine-learning",
+        "neural-network",
+        "ols"
+      ],
+      "created": "2026-04",
+      "pushed": "2026-04",
+      "license": null,
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 30,
+        "level": 5,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "bun",
+            "dmg": 20
+          },
+          {
+            "name": "knn",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "similarities",
+      "url": "https://github.com/maxgfr/similarities",
+      "home": "https://www.npmjs.com/package/similarities",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Fonctions pour trouver les similarités entre tableaux.",
+        "en": "Functions to find similarities between arrays."
+      },
+      "cat": 5,
+      "dex": 49,
+      "dexLabel": "049",
+      "stars": 2,
+      "forks": 1,
+      "language": "TypeScript",
+      "topics": [
+        "array-comparison",
+        "combinatorics",
+        "node",
+        "pearson",
+        "pearson-coefficient",
+        "pearson-correlation",
+        "pearson-correlation-coefficient",
+        "similarities"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 40,
+        "level": 45,
+        "rarity": "uncommon",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "array comparison",
+            "dmg": 60
+          },
+          {
+            "name": "combinatorics",
+            "dmg": 80
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "condorcet-winner",
+      "url": "https://github.com/maxgfr/condorcet-winner",
+      "home": "https://www.npmjs.com/package/condorcet-winner",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Implémentation de l'algorithme de vote de Condorcet en TypeScript.",
+        "en": "Condorcet vote algorithm in TypeScript."
+      },
+      "cat": 5,
+      "dex": 50,
+      "dexLabel": "050",
+      "stars": 2,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "condorcet",
+        "condorcet-vote",
+        "condorcet-voting",
+        "condorcet-voting-algorithms",
+        "condorcet-winner",
+        "node",
+        "typescript",
+        "vote"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 40,
+        "level": 45,
+        "rarity": "uncommon",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "condorcet",
+            "dmg": 80
+          },
+          {
+            "name": "condorcet vote",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM3 11h2v1h-2zM7 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "benford-law",
+      "url": "https://github.com/maxgfr/benford-law",
+      "home": "https://www.npmjs.com/package/benford-law",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Vérifie si un jeu de données suit la loi de Benford.",
+        "en": "Check whether a dataset follows Benford's law."
+      },
+      "cat": 5,
+      "dex": 51,
+      "dexLabel": "051",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "algorithm",
+        "benford",
+        "benford-analysis",
+        "benfords-law",
+        "javascript",
+        "nodejs",
+        "typescript"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 40,
+        "level": 45,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "algorithm",
+            "dmg": 30
+          },
+          {
+            "name": "benford",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "gaussian-helper",
+      "url": "https://github.com/maxgfr/gaussian-helper",
+      "home": "https://www.npmjs.com/package/gaussian-helper",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Utilitaires pour les calculs gaussiens.",
+        "en": "Helpers for Gaussian calculations."
+      },
+      "cat": 5,
+      "dex": 52,
+      "dexLabel": "052",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "gaussian",
+        "gaussian-distribution",
+        "gaussian-helper",
+        "gaussian-processes",
+        "javascript",
+        "mean",
+        "nodejs",
+        "standard-deviation"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 40,
+        "level": 45,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "gaussian",
+            "dmg": 40
+          },
+          {
+            "name": "gaussian distribution",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h1v1h-1zM9 11h1v1h-1z"
+        ]
+      }
+    },
+    {
+      "name": "node-simple-context",
+      "url": "https://github.com/maxgfr/node-simple-context",
+      "home": "https://www.npmjs.com/package/node-simple-context",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Contexte minimaliste pour Node, inspiré de l'API Context de React.",
+        "en": "Minimalist context for Node, inspired by the React Context API."
+      },
+      "cat": 5,
+      "dex": 53,
+      "dexLabel": "053",
+      "stars": 1,
+      "forks": 1,
+      "language": "TypeScript",
+      "topics": [
+        "async-hooks",
+        "async-local-storage",
+        "context",
+        "context-api",
+        "global-variables",
+        "node-context",
+        "promise",
+        "typescript"
+      ],
+      "created": "2022-04",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 40,
+        "level": 53,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "async hooks",
+            "dmg": 50
+          },
+          {
+            "name": "async local storage",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 10h1v1h-1zM7 10h1v1h-1z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM2 8h8v1h-8z",
+          "M3 9h6v1h-6zM3 10h1v1h-1zM8 10h1v1h-1zM3 11h2v1h-2zM7 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "react-essentials-functions",
+      "url": "https://github.com/maxgfr/react-essentials-functions",
+      "home": "https://www.npmjs.com/package/react-essentials-functions",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Hooks et composants utiles pour React.",
+        "en": "Useful hooks and components for React."
+      },
+      "cat": 5,
+      "dex": 54,
+      "dexLabel": "054",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "components",
+        "hooks",
+        "react",
+        "useful-functions"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-05",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 40,
+        "level": 45,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "components",
+            "dmg": 60
+          },
+          {
+            "name": "hooks",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M2 2h8v1h-8zM1 3h10v1h-10z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM1 7h4v1h-4zM7 7h4v1h-4zM0 8h5v1h-5zM7 8h5v1h-5z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "ts-essentials-functions",
+      "url": "https://github.com/maxgfr/ts-essentials-functions",
+      "home": "https://www.npmjs.com/package/ts-essentials-functions",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Fonctions TypeScript essentielles, zéro-dépendance.",
+        "en": "Essential zero-dependency TypeScript helpers."
+      },
+      "cat": 5,
+      "dex": 55,
+      "dexLabel": "055",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "essentials-functions",
+        "functions",
+        "generic-function",
+        "typescript",
+        "zero-dependencies",
+        "zero-dependency"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 40,
+        "level": 45,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "essentials functions",
+            "dmg": 70
+          },
+          {
+            "name": "functions",
+            "dmg": 50
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "rn-date",
+      "url": "https://github.com/maxgfr/rn-date",
+      "home": "https://www.npmjs.com/package/rn-date",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Correctif zéro-dépendance des problèmes d'analyse de dates en React Native sur Android.",
+        "en": "Zero-dependency fix for date-parsing issues in React Native on Android."
+      },
+      "cat": 5,
+      "dex": 56,
+      "dexLabel": "056",
+      "stars": 2,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "android",
+        "date",
+        "date-parsing",
+        "ios",
+        "javascript",
+        "react-native",
+        "rn-date",
+        "typescript"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-05",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 40,
+        "level": 45,
+        "rarity": "uncommon",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "android",
+            "dmg": 40
+          },
+          {
+            "name": "date",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h4v1h-4zM7 7h4v1h-4zM1 8h4v1h-4zM7 8h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "rn-simple-modal",
+      "url": "https://github.com/maxgfr/rn-simple-modal",
+      "home": "https://www.npmjs.com/package/rn-simple-modal",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Modale React Native légère et zéro-dépendance (sans animation).",
+        "en": "Lightweight, zero-dependency React Native modal (no animation)."
+      },
+      "cat": 5,
+      "dex": 57,
+      "dexLabel": "057",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "modal",
+        "react",
+        "react-native",
+        "rn",
+        "simple-modal",
+        "zero-dependencies"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": null,
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 30,
+        "level": 45,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "modal",
+            "dmg": 40
+          },
+          {
+            "name": "react",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "huge-async-storage",
+      "url": "https://github.com/maxgfr/huge-async-storage",
+      "home": "https://www.npmjs.com/package/huge-async-storage",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Wrapper d'async-storage pour stocker de grandes quantités de données en React Native.",
+        "en": "async-storage wrapper for storing huge data in React Native."
+      },
+      "cat": 5,
+      "dex": 58,
+      "dexLabel": "058",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "async-storage",
+        "asyncstorage",
+        "huge-data",
+        "local-storage",
+        "react-native",
+        "react-native-async-storage",
+        "storage",
+        "typescript"
+      ],
+      "created": "2022-12",
+      "pushed": "2026-04",
+      "license": null,
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 40,
+        "level": 45,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "async storage",
+            "dmg": 50
+          },
+          {
+            "name": "asyncstorage",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M4 3h4v1h-4zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h4v1h-4zM7 11h4v1h-4z"
+        ]
+      }
+    },
+    {
+      "name": "insta-who-unfollowed-me",
+      "url": "https://github.com/maxgfr/insta-who-unfollowed-me",
+      "home": "https://www.npmjs.com/package/insta-who-unfollowed-me",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Suivez qui vous a unfollow sur Instagram.",
+        "en": "Track who unfollowed you on Instagram."
+      },
+      "cat": 5,
+      "dex": 59,
+      "dexLabel": "059",
+      "stars": 9,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "api",
+        "cli",
+        "insta",
+        "insta-api",
+        "instagram",
+        "instagram-private-api",
+        "javascript",
+        "js"
+      ],
+      "created": "2022-11",
+      "pushed": "2026-06",
+      "license": "MIT",
+      "poke": {
+        "type1": "fighting",
+        "type2": "water",
+        "hp": 80,
+        "level": 46,
+        "rarity": "uncommon",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "api",
+            "dmg": 80
+          },
+          {
+            "name": "cli",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h2v1h-2zM7 10h2v1h-2zM3 11h2v1h-2zM7 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "api-money-node-sdk",
+      "url": "https://github.com/maxgfr/api-money-node-sdk",
+      "home": "https://www.npmjs.com/package/api-money-node-sdk",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "SDK Node non-officiel pour api-money.com.",
+        "en": "Unofficial Node SDK for api-money.com."
+      },
+      "cat": 5,
+      "dex": 60,
+      "dexLabel": "060",
+      "stars": 3,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "api-money",
+        "api-money-node-sdk",
+        "js",
+        "library",
+        "nodejs"
+      ],
+      "created": "2020-07",
+      "pushed": "2026-05",
+      "license": null,
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 50,
+        "level": 74,
+        "rarity": "uncommon",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "api money",
+            "dmg": 70
+          },
+          {
+            "name": "api money node sdk",
+            "dmg": 90
+          }
+        ],
+        "sprite": [
+          "M2 0h1v1h-1zM5 0h2v1h-2zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "github-change-json",
+      "url": "https://github.com/maxgfr/github-change-json",
+      "home": "https://github.com/marketplace/actions/github-change-json",
+      "homeLabel": {
+        "fr": "marketplace",
+        "en": "marketplace"
+      },
+      "desc": {
+        "fr": "Action pour modifier une valeur dans un fichier JSON (ex. package.json).",
+        "en": "Action to change a value in a JSON file (e.g. package.json)."
+      },
+      "cat": 6,
+      "dex": 61,
+      "dexLabel": "061",
+      "stars": 7,
+      "forks": 1,
+      "language": "TypeScript",
+      "topics": [
+        "actions",
+        "github",
+        "github-actions",
+        "json",
+        "key",
+        "package-json",
+        "update",
+        "update-json"
+      ],
+      "created": "2022-03",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": "water",
+        "hp": 70,
+        "level": 54,
+        "rarity": "uncommon",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "actions",
+            "dmg": 50
+          },
+          {
+            "name": "github",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM0 7h12v1h-12zM0 8h12v1h-12z",
+          "M1 9h10v1h-10zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "github-commit-push-file",
+      "url": "https://github.com/maxgfr/github-commit-push-file",
+      "home": "https://github.com/marketplace/actions/github-commit-push-file",
+      "homeLabel": {
+        "fr": "marketplace",
+        "en": "marketplace"
+      },
+      "desc": {
+        "fr": "Action pour committer et pousser un fichier dans un dépôt.",
+        "en": "Action to commit and push a file to a repository."
+      },
+      "cat": 6,
+      "dex": 62,
+      "dexLabel": "062",
+      "stars": 3,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "actions",
+        "commit",
+        "commit-message",
+        "files",
+        "github",
+        "github-actions",
+        "push"
+      ],
+      "created": "2022-05",
+      "pushed": "2026-07",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": "water",
+        "hp": 50,
+        "level": 52,
+        "rarity": "uncommon",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "actions",
+            "dmg": 90
+          },
+          {
+            "name": "commit",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM4 10h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM1 8h10v1h-10z",
+          "M2 9h8v1h-8zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "github-multi-deployments",
+      "url": "https://github.com/maxgfr/github-multi-deployments",
+      "home": "https://github.com/marketplace/actions/github-multi-deployments",
+      "homeLabel": {
+        "fr": "marketplace",
+        "en": "marketplace"
+      },
+      "desc": {
+        "fr": "Action pour gérer les statuts de déploiement sur plusieurs environnements.",
+        "en": "Action to manage deployment statuses across multiple environments."
+      },
+      "cat": 6,
+      "dex": 63,
+      "dexLabel": "063",
+      "stars": 2,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "deployments",
+        "github",
+        "github-actions",
+        "multi-deployments",
+        "typescript"
+      ],
+      "created": "2022-03",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": "water",
+        "hp": 40,
+        "level": 54,
+        "rarity": "uncommon",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "deployments",
+            "dmg": 80
+          },
+          {
+            "name": "github",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h8v1h-8zM2 3h8v1h-8z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM2 8h8v1h-8z",
+          "M2 9h8v1h-8zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "typescript-swc-starter",
+      "url": "https://github.com/maxgfr/typescript-swc-starter",
+      "home": "https://www.npmjs.com/package/typescript-swc-starter",
+      "homeLabel": {
+        "fr": "npm",
+        "en": "npm"
+      },
+      "desc": {
+        "fr": "Starter TypeScript + SWC minimaliste générant des paquets CJS et ESM.",
+        "en": "Minimalist TypeScript + SWC starter emitting CJS and ESM packages."
+      },
+      "cat": 7,
+      "dex": 64,
+      "dexLabel": "064",
+      "stars": 32,
+      "forks": 5,
+      "language": "TypeScript",
+      "topics": [
+        "biomejs",
+        "boilerplate",
+        "cjs",
+        "dotenv",
+        "esm",
+        "jest",
+        "node",
+        "nodejs"
+      ],
+      "created": "2022-03",
+      "pushed": "2026-02",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 190,
+        "level": 54,
+        "rarity": "holo",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "biomejs",
+            "dmg": 90
+          },
+          {
+            "name": "boilerplate",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM3 2h6v1h-6zM1 3h10v1h-10zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h3v1h-3zM8 7h3v1h-3zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M1 9h3v1h-3zM8 9h3v1h-3zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "typescript-react-lib-swc",
+      "url": "https://github.com/maxgfr/typescript-react-lib-swc",
+      "home": "https://maxgfr.github.io/typescript-react-lib-swc",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Starter TypeScript + SWC minimaliste pour créer des bibliothèques de composants React.",
+        "en": "Minimalist TS + SWC starter for building React component libraries."
+      },
+      "cat": 7,
+      "dex": 65,
+      "dexLabel": "065",
+      "stars": 3,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "boilerplate",
+        "boilerplate-components-library",
+        "components-library",
+        "gh-pages",
+        "jest",
+        "nodemon",
+        "package",
+        "prettier"
+      ],
+      "created": "2022-11",
+      "pushed": "2026-05",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "electric",
+        "hp": 50,
+        "level": 46,
+        "rarity": "uncommon",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "boilerplate",
+            "dmg": 90
+          },
+          {
+            "name": "boilerplate components library",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M4 0h4v1h-4zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM2 8h8v1h-8z",
+          "M3 9h6v1h-6zM3 10h6v1h-6zM3 11h1v1h-1zM8 11h1v1h-1z"
+        ]
+      }
+    },
+    {
+      "name": "awesome-stars",
+      "url": "https://github.com/maxgfr/awesome-stars",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Liste des dépôts que j'ai aimés sur GitHub.",
+        "en": "Curated list of repositories I've liked on GitHub."
+      },
+      "cat": 8,
+      "dex": 66,
+      "dexLabel": "066",
+      "stars": 22,
+      "forks": 3,
+      "language": null,
+      "topics": [
+        "awesome",
+        "awesome-stars",
+        "github",
+        "stars"
+      ],
+      "created": "2021-10",
+      "pushed": "2026-08",
+      "license": null,
+      "poke": {
+        "type1": "normal",
+        "type2": null,
+        "hp": 140,
+        "level": 59,
+        "rarity": "rare",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "awesome",
+            "dmg": 90
+          },
+          {
+            "name": "awesome stars",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h1v1h-1zM7 10h1v1h-1z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM3 11h2v1h-2zM7 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "homebrew-tap",
+      "url": "https://github.com/maxgfr/homebrew-tap",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).",
+        "en": "Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`)."
+      },
+      "cat": 8,
+      "dex": 67,
+      "dexLabel": "067",
+      "stars": 1,
+      "forks": 0,
+      "language": "Ruby",
+      "topics": [
+        "cli-tools",
+        "devtools",
+        "homebrew",
+        "maxgfr",
+        "shell-scripts",
+        "tap"
+      ],
+      "created": "2025-12",
+      "pushed": "2026-08",
+      "license": null,
+      "poke": {
+        "type1": "poison",
+        "type2": null,
+        "hp": 40,
+        "level": 9,
+        "rarity": "common",
+        "weakness": "psychic",
+        "moves": [
+          {
+            "name": "cli tools",
+            "dmg": 20
+          },
+          {
+            "name": "devtools",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h3v1h-3zM7 7h3v1h-3zM3 8h2v1h-2zM7 8h2v1h-2z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "michel-golfier",
+      "url": "https://github.com/maxgfr/michel-golfier",
+      "home": "https://www.michelgolfier.fr",
+      "homeLabel": {
+        "fr": "site",
+        "en": "site"
+      },
+      "desc": {
+        "fr": "Code source du site d'un écrivain.",
+        "en": "Source of a writer's website."
+      },
+      "cat": 8,
+      "dex": 68,
+      "dexLabel": "068",
+      "stars": 2,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [
+        "golfier",
+        "michel",
+        "next",
+        "seo",
+        "ssr",
+        "typescript",
+        "website",
+        "writer"
+      ],
+      "created": "2017-07",
+      "pushed": "2026-04",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "electric",
+        "hp": 40,
+        "level": 100,
+        "rarity": "uncommon",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "golfier",
+            "dmg": 50
+          },
+          {
+            "name": "michel",
+            "dmg": 70
+          }
+        ],
+        "sprite": [
+          "M3 0h6v1h-6zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h2v1h-2zM7 6h2v1h-2zM3 7h6v1h-6zM2 8h8v1h-8z",
+          "M3 9h6v1h-6zM3 10h6v1h-6zM3 11h2v1h-2zM7 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "kanbo",
+      "url": "https://github.com/maxgfr/kanbo",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend.",
+        "en": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend."
+      },
+      "cat": 9,
+      "dex": 69,
+      "dexLabel": "069",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "agile",
+        "end-to-end-encryption",
+        "github-pages",
+        "kanban",
+        "local-first",
+        "no-backend",
+        "offline-first",
+        "project-management"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 30,
+        "level": 1,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "agile",
+            "dmg": 30
+          },
+          {
+            "name": "end to end encryption",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h3v1h-3zM8 6h3v1h-3zM2 7h2v1h-2zM8 7h2v1h-2zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM3 10h1v1h-1zM8 10h1v1h-1zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "terravia",
+      "url": "https://github.com/maxgfr/terravia",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "RPG de capture de créatures dans un monde généré procéduralement — 100% statique, sauvegarde JSON exportable",
+        "en": "RPG de capture de créatures dans un monde généré procéduralement — 100% statique, sauvegarde JSON exportable"
+      },
+      "cat": 9,
+      "dex": 70,
+      "dexLabel": "070",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 30,
+        "level": 1,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "TypeScript",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M4 3h4v1h-4zM4 6h4v1h-4zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h4v1h-4z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM1 6h3v1h-3zM8 6h3v1h-3zM0 7h4v1h-4zM8 7h4v1h-4zM0 8h4v1h-4zM8 8h4v1h-4zM4 9h4v1h-4z",
+          "M0 9h4v1h-4zM8 9h4v1h-4zM0 10h12v1h-12zM1 11h10v1h-10z"
+        ]
+      }
+    }
+  ]
+}

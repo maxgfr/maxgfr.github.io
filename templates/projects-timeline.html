@@ -1,0 +1,73 @@
+{% extends "projects-view.html" %}
+
+{#
+  /projects-timeline — the catalogue as a `git log --graph`.
+
+  One lane per theme, rows in creation order, oldest first. No JS at all: the graph
+  is characters, and characters are what this site is already made of.
+
+  The lanes are drawn full-height rather than only between a theme's first and last
+  repo. Trimming them would need lookahead over the rows, which Tera cannot express
+  without a second pass — and a full rail reads perfectly well as a graph.
+
+  data.timeline is [{year, repos: [index…]}] with indices INTO data.repos, built by
+  the generator so the ordering lives in one place instead of being re-derived here.
+#}
+
+{% block view_class %}pv-wide tl{% endblock view_class %}
+
+{% block view %}
+{% set en = page.lang == "en" %}
+{% set lanes = data.categories | length %}
+
+{# The legend is what makes a lane mean something. Without it the graph is just
+   decoration, so it is part of the view, not an optional extra. #}
+<ol class="tl-legend">
+    {% for category in data.categories %}
+    <li class="tl-legend-item">
+        <span class="tl-legend-no">{{ loop.index }}</span>
+        <a href="#{{ category.slug }}">{{ category[page.lang] }}</a>
+    </li>
+    {% endfor %}
+</ol>
+
+<div class="tl-scroll">
+    <div class="tl-graph">
+        {% for group in data.timeline %}
+        <h2 class="tl-year">{{ group.year }}</h2>
+        <ul class="tl-rows">
+            {% for index in group.repos %}
+            {% set repo = data.repos[index] %}
+            <li class="tl-row" id="tl-{{ repo.name }}">
+                {# aria-hidden: the rail is ASCII scaffolding. A screen reader should
+                   hear the project and its theme, not twelve boxes and a bullet. #}
+                <span class="tl-rail" aria-hidden="true">
+                    {% for lane in range(end=lanes) %}
+                    {% if lane == repo.cat %}
+                    <span class="tl-node">●</span>
+                    {% else %}
+                    <span class="tl-line">│</span>
+                    {% endif %}
+                    {% endfor %}
+                </span>
+                <span class="tl-when">{{ repo.created }}</span>
+                <a class="tl-name" href="{{ repo.url }}">{{ repo.name }}</a>
+                <span class="tl-meta">
+                    {% if repo.language %}
+                    <span class="pv-lang" data-lang="{{ repo.language }}">
+                        <span class="pv-dot" aria-hidden="true"></span>{{ repo.language }}
+                    </span>
+                    {% endif %}
+                    {% if repo.stars > 0 %}<span class="tl-stars">★ {{ repo.stars }}</span>{% endif %}
+                    {# The lane number, tying the row back to the legend. Its name is
+                       there; repeating it on every row buried the description. #}
+                    <span class="tl-cat" title="{{ data.categories[repo.cat][page.lang] }}">[{{ repo.cat + 1 }}]</span>
+                </span>
+                <span class="tl-desc">{{ repo.desc[page.lang] }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+</div>
+{% endblock view %}

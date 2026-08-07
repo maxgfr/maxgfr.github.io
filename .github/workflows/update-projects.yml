@@ -42,14 +42,19 @@ jobs:
       - name: Commit if changed
         id: commit
         run: |
-          if git diff --quiet -- content/projects.md content/projects.en.md content/cv-projects.md content/cv-projects.en.md; then
+          # data/projects.json must move with the Markdown: the alternate views
+          # (/projects-cards, -dex, -timeline, -shell) render from it at build
+          # time, so leaving it out here would let them drift out of sync with
+          # /projects silently — the site would still build, just with stale cards.
+          FILES="content/projects.md content/projects.en.md content/cv-projects.md content/cv-projects.en.md data/projects.json"
+          if git diff --quiet -- $FILES; then
             echo "Projects pages already up to date."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/projects.md content/projects.en.md content/cv-projects.md content/cv-projects.en.md
+          git add $FILES
           git commit -m "chore: auto-update projects page"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"

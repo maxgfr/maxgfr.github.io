@@ -1,0 +1,157 @@
+{% extends "projects-view.html" %}
+
+{#
+  /projects-shell — the catalogue as a filesystem you can walk.
+
+  The data source for the REPL is the DOM, not a JSON blob: the `.sh-fs` listing
+  below is BOTH the no-JS fallback (a plain `ls -R` of every theme and repo, fully
+  linked) and the model static/js/projects-shell.js reads on startup. One source, no
+  duplication, and the fallback can never drift from what the shell serves.
+
+  Inlining data/projects.json instead would have shipped ~110 kB of sprite paths to
+  a view that draws no sprites.
+
+  Discoverability is the known failure mode of a terminal UI, so it is designed
+  against: the clickable command row is always visible, and the screen opens on a
+  real `ls` rather than an empty prompt.
+#}
+
+{% block view_class %}pv-wide sh{% endblock view_class %}
+
+{% block view_head %}
+<script src="{{ get_url(path='js/projects-shell.js') }}" defer></script>
+{% endblock view_head %}
+
+{% block view %}
+{% set en = page.lang == "en" %}
+
+{# Localised strings for the script. A JSON island rather than a dozen data-*
+   attributes, and written as two literal blocks so no value is interpolated. #}
+{% if en %}
+<script type="application/json" id="sh-i18n">
+{
+  "welcome": "maxgfr projects shell — type `help`, or click a command below.",
+  "help": "Commands:",
+  "helpLines": [
+    "ls [dir]        list the current theme, or dir",
+    "cd <dir>        enter a theme  (cd .. to go up)",
+    "pwd             print the current path",
+    "cat <repo>      everything known about a repo",
+    "find <text>     search names, descriptions and topics",
+    "open <repo>     open the repo on GitHub (add --demo for the live site)",
+    "sort <key>      order listings by name, stars or recent",
+    "tree            the whole catalogue",
+    "clear           clear the screen"
+  ],
+  "notFound": "command not found:",
+  "hint": "type `help` for the list",
+  "noSuchDir": "no such theme:",
+  "noSuchRepo": "no such repo:",
+  "nothing": "nothing matched",
+  "matches": "match(es)",
+  "sorted": "listings now ordered by",
+  "badSort": "sort key must be one of: name, stars, recent",
+  "opening": "opening",
+  "noDemo": "no live site for",
+  "dirs": "themes",
+  "repos": "repos",
+  "labels": {
+    "theme": "theme", "language": "language", "stars": "stars", "forks": "forks",
+    "licence": "licence", "created": "created", "pushed": "last push",
+    "topics": "topics", "code": "code", "demo": "demo"
+  }
+}
+</script>
+{% else %}
+<script type="application/json" id="sh-i18n">
+{
+  "welcome": "shell des projets de maxgfr — tape `help`, ou clique une commande en dessous.",
+  "help": "Commandes :",
+  "helpLines": [
+    "ls [dir]        liste le thème courant, ou dir",
+    "cd <dir>        entre dans un thème  (cd .. pour remonter)",
+    "pwd             affiche le chemin courant",
+    "cat <repo>      tout ce qu'on sait d'un dépôt",
+    "find <texte>    cherche dans les noms, descriptions et topics",
+    "open <repo>     ouvre le dépôt sur GitHub (--demo pour le site en ligne)",
+    "sort <clé>      trie les listes par name, stars ou recent",
+    "tree            tout le catalogue",
+    "clear           efface l'écran"
+  ],
+  "notFound": "commande inconnue :",
+  "hint": "tape `help` pour la liste",
+  "noSuchDir": "thème inconnu :",
+  "noSuchRepo": "dépôt inconnu :",
+  "nothing": "aucun résultat",
+  "matches": "résultat(s)",
+  "sorted": "listes triées par",
+  "badSort": "la clé de tri doit être : name, stars ou recent",
+  "opening": "ouverture de",
+  "noDemo": "pas de site en ligne pour",
+  "dirs": "thèmes",
+  "repos": "dépôts",
+  "labels": {
+    "theme": "thème", "language": "langage", "stars": "étoiles", "forks": "forks",
+    "licence": "licence", "created": "créé", "pushed": "dernier push",
+    "topics": "topics", "code": "code", "demo": "démo"
+  }
+}
+</script>
+{% endif %}
+
+{# Hidden until the script claims it: an empty black box above a perfectly good
+   static listing is worse than no terminal at all. #}
+<div class="sh-term" data-pv-jsonly>
+    <div class="sh-out" id="sh-out" role="log" aria-live="polite" aria-atomic="false"></div>
+
+    <form class="sh-prompt" id="sh-form" data-pv-jsonly>
+        <label class="sh-ps1" for="sh-in" id="sh-ps1">maxgfr@projects:~$</label>
+        <input class="sh-in" id="sh-in" type="text" autocomplete="off" autocapitalize="off"
+               spellcheck="false" aria-describedby="sh-hints-label">
+    </form>
+</div>
+
+<div class="sh-hints" data-pv-jsonly>
+    <span class="sh-hints-label" id="sh-hints-label">
+        {% if en %}try{% else %}essaie{% endif %}
+    </span>
+    <ul class="sh-hint-list">
+        {% for cmd in ["help", "ls", "tree", "sort stars", "find rust"] %}
+        <li><button type="button" class="sh-hint" data-cmd="{{ cmd }}">{{ cmd }}</button></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{# Server-rendered filesystem: the no-JS view AND the script's data source. #}
+<section class="sh-fs" id="sh-fs">
+    <h2 class="pv-sr">{% if en %}Full listing{% else %}Listing complet{% endif %}</h2>
+    {% for category in data.categories %}
+    {% set index = loop.index0 %}
+    <div class="sh-dir" id="{{ category.slug }}">
+        <h3 class="sh-dirname" data-slug="{{ category.slug }}">{{ category.slug }}/</h3>
+        <p class="sh-dirlabel">{{ category[page.lang] }}</p>
+        <ul class="sh-files">
+            {% for repo in data.repos %}
+            {% if repo.cat == index %}
+            <li class="sh-file"
+                data-name="{{ repo.name }}"
+                data-url="{{ repo.url }}"
+                data-home="{{ repo.home | default(value='') }}"
+                data-cat="{{ index }}"
+                data-stars="{{ repo.stars }}"
+                data-forks="{{ repo.forks }}"
+                data-language="{{ repo.language | default(value='') }}"
+                data-license="{{ repo.license | default(value='') }}"
+                data-created="{{ repo.created }}"
+                data-pushed="{{ repo.pushed }}"
+                data-topics="{{ repo.topics | join(sep=' ') }}">
+                <a class="sh-fname" href="{{ repo.url }}">{{ repo.name }}</a>
+                <span class="sh-desc">{{ repo.desc[page.lang] }}</span>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</section>
+{% endblock view %}

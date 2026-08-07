@@ -56,6 +56,48 @@ header_nav = [
   { url = "/contact", name_en = "/contact", name_fr = "/contact", short_en = "/@", short_fr = "/@" }
 ]
 
+## The /projects views. One nav entry (/projects) leads to all of them; this list
+## drives the in-page switcher rendered by templates/macros/projects.html, in this
+## order. The first entry is the default view and the one the nav points at.
+##
+## Adding a view means: an entry here, templates/projects-<name>.html, and BOTH
+## content/projects-<name>.md and content/projects-<name>.en.md — static/js/language.js
+## redirects between /x and /en/x, so a missing twin is a 404, not a fallback.
+projects_views = [
+  { url = "/projects", name_en = "list", name_fr = "liste" },
+  { url = "/projects-cards", name_en = "cards", name_fr = "cartes" },
+  { url = "/projects-dex", name_en = "pokédex", name_fr = "pokédex" },
+  { url = "/projects-timeline", name_en = "timeline", name_fr = "timeline" },
+  { url = "/projects-shell", name_en = "shell", name_fr = "shell" }
+]
+
+## Pokémon type labels for /projects-dex. Presentation, not data: the generator
+## emits type NAMES ("water") into data/projects.json and the colours live in
+## static/css/projects-dex.css, so this is only the bilingual wording and the icon.
+## It sits here rather than in the template because Tera v2 dropped macros, which
+## makes an eighteen-branch {% if %} chain the only alternative.
+## The keys must match TYPE_BY_LANGUAGE / TYPE_BY_TOPIC in
+## .github/scripts/generate-projects.mjs.
+[extra.poke_types]
+normal = { fr = "Normal", en = "Normal", icon = "⬜" }
+fire = { fr = "Feu", en = "Fire", icon = "🔥" }
+water = { fr = "Eau", en = "Water", icon = "💧" }
+electric = { fr = "Électrik", en = "Electric", icon = "⚡" }
+grass = { fr = "Plante", en = "Grass", icon = "🌱" }
+ice = { fr = "Glace", en = "Ice", icon = "❄️" }
+fighting = { fr = "Combat", en = "Fighting", icon = "🥊" }
+poison = { fr = "Poison", en = "Poison", icon = "🧪" }
+ground = { fr = "Sol", en = "Ground", icon = "🏔️" }
+flying = { fr = "Vol", en = "Flying", icon = "🕊️" }
+psychic = { fr = "Psy", en = "Psychic", icon = "🔮" }
+bug = { fr = "Insecte", en = "Bug", icon = "🐛" }
+rock = { fr = "Roche", en = "Rock", icon = "🪨" }
+ghost = { fr = "Spectre", en = "Ghost", icon = "👻" }
+dragon = { fr = "Dragon", en = "Dragon", icon = "🐉" }
+dark = { fr = "Ténèbres", en = "Dark", icon = "🌑" }
+steel = { fr = "Acier", en = "Steel", icon = "⚙️" }
+fairy = { fr = "Fée", en = "Fairy", icon = "✨" }
+
 ## CV — data that exists nowhere else on the site (the rest of the CV page is
 ## assembled from content/*.md by templates/cv.html, so it can never drift).
 [extra.cv]

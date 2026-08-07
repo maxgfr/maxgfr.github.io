@@ -2,10 +2,11 @@
 // Generates the bilingual "Projects" pages (content/projects.md FR +
 // content/projects.en.md EN) for this Zola site from the live GitHub API, plus
 // the leaner variant of that catalogue the CV page embeds (content/cv-projects.md
-// + content/cv-projects.en.md).
+// + content/cv-projects.en.md), plus the structured data the alternate views
+// read (data/projects.json — see buildData).
 // Zero dependencies (Node 18+ global fetch). Driven by .github/projects.json.
 // Run from .github/workflows/update-projects.yml or locally.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -102,31 +103,44 @@ function bullet(repo, lang) {
   return line;
 }
 
-function buildPage(repos, lang) {
-  const t = T[lang];
+// THE canonical order, shared by /projects and by data/projects.json so the list
+// and the alternate views can never disagree: categories in projects.json order,
+// repos in the order listed inside each category (that ordering IS the curation),
+// then anything uncategorized, by stars. `cat` is null for that trailing group.
+function groupedRepos(repos) {
   const byName = new Map(repos.map((r) => [r.name, r]));
   const used = new Set();
-  const sections = [];
+  const groups = [];
   for (const cat of CONFIG.categories) {
-    const title = lang === 'fr' ? cat.title_fr : cat.title_en;
-    const lines = [];
-    for (const name of cat.repos) {
-      const r = byName.get(name);
-      if (!r) continue;
-      used.add(name);
-      lines.push(bullet(r, lang));
-    }
-    if (lines.length) sections.push(`## ${title}\n\n${lines.join('\n')}`);
+    const picked = cat.repos.map((n) => byName.get(n)).filter(Boolean);
+    if (!picked.length) continue;
+    picked.forEach((r) => used.add(r.name));
+    groups.push({ cat, picked });
   }
   const leftover = repos
     .filter((r) => !used.has(r.name))
     .sort((a, b) => b.stargazers_count - a.stargazers_count);
-  if (leftover.length) {
-    sections.push(`## ${CONFIG.fallback[lang]}\n\n${leftover.map((r) => bullet(r, lang)).join('\n')}`);
-  }
+  if (leftover.length) groups.push({ cat: null, picked: leftover });
+  return groups;
+}
+
+function groupTitle(cat, lang) {
+  if (!cat) return CONFIG.fallback[lang];
+  return lang === 'fr' ? cat.title_fr : cat.title_en;
+}
+
+function buildPage(repos, lang) {
+  const t = T[lang];
+  const sections = groupedRepos(repos).map(
+    ({ cat, picked }) =>
+      `## ${groupTitle(cat, lang)}\n\n${picked.map((r) => bullet(r, lang)).join('\n')}`
+  );
 
   const stars = repos.reduce((a, r) => a + r.stargazers_count, 0);
-  const fm = `+++\ntitle = "${t.title}"\n+++`;
+  // `template` is the hook the alternate views hang off: it lets
+  // templates/projects.html add the view switcher above this generated body
+  // without anyone ever hand-editing content/projects*.md.
+  const fm = `+++\ntitle = "${t.title}"\ntemplate = "projects.html"\n+++`;
   const body = [
     t.intro,
     t.stats(repos.length, stars),
@@ -199,6 +213,417 @@ function buildCvPage(repos, lang) {
   return `${fm}\n\n${body}`;
 }
 
+// ───────────────────────────── data/projects.json ─────────────────────────────
+// The alternate views (/projects-cards, -dex, -timeline, -shell) need structure,
+// not prose, so they read this file at build time via Zola's load_data(). Two
+// rules govern everything below.
+//
+//  1. NOTHING VOLATILE. This file is committed and the cron runs nightly, so any
+//     field that changes on its own churns the repo and triggers a pointless
+//     deploy every morning. Dates are therefore rounded to the month, and
+//     watchers/open-issues counts are left out entirely.
+//  2. NOTHING RANDOM. Every derived attribute — sprite, HP, level, rarity — is a
+//     pure function of data we already have. A sprite reshuffling itself on each
+//     build would be unreadable in a diff.
+//
+// Colours live in static/css/projects-dex.css, never here: this file emits type
+// NAMES so the palette stays a styling concern.
+
+function ym(iso) {
+  return typeof iso === 'string' ? iso.slice(0, 7) : null;
+}
+
+function slugify(s) {
+  return s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-zA-Z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .toLowerCase();
+}
+
+const clampNum = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
+
+// FNV-1a: tiny, dependency-free, and above all STABLE across Node versions —
+// which a hash built on JSON key order or Math.random would not be.
+function fnv1a(str) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h >>> 0;
+}
+
+// mulberry32, seeded from the repo name: same name → same sprite, for ever.
+function seeded(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+const SPRITE = 12;
+
+// Three hand-drawn silhouettes, LEFT HALF ONLY (5 columns; column 4 sits against
+// the mirror axis). 'x' always fills, 'o' fills only when the hash says so, '.'
+// never fills. `eyes` and `mouth` are the rows carved back out to make a face.
+//
+// Hand-drawn on purpose. Symmetric noise was the first attempt and it came out as
+// confetti — every sprite averaged 21 lit pixels scattered across the frame, with
+// empty middles and lit corners. A fixed silhouette is what makes 69 different
+// sprites all read as creatures; the hash then varies ears, arms, tails, belly and
+// shading, which is plenty of variety without ever risking an unreadable one.
+const SILHOUETTES = [
+  {
+    // round, big ears
+    rows: ['..o...', '..oxx.', '..xxxx', '.xxxxx', '.xxxxx', '.xxxxx', '..xxxx', '.oxxxx', '.oxxxx', '..xxxx', '..xxxo', '..xx..'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // tall ears
+    rows: ['...ox.', '...xx.', '...xx.', '..xxxx', '.xxxxx', '.xxxxx', '..xxxx', '..xxxx', '.oxxxx', '..xxxx', '..xxxo', '..xo..'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // wide and squat
+    rows: ['......', '......', '..oxxx', '.xxxxx', 'xxxxxx', 'xxxxxx', '.xxxxx', 'oxxxxx', 'xxxxxx', '.xxxxx', '..xxxo', '.xx.x.'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // slime, no neck
+    rows: ['......', '......', '......', '...oxx', '..xxxx', '.xxxxx', '.xxxxx', 'xxxxxx', 'xxxxxx', 'xxxxxx', 'xxxxxx', '.xxxxo'],
+    eyes: 5,
+    mouth: 7,
+  },
+  {
+    // serpentine, narrow
+    rows: ['...ox.', '...xx.', '..xxx.', '..xxxx', '..xxxx', '..xxxx', '...xxx', '...xxx', '..oxxx', '...xxx', '...xxo', '...xo.'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // winged
+    rows: ['......', '...oxx', '..xxxx', '.xxxxx', '.xxxxx', 'xxxxxx', 'oxxxxx', 'oxxxxx', '..xxxx', '..xxxx', '..xxxo', '.xxo..'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // big head, small body
+    rows: ['......', '..oxxx', '.xxxxx', 'xxxxxx', 'xxxxxx', 'xxxxxx', '.xxxxx', '..xxxx', '...xxx', '..oxxx', '...xxx', '..xx..'],
+    eyes: 4,
+    mouth: 6,
+  },
+  {
+    // spiky crest
+    rows: ['..o.o.', '...xx.', '..xxxx', '..xxxx', '.xxxxx', '.xxxxx', '..xxxx', '.oxxxx', '..xxxx', '.oxxxx', '..xxxo', '.xx.x.'],
+    eyes: 4,
+    mouth: 6,
+  },
+];
+
+// Decorative markings, applied before the face is carved so eyes and mouth always
+// win. Coordinates are [x, y] in the left half and get mirrored like everything
+// else; `add` means the marking may light a cell the silhouette left empty (a horn
+// changes the outline, which is the point). Six silhouettes × four optional cells ×
+// six markings is what pushes the catalogue past one distinct sprite per repo.
+const MARKINGS = [
+  null,
+  { cells: [[5, 0]], shade: 1, add: true }, // horn
+  { cells: [[5, 2]], shade: 1 }, // forehead blaze
+  { cells: [[5, 7], [5, 8]], shade: 3 }, // chest stripe
+  { cells: [[1, 6], [1, 7]], shade: 3 }, // flank patch
+  { cells: [[4, 10], [5, 10]], shade: 1 }, // pale belly band
+];
+
+// A 10×10 creature. Returns one SVG path per shade (1..3 = the type's
+// light/base/dark) so the template emits three <path>s and CSS owns the colours.
+function spritePaths(name) {
+  const half = SPRITE / 2;
+  const hash = fnv1a(name);
+  const rand = seeded(hash);
+  const shape = SILHOUETTES[hash % SILHOUETTES.length];
+  const grid = Array.from({ length: SPRITE }, () => new Array(SPRITE).fill(0));
+
+  // Light from the top: a fixed three-band gradient, never hashed. Randomising the
+  // shading is what makes pixel art look broken — the light source has to hold
+  // still across all 69 sprites.
+  const shadeFor = (y) => (y <= 3 ? 1 : y <= 8 ? 2 : 3);
+  const belly = hash % 3 !== 0; // lighter patch on the torso, on for two in three
+
+  for (let y = 0; y < SPRITE; y++) {
+    for (let x = 0; x < half; x++) {
+      const cell = shape.rows[y][x];
+      if (cell === '.') continue;
+      if (cell === 'o' && rand() < 0.45) continue;
+      let shade = shadeFor(y);
+      if (belly && y >= 6 && y <= 9 && x >= 4) shade = Math.max(1, shade - 1);
+      grid[y][x] = shade;
+      grid[y][SPRITE - 1 - x] = shade;
+    }
+  }
+
+  const marking = MARKINGS[fnv1a(`${name}:mark`) % MARKINGS.length];
+  if (marking) {
+    for (const [x, y] of marking.cells) {
+      if (!marking.add && !grid[y][x]) continue;
+      grid[y][x] = marking.shade;
+      grid[y][SPRITE - 1 - x] = marking.shade;
+    }
+  }
+
+  // Carve the face back out. Two eyes always, and a mouth two pixels wide astride
+  // the axis, so every sprite has something to look back at you with.
+  grid[shape.eyes][3] = 0;
+  grid[shape.eyes][SPRITE - 1 - 3] = 0;
+  grid[shape.mouth][half - 1] = 0;
+  grid[shape.mouth][half] = 0;
+
+  // Horizontal run-length encoding: ~3 short paths instead of ~50 <rect>s.
+  return [1, 2, 3].map((shade) => {
+    let d = '';
+    for (let y = 0; y < SPRITE; y++) {
+      let x = 0;
+      while (x < SPRITE) {
+        if (grid[y][x] !== shade) {
+          x++;
+          continue;
+        }
+        let len = 0;
+        while (x + len < SPRITE && grid[y][x + len] === shade) len++;
+        d += `M${x} ${y}h${len}v1h-${len}z`;
+        x += len;
+      }
+    }
+    return d;
+  });
+}
+
+// Type from the language. This is the FALLBACK, and also the secondary type — see
+// pokemon() for why it is not the primary one.
+// Anything unlisted → normal.
+const TYPE_BY_LANGUAGE = {
+  TypeScript: 'water',
+  JavaScript: 'electric',
+  Rust: 'fire',
+  Go: 'ice',
+  Python: 'grass',
+  Shell: 'steel',
+  Dockerfile: 'steel',
+  Makefile: 'steel',
+  Nix: 'steel',
+  Java: 'fighting',
+  Kotlin: 'dragon',
+  Swift: 'flying',
+  'Objective-C': 'flying',
+  C: 'rock',
+  'C++': 'rock',
+  'C#': 'rock',
+  Ruby: 'poison',
+  PHP: 'ghost',
+  Solidity: 'ghost',
+  HTML: 'ground',
+  CSS: 'fairy',
+  SCSS: 'fairy',
+  Vue: 'grass',
+  Svelte: 'fire',
+  Lua: 'bug',
+  Zig: 'fire',
+  Elixir: 'psychic',
+  Haskell: 'psychic',
+  Jupyter: 'psychic',
+};
+
+// Type from what the project DOES. First match wins, in this order.
+const TYPE_BY_TOPIC = [
+  [/^(cli|tui|terminal|command-line|shell)$/, 'fighting'],
+  [/^(ai|llm|agent|agents|claude|mcp|openai|anthropic|prompt)/, 'psychic'],
+  [/^(security|secrets|crypto|vulnerability|pentest|privacy)/, 'dark'],
+  [/^(trading|finance|stocks|screener|backtest|binance)/, 'ground'],
+  [/^(github-action|github-actions|actions|ci|cd|devops)/, 'steel'],
+  [/^(pwa|react|react-native|web|nextjs|frontend|vue|svelte)/, 'fairy'],
+  [/^(docs|documentation|markdown|static-site)/, 'normal'],
+];
+
+const WEAKNESS = {
+  normal: 'fighting',
+  fire: 'water',
+  water: 'grass',
+  electric: 'ground',
+  grass: 'fire',
+  ice: 'fire',
+  fighting: 'psychic',
+  poison: 'psychic',
+  ground: 'water',
+  flying: 'electric',
+  psychic: 'dark',
+  bug: 'flying',
+  rock: 'water',
+  ghost: 'dark',
+  dragon: 'ice',
+  dark: 'fighting',
+  steel: 'fire',
+  fairy: 'steel',
+};
+
+// Fixed thresholds, deliberately not percentiles: with percentiles one repo
+// gaining a single star would reshuffle the rarity of every other repo, and the
+// nightly diff would be unreadable.
+function rarity(stars) {
+  if (stars >= 30) return 'holo';
+  if (stars >= 10) return 'rare';
+  if (stars >= 2) return 'uncommon';
+  return 'common';
+}
+
+function pokemon(repo, now) {
+  const topics = repo.topics || [];
+
+  // The PRIMARY type comes from what the project does, not from what it is written
+  // in — and the card's whole colour scheme follows the primary type.
+  //
+  // Language first was the obvious reading and it was measurably wrong: 36 of 70
+  // repos are TypeScript, so half the binder came out the same shade of blue and
+  // whole sections rendered as one colour. Topic-first gives 11 types with no
+  // single one over about a third, and it varies WITHIN a section, which is where
+  // a visitor actually compares cards. The language is still on the card, as the
+  // secondary type and spelled out in full.
+  const langType = TYPE_BY_LANGUAGE[repo.language] || 'normal';
+  let topicType = null;
+  for (const topic of topics) {
+    const hit = TYPE_BY_TOPIC.find(([re]) => re.test(topic));
+    if (hit) {
+      topicType = hit[1];
+      break;
+    }
+  }
+  const type1 = topicType || langType;
+  const type2 = topicType && langType !== topicType ? langType : null;
+
+  const created = new Date(repo.created_at);
+  const months = Math.max(
+    0,
+    (now.getUTCFullYear() - created.getUTCFullYear()) * 12 + (now.getUTCMonth() - created.getUTCMonth())
+  );
+
+  // Attacks are the repo's own topics, so the flavour text stays truthful. Damage
+  // is mostly hashed from the move name: deriving it from stars or forks alone
+  // stamped a flat "10" on the ~45 repos that have neither, which reads as broken.
+  const moves = (topics.length ? topics.slice(0, 2) : [repo.language || 'commit']).map((name) => ({
+    name: String(name).replace(/-/g, ' '),
+    dmg: clampNum(
+      10 + (fnv1a(`${repo.name}:${name}`) % 6) * 10 + Math.min(repo.stargazers_count, 3) * 10,
+      10,
+      90
+    ),
+  }));
+
+  return {
+    type1,
+    type2,
+    hp: clampNum(Math.round((30 + repo.stargazers_count * 5) / 10) * 10, 30, 200),
+    level: clampNum(1 + months, 1, 100),
+    rarity: rarity(repo.stargazers_count),
+    weakness: WEAKNESS[type1],
+    moves,
+    sprite: spritePaths(repo.name),
+  };
+}
+
+function buildData(repos, now) {
+  const groups = groupedRepos(repos);
+  // Slugs become anchor ids, so they have to be unique. projects.json already
+  // ships a category called "Other" and the fallback group would collide with it
+  // if either were hardcoded — hence slugify-then-dedupe.
+  const seen = new Set();
+  const categories = groups.map(({ cat }) => {
+    const base = slugify(groupTitle(cat, 'en')) || 'group';
+    let slug = base;
+    for (let n = 2; seen.has(slug); n++) slug = `${base}-${n}`;
+    seen.add(slug);
+    return { fr: groupTitle(cat, 'fr'), en: groupTitle(cat, 'en'), slug };
+  });
+
+  const out = [];
+  groups.forEach(({ picked }, catIndex) => {
+    for (const repo of picked) {
+      const d = (CONFIG.descriptions || {})[repo.name] || {};
+      const home = (repo.homepage || '').trim();
+      out.push({
+        name: repo.name,
+        url: repo.html_url,
+        home: home || null,
+        homeLabel: home ? { fr: T.fr.labels[linkKey(home)], en: T.en.labels[linkKey(home)] } : null,
+        desc: {
+          fr: (d.fr || repo.description || 'Sans description.').trim(),
+          en: (d.en || repo.description || 'No description.').trim(),
+        },
+        cat: catIndex,
+        dex: out.length + 1,
+        // Zero-padded here because Tera v2 has no padStart and the dex number is
+        // meant to read as "#007", not "#7".
+        dexLabel: String(out.length + 1).padStart(3, '0'),
+        stars: repo.stargazers_count,
+        forks: repo.forks_count,
+        language: repo.language || null,
+        // Capped at 8: the views show at most four, and the full ~16 would triple
+        // this file for nothing.
+        topics: (repo.topics || []).slice(0, 8),
+        created: ym(repo.created_at),
+        pushed: ym(repo.pushed_at),
+        license: (repo.license && repo.license.spdx_id !== 'NOASSERTION' && repo.license.spdx_id) || null,
+        poke: pokemon(repo, now),
+      });
+    }
+  });
+
+  // Pre-aggregated for the filter control on /projects-cards. Built here, not in
+  // the template, because Tera v2 dropped both macros and the `concat` filter, so
+  // "collect the distinct values" is genuinely awkward in a template — and doing
+  // it here means the dropdown can never offer a language no repo actually uses.
+  const counts = new Map();
+  for (const r of out) if (r.language) counts.set(r.language, (counts.get(r.language) || 0) + 1);
+  const languages = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([name, count]) => ({ name, count }));
+
+  // Chronological index for /projects-timeline, grouped by creation year. Indices
+  // into `repos`, not copies: the timeline wants the same records in a different
+  // order, and duplicating seventy objects would double the file for nothing.
+  const byYear = new Map();
+  out.forEach((repo, i) => {
+    const year = (repo.created || '????').slice(0, 4);
+    if (!byYear.has(year)) byYear.set(year, []);
+    byYear.get(year).push(i);
+  });
+  const timeline = [...byYear.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([year, indices]) => ({
+      year,
+      repos: indices.sort(
+        (a, b) =>
+          (out[a].created || '').localeCompare(out[b].created || '') ||
+          out[a].name.localeCompare(out[b].name)
+      ),
+    }));
+
+  return {
+    generated: ym(now.toISOString()),
+    totals: { repos: repos.length, stars: repos.reduce((a, r) => a + r.stargazers_count, 0) },
+    languages,
+    categories,
+    timeline,
+    repos: out,
+  };
+}
+
 async function main() {
   CONFIG = await loadConfig();
   const repos = await allOwnedRepos();
@@ -206,8 +631,18 @@ async function main() {
   writeFileSync(join(REPO_ROOT, 'content', 'projects.en.md'), buildPage(repos, 'en'));
   writeFileSync(join(REPO_ROOT, 'content', 'cv-projects.md'), buildCvPage(repos, 'fr'));
   writeFileSync(join(REPO_ROOT, 'content', 'cv-projects.en.md'), buildCvPage(repos, 'en'));
+
+  // Read the clock once, so a run straddling midnight on the 1st cannot give two
+  // repos levels computed against different months.
+  const now = new Date();
+  mkdirSync(join(REPO_ROOT, 'data'), { recursive: true });
+  writeFileSync(
+    join(REPO_ROOT, 'data', 'projects.json'),
+    `${JSON.stringify(buildData(repos, now), null, 2)}\n`
+  );
+
   const src = process.env.PROJECTS_CONFIG_FILE || `${CONFIG_REPO}/${CONFIG_PATH}`;
-  console.log(`Generated projects pages: ${repos.length} repos, CV included (config: ${src}).`);
+  console.log(`Generated projects pages: ${repos.length} repos, CV + data included (config: ${src}).`);
 }
 
 main().catch((e) => {

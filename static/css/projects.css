@@ -1,0 +1,700 @@
+/* ==========================================================================
+   projects.css — shared chrome for the five /projects views
+   (list, cards, pokédex, timeline, shell).
+
+   Loaded only by templates/projects.html and templates/projects-view.html, so
+   nothing here reaches the rest of the site. The pokédex loads its own
+   projects-dex.css on top: it is the one view that deliberately breaks the
+   site's palette, and keeping it in a separate file stops it leaking.
+
+   Colours come from the eleven suCSS variables (--bg, --text, --accent, --link,
+   --border, …) rather than new literals, so light and dark are handled by the
+   existing three-tier theme setup for free. The only hardcoded colours in this
+   file are the per-language dots, which are the recognisable Linguist hues and
+   read the same in both themes.
+   ========================================================================== */
+
+/* --- view switcher ------------------------------------------------------- */
+
+.pv-header {
+    margin-bottom: 1rem;
+}
+
+.pv-switch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    align-items: baseline;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--accent);
+    font-size: 0.9rem;
+}
+
+.pv-switch-item {
+    padding: 0.1rem 0.45rem;
+    border: 1px dashed transparent;
+    border-radius: var(--standard-border-radius);
+    text-decoration: none;
+}
+
+/* Links inherit the site's invert-on-hover from suCSS; only the current view
+   needs its own treatment. A box, not just bold: the switcher sits directly
+   under an h1 and bold alone did not read as "you are here". */
+.pv-switch-item[aria-current="page"] {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    color: var(--accent-text);
+    font-weight: 700;
+}
+
+.pv-switch-item::before {
+    content: "/";
+    color: var(--text-light);
+    margin-right: 0.15rem;
+}
+
+.pv-switch-item[aria-current="page"]::before {
+    color: var(--accent-text);
+}
+
+/* --- wide layout --------------------------------------------------------- */
+
+/* suCSS caps the content column at min(47rem, 90%), which is right for prose and
+   far too narrow for a card grid or a ten-year timeline. Widen the body grid, but
+   only when the page actually asks for it: `.pv-wide` is on the <article>, so the
+   list view keeps its comfortable reading width even though it loads this file. */
+body:has(.pv-wide) {
+    grid-template-columns: 1fr min(78rem, 94%) 1fr;
+}
+
+.pv-intro {
+    max-width: 47rem;
+}
+
+/* Pre-existing bug, fixed here because this is the only stylesheet that loads on
+   /projects: two generated bullets carry long slash-joined tokens
+   ("…Claude/Codex/OpenAI/Gemini/Mistral", "node/bun/deno") that pushed the document
+   to 415px inside a 375px viewport, so the whole page scrolled sideways on a phone.
+   Measured identical before this view existed. */
+.pv .post-content li {
+    overflow-wrap: break-word;
+}
+
+/* --- topic chips --------------------------------------------------------- */
+
+.pv-chips,
+.pv-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* suCSS gives every `ul li` a '» ' marker. These are data rows, not prose. */
+.pv-chips li::marker,
+.pv-metrics li::marker {
+    content: "";
+}
+
+.pv-chip {
+    padding: 0 0.35rem;
+    border: 1px dashed var(--border);
+    border-radius: var(--standard-border-radius);
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+/* --- metrics strip ------------------------------------------------------- */
+
+.pv-metrics {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.pv-metric {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+}
+
+/* Separator between metrics rather than a border on each: five bordered pills in
+   a row competed with the project name for attention. */
+.pv-metric + .pv-metric::before {
+    content: "·";
+    margin-right: 0.35rem;
+    color: var(--border);
+}
+
+.pv-dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--pv-lang-color, var(--text-light));
+}
+
+/* Linguist's own colours, so the dot means the same thing here as on GitHub.
+   Only the languages actually present in data/projects.json are listed; anything
+   else falls back to --text-light through the custom property above. */
+.pv-lang[data-lang="TypeScript"] { --pv-lang-color: #3178c6; }
+.pv-lang[data-lang="JavaScript"] { --pv-lang-color: #f1e05a; }
+.pv-lang[data-lang="Shell"]      { --pv-lang-color: #89e051; }
+.pv-lang[data-lang="Rust"]       { --pv-lang-color: #dea584; }
+.pv-lang[data-lang="HTML"]       { --pv-lang-color: #e34c26; }
+.pv-lang[data-lang="CSS"]        { --pv-lang-color: #663399; }
+.pv-lang[data-lang="Go"]         { --pv-lang-color: #00add8; }
+.pv-lang[data-lang="Python"]     { --pv-lang-color: #3572a5; }
+.pv-lang[data-lang="Ruby"]       { --pv-lang-color: #701516; }
+.pv-lang[data-lang="Java"]       { --pv-lang-color: #b07219; }
+.pv-lang[data-lang="Dockerfile"] { --pv-lang-color: #384d54; }
+.pv-lang[data-lang="Vue"]        { --pv-lang-color: #41b883; }
+.pv-lang[data-lang="Svelte"]     { --pv-lang-color: #ff3e00; }
+.pv-lang[data-lang="Kotlin"]     { --pv-lang-color: #a97bff; }
+.pv-lang[data-lang="Swift"]      { --pv-lang-color: #f05138; }
+.pv-lang[data-lang="Solidity"]   { --pv-lang-color: #aa6746; }
+
+/* --- links -------------------------------------------------------------- */
+
+.pv-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.6rem 0 0;
+    font-size: 0.9rem;
+}
+
+.pv-links a::before {
+    content: "→ ";
+}
+
+/* --- footer ------------------------------------------------------------- */
+
+.pv-foot {
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--accent);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* --- /projects-cards ----------------------------------------------------- */
+
+.pvc-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: end;
+    margin: 1.5rem 0;
+    padding: 0.75rem;
+    border: 1px dashed var(--border);
+    border-radius: var(--standard-border-radius);
+}
+
+.pvc-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.pvc-field label {
+    color: var(--text-light);
+}
+
+/* suCSS makes every input full-width below 720px, which would stack these three
+   controls into a tall column. They are short; let them share a row. */
+.pvc-field input,
+.pvc-field select {
+    width: auto;
+    min-width: 9rem;
+    margin: 0;
+}
+
+.pvc-count-field {
+    margin-left: auto;
+    color: var(--text-light);
+    text-align: right;
+}
+
+.pvc-count {
+    /* Tabular figures so the count does not jitter sideways as you type. */
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+}
+
+.pvc-section {
+    margin-bottom: 2rem;
+}
+
+.pvc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pvc-grid li::marker {
+    content: "";
+}
+
+.pvc-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0.9rem;
+    border: 1px dashed var(--border);
+    border-radius: var(--standard-border-radius);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+/* An author `display` declaration beats the UA stylesheet's [hidden]{display:none},
+   so the filter set the attribute and the card stayed on screen anyway. Any element
+   this file gives a `display` to and the script hides needs this pair. */
+.pvc-card[hidden],
+.pvc-section[hidden] {
+    display: none;
+}
+
+.pvc-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.pvc-name {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+/* suCSS prefixes every heading with '# '. It earns its place on section titles;
+   on 69 cards it is just noise. */
+.pvc-name::before {
+    content: none;
+}
+
+.pvc-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+    margin: 0.4rem 0 0;
+    font-size: 0.9rem;
+}
+
+/* Push the links to the bottom so they line up across a row of ragged cards. */
+.pvc-card .pv-links {
+    margin-top: auto;
+    padding-top: 0.6rem;
+}
+
+.pvc-empty {
+    margin: 2rem 0;
+    color: var(--text-light);
+}
+
+/* --- /projects-timeline -------------------------------------------------- */
+
+.tl-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 0.1rem 1rem;
+    margin: 1.5rem 0;
+    padding: 0.75rem;
+    border: 1px dashed var(--border);
+    border-radius: var(--standard-border-radius);
+    list-style: none;
+    font-size: 0.85rem;
+}
+
+.tl-legend li::marker {
+    content: "";
+}
+
+.tl-legend-item {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* The lane number is the whole point of the legend, so it gets the accent. */
+.tl-legend-no {
+    color: var(--accent);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Twelve lanes plus a name plus metadata does not fit a phone. Rather than wrap the
+   rail — which would break the graph — the graph scrolls inside its own box, and
+   the page never scrolls sideways. */
+.tl-scroll {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.tl-graph {
+    min-width: 34rem;
+}
+
+.tl-year {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 1.5rem 0 0.25rem;
+    padding: 0.15rem 0;
+    background-color: var(--bg);
+    font-size: 1.1rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.tl-rows {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tl-rows li::marker {
+    content: "";
+}
+
+/* Laid out like `git log --oneline`: graph, date, name, tags, subject.
+   The tracks are declared once on the list and each row opts into them with
+   `subgrid`, so every column lines up down the whole graph. Sizing each row
+   independently looked right by accident and drifted as soon as a row had no
+   language dot or a name long enough to wrap. */
+.tl-rows {
+    display: grid;
+    /* 17rem fits the longest repo name (react-essentials-functions, 26 chars) on one
+       line; a wrapped name leaves its rail stub hanging. */
+    grid-template-columns: auto 4.5rem 17rem 11rem minmax(0, 1fr);
+    /* On the parent, not the row: a subgrid takes its gaps in the subgridded axis
+       from the parent grid and ignores its own. */
+    column-gap: 0.6rem;
+}
+
+.tl-row {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    align-items: baseline;
+    padding: 0.1rem 0;
+}
+
+/* Without subgrid the row would have no tracks at all and collapse to one column.
+   Fall back to the same widths declared inline on each row: they still align,
+   because every track is a fixed size. */
+@supports not (grid-template-columns: subgrid) {
+    .tl-rows {
+        display: block;
+    }
+
+    .tl-row {
+        grid-template-columns: auto 4.5rem 17rem 11rem minmax(0, 1fr);
+        column-gap: 0.6rem;
+    }
+}
+
+.tl-row:hover {
+    background-color: var(--bg-light);
+}
+
+.tl-rail {
+    display: flex;
+    white-space: pre;
+    color: var(--border);
+    letter-spacing: 0.15em;
+}
+
+.tl-node {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.tl-when {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.tl-name {
+    font-weight: 700;
+}
+
+.tl-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.6rem;
+    align-items: baseline;
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.tl-meta .pv-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* The lane number, not the theme's name: the name is already in the legend this
+   number points at, and repeating it on all seventy rows crowded out the subject. */
+.tl-cat {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+}
+
+/* A ten-lane graph is wider than a phone, so it scrolls — but the project NAME
+   should never be the part you have to scroll to find. Dropping the month reclaims
+   enough width to fit rail + name inside 375px; the year is already the heading
+   above, and the metadata and subject stay one swipe away.
+   Four tracks, and .tl-when hidden: the remaining items then auto-place one track
+   earlier, which is why no explicit grid-column is set on any of them. */
+@media only screen and (max-width: 720px) {
+    .tl-rows {
+        grid-template-columns: auto 15rem 11rem minmax(0, 1fr);
+    }
+
+    .tl-when {
+        display: none;
+    }
+
+    .tl-graph {
+        min-width: 30rem;
+    }
+
+    .tl-rail {
+        letter-spacing: 0;
+    }
+
+    @supports not (grid-template-columns: subgrid) {
+        .tl-row {
+            grid-template-columns: auto 15rem 11rem minmax(0, 1fr);
+        }
+    }
+}
+
+/* The commit subject. Truncated rather than wrapped so one repo stays one row and
+   the rails stay straight; the full text is still in the DOM for search and for
+   screen readers. */
+.tl-desc {
+    min-width: 0;
+    overflow: hidden;
+    color: var(--text-light);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* --- /projects-shell ----------------------------------------------------- */
+
+/* Deliberately NOT a black-on-green pastiche: the site is already a monospace
+   terminal, so the screen borrows the page's own colours and only the framing says
+   "terminal". A second, louder palette here would fight the one the site has. */
+.sh-term {
+    margin: 1.5rem 0 0.5rem;
+    border: 1px dashed var(--accent);
+    border-radius: var(--standard-border-radius);
+    background-color: var(--bg-light);
+}
+
+.sh-out {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    /* Long descriptions in a fixed-width screen: wrap rather than scroll sideways. */
+    overflow-wrap: anywhere;
+}
+
+.sh-line {
+    padding: 0.05rem 0;
+    white-space: pre-wrap;
+}
+
+.sh-echo-ps1 {
+    color: var(--accent);
+}
+
+.sh-dim {
+    color: var(--text-light);
+}
+
+.sh-err {
+    color: var(--accent);
+}
+
+.sh-strong {
+    font-weight: 700;
+}
+
+.sh-kv {
+    color: var(--text-light);
+    /* The cat output pads its keys with spaces, which only lines up if the digits
+       and letters share a width. */
+    font-variant-numeric: tabular-nums;
+}
+
+.sh-dirtag {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.sh-meta {
+    color: var(--text-light);
+}
+
+.sh-inline-desc {
+    color: var(--text-light);
+}
+
+.sh-prompt {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0.5rem 0.75rem;
+    border-top: 1px dashed var(--accent);
+}
+
+.sh-ps1 {
+    color: var(--accent);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+/* suCSS gives inputs a dashed border and a background; inside the screen the
+   prompt should look like part of the screen, not like a form field. */
+.sh-in {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--text);
+    font: inherit;
+    font-size: 0.85rem;
+}
+
+.sh-in:focus {
+    outline: none;
+}
+
+/* The prompt row carries the focus ring instead, so the whole screen reads as the
+   focused control — and the ring is not lost by removing the input's outline. */
+.sh-prompt:focus-within {
+    outline: 2px solid var(--link);
+    outline-offset: -2px;
+}
+
+.sh-hints {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.5rem;
+    align-items: baseline;
+    font-size: 0.85rem;
+}
+
+.sh-hints-label {
+    color: var(--text-light);
+}
+
+.sh-hint-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sh-hint-list li::marker {
+    content: "";
+}
+
+.sh-hint {
+    padding: 0.05rem 0.4rem;
+    border: 1px dashed var(--border);
+    border-radius: var(--standard-border-radius);
+    background: none;
+    color: var(--link);
+    font: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.sh-hint:hover,
+.sh-hint:focus-visible {
+    border-color: var(--link);
+    background-color: var(--link);
+    color: var(--bg);
+}
+
+/* --- the static listing (no-JS fallback and the shell's data source) ------ */
+
+.sh-fs {
+    margin-top: 1.5rem;
+}
+
+.sh-dir + .sh-dir {
+    margin-top: 1.5rem;
+}
+
+.sh-dirname {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.sh-dirlabel {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.sh-files {
+    margin: 0.4rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.sh-fname {
+    font-weight: 700;
+}
+
+.sh-files .sh-desc {
+    color: var(--text-light);
+}
+
+.sh-files .sh-desc::before {
+    content: " — ";
+}
+
+/* --- utilities ---------------------------------------------------------- */
+
+.pv-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* Controls that only mean something once their script has run. The JS removes
+   the attribute; without it the markup stays out of the way instead of offering
+   a sort button that does nothing. */
+[data-pv-jsonly] {
+    display: none;
+}
+
+/* --- motion ------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .pvc-card {
+        transition: none;
+    }
+
+    .pvc-card:hover {
+        transform: none;
+    }
+}

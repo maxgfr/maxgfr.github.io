@@ -1,0 +1,67 @@
+{#
+  One project card for /projects-cards.
+
+  Expects:
+    pv_repo — a record from data/projects.json's `repos` array
+
+  Reads page.lang from the global context.
+
+  The data-* attributes are the sort and filter keys for static/js/projects-cards.js.
+  They are rendered here rather than derived in JS so the script never has to parse
+  what the page already knows, and so sorting stays correct with JS off (the DOM
+  order IS the curated order).
+#}
+{% set pv_lang = page.lang %}
+{% set pv_desc = pv_repo.desc[pv_lang] %}
+<li class="pvc-card"
+    data-name="{{ pv_repo.name }}"
+    data-stars="{{ pv_repo.stars }}"
+    data-pushed="{{ pv_repo.pushed }}"
+    data-language="{{ pv_repo.language | default(value='') }}"
+    data-search="{{ pv_repo.name }} {{ pv_desc }} {{ pv_repo.topics | join(sep=' ') }} {{ pv_repo.language | default(value='') }}">
+    <h3 class="pvc-name"><a href="{{ pv_repo.url }}">{{ pv_repo.name }}</a></h3>
+
+    {# Clamped to four lines in CSS rather than truncated here: the full text stays
+       in the DOM for the filter box, for search engines and for no-JS readers. #}
+    <p class="pvc-desc" title="{{ pv_desc }}">{{ pv_desc }}</p>
+
+    <ul class="pv-metrics">
+        {% if pv_repo.language %}
+        <li class="pv-metric pv-lang" data-lang="{{ pv_repo.language }}">
+            <span class="pv-dot" aria-hidden="true"></span>{{ pv_repo.language }}
+        </li>
+        {% endif %}
+        {# Zeroes are omitted, not printed: a "★ 0" next to good work only
+           undersells it, which is the same reason /projects shows no per-repo
+           count at all. #}
+        {% if pv_repo.stars > 0 %}
+        <li class="pv-metric">★ {{ pv_repo.stars }}<span class="pv-sr"> {% if pv_lang == "en" %}stars{% else %}étoiles{% endif %}</span></li>
+        {% endif %}
+        {# Spelled out, not "⑂": U+2442 is absent from the site's monospace stack and
+           fell back to a glyph that reads as a Greek psi. ★ is safe, a fork mark is not. #}
+        {% if pv_repo.forks > 0 %}
+        <li class="pv-metric">{{ pv_repo.forks }} fork{% if pv_repo.forks > 1 %}s{% endif %}</li>
+        {% endif %}
+        {% if pv_repo.license %}
+        <li class="pv-metric">{{ pv_repo.license }}</li>
+        {% endif %}
+        {% if pv_repo.pushed %}
+        <li class="pv-metric">
+            <span class="pv-sr">{% if pv_lang == "en" %}last push {% else %}dernier push {% endif %}</span>↻ {{ pv_repo.pushed }}
+        </li>
+        {% endif %}
+    </ul>
+
+    {% if pv_repo.topics | length > 0 %}
+    <ul class="pv-chips">
+        {% for pv_topic in pv_repo.topics[0:4] %}
+        <li class="pv-chip">{{ pv_topic }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <p class="pv-links">
+        <a href="{{ pv_repo.url }}">code</a>
+        {% if pv_repo.home %}<a href="{{ pv_repo.home }}">{{ pv_repo.homeLabel[pv_lang] }}</a>{% endif %}
+    </p>
+</li>

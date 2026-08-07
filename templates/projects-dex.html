@@ -1,0 +1,37 @@
+{% extends "projects-view.html" %}
+
+{#
+  /projects-dex — the catalogue as a binder of trading cards.
+
+  This is the one view that deliberately breaks the site's monospace palette, so
+  its styling is quarantined in static/css/projects-dex.css and loaded nowhere else.
+
+  A wall of cards rather than a "PC box" grid plus a modal: every card is then
+  server-rendered and reachable with JS off, keyboard-only or from a search engine,
+  and the fun part — tilt and holo — is pure enhancement on top of markup that is
+  already complete. Sections follow the same curated order as every other view.
+#}
+
+{% block view_class %}pv-wide dex{% endblock view_class %}
+
+{% block view_head %}
+<link rel="stylesheet" href="{{ get_url(path='css/projects-dex.css') }}">
+<script src="{{ get_url(path='js/projects-dex.js') }}" defer></script>
+{% endblock view_head %}
+
+{% block view %}
+{% for category in data.categories %}
+{% set index = loop.index0 %}
+<section class="dex-section" id="{{ category.slug }}">
+    <h2>{{ category[page.lang] }}</h2>
+    <ul class="dex-grid">
+        {% for repo in data.repos %}
+        {% if repo.cat == index %}
+        {% set pv_repo = repo %}
+        {% include "partials/projects-dex-card.html" %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</section>
+{% endfor %}
+{% endblock view %}

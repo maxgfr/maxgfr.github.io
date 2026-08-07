@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{#
+  Common shell for the four alternate /projects views. Each one extends this and
+  fills {% block view %}; the switcher, the <h1>, the intro prose, the data load
+  and the totals footer happen once, here.
+
+  `data` is set inside {% block content %}, not at the top level: a top-level
+  {% set %} in a template that {% extends %} another is not visible inside blocks
+  (the same Tera rule templates/cv.html documents). Set here it IS visible both to
+  the includes and to the nested {% block view %} that children override.
+
+  Views needing the full width add `pv-wide` via {% block view_class %};
+  static/css/projects.css widens the body grid off that class.
+#}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ get_url(path='css/projects.css') }}">
+{% block view_head %}{% endblock view_head %}
+{% endblock extra_head %}
+
+{% block content %}
+{% set data = load_data(path="data/projects.json") %}
+<article class="post pv {% block view_class %}{% endblock view_class %}">
+    <header class="post-header pv-header">
+        <h1>{{ page.title }}</h1>
+        {% set pv_current = page.extra.view %}
+        {% include "partials/projects-switcher.html" %}
+    </header>
+
+    <div class="post-content pv-intro">{{ page.content | safe }}</div>
+
+    {% block view %}{% endblock view %}
+
+    <p class="pv-foot">
+        {% if page.lang == "en" %}
+        {{ data.totals.repos }} public repos · {{ data.totals.stars }} stars ·
+        <a href="https://github.com/maxgfr">see them all on GitHub →</a>
+        {% else %}
+        {{ data.totals.repos }} dépôts publics · {{ data.totals.stars }} étoiles ·
+        <a href="https://github.com/maxgfr">voir tous mes dépôts sur GitHub →</a>
+        {% endif %}
+    </p>
+</article>
+{% endblock content %}

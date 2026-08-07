@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 68 public repositories, totalling 298 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 70 public repositories, totalling 298 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -98,4 +98,9 @@ My 68 public repositories, totalling 298 stars — [github.com/maxgfr](https://g
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
+
+### 🆕 Uncategorized
+
+- **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser…
+- **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde généré procéduralement — 100%…
 

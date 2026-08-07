@@ -1,0 +1,73 @@
+{#
+  One trading card for /projects-dex.
+
+  Expects:
+    pv_repo — a record from data/projects.json's `repos` array
+
+  Every number on the card is real: HP comes from stars, the level from the repo's
+  age, the attacks from its own topics, the type from its language. Nothing is
+  invented for flavour, which is the only reason the joke works.
+
+  Structure is frame → inner panel. The frame carries the type colour; the panel is
+  a neutral surface so the description and attacks stay readable in both themes
+  without needing a per-type contrast decision. Only the header sits on the colour,
+  in white with a shadow — the same trick the real cards use.
+#}
+{% set pv_lang = page.lang %}
+{% set pv_poke = pv_repo.poke %}
+{% set pv_t1 = config.extra.poke_types[pv_poke.type1] %}
+{% set pv_weak = config.extra.poke_types[pv_poke.weakness] %}
+<li class="dex-card" data-type="{{ pv_poke.type1 }}" data-rarity="{{ pv_poke.rarity }}">
+    <article class="dex-frame">
+        <header class="dex-head">
+            <span class="dex-no">#{{ pv_repo.dexLabel }}</span>
+            <h3 class="dex-name"><a href="{{ pv_repo.url }}">{{ pv_repo.name }}</a></h3>
+            <span class="dex-hp">
+                {{ pv_poke.hp }}<abbr title="{% if pv_lang == 'en' %}hit points, from the repo's stars{% else %}points de vie, depuis les étoiles du dépôt{% endif %}">{% if pv_lang == "en" %}HP{% else %}PV{% endif %}</abbr>
+                <span class="dex-type-icon" title="{{ pv_t1[pv_lang] }}">{{ pv_t1.icon }}</span>
+            </span>
+        </header>
+
+        <div class="dex-panel">
+            {# The sprite is drawn from three run-length-encoded paths in the data,
+               one per shade. crispEdges keeps a 10×10 grid looking like pixel art
+               instead of a blurred smudge when it scales up. #}
+            <div class="dex-art">
+                <svg class="dex-sprite" viewBox="0 0 10 10" aria-hidden="true" shape-rendering="crispEdges">
+                    {% for pv_path in pv_poke.sprite %}
+                    {% if pv_path %}<path class="dex-px dex-px{{ loop.index }}" d="{{ pv_path }}"/>{% endif %}
+                    {% endfor %}
+                </svg>
+                {# The language is parenthesised rather than dotted onto the type
+                   list. type2 is DERIVED from the language, so "Psy · Acier · Shell"
+                   listed the same fact twice and read as a third type. #}
+                <p class="dex-species">
+                    <span class="dex-types">{{ pv_t1[pv_lang] }}{% if pv_poke.type2 %} · {{ config.extra.poke_types[pv_poke.type2][pv_lang] }}{% endif %}</span>
+                    {% if pv_repo.language %}<span class="dex-lang">{{ pv_repo.language }}</span>{% endif %}
+                </p>
+            </div>
+
+            <ul class="dex-moves">
+                {% for pv_move in pv_poke.moves %}
+                <li class="dex-move">
+                    <span class="dex-cost" aria-hidden="true">{{ pv_t1.icon }}{% if loop.index == 2 %}{{ pv_t1.icon }}{% endif %}</span>
+                    <span class="dex-move-name">{{ pv_move.name }}</span>
+                    <span class="dex-dmg">{{ pv_move.dmg }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <p class="dex-flavour">{{ pv_repo.desc[pv_lang] }}</p>
+
+            <footer class="dex-foot">
+                {# Spelled out, not the type icon: 🌑 for dark and ⬜ for normal both
+                   read as a bullet point next to small text, so the weakness looked
+                   like a stray list marker. #}
+                <span>{% if pv_lang == "en" %}weak{% else %}faibl.{% endif %} {{ pv_weak[pv_lang] }}</span>
+                <span>{% if pv_lang == "en" %}lv{% else %}niv{% endif %} {{ pv_poke.level }}</span>
+                {% if pv_repo.stars > 0 %}<span>★ {{ pv_repo.stars }}</span>{% endif %}
+                {% if pv_repo.home %}<a href="{{ pv_repo.home }}">{{ pv_repo.homeLabel[pv_lang] }}</a>{% endif %}
+            </footer>
+        </div>
+    </article>
+</li>

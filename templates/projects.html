@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{#
+  /projects — the list. THE DEFAULT VIEW, and the one the other four are
+  alternatives to.
+
+  content/projects{,.en}.md is generated daily by
+  .github/scripts/generate-projects.mjs, which is also what puts
+  `template = "projects.html"` in its front-matter. That line is the only reason
+  this template gets a say: it lets the switcher sit above the generated body
+  without anyone ever hand-editing the Markdown, which the cron would overwrite.
+
+  The <article> mirrors themes/anemone/templates/page.html — the template this
+  page resolved to before — so the list itself renders exactly as it always has.
+  No `.pv-wide` here: the list is prose and keeps suCSS's 47rem reading column.
+#}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ get_url(path='css/projects.css') }}">
+{% endblock extra_head %}
+
+{% block content %}
+<article class="post pv">
+    <header class="post-header pv-header">
+        <h1>{{ page.title }}</h1>
+        {% set pv_current = "/projects" %}
+        {% include "partials/projects-switcher.html" %}
+    </header>
+    <div class="post-content">
+        {{ page.content | safe }}
+    </div>
+</article>
+{% endblock content %}

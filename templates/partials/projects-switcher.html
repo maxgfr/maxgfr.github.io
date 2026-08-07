@@ -1,0 +1,24 @@
+{#
+  The /projects view switcher.
+
+  Included, not called: Tera v2 (Zola 0.23) removed macros and {% import %}
+  outright, so a shared fragment is an {% include %} that reads variables the
+  caller {% set %} just before it. Includes DO see the caller's context, loop
+  variables included.
+
+  Expects:
+    pv_current — the url of the view being rendered, e.g. "/projects-dex"
+
+  Reads from the global context: page.lang, config.extra.projects_views.
+#}
+{% set pv_prefix = "" %}
+{% if page.lang == "en" %}{% set pv_prefix = "/en" %}{% endif %}
+<nav class="pv-switch" aria-label="{% if page.lang == 'en' %}Project views{% else %}Vues des projets{% endif %}">
+    {% for pv_view in config.extra.projects_views %}
+    {% if pv_view.url == pv_current %}
+    <span class="pv-switch-item" aria-current="page">{{ pv_view["name_" ~ page.lang] }}</span>
+    {% else %}
+    <a class="pv-switch-item" href="{{ pv_prefix }}{{ pv_view.url }}">{{ pv_view["name_" ~ page.lang] }}</a>
+    {% endif %}
+    {% endfor %}
+</nav>
