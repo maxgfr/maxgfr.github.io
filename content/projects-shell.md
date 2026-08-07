@@ -1,5 +1,5 @@
 +++
-title = "Projets — shell"
+title = "Mes projets — shell"
 template = "projects-shell.html"
 
 [extra]

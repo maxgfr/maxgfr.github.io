@@ -1,5 +1,5 @@
 +++
-title = "Projets — cartes"
+title = "Mes projets — cartes"
 template = "projects-cards.html"
 
 [extra]

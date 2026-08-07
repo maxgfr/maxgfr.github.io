@@ -30,7 +30,12 @@
 
     <div class="post-content pv-intro">{{ page.content | safe }}</div>
 
-    {% block view %}{% endblock view %}
+    {# Only the content breaks out of the text column — the header above and the
+       totals below stay in it, so the <h1> and the switcher sit at exactly the same
+       place on all five views and on every other page of the site. #}
+    <div class="pv-body">
+        {% block view %}{% endblock view %}
+    </div>
 
     <p class="pv-foot">
         {% if page.lang == "en" %}

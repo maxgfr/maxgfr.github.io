@@ -1,5 +1,5 @@
 +++
-title = "Projets — pokédex"
+title = "Mes projets — pokédex"
 template = "projects-dex.html"
 
 [extra]
