@@ -12,8 +12,6 @@
   the only editorial judgement the dataset carries.
 #}
 
-{% block view_class %}pv-wide{% endblock view_class %}
-
 {# In <head> with `defer` rather than at the end of <body>: base.html hardcodes its
    three script tags and declares no block there, and templates/cv.html already
    established that a per-page script belongs in extra_head. `defer` means this

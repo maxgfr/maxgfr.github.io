@@ -46,6 +46,16 @@
         desc: node.querySelector('.sh-desc').textContent.trim(),
     }));
 
+    // Each theme's totals, folded in once. `ls` at the root lists themes rather than
+    // repos, so without these `sort` would have nothing to act on there — see
+    // DIR_SORTS below.
+    for (const [index, dir] of dirs.entries()) {
+        const own = files.filter((f) => f.cat === index);
+        dir.count = own.length;
+        dir.stars = own.reduce((total, f) => total + f.stars, 0);
+        dir.created = own.reduce((latest, f) => (f.created > latest ? f.created : latest), '');
+    }
+
     // --- state ------------------------------------------------------------
 
     let cwd = null; // null = root; otherwise a dir slug
@@ -53,10 +63,23 @@
     const history = [];
     let historyAt = 0;
 
+    // The listing currently on screen, as a thunk that redraws it. `sort` replays it
+    // in the new order: a setting whose effect you cannot see reads as broken, and
+    // the shell opens at the root where the only listing is the theme list.
+    let lastListing = null;
+
     const SORTS = {
         name: (a, b) => a.name.localeCompare(b.name),
         stars: (a, b) => b.stars - a.stars || a.name.localeCompare(b.name),
         recent: (a, b) => b.created.localeCompare(a.created) || a.name.localeCompare(b.name),
+    };
+
+    // The same three keys applied to a theme, so `sort stars` reorders the root
+    // listing too instead of announcing a change nothing on screen reflects.
+    const DIR_SORTS = {
+        name: (a, b) => a.slug.localeCompare(b.slug),
+        stars: (a, b) => b.stars - a.stars || a.slug.localeCompare(b.slug),
+        recent: (a, b) => b.created.localeCompare(a.created) || a.slug.localeCompare(b.slug),
     };
 
     const inDir = (slug) => {
@@ -107,6 +130,10 @@
         el.append(link, meta, desc);
     }
 
+    // `T.repo` may be missing if a cached page predates it; the plural then reads
+    // exactly as it did before rather than printing "undefined".
+    const repoCount = (n) => `${n} ${n === 1 && T.repo ? T.repo : T.repos}`;
+
     function promptText() {
         return `maxgfr@projects:~${cwd ? `/${cwd}` : ''}$`;
     }
@@ -118,18 +145,24 @@
     // --- commands ---------------------------------------------------------
 
     function cmdLs(arg) {
+        lastListing = () => cmdLs(arg);
         const target = arg || cwd;
         if (!target) {
             line(`${dirs.length} ${T.dirs}`, 'sh-dim');
-            for (const dir of dirs) {
+            // Same shape as a repo row — name, totals, description — so the totals
+            // the root listing is ordered by are on screen next to the order.
+            for (const dir of [...dirs].sort(DIR_SORTS[order])) {
                 const el = line('', 'sh-filerow');
                 const name = document.createElement('span');
                 name.className = 'sh-dirtag';
                 name.textContent = `${dir.slug}/`;
+                const meta = document.createElement('span');
+                meta.className = 'sh-meta';
+                meta.textContent = ` ${repoCount(dir.count)}${dir.stars ? ` · ★ ${dir.stars}` : ''}`;
                 const label = document.createElement('span');
                 label.className = 'sh-inline-desc';
                 label.textContent = ` ${dir.label}`;
-                el.append(name, label);
+                el.append(name, meta, label);
             }
             return;
         }
@@ -138,7 +171,7 @@
             return;
         }
         const list = inDir(target);
-        line(`${list.length} ${T.repos}`, 'sh-dim');
+        line(repoCount(list.length), 'sh-dim');
         list.forEach(fileLine);
     }
 
@@ -196,6 +229,7 @@
     }
 
     function cmdFind(arg) {
+        lastListing = () => cmdFind(arg);
         if (!arg) {
             line(T.nothing, 'sh-dim');
             return;
@@ -233,16 +267,21 @@
         window.open(url, '_blank', 'noopener');
     }
 
+    // hasOwn, not `SORTS[arg]`: a plain object inherits Object.prototype, so `sort
+    // constructor` and `sort toString` were accepted and then handed to Array#sort
+    // as the comparator, which silently produced a nonsense order.
     function cmdSort(arg) {
-        if (!SORTS[arg]) {
+        if (!Object.hasOwn(SORTS, String(arg))) {
             line(T.badSort, 'sh-err');
             return;
         }
         order = arg;
         line(`${T.sorted} ${arg}`, 'sh-dim');
+        if (lastListing) lastListing();
     }
 
     function cmdTree() {
+        lastListing = () => cmdTree();
         for (const dir of dirs) {
             line(`${dir.slug}/`, 'sh-dirtag');
             inDir(dir.slug).forEach(fileLine);

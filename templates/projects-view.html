@@ -10,8 +10,8 @@
   (the same Tera rule templates/cv.html documents). Set here it IS visible both to
   the includes and to the nested {% block view %} that children override.
 
-  Views needing the full width add `pv-wide` via {% block view_class %};
-  static/css/projects.css widens the body grid off that class.
+  Every view stays in suCSS's own content column, like the rest of the site;
+  {% block view_class %} only names the view so its stylesheet can hook onto it.
 #}
 
 {% block extra_head %}
@@ -30,9 +30,9 @@
 
     <div class="post-content pv-intro">{{ page.content | safe }}</div>
 
-    {# Only the content breaks out of the text column — the header above and the
-       totals below stay in it, so the <h1> and the switcher sit at exactly the same
-       place on all five views and on every other page of the site. #}
+    {# One wrapper for the view's own content, so a view can style everything it
+       renders without reaching for the <article>, which also holds the shared
+       header, intro and totals. #}
     <div class="pv-body">
         {% block view %}{% endblock view %}
     </div>

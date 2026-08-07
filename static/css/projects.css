@@ -58,35 +58,22 @@
     color: var(--accent-text);
 }
 
-/* --- wide layout --------------------------------------------------------- */
+/* --- staying inside the content column ----------------------------------- */
 
-/* suCSS caps the content column at min(47rem, 90%), which is right for prose and
-   far too narrow for a card grid or a ten-year timeline.
+/* No rules here, on purpose — a note about the ones that must NOT come back.
 
-   So the grid widens — keeping suCSS's own 90% so the gutters stay identical to
-   every other page — and the page CHROME is re-centred inside it at the original
-   47rem. The h1, switcher, intro and footer therefore land on exactly the same
-   pixel as on /skills, while the grids, graph and terminal get the full width.
+   These five views sit in suCSS's own content column, min(47rem, 90%), like every
+   other page of the site. Nothing here breaks out of it.
 
-   Deliberately no `vw` anywhere. An earlier version sized the content with
-   min(78rem, 90vw) and centred it with a negative margin; that works, but `vw`
-   INCLUDES the scrollbar while the 90% here excludes it, so on any platform with
-   classic (non-overlay) scrollbars the content sat ~7px off-centre and could
-   overflow. Percentages on both sides can never disagree. */
-body:has(.pv-wide) {
-    grid-template-columns: 1fr min(78rem, 90%) 1fr;
-}
+   An earlier version widened the column to 78rem for the grids, the graph and the
+   terminal, and re-centred the h1/switcher/intro/footer inside it at 47rem. It did
+   widen the content — but the widening was applied to the BODY grid, and `nav`,
+   `main` and `footer` are all body children, so the site's nav bar and footer moved
+   248px outward on these five pages and nowhere else. The page chrome no longer
+   lined up with /projects, /skills or anything else.
 
-.pv-wide .pv-header,
-.pv-wide .pv-intro,
-.pv-wide .pv-foot {
-    max-width: 47rem;
-    margin-inline: auto;
-}
-
-.pv-intro {
-    max-width: 47rem;
-}
+   Anything too wide for the column scrolls inside its own box (.tl-scroll) or
+   reflows (the auto-fill grids); the page itself never scrolls sideways. */
 
 /* Pre-existing bug, fixed here because this is the only stylesheet that loads on
    /projects: two generated bullets carry long slash-joined tokens
@@ -351,7 +338,7 @@ body:has(.pv-wide) {
     font-variant-numeric: tabular-nums;
 }
 
-/* Twelve lanes plus a name plus metadata does not fit a phone. Rather than wrap the
+/* Ten lanes plus a name plus metadata does not fit a phone. Rather than wrap the
    rail — which would break the graph — the graph scrolls inside its own box, and
    the page never scrolls sideways. */
 .tl-scroll {
@@ -359,8 +346,13 @@ body:has(.pv-wide) {
     margin: 1rem 0;
 }
 
+/* The floor at which a row still says something. Below it the subject column, the
+   only elastic track, is squeezed to nothing and every row ends in an ellipsis —
+   which is what happened on a phone before: the subject measured 0px there.
+   44rem keeps ~9rem of subject and lets the box scroll instead. It sits just under
+   the 47rem content column, so a desktop reads the whole graph without scrolling. */
 .tl-graph {
-    min-width: 34rem;
+    min-width: 44rem;
 }
 
 .tl-year {
@@ -385,16 +377,20 @@ body:has(.pv-wide) {
     content: "";
 }
 
-/* Laid out like `git log --oneline`: graph, date, name, tags, subject.
+/* Laid out like `git log --oneline`: graph, name, tags, subject.
    The tracks are declared once on the list and each row opts into them with
    `subgrid`, so every column lines up down the whole graph. Sizing each row
    independently looked right by accident and drifted as soon as a row had no
-   language dot or a name long enough to wrap. */
+   language dot or a name long enough to wrap.
+
+   The three fixed tracks are their widest real content rounded up, measured across
+   the whole dataset: 15.65rem for the longest repo name (react-essentials-functions),
+   10.24rem for the fullest metadata cell (JavaScript ★ 2 [10]). Rounder, more
+   generous numbers cost the subject the width it needs, and inside the site's 47rem
+   column there is none to give away — the rail alone takes 7.5rem. */
 .tl-rows {
     display: grid;
-    /* 17rem fits the longest repo name (react-essentials-functions, 26 chars) on one
-       line; a wrapped name leaves its rail stub hanging. */
-    grid-template-columns: auto 4.5rem 17rem 11rem minmax(0, 1fr);
+    grid-template-columns: auto 16rem 10.5rem minmax(0, 1fr);
     /* On the parent, not the row: a subgrid takes its gaps in the subgridded axis
        from the parent grid and ignores its own. */
     column-gap: 0.6rem;
@@ -417,7 +413,7 @@ body:has(.pv-wide) {
     }
 
     .tl-row {
-        grid-template-columns: auto 4.5rem 17rem 11rem minmax(0, 1fr);
+        grid-template-columns: auto 16rem 10.5rem minmax(0, 1fr);
         column-gap: 0.6rem;
     }
 }
@@ -436,12 +432,6 @@ body:has(.pv-wide) {
 .tl-node {
     color: var(--accent);
     font-weight: 700;
-}
-
-.tl-when {
-    color: var(--text-light);
-    font-size: 0.8rem;
-    font-variant-numeric: tabular-nums;
 }
 
 .tl-name {
@@ -470,33 +460,11 @@ body:has(.pv-wide) {
     font-variant-numeric: tabular-nums;
 }
 
-/* A ten-lane graph is wider than a phone, so it scrolls — but the project NAME
-   should never be the part you have to scroll to find. Dropping the month reclaims
-   enough width to fit rail + name inside 375px; the year is already the heading
-   above, and the metadata and subject stay one swipe away.
-   Four tracks, and .tl-when hidden: the remaining items then auto-place one track
-   earlier, which is why no explicit grid-column is set on any of them. */
+/* A ten-lane graph is wider than a phone, so it scrolls. Tightening the rail buys
+   back a rem and a half of subject before that scroll starts. */
 @media only screen and (max-width: 720px) {
-    .tl-rows {
-        grid-template-columns: auto 15rem 11rem minmax(0, 1fr);
-    }
-
-    .tl-when {
-        display: none;
-    }
-
-    .tl-graph {
-        min-width: 30rem;
-    }
-
     .tl-rail {
         letter-spacing: 0;
-    }
-
-    @supports not (grid-template-columns: subgrid) {
-        .tl-row {
-            grid-template-columns: auto 15rem 11rem minmax(0, 1fr);
-        }
     }
 }
 

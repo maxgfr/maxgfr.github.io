@@ -14,7 +14,7 @@
   the generator so the ordering lives in one place instead of being re-derived here.
 #}
 
-{% block view_class %}pv-wide tl{% endblock view_class %}
+{% block view_class %}tl{% endblock view_class %}
 
 {% block view %}
 {% set en = page.lang == "en" %}
@@ -50,7 +50,12 @@
                     {% endif %}
                     {% endfor %}
                 </span>
-                <span class="tl-when">{{ repo.created }}</span>
+                {# Not drawn: inside the site's 47rem column the month costs more
+                   width than the subject can spare, and the year is already the
+                   heading above with the rows in creation order under it. Kept in
+                   the DOM so the exact date is still there for a screen reader and
+                   for find-in-page. #}
+                <span class="tl-when pv-sr">{{ repo.created }}</span>
                 <a class="tl-name" href="{{ repo.url }}">{{ repo.name }}</a>
                 <span class="tl-meta">
                     {% if repo.language %}

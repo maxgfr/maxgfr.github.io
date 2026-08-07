@@ -16,7 +16,7 @@
   real `ls` rather than an empty prompt.
 #}
 
-{% block view_class %}pv-wide sh{% endblock view_class %}
+{% block view_class %}sh{% endblock view_class %}
 
 {% block view_head %}
 <script src="{{ get_url(path='js/projects-shell.js') }}" defer></script>
@@ -55,6 +55,7 @@
   "noDemo": "no live site for",
   "dirs": "themes",
   "repos": "repos",
+  "repo": "repo",
   "labels": {
     "theme": "theme", "language": "language", "stars": "stars", "forks": "forks",
     "licence": "licence", "created": "created", "pushed": "last push",
@@ -90,6 +91,7 @@
   "noDemo": "pas de site en ligne pour",
   "dirs": "thèmes",
   "repos": "dépôts",
+  "repo": "dépôt",
   "labels": {
     "theme": "thème", "language": "langage", "stars": "étoiles", "forks": "forks",
     "licence": "licence", "created": "créé", "pushed": "dernier push",
