@@ -126,7 +126,7 @@
 
 {# Server-rendered filesystem: the no-JS view AND the script's data source. #}
 <section class="sh-fs" id="sh-fs">
-    <h2 class="pv-sr">{% if en %}Full listing{% else %}Listing complet{% endif %}</h2>
+    <h2 class="sr-only">{% if en %}Full listing{% else %}Listing complet{% endif %}</h2>
     {% for category in data.categories %}
     {% set index = loop.index0 %}
     <div class="sh-dir" id="{{ category.slug }}">

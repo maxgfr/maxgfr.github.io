@@ -38,7 +38,7 @@
            undersells it, which is the same reason /projects shows no per-repo
            count at all. #}
         {% if pv_repo.stars > 0 %}
-        <li class="pv-metric">★ {{ pv_repo.stars }}<span class="pv-sr"> {% if pv_lang == "en" %}stars{% else %}étoiles{% endif %}</span></li>
+        <li class="pv-metric">★ {{ pv_repo.stars }}<span class="sr-only"> {% if pv_lang == "en" %}stars{% else %}étoiles{% endif %}</span></li>
         {% endif %}
         {# Spelled out, not "⑂": U+2442 is absent from the site's monospace stack and
            fell back to a glyph that reads as a Greek psi. ★ is safe, a fork mark is not. #}
@@ -50,7 +50,7 @@
         {% endif %}
         {% if pv_repo.pushed %}
         <li class="pv-metric">
-            <span class="pv-sr">{% if pv_lang == "en" %}last push {% else %}dernier push {% endif %}</span>↻ {{ pv_repo.pushed }}
+            <span class="sr-only">{% if pv_lang == "en" %}last push {% else %}dernier push {% endif %}</span>↻ {{ pv_repo.pushed }}
         </li>
         {% endif %}
     </ul>

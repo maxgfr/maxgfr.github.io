@@ -135,6 +135,30 @@ body.theme-transition *::after {
   }
 }
 
+/* Read but not seen. `clip-path` rather than display:none or visibility:hidden,
+   which take the element out of the accessibility tree along with its text, and
+   rather than a negative text-indent, which a right-to-left page reverses.
+   Lives here, in the stylesheet every page loads, because static/js/external-links.js
+   appends one of these to every off-site link on the site. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Being positioned, the note needs a containing block inside whatever scrolls, or
+   it is laid out against the viewport instead. The timeline's graph scrolls
+   sideways inside its own box on a phone, so notes on the rows further right landed
+   past the right edge of the page — 1px wide and invisible, but enough to give the
+   whole document a sideways scroll it has never had. The attribute is the one
+   js/external-links.js sets, so this reaches those links and nothing else. */
+a[data-new-tab-noted] {
+  position: relative;
+}
+
 /* Navigation link responsive behavior */
 .nav-link .nav-short {
   display: none;

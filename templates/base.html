@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="{% if page %}{{ page.lang }}{% else %}{{ config.default_language }}{% endif %}">
+{# `section` as well as `page`: the two home pages ARE sections, so without this
+   branch /en/ declared itself French — a screen reader read the English home in a
+   French voice, and js/external-links.js picked its wording off the same attribute.
+   Same three-way fallback as `current_lang` in the body below. #}
+<html lang="{% if page %}{{ page.lang }}{% elif section %}{{ section.lang }}{% else %}{{ config.default_language }}{% endif %}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,5 +103,9 @@
         <script src="{{ get_url(path='js/language.js') }}" defer></script>
         <script src="{{ get_url(path='js/script.js') }}" defer></script>
         <script src="{{ get_url(path='js/dino.js') }}" defer></script>
+        {# Last of the site-wide scripts, and after the per-page ones in extra_head:
+           deferred scripts run in document order, so anything a view builds at load
+           is already in the DOM when this makes its first pass. #}
+        <script src="{{ get_url(path='js/external-links.js') }}" defer></script>
     </body>
 </html>
