@@ -28,6 +28,7 @@ My 71 public repositories, totalling 298 stars — [github.com/maxgfr](https://g
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI-powered git automation: smart commits, conflict resolution & auto-rebase…
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Monthly commit-recap generator with AI summaries, bullet points and commit…
 - **[sift](https://github.com/maxgfr/sift)** — Tells you which quantization of an LLM fits and how fast it will run — before…
+- **[webindex](https://github.com/maxgfr/webindex)** — Zero-dependency web-retrieval engine: turns a URL into clean text — HTML…
 
 ### 🛠️ CLIs & system tools
 
@@ -103,8 +104,4 @@ My 71 public repositories, totalling 298 stars — [github.com/maxgfr](https://g
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
-
-### 🆕 Uncategorized
-
-- **[webindex](https://github.com/maxgfr/webindex)** — Zero-dependency web-retrieval engine shared by the ultrasearch, ultradoc and…
 

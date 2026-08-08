@@ -28,6 +28,7 @@ Mes 71 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https:/
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits intelligents, résolution de conflits et…
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Générateur de récap mensuel des commits : résumés par IA, points clés et…
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle…
+- **[webindex](https://github.com/maxgfr/webindex)** — Moteur de récupération web zéro-dépendance : transforme une URL en texte…
 
 ### 🛠️ CLIs & outils système
 
@@ -103,8 +104,4 @@ Mes 71 dépôts publics, totalisant 298 étoiles — [github.com/maxgfr](https:/
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
-
-### 🆕 Non classés
-
-- **[webindex](https://github.com/maxgfr/webindex)** — Zero-dependency web-retrieval engine shared by the ultrasearch, ultradoc and…
 

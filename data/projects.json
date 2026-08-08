@@ -88,92 +88,87 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
-    },
-    {
-      "fr": "🆕 Non classés",
-      "en": "🆕 Uncategorized",
-      "slug": "uncategorized"
     }
   ],
   "timeline": [
     {
       "year": "2017",
       "repos": [
-        69
+        70
       ]
     },
     {
       "year": "2020",
       "repos": [
-        61
+        62
       ]
     },
     {
       "year": "2021",
       "repos": [
-        67
+        68
       ]
     },
     {
       "year": "2022",
       "repos": [
-        46,
-        62,
-        64,
-        41,
-        65,
-        54,
+        47,
         63,
-        36,
-        60,
+        65,
         42,
         66,
-        52,
-        51,
-        53,
-        59,
         55,
-        57,
-        58,
-        50,
-        48,
+        64,
+        37,
+        61,
+        43,
+        67,
+        53,
+        52,
+        54,
+        60,
         56,
-        29
+        58,
+        59,
+        51,
+        49,
+        57,
+        30
       ]
     },
     {
       "year": "2025",
       "repos": [
-        25,
-        34,
-        68
+        26,
+        35,
+        69
       ]
     },
     {
       "year": "2026",
       "repos": [
-        20,
-        27,
-        38,
-        28,
-        24,
-        47,
-        35,
-        16,
-        17,
-        39,
         21,
-        23,
-        22,
-        15,
-        11,
-        26,
+        28,
+        39,
+        29,
+        25,
+        48,
+        36,
+        17,
         18,
-        49,
-        19,
-        14,
-        6,
         40,
+        22,
+        24,
+        23,
+        16,
+        12,
+        27,
+        19,
+        50,
+        20,
+        15,
+        6,
+        41,
         9,
         7,
         4,
@@ -181,20 +176,20 @@
         1,
         2,
         3,
-        32,
         33,
+        34,
         10,
-        45,
-        37,
-        12,
+        46,
+        38,
+        13,
         8,
         5,
-        43,
-        31,
-        13,
         44,
-        30,
-        70
+        32,
+        14,
+        45,
+        31,
+        11
       ]
     }
   ],
@@ -778,6 +773,58 @@
       }
     },
     {
+      "name": "webindex",
+      "url": "https://github.com/maxgfr/webindex",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Moteur de récupération web zéro-dépendance : transforme une URL en texte propre — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques — plus le transport MCP. Un seul engine.mjs embarquable, partagé par ultrasearch, ultradoc et construct. Le pendant web de codeindex.",
+        "en": "Zero-dependency web-retrieval engine: turns a URL into clean text — HTML, PDFs through a six-rung ladder ending in OCR, office documents — plus the MCP transport. One vendorable engine.mjs, shared by ultrasearch, ultradoc & construct. The web-side companion to codeindex."
+      },
+      "cat": 1,
+      "dex": 12,
+      "dexLabel": "012",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "content-extraction",
+        "esm",
+        "firecrawl",
+        "ocr",
+        "pdf-extraction",
+        "text-extraction",
+        "typescript"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 160,
+        "level": 35,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "content extraction",
+            "dmg": 10
+          },
+          {
+            "name": "firecrawl",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h2v1h-2zM8 6h2v1h-2zM11 6h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM1 10h10v1h-10zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "conforme",
       "url": "https://github.com/maxgfr/conforme",
       "home": null,
@@ -787,8 +834,8 @@
         "en": "Syncs your AI coding config (rules, skills, agents, MCP servers) across Claude Code, Cursor & more (Rust)."
       },
       "cat": 1,
-      "dex": 12,
-      "dexLabel": "012",
+      "dex": 13,
+      "dexLabel": "013",
       "stars": 2,
       "forks": 0,
       "language": "Rust",
@@ -839,8 +886,8 @@
         "en": "Local secrets firewall for coding agents — redacts credentials in prompts, file reads & tool output before they reach the LLM (Claude Code, Codex, OpenCode). Deterministic hooks, no proxy."
       },
       "cat": 1,
-      "dex": 13,
-      "dexLabel": "013",
+      "dex": 14,
+      "dexLabel": "014",
       "stars": 1,
       "forks": 0,
       "language": "JavaScript",
@@ -891,8 +938,8 @@
         "en": "Tells you which quantization of an LLM fits and how fast it will run — before you download it. Reads real GGUF/safetensors headers over HTTP range requests, measures your machine and routes to an engine. No bundled model list (Rust)."
       },
       "cat": 1,
-      "dex": 14,
-      "dexLabel": "014",
+      "dex": 15,
+      "dexLabel": "015",
       "stars": 0,
       "forks": 0,
       "language": "Rust",
@@ -943,8 +990,8 @@
         "en": "Runs Claude Code (and Codex) caffeinated — keeps the machine awake for exactly the session, cross-platform & zero-dep."
       },
       "cat": 1,
-      "dex": 15,
-      "dexLabel": "015",
+      "dex": 16,
+      "dexLabel": "016",
       "stars": 0,
       "forks": 0,
       "language": "Shell",
@@ -995,8 +1042,8 @@
         "en": "Zero-dependency provider switching for Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…)."
       },
       "cat": 1,
-      "dex": 16,
-      "dexLabel": "016",
+      "dex": 17,
+      "dexLabel": "017",
       "stars": 0,
       "forks": 1,
       "language": "Shell",
@@ -1047,8 +1094,8 @@
         "en": "AI-powered git automation: smart commits, conflict resolution & auto-rebase (Claude/Codex/OpenAI/Gemini/Mistral). Pure Bash."
       },
       "cat": 1,
-      "dex": 17,
-      "dexLabel": "017",
+      "dex": 18,
+      "dexLabel": "018",
       "stars": 0,
       "forks": 0,
       "language": "Shell",
@@ -1099,8 +1146,8 @@
         "en": "Monthly commit-recap generator with AI summaries, bullet points and commit lists."
       },
       "cat": 1,
-      "dex": 18,
-      "dexLabel": "018",
+      "dex": 19,
+      "dexLabel": "019",
       "stars": 0,
       "forks": 0,
       "language": "Shell",
@@ -1154,8 +1201,8 @@
         "en": "Fetches the latest LLM models from the OpenRouter and models.dev APIs."
       },
       "cat": 1,
-      "dex": 19,
-      "dexLabel": "019",
+      "dex": 20,
+      "dexLabel": "020",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -1206,8 +1253,8 @@
         "en": "Run Android apps (phone & TV) from the macOS CLI on a disposable, self-contained emulator (Apple Silicon, HVF). (Rust)"
       },
       "cat": 2,
-      "dex": 20,
-      "dexLabel": "020",
+      "dex": 21,
+      "dexLabel": "021",
       "stars": 0,
       "forks": 0,
       "language": "Rust",
@@ -1258,8 +1305,8 @@
         "en": "High-performance WiFi security-testing tool in Rust for educational and authorized audits."
       },
       "cat": 2,
-      "dex": 21,
-      "dexLabel": "021",
+      "dex": 22,
+      "dexLabel": "022",
       "stars": 38,
       "forks": 2,
       "language": "Rust",
@@ -1310,8 +1357,8 @@
         "en": "Rust reimplementation of SHC: encrypts shell scripts into compiled binaries."
       },
       "cat": 2,
-      "dex": 22,
-      "dexLabel": "022",
+      "dex": 23,
+      "dexLabel": "023",
       "stars": 0,
       "forks": 0,
       "language": "Rust",
@@ -1362,8 +1409,8 @@
         "en": "All-in-one subtitle CLI: download, translate, convert, sync, clean, merge, fix, extract & embed."
       },
       "cat": 2,
-      "dex": 23,
-      "dexLabel": "023",
+      "dex": 24,
+      "dexLabel": "024",
       "stars": 1,
       "forks": 0,
       "language": "Shell",
@@ -1414,8 +1461,8 @@
         "en": "Universal video downloader: yt-dlp first, CDP browser extraction fallback for stubborn sites."
       },
       "cat": 2,
-      "dex": 24,
-      "dexLabel": "024",
+      "dex": 25,
+      "dexLabel": "025",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -1466,8 +1513,8 @@
         "en": "Bash watcher for APIs & websites with diff detection, thresholds and instant notifications."
       },
       "cat": 2,
-      "dex": 25,
-      "dexLabel": "025",
+      "dex": 26,
+      "dexLabel": "026",
       "stars": 2,
       "forks": 0,
       "language": "Shell",
@@ -1518,8 +1565,8 @@
         "en": "Scans node/bun/deno projects for vulnerable npm packages via OSV/GHSA (JSON/CSV/PURL/SBOM/SARIF/TRIVY)."
       },
       "cat": 2,
-      "dex": 26,
-      "dexLabel": "026",
+      "dex": 27,
+      "dexLabel": "027",
       "stars": 3,
       "forks": 0,
       "language": "Shell",
@@ -1570,8 +1617,8 @@
         "en": "GitHub maintenance toolkit: bulk unstar, org clone, fork cleanup, repo audit and more."
       },
       "cat": 2,
-      "dex": 27,
-      "dexLabel": "027",
+      "dex": 28,
+      "dexLabel": "028",
       "stars": 0,
       "forks": 0,
       "language": "Shell",
@@ -1622,8 +1669,8 @@
         "en": "Converts scanned PDFs into searchable, copyable PDFs with Tesseract OCR (parallel)."
       },
       "cat": 2,
-      "dex": 28,
-      "dexLabel": "028",
+      "dex": 29,
+      "dexLabel": "029",
       "stars": 0,
       "forks": 0,
       "language": "Shell",
@@ -1674,8 +1721,8 @@
         "en": "Torrent ratio tool that sends real HTTP announce requests to BitTorrent trackers."
       },
       "cat": 2,
-      "dex": 29,
-      "dexLabel": "029",
+      "dex": 30,
+      "dexLabel": "030",
       "stars": 0,
       "forks": 0,
       "language": "Shell",
@@ -1729,8 +1776,8 @@
         "en": "Tiny executable that prevents the machine from sleeping."
       },
       "cat": 2,
-      "dex": 30,
-      "dexLabel": "030",
+      "dex": 31,
+      "dexLabel": "031",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -1781,8 +1828,8 @@
         "en": "Offline-first, privacy-first daily to-do: nothing rolls over on its own — unfinished tasks wait for a decision the next morning, with their age shown. No account, no server, zero network requests, proven by a CSP and a build gate that fails CI."
       },
       "cat": 3,
-      "dex": 31,
-      "dexLabel": "031",
+      "dex": 32,
+      "dexLabel": "032",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -1836,8 +1883,8 @@
         "en": "Local-first, encrypted Notion in the browser: block editor, nested pages, wikilinks and backlinks, tags, ⌘K search, databases (table/board/calendar), version history, link map. Passphrase locking (Argon2id) that rotates the key, and a wipe you can verify. No network request is possible — CSP connect-src 'none', proven in CI. Offline PWA."
       },
       "cat": 3,
-      "dex": 32,
-      "dexLabel": "032",
+      "dex": 33,
+      "dexLabel": "033",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -1891,8 +1938,8 @@
         "en": "Local-first Pomodoro focus timer (PWA + Chrome extension): tasks, backlog & day plan, interruption counting, overtime and Flowtime, year heatmap, productive hours and estimate accuracy, JSON/CSV/Open Pomodoro export — no account, no server, no tracking."
       },
       "cat": 3,
-      "dex": 33,
-      "dexLabel": "033",
+      "dex": 34,
+      "dexLabel": "034",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -1946,8 +1993,8 @@
         "en": "Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline."
       },
       "cat": 3,
-      "dex": 34,
-      "dexLabel": "034",
+      "dex": 35,
+      "dexLabel": "035",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2001,8 +2048,8 @@
         "en": "Self-hosted, browser-based AI CSV analyzer."
       },
       "cat": 3,
-      "dex": 35,
-      "dexLabel": "035",
+      "dex": 36,
+      "dexLabel": "036",
       "stars": 83,
       "forks": 9,
       "language": "TypeScript",
@@ -2056,8 +2103,8 @@
         "en": "Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend."
       },
       "cat": 3,
-      "dex": 36,
-      "dexLabel": "036",
+      "dex": 37,
+      "dexLabel": "037",
       "stars": 5,
       "forks": 1,
       "language": "TypeScript",
@@ -2111,8 +2158,8 @@
         "en": "Real-estate ROI calculator for rental-property profitability."
       },
       "cat": 3,
-      "dex": 37,
-      "dexLabel": "037",
+      "dex": 38,
+      "dexLabel": "038",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2166,8 +2213,8 @@
         "en": "Client-side password generator + encrypted vault PWA: exact entropy, EFF passphrases, auto-locking AES-256-GCM vault (PBKDF2 600k), encrypted share links & QR — offline-first."
       },
       "cat": 3,
-      "dex": 38,
-      "dexLabel": "038",
+      "dex": 39,
+      "dexLabel": "039",
       "stars": 0,
       "forks": 0,
       "language": "HTML",
@@ -2221,8 +2268,8 @@
         "en": "Offline-first PWA for loyalty cards with encrypted storage and barcode scanning."
       },
       "cat": 3,
-      "dex": 39,
-      "dexLabel": "039",
+      "dex": 40,
+      "dexLabel": "040",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2273,8 +2320,8 @@
         "en": "Desktop language-learning app with multi-provider AI tutoring."
       },
       "cat": 3,
-      "dex": 40,
-      "dexLabel": "040",
+      "dex": 41,
+      "dexLabel": "041",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2325,8 +2372,8 @@
         "en": "Local-first daily short-video generator (Remotion) with per-platform captions + opt-in Shorts/TikTok/Reels publishing."
       },
       "cat": 3,
-      "dex": 41,
-      "dexLabel": "041",
+      "dex": 42,
+      "dexLabel": "042",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2377,8 +2424,8 @@
         "en": "Undetectable Leboncoin scraper via Chrome DevTools Protocol & Next.js data routes — no Puppeteer, zero bot detection."
       },
       "cat": 3,
-      "dex": 42,
-      "dexLabel": "042",
+      "dex": 43,
+      "dexLabel": "043",
       "stars": 1,
       "forks": 0,
       "language": "HTML",
@@ -2432,8 +2479,8 @@
         "en": "Find npm-package versions with their GitHub release notes."
       },
       "cat": 3,
-      "dex": 43,
-      "dexLabel": "043",
+      "dex": 44,
+      "dexLabel": "044",
       "stars": 6,
       "forks": 0,
       "language": "TypeScript",
@@ -2487,8 +2534,8 @@
         "en": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend."
       },
       "cat": 3,
-      "dex": 44,
-      "dexLabel": "044",
+      "dex": 45,
+      "dexLabel": "045",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2542,8 +2589,8 @@
         "en": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import."
       },
       "cat": 4,
-      "dex": 45,
-      "dexLabel": "045",
+      "dex": 46,
+      "dexLabel": "046",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2597,8 +2644,8 @@
         "en": "Self-hosted fundamental stock screener — 150k+ equities, zero API keys, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast."
       },
       "cat": 5,
-      "dex": 46,
-      "dexLabel": "046",
+      "dex": 47,
+      "dexLabel": "047",
       "stars": 1,
       "forks": 0,
       "language": "Python",
@@ -2652,8 +2699,8 @@
         "en": "Fetch historical klines from the Binance API."
       },
       "cat": 5,
-      "dex": 47,
-      "dexLabel": "047",
+      "dex": 48,
+      "dexLabel": "048",
       "stars": 46,
       "forks": 6,
       "language": "TypeScript",
@@ -2704,8 +2751,8 @@
         "en": "Describe a crypto strategy in plain English → JSON strategy, backtested over 50+ indicators with HTML reports."
       },
       "cat": 5,
-      "dex": 48,
-      "dexLabel": "048",
+      "dex": 49,
+      "dexLabel": "049",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -2759,8 +2806,8 @@
         "en": "Implementation of the SuperTrend indicator."
       },
       "cat": 5,
-      "dex": 49,
-      "dexLabel": "049",
+      "dex": 50,
+      "dexLabel": "050",
       "stars": 4,
       "forks": 4,
       "language": "TypeScript",
@@ -2814,8 +2861,8 @@
         "en": "Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine."
       },
       "cat": 6,
-      "dex": 50,
-      "dexLabel": "050",
+      "dex": 51,
+      "dexLabel": "051",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2869,8 +2916,8 @@
         "en": "Functions to find similarities between arrays."
       },
       "cat": 6,
-      "dex": 51,
-      "dexLabel": "051",
+      "dex": 52,
+      "dexLabel": "052",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -2924,8 +2971,8 @@
         "en": "Condorcet vote algorithm in TypeScript."
       },
       "cat": 6,
-      "dex": 52,
-      "dexLabel": "052",
+      "dex": 53,
+      "dexLabel": "053",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -2979,8 +3026,8 @@
         "en": "Check whether a dataset follows Benford's law."
       },
       "cat": 6,
-      "dex": 53,
-      "dexLabel": "053",
+      "dex": 54,
+      "dexLabel": "054",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3033,8 +3080,8 @@
         "en": "Helpers for Gaussian calculations."
       },
       "cat": 6,
-      "dex": 54,
-      "dexLabel": "054",
+      "dex": 55,
+      "dexLabel": "055",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3088,8 +3135,8 @@
         "en": "Minimalist context for Node, inspired by the React Context API."
       },
       "cat": 6,
-      "dex": 55,
-      "dexLabel": "055",
+      "dex": 56,
+      "dexLabel": "056",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -3143,8 +3190,8 @@
         "en": "Useful hooks and components for React."
       },
       "cat": 6,
-      "dex": 56,
-      "dexLabel": "056",
+      "dex": 57,
+      "dexLabel": "057",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3194,8 +3241,8 @@
         "en": "Essential zero-dependency TypeScript helpers."
       },
       "cat": 6,
-      "dex": 57,
-      "dexLabel": "057",
+      "dex": 58,
+      "dexLabel": "058",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3247,8 +3294,8 @@
         "en": "Zero-dependency fix for date-parsing issues in React Native on Android."
       },
       "cat": 6,
-      "dex": 58,
-      "dexLabel": "058",
+      "dex": 59,
+      "dexLabel": "059",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3302,8 +3349,8 @@
         "en": "Lightweight, zero-dependency React Native modal (no animation)."
       },
       "cat": 6,
-      "dex": 59,
-      "dexLabel": "059",
+      "dex": 60,
+      "dexLabel": "060",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3355,8 +3402,8 @@
         "en": "async-storage wrapper for storing huge data in React Native."
       },
       "cat": 6,
-      "dex": 60,
-      "dexLabel": "060",
+      "dex": 61,
+      "dexLabel": "061",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3410,8 +3457,8 @@
         "en": "Track who unfollowed you on Instagram."
       },
       "cat": 6,
-      "dex": 61,
-      "dexLabel": "061",
+      "dex": 62,
+      "dexLabel": "062",
       "stars": 9,
       "forks": 0,
       "language": "TypeScript",
@@ -3465,8 +3512,8 @@
         "en": "Unofficial Node SDK for api-money.com."
       },
       "cat": 6,
-      "dex": 62,
-      "dexLabel": "062",
+      "dex": 63,
+      "dexLabel": "063",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3517,8 +3564,8 @@
         "en": "Action to change a value in a JSON file (e.g. package.json)."
       },
       "cat": 7,
-      "dex": 63,
-      "dexLabel": "063",
+      "dex": 64,
+      "dexLabel": "064",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -3572,8 +3619,8 @@
         "en": "Action to commit and push a file to a repository."
       },
       "cat": 7,
-      "dex": 64,
-      "dexLabel": "064",
+      "dex": 65,
+      "dexLabel": "065",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3626,8 +3673,8 @@
         "en": "Action to manage deployment statuses across multiple environments."
       },
       "cat": 7,
-      "dex": 65,
-      "dexLabel": "065",
+      "dex": 66,
+      "dexLabel": "066",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3678,8 +3725,8 @@
         "en": "Minimalist TypeScript + SWC starter emitting CJS and ESM packages."
       },
       "cat": 8,
-      "dex": 66,
-      "dexLabel": "066",
+      "dex": 67,
+      "dexLabel": "067",
       "stars": 32,
       "forks": 5,
       "language": "TypeScript",
@@ -3733,8 +3780,8 @@
         "en": "Minimalist TS + SWC starter for building React component libraries."
       },
       "cat": 8,
-      "dex": 67,
-      "dexLabel": "067",
+      "dex": 68,
+      "dexLabel": "068",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -3785,8 +3832,8 @@
         "en": "Curated list of repositories I've liked on GitHub."
       },
       "cat": 9,
-      "dex": 68,
-      "dexLabel": "068",
+      "dex": 69,
+      "dexLabel": "069",
       "stars": 22,
       "forks": 3,
       "language": null,
@@ -3833,8 +3880,8 @@
         "en": "Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`)."
       },
       "cat": 9,
-      "dex": 69,
-      "dexLabel": "069",
+      "dex": 70,
+      "dexLabel": "070",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -3886,8 +3933,8 @@
         "en": "Source of a writer's website."
       },
       "cat": 9,
-      "dex": 70,
-      "dexLabel": "070",
+      "dex": 71,
+      "dexLabel": "071",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",
@@ -3925,58 +3972,6 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
-        ]
-      }
-    },
-    {
-      "name": "webindex",
-      "url": "https://github.com/maxgfr/webindex",
-      "home": null,
-      "homeLabel": null,
-      "desc": {
-        "fr": "Zero-dependency web-retrieval engine shared by the ultrasearch, ultradoc and construct skills: fetch any URL into clean text — HTML, PDFs through a 6-rung ladder ending in OCR, office documents. One vendorable engine.mjs. The web-side companion to codeindex.",
-        "en": "Zero-dependency web-retrieval engine shared by the ultrasearch, ultradoc and construct skills: fetch any URL into clean text — HTML, PDFs through a 6-rung ladder ending in OCR, office documents. One vendorable engine.mjs. The web-side companion to codeindex."
-      },
-      "cat": 10,
-      "dex": 71,
-      "dexLabel": "071",
-      "stars": 0,
-      "forks": 0,
-      "language": "TypeScript",
-      "topics": [
-        "ai-agents",
-        "content-extraction",
-        "esm",
-        "firecrawl",
-        "ocr",
-        "pdf-extraction",
-        "text-extraction",
-        "typescript"
-      ],
-      "created": "2026-08",
-      "pushed": "2026-08",
-      "license": "MIT",
-      "poke": {
-        "type1": "fairy",
-        "type2": "water",
-        "hp": 160,
-        "level": 34,
-        "rarity": "common",
-        "weakness": "steel",
-        "moves": [
-          {
-            "name": "content extraction",
-            "dmg": 10
-          },
-          {
-            "name": "firecrawl",
-            "dmg": 10
-          }
-        ],
-        "sprite": [
-          "M3 1h6v1h-6zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h2v1h-2zM8 6h2v1h-2zM11 6h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM1 10h10v1h-10zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     }

@@ -27,6 +27,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier DMN/FEEL natif IA compilé en Go : un LLM écrit les règles, le moteur les prouve et les exécute de façon déterministe (playground WASM). · [démo](https://maxgfr.github.io/feelc/)
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Moteur d'indexation de dépôt zéro-dépendance : symboles, imports, graphe de liens inter-fichiers typé et analytics — un seul engine.mjs embarquable, CLI + serveur MCP inclus. · [démo](https://maxgfr.github.io/codeindex/)
+- **[webindex](https://github.com/maxgfr/webindex)** — Moteur de récupération web zéro-dépendance : transforme une URL en texte propre — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques — plus le transport MCP. Un seul engine.mjs embarquable, partagé par ultrasearch, ultradoc et construct. Le pendant web de codeindex.
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Pare-feu local anti-fuite de secrets pour agents de code — masque les identifiants dans les prompts, lectures de fichiers et sorties d'outils avant qu'ils n'atteignent le LLM (Claude Code, Codex, OpenCode). Hooks déterministes, sans proxy.
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle tournera — avant de la télécharger. Lit les vrais en-têtes GGUF/safetensors par requêtes HTTP Range, mesure la machine et recommande un moteur. Aucune liste de modèles embarquée (Rust).
@@ -126,12 +127,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[webindex](https://github.com/maxgfr/webindex)** — Zero-dependency web-retrieval engine shared by the ultrasearch, ultradoc and construct skills: fetch any URL into clean text — HTML, PDFs through a 6-rung ladder ending in OCR, office documents. One vendorable engine.mjs. The web-side companion to codeindex.
 
 ---
 
