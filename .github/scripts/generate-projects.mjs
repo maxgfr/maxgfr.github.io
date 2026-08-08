@@ -214,7 +214,7 @@ function buildCvPage(repos, lang) {
 }
 
 // ───────────────────────────── data/projects.json ─────────────────────────────
-// The alternate views (/projects-cards, -dex, -timeline, -shell) need structure,
+// The alternate views (/projects-cards, -dex, -shell) need structure,
 // not prose, so they read this file at build time via Zola's load_data(). Two
 // rules govern everything below.
 //
@@ -711,32 +711,11 @@ function buildData(repos, now) {
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .map(([name, count]) => ({ name, count }));
 
-  // Chronological index for /projects-timeline, grouped by creation year. Indices
-  // into `repos`, not copies: the timeline wants the same records in a different
-  // order, and duplicating seventy objects would double the file for nothing.
-  const byYear = new Map();
-  out.forEach((repo, i) => {
-    const year = (repo.created || '????').slice(0, 4);
-    if (!byYear.has(year)) byYear.set(year, []);
-    byYear.get(year).push(i);
-  });
-  const timeline = [...byYear.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([year, indices]) => ({
-      year,
-      repos: indices.sort(
-        (a, b) =>
-          (out[a].created || '').localeCompare(out[b].created || '') ||
-          out[a].name.localeCompare(out[b].name)
-      ),
-    }));
-
   return {
     generated: ym(now.toISOString()),
     totals: { repos: repos.length, stars: repos.reduce((a, r) => a + r.stargazers_count, 0) },
     languages,
     categories,
-    timeline,
     repos: out,
   };
 }

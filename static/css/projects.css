@@ -1,6 +1,6 @@
 /* ==========================================================================
-   projects.css — shared chrome for the five /projects views
-   (list, cards, pokédex, timeline, shell).
+   projects.css — shared chrome for the four /projects views
+   (list, cards, pokédex, shell).
 
    Loaded only by templates/projects.html and templates/projects-view.html, so
    nothing here reaches the rest of the site. The pokédex loads its own
@@ -62,18 +62,18 @@
 
 /* No rules here, on purpose — a note about the ones that must NOT come back.
 
-   These five views sit in suCSS's own content column, min(47rem, 90%), like every
-   other page of the site. Nothing here breaks out of it.
+   These views sit in suCSS's own content column, min(47rem, 90%), like every other
+   page of the site. Nothing here breaks out of it.
 
-   An earlier version widened the column to 78rem for the grids, the graph and the
-   terminal, and re-centred the h1/switcher/intro/footer inside it at 47rem. It did
-   widen the content — but the widening was applied to the BODY grid, and `nav`,
-   `main` and `footer` are all body children, so the site's nav bar and footer moved
-   248px outward on these five pages and nowhere else. The page chrome no longer
-   lined up with /projects, /skills or anything else.
+   An earlier version widened the column to 78rem for the grids and the terminal,
+   and re-centred the h1/switcher/intro/footer inside it at 47rem. It did widen the
+   content — but the widening was applied to the BODY grid, and `nav`, `main` and
+   `footer` are all body children, so the site's nav bar and footer moved 248px
+   outward on these pages and nowhere else. The page chrome no longer lined up with
+   /projects, /skills or anything else.
 
-   Anything too wide for the column scrolls inside its own box (.tl-scroll) or
-   reflows (the auto-fill grids); the page itself never scrolls sideways. */
+   Anything too wide for the column reflows (the auto-fill grids) or scrolls inside
+   its own box; the page itself never scrolls sideways. */
 
 /* Pre-existing bug, fixed here because this is the only stylesheet that loads on
    /projects: two generated bullets carry long slash-joined tokens
@@ -305,179 +305,6 @@
 .pvc-empty {
     margin: 2rem 0;
     color: var(--text-light);
-}
-
-/* --- /projects-timeline -------------------------------------------------- */
-
-.tl-legend {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    gap: 0.1rem 1rem;
-    margin: 1.5rem 0;
-    padding: 0.75rem;
-    border: 1px dashed var(--border);
-    border-radius: var(--standard-border-radius);
-    list-style: none;
-    font-size: 0.85rem;
-}
-
-.tl-legend li::marker,
-.tl-legend li:hover::marker {
-    content: "";
-}
-
-.tl-legend-item {
-    display: flex;
-    gap: 0.5rem;
-}
-
-/* The lane number is the whole point of the legend, so it gets the accent. */
-.tl-legend-no {
-    color: var(--accent);
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-}
-
-/* Ten lanes plus a name plus metadata does not fit a phone. Rather than wrap the
-   rail — which would break the graph — the graph scrolls inside its own box, and
-   the page never scrolls sideways. */
-.tl-scroll {
-    overflow-x: auto;
-    margin: 1rem 0;
-}
-
-/* The floor at which a row still says something. Below it the subject column, the
-   only elastic track, is squeezed to nothing and every row ends in an ellipsis —
-   which is what happened on a phone before: the subject measured 0px there.
-   44rem keeps ~9rem of subject and lets the box scroll instead. It sits just under
-   the 47rem content column, so a desktop reads the whole graph without scrolling. */
-.tl-graph {
-    min-width: 44rem;
-}
-
-.tl-year {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    margin: 1.5rem 0 0.25rem;
-    padding: 0.15rem 0;
-    background-color: var(--bg);
-    font-size: 1.1rem;
-    font-variant-numeric: tabular-nums;
-}
-
-.tl-rows {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.tl-rows li::marker,
-.tl-rows li:hover::marker {
-    content: "";
-}
-
-/* Laid out like `git log --oneline`: graph, name, tags, subject.
-   The tracks are declared once on the list and each row opts into them with
-   `subgrid`, so every column lines up down the whole graph. Sizing each row
-   independently looked right by accident and drifted as soon as a row had no
-   language dot or a name long enough to wrap.
-
-   The three fixed tracks are their widest real content rounded up, measured across
-   the whole dataset: 15.65rem for the longest repo name (react-essentials-functions),
-   10.24rem for the fullest metadata cell (JavaScript ★ 2 [10]). Rounder, more
-   generous numbers cost the subject the width it needs, and inside the site's 47rem
-   column there is none to give away — the rail alone takes 7.5rem. */
-.tl-rows {
-    display: grid;
-    grid-template-columns: auto 16rem 10.5rem minmax(0, 1fr);
-    /* On the parent, not the row: a subgrid takes its gaps in the subgridded axis
-       from the parent grid and ignores its own. */
-    column-gap: 0.6rem;
-}
-
-.tl-row {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-template-columns: subgrid;
-    align-items: baseline;
-    padding: 0.1rem 0;
-}
-
-/* Without subgrid the row would have no tracks at all and collapse to one column.
-   Fall back to the same widths declared inline on each row: they still align,
-   because every track is a fixed size. */
-@supports not (grid-template-columns: subgrid) {
-    .tl-rows {
-        display: block;
-    }
-
-    .tl-row {
-        grid-template-columns: auto 16rem 10.5rem minmax(0, 1fr);
-        column-gap: 0.6rem;
-    }
-}
-
-.tl-row:hover {
-    background-color: var(--bg-light);
-}
-
-.tl-rail {
-    display: flex;
-    white-space: pre;
-    color: var(--border);
-    letter-spacing: 0.15em;
-}
-
-.tl-node {
-    color: var(--accent);
-    font-weight: 700;
-}
-
-.tl-name {
-    font-weight: 700;
-}
-
-.tl-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.15rem 0.6rem;
-    align-items: baseline;
-    color: var(--text-light);
-    font-size: 0.8rem;
-}
-
-.tl-meta .pv-lang {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-/* The lane number, not the theme's name: the name is already in the legend this
-   number points at, and repeating it on all seventy rows crowded out the subject. */
-.tl-cat {
-    color: var(--accent);
-    font-variant-numeric: tabular-nums;
-}
-
-/* A ten-lane graph is wider than a phone, so it scrolls. Tightening the rail buys
-   back a rem and a half of subject before that scroll starts. */
-@media only screen and (max-width: 720px) {
-    .tl-rail {
-        letter-spacing: 0;
-    }
-}
-
-/* The commit subject. Truncated rather than wrapped so one repo stays one row and
-   the rails stay straight; the full text is still in the DOM for search and for
-   screen readers. */
-.tl-desc {
-    min-width: 0;
-    overflow: hidden;
-    color: var(--text-light);
-    font-size: 0.8rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 /* --- /projects-shell ----------------------------------------------------- */

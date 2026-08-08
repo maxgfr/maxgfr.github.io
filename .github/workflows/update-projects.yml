@@ -43,7 +43,7 @@ jobs:
         id: commit
         run: |
           # data/projects.json must move with the Markdown: the alternate views
-          # (/projects-cards, -dex, -timeline, -shell) render from it at build
+          # (/projects-cards, -dex, -shell) render from it at build
           # time, so leaving it out here would let them drift out of sync with
           # /projects silently — the site would still build, just with stale cards.
           FILES="content/projects.md content/projects.en.md content/cv-projects.md content/cv-projects.en.md data/projects.json"

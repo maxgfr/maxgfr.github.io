@@ -150,11 +150,13 @@ body.theme-transition *::after {
 }
 
 /* Being positioned, the note needs a containing block inside whatever scrolls, or
-   it is laid out against the viewport instead. The timeline's graph scrolls
-   sideways inside its own box on a phone, so notes on the rows further right landed
-   past the right edge of the page — 1px wide and invisible, but enough to give the
-   whole document a sideways scroll it has never had. The attribute is the one
-   js/external-links.js sets, so this reaches those links and nothing else. */
+   it is laid out against the VIEWPORT instead. A link inside a horizontally
+   scrolled box then puts its note past the right edge of the document — 1px wide
+   and invisible, but enough to give the whole page a sideways scroll. Caught on the
+   /projects-timeline graph, which has since been removed; the rule stays because
+   the next scrollable box would hit it again, and it costs one declaration.
+   The attribute is the one js/external-links.js sets, so this reaches those links
+   and nothing else. */
 a[data-new-tab-noted] {
   position: relative;
 }

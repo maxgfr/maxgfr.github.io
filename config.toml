@@ -67,7 +67,6 @@ projects_views = [
   { url = "/projects", name_en = "list", name_fr = "liste" },
   { url = "/projects-cards", name_en = "cards", name_fr = "cartes" },
   { url = "/projects-dex", name_en = "pokédex", name_fr = "pokédex" },
-  { url = "/projects-timeline", name_en = "timeline", name_fr = "timeline" },
   { url = "/projects-shell", name_en = "shell", name_fr = "shell" }
 ]
 
