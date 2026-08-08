@@ -675,8 +675,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Moteur de récupération web zéro-dépendance : transforme une URL en texte propre — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques — plus le transport MCP. Un seul engine.mjs embarquable, partagé par ultrasearch, ultradoc et construct. Le pendant web de codeindex.",
-        "en": "Zero-dependency web-retrieval engine: turns a URL into clean text — HTML, PDFs through a six-rung ladder ending in OCR, office documents — plus the MCP transport. One vendorable engine.mjs, shared by ultrasearch, ultradoc & construct. The web-side companion to codeindex."
+        "fr": "Moteur de récupération web zéro-dépendance : transforme une URL ou un fichier en texte propre et citable — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques — et le sert en MCP. Un seul engine.mjs embarquable, CLI + serveur MCP inclus. Le pendant web de codeindex.",
+        "en": "Zero-dependency web-retrieval engine: turns a URL or a file into clean, citable text — HTML, PDFs through a six-rung ladder ending in OCR, office documents — and serves it over MCP. One vendorable engine.mjs, CLI + MCP server included. The web-side companion to codeindex."
       },
       "cat": 1,
       "dex": 12,
