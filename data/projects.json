@@ -1,13 +1,13 @@
 {
   "generated": "2026-08",
   "totals": {
-    "repos": 70,
+    "repos": 71,
     "stars": 298
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 36
+      "count": 37
     },
     {
       "name": "JavaScript",
@@ -88,6 +88,11 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
     }
   ],
   "timeline": [
@@ -188,7 +193,8 @@
         31,
         13,
         44,
-        30
+        30,
+        70
       ]
     }
   ],
@@ -1647,7 +1653,7 @@
             "dmg": 10
           },
           {
-            "name": "ocr",
+            "name": "pdf",
             "dmg": 40
           }
         ],
@@ -3919,6 +3925,58 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "webindex",
+      "url": "https://github.com/maxgfr/webindex",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Zero-dependency web-retrieval engine shared by the ultrasearch, ultradoc and construct skills: fetch any URL into clean text — HTML, PDFs through a 6-rung ladder ending in OCR, office documents. One vendorable engine.mjs. The web-side companion to codeindex.",
+        "en": "Zero-dependency web-retrieval engine shared by the ultrasearch, ultradoc and construct skills: fetch any URL into clean text — HTML, PDFs through a 6-rung ladder ending in OCR, office documents. One vendorable engine.mjs. The web-side companion to codeindex."
+      },
+      "cat": 10,
+      "dex": 71,
+      "dexLabel": "071",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "content-extraction",
+        "esm",
+        "firecrawl",
+        "ocr",
+        "pdf-extraction",
+        "text-extraction",
+        "typescript"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 160,
+        "level": 34,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "content extraction",
+            "dmg": 10
+          },
+          {
+            "name": "firecrawl",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M3 1h6v1h-6zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h2v1h-2zM8 6h2v1h-2zM11 6h1v1h-1zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM1 10h10v1h-10zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     }
