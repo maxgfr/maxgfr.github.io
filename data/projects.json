@@ -2,7 +2,7 @@
   "generated": "2026-08",
   "totals": {
     "repos": 71,
-    "stars": 298
+    "stars": 299
   },
   "languages": [
     {
@@ -2071,7 +2071,7 @@
         "next"
       ],
       "created": "2022-05",
-      "pushed": "2026-05",
+      "pushed": "2026-08",
       "license": null,
       "poke": {
         "type1": "fairy",
@@ -2433,7 +2433,7 @@
       "cat": 3,
       "dex": 45,
       "dexLabel": "045",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -2452,18 +2452,18 @@
       "poke": {
         "type1": "electric",
         "type2": "water",
-        "hp": 110,
-        "level": 21,
+        "hp": 120,
+        "level": 23,
         "rarity": "common",
         "weakness": "ground",
         "moves": [
           {
             "name": "agile",
-            "dmg": 30
+            "dmg": 40
           },
           {
             "name": "end to end encryption",
-            "dmg": 20
+            "dmg": 30
           }
         ],
         "sprite": [
