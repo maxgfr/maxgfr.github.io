@@ -421,12 +421,12 @@
       "topics": [
         "agent-skill",
         "ai-agent",
+        "companies-house",
+        "company-registry",
         "geocoding",
-        "lead-generation",
-        "mcp",
-        "open-data",
-        "openstreetmap",
-        "overpass-api"
+        "gleif",
+        "kyb",
+        "lead-generation"
       ],
       "created": "2026-08",
       "pushed": "2026-08",
@@ -434,17 +434,17 @@
       "poke": {
         "type1": "psychic",
         "type2": "electric",
-        "hp": 230,
-        "level": 51,
+        "hp": 250,
+        "level": 58,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
           {
-            "name": "geocoding",
-            "dmg": 50
+            "name": "companies house",
+            "dmg": 40
           },
           {
-            "name": "lead generation",
+            "name": "company registry",
             "dmg": 50
           }
         ],
@@ -3583,7 +3583,7 @@
         "push"
       ],
       "created": "2022-05",
-      "pushed": "2026-07",
+      "pushed": "2026-08",
       "license": "MIT",
       "poke": {
         "type1": "steel",
