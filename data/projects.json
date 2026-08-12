@@ -409,8 +409,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Transforme un lieu — ville, rue, rayon — en fichier de prospection défendable : balaie OpenStreetMap dans le monde entier et le registre français (SIRENE/RNE) sur le même territoire, fusionne les deux en une entité par entreprise, enrichit depuis le site de chacune (offres d'emploi lues via les API des ATS, sans navigateur) et refuse de deviner — lieu ambigu, appariement incertain, balayage partiel ou contact non observé font échouer le run. Zéro dépendance, aucune clé d'API.",
-        "en": "Turns a place — a town, a street, a radius — into a prospect list you can defend: sweeps OpenStreetMap worldwide and the French register (SIRENE/RNE) over the same territory, fuses them into one entity per company, enriches from each company's own site (openings read straight from the ATS APIs, no browser) and refuses to guess — an ambiguous place, an uncertain match, a partial sweep or an unobserved contact all fail the run. Zero-dependency, no API keys."
+        "fr": "Transforme un lieu — ville, rue, rayon — en fichier de prospection défendable : balaie OpenStreetMap dans le monde entier et le registre d'entreprises que le pays possède réellement, fusionne les deux en une entité par entreprise, enrichit depuis le site de chacune (offres d'emploi lues via les API des ATS, sans navigateur) et refuse de deviner. La France, le Royaume-Uni et l'Estonie sont énumérables sans aucune clé — le UK depuis l'open data mensuel de Companies House, l'Estonie depuis un registre reconstruit chaque jour ; l'export allemand nomme le titulaire d'un HRB que VIES refuse de divulguer. Ailleurs, chaque entreprise est confirmée depuis l'immatriculation que son propre site doit publier par la loi. Lieu ambigu, appariement incertain, balayage partiel, enregistrement d'archive non daté ou contact non observé font échouer le run. Zéro dépendance, aucune clé d'API.",
+        "en": "Turns a place — a town, a street, a radius — into a prospect list you can defend: sweeps OpenStreetMap worldwide and whichever company register a country actually has, fuses them into one entity per company, enriches from each company's own site (openings read straight from the ATS APIs, no browser) and refuses to guess. France, the UK and Estonia are enumerated without any key — the UK from Companies House's monthly open data, Estonia from a register rebuilt daily; Germany's export names the HRB holder VIES will not disclose. Elsewhere each company is confirmed from the registration its own site must publish by law. An ambiguous place, an uncertain match, a partial sweep, an undated snapshot record or an unobserved contact all fail the run. Zero-dependency, no API keys."
       },
       "cat": 0,
       "dex": 7,
@@ -435,7 +435,7 @@
         "type1": "psychic",
         "type2": "electric",
         "hp": 250,
-        "level": 58,
+        "level": 85,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
