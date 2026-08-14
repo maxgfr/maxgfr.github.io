@@ -2,7 +2,7 @@
   "generated": "2026-08",
   "totals": {
     "repos": 72,
-    "stars": 299
+    "stars": 300
   },
   "languages": [
     {
@@ -1944,7 +1944,7 @@
       "cat": 3,
       "dex": 36,
       "dexLabel": "036",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -1963,18 +1963,18 @@
       "poke": {
         "type1": "fighting",
         "type2": "water",
-        "hp": 190,
-        "level": 40,
+        "hp": 200,
+        "level": 41,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
           {
             "name": "bracket",
-            "dmg": 60
+            "dmg": 70
           },
           {
             "name": "elimination bracket",
-            "dmg": 40
+            "dmg": 50
           }
         ],
         "sprite": [
