@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 72 public repositories, totalling 300 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 73 public repositories, totalling 300 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -61,6 +61,7 @@ My 72 public repositories, totalling 300 stars — [github.com/maxgfr](https://g
 - **[nook](https://github.com/maxgfr/nook)** — Local-first, encrypted Notion in the browser: block editor, nested pages…
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Desktop language-learning app with multi-provider AI tutoring.
 - **[today](https://github.com/maxgfr/today)** — Offline-first, privacy-first daily to-do: nothing rolls over on its own —…
+- **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text…
 
 ### 🎮 Games
 

@@ -1,13 +1,13 @@
 {
   "generated": "2026-08",
   "totals": {
-    "repos": 72,
+    "repos": 73,
     "stars": 300
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 37
+      "count": 38
     },
     {
       "name": "JavaScript",
@@ -2526,6 +2526,61 @@
       }
     },
     {
+      "name": "unmark",
+      "url": "https://github.com/maxgfr/unmark",
+      "home": "https://maxgfr.github.io/unmark/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Retire les watermarks dans le navigateur : caractères Unicode invisibles et stéganographie dans le texte (le payload est décodé, pas seulement supprimé), métadonnées C2PA/EXIF/XMP sur 11 formats, et watermarks visibles sur les images — un overlay plat est inversé exactement plutôt que repeint, sinon inpainting Telea ou MI-GAN. Rien n'est uploadé : connect-src 'self' seul, prouvé par un gate CI.",
+        "en": "Strips watermarks in the browser: invisible Unicode and steganography in text (the payload is decoded, not just deleted), C2PA/EXIF/XMP metadata across 11 formats, and visible image watermarks — a flat overlay is inverted exactly rather than painted over, with Telea or MI-GAN inpainting otherwise. Nothing is uploaded: connect-src 'self' alone, proven by a CI gate."
+      },
+      "cat": 3,
+      "dex": 47,
+      "dexLabel": "047",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "agent-skill",
+        "c2pa",
+        "exif",
+        "inpainting",
+        "local-first",
+        "metadata",
+        "onnx",
+        "privacy"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "dark",
+        "type2": "water",
+        "hp": 210,
+        "level": 47,
+        "rarity": "common",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "c2pa",
+            "dmg": 60
+          },
+          {
+            "name": "exif",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M4 1h4v1h-4zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4zM2 9h1v1h-1zM9 9h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M3 9h1v1h-1zM8 9h1v1h-1zM2 10h3v1h-3zM7 10h3v1h-3zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "terravia",
       "url": "https://github.com/maxgfr/terravia",
       "home": "https://maxgfr.github.io/terravia",
@@ -2538,8 +2593,8 @@
         "en": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import."
       },
       "cat": 4,
-      "dex": 47,
-      "dexLabel": "047",
+      "dex": 48,
+      "dexLabel": "048",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2593,8 +2648,8 @@
         "en": "Self-hosted fundamental stock screener — 150k+ equities, zero API keys, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast."
       },
       "cat": 5,
-      "dex": 48,
-      "dexLabel": "048",
+      "dex": 49,
+      "dexLabel": "049",
       "stars": 1,
       "forks": 0,
       "language": "Python",
@@ -2648,8 +2703,8 @@
         "en": "Fetch historical klines from the Binance API."
       },
       "cat": 5,
-      "dex": 49,
-      "dexLabel": "049",
+      "dex": 50,
+      "dexLabel": "050",
       "stars": 46,
       "forks": 6,
       "language": "TypeScript",
@@ -2700,8 +2755,8 @@
         "en": "Describe a crypto strategy in plain English → JSON strategy, backtested over 50+ indicators with HTML reports."
       },
       "cat": 5,
-      "dex": 50,
-      "dexLabel": "050",
+      "dex": 51,
+      "dexLabel": "051",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -2755,8 +2810,8 @@
         "en": "Implementation of the SuperTrend indicator."
       },
       "cat": 5,
-      "dex": 51,
-      "dexLabel": "051",
+      "dex": 52,
+      "dexLabel": "052",
       "stars": 4,
       "forks": 4,
       "language": "TypeScript",
@@ -2810,8 +2865,8 @@
         "en": "Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine."
       },
       "cat": 6,
-      "dex": 52,
-      "dexLabel": "052",
+      "dex": 53,
+      "dexLabel": "053",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2865,8 +2920,8 @@
         "en": "Functions to find similarities between arrays."
       },
       "cat": 6,
-      "dex": 53,
-      "dexLabel": "053",
+      "dex": 54,
+      "dexLabel": "054",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -2920,8 +2975,8 @@
         "en": "Condorcet vote algorithm in TypeScript."
       },
       "cat": 6,
-      "dex": 54,
-      "dexLabel": "054",
+      "dex": 55,
+      "dexLabel": "055",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -2975,8 +3030,8 @@
         "en": "Check whether a dataset follows Benford's law."
       },
       "cat": 6,
-      "dex": 55,
-      "dexLabel": "055",
+      "dex": 56,
+      "dexLabel": "056",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3029,8 +3084,8 @@
         "en": "Helpers for Gaussian calculations."
       },
       "cat": 6,
-      "dex": 56,
-      "dexLabel": "056",
+      "dex": 57,
+      "dexLabel": "057",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3084,8 +3139,8 @@
         "en": "Minimalist context for Node, inspired by the React Context API."
       },
       "cat": 6,
-      "dex": 57,
-      "dexLabel": "057",
+      "dex": 58,
+      "dexLabel": "058",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -3139,8 +3194,8 @@
         "en": "Useful hooks and components for React."
       },
       "cat": 6,
-      "dex": 58,
-      "dexLabel": "058",
+      "dex": 59,
+      "dexLabel": "059",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3190,8 +3245,8 @@
         "en": "Essential zero-dependency TypeScript helpers."
       },
       "cat": 6,
-      "dex": 59,
-      "dexLabel": "059",
+      "dex": 60,
+      "dexLabel": "060",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3243,8 +3298,8 @@
         "en": "Zero-dependency fix for date-parsing issues in React Native on Android."
       },
       "cat": 6,
-      "dex": 60,
-      "dexLabel": "060",
+      "dex": 61,
+      "dexLabel": "061",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3298,8 +3353,8 @@
         "en": "Lightweight, zero-dependency React Native modal (no animation)."
       },
       "cat": 6,
-      "dex": 61,
-      "dexLabel": "061",
+      "dex": 62,
+      "dexLabel": "062",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3351,8 +3406,8 @@
         "en": "async-storage wrapper for storing huge data in React Native."
       },
       "cat": 6,
-      "dex": 62,
-      "dexLabel": "062",
+      "dex": 63,
+      "dexLabel": "063",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3406,8 +3461,8 @@
         "en": "Track who unfollowed you on Instagram."
       },
       "cat": 6,
-      "dex": 63,
-      "dexLabel": "063",
+      "dex": 64,
+      "dexLabel": "064",
       "stars": 9,
       "forks": 0,
       "language": "TypeScript",
@@ -3461,8 +3516,8 @@
         "en": "Unofficial Node SDK for api-money.com."
       },
       "cat": 6,
-      "dex": 64,
-      "dexLabel": "064",
+      "dex": 65,
+      "dexLabel": "065",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3513,8 +3568,8 @@
         "en": "Action to change a value in a JSON file (e.g. package.json)."
       },
       "cat": 7,
-      "dex": 65,
-      "dexLabel": "065",
+      "dex": 66,
+      "dexLabel": "066",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -3568,8 +3623,8 @@
         "en": "Action to commit and push a file to a repository."
       },
       "cat": 7,
-      "dex": 66,
-      "dexLabel": "066",
+      "dex": 67,
+      "dexLabel": "067",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3622,8 +3677,8 @@
         "en": "Action to manage deployment statuses across multiple environments."
       },
       "cat": 7,
-      "dex": 67,
-      "dexLabel": "067",
+      "dex": 68,
+      "dexLabel": "068",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3674,8 +3729,8 @@
         "en": "Minimalist TypeScript + SWC starter emitting CJS and ESM packages."
       },
       "cat": 8,
-      "dex": 68,
-      "dexLabel": "068",
+      "dex": 69,
+      "dexLabel": "069",
       "stars": 32,
       "forks": 5,
       "language": "TypeScript",
@@ -3729,8 +3784,8 @@
         "en": "Minimalist TS + SWC starter for building React component libraries."
       },
       "cat": 8,
-      "dex": 69,
-      "dexLabel": "069",
+      "dex": 70,
+      "dexLabel": "070",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -3781,8 +3836,8 @@
         "en": "Curated list of repositories I've liked on GitHub."
       },
       "cat": 9,
-      "dex": 70,
-      "dexLabel": "070",
+      "dex": 71,
+      "dexLabel": "071",
       "stars": 22,
       "forks": 3,
       "language": null,
@@ -3829,8 +3884,8 @@
         "en": "Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`)."
       },
       "cat": 9,
-      "dex": 71,
-      "dexLabel": "071",
+      "dex": 72,
+      "dexLabel": "072",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -3882,8 +3937,8 @@
         "en": "Source of a writer's website."
       },
       "cat": 9,
-      "dex": 72,
-      "dexLabel": "072",
+      "dex": 73,
+      "dexLabel": "073",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",

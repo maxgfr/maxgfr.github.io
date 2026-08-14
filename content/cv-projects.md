@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 72 dépôts publics, totalisant 300 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 73 dépôts publics, totalisant 300 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -61,6 +61,7 @@ Mes 72 dépôts publics, totalisant 300 étoiles — [github.com/maxgfr](https:/
 - **[nook](https://github.com/maxgfr/nook)** — Notion local-first et chiffré, 100% dans le navigateur : éditeur à blocs…
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Application de bureau d'apprentissage des langues avec tutorat IA…
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour, offline-first et privée : rien ne remonte tout seul — ce…
+- **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks dans le navigateur : caractères Unicode invisibles et…
 
 ### 🎮 Jeux
 
