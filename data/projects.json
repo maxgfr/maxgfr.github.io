@@ -97,8 +97,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Premier du lot : verify, qui prouve que ce qu'un agent vient de produire fonctionne vraiment — vrais gates, conformité au plan, chasse aux défauts adversariale et preuve comportementale — au lieu de le croire sur parole.",
-        "en": "The home for my agent skills — process skills, which change how an agent works rather than what it knows. First of the set: verify, which proves that what an agent just built actually works — real gates, plan conformance, adversarial defect hunting and behaviour proof — instead of taking its word for it."
+        "fr": "Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Installable d'un seul `npx skills add maxgfr/skills`, ou comme plugin Claude Code.",
+        "en": "The home for my agent skills — process skills, which change how an agent works rather than what it knows. Installable with one `npx skills add maxgfr/skills`, or as a Claude Code plugin."
       },
       "cat": 0,
       "dex": 1,
@@ -122,8 +122,8 @@
       "poke": {
         "type1": "psychic",
         "type2": "electric",
-        "hp": 150,
-        "level": 33,
+        "hp": 110,
+        "level": 24,
         "rarity": "common",
         "weakness": "dark",
         "moves": [

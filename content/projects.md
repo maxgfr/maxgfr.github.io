@@ -11,7 +11,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🪄 Skills d'agent
 
-- **[skills](https://github.com/maxgfr/skills)** — Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Premier du lot : verify, qui prouve que ce qu'un agent vient de produire fonctionne vraiment — vrais gates, conformité au plan, chasse aux défauts adversariale et preuve comportementale — au lieu de le croire sur parole.
+- **[skills](https://github.com/maxgfr/skills)** — Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Installable d'un seul `npx skills add maxgfr/skills`, ou comme plugin Claude Code.
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence vérifiées pour n'importe quel projet open source, à partir de son vrai code, ses issues et PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un dépôt entier en une encyclopédie navigable par l'IA (carte + fiches par module + graphe de liens) pour les très gros codebases.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).
