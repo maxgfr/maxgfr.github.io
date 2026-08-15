@@ -94,14 +94,11 @@
     {
       "name": "skills",
       "url": "https://github.com/maxgfr/skills",
-      "home": "https://skills.sh/maxgfr/skills",
-      "homeLabel": {
-        "fr": "site",
-        "en": "site"
-      },
+      "home": null,
+      "homeLabel": null,
       "desc": {
-        "fr": "Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Un seul `npx skills add maxgfr/skills`, ou un plugin Claude Code. Premier du lot : verify, qui prouve que ce qu'un agent vient de produire fonctionne vraiment — les vrais gates du dépôt déduits des lockfiles et de la CI, la conformité au plan clause par clause, des chercheurs de défauts à lentilles distinctes, et une preuve comportementale qui lance réellement le code — chaque constat devant survivre à un sceptique payé pour le réfuter, et la boucle de correction n'ayant pas le droit de passer au vert en skippant un test ou en posant un @ts-ignore.",
-        "en": "The home for my agent skills — process skills, which change how an agent works rather than what it knows. One `npx skills add maxgfr/skills`, or a Claude Code plugin. First of the set: verify, which proves that what an agent just built actually works — the repo's real gates derived from lockfiles and CI, plan conformance clause by clause, defect finders with distinct lenses, and behaviour proof that runs the thing — with every finding having to survive a skeptic paid to refute it, and a fix loop that may not go green by skipping a test or adding an @ts-ignore."
+        "fr": "Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Premier du lot : verify, qui prouve que ce qu'un agent vient de produire fonctionne vraiment — vrais gates, conformité au plan, chasse aux défauts adversariale et preuve comportementale — au lieu de le croire sur parole.",
+        "en": "The home for my agent skills — process skills, which change how an agent works rather than what it knows. First of the set: verify, which proves that what an agent just built actually works — real gates, plan conformance, adversarial defect hunting and behaviour proof — instead of taking its word for it."
       },
       "cat": 0,
       "dex": 1,
@@ -125,8 +122,8 @@
       "poke": {
         "type1": "psychic",
         "type2": "electric",
-        "hp": 240,
-        "level": 55,
+        "hp": 150,
+        "level": 33,
         "rarity": "common",
         "weakness": "dark",
         "moves": [

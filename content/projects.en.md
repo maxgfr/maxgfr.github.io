@@ -11,7 +11,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🪄 Agent skills
 
-- **[skills](https://github.com/maxgfr/skills)** — The home for my agent skills — process skills, which change how an agent works rather than what it knows. One `npx skills add maxgfr/skills`, or a Claude Code plugin. First of the set: verify, which proves that what an agent just built actually works — the repo's real gates derived from lockfiles and CI, plan conformance clause by clause, defect finders with distinct lenses, and behaviour proof that runs the thing — with every finding having to survive a skeptic paid to refute it, and a fix loop that may not go green by skipping a test or adding an @ts-ignore. · [site](https://skills.sh/maxgfr/skills)
+- **[skills](https://github.com/maxgfr/skills)** — The home for my agent skills — process skills, which change how an agent works rather than what it knows. First of the set: verify, which proves that what an agent just built actually works — real gates, plan conformance, adversarial defect hunting and behaviour proof — instead of taking its word for it.
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Grounded Q&A + citation-checked reference docs for any OSS project, from its real source, issues & PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a whole repo into an AI-navigable encyclopedia (map + per-module entries + link-graph) for huge codebases.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Keyless multi-backend web research → citation-checked, tiered Markdown/HTML report (5 modes + deep-research tier).
