@@ -5,12 +5,13 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 73 dépôts publics · ⭐ 301 étoiles**
+**📦 74 dépôts publics · ⭐ 301 étoiles**
 
 ---
 
 ## 🪄 Skills d'agent
 
+- **[skills](https://github.com/maxgfr/skills)** — Skills de process pour l'ingénierie pilotée par agent, installables via `npx skills add maxgfr/skills` ou comme plugin Claude Code. verify prouve que ce qu'un agent vient de produire fonctionne vraiment : les vrais gates du dépôt (déduits des lockfiles, des manifestes et de la CI — c'est la CI qui définit « vert »), la conformité au plan clause par clause, six chercheurs de défauts à lentilles distinctes, et une preuve comportementale qui lance réellement le code puis rejoue chaque test avec le correctif annulé. Chaque constat doit survivre à un sceptique payé pour le réfuter avant d'être montré, et la boucle de correction n'a pas le droit de passer au vert en skippant un test, en posant un @ts-ignore ou en modifiant la CI — un script déterministe le vérifie. · [site](https://skills.sh/maxgfr/skills)
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence vérifiées pour n'importe quel projet open source, à partir de son vrai code, ses issues et PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un dépôt entier en une encyclopédie navigable par l'IA (carte + fiches par module + graphe de liens) pour les très gros codebases.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).

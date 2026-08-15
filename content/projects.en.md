@@ -5,12 +5,13 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 73 public repos · ⭐ 301 stars**
+**📦 74 public repos · ⭐ 301 stars**
 
 ---
 
 ## 🪄 Agent skills
 
+- **[skills](https://github.com/maxgfr/skills)** — Process skills for agent-driven engineering, installable with `npx skills add maxgfr/skills` or as a Claude Code plugin. verify proves that what an agent just built actually works: the repo's real gates (derived from lockfiles, manifests and CI — the CI is what defines green), plan conformance clause by clause, six defect finders with distinct lenses, and behaviour proof that runs the thing and re-runs each test with the fix reverted. Every finding must survive a skeptic paid to refute it before you see it, and the fix loop may not go green by skipping a test, adding @ts-ignore or editing CI — a deterministic script enforces it. · [site](https://skills.sh/maxgfr/skills)
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Grounded Q&A + citation-checked reference docs for any OSS project, from its real source, issues & PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a whole repo into an AI-navigable encyclopedia (map + per-module entries + link-graph) for huge codebases.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Keyless multi-backend web research → citation-checked, tiered Markdown/HTML report (5 modes + deep-research tier).
