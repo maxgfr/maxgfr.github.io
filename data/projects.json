@@ -2,7 +2,7 @@
   "generated": "2026-08",
   "totals": {
     "repos": 73,
-    "stars": 300
+    "stars": 301
   },
   "languages": [
     {
@@ -311,7 +311,7 @@
       "cat": 0,
       "dex": 5,
       "dexLabel": "005",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "JavaScript",
       "topics": [
@@ -330,18 +330,18 @@
       "poke": {
         "type1": "bug",
         "type2": "electric",
-        "hp": 160,
-        "level": 32,
-        "rarity": "common",
+        "hp": 170,
+        "level": 33,
+        "rarity": "uncommon",
         "weakness": "flying",
         "moves": [
           {
             "name": "a11y",
-            "dmg": 60
+            "dmg": 70
           },
           {
             "name": "accessibility",
-            "dmg": 20
+            "dmg": 30
           }
         ],
         "sprite": [
