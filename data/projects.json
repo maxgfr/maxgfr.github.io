@@ -94,8 +94,11 @@
     {
       "name": "skills",
       "url": "https://github.com/maxgfr/skills",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://www.skills.sh/maxgfr/skills",
+      "homeLabel": {
+        "fr": "site",
+        "en": "site"
+      },
       "desc": {
         "fr": "Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Installable d'un seul `npx skills add maxgfr/skills`, ou comme plugin Claude Code.",
         "en": "The home for my agent skills — process skills, which change how an agent works rather than what it knows. Installable with one `npx skills add maxgfr/skills`, or as a Claude Code plugin."
