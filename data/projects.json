@@ -2,7 +2,7 @@
   "generated": "2026-08",
   "totals": {
     "repos": 74,
-    "stars": 301
+    "stars": 302
   },
   "languages": [
     {
@@ -2054,7 +2054,7 @@
       "cat": 3,
       "dex": 38,
       "dexLabel": "038",
-      "stars": 83,
+      "stars": 84,
       "forks": 9,
       "language": "TypeScript",
       "topics": [
@@ -2541,7 +2541,7 @@
       "dex": 47,
       "dexLabel": "047",
       "stars": 1,
-      "forks": 0,
+      "forks": 1,
       "language": "TypeScript",
       "topics": [
         "agile",
@@ -2559,8 +2559,8 @@
       "poke": {
         "type1": "electric",
         "type2": "water",
-        "hp": 120,
-        "level": 23,
+        "hp": 130,
+        "level": 25,
         "rarity": "common",
         "weakness": "ground",
         "moves": [
