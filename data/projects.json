@@ -1207,7 +1207,7 @@
       "cat": 1,
       "dex": 22,
       "dexLabel": "022",
-      "stars": 2,
+      "stars": 1,
       "forks": 1,
       "language": "TypeScript",
       "topics": [
@@ -1226,18 +1226,18 @@
       "poke": {
         "type1": "fighting",
         "type2": "water",
-        "hp": 100,
-        "level": 22,
-        "rarity": "uncommon",
+        "hp": 90,
+        "level": 20,
+        "rarity": "common",
         "weakness": "psychic",
         "moves": [
           {
             "name": "models",
-            "dmg": 80
+            "dmg": 70
           },
           {
             "name": "zod",
-            "dmg": 70
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -2705,7 +2705,7 @@
       "cat": 5,
       "dex": 50,
       "dexLabel": "050",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "Python",
       "topics": [
@@ -2724,18 +2724,18 @@
       "poke": {
         "type1": "ground",
         "type2": "grass",
-        "hp": 120,
-        "level": 25,
-        "rarity": "common",
+        "hp": 130,
+        "level": 27,
+        "rarity": "uncommon",
         "weakness": "water",
         "moves": [
           {
             "name": "duckdb",
-            "dmg": 70
+            "dmg": 80
           },
           {
             "name": "fastapi",
-            "dmg": 40
+            "dmg": 50
           }
         ],
         "sprite": [
