@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 74 public repositories, totalling 302 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 74 public repositories, totalling 301 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
