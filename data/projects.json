@@ -1,13 +1,13 @@
 {
   "generated": "2026-08",
   "totals": {
-    "repos": 74,
+    "repos": 75,
     "stars": 301
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 38
+      "count": 39
     },
     {
       "name": "JavaScript",
@@ -1985,6 +1985,61 @@
       }
     },
     {
+      "name": "tick",
+      "url": "https://github.com/maxgfr/tick",
+      "home": "https://maxgfr.github.io/tick/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Suite de minuteurs local-first, 100 % dans le navigateur : multi-minuteurs simultanés avec préréglages (œuf, thé, réunion…), chronomètre avec tours, intervalles HIIT/Tabata/EMOM, métronome, horloge mondiale, calculateur de durées, alarmes et grand affichage plein écran — bips Web Audio, notifications, anti-dérive par horloge système, raccourcis clavier, PWA hors-ligne. Sans compte, sans serveur, sans tracking.",
+        "en": "Local-first timer suite, entirely in the browser: multiple simultaneous countdowns with presets (egg, tea, laundry…), stopwatch with laps, HIIT/Tabata/EMOM intervals, metronome, world clock, duration calculator, alarms and a big fullscreen display — Web Audio beeps, notifications, drift-free system-clock math, keyboard shortcuts, offline PWA. No account, no server, no tracking."
+      },
+      "cat": 3,
+      "dex": 37,
+      "dexLabel": "037",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "alarm-clock",
+        "countdown",
+        "duration-calculator",
+        "github-pages",
+        "interval-timer",
+        "local-first",
+        "metronome",
+        "no-backend"
+      ],
+      "created": "2026-08",
+      "pushed": "2026-08",
+      "license": "MIT",
+      "poke": {
+        "type1": "dark",
+        "type2": "water",
+        "hp": 240,
+        "level": 52,
+        "rarity": "common",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "alarm clock",
+            "dmg": 50
+          },
+          {
+            "name": "countdown",
+            "dmg": 20
+          }
+        ],
+        "sprite": [
+          "M3 0h6v1h-6zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM4 6h4v1h-4zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M5 4h2v1h-2zM3 5h6v1h-6zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M4 4h1v1h-1zM7 4h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "bracketeer",
       "url": "https://github.com/maxgfr/bracketeer",
       "home": "https://maxgfr.github.io/bracketeer",
@@ -1997,8 +2052,8 @@
         "en": "Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline."
       },
       "cat": 3,
-      "dex": 37,
-      "dexLabel": "037",
+      "dex": 38,
+      "dexLabel": "038",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2052,8 +2107,8 @@
         "en": "Self-hosted, browser-based AI CSV analyzer."
       },
       "cat": 3,
-      "dex": 38,
-      "dexLabel": "038",
+      "dex": 39,
+      "dexLabel": "039",
       "stars": 84,
       "forks": 9,
       "language": "TypeScript",
@@ -2107,8 +2162,8 @@
         "en": "Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend."
       },
       "cat": 3,
-      "dex": 39,
-      "dexLabel": "039",
+      "dex": 40,
+      "dexLabel": "040",
       "stars": 5,
       "forks": 1,
       "language": "TypeScript",
@@ -2162,8 +2217,8 @@
         "en": "Real-estate ROI calculator for rental-property profitability."
       },
       "cat": 3,
-      "dex": 40,
-      "dexLabel": "040",
+      "dex": 41,
+      "dexLabel": "041",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2217,8 +2272,8 @@
         "en": "Client-side password generator + encrypted vault PWA: exact entropy, EFF passphrases, auto-locking AES-256-GCM vault (PBKDF2 600k), encrypted share links & QR — offline-first."
       },
       "cat": 3,
-      "dex": 41,
-      "dexLabel": "041",
+      "dex": 42,
+      "dexLabel": "042",
       "stars": 0,
       "forks": 0,
       "language": "HTML",
@@ -2272,8 +2327,8 @@
         "en": "Offline-first PWA for loyalty cards with encrypted storage and barcode scanning."
       },
       "cat": 3,
-      "dex": 42,
-      "dexLabel": "042",
+      "dex": 43,
+      "dexLabel": "043",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2324,8 +2379,8 @@
         "en": "Desktop language-learning app with multi-provider AI tutoring."
       },
       "cat": 3,
-      "dex": 43,
-      "dexLabel": "043",
+      "dex": 44,
+      "dexLabel": "044",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2376,8 +2431,8 @@
         "en": "Local-first daily short-video generator (Remotion) with per-platform captions + opt-in Shorts/TikTok/Reels publishing."
       },
       "cat": 3,
-      "dex": 44,
-      "dexLabel": "044",
+      "dex": 45,
+      "dexLabel": "045",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2428,8 +2483,8 @@
         "en": "Undetectable Leboncoin scraper via Chrome DevTools Protocol & Next.js data routes — no Puppeteer, zero bot detection."
       },
       "cat": 3,
-      "dex": 45,
-      "dexLabel": "045",
+      "dex": 46,
+      "dexLabel": "046",
       "stars": 1,
       "forks": 0,
       "language": "HTML",
@@ -2483,8 +2538,8 @@
         "en": "Find npm-package versions with their GitHub release notes."
       },
       "cat": 3,
-      "dex": 46,
-      "dexLabel": "046",
+      "dex": 47,
+      "dexLabel": "047",
       "stars": 6,
       "forks": 0,
       "language": "TypeScript",
@@ -2538,8 +2593,8 @@
         "en": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend."
       },
       "cat": 3,
-      "dex": 47,
-      "dexLabel": "047",
+      "dex": 48,
+      "dexLabel": "048",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -2593,8 +2648,8 @@
         "en": "Strips watermarks in the browser: invisible Unicode and steganography in text (the payload is decoded, not just deleted), C2PA/EXIF/XMP metadata across 11 formats, and visible image watermarks — a flat overlay is inverted exactly rather than painted over, with Telea or MI-GAN inpainting otherwise. Nothing is uploaded: connect-src 'self' alone, proven by a CI gate."
       },
       "cat": 3,
-      "dex": 48,
-      "dexLabel": "048",
+      "dex": 49,
+      "dexLabel": "049",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2648,8 +2703,8 @@
         "en": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import."
       },
       "cat": 4,
-      "dex": 49,
-      "dexLabel": "049",
+      "dex": 50,
+      "dexLabel": "050",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2703,8 +2758,8 @@
         "en": "Self-hosted fundamental stock screener — 150k+ equities, zero API keys, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast."
       },
       "cat": 5,
-      "dex": 50,
-      "dexLabel": "050",
+      "dex": 51,
+      "dexLabel": "051",
       "stars": 2,
       "forks": 0,
       "language": "Python",
@@ -2758,8 +2813,8 @@
         "en": "Fetch historical klines from the Binance API."
       },
       "cat": 5,
-      "dex": 51,
-      "dexLabel": "051",
+      "dex": 52,
+      "dexLabel": "052",
       "stars": 46,
       "forks": 6,
       "language": "TypeScript",
@@ -2810,8 +2865,8 @@
         "en": "Describe a crypto strategy in plain English → JSON strategy, backtested over 50+ indicators with HTML reports."
       },
       "cat": 5,
-      "dex": 52,
-      "dexLabel": "052",
+      "dex": 53,
+      "dexLabel": "053",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -2865,8 +2920,8 @@
         "en": "Implementation of the SuperTrend indicator."
       },
       "cat": 5,
-      "dex": 53,
-      "dexLabel": "053",
+      "dex": 54,
+      "dexLabel": "054",
       "stars": 4,
       "forks": 4,
       "language": "TypeScript",
@@ -2920,8 +2975,8 @@
         "en": "Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine."
       },
       "cat": 6,
-      "dex": 54,
-      "dexLabel": "054",
+      "dex": 55,
+      "dexLabel": "055",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2975,8 +3030,8 @@
         "en": "Functions to find similarities between arrays."
       },
       "cat": 6,
-      "dex": 55,
-      "dexLabel": "055",
+      "dex": 56,
+      "dexLabel": "056",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -3030,8 +3085,8 @@
         "en": "Condorcet vote algorithm in TypeScript."
       },
       "cat": 6,
-      "dex": 56,
-      "dexLabel": "056",
+      "dex": 57,
+      "dexLabel": "057",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3085,8 +3140,8 @@
         "en": "Check whether a dataset follows Benford's law."
       },
       "cat": 6,
-      "dex": 57,
-      "dexLabel": "057",
+      "dex": 58,
+      "dexLabel": "058",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3139,8 +3194,8 @@
         "en": "Helpers for Gaussian calculations."
       },
       "cat": 6,
-      "dex": 58,
-      "dexLabel": "058",
+      "dex": 59,
+      "dexLabel": "059",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3194,8 +3249,8 @@
         "en": "Minimalist context for Node, inspired by the React Context API."
       },
       "cat": 6,
-      "dex": 59,
-      "dexLabel": "059",
+      "dex": 60,
+      "dexLabel": "060",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -3249,8 +3304,8 @@
         "en": "Useful hooks and components for React."
       },
       "cat": 6,
-      "dex": 60,
-      "dexLabel": "060",
+      "dex": 61,
+      "dexLabel": "061",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3300,8 +3355,8 @@
         "en": "Essential zero-dependency TypeScript helpers."
       },
       "cat": 6,
-      "dex": 61,
-      "dexLabel": "061",
+      "dex": 62,
+      "dexLabel": "062",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3353,8 +3408,8 @@
         "en": "Zero-dependency fix for date-parsing issues in React Native on Android."
       },
       "cat": 6,
-      "dex": 62,
-      "dexLabel": "062",
+      "dex": 63,
+      "dexLabel": "063",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3408,8 +3463,8 @@
         "en": "Lightweight, zero-dependency React Native modal (no animation)."
       },
       "cat": 6,
-      "dex": 63,
-      "dexLabel": "063",
+      "dex": 64,
+      "dexLabel": "064",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3461,8 +3516,8 @@
         "en": "async-storage wrapper for storing huge data in React Native."
       },
       "cat": 6,
-      "dex": 64,
-      "dexLabel": "064",
+      "dex": 65,
+      "dexLabel": "065",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -3516,8 +3571,8 @@
         "en": "Track who unfollowed you on Instagram."
       },
       "cat": 6,
-      "dex": 65,
-      "dexLabel": "065",
+      "dex": 66,
+      "dexLabel": "066",
       "stars": 9,
       "forks": 0,
       "language": "TypeScript",
@@ -3571,8 +3626,8 @@
         "en": "Unofficial Node SDK for api-money.com."
       },
       "cat": 6,
-      "dex": 66,
-      "dexLabel": "066",
+      "dex": 67,
+      "dexLabel": "067",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3623,8 +3678,8 @@
         "en": "Action to change a value in a JSON file (e.g. package.json)."
       },
       "cat": 7,
-      "dex": 67,
-      "dexLabel": "067",
+      "dex": 68,
+      "dexLabel": "068",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -3678,8 +3733,8 @@
         "en": "Action to commit and push a file to a repository."
       },
       "cat": 7,
-      "dex": 68,
-      "dexLabel": "068",
+      "dex": 69,
+      "dexLabel": "069",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -3732,8 +3787,8 @@
         "en": "Action to manage deployment statuses across multiple environments."
       },
       "cat": 7,
-      "dex": 69,
-      "dexLabel": "069",
+      "dex": 70,
+      "dexLabel": "070",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3784,8 +3839,8 @@
         "en": "Minimalist TypeScript + SWC starter emitting CJS and ESM packages."
       },
       "cat": 8,
-      "dex": 70,
-      "dexLabel": "070",
+      "dex": 71,
+      "dexLabel": "071",
       "stars": 32,
       "forks": 5,
       "language": "TypeScript",
@@ -3839,8 +3894,8 @@
         "en": "Minimalist TS + SWC starter for building React component libraries."
       },
       "cat": 8,
-      "dex": 71,
-      "dexLabel": "071",
+      "dex": 72,
+      "dexLabel": "072",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -3891,8 +3946,8 @@
         "en": "Curated list of repositories I've liked on GitHub."
       },
       "cat": 9,
-      "dex": 72,
-      "dexLabel": "072",
+      "dex": 73,
+      "dexLabel": "073",
       "stars": 22,
       "forks": 3,
       "language": null,
@@ -3939,8 +3994,8 @@
         "en": "Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`)."
       },
       "cat": 9,
-      "dex": 73,
-      "dexLabel": "073",
+      "dex": 74,
+      "dexLabel": "074",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -3992,8 +4047,8 @@
         "en": "Source of a writer's website."
       },
       "cat": 9,
-      "dex": 74,
-      "dexLabel": "074",
+      "dex": 75,
+      "dexLabel": "075",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",
