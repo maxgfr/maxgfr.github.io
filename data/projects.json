@@ -2,7 +2,7 @@
   "generated": "2026-08",
   "totals": {
     "repos": 75,
-    "stars": 301
+    "stars": 302
   },
   "languages": [
     {
@@ -574,7 +574,7 @@
       "cat": 0,
       "dex": 10,
       "dexLabel": "010",
-      "stars": 3,
+      "stars": 4,
       "forks": 0,
       "language": "JavaScript",
       "topics": [
@@ -593,8 +593,8 @@
       "poke": {
         "type1": "rock",
         "type2": "electric",
-        "hp": 140,
-        "level": 27,
+        "hp": 150,
+        "level": 29,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
