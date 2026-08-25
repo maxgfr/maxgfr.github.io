@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 75 dépôts publics · ⭐ 303 étoiles**
+**📦 76 dépôts publics · ⭐ 303 étoiles**
 
 ---
 
@@ -35,6 +35,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle tournera — avant de la télécharger. Lit les vrais en-têtes GGUF/safetensors par requêtes HTTP Range, mesure la machine et recommande un moteur. Aucune liste de modèles embarquée (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Lance Claude Code (et Codex) « sous caféine » — garde la machine éveillée le temps de la session, puis restaure la veille. Multi-plateforme, zéro-dépendance.
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule zéro-dépendance entre fournisseurs pour Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…).
+- **[codexify](https://github.com/maxgfr/codexify)** — Boîte à outils sidecar pour Codex : profils de modèles, notifications Action Required fiables, sauvegarde de configuration, maintien en éveil et diagnostics (Rust).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits intelligents, résolution de conflits et rebase auto (Claude/Codex/OpenAI/Gemini/Mistral). 100% Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Générateur de récap mensuel des commits : résumés par IA, points clés et liste des commits.
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Récupère les derniers modèles LLM depuis les API OpenRouter et models.dev. · [npm](https://www.npmjs.com/package/llm-models)
