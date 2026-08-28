@@ -2758,7 +2758,7 @@
       "dex": 51,
       "dexLabel": "051",
       "stars": 0,
-      "forks": 0,
+      "forks": 1,
       "language": "TypeScript",
       "topics": [
         "browser-game",
@@ -2776,8 +2776,8 @@
       "poke": {
         "type1": "dragon",
         "type2": "water",
-        "hp": 160,
-        "level": 34,
+        "hp": 170,
+        "level": 36,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
