@@ -2,7 +2,7 @@
   "generated": "2026-08",
   "totals": {
     "repos": 76,
-    "stars": 303
+    "stars": 304
   },
   "languages": [
     {
@@ -2812,7 +2812,7 @@
       "cat": 5,
       "dex": 52,
       "dexLabel": "052",
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
       "language": "Python",
       "topics": [
@@ -2831,18 +2831,18 @@
       "poke": {
         "type1": "ground",
         "type2": "grass",
-        "hp": 130,
-        "level": 27,
+        "hp": 140,
+        "level": 28,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
           {
             "name": "duckdb",
-            "dmg": 80
+            "dmg": 90
           },
           {
             "name": "fastapi",
-            "dmg": 50
+            "dmg": 60
           }
         ],
         "sprite": [
