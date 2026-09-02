@@ -2,7 +2,7 @@
   "generated": "2026-09",
   "totals": {
     "repos": 76,
-    "stars": 304
+    "stars": 306
   },
   "languages": [
     {
@@ -120,7 +120,7 @@
         "skills"
       ],
       "created": "2026-08",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
@@ -276,7 +276,7 @@
         "research"
       ],
       "created": "2026-06",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
@@ -484,7 +484,7 @@
         "lead-generation"
       ],
       "created": "2026-08",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
@@ -640,7 +640,7 @@
         "subagents"
       ],
       "created": "2026-07",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
@@ -802,7 +802,7 @@
         "typescript"
       ],
       "created": "2026-08",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
@@ -1062,7 +1062,7 @@
         "homebrew"
       ],
       "created": "2026-04",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -1533,7 +1533,7 @@
         "streaming"
       ],
       "created": "2026-03",
-      "pushed": "2026-05",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
@@ -2161,7 +2161,7 @@
       "cat": 3,
       "dex": 40,
       "dexLabel": "040",
-      "stars": 85,
+      "stars": 86,
       "forks": 9,
       "language": "TypeScript",
       "topics": [
@@ -2826,7 +2826,7 @@
         "stock-screener"
       ],
       "created": "2026-07",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "ground",
@@ -3625,8 +3625,8 @@
       "cat": 6,
       "dex": 67,
       "dexLabel": "067",
-      "stars": 9,
-      "forks": 0,
+      "stars": 10,
+      "forks": 1,
       "language": "TypeScript",
       "topics": [
         "api",
@@ -3644,9 +3644,9 @@
       "poke": {
         "type1": "ghost",
         "type2": "water",
-        "hp": 180,
-        "level": 62,
-        "rarity": "uncommon",
+        "hp": 200,
+        "level": 65,
+        "rarity": "rare",
         "weakness": "dark",
         "moves": [
           {
@@ -4010,7 +4010,7 @@
         "stars"
       ],
       "created": "2021-10",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": null,
       "poke": {
         "type1": "dragon",
@@ -4060,7 +4060,7 @@
         "tap"
       ],
       "created": "2025-12",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": null,
       "poke": {
         "type1": "ghost",
