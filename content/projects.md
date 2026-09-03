@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 76 dépôts publics · ⭐ 306 étoiles**
+**📦 75 dépôts publics · ⭐ 304 étoiles**
 
 ---
 
@@ -16,7 +16,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un dépôt entier en une encyclopédie navigable par l'IA (carte + fiches par module + graphe de liens) pour les très gros codebases.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Agent d'audit de sécurité multi-fichiers : analyse de teinte source→puits + Trivy/Semgrep/gitleaks/osv, vérifiée de façon adversariale en rapport sourcé.
-- **[ultra11y](https://github.com/maxgfr/ultra11y)** — Audite le HTML/CSS/JSX selon le RGAA 4.1.2 + WCAG 2.1/2.2 AA via un moteur statique zéro-dépendance + le jugement de l'IA.
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Trouve toutes les chaînes lisibles d'un dépôt, les classe, les traduit avec des modèles bon marché et prouve qu'aucune n'a été oubliée : moteur zéro-dépendance, le modèle n'ouvre jamais un fichier source.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu — ville, rue, rayon — en fichier de prospection défendable : balaie OpenStreetMap dans le monde entier et le registre d'entreprises que le pays possède réellement, fusionne les deux en une entité par entreprise, enrichit depuis le site de chacune (offres d'emploi lues via les API des ATS, sans navigateur) et refuse de deviner. La France, le Royaume-Uni et l'Estonie sont énumérables sans aucune clé — le UK depuis l'open data mensuel de Companies House, l'Estonie depuis un registre reconstruit chaque jour ; l'export allemand nomme le titulaire d'un HRB que VIES refuse de divulguer. Ailleurs, chaque entreprise est confirmée depuis l'immatriculation que son propre site doit publier par la loi. Lieu ambigu, appariement incertain, balayage partiel, enregistrement d'archive non daté ou contact non observé font échouer le run. Zéro dépendance, aucune clé d'API.
 - **[construct](https://github.com/maxgfr/construct)** — Transforme une idée produit en un cahier des charges (SRD/PRD) complet et réalisable (skill d'agent skills.sh).

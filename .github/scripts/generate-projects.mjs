@@ -82,7 +82,16 @@ async function allOwnedRepos() {
     if (batch.length < 100) break;
   }
   const excluded = new Set([...(CONFIG.exclude || []), ...(CONFIG.excludeFromSite || [])]);
-  return out.filter((r) => !r.private && !r.fork && !r.archived && !excluded.has(r.name));
+  // GitHub can keep transferred repositories in this endpoint temporarily, even
+  // with type=owner, so verify the owner returned by the API as well.
+  return out.filter(
+    (r) =>
+      r.owner?.login.toLowerCase() === USER.toLowerCase() &&
+      !r.private &&
+      !r.fork &&
+      !r.archived &&
+      !excluded.has(r.name)
+  );
 }
 
 function linkKey(url) {
