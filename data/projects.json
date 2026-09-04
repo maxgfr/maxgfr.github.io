@@ -2,7 +2,7 @@
   "generated": "2026-09",
   "totals": {
     "repos": 75,
-    "stars": 304
+    "stars": 305
   },
   "languages": [
     {
@@ -788,7 +788,7 @@
       "cat": 1,
       "dex": 14,
       "dexLabel": "014",
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
       "language": "Rust",
       "topics": [
@@ -807,18 +807,18 @@
       "poke": {
         "type1": "ghost",
         "type2": "fire",
-        "hp": 160,
-        "level": 34,
+        "hp": 170,
+        "level": 36,
         "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
           {
             "name": "agents md",
-            "dmg": 70
+            "dmg": 80
           },
           {
             "name": "amazonq",
-            "dmg": 80
+            "dmg": 90
           }
         ],
         "sprite": [
@@ -2288,7 +2288,7 @@
         "privacy"
       ],
       "created": "2026-07",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "dark",
