@@ -172,7 +172,7 @@
         "grounded-generation"
       ],
       "created": "2026-06",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -380,7 +380,7 @@
         "internationalization"
       ],
       "created": "2026-07",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
@@ -484,7 +484,7 @@
         "greenfield"
       ],
       "created": "2026-06",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -802,7 +802,7 @@
         "config-sync"
       ],
       "created": "2026-04",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
@@ -1221,7 +1221,7 @@
         "zod"
       ],
       "created": "2026-04",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -1273,7 +1273,7 @@
         "apple-silicon"
       ],
       "created": "2026-06",
-      "pushed": "2026-06",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
@@ -1377,7 +1377,7 @@
         "shc"
       ],
       "created": "2026-03",
-      "pushed": "2026-03",
+      "pushed": "2026-09",
       "license": "GPL-3.0",
       "poke": {
         "type1": "dark",
@@ -1689,7 +1689,7 @@
         "poppler"
       ],
       "created": "2026-01",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
