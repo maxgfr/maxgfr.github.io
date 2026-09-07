@@ -66,7 +66,7 @@
   margin: 0 0 0.75rem;
 }
 
-/* The two fieldsets sit 0.6rem apart because they are one thing — a pair of
+/* The three fieldsets sit 0.6rem apart because they are one group of
    preferences. The buttons are the next thing, so they stand further off:
    without the extra room the downloads read as a third row of settings.
    Collapses against the last fieldset's margin, so this is the whole gap. */
@@ -77,9 +77,8 @@
   margin: 1.2rem 0 0;
 }
 
-/* The two download preferences — typeface and language — are laid out
-   identically, so they share these rules; `.cv-font` / `.cv-lang` are there to
-   tell them apart, not to style them. Note `.cv-font` the class and
+/* The download preferences are laid out identically, so they share these rules;
+   their specific classes tell them apart, not style them. Note `.cv-font` and
    `[data-cv-font]` the attribute above are unrelated: the first is this
    fieldset, the second is what ?font= sets on <html>.
 
@@ -118,8 +117,9 @@
   cursor: pointer;
 }
 
-/* suCSS resets appearance on inputs, which leaves radios invisible. */
-.cv-choice input[type="radio"] {
+/* suCSS resets appearance on inputs, which leaves native choices invisible. */
+.cv-choice input[type="radio"],
+.cv-choice input[type="checkbox"] {
   appearance: revert;
   -webkit-appearance: revert;
   accent-color: var(--accent);
@@ -305,6 +305,12 @@
   /* Print is the whole point of this element — see .cv-email above. */
   .cv-email {
     display: list-item;
+  }
+
+  /* The renderer sets this only for the four full PDFs without projects. Keep
+     the section in the DOM so both variants still share the same source. */
+  [data-cv-projects="hide"] #cv-projects {
+    display: none;
   }
 
   .cv-section {

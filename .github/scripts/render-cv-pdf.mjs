@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Renders the site's /cv and /en/cv pages to PDF with headless Chrome.
+// Renders the site's one-page and full CVs to PDF with headless Chrome. Full
+// CVs ship both with and without the generated projects section.
 // Zero dependencies (Node 18+). Used unchanged by BOTH .github/workflows/deploy.yml
 // and the local `cv` skill, so what you tune locally is exactly what ships.
 //
@@ -33,24 +34,30 @@ const keep = argv.includes('--keep');
 const VARIANTS = [
   { name: 'fr-1p', path: '/cv-1page/', locale: 'fr-FR,fr', maxPages: 1 },
   { name: 'fr-full', path: '/cv/', locale: 'fr-FR,fr' },
+  { name: 'fr-full-no-projects', path: '/cv/', locale: 'fr-FR,fr', hideProjects: true },
   { name: 'en-1p', path: '/en/cv-1page/', locale: 'en-US,en', maxPages: 1 },
   { name: 'en-full', path: '/en/cv/', locale: 'en-US,en' },
+  { name: 'en-full-no-projects', path: '/en/cv/', locale: 'en-US,en', hideProjects: true },
 ];
 
 // Every variant ships in both typefaces, so the download page can offer the
-// choice. `?font=` is read by the page's own <head> script (templates/cv.html);
-// the static server below parses only the pathname, so the query changes what
-// is rendered without changing what is served. Both have to fit on one page:
-// the site's monospace is wider than the sans-serif, so it is the binding
-// constraint and the one to watch when trimming.
+// choice. `?font=` and `?projects=hide` are read by the page's own <head> script
+// (templates/cv.html); the static server below parses only the pathname, so the
+// query changes what is rendered without changing what is served. Both one-page
+// fonts have to fit: the site's monospace is wider than the sans-serif, so it is
+// the binding constraint and the one to watch when trimming.
 const FONTS = ['sans', 'mono'];
 
 const TARGETS = VARIANTS.flatMap((variant) =>
-  FONTS.map((font) => ({
-    ...variant,
-    name: `${variant.name}-${font}`,
-    path: `${variant.path}?font=${font}`,
-  }))
+  FONTS.map((font) => {
+    const params = new URLSearchParams({ font });
+    if (variant.hideProjects) params.set('projects', 'hide');
+    return {
+      ...variant,
+      name: `${variant.name}-${font}`,
+      path: `${variant.path}?${params}`,
+    };
+  })
 );
 
 const CHROME_TIMEOUT_MS = 90_000;

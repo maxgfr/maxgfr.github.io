@@ -26,15 +26,17 @@
 <link rel="stylesheet" href="{{ get_url(path='css/cv.css') }}">
 {% if compact %}<link rel="stylesheet" href="{{ get_url(path='css/cv-compact.css') }}">{% endif %}
 {#
-  Typeface comes from ?font=. This is how render-cv-pdf.mjs asks for each of the
-  two PDF variants — the script's static server ignores the query string, so the
-  same page serves both. In <head> and synchronous on purpose: set any later and
-  the page paints in one font and reflows into the other.
+  Typeface comes from ?font= and the projects-less PDF from ?projects=hide.
+  render-cv-pdf.mjs uses both while serving the same static page. In <head> and
+  synchronous on purpose: set either any later and the printed page can be
+  captured before its final layout is applied.
 #}
 <script>
     (function () {
-        var font = new URLSearchParams(location.search).get("font");
+        var params = new URLSearchParams(location.search);
+        var font = params.get("font");
         if (font === "sans" || font === "mono") document.documentElement.dataset.cvFont = font;
+        if (params.get("projects") === "hide") document.documentElement.dataset.cvProjects = "hide";
     })();
 </script>
 {% endblock %}
@@ -65,12 +67,11 @@
 
         {# Both formats are offered from both pages: a visitor should never have
            to hunt for the other one. Each is rendered in two typefaces and two
-           languages, and the choices below pick which file the buttons download
-           — they do not touch this page. Typeface defaults to the sans-serif:
-           this CV is read by résumé parsers and by recruiters, and the site's
-           monospace is a strong stylistic signal that not every reader wants.
-           Language defaults to the page's own, so the shipped markup is already
-           consistent before any script runs.
+           languages, and the full CV also ships with or without the projects.
+           The choices below pick which file the buttons download — they do not
+           touch this page. Typeface defaults to the sans-serif; projects default
+           to omitted. Language defaults to the page's own, so the shipped markup
+           is already consistent before any script runs.
 
            The language labels stay in their own tongue in both variants, as a
            language selector always does — and it saves translating them. #}
@@ -97,6 +98,13 @@
                     English
                 </label>
             </fieldset>
+            <fieldset class="cv-choice cv-projects-choice">
+                <legend>{% if en %}Full PDF{% else %}PDF complet{% endif %}</legend>
+                <label>
+                    <input type="checkbox" name="cv-projects" value="include">
+                    {% if en %}Include projects{% else %}Inclure les projets{% endif %}
+                </label>
+            </fieldset>
             {# The "(PDF · XX)" tag is deliberately outside the translated label:
                it is the same in both languages, so the script has one text node
                to rewrite and there is nothing to keep in sync twice. #}
@@ -107,7 +115,7 @@
                     <span class="cv-download-tag">(PDF · <span data-cv-pdf-lang>{{ page.lang | upper }}</span>)</span>
                 </a>
                 <a class="cv-download cv-download-alt" data-cv-pdf="full"
-                   href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-full-sans.pdf') }}" download>
+                   href="{{ get_url(path='maxime-golfier-cv-' ~ page.lang ~ '-full-no-projects-sans.pdf') }}" download>
                     {% if en %}Download — full{% else %}Télécharger — complet{% endif %}
                     <span class="cv-download-tag">(PDF · <span data-cv-pdf-lang>{{ page.lang | upper }}</span>)</span>
                 </a>
@@ -212,36 +220,41 @@
 </script>
 
 {#
-  Both radio groups pick the FILE, nothing else. They deliberately do not
+  All three preferences pick the FILE, nothing else. They deliberately do not
   restyle or reload this page: the site is monospace by design, and having a
   download preference silently reskin — or worse, navigate away from — the page
   you are reading is a surprise, not a feature. The only thing that changes is
-  which of the eight PDFs the buttons point at.
+  which of the twelve PDFs the buttons point at. The projects checkbox only
+  affects the full PDF; the one-pager omits that section unconditionally.
 
   The language radio in particular must not touch localStorage: static/js/
   language.js keys the whole site's /x <-> /en/x redirect off `lang-preference`,
   so writing it here would turn "I want the English file" into a sticky
   site-wide language switch.
 
-  Progressive enhancement — with no JS the radios do nothing and the links still
-  resolve to the sans-serif files, in the page's own language, that they ship
-  with; the "(PDF · XX)" tag ships matching them.
+  Progressive enhancement — with no JS the controls do nothing and the links
+  still resolve to sans-serif files in the page's own language, with projects
+  omitted from the full PDF; the "(PDF · XX)" tag ships matching them.
 #}
 <script>
     (function () {
         var fontRadios = document.querySelectorAll('input[name="cv-font"]');
         var langRadios = document.querySelectorAll('input[name="cv-lang"]');
-        if (!fontRadios.length || !langRadios.length) return;
+        var projectsCheckbox = document.querySelector('input[name="cv-projects"]');
+        if (!fontRadios.length || !langRadios.length || !projectsCheckbox) return;
 
         function pointDownloads() {
             var font = document.querySelector('input[name="cv-font"]:checked').value;
             var lang = document.querySelector('input[name="cv-lang"]:checked').value;
+            var includeProjects = projectsCheckbox.checked;
             // Rewrites the whole suffix from whatever it currently is, so the
-            // two groups can be changed in any order any number of times.
+            // three preferences can be changed in any order any number of times.
             document.querySelectorAll("[data-cv-pdf]").forEach(function (link) {
+                var format = link.dataset.cvPdf;
+                if (format === "full" && !includeProjects) format = "full-no-projects";
                 link.href = link.href.replace(
-                    /-(?:fr|en)-(1p|full)-(?:sans|mono)\.pdf$/,
-                    "-" + lang + "-$1-" + font + ".pdf"
+                    /-(?:fr|en)-(?:1p|full(?:-no-projects)?)-(?:sans|mono)\.pdf$/,
+                    "-" + lang + "-" + format + "-" + font + ".pdf"
                 );
             });
             document.querySelectorAll("[data-cv-pdf-lang]").forEach(function (el) {
@@ -265,6 +278,7 @@
         }
         fontRadios.forEach(wire);
         langRadios.forEach(wire);
+        projectsCheckbox.addEventListener("change", pointDownloads);
 
         pointDownloads();
     })();

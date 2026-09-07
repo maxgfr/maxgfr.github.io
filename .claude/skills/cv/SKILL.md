@@ -5,29 +5,27 @@ description: "Use when working on Maxime's CV on the maxgfr.github.io Zola site 
 
 # CV PDFs for maxgfr.github.io
 
-Eight PDFs are published at every deploy, rendered by headless Chrome from the
-site's own pages — two formats × two languages × two typefaces, named
-`maxime-golfier-cv-{fr|en}-{1p|full}-{sans|mono}.pdf`:
+Twelve PDFs are published at every deploy, rendered by headless Chrome from the
+site's own pages — two languages × two typefaces, with a one-page PDF and full
+PDFs both with and without projects:
 
 | Route | Rendered as | Pages |
 |---|---|---|
 | `/cv-1page`, `/en/cv-1page` | `…-1p-sans`, `…-1p-mono` | exactly 1 — enforced |
 | `/cv`, `/en/cv` | `…-full-sans`, `…-full-mono` | as many as needed |
+| `/cv`, `/en/cv` + `?projects=hide` | `…-full-no-projects-sans`, `…-full-no-projects-mono` | as many as needed |
 
-The typeface comes from `?font=sans` / `?font=mono` on the URL, read by an inline
-`<head>` script in `templates/cv.html`. That query is how `render-cv-pdf.mjs`
-asks for each variant, and it is the *only* thing that restyles the page.
+The typeface comes from `?font=sans` / `?font=mono` on the URL, and the full CV
+without projects from `?projects=hide`; both are read by an inline `<head>`
+script in `templates/cv.html`. The projects flag only affects print.
 
-The two radio groups in `.cv-actions` — typeface and language — deliberately do
-not: they swap which of the eight files the download buttons point at, and
-nothing else. Browsing `/cv` leaves the page monospace and French like the rest
-of the site. Do not "improve" this into a live preview — it was built that way
-once and reverted, because a download preference that silently reskins the page
-you are reading reads as a bug. The same goes for navigation: the language radio
-must never redirect to `/en/cv`, and must never write `lang-preference`, or a
-one-off "give me the English file" becomes a sticky site-wide language switch
-(see `static/js/language.js`). Grabbing the English PDF from the French page is
-the whole point of the control.
+The three controls in `.cv-actions` — typeface, language and whether the full PDF
+includes projects — deliberately only swap which of the twelve files the
+download buttons point at. Browsing `/cv` leaves the page monospace, French and
+complete like the rest of the site. Keep these as download preferences rather
+than a live preview. The language radio must never redirect to `/en/cv` or write
+`lang-preference`; grabbing the English PDF from the French page is the point.
+The projects checkbox is unchecked by default and affects only the full PDF.
 
 `sans` is the default the download buttons ship with: this CV is read by résumé
 parsers and recruiters, and the site's monospace is a strong stylistic signal.
@@ -194,7 +192,7 @@ Three pieces, all of which have to stay in place:
 still reads it. Do not describe it as anything stronger. No phone number: that
 one is simply not published anywhere.
 
-Check after touching any of the three: the address must appear in all eight PDFs
+Check after touching any of the three: the address must appear in all twelve PDFs
 and in none of the built HTML.
 
 Note the checks match the domain rather than spelling the address out — writing
@@ -205,7 +203,7 @@ and returns 2, which reads as a leak that is not one.
 
 ```bash
 grep -rc '@gmail' public/ | grep -v ':0' | wc -l                                      # expect 0
-for f in tmp-cv/maxime-golfier-cv-*.pdf; do pdftotext "$f" -; done | grep -c '@gmail'  # expect 8
+for f in tmp-cv/maxime-golfier-cv-*.pdf; do pdftotext "$f" -; done | grep -c '@gmail'  # expect 12
 ```
 
 ## Hard rules
@@ -216,8 +214,8 @@ for f in tmp-cv/maxime-golfier-cv-*.pdf; do pdftotext "$f" -; done | grep -c '@g
   `maxgfr/maxgfr`'s `.github/projects.json` themes in that file's order,
   most-starred first within a theme, uncategorised ones in the fallback theme.
   To change what appears, edit that JSON (it lives in the other repo), not the
-  generated Markdown. Only the full CV renders it; the one-pager hides the
-  section outright.
+  generated Markdown. The full PDF includes it when requested; the one-pager and
+  `full-no-projects` PDFs hide the section outright.
 - **Any content edit is made in French and English together** (`experience.md`
   *and* `experience.en.md`, …). A change to one only is a bug: the two CVs
   silently diverge. The test is meaning, not wording — a wording fix that only
