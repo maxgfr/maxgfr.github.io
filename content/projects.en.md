@@ -5,7 +5,7 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 75 public repos · ⭐ 306 stars**
+**📦 75 public repos · ⭐ 309 stars**
 
 ---
 
@@ -17,7 +17,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Keyless multi-backend web research → citation-checked, tiered Markdown/HTML report (5 modes + deep-research tier).
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Cross-file security-audit agent: source→sink taint + Trivy/Semgrep/gitleaks/osv, adversarially verified into a cited report.
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds every human-readable string in a repo, classifies it, translates it with cheap models and proves nothing was missed: zero-dependency engine, the model never opens a source file.
-- **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a place — a town, a street, a radius — into a prospect list you can defend: sweeps OpenStreetMap worldwide and whichever company register a country actually has, fuses them into one entity per company, enriches from each company's own site (openings read straight from the ATS APIs, no browser) and refuses to guess. France, the UK and Estonia are enumerated without any key — the UK from Companies House's monthly open data, Estonia from a register rebuilt daily; Germany's export names the HRB holder VIES will not disclose. Elsewhere each company is confirmed from the registration its own site must publish by law. An ambiguous place, an uncertain match, a partial sweep, an undated snapshot record or an unobserved contact all fail the run. Zero-dependency, no API keys.
+- **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turn a location into a sourced prospect list using OpenStreetMap, company registers and business websites. No API keys.
 - **[construct](https://github.com/maxgfr/construct)** — Turns a product idea into a grounded, buildable SRD/PRD suite (skills.sh agent skill).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyzes any repo and generates reconstruction PRDs to rebuild it from scratch.
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Rigorously evaluates a skill or codebase → grounded (file:line) findings + a TDD fix backlog; zero-dep engine with analysis (hotspots, cycles, churn) and brainstorm.
@@ -95,7 +95,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 📦 npm libraries & utilities
 
-- **[regressio](https://github.com/maxgfr/regressio)** — Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine. · [npm](https://www.npmjs.com/package/regressio)
+- **[regressio](https://github.com/maxgfr/regressio)** — Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine. · [demo](https://maxgfr.github.io/regressio/)
 - **[similarities](https://github.com/maxgfr/similarities)** — Functions to find similarities between arrays. · [npm](https://www.npmjs.com/package/similarities)
 - **[condorcet-winner](https://github.com/maxgfr/condorcet-winner)** — Condorcet vote algorithm in TypeScript. · [npm](https://www.npmjs.com/package/condorcet-winner)
 - **[benford-law](https://github.com/maxgfr/benford-law)** — Check whether a dataset follows Benford's law. · [npm](https://www.npmjs.com/package/benford-law)

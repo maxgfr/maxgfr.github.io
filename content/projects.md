@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 75 dépôts publics · ⭐ 306 étoiles**
+**📦 75 dépôts publics · ⭐ 309 étoiles**
 
 ---
 
@@ -17,7 +17,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Agent d'audit de sécurité multi-fichiers : analyse de teinte source→puits + Trivy/Semgrep/gitleaks/osv, vérifiée de façon adversariale en rapport sourcé.
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Trouve toutes les chaînes lisibles d'un dépôt, les classe, les traduit avec des modèles bon marché et prouve qu'aucune n'a été oubliée : moteur zéro-dépendance, le modèle n'ouvre jamais un fichier source.
-- **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu — ville, rue, rayon — en fichier de prospection défendable : balaie OpenStreetMap dans le monde entier et le registre d'entreprises que le pays possède réellement, fusionne les deux en une entité par entreprise, enrichit depuis le site de chacune (offres d'emploi lues via les API des ATS, sans navigateur) et refuse de deviner. La France, le Royaume-Uni et l'Estonie sont énumérables sans aucune clé — le UK depuis l'open data mensuel de Companies House, l'Estonie depuis un registre reconstruit chaque jour ; l'export allemand nomme le titulaire d'un HRB que VIES refuse de divulguer. Ailleurs, chaque entreprise est confirmée depuis l'immatriculation que son propre site doit publier par la loi. Lieu ambigu, appariement incertain, balayage partiel, enregistrement d'archive non daté ou contact non observé font échouer le run. Zéro dépendance, aucune clé d'API.
+- **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu en liste de prospects sourcée grâce à OpenStreetMap, aux registres d’entreprises et aux sites web. Sans clé d’API.
 - **[construct](https://github.com/maxgfr/construct)** — Transforme une idée produit en un cahier des charges (SRD/PRD) complet et réalisable (skill d'agent skills.sh).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyse n'importe quel dépôt et génère des PRD de reconstruction pour le rebâtir de zéro.
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Évalue rigoureusement une skill ou un codebase → constats sourcés (file:line) + backlog de corrections en TDD ; moteur zéro-dépendance avec analyse (hotspots, cycles, churn) et brainstorm.
@@ -95,7 +95,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 📦 Bibliothèques npm & utilitaires
 
-- **[regressio](https://github.com/maxgfr/regressio)** — Bibliothèque TS zéro-dépendance de régression/classification/stats (OLS, Ridge, Lasso, Logistique, KNN, réseau de neurones) avec moteur Rust/WASM. · [npm](https://www.npmjs.com/package/regressio)
+- **[regressio](https://github.com/maxgfr/regressio)** — Bibliothèque TS zéro-dépendance de régression/classification/stats (OLS, Ridge, Lasso, Logistique, KNN, réseau de neurones) avec moteur Rust/WASM. · [démo](https://maxgfr.github.io/regressio/)
 - **[similarities](https://github.com/maxgfr/similarities)** — Fonctions pour trouver les similarités entre tableaux. · [npm](https://www.npmjs.com/package/similarities)
 - **[condorcet-winner](https://github.com/maxgfr/condorcet-winner)** — Implémentation de l'algorithme de vote de Condorcet en TypeScript. · [npm](https://www.npmjs.com/package/condorcet-winner)
 - **[benford-law](https://github.com/maxgfr/benford-law)** — Vérifie si un jeu de données suit la loi de Benford. · [npm](https://www.npmjs.com/package/benford-law)

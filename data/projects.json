@@ -2,16 +2,16 @@
   "generated": "2026-09",
   "totals": {
     "repos": 75,
-    "stars": 306
+    "stars": 309
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 39
+      "count": 40
     },
     {
       "name": "JavaScript",
-      "count": 14
+      "count": 13
     },
     {
       "name": "Shell",
@@ -262,7 +262,7 @@
       "cat": 0,
       "dex": 4,
       "dexLabel": "004",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -281,18 +281,18 @@
       "poke": {
         "type1": "psychic",
         "type2": "water",
-        "hp": 110,
-        "level": 24,
+        "hp": 120,
+        "level": 25,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
           {
             "name": "citations",
-            "dmg": 60
+            "dmg": 70
           },
           {
             "name": "deep research",
-            "dmg": 40
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -412,15 +412,15 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Transforme un lieu — ville, rue, rayon — en fichier de prospection défendable : balaie OpenStreetMap dans le monde entier et le registre d'entreprises que le pays possède réellement, fusionne les deux en une entité par entreprise, enrichit depuis le site de chacune (offres d'emploi lues via les API des ATS, sans navigateur) et refuse de deviner. La France, le Royaume-Uni et l'Estonie sont énumérables sans aucune clé — le UK depuis l'open data mensuel de Companies House, l'Estonie depuis un registre reconstruit chaque jour ; l'export allemand nomme le titulaire d'un HRB que VIES refuse de divulguer. Ailleurs, chaque entreprise est confirmée depuis l'immatriculation que son propre site doit publier par la loi. Lieu ambigu, appariement incertain, balayage partiel, enregistrement d'archive non daté ou contact non observé font échouer le run. Zéro dépendance, aucune clé d'API.",
-        "en": "Turns a place — a town, a street, a radius — into a prospect list you can defend: sweeps OpenStreetMap worldwide and whichever company register a country actually has, fuses them into one entity per company, enriches from each company's own site (openings read straight from the ATS APIs, no browser) and refuses to guess. France, the UK and Estonia are enumerated without any key — the UK from Companies House's monthly open data, Estonia from a register rebuilt daily; Germany's export names the HRB holder VIES will not disclose. Elsewhere each company is confirmed from the registration its own site must publish by law. An ambiguous place, an uncertain match, a partial sweep, an undated snapshot record or an unobserved contact all fail the run. Zero-dependency, no API keys."
+        "fr": "Transforme un lieu en liste de prospects sourcée grâce à OpenStreetMap, aux registres d’entreprises et aux sites web. Sans clé d’API.",
+        "en": "Turn a location into a sourced prospect list using OpenStreetMap, company registers and business websites. No API keys."
       },
       "cat": 0,
       "dex": 7,
       "dexLabel": "007",
       "stars": 0,
       "forks": 1,
-      "language": "JavaScript",
+      "language": "TypeScript",
       "topics": [
         "agent-skill",
         "ai-agent",
@@ -436,9 +436,9 @@
       "license": "MIT",
       "poke": {
         "type1": "psychic",
-        "type2": "electric",
-        "hp": 250,
-        "level": 88,
+        "type2": "water",
+        "hp": 160,
+        "level": 33,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -1311,7 +1311,7 @@
       "cat": 2,
       "dex": 24,
       "dexLabel": "024",
-      "stars": 38,
+      "stars": 40,
       "forks": 2,
       "language": "Rust",
       "topics": [
@@ -1331,7 +1331,7 @@
         "type1": "dark",
         "type2": "fire",
         "hp": 250,
-        "level": 92,
+        "level": 95,
         "rarity": "holo",
         "weakness": "fighting",
         "moves": [
@@ -2554,7 +2554,7 @@
         "release-notes"
       ],
       "created": "2022-11",
-      "pushed": "2026-04",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -2829,7 +2829,7 @@
         "historical-data"
       ],
       "created": "2022-03",
-      "pushed": "2026-07",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -2965,10 +2965,10 @@
     {
       "name": "regressio",
       "url": "https://github.com/maxgfr/regressio",
-      "home": "https://www.npmjs.com/package/regressio",
+      "home": "https://maxgfr.github.io/regressio/",
       "homeLabel": {
-        "fr": "npm",
-        "en": "npm"
+        "fr": "démo",
+        "en": "demo"
       },
       "desc": {
         "fr": "Bibliothèque TS zéro-dépendance de régression/classification/stats (OLS, Ridge, Lasso, Logistique, KNN, réseau de neurones) avec moteur Rust/WASM.",
@@ -2991,8 +2991,8 @@
         "ols"
       ],
       "created": "2026-04",
-      "pushed": "2026-04",
-      "license": null,
+      "pushed": "2026-09",
+      "license": "MIT",
       "poke": {
         "type1": "ice",
         "type2": "water",
