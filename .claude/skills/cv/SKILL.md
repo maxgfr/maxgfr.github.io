@@ -1,6 +1,9 @@
 ---
 name: cv
-description: "Use when working on Maxime's CV on the maxgfr.github.io Zola site — generate or regenerate the CV PDFs, preview them, check how many pages they run to, shorten or rebalance a section, make the one-page version fit again, or change how the CV is laid out. Triggers: 'génère mon CV', 'régénère le PDF', 'mon CV tient plus en une page', 'raccourcis la partie IBM', 'optimise mon CV', 'regenerate my resume'."
+description: Generate, preview, and refine Maxime's CV PDFs and layout on the maxgfr.github.io site.
+disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: 'false'
 ---
 
 # CV PDFs for maxgfr.github.io
