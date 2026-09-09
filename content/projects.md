@@ -5,13 +5,14 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 75 dépôts publics · ⭐ 309 étoiles**
+**📦 76 dépôts publics · ⭐ 311 étoiles**
 
 ---
 
 ## 🪄 Skills d'agent
 
 - **[skills](https://github.com/maxgfr/skills)** — Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Installable d'un seul `npx skills add maxgfr/skills`, ou comme plugin Claude Code. · [site](https://www.skills.sh/maxgfr/skills)
+- **[scopelet](https://github.com/maxgfr/scopelet)** — Skill pour Codex et Claude Code avec CLI Rust : filtre et agrège les données localement avant de les envoyer au modèle, avec récupération des originaux et omissions explicites.
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence vérifiées pour n'importe quel projet open source, à partir de son vrai code, ses issues et PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un dépôt entier en une encyclopédie navigable par l'IA (carte + fiches par module + graphe de liens) pour les très gros codebases.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).
