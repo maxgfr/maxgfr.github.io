@@ -19,18 +19,18 @@
     },
     {
       "name": "Rust",
-      "count": 7
+      "count": 6
     },
     {
       "name": "HTML",
       "count": 2
     },
     {
-      "name": "Go",
-      "count": 1
+      "name": "Python",
+      "count": 2
     },
     {
-      "name": "Python",
+      "name": "Go",
       "count": 1
     },
     {
@@ -160,22 +160,22 @@
       "dexLabel": "002",
       "stars": 0,
       "forks": 0,
-      "language": "Rust",
+      "language": "Python",
       "topics": [],
       "created": "2026-09",
       "pushed": "2026-09",
       "license": "MIT",
       "poke": {
-        "type1": "fire",
+        "type1": "grass",
         "type2": null,
         "hp": 70,
         "level": 14,
         "rarity": "common",
-        "weakness": "water",
+        "weakness": "fire",
         "moves": [
           {
-            "name": "Rust",
-            "dmg": 50
+            "name": "Python",
+            "dmg": 10
           }
         ],
         "sprite": [
