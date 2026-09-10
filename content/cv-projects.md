@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 76 dépôts publics, totalisant 311 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 76 dépôts publics, totalisant 312 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
