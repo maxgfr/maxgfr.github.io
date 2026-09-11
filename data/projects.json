@@ -147,45 +147,6 @@
       }
     },
     {
-      "name": "scopelet",
-      "url": "https://github.com/maxgfr/scopelet",
-      "home": null,
-      "homeLabel": null,
-      "desc": {
-        "fr": "Skill pour Codex et Claude Code avec CLI Rust : filtre et agrège les données localement avant de les envoyer au modèle, avec récupération des originaux et omissions explicites.",
-        "en": "Skill for Codex and Claude Code with a Rust CLI: filters and aggregates evidence locally before sending it to the model, with original recovery and explicit omissions."
-      },
-      "cat": 0,
-      "dex": 2,
-      "dexLabel": "002",
-      "stars": 0,
-      "forks": 0,
-      "language": "Python",
-      "topics": [],
-      "created": "2026-09",
-      "pushed": "2026-09",
-      "license": "MIT",
-      "poke": {
-        "type1": "grass",
-        "type2": null,
-        "hp": 70,
-        "level": 14,
-        "rarity": "common",
-        "weakness": "fire",
-        "moves": [
-          {
-            "name": "Python",
-            "dmg": 10
-          }
-        ],
-        "sprite": [
-          "M2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4z",
-          "M1 4h2v1h-2zM5 4h2v1h-2zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
-          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM2 9h8v1h-8zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
-        ]
-      }
-    },
-    {
       "name": "ultradoc",
       "url": "https://github.com/maxgfr/ultradoc",
       "home": null,
@@ -195,8 +156,8 @@
         "en": "Grounded Q&A + citation-checked reference docs for any OSS project, from its real source, issues & PRs."
       },
       "cat": 0,
-      "dex": 3,
-      "dexLabel": "003",
+      "dex": 2,
+      "dexLabel": "002",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -247,8 +208,8 @@
         "en": "Indexes a whole repo into an AI-navigable encyclopedia (map + per-module entries + link-graph) for huge codebases."
       },
       "cat": 0,
-      "dex": 4,
-      "dexLabel": "004",
+      "dex": 3,
+      "dexLabel": "003",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -299,8 +260,8 @@
         "en": "Keyless multi-backend web research → citation-checked, tiered Markdown/HTML report (5 modes + deep-research tier)."
       },
       "cat": 0,
-      "dex": 5,
-      "dexLabel": "005",
+      "dex": 4,
+      "dexLabel": "004",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -351,8 +312,8 @@
         "en": "Cross-file security-audit agent: source→sink taint + Trivy/Semgrep/gitleaks/osv, adversarially verified into a cited report."
       },
       "cat": 0,
-      "dex": 6,
-      "dexLabel": "006",
+      "dex": 5,
+      "dexLabel": "005",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -403,8 +364,8 @@
         "en": "Finds every human-readable string in a repo, classifies it, translates it with cheap models and proves nothing was missed: zero-dependency engine, the model never opens a source file."
       },
       "cat": 0,
-      "dex": 7,
-      "dexLabel": "007",
+      "dex": 6,
+      "dexLabel": "006",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -455,8 +416,8 @@
         "en": "Turn a location into a sourced prospect list using OpenStreetMap, company registers and business websites. No API keys."
       },
       "cat": 0,
-      "dex": 8,
-      "dexLabel": "008",
+      "dex": 7,
+      "dexLabel": "007",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -507,8 +468,8 @@
         "en": "Turns a product idea into a grounded, buildable SRD/PRD suite (skills.sh agent skill)."
       },
       "cat": 0,
-      "dex": 9,
-      "dexLabel": "009",
+      "dex": 8,
+      "dexLabel": "008",
       "stars": 1,
       "forks": 0,
       "language": "JavaScript",
@@ -559,8 +520,8 @@
         "en": "Analyzes any repo and generates reconstruction PRDs to rebuild it from scratch."
       },
       "cat": 0,
-      "dex": 10,
-      "dexLabel": "010",
+      "dex": 9,
+      "dexLabel": "009",
       "stars": 4,
       "forks": 0,
       "language": "JavaScript",
@@ -611,8 +572,8 @@
         "en": "Rigorously evaluates a skill or codebase → grounded (file:line) findings + a TDD fix backlog; zero-dep engine with analysis (hotspots, cycles, churn) and brainstorm."
       },
       "cat": 0,
-      "dex": 11,
-      "dexLabel": "011",
+      "dex": 10,
+      "dexLabel": "010",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -666,8 +627,8 @@
         "en": "AI-native DMN/FEEL business-rules engine in Go: an LLM writes the rules, the engine proves & runs them deterministically (WASM playground)."
       },
       "cat": 1,
-      "dex": 12,
-      "dexLabel": "012",
+      "dex": 11,
+      "dexLabel": "011",
       "stars": 0,
       "forks": 0,
       "language": "Go",
@@ -721,8 +682,8 @@
         "en": "Zero-dependency repo-indexing engine: symbols, imports, typed cross-file link-graph & analytics — one vendorable engine.mjs, CLI + MCP server included."
       },
       "cat": 1,
-      "dex": 13,
-      "dexLabel": "013",
+      "dex": 12,
+      "dexLabel": "012",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -773,8 +734,8 @@
         "en": "Zero-dependency web-retrieval engine: turns a URL or a file into clean, citable text — HTML, PDFs through a six-rung ladder ending in OCR, office documents — and serves it over MCP. One vendorable engine.mjs, CLI + MCP server included. The web-side companion to codeindex."
       },
       "cat": 1,
-      "dex": 14,
-      "dexLabel": "014",
+      "dex": 13,
+      "dexLabel": "013",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -825,8 +786,8 @@
         "en": "Syncs your AI coding config (rules, skills, agents, MCP servers) across Claude Code, Cursor & more (Rust)."
       },
       "cat": 1,
-      "dex": 15,
-      "dexLabel": "015",
+      "dex": 14,
+      "dexLabel": "014",
       "stars": 3,
       "forks": 0,
       "language": "Rust",
@@ -877,8 +838,8 @@
         "en": "Local secrets firewall for coding agents — redacts credentials in prompts, file reads & tool output before they reach the LLM (Claude Code, Codex, OpenCode). Deterministic hooks, no proxy."
       },
       "cat": 1,
-      "dex": 16,
-      "dexLabel": "016",
+      "dex": 15,
+      "dexLabel": "015",
       "stars": 1,
       "forks": 0,
       "language": "JavaScript",
@@ -916,6 +877,45 @@
           "M3 1h6v1h-6zM1 2h10v1h-10zM0 3h12v1h-12zM5 5h2v1h-2z",
           "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h5v1h-5zM7 5h5v1h-5zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
           "M2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "scopelet",
+      "url": "https://github.com/maxgfr/scopelet",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Skill pour Codex et Claude Code avec CLI Rust : filtre et agrège les données localement avant de les envoyer au modèle, avec récupération des originaux et omissions explicites.",
+        "en": "Skill for Codex and Claude Code with a Rust CLI: filters and aggregates evidence locally before sending it to the model, with original recovery and explicit omissions."
+      },
+      "cat": 1,
+      "dex": 16,
+      "dexLabel": "016",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "topics": [],
+      "created": "2026-09",
+      "pushed": "2026-09",
+      "license": "MIT",
+      "poke": {
+        "type1": "grass",
+        "type2": null,
+        "hp": 70,
+        "level": 14,
+        "rarity": "common",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "Python",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h4v1h-4zM7 3h4v1h-4z",
+          "M1 4h2v1h-2zM5 4h2v1h-2zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM2 7h8v1h-8zM2 8h8v1h-8z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM2 9h8v1h-8zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     },
@@ -2758,7 +2758,7 @@
         "pixel-art"
       ],
       "created": "2026-08",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "dragon",

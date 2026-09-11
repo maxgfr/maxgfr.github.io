@@ -12,7 +12,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 ## 🪄 Skills d'agent
 
 - **[skills](https://github.com/maxgfr/skills)** — Le dépôt de mes skills d'agent — des skills de process, qui changent la façon dont un agent travaille plutôt que ce qu'il sait. Installable d'un seul `npx skills add maxgfr/skills`, ou comme plugin Claude Code. · [site](https://www.skills.sh/maxgfr/skills)
-- **[scopelet](https://github.com/maxgfr/scopelet)** — Skill pour Codex et Claude Code avec CLI Rust : filtre et agrège les données localement avant de les envoyer au modèle, avec récupération des originaux et omissions explicites.
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence vérifiées pour n'importe quel projet open source, à partir de son vrai code, ses issues et PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un dépôt entier en une encyclopédie navigable par l'IA (carte + fiches par module + graphe de liens) pour les très gros codebases.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web multi-moteurs sans clé → rapport Markdown/HTML à sources vérifiées et niveaux de détail (5 modes + recherche approfondie).
@@ -32,6 +31,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[webindex](https://github.com/maxgfr/webindex)** — Moteur de récupération web zéro-dépendance : transforme une URL ou un fichier en texte propre et citable — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques — et le sert en MCP. Un seul engine.mjs embarquable, CLI + serveur MCP inclus. Le pendant web de codeindex.
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Pare-feu local anti-fuite de secrets pour agents de code — masque les identifiants dans les prompts, lectures de fichiers et sorties d'outils avant qu'ils n'atteignent le LLM (Claude Code, Codex, OpenCode). Hooks déterministes, sans proxy.
+- **[scopelet](https://github.com/maxgfr/scopelet)** — Skill pour Codex et Claude Code avec CLI Rust : filtre et agrège les données localement avant de les envoyer au modèle, avec récupération des originaux et omissions explicites.
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle tournera — avant de la télécharger. Lit les vrais en-têtes GGUF/safetensors par requêtes HTTP Range, mesure la machine et recommande un moteur. Aucune liste de modèles embarquée (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Lance Claude Code (et Codex) « sous caféine » — garde la machine éveillée le temps de la session, puis restaure la veille. Multi-plateforme, zéro-dépendance.
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule zéro-dépendance entre fournisseurs pour Claude Code (Anthropic, OpenRouter, DeepSeek, Z.AI, Kimi, Qwen…).
