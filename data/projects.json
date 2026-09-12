@@ -19,18 +19,18 @@
     },
     {
       "name": "Rust",
-      "count": 6
+      "count": 7
     },
     {
       "name": "HTML",
       "count": 2
     },
     {
-      "name": "Python",
-      "count": 2
+      "name": "Go",
+      "count": 1
     },
     {
-      "name": "Go",
+      "name": "Python",
       "count": 1
     },
     {
@@ -894,21 +894,34 @@
       "dexLabel": "016",
       "stars": 0,
       "forks": 0,
-      "language": "Python",
-      "topics": [],
+      "language": "Rust",
+      "topics": [
+        "agent-skills",
+        "agentic-ai",
+        "ai-agents",
+        "anthropic",
+        "claude-code",
+        "claude-skills",
+        "cli",
+        "codex"
+      ],
       "created": "2026-09",
       "pushed": "2026-09",
       "license": "MIT",
       "poke": {
-        "type1": "grass",
-        "type2": null,
-        "hp": 70,
-        "level": 14,
+        "type1": "fighting",
+        "type2": "fire",
+        "hp": 170,
+        "level": 34,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "psychic",
         "moves": [
           {
-            "name": "Python",
+            "name": "claude skills",
+            "dmg": 20
+          },
+          {
+            "name": "context compression",
             "dmg": 10
           }
         ],
@@ -945,7 +958,7 @@
         "llm"
       ],
       "created": "2026-08",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -1572,7 +1585,7 @@
         "ecommerce-monitoring"
       ],
       "created": "2026-02",
-      "pushed": "2026-03",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "steel",
@@ -4102,7 +4115,7 @@
         "writer"
       ],
       "created": "2017-07",
-      "pushed": "2026-04",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
