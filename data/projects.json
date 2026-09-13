@@ -2,7 +2,7 @@
   "generated": "2026-09",
   "totals": {
     "repos": 76,
-    "stars": 312
+    "stars": 313
   },
   "languages": [
     {
@@ -1886,7 +1886,7 @@
       "cat": 3,
       "dex": 35,
       "dexLabel": "035",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -1905,18 +1905,18 @@
       "poke": {
         "type1": "dark",
         "type2": "water",
-        "hp": 180,
-        "level": 39,
+        "hp": 190,
+        "level": 41,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
           {
             "name": "keyboard shortcuts",
-            "dmg": 20
+            "dmg": 30
           },
           {
             "name": "task manager",
-            "dmg": 20
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -3746,7 +3746,7 @@
         "update-json"
       ],
       "created": "2022-03",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "poison",
