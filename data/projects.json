@@ -2,7 +2,7 @@
   "generated": "2026-09",
   "totals": {
     "repos": 77,
-    "stars": 313
+    "stars": 314
   },
   "languages": [
     {
@@ -1368,7 +1368,7 @@
       "cat": 2,
       "dex": 25,
       "dexLabel": "025",
-      "stars": 40,
+      "stars": 41,
       "forks": 2,
       "language": "Rust",
       "topics": [
@@ -1388,7 +1388,7 @@
         "type1": "dark",
         "type2": "fire",
         "hp": 250,
-        "level": 95,
+        "level": 97,
         "rarity": "holo",
         "weakness": "fighting",
         "moves": [
