@@ -76,6 +76,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Find npm-package versions with their GitHub release notes. · [demo](https://maxgfr.github.io/release-notes-finder)
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend. · [demo](https://maxgfr.github.io/kanbo/)
 - **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text (the payload is decoded, not just deleted), C2PA/EXIF/XMP metadata across 11 formats, and visible image watermarks — a flat overlay is inverted exactly rather than painted over, with Telea or MI-GAN inpainting otherwise. Nothing is uploaded: connect-src 'self' alone, proven by a CI gate. · [demo](https://maxgfr.github.io/unmark/)
+- **[siphon](https://github.com/maxgfr/siphon)** — Browser-first video downloader: paste a link, pick a quality, get the file — fetching, merging and converting happen on the device (ffmpeg.wasm, OPFS), nothing is uploaded. For sites a page cannot read, YouTube above all, point it at one thing: an Invidious/Piped/cobalt instance, a one-click Cloudflare relay, a userscript bridge, or your own yt-dlp server (Docker, with cookies, SponsorBlock, clips). Public instances are measured daily and only the ones that answer are offered. Offline PWA and share target.
 
 ---
 
@@ -132,12 +133,6 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Uncategorized
-
-- **[siphon](https://github.com/maxgfr/siphon)** — No description.
 
 ---
 

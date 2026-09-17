@@ -63,6 +63,7 @@ My 77 public repositories, totalling 314 stars — [github.com/maxgfr](https://g
 - **[genpass](https://github.com/maxgfr/genpass)** — Client-side password generator + encrypted vault PWA: exact entropy, EFF…
 - **[nook](https://github.com/maxgfr/nook)** — Local-first, encrypted Notion in the browser: block editor, nested pages…
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Desktop language-learning app with multi-provider AI tutoring.
+- **[siphon](https://github.com/maxgfr/siphon)** — Browser-first video downloader: paste a link, pick a quality, get the file —…
 - **[tick](https://github.com/maxgfr/tick)** — Local-first timer suite, entirely in the browser: multiple simultaneous…
 - **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text…
 
@@ -109,8 +110,4 @@ My 77 public repositories, totalling 314 stars — [github.com/maxgfr](https://g
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
-
-### 🆕 Uncategorized
-
-- **[siphon](https://github.com/maxgfr/siphon)**
 

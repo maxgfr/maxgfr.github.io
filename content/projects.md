@@ -76,6 +76,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version GitHub. · [démo](https://maxgfr.github.io/release-notes-finder)
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Gestion de projet local-first : kanban, sprints et roadmap dans le navigateur, avec un dépôt git comme seul backend. · [démo](https://maxgfr.github.io/kanbo/)
 - **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks dans le navigateur : caractères Unicode invisibles et stéganographie dans le texte (le payload est décodé, pas seulement supprimé), métadonnées C2PA/EXIF/XMP sur 11 formats, et watermarks visibles sur les images — un overlay plat est inversé exactement plutôt que repeint, sinon inpainting Telea ou MI-GAN. Rien n'est uploadé : connect-src 'self' seul, prouvé par un gate CI. · [démo](https://maxgfr.github.io/unmark/)
+- **[siphon](https://github.com/maxgfr/siphon)** — Téléchargeur de vidéos dans le navigateur : collez un lien, choisissez une qualité, récupérez le fichier — récupération, fusion et conversion se font sur l'appareil (ffmpeg.wasm, OPFS), rien n'est envoyé. Pour les sites qu'une page ne peut pas lire, YouTube en tête, une seule adresse suffit : une instance Invidious/Piped/cobalt, un relais Cloudflare en un clic, un userscript pont, ou votre propre serveur yt-dlp (Docker, avec cookies, SponsorBlock, extraits). Les instances publiques sont mesurées chaque jour et seules celles qui répondent sont proposées. PWA hors-ligne et cible de partage.
 
 ---
 
@@ -132,12 +133,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[siphon](https://github.com/maxgfr/siphon)** — Sans description.
 
 ---
 
