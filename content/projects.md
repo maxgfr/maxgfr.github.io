@@ -77,6 +77,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Gestion de projet local-first : kanban, sprints et roadmap dans le navigateur, avec un dépôt git comme seul backend. · [démo](https://maxgfr.github.io/kanbo/)
 - **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks dans le navigateur : caractères Unicode invisibles et stéganographie dans le texte (le payload est décodé, pas seulement supprimé), métadonnées C2PA/EXIF/XMP sur 11 formats, et watermarks visibles sur les images — un overlay plat est inversé exactement plutôt que repeint, sinon inpainting Telea ou MI-GAN. Rien n'est uploadé : connect-src 'self' seul, prouvé par un gate CI. · [démo](https://maxgfr.github.io/unmark/)
 - **[siphon](https://github.com/maxgfr/siphon)** — Téléchargeur de vidéos dans le navigateur : collez un lien, choisissez une qualité, récupérez le fichier — récupération, fusion et conversion se font sur l'appareil (ffmpeg.wasm, OPFS), rien n'est envoyé. Pour les sites qu'une page ne peut pas lire, YouTube en tête, une seule adresse suffit : une instance Invidious/Piped/cobalt, un relais Cloudflare en un clic, un userscript pont, ou votre propre serveur yt-dlp (Docker, avec cookies, SponsorBlock, extraits). Les instances publiques sont mesurées chaque jour et seules celles qui répondent sont proposées. PWA hors-ligne et cible de partage.
+- **[phone-torrent](https://github.com/maxgfr/phone-torrent)** — Des torrents sur un téléphone, depuis une page web : ajoutez un .torrent ou un magnet, suivez le téléchargement, enregistrez les fichiers sur l'appareil (fichier par fichier ou en .zip) — WebTorrent dans le navigateur, pièces dans l'OPFS, seed et partage depuis le téléphone. Quand l'essaim est hors de portée d'un navigateur (trackers privés, pairs TCP/UDP seulement), le même torrent part vers un vrai client : votre propre serveur (un docker compose, ou Render/Fly/Cloudflare en un clic) ou un service que vous payez déjà (TorBox, put.io, Real-Debrid, AllDebrid). PWA hors-ligne, installable, cible de partage.
 
 ---
 
@@ -133,12 +134,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[phone-torrent](https://github.com/maxgfr/phone-torrent)** — Sans description.
 
 ---
 
