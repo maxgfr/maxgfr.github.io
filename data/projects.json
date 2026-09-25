@@ -2,7 +2,7 @@
   "generated": "2026-09",
   "totals": {
     "repos": 78,
-    "stars": 316
+    "stars": 317
   },
   "languages": [
     {
@@ -1363,7 +1363,7 @@
       "cat": 2,
       "dex": 25,
       "dexLabel": "025",
-      "stars": 42,
+      "stars": 43,
       "forks": 2,
       "language": "Rust",
       "topics": [
@@ -1383,7 +1383,7 @@
         "type1": "dark",
         "type2": "fire",
         "hp": 250,
-        "level": 98,
+        "level": 100,
         "rarity": "holo",
         "weakness": "fighting",
         "moves": [
@@ -3930,7 +3930,7 @@
         "typescript"
       ],
       "created": "2022-03",
-      "pushed": "2026-08",
+      "pushed": "2026-09",
       "license": "MIT",
       "poke": {
         "type1": "electric",
