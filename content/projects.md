@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 78 dépôts publics · ⭐ 317 étoiles**
+**📦 78 dépôts publics · ⭐ 318 étoiles**
 
 ---
 

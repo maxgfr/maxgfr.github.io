@@ -2,7 +2,7 @@
   "generated": "2026-09",
   "totals": {
     "repos": 78,
-    "stars": 317
+    "stars": 318
   },
   "languages": [
     {
@@ -1363,7 +1363,7 @@
       "cat": 2,
       "dex": 25,
       "dexLabel": "025",
-      "stars": 43,
+      "stars": 44,
       "forks": 2,
       "language": "Rust",
       "topics": [
@@ -2217,7 +2217,7 @@
       "dex": 41,
       "dexLabel": "041",
       "stars": 5,
-      "forks": 1,
+      "forks": 2,
       "language": "TypeScript",
       "topics": [
         "ai",
@@ -2235,8 +2235,8 @@
       "poke": {
         "type1": "poison",
         "type2": "water",
-        "hp": 150,
-        "level": 32,
+        "hp": 160,
+        "level": 34,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
