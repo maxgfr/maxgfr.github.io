@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 78 public repositories, totalling 319 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 79 public repositories, totalling 319 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -16,6 +16,7 @@ My 78 public repositories, totalling 319 stars — [github.com/maxgfr](https://g
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a whole repo into an AI-navigable encyclopedia (map + per-module…
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turn a location into a sourced prospect list using OpenStreetMap, company…
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Cross-file security-audit agent: source→sink taint +…
+- **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Watches YouTube for the agent: a video, a playlist or a channel becomes a…
 
 ### 🤖 AI & dev tooling
 

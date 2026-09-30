@@ -5,7 +5,7 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 78 public repos · ⭐ 319 stars**
+**📦 79 public repos · ⭐ 319 stars**
 
 ---
 
@@ -18,6 +18,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Cross-file security-audit agent: source→sink taint + Trivy/Semgrep/gitleaks/osv, adversarially verified into a cited report.
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds every human-readable string in a repo, classifies it, translates it with cheap models and proves nothing was missed: zero-dependency engine, the model never opens a source file.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turn a location into a sourced prospect list using OpenStreetMap, company registers and business websites. No API keys.
+- **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Watches YouTube for the agent: a video, a playlist or a channel becomes a timestamped, chaptered transcript plus frames of what is on screen, kept on disk and searchable; every claim cites a checked [V# mm:ss] stamp. Local and keyless: yt-dlp, the video's own subtitles, local whisper.
 - **[construct](https://github.com/maxgfr/construct)** — Turns a product idea into a grounded, buildable SRD/PRD suite (skills.sh agent skill).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyzes any repo and generates reconstruction PRDs to rebuild it from scratch.
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Rigorously evaluates a skill or codebase → grounded (file:line) findings + a TDD fix backlog; zero-dep engine with analysis (hotspots, cycles, churn) and brainstorm.
@@ -28,7 +29,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 - **[feelc](https://github.com/maxgfr/feelc)** — AI-native DMN/FEEL business-rules engine in Go: an LLM writes the rules, the engine proves & runs them deterministically (WASM playground). · [demo](https://maxgfr.github.io/feelc/)
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Zero-dependency repo-indexing engine: symbols, imports, typed cross-file link-graph & analytics — one vendorable engine.mjs, CLI + MCP server included. · [demo](https://maxgfr.github.io/codeindex/)
-- **[webindex](https://github.com/maxgfr/webindex)** — Zero-dependency web-retrieval engine: turns a URL or a file into clean, citable text — HTML, PDFs through a six-rung ladder ending in OCR, office documents — and serves it over MCP. One vendorable engine.mjs, CLI + MCP server included. The web-side companion to codeindex.
+- **[webindex](https://github.com/maxgfr/webindex)** — Zero-dependency web-retrieval engine: turns a URL or a file into clean, citable text — HTML, PDFs through a six-rung ladder ending in OCR, office documents, YouTube videos as timestamped transcripts — and serves it over MCP. One vendorable engine.mjs, CLI + MCP server included. The web-side companion to codeindex.
 - **[conforme](https://github.com/maxgfr/conforme)** — Syncs your AI coding config (rules, skills, agents, MCP servers) across Claude Code, Cursor & more (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Local secrets firewall for coding agents — redacts credentials in prompts, file reads & tool output before they reach the LLM (Claude Code, Codex, OpenCode). Deterministic hooks, no proxy.
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Skill for Codex and Claude Code with a Rust CLI: filters and aggregates evidence locally before sending it to the model, with original recovery and explicit omissions.
@@ -76,8 +77,8 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Find npm-package versions with their GitHub release notes. · [demo](https://maxgfr.github.io/release-notes-finder)
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend. · [demo](https://maxgfr.github.io/kanbo/)
 - **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text (the payload is decoded, not just deleted), C2PA/EXIF/XMP metadata across 11 formats, and visible image watermarks — a flat overlay is inverted exactly rather than painted over, with Telea or MI-GAN inpainting otherwise. Nothing is uploaded: connect-src 'self' alone, proven by a CI gate. · [demo](https://maxgfr.github.io/unmark/)
-- **[siphon](https://github.com/maxgfr/siphon)** — Browser-first video downloader: paste a link, pick a quality, get the file — fetching, merging and converting happen on the device (ffmpeg.wasm, OPFS), nothing is uploaded. For sites a page cannot read, YouTube above all, point it at one thing: an Invidious/Piped/cobalt instance, a one-click Cloudflare relay, a userscript bridge, or your own yt-dlp server (Docker, with cookies, SponsorBlock, clips). Public instances are measured daily and only the ones that answer are offered. Offline PWA and share target.
-- **[phone-torrent](https://github.com/maxgfr/phone-torrent)** — Torrents on a phone, from a web page: add a .torrent or a magnet, watch it arrive, save the files to the device (one by one or as a .zip) — WebTorrent in the browser, pieces in OPFS, seed and share from the phone. When the swarm is one a browser cannot reach (private trackers, TCP/UDP-only peers), the same torrent goes to a real client: your own server (one docker compose, or one click on Render/Fly/Cloudflare) or a service you already pay for (TorBox, put.io, Real-Debrid, AllDebrid). Offline, installable PWA and share target.
+- **[siphon](https://github.com/maxgfr/siphon)** — Browser-first video downloader: paste a link, pick a quality, get the file — fetching, merging and converting happen on the device (ffmpeg.wasm, OPFS), nothing is uploaded. For sites a page cannot read, YouTube above all, point it at one thing: an Invidious/Piped/cobalt instance, a one-click Cloudflare relay, a userscript bridge, or your own yt-dlp server (Docker, with cookies, SponsorBlock, clips). Public instances are measured daily and only the ones that answer are offered. Offline PWA and share target. · [demo](https://maxgfr.github.io/siphon/)
+- **[phone-torrent](https://github.com/maxgfr/phone-torrent)** — Torrents on a phone, from a web page: add a .torrent or a magnet, watch it arrive, save the files to the device (one by one or as a .zip) — WebTorrent in the browser, pieces in OPFS, seed and share from the phone. When the swarm is one a browser cannot reach (private trackers, TCP/UDP-only peers), the same torrent goes to a real client: your own server (one docker compose, or one click on Render/Fly/Cloudflare) or a service you already pay for (TorBox, put.io, Real-Debrid, AllDebrid). Offline, installable PWA and share target. · [demo](https://maxgfr.github.io/phone-torrent/)
 
 ---
 
