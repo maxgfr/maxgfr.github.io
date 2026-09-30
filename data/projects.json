@@ -7,11 +7,11 @@
   "languages": [
     {
       "name": "TypeScript",
-      "count": 40
+      "count": 38
     },
     {
       "name": "JavaScript",
-      "count": 16
+      "count": 18
     },
     {
       "name": "Shell",
@@ -264,7 +264,7 @@
       "dexLabel": "004",
       "stars": 1,
       "forks": 0,
-      "language": "TypeScript",
+      "language": "JavaScript",
       "topics": [
         "agent-skill",
         "ai-agent",
@@ -280,7 +280,7 @@
       "license": "MIT",
       "poke": {
         "type1": "psychic",
-        "type2": "water",
+        "type2": "electric",
         "hp": 120,
         "level": 25,
         "rarity": "common",
@@ -420,7 +420,7 @@
       "dexLabel": "007",
       "stars": 0,
       "forks": 1,
-      "language": "TypeScript",
+      "language": "JavaScript",
       "topics": [
         "agent-skill",
         "ai-agent",
@@ -436,7 +436,7 @@
       "license": "MIT",
       "poke": {
         "type1": "psychic",
-        "type2": "water",
+        "type2": "electric",
         "hp": 160,
         "level": 33,
         "rarity": "common",
@@ -464,8 +464,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Regarde YouTube pour l'agent : une vidéo, une playlist ou une chaîne devient une transcription horodatée et chapitrée, plus les images de ce qui est à l'écran, gardées sur disque et interrogeables ; chaque affirmation cite un [V# mm:ss] vérifié. Local et sans clé : yt-dlp, les sous-titres de la vidéo, whisper en local.",
-        "en": "Watches YouTube for the agent: a video, a playlist or a channel becomes a timestamped, chaptered transcript plus frames of what is on screen, kept on disk and searchable; every claim cites a checked [V# mm:ss] stamp. Local and keyless: yt-dlp, the video's own subtitles, local whisper."
+        "fr": "Regarde les vidéos pour l'agent — YouTube, Vimeo, Dailymotion et tout ce que lit yt-dlp : une vidéo, une playlist ou une chaîne devient une transcription horodatée et chapitrée, plus les images de ce qui est à l'écran, gardées sur disque et interrogeables ; chaque affirmation cite un [V# mm:ss] vérifié. Local et sans clé : yt-dlp, les sous-titres de la vidéo, whisper en local.",
+        "en": "Watches videos for the agent — YouTube, Vimeo, Dailymotion and anything yt-dlp reads: a video, a playlist or a channel becomes a timestamped, chaptered transcript plus frames of what is on screen, kept on disk and searchable; every claim cites a checked [V# mm:ss] stamp. Local and keyless: yt-dlp, the video's own subtitles, local whisper."
       },
       "cat": 0,
       "dex": 8,
@@ -478,10 +478,10 @@
         "ai-agent",
         "citations",
         "claude-code",
+        "dailymotion",
         "ffmpeg",
         "skills",
-        "skills-sh",
-        "subtitles"
+        "skills-sh"
       ],
       "created": "2026-09",
       "pushed": "2026-09",
@@ -489,18 +489,18 @@
       "poke": {
         "type1": "psychic",
         "type2": "electric",
-        "hp": 170,
-        "level": 37,
+        "hp": 200,
+        "level": 43,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
           {
-            "name": "transcript",
-            "dmg": 50
+            "name": "dailymotion",
+            "dmg": 40
           },
           {
-            "name": "video",
-            "dmg": 40
+            "name": "transcript",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -782,8 +782,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Moteur de récupération web zéro-dépendance : transforme une URL ou un fichier en texte propre et citable — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques, vidéos YouTube en transcriptions horodatées — et le sert en MCP. Un seul engine.mjs embarquable, CLI + serveur MCP inclus. Le pendant web de codeindex.",
-        "en": "Zero-dependency web-retrieval engine: turns a URL or a file into clean, citable text — HTML, PDFs through a six-rung ladder ending in OCR, office documents, YouTube videos as timestamped transcripts — and serves it over MCP. One vendorable engine.mjs, CLI + MCP server included. The web-side companion to codeindex."
+        "fr": "Moteur de récupération web zéro-dépendance : transforme une URL ou un fichier en texte propre et citable — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques, vidéos (YouTube, Vimeo et tout ce que lit yt-dlp) en transcriptions horodatées — et le sert en MCP. Un seul engine.mjs embarquable, CLI + serveur MCP inclus. Le pendant web de codeindex.",
+        "en": "Zero-dependency web-retrieval engine: turns a URL or a file into clean, citable text — HTML, PDFs through a six-rung ladder ending in OCR, office documents, videos (YouTube, Vimeo and anything yt-dlp reads) as timestamped transcripts — and serves it over MCP. One vendorable engine.mjs, CLI + MCP server included. The web-side companion to codeindex."
       },
       "cat": 1,
       "dex": 14,
@@ -807,8 +807,8 @@
       "poke": {
         "type1": "fairy",
         "type2": "water",
-        "hp": 180,
-        "level": 39,
+        "hp": 190,
+        "level": 42,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
