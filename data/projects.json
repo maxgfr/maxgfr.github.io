@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09",
+  "generated": "2026-10",
   "totals": {
     "repos": 79,
-    "stars": 319
+    "stars": 320
   },
   "languages": [
     {
@@ -120,13 +120,13 @@
         "skills"
       ],
       "created": "2026-08",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
         "type2": "electric",
         "hp": 110,
-        "level": 24,
+        "level": 25,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -172,7 +172,7 @@
         "grounded-generation"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -224,7 +224,7 @@
         "codebase"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -276,13 +276,13 @@
         "research"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
         "type2": "electric",
         "hp": 120,
-        "level": 25,
+        "level": 26,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -328,13 +328,13 @@
         "log-analysis"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
         "type2": "electric",
         "hp": 130,
-        "level": 28,
+        "level": 29,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -380,7 +380,7 @@
         "internationalization"
       ],
       "created": "2026-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
@@ -432,7 +432,7 @@
         "lead-generation"
       ],
       "created": "2026-08",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
@@ -484,13 +484,13 @@
         "skills-sh"
       ],
       "created": "2026-09",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
         "type2": "electric",
         "hp": 200,
-        "level": 43,
+        "level": 44,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -536,7 +536,7 @@
         "greenfield"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -588,7 +588,7 @@
         "developer-tools"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -640,13 +640,13 @@
         "subagents"
       ],
       "created": "2026-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
         "type2": "electric",
         "hp": 120,
-        "level": 25,
+        "level": 26,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -750,13 +750,13 @@
         "monorepo"
       ],
       "created": "2026-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dragon",
         "type2": "water",
         "hp": 140,
-        "level": 29,
+        "level": 30,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
@@ -802,13 +802,13 @@
         "typescript"
       ],
       "created": "2026-08",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
         "type2": "water",
         "hp": 190,
-        "level": 42,
+        "level": 43,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -854,13 +854,13 @@
         "config-sync"
       ],
       "created": "2026-04",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
         "type2": "fire",
         "hp": 170,
-        "level": 36,
+        "level": 37,
         "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
@@ -906,7 +906,7 @@
         "dlp"
       ],
       "created": "2026-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -958,13 +958,13 @@
         "codex"
       ],
       "created": "2026-09",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
         "type2": "fire",
         "hp": 170,
-        "level": 34,
+        "level": 35,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1016,7 +1016,7 @@
         "type1": "fighting",
         "type2": "fire",
         "hp": 160,
-        "level": 34,
+        "level": 35,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1068,7 +1068,7 @@
         "type1": "fighting",
         "type2": "steel",
         "hp": 140,
-        "level": 30,
+        "level": 31,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1120,7 +1120,7 @@
         "type1": "fighting",
         "type2": "steel",
         "hp": 140,
-        "level": 32,
+        "level": 33,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1276,7 +1276,7 @@
         "type1": "rock",
         "type2": "steel",
         "hp": 100,
-        "level": 24,
+        "level": 25,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -1331,7 +1331,7 @@
         "type1": "fighting",
         "type2": "water",
         "hp": 90,
-        "level": 21,
+        "level": 22,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1383,7 +1383,7 @@
         "type1": "ghost",
         "type2": "fire",
         "hp": 130,
-        "level": 28,
+        "level": 29,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -1429,7 +1429,7 @@
         "pentesting"
       ],
       "created": "2026-01",
-      "pushed": "2026-02",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -1591,7 +1591,7 @@
         "type1": "ghost",
         "type2": "electric",
         "hp": 90,
-        "level": 22,
+        "level": 23,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -1643,7 +1643,7 @@
         "type1": "steel",
         "type2": null,
         "hp": 140,
-        "level": 30,
+        "level": 31,
         "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
@@ -1689,13 +1689,13 @@
         "osv"
       ],
       "created": "2025-11",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
         "type2": "steel",
         "hp": 170,
-        "level": 40,
+        "level": 41,
         "rarity": "uncommon",
         "weakness": "fighting",
         "moves": [
@@ -1741,7 +1741,7 @@
         "github-helpers"
       ],
       "created": "2026-04",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
@@ -1897,13 +1897,13 @@
         "unsleep"
       ],
       "created": "2022-12",
-      "pushed": "2026-07",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "water",
         "type2": null,
         "hp": 50,
-        "level": 41,
+        "level": 42,
         "rarity": "common",
         "weakness": "grass",
         "moves": [
@@ -2013,7 +2013,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 220,
-        "level": 48,
+        "level": 49,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2068,7 +2068,7 @@
         "type1": "rock",
         "type2": "electric",
         "hp": 150,
-        "level": 34,
+        "level": 35,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -2123,7 +2123,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 240,
-        "level": 52,
+        "level": 53,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2178,7 +2178,7 @@
         "type1": "fighting",
         "type2": "water",
         "hp": 200,
-        "level": 42,
+        "level": 43,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -2227,7 +2227,7 @@
         "data-visualization"
       ],
       "created": "2025-12",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -2282,13 +2282,13 @@
         "sql"
       ],
       "created": "2026-03",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "poison",
         "type2": "water",
         "hp": 160,
-        "level": 34,
+        "level": 35,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
@@ -2337,13 +2337,13 @@
         "next"
       ],
       "created": "2022-05",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "fairy",
         "type2": "water",
         "hp": 120,
-        "level": 58,
+        "level": 59,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -2398,7 +2398,7 @@
         "type1": "dark",
         "type2": "ground",
         "hp": 140,
-        "level": 31,
+        "level": 32,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2433,7 +2433,7 @@
       "cat": 3,
       "dex": 45,
       "dexLabel": "045",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -2452,18 +2452,18 @@
       "poke": {
         "type1": "grass",
         "type2": "water",
-        "hp": 110,
-        "level": 26,
-        "rarity": "common",
+        "hp": 120,
+        "level": 28,
+        "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
           {
             "name": "barcode scanner",
-            "dmg": 60
+            "dmg": 70
           },
           {
             "name": "loyalty",
-            "dmg": 70
+            "dmg": 80
           }
         ],
         "sprite": [
@@ -2499,13 +2499,13 @@
         "sqlite"
       ],
       "created": "2026-03",
-      "pushed": "2026-06",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "poison",
         "type2": "water",
         "hp": 80,
-        "level": 18,
+        "level": 19,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -2557,7 +2557,7 @@
         "type1": "ghost",
         "type2": "water",
         "hp": 120,
-        "level": 26,
+        "level": 27,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -2603,13 +2603,13 @@
         "scraping"
       ],
       "created": "2022-03",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
         "type2": "ground",
         "hp": 110,
-        "level": 60,
+        "level": 61,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -2658,13 +2658,13 @@
         "release-notes"
       ],
       "created": "2022-11",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "rock",
         "type2": "water",
         "hp": 140,
-        "level": 57,
+        "level": 58,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
@@ -2768,13 +2768,13 @@
         "privacy"
       ],
       "created": "2026-08",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
         "type2": "water",
         "hp": 210,
-        "level": 47,
+        "level": 48,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2823,7 +2823,7 @@
         "webassembly"
       ],
       "created": "2026-09",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -2878,13 +2878,13 @@
         "torrent"
       ],
       "created": "2026-09",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "flying",
         "type2": "electric",
         "hp": 240,
-        "level": 54,
+        "level": 55,
         "rarity": "common",
         "weakness": "electric",
         "moves": [
@@ -2939,7 +2939,7 @@
         "type1": "dragon",
         "type2": "water",
         "hp": 170,
-        "level": 36,
+        "level": 37,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
@@ -2994,7 +2994,7 @@
         "type1": "ground",
         "type2": "grass",
         "hp": 170,
-        "level": 33,
+        "level": 34,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
@@ -3043,7 +3043,7 @@
         "historical-data"
       ],
       "created": "2022-03",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -3101,7 +3101,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 140,
-        "level": 31,
+        "level": 32,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -3156,7 +3156,7 @@
         "type1": "ground",
         "type2": "water",
         "hp": 140,
-        "level": 57,
+        "level": 58,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
@@ -3211,7 +3211,7 @@
         "type1": "ice",
         "type2": "water",
         "hp": 120,
-        "level": 27,
+        "level": 28,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
@@ -3260,13 +3260,13 @@
         "similarities"
       ],
       "created": "2022-12",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ice",
         "type2": "water",
         "hp": 100,
-        "level": 49,
+        "level": 50,
         "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
@@ -3315,7 +3315,7 @@
         "vote"
       ],
       "created": "2022-12",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -3369,13 +3369,13 @@
         "typescript"
       ],
       "created": "2022-12",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ice",
         "type2": "water",
         "hp": 70,
-        "level": 44,
+        "level": 45,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
@@ -3424,13 +3424,13 @@
         "standard-deviation"
       ],
       "created": "2022-12",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ice",
         "type2": "water",
         "hp": 80,
-        "level": 45,
+        "level": 46,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
@@ -3479,13 +3479,13 @@
         "typescript"
       ],
       "created": "2022-04",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "flying",
         "type2": "water",
         "hp": 90,
-        "level": 54,
+        "level": 55,
         "rarity": "common",
         "weakness": "electric",
         "moves": [
@@ -3530,13 +3530,13 @@
         "useful-functions"
       ],
       "created": "2022-12",
-      "pushed": "2026-05",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
         "type2": "water",
         "hp": 50,
-        "level": 40,
+        "level": 41,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -3583,7 +3583,7 @@
         "zero-dependency"
       ],
       "created": "2022-12",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "steel",
@@ -3638,13 +3638,13 @@
         "typescript"
       ],
       "created": "2022-12",
-      "pushed": "2026-05",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "flying",
         "type2": "water",
         "hp": 90,
-        "level": 48,
+        "level": 49,
         "rarity": "uncommon",
         "weakness": "electric",
         "moves": [
@@ -3691,7 +3691,7 @@
         "zero-dependencies"
       ],
       "created": "2022-12",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "flying",
@@ -3746,13 +3746,13 @@
         "typescript"
       ],
       "created": "2022-12",
-      "pushed": "2026-04",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "flying",
         "type2": "water",
         "hp": 90,
-        "level": 47,
+        "level": 48,
         "rarity": "common",
         "weakness": "electric",
         "moves": [
@@ -3807,7 +3807,7 @@
         "type1": "ghost",
         "type2": "water",
         "hp": 200,
-        "level": 65,
+        "level": 66,
         "rarity": "rare",
         "weakness": "dark",
         "moves": [
@@ -3853,13 +3853,13 @@
         "nodejs"
       ],
       "created": "2020-07",
-      "pushed": "2026-05",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "water",
         "type2": null,
         "hp": 80,
-        "level": 64,
+        "level": 65,
         "rarity": "uncommon",
         "weakness": "grass",
         "moves": [
@@ -3908,13 +3908,13 @@
         "update-json"
       ],
       "created": "2022-03",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "poison",
         "type2": "water",
         "hp": 160,
-        "level": 65,
+        "level": 66,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
@@ -3962,13 +3962,13 @@
         "push"
       ],
       "created": "2022-05",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "steel",
         "type2": "water",
         "hp": 90,
-        "level": 52,
+        "level": 53,
         "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
@@ -4014,13 +4014,13 @@
         "typescript"
       ],
       "created": "2022-03",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "electric",
         "type2": "water",
         "hp": 80,
-        "level": 51,
+        "level": 52,
         "rarity": "uncommon",
         "weakness": "ground",
         "moves": [
@@ -4069,7 +4069,7 @@
         "nodejs"
       ],
       "created": "2022-03",
-      "pushed": "2026-02",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "steel",
@@ -4124,13 +4124,13 @@
         "prettier"
       ],
       "created": "2022-11",
-      "pushed": "2026-05",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "bug",
         "type2": "electric",
         "hp": 140,
-        "level": 58,
+        "level": 59,
         "rarity": "uncommon",
         "weakness": "flying",
         "moves": [
@@ -4178,7 +4178,7 @@
         "type1": "dragon",
         "type2": "normal",
         "hp": 250,
-        "level": 88,
+        "level": 89,
         "rarity": "rare",
         "weakness": "ice",
         "moves": [
@@ -4222,13 +4222,13 @@
         "tap"
       ],
       "created": "2025-12",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "ghost",
         "type2": "poison",
         "hp": 70,
-        "level": 19,
+        "level": 20,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -4277,13 +4277,13 @@
         "writer"
       ],
       "created": "2017-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
         "type2": "electric",
         "hp": 80,
-        "level": 90,
+        "level": 91,
         "rarity": "uncommon",
         "weakness": "steel",
         "moves": [
