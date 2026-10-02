@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 79,
-    "stars": 320
+    "stars": 321
   },
   "languages": [
     {
@@ -2268,7 +2268,7 @@
       "cat": 3,
       "dex": 42,
       "dexLabel": "042",
-      "stars": 5,
+      "stars": 6,
       "forks": 2,
       "language": "TypeScript",
       "topics": [
@@ -2287,8 +2287,8 @@
       "poke": {
         "type1": "poison",
         "type2": "water",
-        "hp": 160,
-        "level": 35,
+        "hp": 170,
+        "level": 36,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
@@ -2447,7 +2447,7 @@
         "pwa"
       ],
       "created": "2026-01",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "grass",
@@ -2988,7 +2988,7 @@
         "stock-screener"
       ],
       "created": "2026-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ground",
@@ -4172,7 +4172,7 @@
         "stars"
       ],
       "created": "2021-10",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "dragon",

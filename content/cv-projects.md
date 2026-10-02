@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 79 dépôts publics, totalisant 320 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 79 dépôts publics, totalisant 321 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -51,8 +51,8 @@ Mes 79 dépôts publics, totalisant 320 étoiles — [github.com/maxgfr](https:/
 ### 🌐 Applications web & PWA
 
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur.
-- **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version GitHub.
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualiseur de schéma de base de données côté client avec analyse par IA —…
+- **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version GitHub.
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — PWA hors-ligne pour gérer ses cartes de fidélité avec stockage chiffré et…
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois agnostique : brackets, système suisse, ligues, poules et…
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Gestion de projet local-first : kanban, sprints et roadmap dans le…

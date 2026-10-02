@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 79 public repositories, totalling 320 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 79 public repositories, totalling 321 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -51,8 +51,8 @@ My 79 public repositories, totalling 320 stars — [github.com/maxgfr](https://g
 ### 🌐 Web apps & PWAs
 
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer.
-- **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Find npm-package versions with their GitHub release notes.
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Client-side DB-schema visualizer with AI analysis — upload SQL, visualize…
+- **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Find npm-package versions with their GitHub release notes.
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline-first PWA for loyalty cards with encrypted storage and barcode…
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo…
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser…
