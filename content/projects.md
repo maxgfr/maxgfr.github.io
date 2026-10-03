@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 79 dépôts publics · ⭐ 321 étoiles**
+**📦 80 dépôts publics · ⭐ 321 étoiles**
 
 ---
 
@@ -66,6 +66,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur de concentration Pomodoro local-first (PWA + extension Chrome) : tâches, backlog et plan du jour, comptage des interruptions, overtime et Flowtime, heatmap annuelle, heures productives et précision des estimations, export JSON/CSV/Open Pomodoro — sans compte, sans serveur, sans tracking. · [démo](https://maxgfr.github.io/basilico/)
 - **[tick](https://github.com/maxgfr/tick)** — Suite de minuteurs local-first, 100 % dans le navigateur : multi-minuteurs simultanés avec préréglages (œuf, thé, réunion…), chronomètre avec tours, intervalles HIIT/Tabata/EMOM, métronome, horloge mondiale, calculateur de durées, alarmes et grand affichage plein écran — bips Web Audio, notifications, anti-dérive par horloge système, raccourcis clavier, PWA hors-ligne. Sans compte, sans serveur, sans tracking. · [démo](https://maxgfr.github.io/tick/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois agnostique : brackets, système suisse, ligues, poules et Elo composés depuis six axes — aucun sport codé en dur. 100 % navigateur, sans serveur ni compte : lien partageable, sync P2P, export ICS, impression et hors-ligne. · [démo](https://maxgfr.github.io/bracketeer)
+- **[ephemeral](https://github.com/maxgfr/ephemeral)** — Présence en temps réel en WebRTC, sans backend : des salles pour les talks (réactions, sondages et questions, avec une clé de présentateur qui signe chaque résultat) et un widget d'une ligne qui affiche lecteurs, réactions et positions de lecture sur n'importe quel site statique. Pair à pair via Trystero et des relais Nostr ; rien n'est stocké. · [démo](https://maxgfr.github.io/ephemeral/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur. · [démo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualiseur de schéma de base de données côté client avec analyse par IA — importez du SQL, visualisez, partagez, exportez, sans backend. · [démo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité (ROI) immobilière pour évaluer la rentabilité d'un bien locatif. · [démo](https://maxgfr.github.io/real-estate-calculator)

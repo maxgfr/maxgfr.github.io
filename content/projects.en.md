@@ -5,7 +5,7 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 79 public repos · ⭐ 321 stars**
+**📦 80 public repos · ⭐ 321 stars**
 
 ---
 
@@ -66,6 +66,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[basilico](https://github.com/maxgfr/basilico)** — Local-first Pomodoro focus timer (PWA + Chrome extension): tasks, backlog & day plan, interruption counting, overtime and Flowtime, year heatmap, productive hours and estimate accuracy, JSON/CSV/Open Pomodoro export — no account, no server, no tracking. · [demo](https://maxgfr.github.io/basilico/)
 - **[tick](https://github.com/maxgfr/tick)** — Local-first timer suite, entirely in the browser: multiple simultaneous countdowns with presets (egg, tea, laundry…), stopwatch with laps, HIIT/Tabata/EMOM intervals, metronome, world clock, duration calculator, alarms and a big fullscreen display — Web Audio beeps, notifications, drift-free system-clock math, keyboard shortcuts, offline PWA. No account, no server, no tracking. · [demo](https://maxgfr.github.io/tick/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline. · [demo](https://maxgfr.github.io/bracketeer)
+- **[ephemeral](https://github.com/maxgfr/ephemeral)** — Real-time presence over WebRTC with no backend: live rooms for talks (reactions, polls and Q&A, with a presenter key that signs every result) and a one-line widget that shows readers, reactions and reading positions on any static site. Peer to peer through Trystero and Nostr relays; nothing is stored. · [demo](https://maxgfr.github.io/ephemeral/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer. · [demo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend. · [demo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Real-estate ROI calculator for rental-property profitability. · [demo](https://maxgfr.github.io/real-estate-calculator)
