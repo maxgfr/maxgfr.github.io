@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 80 public repositories, totalling 321 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 81 public repositories, totalling 321 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -68,6 +68,7 @@ My 80 public repositories, totalling 321 stars — [github.com/maxgfr](https://g
 - **[phone-torrent](https://github.com/maxgfr/phone-torrent)** — Torrents on a phone, from a web page: add a .torrent or a magnet, watch it…
 - **[siphon](https://github.com/maxgfr/siphon)** — Browser-first video downloader: paste a link, pick a quality, get the file —…
 - **[tick](https://github.com/maxgfr/tick)** — Local-first timer suite, entirely in the browser: multiple simultaneous…
+- **[troupe](https://github.com/maxgfr/troupe)** — Self-hosted studio for short AI videos: an actor, a script with an emotion…
 - **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text…
 
 ### 🎮 Games

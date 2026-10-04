@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 80 dépôts publics, totalisant 321 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 81 dépôts publics, totalisant 321 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -68,6 +68,7 @@ Mes 80 dépôts publics, totalisant 321 étoiles — [github.com/maxgfr](https:/
 - **[phone-torrent](https://github.com/maxgfr/phone-torrent)** — Des torrents sur un téléphone, depuis une page web : ajoutez un .torrent ou…
 - **[siphon](https://github.com/maxgfr/siphon)** — Téléchargeur de vidéos dans le navigateur : collez un lien, choisissez une…
 - **[tick](https://github.com/maxgfr/tick)** — Suite de minuteurs local-first, 100 % dans le navigateur : multi-minuteurs…
+- **[troupe](https://github.com/maxgfr/troupe)** — Studio auto-hébergé de courtes vidéos IA : un acteur, un script avec une…
 - **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks dans le navigateur : caractères Unicode invisibles et…
 
 ### 🎮 Jeux

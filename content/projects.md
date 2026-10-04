@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 80 dépôts publics · ⭐ 321 étoiles**
+**📦 81 dépôts publics · ⭐ 321 étoiles**
 
 ---
 
@@ -74,6 +74,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — PWA hors-ligne pour gérer ses cartes de fidélité avec stockage chiffré et scan de codes-barres. · [démo](https://maxgfr.github.io/loyalty-card-vault/)
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Application de bureau d'apprentissage des langues avec tutorat IA multi-fournisseurs.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Générateur local de courtes vidéos quotidiennes (Remotion) avec légendes par plateforme + publication optionnelle sur Shorts/TikTok/Reels.
+- **[troupe](https://github.com/maxgfr/troupe)** — Studio auto-hébergé de courtes vidéos IA : un acteur, un script avec une émotion par ligne, un modèle — Veo, Kling ou Seedance avec vos clés, ou votre propre GPU via ComfyUI (LTX-2, Wan 2.2) ou n'importe quel serveur HTTP. Les choix proposés suivent ce que chaque modèle sait faire, les clés sont chiffrées, et tout démarre avec un docker compose up.
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin indétectable via le Chrome DevTools Protocol et les data routes Next.js — sans Puppeteer, sans détection de bot.
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version GitHub. · [démo](https://maxgfr.github.io/release-notes-finder)
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Gestion de projet local-first : kanban, sprints et roadmap dans le navigateur, avec un dépôt git comme seul backend. · [démo](https://maxgfr.github.io/kanbo/)
