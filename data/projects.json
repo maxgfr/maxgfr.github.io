@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 81,
-    "stars": 321
+    "stars": 322
   },
   "languages": [
     {
@@ -2644,7 +2644,7 @@
       "cat": 3,
       "dex": 49,
       "dexLabel": "049",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -2663,18 +2663,18 @@
       "poke": {
         "type1": "poison",
         "type2": "water",
-        "hp": 210,
-        "level": 45,
+        "hp": 220,
+        "level": 46,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
           {
             "name": "ai video",
-            "dmg": 50
+            "dmg": 60
           },
           {
             "name": "comfyui",
-            "dmg": 10
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -2957,16 +2957,16 @@
       }
     },
     {
-      "name": "phone-torrent",
-      "url": "https://github.com/maxgfr/phone-torrent",
-      "home": "https://maxgfr.github.io/phone-torrent/",
+      "name": "swarmdeck",
+      "url": "https://github.com/maxgfr/swarmdeck",
+      "home": "https://maxgfr.github.io/swarmdeck/",
       "homeLabel": {
         "fr": "démo",
         "en": "demo"
       },
       "desc": {
-        "fr": "Des torrents sur un téléphone, depuis une page web : ajoutez un .torrent ou un magnet, suivez le téléchargement, enregistrez les fichiers sur l'appareil (fichier par fichier ou en .zip) — WebTorrent dans le navigateur, pièces dans l'OPFS, seed et partage depuis le téléphone. Quand l'essaim est hors de portée d'un navigateur (trackers privés, pairs TCP/UDP seulement), le même torrent part vers un vrai client : votre propre serveur (un docker compose, ou Render/Fly/Cloudflare en un clic) ou un service que vous payez déjà (TorBox, put.io, Real-Debrid, AllDebrid). PWA hors-ligne, installable, cible de partage.",
-        "en": "Torrents on a phone, from a web page: add a .torrent or a magnet, watch it arrive, save the files to the device (one by one or as a .zip) — WebTorrent in the browser, pieces in OPFS, seed and share from the phone. When the swarm is one a browser cannot reach (private trackers, TCP/UDP-only peers), the same torrent goes to a real client: your own server (one docker compose, or one click on Render/Fly/Cloudflare) or a service you already pay for (TorBox, put.io, Real-Debrid, AllDebrid). Offline, installable PWA and share target."
+        "fr": "Des torrents depuis une page web, sur un téléphone comme sur un ordinateur : ajoutez un .torrent ou un magnet, suivez le téléchargement, enregistrez les fichiers sur l'appareil — WebTorrent dans le navigateur, pièces dans l'OPFS — et partagez vos propres fichiers ou dossiers. Sur ordinateur, une liste à côté du torrent ouvert, vue tableau, recherche et filtres, sélection multiple, glisser-déposer n'importe où, raccourcis clavier et enregistrement direct dans un dossier. Éditeur, créateur et vérificateur de .torrent intégrés. Quand l'essaim est hors de portée d'un navigateur (trackers privés, pairs TCP/UDP seulement), le même torrent part vers un vrai client : votre propre serveur (un docker compose, ou Render/Fly/Cloudflare en un clic) ou un service que vous payez déjà (TorBox, put.io, Real-Debrid, AllDebrid). PWA installable, hors-ligne, cible de partage.",
+        "en": "Torrents from a web page, on a phone or a computer: add a .torrent or a magnet, watch it arrive, save the files to the device — WebTorrent in the browser, pieces in OPFS — and share files or folders of your own. On a computer, a list beside the torrent open, a table view, search and filters, several selected at once, drag and drop anywhere, keyboard shortcuts and saving straight into a folder. A built-in .torrent editor, maker and checker. When the swarm is one a browser cannot reach (private trackers, TCP/UDP-only peers), the same torrent goes to a real client: your own server (one docker compose, or one click on Render/Fly/Cloudflare) or a service you already pay for (TorBox, put.io, Real-Debrid, AllDebrid). Installable, offline PWA and share target."
       },
       "cat": 3,
       "dex": 55,
@@ -2976,13 +2976,13 @@
       "language": "JavaScript",
       "topics": [
         "debrid",
+        "desktop",
         "mobile",
         "offline-first",
         "opfs",
         "peer-to-peer",
         "pwa",
-        "self-hosted",
-        "torrent"
+        "self-hosted"
       ],
       "created": "2026-09",
       "pushed": "2026-10",
@@ -2990,24 +2990,24 @@
       "poke": {
         "type1": "flying",
         "type2": "electric",
-        "hp": 240,
-        "level": 55,
+        "hp": 250,
+        "level": 75,
         "rarity": "common",
         "weakness": "electric",
         "moves": [
           {
             "name": "debrid",
-            "dmg": 10
+            "dmg": 30
           },
           {
-            "name": "mobile",
+            "name": "desktop",
             "dmg": 50
           }
         ],
         "sprite": [
-          "M4 0h4v1h-4zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM4 6h4v1h-4zM4 7h4v1h-4zM4 8h4v1h-4zM4 10h4v1h-4z",
-          "M4 4h4v1h-4zM3 5h6v1h-6zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h2v1h-2zM8 10h2v1h-2zM2 11h2v1h-2zM8 11h2v1h-2z"
+          "M1 0h1v1h-1zM10 0h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     },

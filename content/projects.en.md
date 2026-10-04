@@ -5,7 +5,7 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 81 public repos · ⭐ 321 stars**
+**📦 81 public repos · ⭐ 322 stars**
 
 ---
 
@@ -80,7 +80,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend. · [demo](https://maxgfr.github.io/kanbo/)
 - **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text (the payload is decoded, not just deleted), C2PA/EXIF/XMP metadata across 11 formats, and visible image watermarks — a flat overlay is inverted exactly rather than painted over, with Telea or MI-GAN inpainting otherwise. Nothing is uploaded: connect-src 'self' alone, proven by a CI gate. · [demo](https://maxgfr.github.io/unmark/)
 - **[siphon](https://github.com/maxgfr/siphon)** — Browser-first video downloader: paste a link, pick a quality, get the file — fetching, merging and converting happen on the device (ffmpeg.wasm, OPFS), nothing is uploaded. For sites a page cannot read, YouTube above all, point it at one thing: an Invidious/Piped/cobalt instance, a one-click Cloudflare relay, a userscript bridge, or your own yt-dlp server (Docker, with cookies, SponsorBlock, clips). Public instances are measured daily and only the ones that answer are offered. Offline PWA and share target. · [demo](https://maxgfr.github.io/siphon/)
-- **[phone-torrent](https://github.com/maxgfr/phone-torrent)** — Torrents on a phone, from a web page: add a .torrent or a magnet, watch it arrive, save the files to the device (one by one or as a .zip) — WebTorrent in the browser, pieces in OPFS, seed and share from the phone. When the swarm is one a browser cannot reach (private trackers, TCP/UDP-only peers), the same torrent goes to a real client: your own server (one docker compose, or one click on Render/Fly/Cloudflare) or a service you already pay for (TorBox, put.io, Real-Debrid, AllDebrid). Offline, installable PWA and share target. · [demo](https://maxgfr.github.io/phone-torrent/)
+- **[swarmdeck](https://github.com/maxgfr/swarmdeck)** — Torrents from a web page, on a phone or a computer: add a .torrent or a magnet, watch it arrive, save the files to the device — WebTorrent in the browser, pieces in OPFS — and share files or folders of your own. On a computer, a list beside the torrent open, a table view, search and filters, several selected at once, drag and drop anywhere, keyboard shortcuts and saving straight into a folder. A built-in .torrent editor, maker and checker. When the swarm is one a browser cannot reach (private trackers, TCP/UDP-only peers), the same torrent goes to a real client: your own server (one docker compose, or one click on Render/Fly/Cloudflare) or a service you already pay for (TorBox, put.io, Real-Debrid, AllDebrid). Installable, offline PWA and share target. · [demo](https://maxgfr.github.io/swarmdeck/)
 
 ---
 
