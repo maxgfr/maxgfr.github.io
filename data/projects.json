@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 81,
-    "stars": 322
+    "stars": 321
   },
   "languages": [
     {
@@ -1114,7 +1114,7 @@
         "homebrew"
       ],
       "created": "2026-04",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -2268,7 +2268,7 @@
       "cat": 3,
       "dex": 42,
       "dexLabel": "042",
-      "stars": 86,
+      "stars": 85,
       "forks": 10,
       "language": "TypeScript",
       "topics": [
@@ -2820,7 +2820,7 @@
         "project-management"
       ],
       "created": "2026-08",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "electric",
