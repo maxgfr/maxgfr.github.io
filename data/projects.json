@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 81,
-    "stars": 321
+    "stars": 322
   },
   "languages": [
     {
@@ -2268,7 +2268,7 @@
       "cat": 3,
       "dex": 42,
       "dexLabel": "042",
-      "stars": 85,
+      "stars": 86,
       "forks": 10,
       "language": "TypeScript",
       "topics": [
@@ -2986,7 +2986,7 @@
       ],
       "created": "2026-09",
       "pushed": "2026-10",
-      "license": null,
+      "license": "MIT",
       "poke": {
         "type1": "flying",
         "type2": "electric",
