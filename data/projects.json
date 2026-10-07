@@ -2062,7 +2062,7 @@
         "react"
       ],
       "created": "2026-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -2635,8 +2635,11 @@
     {
       "name": "troupe",
       "url": "https://github.com/maxgfr/troupe",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://maxgfr.github.io/troupe/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
       "desc": {
         "fr": "Studio auto-hébergé de courtes vidéos IA : un acteur, un script avec une émotion par ligne, un modèle — Veo, Kling ou Seedance avec vos clés, ou votre propre GPU via ComfyUI (LTX-2, Wan 2.2) ou n'importe quel serveur HTTP. Les choix proposés suivent ce que chaque modèle sait faire, les clés sont chiffrées, et tout démarre avec un docker compose up.",
         "en": "Self-hosted studio for short AI videos: an actor, a script with an emotion per line, a model — Veo, Kling or Seedance with your own keys, or your own GPU through ComfyUI (LTX-2, Wan 2.2) or any HTTP server. Pickers only offer what each model can do, keys are encrypted at rest, and it all starts with one docker compose up."
