@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 81 dépôts publics · ⭐ 322 étoiles**
+**📦 82 dépôts publics · ⭐ 322 étoiles**
 
 ---
 
@@ -65,6 +65,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[nook](https://github.com/maxgfr/nook)** — Notion local-first et chiffré, 100% dans le navigateur : éditeur à blocs, pages imbriquées, wikilinks et backlinks, tags, recherche ⌘K, bases de données (table/kanban/calendrier), historique de versions, carte des liens. Verrouillage par passphrase (Argon2id) avec rotation de clé, et effacement total vérifiable. Aucune requête réseau possible — CSP connect-src 'none', prouvée en CI. PWA hors-ligne. · [démo](https://maxgfr.github.io/nook/)
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur de concentration Pomodoro local-first (PWA + extension Chrome) : tâches, backlog et plan du jour, comptage des interruptions, overtime et Flowtime, heatmap annuelle, heures productives et précision des estimations, export JSON/CSV/Open Pomodoro — sans compte, sans serveur, sans tracking. · [démo](https://maxgfr.github.io/basilico/)
 - **[tick](https://github.com/maxgfr/tick)** — Suite de minuteurs local-first, 100 % dans le navigateur : multi-minuteurs simultanés avec préréglages (œuf, thé, réunion…), chronomètre avec tours, intervalles HIIT/Tabata/EMOM, métronome, horloge mondiale, calculateur de durées, alarmes et grand affichage plein écran — bips Web Audio, notifications, anti-dérive par horloge système, raccourcis clavier, PWA hors-ligne. Sans compte, sans serveur, sans tracking. · [démo](https://maxgfr.github.io/tick/)
+- **[tok](https://github.com/maxgfr/tok)** — Compteur d'échanges et de score local-first pour le ping-pong, les raquettes de plage, le volley et plus : chaque frappe est comptée au son (AudioWorklet), au mouvement et à la caméra (MediaPipe auto-hébergé, sans télémétrie), les échanges démarrent et finissent seuls, les matchs suivent les règles de chaque sport (tie-breaks compris). Vidéos avec le score incrusté, chapitrées par échange, records et objectifs, Lab de calibration, PWA hors-ligne. Sans compte, sans serveur : rien ne quitte le téléphone. · [démo](https://maxgfr.github.io/tok/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois agnostique : brackets, système suisse, ligues, poules et Elo composés depuis six axes — aucun sport codé en dur. 100 % navigateur, sans serveur ni compte : lien partageable, sync P2P, export ICS, impression et hors-ligne. · [démo](https://maxgfr.github.io/bracketeer)
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Présence en temps réel en WebRTC, sans backend : des salles pour les talks (réactions, sondages et questions, avec une clé de présentateur qui signe chaque résultat) et un widget d'une ligne qui affiche lecteurs, réactions et positions de lecture sur n'importe quel site statique. Pair à pair via Trystero et des relais Nostr ; rien n'est stocké. · [démo](https://maxgfr.github.io/ephemeral/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur. · [démo](https://maxgfr.github.io/csv-ai-analyzer)
