@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 82,
-    "stars": 322
+    "stars": 323
   },
   "languages": [
     {
@@ -846,12 +846,12 @@
       "topics": [
         "agents-md",
         "ai-coding",
-        "amazonq",
-        "amp",
         "claude-code",
         "cli",
         "codex",
-        "config-sync"
+        "config-sync",
+        "conforme",
+        "copilot"
       ],
       "created": "2026-04",
       "pushed": "2026-10",
@@ -860,7 +860,7 @@
         "type1": "ghost",
         "type2": "fire",
         "hp": 170,
-        "level": 37,
+        "level": 36,
         "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
@@ -869,8 +869,8 @@
             "dmg": 80
           },
           {
-            "name": "amazonq",
-            "dmg": 90
+            "name": "config sync",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -2323,7 +2323,7 @@
       "cat": 3,
       "dex": 43,
       "dexLabel": "043",
-      "stars": 86,
+      "stars": 87,
       "forks": 10,
       "language": "TypeScript",
       "topics": [
