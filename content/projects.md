@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 82 dépôts publics · ⭐ 324 étoiles**
+**📦 83 dépôts publics · ⭐ 325 étoiles**
 
 ---
 
@@ -138,6 +138,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Non classés
+
+- **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny System One decision models (0.2M–6.6M params) trained from scratch in Rust with MLX on a Mac, playing drone games live in the browser via WebAssembly in under a millisecond. · [démo](https://maxgfr.github.io/skycmd/)
 
 ---
 
