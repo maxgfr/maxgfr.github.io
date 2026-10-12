@@ -70,6 +70,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[lastdone](https://github.com/maxgfr/lastdone)** — Local-first recurring reminders you talk to: "I watered the plants", "when did I last descale the kettle?", "remind me to water every 5 days". An in-browser LLM (WebLLM on WebGPU, Qwen2.5) turns the sentence into a schema-constrained JSON intent the app executes; FR/EN rule-parser fallback and a one-tap Done button. Departure-board view ranked by urgency, history, notifications, .ics export, offline PWA. No account, no server, no API key: nothing leaves the device. · [demo](https://maxgfr.github.io/lastdone/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline. · [demo](https://maxgfr.github.io/bracketeer)
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Real-time presence over WebRTC with no backend: live rooms for talks (reactions, polls and Q&A, with a presenter key that signs every result) and a one-line widget that shows readers, reactions and reading positions on any static site. Peer to peer through Trystero and Nostr relays; nothing is stored. · [demo](https://maxgfr.github.io/ephemeral/)
+- **[veil](https://github.com/maxgfr/veil)** — Private rooms between browsers: chat, files of any size and audio/video calls, peer to peer and end-to-end encrypted. The room key lives in the link's #fragment; peers meet through Nostr relays, WebTorrent trackers or offline QR codes that only ever see ciphertext, then everything flows through a P2P mesh (sender keys rotated whenever someone leaves, 4 emojis to verify, media encrypted frame by frame). Files streamed disk to disk, SHA-256 verified, resumable. Installable PWA, plus a compatible Rust CLI (brew install maxgfr/tap/veil). No account, no server, nothing stored. · [demo](https://maxgfr.github.io/veil/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer. · [demo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend. · [demo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Real-estate ROI calculator for rental-property profitability. · [demo](https://maxgfr.github.io/real-estate-calculator)
@@ -140,12 +141,6 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Uncategorized
-
-- **[veil](https://github.com/maxgfr/veil)** — Serverless, end-to-end encrypted WebRTC rooms: chat, files and calls, peer-to-peer. PWA + Rust CLI. · [demo](https://maxgfr.github.io/veil/)
 
 ---
 

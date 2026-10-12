@@ -73,6 +73,7 @@ My 85 public repositories, totalling 325 stars — [github.com/maxgfr](https://g
 - **[tick](https://github.com/maxgfr/tick)** — Local-first timer suite, entirely in the browser: multiple simultaneous…
 - **[tok](https://github.com/maxgfr/tok)** — Local-first rally and score counter for table tennis, beach rackets…
 - **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text…
+- **[veil](https://github.com/maxgfr/veil)** — Private rooms between browsers: chat, files of any size and audio/video…
 
 ### 🎮 Games
 
@@ -117,8 +118,4 @@ My 85 public repositories, totalling 325 stars — [github.com/maxgfr](https://g
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
-
-### 🆕 Uncategorized
-
-- **[veil](https://github.com/maxgfr/veil)** — Serverless, end-to-end encrypted WebRTC rooms: chat, files and calls…
 
