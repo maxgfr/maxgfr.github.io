@@ -2427,8 +2427,8 @@
         "en": "demo"
       },
       "desc": {
-        "fr": "Salles privées entre navigateurs : chat, fichiers sans limite de taille et appels audio/vidéo, pair à pair et chiffrés de bout en bout. La clé de la salle vit dans le #fragment du lien ; les pairs se trouvent via relais Nostr, trackers WebTorrent ou codes QR hors-ligne, ne voient passer que du chiffré, puis tout circule dans un maillage P2P (sender keys renouvelées à chaque départ, 4 emojis pour vérifier, média chiffré image par image). Fichiers streamés disque à disque, vérifiés en SHA-256, reprise après coupure. PWA installable, CLI Rust (brew install maxgfr/tap/veil) compatible. Sans compte, sans serveur, rien n'est stocké.",
-        "en": "Private rooms between browsers: chat, files of any size and audio/video calls, peer to peer and end-to-end encrypted. The room key lives in the link's #fragment; peers meet through Nostr relays, WebTorrent trackers or offline QR codes that only ever see ciphertext, then everything flows through a P2P mesh (sender keys rotated whenever someone leaves, 4 emojis to verify, media encrypted frame by frame). Files streamed disk to disk, SHA-256 verified, resumable. Installable PWA, plus a compatible Rust CLI (brew install maxgfr/tap/veil). No account, no server, nothing stored."
+        "fr": "Salles privées entre navigateurs : chat, fichiers sans limite de taille et appels audio/vidéo, pair à pair et chiffrés de bout en bout. La clé de la salle vit dans le #fragment du lien ; les pairs se trouvent via relais Nostr, trackers WebTorrent ou codes QR hors-ligne, ne voient passer que du chiffré, puis tout circule dans un maillage P2P (sender keys renouvelées à chaque départ, 4 emojis pour vérifier, média chiffré image par image). Fichiers streamés disque à disque, vérifiés en SHA-256, reprise après coupure, avec une salle « fichiers » sans caméra ni micro. PWA installable, CLI Rust (brew install maxgfr/tap/veil) compatible. Sans compte, sans serveur, rien n'est stocké.",
+        "en": "Private rooms between browsers: chat, files of any size and audio/video calls, peer to peer and end-to-end encrypted. The room key lives in the link's #fragment; peers meet through Nostr relays, WebTorrent trackers or offline QR codes that only ever see ciphertext, then everything flows through a P2P mesh (sender keys rotated whenever someone leaves, 4 emojis to verify, media encrypted frame by frame). Files streamed disk to disk, SHA-256 verified, resumable, with a files-only room (no camera or microphone). Installable PWA, plus a compatible Rust CLI (brew install maxgfr/tap/veil). No account, no server, nothing stored."
       },
       "cat": 3,
       "dex": 45,
@@ -2450,8 +2450,8 @@
       "poke": {
         "type1": "fairy",
         "type2": "water",
-        "hp": 230,
-        "level": 54,
+        "hp": 250,
+        "level": 58,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
