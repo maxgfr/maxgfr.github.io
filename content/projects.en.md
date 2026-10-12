@@ -5,7 +5,7 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 83 public repos · ⭐ 325 stars**
+**📦 84 public repos · ⭐ 325 stars**
 
 ---
 
@@ -66,6 +66,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[basilico](https://github.com/maxgfr/basilico)** — Local-first Pomodoro focus timer (PWA + Chrome extension): tasks, backlog & day plan, interruption counting, overtime and Flowtime, year heatmap, productive hours and estimate accuracy, JSON/CSV/Open Pomodoro export — no account, no server, no tracking. · [demo](https://maxgfr.github.io/basilico/)
 - **[tick](https://github.com/maxgfr/tick)** — Local-first timer suite, entirely in the browser: multiple simultaneous countdowns with presets (egg, tea, laundry…), stopwatch with laps, HIIT/Tabata/EMOM intervals, metronome, world clock, duration calculator, alarms and a big fullscreen display — Web Audio beeps, notifications, drift-free system-clock math, keyboard shortcuts, offline PWA. No account, no server, no tracking. · [demo](https://maxgfr.github.io/tick/)
 - **[tok](https://github.com/maxgfr/tok)** — Local-first rally and score counter for table tennis, beach rackets, volleyball and more: every hit counted from sound (AudioWorklet), motion and camera (self-hosted MediaPipe, telemetry stripped), rallies start and end on their own, matches follow each sport's rules down to tie-breaks. Recordings with the score burned in, chaptered by rally, records and goals, a calibration Lab, offline PWA. No account, no server: nothing leaves the phone. · [demo](https://maxgfr.github.io/tok/)
+- **[lastdone](https://github.com/maxgfr/lastdone)** — Local-first recurring reminders you talk to: "I watered the plants", "when did I last descale the kettle?", "remind me to water every 5 days". An in-browser LLM (WebLLM on WebGPU, Qwen2.5) turns the sentence into a schema-constrained JSON intent the app executes; FR/EN rule-parser fallback and a one-tap Done button. Departure-board view ranked by urgency, history, notifications, .ics export, offline PWA. No account, no server, no API key: nothing leaves the device. · [demo](https://maxgfr.github.io/lastdone/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline. · [demo](https://maxgfr.github.io/bracketeer)
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Real-time presence over WebRTC with no backend: live rooms for talks (reactions, polls and Q&A, with a presenter key that signs every result) and a one-line widget that shows readers, reactions and reading positions on any static site. Peer to peer through Trystero and Nostr relays; nothing is stored. · [demo](https://maxgfr.github.io/ephemeral/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer. · [demo](https://maxgfr.github.io/csv-ai-analyzer)
@@ -143,7 +144,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🆕 Uncategorized
 
-- **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny System One decision models (0.2M–6.6M params) trained from scratch in Rust with MLX on a Mac, playing drone games live in the browser via WebAssembly in under a millisecond. · [demo](https://maxgfr.github.io/skycmd/)
+- **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny System One decision models trained from scratch in Rust with MLX on a Mac. s3-pico: 445k params, 251 KB ternary, plays four games (incl. a Doom-like) at oracle level live in the browser via WebAssembly, ~50 µs per frame. · [demo](https://maxgfr.github.io/skycmd/)
 
 ---
 

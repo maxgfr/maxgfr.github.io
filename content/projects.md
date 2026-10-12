@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 83 dépôts publics · ⭐ 325 étoiles**
+**📦 84 dépôts publics · ⭐ 325 étoiles**
 
 ---
 
@@ -66,6 +66,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur de concentration Pomodoro local-first (PWA + extension Chrome) : tâches, backlog et plan du jour, comptage des interruptions, overtime et Flowtime, heatmap annuelle, heures productives et précision des estimations, export JSON/CSV/Open Pomodoro — sans compte, sans serveur, sans tracking. · [démo](https://maxgfr.github.io/basilico/)
 - **[tick](https://github.com/maxgfr/tick)** — Suite de minuteurs local-first, 100 % dans le navigateur : multi-minuteurs simultanés avec préréglages (œuf, thé, réunion…), chronomètre avec tours, intervalles HIIT/Tabata/EMOM, métronome, horloge mondiale, calculateur de durées, alarmes et grand affichage plein écran — bips Web Audio, notifications, anti-dérive par horloge système, raccourcis clavier, PWA hors-ligne. Sans compte, sans serveur, sans tracking. · [démo](https://maxgfr.github.io/tick/)
 - **[tok](https://github.com/maxgfr/tok)** — Compteur d'échanges et de score local-first pour le ping-pong, les raquettes de plage, le volley et plus : chaque frappe est comptée au son (AudioWorklet), au mouvement et à la caméra (MediaPipe auto-hébergé, sans télémétrie), les échanges démarrent et finissent seuls, les matchs suivent les règles de chaque sport (tie-breaks compris). Vidéos avec le score incrusté, chapitrées par échange, records et objectifs, Lab de calibration, PWA hors-ligne. Sans compte, sans serveur : rien ne quitte le téléphone. · [démo](https://maxgfr.github.io/tok/)
+- **[lastdone](https://github.com/maxgfr/lastdone)** — Rappels récurrents local-first qu'on pilote en parlant : « j'ai arrosé les plantes », « c'est quand la dernière fois que j'ai détartré la bouilloire ? », « rappelle-moi d'arroser tous les 5 jours ». Un LLM qui tourne dans le navigateur (WebLLM sur WebGPU, Qwen2.5) traduit la phrase en intention JSON contrainte, l'app l'exécute ; parseur FR/EN de secours et bouton « Fait » en un tap. Tableau façon horaire de départs trié par urgence, historique, notifications, export .ics, PWA hors-ligne. Sans compte, sans serveur, sans clé d'API : rien ne quitte l'appareil. · [démo](https://maxgfr.github.io/lastdone/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois agnostique : brackets, système suisse, ligues, poules et Elo composés depuis six axes — aucun sport codé en dur. 100 % navigateur, sans serveur ni compte : lien partageable, sync P2P, export ICS, impression et hors-ligne. · [démo](https://maxgfr.github.io/bracketeer)
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Présence en temps réel en WebRTC, sans backend : des salles pour les talks (réactions, sondages et questions, avec une clé de présentateur qui signe chaque résultat) et un widget d'une ligne qui affiche lecteurs, réactions et positions de lecture sur n'importe quel site statique. Pair à pair via Trystero et des relais Nostr ; rien n'est stocké. · [démo](https://maxgfr.github.io/ephemeral/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur. · [démo](https://maxgfr.github.io/csv-ai-analyzer)
@@ -143,7 +144,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🆕 Non classés
 
-- **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny System One decision models (0.2M–6.6M params) trained from scratch in Rust with MLX on a Mac, playing drone games live in the browser via WebAssembly in under a millisecond. · [démo](https://maxgfr.github.io/skycmd/)
+- **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny System One decision models trained from scratch in Rust with MLX on a Mac. s3-pico: 445k params, 251 KB ternary, plays four games (incl. a Doom-like) at oracle level live in the browser via WebAssembly, ~50 µs per frame. · [démo](https://maxgfr.github.io/skycmd/)
 
 ---
 
