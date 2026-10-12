@@ -2535,8 +2535,8 @@
         "en": "demo"
       },
       "desc": {
-        "fr": "Boîte à outils PDF et images qui n'envoie jamais vos fichiers : compresser (sans perte, équilibré, fort ou extrême, jamais plus gros que l'original), fusionner, découper, réordonner, pivoter, filigrane, numéros de page, signature visuelle, mot de passe AES-256, OCR vers PDF cherchable, PDF vers Markdown, texte ou EPUB, et compression, conversion ou nettoyage EXIF des images. Un seul moteur Rust compilé en WebAssembly sert le site et la CLI (bunx pdfvault), avec une skill d'agent. CSP stricte, zéro requête externe, marche hors ligne, coffre chiffré optionnel (Argon2id + AES-GCM). Démo en ligne : maxgfr.github.io/pdfvault.",
-        "en": "PDF and image toolbox that never uploads your files: compress (lossless, balanced, strong or extreme, never larger than the original), merge, split, reorder, rotate, watermark, page numbers, visual signature, AES-256 passwords, OCR to searchable PDF, PDF to Markdown, text or EPUB, plus image compression, conversion and EXIF stripping. One Rust engine compiled to WebAssembly powers both the site and the CLI (bunx pdfvault), with an agent skill. Strict CSP, zero external requests, works offline, optional encrypted vault (Argon2id + AES-GCM). Live demo: maxgfr.github.io/pdfvault."
+        "fr": "Boîte à outils PDF et images qui n'envoie jamais vos fichiers : compresser (sans perte, équilibré, fort ou extrême, jamais plus gros que l'original), fusionner, découper, réordonner, pivoter, filigrane, numéros de page, signature visuelle, mot de passe AES-256, OCR vers PDF cherchable, PDF vers Markdown, texte ou EPUB, et compression, conversion ou nettoyage EXIF des images. Un seul moteur Rust compilé en WebAssembly sert le site et la CLI (bunx pdfvault), avec une skill d'agent. CSP stricte, zéro requête externe, marche hors ligne, coffre chiffré optionnel (Argon2id + AES-GCM).",
+        "en": "PDF and image toolbox that never uploads your files: compress (lossless, balanced, strong or extreme, never larger than the original), merge, split, reorder, rotate, watermark, page numbers, visual signature, AES-256 passwords, OCR to searchable PDF, PDF to Markdown, text or EPUB, plus image compression, conversion and EXIF stripping. One Rust engine compiled to WebAssembly powers both the site and the CLI (bunx pdfvault), with an agent skill. Strict CSP, zero external requests, works offline, optional encrypted vault (Argon2id + AES-GCM)."
       },
       "cat": 3,
       "dex": 47,
@@ -2560,8 +2560,8 @@
       "poke": {
         "type1": "dark",
         "type2": "fire",
-        "hp": 240,
-        "level": 57,
+        "hp": 230,
+        "level": 53,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
