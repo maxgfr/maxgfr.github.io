@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 87,
-    "stars": 325
+    "stars": 326
   },
   "languages": [
     {
@@ -681,7 +681,7 @@
       "cat": 1,
       "dex": 12,
       "dexLabel": "012",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "Go",
       "topics": [
@@ -700,18 +700,18 @@
       "poke": {
         "type1": "dragon",
         "type2": "ice",
-        "hp": 150,
-        "level": 33,
+        "hp": 160,
+        "level": 35,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
           {
             "name": "ai authoring",
-            "dmg": 50
+            "dmg": 60
           },
           {
             "name": "brms",
-            "dmg": 50
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -2535,8 +2535,8 @@
         "en": "demo"
       },
       "desc": {
-        "fr": "Boîte à outils PDF et images qui n'envoie jamais vos fichiers : compresser (sans perte, équilibré, fort ou extrême, jamais plus gros que l'original), fusionner, découper, réordonner, pivoter, filigrane, numéros de page, signature visuelle, mot de passe AES-256, OCR vers PDF cherchable, PDF vers Markdown, texte ou EPUB, et compression, conversion ou nettoyage EXIF des images. Un seul moteur Rust compilé en WebAssembly sert le site et la CLI (bunx pdfvault), avec une skill d'agent. CSP stricte, zéro requête externe, marche hors ligne, coffre chiffré optionnel (Argon2id + AES-GCM).",
-        "en": "PDF and image toolbox that never uploads your files: compress (lossless, balanced, strong or extreme, never larger than the original), merge, split, reorder, rotate, watermark, page numbers, visual signature, AES-256 passwords, OCR to searchable PDF, PDF to Markdown, text or EPUB, plus image compression, conversion and EXIF stripping. One Rust engine compiled to WebAssembly powers both the site and the CLI (bunx pdfvault), with an agent skill. Strict CSP, zero external requests, works offline, optional encrypted vault (Argon2id + AES-GCM)."
+        "fr": "Boîte à outils PDF et images qui n'envoie jamais vos fichiers : compresser (sans perte, équilibré, fort ou extrême, jamais plus gros que l'original), fusionner, découper, réordonner, pivoter, filigrane, numéros de page, signature visuelle, mot de passe AES-256, OCR vers PDF cherchable, PDF vers Markdown, texte ou EPUB, et compression, conversion ou nettoyage EXIF des images. Un seul moteur Rust compilé en WebAssembly sert le site et la CLI (brew install maxgfr/tap/pdfvault, binaire autonome avec l'OCR intégré), avec une skill d'agent. CSP stricte, zéro requête externe, marche hors ligne, coffre chiffré optionnel (Argon2id + AES-GCM).",
+        "en": "PDF and image toolbox that never uploads your files: compress (lossless, balanced, strong or extreme, never larger than the original), merge, split, reorder, rotate, watermark, page numbers, visual signature, AES-256 passwords, OCR to searchable PDF, PDF to Markdown, text or EPUB, plus image compression, conversion and EXIF stripping. One Rust engine compiled to WebAssembly powers both the site and the CLI (brew install maxgfr/tap/pdfvault, a standalone binary with OCR built in), with an agent skill. Strict CSP, zero external requests, works offline, optional encrypted vault (Argon2id + AES-GCM)."
       },
       "cat": 3,
       "dex": 47,
@@ -2560,8 +2560,8 @@
       "poke": {
         "type1": "dark",
         "type2": "fire",
-        "hp": 230,
-        "level": 53,
+        "hp": 250,
+        "level": 58,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
