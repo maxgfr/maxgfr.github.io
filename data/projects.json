@@ -1,13 +1,13 @@
 {
   "generated": "2026-10",
   "totals": {
-    "repos": 84,
+    "repos": 85,
     "stars": 325
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 41
+      "count": 42
     },
     {
       "name": "JavaScript",
@@ -88,6 +88,11 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -3003,7 +3008,7 @@
             "dmg": 40
           },
           {
-            "name": "end to end encryption",
+            "name": "kanban",
             "dmg": 30
           }
         ],
@@ -4575,6 +4580,59 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "veil",
+      "url": "https://github.com/maxgfr/veil",
+      "home": "https://maxgfr.github.io/veil/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Serverless, end-to-end encrypted WebRTC rooms: chat, files and calls, peer-to-peer. PWA + Rust CLI.",
+        "en": "Serverless, end-to-end encrypted WebRTC rooms: chat, files and calls, peer-to-peer. PWA + Rust CLI."
+      },
+      "cat": 10,
+      "dex": 85,
+      "dexLabel": "085",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "end-to-end-encryption",
+        "file-transfer",
+        "nostr",
+        "p2p",
+        "pwa",
+        "webrtc"
+      ],
+      "created": "2026-10",
+      "pushed": "2026-10",
+      "license": "MIT",
+      "poke": {
+        "type1": "fairy",
+        "type2": "water",
+        "hp": 70,
+        "level": 14,
+        "rarity": "common",
+        "weakness": "steel",
+        "moves": [
+          {
+            "name": "file transfer",
+            "dmg": 20
+          },
+          {
+            "name": "end to end encryption",
+            "dmg": 30
+          }
+        ],
+        "sprite": [
+          "M2 1h8v1h-8zM1 2h10v1h-10zM1 3h10v1h-10z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h1v1h-1zM2 6h3v1h-3zM7 6h3v1h-3zM11 6h1v1h-1zM0 7h1v1h-1zM2 7h8v1h-8zM11 7h1v1h-1zM0 8h12v1h-12z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM0 9h12v1h-12zM1 10h10v1h-10zM1 11h1v1h-1zM4 11h1v1h-1zM7 11h1v1h-1zM10 11h1v1h-1z"
         ]
       }
     }

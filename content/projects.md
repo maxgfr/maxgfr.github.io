@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 84 dépôts publics · ⭐ 325 étoiles**
+**📦 85 dépôts publics · ⭐ 325 étoiles**
 
 ---
 
@@ -140,6 +140,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Non classés
+
+- **[veil](https://github.com/maxgfr/veil)** — Serverless, end-to-end encrypted WebRTC rooms: chat, files and calls, peer-to-peer. PWA + Rust CLI. · [démo](https://maxgfr.github.io/veil/)
 
 ---
 
