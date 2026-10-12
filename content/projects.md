@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 85 dépôts publics · ⭐ 325 étoiles**
+**📦 86 dépôts publics · ⭐ 325 étoiles**
 
 ---
 
@@ -71,6 +71,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois agnostique : brackets, système suisse, ligues, poules et Elo composés depuis six axes — aucun sport codé en dur. 100 % navigateur, sans serveur ni compte : lien partageable, sync P2P, export ICS, impression et hors-ligne. · [démo](https://maxgfr.github.io/bracketeer)
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Présence en temps réel en WebRTC, sans backend : des salles pour les talks (réactions, sondages et questions, avec une clé de présentateur qui signe chaque résultat) et un widget d'une ligne qui affiche lecteurs, réactions et positions de lecture sur n'importe quel site statique. Pair à pair via Trystero et des relais Nostr ; rien n'est stocké. · [démo](https://maxgfr.github.io/ephemeral/)
 - **[veil](https://github.com/maxgfr/veil)** — Salles privées entre navigateurs : chat, fichiers sans limite de taille et appels audio/vidéo, pair à pair et chiffrés de bout en bout. La clé de la salle vit dans le #fragment du lien ; les pairs se trouvent via relais Nostr, trackers WebTorrent ou codes QR hors-ligne, ne voient passer que du chiffré, puis tout circule dans un maillage P2P (sender keys renouvelées à chaque départ, 4 emojis pour vérifier, média chiffré image par image). Fichiers streamés disque à disque, vérifiés en SHA-256, reprise après coupure, avec une salle « fichiers » sans caméra ni micro. PWA installable, CLI Rust (brew install maxgfr/tap/veil) compatible. Sans compte, sans serveur, rien n'est stocké. · [démo](https://maxgfr.github.io/veil/)
+- **[slotmatch](https://github.com/maxgfr/slotmatch)** — Trouver un créneau commun entre plusieurs personnes, fuseaux horaires et règles de panel (« le candidat + 1 ingé + 1 RH », « 2 parmi 4 »). Dispos hebdo peintes sur une grille, exceptions, import .ics (récurrences, fuseaux Outlook) ; créneaux classés avec un score explicable (préférences, équité entre recruteurs, précocité). Heatmap de couverture d'équipe, planificateur de journée d'entretiens sans double réservation, export .ics. Les candidats répondent via un lien : dispos peintes dans leur fuseau, renvoyées dans un lien compressé. Sans compte, sans serveur, tout reste dans le navigateur. · [démo](https://maxgfr.github.io/slotmatch/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyseur de CSV par IA, auto-hébergé et exécuté dans le navigateur. · [démo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualiseur de schéma de base de données côté client avec analyse par IA — importez du SQL, visualisez, partagez, exportez, sans backend. · [démo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité (ROI) immobilière pour évaluer la rentabilité d'un bien locatif. · [démo](https://maxgfr.github.io/real-estate-calculator)

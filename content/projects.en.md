@@ -5,7 +5,7 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 85 public repos · ⭐ 325 stars**
+**📦 86 public repos · ⭐ 325 stars**
 
 ---
 
@@ -71,6 +71,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Sport-agnostic tournament engine: brackets, Swiss, leagues, groups and Elo composed from six axes — no sport hardcoded. Entirely in-browser, no server or account: shareable link, P2P live sync, ICS export, printing and offline. · [demo](https://maxgfr.github.io/bracketeer)
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Real-time presence over WebRTC with no backend: live rooms for talks (reactions, polls and Q&A, with a presenter key that signs every result) and a one-line widget that shows readers, reactions and reading positions on any static site. Peer to peer through Trystero and Nostr relays; nothing is stored. · [demo](https://maxgfr.github.io/ephemeral/)
 - **[veil](https://github.com/maxgfr/veil)** — Private rooms between browsers: chat, files of any size and audio/video calls, peer to peer and end-to-end encrypted. The room key lives in the link's #fragment; peers meet through Nostr relays, WebTorrent trackers or offline QR codes that only ever see ciphertext, then everything flows through a P2P mesh (sender keys rotated whenever someone leaves, 4 emojis to verify, media encrypted frame by frame). Files streamed disk to disk, SHA-256 verified, resumable, with a files-only room (no camera or microphone). Installable PWA, plus a compatible Rust CLI (brew install maxgfr/tap/veil). No account, no server, nothing stored. · [demo](https://maxgfr.github.io/veil/)
+- **[slotmatch](https://github.com/maxgfr/slotmatch)** — Find a time that works across people, time zones and panel rules ("the candidate + 1 engineer + 1 HR", "2 out of 4"). Weekly availability painted on a grid, exceptions, .ics import (recurrences, Outlook zones); slots ranked with an explainable score (preferences, fairness across interviewers, earliness). Team coverage heatmap, interview-day planner with no double-booking, .ics export. Candidates answer through a link: they paint their time in their own zone and send it back in a compressed link. No account, no server, everything stays in the browser. · [demo](https://maxgfr.github.io/slotmatch/)
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Self-hosted, browser-based AI CSV analyzer. · [demo](https://maxgfr.github.io/csv-ai-analyzer)
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend. · [demo](https://maxgfr.github.io/db-schema-viewer/)
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Real-estate ROI calculator for rental-property profitability. · [demo](https://maxgfr.github.io/real-estate-calculator)
