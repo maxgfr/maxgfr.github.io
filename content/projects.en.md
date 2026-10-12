@@ -40,6 +40,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI-powered git automation: smart commits, conflict resolution & auto-rebase (Claude/Codex/OpenAI/Gemini/Mistral). Pure Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Monthly commit-recap generator with AI summaries, bullet points and commit lists.
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Fetches the latest LLM models from the OpenRouter and models.dev APIs. · [npm](https://www.npmjs.com/package/llm-models)
+- **[skycmd](https://github.com/maxgfr/skycmd)** — Ultra-small System One decision models trained from scratch in Rust with MLX on a Mac: state + typed questions in, calibrated probabilities out, in one forward pass. s3-pico (445k params, 251 KB ternary) loops one shared block with closed-loop-calibrated early exits and plays four games, including a Doom-like, at oracle level live in the browser through a Rust WebAssembly engine, in about 50 µs per frame. Installable everywhere (CLI with /v1/systemone, npm, Python wheel, llama.cpp/wllama for s1), with a step-by-step tutorial. · [demo](https://maxgfr.github.io/skycmd/)
 
 ---
 
@@ -139,12 +140,6 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Uncategorized
-
-- **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny System One decision models trained from scratch in Rust with MLX on a Mac. s3-pico: 445k params, 251 KB ternary, plays four games (incl. a Doom-like) at oracle level live in the browser via WebAssembly, ~50 µs per frame. · [demo](https://maxgfr.github.io/skycmd/)
 
 ---
 

@@ -40,6 +40,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits intelligents, résolution de conflits et rebase auto (Claude/Codex/OpenAI/Gemini/Mistral). 100% Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Générateur de récap mensuel des commits : résumés par IA, points clés et liste des commits.
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Récupère les derniers modèles LLM depuis les API OpenRouter et models.dev. · [npm](https://www.npmjs.com/package/llm-models)
+- **[skycmd](https://github.com/maxgfr/skycmd)** — Modèles de décision « System One » ultra-compacts entraînés de zéro en Rust avec MLX sur Mac : un état et des questions typées en entrée, des probabilités calibrées en sortie, en une seule passe. s3-pico (445k paramètres, 251 Ko ternaire) boucle un bloc partagé avec sorties anticipées calibrées en boucle fermée et joue à quatre jeux, dont un Doom-like, au niveau de l'oracle en direct dans le navigateur via un moteur Rust WebAssembly, en ~50 µs par frame. Installable partout (CLI avec /v1/systemone, npm, wheel Python, llama.cpp/wllama pour s1), avec un tutoriel pas à pas. · [démo](https://maxgfr.github.io/skycmd/)
 
 ---
 
@@ -139,12 +140,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny System One decision models trained from scratch in Rust with MLX on a Mac. s3-pico: 445k params, 251 KB ternary, plays four games (incl. a Doom-like) at oracle level live in the browser via WebAssembly, ~50 µs per frame. · [démo](https://maxgfr.github.io/skycmd/)
 
 ---
 
