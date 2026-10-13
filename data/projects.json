@@ -682,7 +682,7 @@
       "dex": 12,
       "dexLabel": "012",
       "stars": 1,
-      "forks": 0,
+      "forks": 1,
       "language": "Go",
       "topics": [
         "ai",
@@ -700,8 +700,8 @@
       "poke": {
         "type1": "dragon",
         "type2": "ice",
-        "hp": 160,
-        "level": 35,
+        "hp": 170,
+        "level": 37,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
