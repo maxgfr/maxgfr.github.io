@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 89 dépôts publics · ⭐ 326 étoiles**
+**📦 90 dépôts publics · ⭐ 326 étoiles**
 
 ---
 
@@ -28,6 +28,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 ## 🤖 IA & outils de dev
 
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier DMN/FEEL natif IA compilé en Go : un LLM écrit les règles, le moteur les prouve et les exécute de façon déterministe (playground WASM). · [démo](https://maxgfr.github.io/feelc/)
+- **[nuee](https://github.com/maxgfr/nuee)** — Transforme les portables et téléphones d’un groupe de confiance en nuage privé et éphémère à partir d’un seul lien : calcul vérifié, tâches GPU, fichiers chiffrés, entraînement distribué et hébergement. · [démo](https://maxgfr.github.io/nuee/)
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Moteur d'indexation de dépôt zéro-dépendance : symboles, imports, graphe de liens inter-fichiers typé et analytics — un seul engine.mjs embarquable, CLI + serveur MCP inclus. · [démo](https://maxgfr.github.io/codeindex/)
 - **[webindex](https://github.com/maxgfr/webindex)** — Moteur de récupération web zéro-dépendance : transforme une URL ou un fichier en texte propre et citable — HTML, PDF via une échelle à six barreaux finissant en OCR, documents bureautiques, vidéos (YouTube, Vimeo et tout ce que lit yt-dlp) en transcriptions horodatées — et le sert en MCP. Un seul engine.mjs embarquable, CLI + serveur MCP inclus. Le pendant web de codeindex.
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code (règles, skills, agents, serveurs MCP) entre Claude Code, Cursor et d'autres outils (Rust).
