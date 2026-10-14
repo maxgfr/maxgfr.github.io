@@ -1,13 +1,13 @@
 {
   "generated": "2026-10",
   "totals": {
-    "repos": 90,
+    "repos": 91,
     "stars": 326
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 45
+      "count": 46
     },
     {
       "name": "JavaScript",
@@ -2582,6 +2582,45 @@
       }
     },
     {
+      "name": "cursus",
+      "url": "https://github.com/maxgfr/cursus",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Application d'étude local-first pour les étudiants, en PWA sur iPhone, iPad et Mac. On range sa matière par cours (notes Markdown avec maths, PDF, photos), l'IA explique un sujet à partir de ses propres sources avec des citations vérifiées, puis on retient avec des cartes FSRS, des textes à trous, des quiz et « réponds avec tes mots » corrigé par l'IA. Modèle au choix dans le catalogue llm-models, avec sa propre clé, appelé directement depuis le navigateur. Rien ne se perd : un journal immuable se réplique sans conflit vers plusieurs destinations à la fois (S3, Google Drive, Dropbox, CloudKit, dossier local ou iCloud Drive, fichiers .cursus, appareil à proximité en WebRTC), avec chiffrement optionnel par destination et un exercice de restauration qui le prouve. Import et export Anki (.apkg, historique compris). Interface en anglais, allemand et français. Sans compte, sans serveur, hébergée sur GitHub Pages.",
+        "en": "Local-first study app for students, a PWA for iPhone, iPad and Mac. Course material is organised by course (Markdown notes with maths, PDFs, photos); the AI explains a topic from your own sources with checked citations, then you retain it with FSRS flashcards, cloze cards, quizzes and AI-graded “answer in your own words”. Any model from the llm-models catalog, with your own key, called straight from the browser. Nothing gets lost: an immutable log replicates conflict-free to several destinations at once (S3, Google Drive, Dropbox, CloudKit, a local or iCloud Drive folder, .cursus files, a nearby device over WebRTC), with optional per-destination encryption and a restore drill that proves it. Anki import and export (.apkg, review history included). English, German and French UI. No account, no server, hosted on GitHub Pages."
+      },
+      "cat": 3,
+      "dex": 48,
+      "dexLabel": "048",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created": "2026-10",
+      "pushed": "2026-10",
+      "license": null,
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 250,
+        "level": 70,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "TypeScript",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h5v1h-5zM7 3h5v1h-5z",
+          "M0 4h3v1h-3zM5 4h2v1h-2zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6z",
+          "M5 3h2v1h-2zM4 4h1v1h-1zM7 4h1v1h-1zM2 9h8v1h-8zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "slotmatch",
       "url": "https://github.com/maxgfr/slotmatch",
       "home": "https://maxgfr.github.io/slotmatch/",
@@ -2594,8 +2633,8 @@
         "en": "Find a time that works across people, time zones and panel rules (\"the candidate + 1 engineer + 1 HR\", \"2 out of 4\"). Weekly availability painted on a grid, exceptions, .ics import (recurrences, Outlook zones); slots ranked with an explainable score (preferences, fairness across interviewers, earliness). Team coverage heatmap, interview-day planner with no double-booking, .ics export. Candidates answer through a link: they paint their time in their own zone and send it back in a compressed link. No account, no server, everything stays in the browser."
       },
       "cat": 3,
-      "dex": 48,
-      "dexLabel": "048",
+      "dex": 49,
+      "dexLabel": "049",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2649,8 +2688,8 @@
         "en": "PDF and image toolbox that never uploads your files: compress (lossless, balanced, strong or extreme, never larger than the original), merge, split, reorder, rotate, watermark, page numbers, visual signature, AES-256 passwords, OCR to searchable PDF, PDF to Markdown, text or EPUB, plus image compression, conversion and EXIF stripping. One Rust engine compiled to WebAssembly powers both the site and the CLI (brew install maxgfr/tap/pdfvault, a standalone binary with OCR built in), with an agent skill. Strict CSP, zero external requests, works offline, optional encrypted vault (Argon2id + AES-GCM)."
       },
       "cat": 3,
-      "dex": 49,
-      "dexLabel": "049",
+      "dex": 50,
+      "dexLabel": "050",
       "stars": 0,
       "forks": 0,
       "language": "Rust",
@@ -2704,8 +2743,8 @@
         "en": "Encrypted Word, Excel and PowerPoint editor that runs entirely in the browser: the ibisOffice editor (Rust/WebAssembly, WebGPU) on top of a local vault encrypted with age (X25519 key wrapped by an scrypt passphrase). Import and export as .age or password-protected Office files, no server, strict CSP, zero external requests, works offline."
       },
       "cat": 3,
-      "dex": 50,
-      "dexLabel": "050",
+      "dex": 51,
+      "dexLabel": "051",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2759,8 +2798,8 @@
         "en": "Self-hosted, browser-based AI CSV analyzer."
       },
       "cat": 3,
-      "dex": 51,
-      "dexLabel": "051",
+      "dex": 52,
+      "dexLabel": "052",
       "stars": 87,
       "forks": 10,
       "language": "TypeScript",
@@ -2814,8 +2853,8 @@
         "en": "Client-side DB-schema visualizer with AI analysis — upload SQL, visualize, share, export, no backend."
       },
       "cat": 3,
-      "dex": 52,
-      "dexLabel": "052",
+      "dex": 53,
+      "dexLabel": "053",
       "stars": 6,
       "forks": 2,
       "language": "TypeScript",
@@ -2869,8 +2908,8 @@
         "en": "Real-estate ROI calculator for rental-property profitability."
       },
       "cat": 3,
-      "dex": 53,
-      "dexLabel": "053",
+      "dex": 54,
+      "dexLabel": "054",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -2924,8 +2963,8 @@
         "en": "Client-side password generator + encrypted vault PWA: exact entropy, EFF passphrases, auto-locking AES-256-GCM vault (PBKDF2 600k), encrypted share links & QR — offline-first."
       },
       "cat": 3,
-      "dex": 54,
-      "dexLabel": "054",
+      "dex": 55,
+      "dexLabel": "055",
       "stars": 0,
       "forks": 0,
       "language": "HTML",
@@ -2979,8 +3018,8 @@
         "en": "Offline-first PWA for loyalty cards with encrypted storage and barcode scanning."
       },
       "cat": 3,
-      "dex": 55,
-      "dexLabel": "055",
+      "dex": 56,
+      "dexLabel": "056",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3031,8 +3070,8 @@
         "en": "Desktop language-learning app with multi-provider AI tutoring."
       },
       "cat": 3,
-      "dex": 56,
-      "dexLabel": "056",
+      "dex": 57,
+      "dexLabel": "057",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3083,8 +3122,8 @@
         "en": "Local-first daily short-video generator (Remotion) with per-platform captions + opt-in Shorts/TikTok/Reels publishing."
       },
       "cat": 3,
-      "dex": 57,
-      "dexLabel": "057",
+      "dex": 58,
+      "dexLabel": "058",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3138,8 +3177,8 @@
         "en": "Self-hosted studio for short AI videos: an actor, a script with an emotion per line, a model — Veo, Kling or Seedance with your own keys, or your own GPU through ComfyUI (LTX-2, Wan 2.2) or any HTTP server. Pickers only offer what each model can do, keys are encrypted at rest, and it all starts with one docker compose up."
       },
       "cat": 3,
-      "dex": 58,
-      "dexLabel": "058",
+      "dex": 59,
+      "dexLabel": "059",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -3190,8 +3229,8 @@
         "en": "Undetectable Leboncoin scraper via Chrome DevTools Protocol & Next.js data routes — no Puppeteer, zero bot detection."
       },
       "cat": 3,
-      "dex": 59,
-      "dexLabel": "059",
+      "dex": 60,
+      "dexLabel": "060",
       "stars": 1,
       "forks": 0,
       "language": "HTML",
@@ -3245,8 +3284,8 @@
         "en": "Find npm-package versions with their GitHub release notes."
       },
       "cat": 3,
-      "dex": 60,
-      "dexLabel": "060",
+      "dex": 61,
+      "dexLabel": "061",
       "stars": 6,
       "forks": 0,
       "language": "TypeScript",
@@ -3300,8 +3339,8 @@
         "en": "Local-first project management: kanban, sprints and roadmap in your browser, with a git repo as the only backend."
       },
       "cat": 3,
-      "dex": 61,
-      "dexLabel": "061",
+      "dex": 62,
+      "dexLabel": "062",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -3355,8 +3394,8 @@
         "en": "Strips watermarks in the browser: invisible Unicode and steganography in text (the payload is decoded, not just deleted), C2PA/EXIF/XMP metadata across 11 formats, and visible image watermarks — a flat overlay is inverted exactly rather than painted over, with Telea or MI-GAN inpainting otherwise. Nothing is uploaded: connect-src 'self' alone, proven by a CI gate."
       },
       "cat": 3,
-      "dex": 62,
-      "dexLabel": "062",
+      "dex": 63,
+      "dexLabel": "063",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3410,8 +3449,8 @@
         "en": "Browser-first video downloader: paste a link, pick a quality, get the file — fetching, merging and converting happen on the device (ffmpeg.wasm, OPFS), nothing is uploaded. For sites a page cannot read, YouTube above all, point it at one thing: an Invidious/Piped/cobalt instance, a one-click Cloudflare relay, a userscript bridge, or your own yt-dlp server (Docker, with cookies, SponsorBlock, clips). Public instances are measured daily and only the ones that answer are offered. Offline PWA and share target."
       },
       "cat": 3,
-      "dex": 63,
-      "dexLabel": "063",
+      "dex": 64,
+      "dexLabel": "064",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -3465,8 +3504,8 @@
         "en": "Torrents from a web page, on a phone or a computer: add a .torrent or a magnet, watch it arrive, save the files to the device — WebTorrent in the browser, pieces in OPFS — and share files or folders of your own. On a computer, a list beside the torrent open, a table view, search and filters, several selected at once, drag and drop anywhere, keyboard shortcuts and saving straight into a folder. A built-in .torrent editor, maker and checker. When the swarm is one a browser cannot reach (private trackers, TCP/UDP-only peers), the same torrent goes to a real client: your own server (one docker compose, or one click on Render/Fly/Cloudflare) or a service you already pay for (TorBox, put.io, Real-Debrid, AllDebrid). Installable, offline PWA and share target."
       },
       "cat": 3,
-      "dex": 64,
-      "dexLabel": "064",
+      "dex": 65,
+      "dexLabel": "065",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -3520,8 +3559,8 @@
         "en": "Creature-collecting RPG in a procedurally generated world. Runs entirely in the browser — no server, no account. The whole world rebuilds from a seed, so a save file is a few kilobytes of JSON you can export and re-import."
       },
       "cat": 4,
-      "dex": 65,
-      "dexLabel": "065",
+      "dex": 66,
+      "dexLabel": "066",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -3575,8 +3614,8 @@
         "en": "Self-hosted fundamental stock screener — 150k+ equities, zero API keys, transparent Piotroski/Altman/Beneish scores with full data provenance, DuckDB-fast."
       },
       "cat": 5,
-      "dex": 66,
-      "dexLabel": "066",
+      "dex": 67,
+      "dexLabel": "067",
       "stars": 6,
       "forks": 0,
       "language": "Python",
@@ -3630,8 +3669,8 @@
         "en": "Fetch historical klines from the Binance API."
       },
       "cat": 5,
-      "dex": 67,
-      "dexLabel": "067",
+      "dex": 68,
+      "dexLabel": "068",
       "stars": 47,
       "forks": 6,
       "language": "TypeScript",
@@ -3682,8 +3721,8 @@
         "en": "Describe a crypto strategy in plain English → JSON strategy, backtested over 50+ indicators with HTML reports."
       },
       "cat": 5,
-      "dex": 68,
-      "dexLabel": "068",
+      "dex": 69,
+      "dexLabel": "069",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -3737,8 +3776,8 @@
         "en": "Implementation of the SuperTrend indicator."
       },
       "cat": 5,
-      "dex": 69,
-      "dexLabel": "069",
+      "dex": 70,
+      "dexLabel": "070",
       "stars": 4,
       "forks": 4,
       "language": "TypeScript",
@@ -3792,8 +3831,8 @@
         "en": "Zero-dep TS regression/classification/stats (OLS, Ridge, Lasso, Logistic, KNN, NN) with a Rust/WASM engine."
       },
       "cat": 6,
-      "dex": 70,
-      "dexLabel": "070",
+      "dex": 71,
+      "dexLabel": "071",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3847,8 +3886,8 @@
         "en": "Functions to find similarities between arrays."
       },
       "cat": 6,
-      "dex": 71,
-      "dexLabel": "071",
+      "dex": 72,
+      "dexLabel": "072",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -3902,8 +3941,8 @@
         "en": "Condorcet vote algorithm in TypeScript."
       },
       "cat": 6,
-      "dex": 72,
-      "dexLabel": "072",
+      "dex": 73,
+      "dexLabel": "073",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -3957,8 +3996,8 @@
         "en": "Check whether a dataset follows Benford's law."
       },
       "cat": 6,
-      "dex": 73,
-      "dexLabel": "073",
+      "dex": 74,
+      "dexLabel": "074",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -4011,8 +4050,8 @@
         "en": "Helpers for Gaussian calculations."
       },
       "cat": 6,
-      "dex": 74,
-      "dexLabel": "074",
+      "dex": 75,
+      "dexLabel": "075",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -4066,8 +4105,8 @@
         "en": "Minimalist context for Node, inspired by the React Context API."
       },
       "cat": 6,
-      "dex": 75,
-      "dexLabel": "075",
+      "dex": 76,
+      "dexLabel": "076",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -4121,8 +4160,8 @@
         "en": "Useful hooks and components for React."
       },
       "cat": 6,
-      "dex": 76,
-      "dexLabel": "076",
+      "dex": 77,
+      "dexLabel": "077",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -4172,8 +4211,8 @@
         "en": "Essential zero-dependency TypeScript helpers."
       },
       "cat": 6,
-      "dex": 77,
-      "dexLabel": "077",
+      "dex": 78,
+      "dexLabel": "078",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -4225,8 +4264,8 @@
         "en": "Zero-dependency fix for date-parsing issues in React Native on Android."
       },
       "cat": 6,
-      "dex": 78,
-      "dexLabel": "078",
+      "dex": 79,
+      "dexLabel": "079",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -4280,8 +4319,8 @@
         "en": "Lightweight, zero-dependency React Native modal (no animation)."
       },
       "cat": 6,
-      "dex": 79,
-      "dexLabel": "079",
+      "dex": 80,
+      "dexLabel": "080",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4333,8 +4372,8 @@
         "en": "async-storage wrapper for storing huge data in React Native."
       },
       "cat": 6,
-      "dex": 80,
-      "dexLabel": "080",
+      "dex": 81,
+      "dexLabel": "081",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -4388,8 +4427,8 @@
         "en": "Track who unfollowed you on Instagram."
       },
       "cat": 6,
-      "dex": 81,
-      "dexLabel": "081",
+      "dex": 82,
+      "dexLabel": "082",
       "stars": 10,
       "forks": 1,
       "language": "TypeScript",
@@ -4443,8 +4482,8 @@
         "en": "Unofficial Node SDK for api-money.com."
       },
       "cat": 6,
-      "dex": 82,
-      "dexLabel": "082",
+      "dex": 83,
+      "dexLabel": "083",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -4495,8 +4534,8 @@
         "en": "Action to change a value in a JSON file (e.g. package.json)."
       },
       "cat": 7,
-      "dex": 83,
-      "dexLabel": "083",
+      "dex": 84,
+      "dexLabel": "084",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -4550,8 +4589,8 @@
         "en": "Action to commit and push a file to a repository."
       },
       "cat": 7,
-      "dex": 84,
-      "dexLabel": "084",
+      "dex": 85,
+      "dexLabel": "085",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -4604,8 +4643,8 @@
         "en": "Action to manage deployment statuses across multiple environments."
       },
       "cat": 7,
-      "dex": 85,
-      "dexLabel": "085",
+      "dex": 86,
+      "dexLabel": "086",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -4656,8 +4695,8 @@
         "en": "Minimalist TypeScript + SWC starter emitting CJS and ESM packages."
       },
       "cat": 8,
-      "dex": 86,
-      "dexLabel": "086",
+      "dex": 87,
+      "dexLabel": "087",
       "stars": 32,
       "forks": 5,
       "language": "TypeScript",
@@ -4711,8 +4750,8 @@
         "en": "Minimalist TS + SWC starter for building React component libraries."
       },
       "cat": 8,
-      "dex": 87,
-      "dexLabel": "087",
+      "dex": 88,
+      "dexLabel": "088",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -4763,8 +4802,8 @@
         "en": "Curated list of repositories I've liked on GitHub."
       },
       "cat": 9,
-      "dex": 88,
-      "dexLabel": "088",
+      "dex": 89,
+      "dexLabel": "089",
       "stars": 22,
       "forks": 3,
       "language": null,
@@ -4811,8 +4850,8 @@
         "en": "Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`)."
       },
       "cat": 9,
-      "dex": 89,
-      "dexLabel": "089",
+      "dex": 90,
+      "dexLabel": "090",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -4864,8 +4903,8 @@
         "en": "Source of a writer's website."
       },
       "cat": 9,
-      "dex": 90,
-      "dexLabel": "090",
+      "dex": 91,
+      "dexLabel": "091",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",
