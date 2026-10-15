@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 91,
-    "stars": 326
+    "stars": 327
   },
   "languages": [
     {
@@ -2584,8 +2584,11 @@
     {
       "name": "cursus",
       "url": "https://github.com/maxgfr/cursus",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://maxgfr.github.io/cursus/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
       "desc": {
         "fr": "Application d'étude local-first pour les étudiants, en PWA sur iPhone, iPad et Mac. On range sa matière par cours (notes Markdown avec maths, PDF, photos), l'IA explique un sujet à partir de ses propres sources avec des citations vérifiées, puis on retient avec des cartes FSRS, des textes à trous, des quiz et « réponds avec tes mots » corrigé par l'IA. Modèle au choix dans le catalogue llm-models, avec sa propre clé, appelé directement depuis le navigateur. Rien ne se perd : un journal immuable se réplique sans conflit vers plusieurs destinations à la fois (S3, Google Drive, Dropbox, CloudKit, dossier local ou iCloud Drive, fichiers .cursus, appareil à proximité en WebRTC), avec chiffrement optionnel par destination et un exercice de restauration qui le prouve. Import et export Anki (.apkg, historique compris). Interface en anglais, allemand et français. Sans compte, sans serveur, hébergée sur GitHub Pages.",
         "en": "Local-first study app for students, a PWA for iPhone, iPad and Mac. Course material is organised by course (Markdown notes with maths, PDFs, photos); the AI explains a topic from your own sources with checked citations, then you retain it with FSRS flashcards, cloze cards, quizzes and AI-graded “answer in your own words”. Any model from the llm-models catalog, with your own key, called straight from the browser. Nothing gets lost: an immutable log replicates conflict-free to several destinations at once (S3, Google Drive, Dropbox, CloudKit, a local or iCloud Drive folder, .cursus files, a nearby device over WebRTC), with optional per-destination encryption and a restore drill that proves it. Anki import and export (.apkg, review history included). English, German and French UI. No account, no server, hosted on GitHub Pages."
@@ -2596,21 +2599,34 @@
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
-      "topics": [],
+      "topics": [
+        "anki",
+        "byok",
+        "crdt",
+        "end-to-end-encryption",
+        "flashcards",
+        "fsrs",
+        "github-pages",
+        "indexeddb"
+      ],
       "created": "2026-10",
       "pushed": "2026-10",
       "license": null,
       "poke": {
-        "type1": "water",
-        "type2": null,
+        "type1": "electric",
+        "type2": "water",
         "hp": 250,
-        "level": 70,
+        "level": 90,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "ground",
         "moves": [
           {
-            "name": "TypeScript",
-            "dmg": 60
+            "name": "anki",
+            "dmg": 40
+          },
+          {
+            "name": "byok",
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -2855,7 +2871,7 @@
       "cat": 3,
       "dex": 53,
       "dexLabel": "053",
-      "stars": 6,
+      "stars": 7,
       "forks": 2,
       "language": "TypeScript",
       "topics": [
@@ -2874,8 +2890,8 @@
       "poke": {
         "type1": "poison",
         "type2": "water",
-        "hp": 170,
-        "level": 36,
+        "hp": 180,
+        "level": 38,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
