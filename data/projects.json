@@ -2207,8 +2207,8 @@
         "en": "demo"
       },
       "desc": {
-        "fr": "Carnet d'entraînement local-first pour la muscu, la natation et le sprint, en PWA pensée pour le téléphone. Programmes détaillés (quatre modèles intégrés : full body débutant, force façon 5/3/1, bloc sprinteur 100 m, construction 1500 m nage, et un éditeur complet), séance du jour pré-remplie, saisie rapide série par série avec minuteur de récupération, historique prévu vs réalisé, records, objectifs avec projection jusqu'à l'échéance et graphiques de progression (1RM estimé, meilleurs temps, allure au 100 m, volume hebdo, calendrier). Modes Normal et Avancé (RPE par série, %1RM, tempo, séries par groupe musculaire). IA optionnelle avec sa propre clé et un modèle du catalogue llm-models : conçoit un programme depuis un questionnaire ou son propre historique, ajuste la semaine suivante, toujours en brouillon modifiable. Export JSON et CSV. Sans compte, sans serveur, hébergée sur GitHub Pages.",
-        "en": "Local-first training log for the gym, the pool and the track, a phone-first PWA. Detailed programs (four built-in ones: beginner full body, 5/3/1-style strength, 100 m sprinter block, 1500 m swim build, plus a full editor), today's session pre-filled, fast set-by-set logging with a rest timer, history with planned vs done, records, goals with a projection to their deadline and progress charts (estimated 1RM, best times, pace per 100 m, weekly volume, training calendar). Normal and Advanced modes (RPE per set, %1RM, tempo, sets per muscle group). Optional AI with your own key and any model from the llm-models catalog: designs a program from a questionnaire or from your own history and adjusts next week, always as an editable draft. JSON and CSV export. No account, no server, hosted on GitHub Pages."
+        "fr": "Carnet d'entraînement local-first pour n'importe quel sport, en PWA pensée pour le téléphone. On crée ses propres disciplines et exercices (y compris en pleine séance), ou on part d'un mode démo au choix (muscu, natation, athlétisme, ou plusieurs) avec ses exercices et programmes (full body débutant, force façon 5/3/1, 1500 m nage, bloc sprinteur 100 m). Séance du jour pré-remplie, saisie rapide série par série avec minuteur de récupération, historique prévu vs réalisé, records, objectifs projetés jusqu'à l'échéance et graphiques (1RM estimé, meilleurs temps, allure, volume hebdo par discipline, calendrier). Modes Normal et Avancé (RPE par série, %1RM, tempo, séries par groupe musculaire). IA optionnelle avec sa propre clé et un modèle du catalogue llm-models : conçoit un programme ou ajuste la semaine suivante, toujours en brouillon modifiable. Export JSON et CSV. Sans compte, sans serveur, hébergée sur GitHub Pages.",
+        "en": "Local-first training log for any sport, a phone-first PWA. Create your own disciplines and exercises (even mid-session), or start from a demo of your choice (gym, swimming, track and field, or several) with its exercises and programs (beginner full body, 5/3/1-style strength, 1500 m swim build, 100 m sprinter block). Today's session pre-filled, fast set-by-set logging with a rest timer, history with planned vs done, records, goals projected to their deadline and charts (estimated 1RM, best times, pace, weekly volume per discipline, training calendar). Normal and Advanced modes (RPE per set, %1RM, tempo, sets per muscle group). Optional AI with your own key and any model from the llm-models catalog: designs a program or adjusts next week, always as an editable draft. JSON and CSV export. No account, no server, hosted on GitHub Pages."
       },
       "cat": 3,
       "dex": 41,
@@ -2233,7 +2233,7 @@
         "type1": "electric",
         "type2": "water",
         "hp": 250,
-        "level": 86,
+        "level": 89,
         "rarity": "common",
         "weakness": "ground",
         "moves": [
