@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 92 public repositories, totalling 328 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 93 public repositories, totalling 330 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -125,4 +125,8 @@ My 92 public repositories, totalling 328 stars — [github.com/maxgfr](https://g
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
+
+### 🆕 Uncategorized
+
+- **[aparte](https://github.com/maxgfr/aparte)** — Private AI chat that runs entirely in your browser: your own keys or…
 

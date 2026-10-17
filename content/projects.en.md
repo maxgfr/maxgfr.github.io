@@ -5,7 +5,7 @@ template = "projects.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 92 public repos · ⭐ 328 stars**
+**📦 93 public repos · ⭐ 330 stars**
 
 ---
 
@@ -148,6 +148,12 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Uncategorized
+
+- **[aparte](https://github.com/maxgfr/aparte)** — Private AI chat that runs entirely in your browser: your own keys or on-device models (WebLLM, Ollama), MCP tools, skills, Python sandbox, local RAG, voice. Encrypted at rest and synced end-to-end to your own Git repo. PWA + Rust CLI. · [demo](https://maxgfr.github.io/aparte/)
 
 ---
 

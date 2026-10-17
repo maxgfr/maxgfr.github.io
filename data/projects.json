@@ -1,13 +1,13 @@
 {
   "generated": "2026-10",
   "totals": {
-    "repos": 92,
-    "stars": 328
+    "repos": 93,
+    "stars": 330
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 47
+      "count": 48
     },
     {
       "name": "JavaScript",
@@ -88,6 +88,11 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -895,7 +900,7 @@
       "cat": 1,
       "dex": 16,
       "dexLabel": "016",
-      "stars": 3,
+      "stars": 4,
       "forks": 0,
       "language": "Rust",
       "topics": [
@@ -914,8 +919,8 @@
       "poke": {
         "type1": "ghost",
         "type2": "fire",
-        "hp": 170,
-        "level": 36,
+        "hp": 180,
+        "level": 37,
         "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
@@ -1474,7 +1479,7 @@
       "dex": 27,
       "dexLabel": "027",
       "stars": 1,
-      "forks": 0,
+      "forks": 1,
       "language": "Rust",
       "topics": [
         "aab",
@@ -1492,8 +1497,8 @@
       "poke": {
         "type1": "ghost",
         "type2": "fire",
-        "hp": 140,
-        "level": 30,
+        "hp": 150,
+        "level": 32,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -3687,7 +3692,7 @@
       "cat": 5,
       "dex": 68,
       "dexLabel": "068",
-      "stars": 6,
+      "stars": 7,
       "forks": 0,
       "language": "Python",
       "topics": [
@@ -3706,8 +3711,8 @@
       "poke": {
         "type1": "ground",
         "type2": "grass",
-        "hp": 170,
-        "level": 34,
+        "hp": 180,
+        "level": 36,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
@@ -5013,6 +5018,61 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "aparte",
+      "url": "https://github.com/maxgfr/aparte",
+      "home": "https://maxgfr.github.io/aparte/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Private AI chat that runs entirely in your browser: your own keys or on-device models (WebLLM, Ollama), MCP tools, skills, Python sandbox, local RAG, voice. Encrypted at rest and synced end-to-end to your own Git repo. PWA + Rust CLI.",
+        "en": "Private AI chat that runs entirely in your browser: your own keys or on-device models (WebLLM, Ollama), MCP tools, skills, Python sandbox, local RAG, voice. Encrypted at rest and synced end-to-end to your own Git repo. PWA + Rust CLI."
+      },
+      "cat": 10,
+      "dex": 93,
+      "dexLabel": "093",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "byok",
+        "chat",
+        "cli",
+        "end-to-end-encryption",
+        "github-pages",
+        "llm",
+        "local-first",
+        "mcp"
+      ],
+      "created": "2026-10",
+      "pushed": "2026-10",
+      "license": "MIT",
+      "poke": {
+        "type1": "dark",
+        "type2": "water",
+        "hp": 190,
+        "level": 40,
+        "rarity": "common",
+        "weakness": "fighting",
+        "moves": [
+          {
+            "name": "chat",
+            "dmg": 50
+          },
+          {
+            "name": "ollama",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M4 0h4v1h-4zM3 1h6v1h-6zM4 2h4v1h-4zM4 3h1v1h-1zM7 3h1v1h-1zM4 6h4v1h-4zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M5 4h2v1h-2zM3 5h6v1h-6zM2 6h2v1h-2zM8 6h2v1h-2zM1 7h3v1h-3zM8 7h3v1h-3zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M4 4h1v1h-1zM7 4h1v1h-1zM2 9h2v1h-2zM8 9h2v1h-2zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     }

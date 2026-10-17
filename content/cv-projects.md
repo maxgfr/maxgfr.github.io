@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 92 dépôts publics, totalisant 328 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 93 dépôts publics, totalisant 330 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -125,4 +125,8 @@ Mes 92 dépôts publics, totalisant 328 étoiles — [github.com/maxgfr](https:/
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
+
+### 🆕 Non classés
+
+- **[aparte](https://github.com/maxgfr/aparte)** — Private AI chat that runs entirely in your browser: your own keys or…
 
