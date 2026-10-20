@@ -2,8 +2,6 @@
 name: cv
 description: Generate, preview, and refine Maxime's CV PDFs and layout on the maxgfr.github.io site.
 disable-model-invocation: true
-metadata:
-  opencode/autoinvoke: 'false'
 ---
 
 # CV PDFs for maxgfr.github.io
