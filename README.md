@@ -114,13 +114,12 @@ The site is ready for GitHub Pages. The `public/` directory contains the built s
 
 This project is open source and available under the [GPLv3 License](themes/anemone/LICENSE).
 
-## Manual skill invocation
+## Agent skill
 
-`skills/cv` is a dev-only skill for working on this repo. Codex finds it via
-`.agents/skills`; for another agent, install it locally from the clone with
-`npx skills add .` (pick the agent when prompted, or pass `-a <agent>`, e.g.
-`-a claude-code` or `-a opencode`).
+`skills/cv` is a dev-only skill for working on this repo (generate, preview and refine the CV
+PDFs). Install the repo's skills for your agent with `npx skills add .` (pick the agent when
+prompted, or pass `-a <agent>`, e.g. `-a claude-code` or `-a codex`). The install output is
+gitignored.
 
-These skills run when explicitly invoked: `cv`. Use `$name` in Codex or `/name` in Claude Code and OpenCode.
-
-The skill bundle disables implicit selection: Claude Code and OpenCode read `disable-model-invocation: true` from `SKILL.md`.
+The skill runs only when explicitly invoked: `/cv` in Claude Code and OpenCode, `$cv` in Codex
+(`disable-model-invocation: true` in `SKILL.md` disables implicit selection).
