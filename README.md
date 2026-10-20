@@ -121,5 +121,6 @@ PDFs). Install the repo's skills for your agent with `npx skills add .` (pick th
 prompted, or pass `-a <agent>`, e.g. `-a claude-code` or `-a codex`). The install output is
 gitignored.
 
-The skill runs only when explicitly invoked: `/cv` in Claude Code and OpenCode, `$cv` in Codex
-(`disable-model-invocation: true` in `SKILL.md` disables implicit selection).
+Invoke it explicitly with `/cv` in Claude Code and OpenCode, or `$cv` in Codex. Claude Code and
+OpenCode read `disable-model-invocation: true` in `SKILL.md` and never select it on their own;
+Codex has no equivalent setting in the skill, so it may still pick the skill implicitly.
