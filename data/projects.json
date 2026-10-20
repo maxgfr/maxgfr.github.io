@@ -695,7 +695,7 @@
         "deterministic"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "Apache-2.0",
       "poke": {
         "type1": "dragon",
@@ -1117,7 +1117,7 @@
         "homebrew"
       ],
       "created": "2026-06",
-      "pushed": "2026-07",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -1591,7 +1591,7 @@
         "shc"
       ],
       "created": "2026-03",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "GPL-3.0",
       "poke": {
         "type1": "dark",
@@ -1695,7 +1695,7 @@
         "streaming"
       ],
       "created": "2026-03",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
@@ -3105,7 +3105,7 @@
         "privacy"
       ],
       "created": "2026-07",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -3264,7 +3264,7 @@
         "rss"
       ],
       "created": "2026-06",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "ghost",
@@ -3863,7 +3863,7 @@
         "macd"
       ],
       "created": "2026-03",
-      "pushed": "2026-03",
+      "pushed": "2026-10",
       "license": null,
       "poke": {
         "type1": "dark",
@@ -3973,7 +3973,7 @@
         "ols"
       ],
       "created": "2026-04",
-      "pushed": "2026-09",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "ice",
