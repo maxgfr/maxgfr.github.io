@@ -1,13 +1,13 @@
 {
   "generated": "2026-10",
   "totals": {
-    "repos": 93,
-    "stars": 333
+    "repos": 94,
+    "stars": 335
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 48
+      "count": 50
     },
     {
       "name": "JavaScript",
@@ -22,11 +22,11 @@
       "count": 10
     },
     {
-      "name": "HTML",
-      "count": 2
+      "name": "Go",
+      "count": 1
     },
     {
-      "name": "Go",
+      "name": "HTML",
       "count": 1
     },
     {
@@ -88,6 +88,11 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -895,7 +900,7 @@
       "cat": 1,
       "dex": 16,
       "dexLabel": "016",
-      "stars": 4,
+      "stars": 5,
       "forks": 0,
       "language": "Rust",
       "topics": [
@@ -914,8 +919,8 @@
       "poke": {
         "type1": "ghost",
         "type2": "fire",
-        "hp": 180,
-        "level": 37,
+        "hp": 190,
+        "level": 39,
         "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
@@ -947,7 +952,7 @@
       "cat": 1,
       "dex": 17,
       "dexLabel": "017",
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
       "language": "JavaScript",
       "topics": [
@@ -966,18 +971,18 @@
       "poke": {
         "type1": "dark",
         "type2": "electric",
-        "hp": 170,
-        "level": 37,
+        "hp": 180,
+        "level": 38,
         "rarity": "uncommon",
         "weakness": "fighting",
         "moves": [
           {
             "name": "ai safety",
-            "dmg": 80
+            "dmg": 90
           },
           {
             "name": "credentials",
-            "dmg": 30
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -2282,7 +2287,7 @@
         "no-backend"
       ],
       "created": "2026-08",
-      "pushed": "2026-08",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -2570,8 +2575,8 @@
             "dmg": 20
           },
           {
-            "name": "webrtc",
-            "dmg": 50
+            "name": "nostr",
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -3093,7 +3098,7 @@
       "dexLabel": "057",
       "stars": 0,
       "forks": 0,
-      "language": "HTML",
+      "language": "TypeScript",
       "topics": [
         "aes-gcm",
         "encryption",
@@ -3109,7 +3114,7 @@
       "license": "MIT",
       "poke": {
         "type1": "dark",
-        "type2": "ground",
+        "type2": "water",
         "hp": 140,
         "level": 32,
         "rarity": "common",
@@ -3716,8 +3721,8 @@
             "dmg": 30
           },
           {
-            "name": "canvas",
-            "dmg": 40
+            "name": "creature collector",
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -5068,6 +5073,61 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "versus",
+      "url": "https://github.com/maxgfr/versus",
+      "home": "https://maxgfr.github.io/versus/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Face-to-face mini-games for two on one phone: 100+ games, vs AI, P2P online. Free, offline PWA.",
+        "en": "Face-to-face mini-games for two on one phone: 100+ games, vs AI, P2P online. Free, offline PWA."
+      },
+      "cat": 10,
+      "dex": 94,
+      "dexLabel": "094",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "canvas",
+        "game",
+        "mini-games",
+        "multiplayer",
+        "offline",
+        "party-game",
+        "pwa",
+        "two-player"
+      ],
+      "created": "2026-10",
+      "pushed": "2026-10",
+      "license": "MIT",
+      "poke": {
+        "type1": "dragon",
+        "type2": "water",
+        "hp": 100,
+        "level": 19,
+        "rarity": "common",
+        "weakness": "ice",
+        "moves": [
+          {
+            "name": "mini games",
+            "dmg": 50
+          },
+          {
+            "name": "multiplayer",
+            "dmg": 40
+          }
+        ],
+        "sprite": [
+          "M3 3h6v1h-6z",
+          "M2 4h8v1h-8zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h1v1h-1zM4 6h4v1h-4zM9 6h1v1h-1zM0 7h1v1h-1zM2 7h3v1h-3zM7 7h3v1h-3zM11 7h1v1h-1zM0 8h12v1h-12z",
+          "M1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM0 9h12v1h-12zM0 10h12v1h-12zM1 11h10v1h-10z"
         ]
       }
     }

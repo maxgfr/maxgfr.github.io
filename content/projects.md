@@ -5,7 +5,7 @@ template = "projects.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 93 dépôts publics · ⭐ 333 étoiles**
+**📦 94 dépôts publics · ⭐ 335 étoiles**
 
 ---
 
@@ -149,6 +149,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Non classés
+
+- **[versus](https://github.com/maxgfr/versus)** — Face-to-face mini-games for two on one phone: 100+ games, vs AI, P2P online. Free, offline PWA. · [démo](https://maxgfr.github.io/versus/)
 
 ---
 
