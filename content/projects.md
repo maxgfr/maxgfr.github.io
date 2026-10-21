@@ -100,6 +100,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 ## 🎮 Jeux
 
 - **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde généré procéduralement. Tourne entièrement dans le navigateur — sans serveur ni compte. Le monde se reconstruit depuis une graine, donc une sauvegarde tient en quelques kilo-octets de JSON exportables et réimportables. · [démo](https://maxgfr.github.io/terravia)
+- **[versus](https://github.com/maxgfr/versus)** — 114 mini-jeux à deux sur un seul téléphone, face à face : le téléphone à plat sur la table, rouge joue en bas, bleu en haut (moitié retournée). Classiques de plateau, dés, cartes, jeux de balle, visée, réflexes, arènes, runners, physique et courses de puzzles, tous originaux. Aussi contre l'ordinateur (3 niveaux) ou en ligne entre deux téléphones en pair-à-pair (WebRTC, code de salle ou QR). Longueur de match réglable, tournois, 2 contre 2. PWA hors ligne en TypeScript et Canvas 2D, sans compte, sans pub, sans tracking. · [démo](https://maxgfr.github.io/versus/)
 
 ---
 
@@ -150,12 +151,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[versus](https://github.com/maxgfr/versus)** — Face-to-face mini-games for two on one phone: 100+ games, vs AI, P2P online. Free, offline PWA. · [démo](https://maxgfr.github.io/versus/)
 
 ---
 

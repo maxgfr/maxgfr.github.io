@@ -87,6 +87,7 @@ Mes 95 dépôts publics, totalisant 335 étoiles — [github.com/maxgfr](https:/
 ### 🎮 Jeux
 
 - **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde généré procéduralement. Tourne…
+- **[versus](https://github.com/maxgfr/versus)** — 114 mini-jeux à deux sur un seul téléphone, face à face : le téléphone à plat…
 
 ### 📈 Trading & finance
 
@@ -127,8 +128,4 @@ Mes 95 dépôts publics, totalisant 335 étoiles — [github.com/maxgfr](https:/
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
-
-### 🆕 Non classés
-
-- **[versus](https://github.com/maxgfr/versus)** — Face-to-face mini-games for two on one phone: 100+ games, vs AI, P2P online…
 

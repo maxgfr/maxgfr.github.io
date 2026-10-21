@@ -87,6 +87,7 @@ My 95 public repositories, totalling 335 stars — [github.com/maxgfr](https://g
 ### 🎮 Games
 
 - **[terravia](https://github.com/maxgfr/terravia)** — Creature-collecting RPG in a procedurally generated world. Runs entirely in…
+- **[versus](https://github.com/maxgfr/versus)** — 114 two-player mini-games for one phone, played face to face: the phone lies…
 
 ### 📈 Trading & finance
 
@@ -127,8 +128,4 @@ My 95 public repositories, totalling 335 stars — [github.com/maxgfr](https://g
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
-
-### 🆕 Uncategorized
-
-- **[versus](https://github.com/maxgfr/versus)** — Face-to-face mini-games for two on one phone: 100+ games, vs AI, P2P online…
 
