@@ -2,7 +2,7 @@
   "generated": "2026-10",
   "totals": {
     "repos": 95,
-    "stars": 335
+    "stars": 338
   },
   "languages": [
     {
@@ -574,7 +574,7 @@
       "cat": 0,
       "dex": 10,
       "dexLabel": "010",
-      "stars": 4,
+      "stars": 5,
       "forks": 0,
       "language": "JavaScript",
       "topics": [
@@ -593,8 +593,8 @@
       "poke": {
         "type1": "rock",
         "type2": "electric",
-        "hp": 150,
-        "level": 30,
+        "hp": 160,
+        "level": 32,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
@@ -1525,7 +1525,7 @@
       "cat": 2,
       "dex": 28,
       "dexLabel": "028",
-      "stars": 47,
+      "stars": 48,
       "forks": 2,
       "language": "Rust",
       "topics": [
@@ -3852,7 +3852,7 @@
       "cat": 5,
       "dex": 71,
       "dexLabel": "071",
-      "stars": 8,
+      "stars": 9,
       "forks": 0,
       "language": "Python",
       "topics": [
@@ -3871,8 +3871,8 @@
       "poke": {
         "type1": "ground",
         "type2": "grass",
-        "hp": 190,
-        "level": 37,
+        "hp": 200,
+        "level": 39,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
