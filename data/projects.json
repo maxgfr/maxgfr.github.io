@@ -2,12 +2,12 @@
   "generated": "2026-10",
   "totals": {
     "repos": 96,
-    "stars": 338
+    "stars": 339
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 52
+      "count": 51
     },
     {
       "name": "JavaScript",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Rust",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Shell",
@@ -593,8 +593,8 @@
       "poke": {
         "type1": "rock",
         "type2": "electric",
-        "hp": 160,
-        "level": 32,
+        "hp": 170,
+        "level": 33,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
@@ -603,7 +603,7 @@
             "dmg": 70
           },
           {
-            "name": "reconstruct",
+            "name": "rea",
             "dmg": 70
           }
         ],
@@ -1473,7 +1473,7 @@
       "cat": 2,
       "dex": 27,
       "dexLabel": "027",
-      "stars": 1,
+      "stars": 2,
       "forks": 1,
       "language": "Rust",
       "topics": [
@@ -1492,18 +1492,18 @@
       "poke": {
         "type1": "ghost",
         "type2": "fire",
-        "hp": 150,
-        "level": 32,
-        "rarity": "common",
+        "hp": 160,
+        "level": 34,
+        "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
           {
             "name": "aab",
-            "dmg": 30
+            "dmg": 40
           },
           {
             "name": "adb",
-            "dmg": 20
+            "dmg": 30
           }
         ],
         "sprite": [
@@ -2598,22 +2598,22 @@
       "dexLabel": "048",
       "stars": 0,
       "forks": 0,
-      "language": "TypeScript",
+      "language": "Rust",
       "topics": [],
       "created": "2026-10",
       "pushed": "2026-10",
       "license": "MIT",
       "poke": {
-        "type1": "water",
+        "type1": "fire",
         "type2": null,
         "hp": 250,
         "level": 64,
         "rarity": "common",
-        "weakness": "grass",
+        "weakness": "water",
         "moves": [
           {
-            "name": "TypeScript",
-            "dmg": 10
+            "name": "Rust",
+            "dmg": 20
           }
         ],
         "sprite": [
