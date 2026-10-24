@@ -1,7 +1,7 @@
 {
   "generated": "2026-10",
   "totals": {
-    "repos": 97,
+    "repos": 98,
     "stars": 339
   },
   "languages": [
@@ -11,7 +11,7 @@
     },
     {
       "name": "JavaScript",
-      "count": 19
+      "count": 20
     },
     {
       "name": "Rust",
@@ -88,6 +88,11 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -1955,7 +1960,7 @@
         "simulation"
       ],
       "created": "2026-02",
-      "pushed": "2026-02",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -2590,8 +2595,8 @@
         "en": "demo"
       },
       "desc": {
-        "fr": "Messagerie chiffrée post-quantique sans compte ni serveur : on envoie un lien, on discute, on termine et rien ne reste. Handshake X-Wing (X25519 + ML-KEM-768) transporté par relais Nostr, trackers WebTorrent ou codes QR hors-ligne qui ne voient que du chiffré, puis WebRTC pair à pair (ou relais chiffré) avec ratchet : une clé par message et un nouvel échange post-quantique toutes les 5 minutes, messages rembourrés, 5 emojis pour vérifier. Liens à usage unique avec expiration et mot de passe optionnel, groupes, fichiers vérifiés en SHA-256, messages éphémères, identifiant hush1… auto-certifiant (Ed25519 + ML-DSA-65), contacts et sauvegardes chiffrés (Argon2id). Un seul cœur Rust : WebAssembly pour la PWA, CLI (brew install maxgfr/tap/hush) et bindings Kotlin/Swift pour de futures apps Bluetooth/Wi-Fi.",
-        "en": "Post-quantum, end-to-end encrypted messaging with no account and no server: send a link, talk, end it and nothing is left. An X-Wing (X25519 + ML-KEM-768) handshake carried by Nostr relays, WebTorrent trackers or offline QR codes that only see ciphertext, then peer-to-peer WebRTC (or an encrypted relay) with a ratchet: a key per message and a fresh post-quantum exchange every 5 minutes, padded messages, 5 emojis to verify. Single-use expiring links with an optional passphrase, groups, SHA-256-checked files, disappearing messages, a self-certifying hush1… identifier (Ed25519 + ML-DSA-65), encrypted contacts and backups (Argon2id). One Rust core: WebAssembly for the PWA, a CLI (brew install maxgfr/tap/hush) and Kotlin/Swift bindings for future Bluetooth/Wi-Fi apps."
+        "fr": "Messagerie et envoi de fichiers chiffrés de bout en bout, post-quantiques, sans compte : on envoie un lien, on discute, on termine et rien ne reste. Handshake X-Wing (X25519 + ML-KEM-768) transporté par relais Nostr, trackers WebTorrent ou codes QR hors-ligne qui ne voient que du chiffré, puis WebRTC pair à pair (ou relais chiffré) avec ratchet : une clé par message et un nouvel échange post-quantique toutes les 5 minutes, messages rembourrés, 5 emojis pour vérifier. Dépôts façon wormhole : on glisse des fichiers ou des dossiers, on obtient un lien ; ils passent en pair à pair si vous êtes tous deux en ligne, sinon depuis une copie scellée (segments STREAM de 4 Mio, ChaCha20-Poly1305) qui attend sur des serveurs Blossom publics ne voyant que du chiffré, à usage unique ou non, avec mot de passe, ou scellée à l'identité d'un contact ou à la vôtre et signée. Liens à usage unique avec expiration, groupes, messages éphémères, identifiant hush1… auto-certifiant (Ed25519 + ML-DSA-65), contacts et sauvegardes chiffrés (Argon2id). Un seul cœur Rust : WebAssembly pour la PWA, CLI (brew install maxgfr/tap/hush) et apps Android et iOS, aussi en Bluetooth et Wi-Fi.",
+        "en": "Post-quantum, end-to-end encrypted messaging and file drops with no account: send a link, talk, end it and nothing is left. An X-Wing (X25519 + ML-KEM-768) handshake carried by Nostr relays, WebTorrent trackers or offline QR codes that only see ciphertext, then peer-to-peer WebRTC (or an encrypted relay) with a ratchet: a key per message and a fresh post-quantum exchange every 5 minutes, padded messages, 5 emojis to verify. Drops, like wormhole: drop files or folders, get a link; they go peer to peer while you are both online, otherwise from a sealed copy (4 MiB STREAM segments, ChaCha20-Poly1305) waiting on public Blossom servers that only see ciphertext, one-time or not, with a passphrase, or sealed to a contact's identity or your own and signed. Single-use expiring links, groups, disappearing messages, a self-certifying hush1… identifier (Ed25519 + ML-DSA-65), encrypted contacts and backups (Argon2id). One Rust core: WebAssembly for the PWA, a CLI (brew install maxgfr/tap/hush) and the Android and iOS apps, over Bluetooth and Wi-Fi too."
       },
       "cat": 3,
       "dex": 48,
@@ -2607,7 +2612,7 @@
         "type1": "fire",
         "type2": null,
         "hp": 250,
-        "level": 64,
+        "level": 88,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -5275,6 +5280,45 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "ultrastock",
+      "url": "https://github.com/maxgfr/ultrastock",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Investing copilot for real money: US/EU stocks & ETFs (PEA), crypto and prediction markets — keyless public data, cited evidence, deterministic risk gate, paper trading and guarded opt-in brokers, FR/US tax. A skills.sh agent skill.",
+        "en": "Investing copilot for real money: US/EU stocks & ETFs (PEA), crypto and prediction markets — keyless public data, cited evidence, deterministic risk gate, paper trading and guarded opt-in brokers, FR/US tax. A skills.sh agent skill."
+      },
+      "cat": 10,
+      "dex": 98,
+      "dexLabel": "098",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "created": "2026-10",
+      "pushed": "2026-10",
+      "license": "MIT",
+      "poke": {
+        "type1": "electric",
+        "type2": null,
+        "hp": 90,
+        "level": 19,
+        "rarity": "common",
+        "weakness": "ground",
+        "moves": [
+          {
+            "name": "JavaScript",
+            "dmg": 10
+          }
+        ],
+        "sprite": [
+          "M4 0h1v1h-1zM7 0h1v1h-1zM3 1h2v1h-2zM7 1h2v1h-2zM3 2h2v1h-2zM7 2h2v1h-2zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h2v1h-2zM4 5h4v1h-4zM9 5h2v1h-2zM2 6h2v1h-2zM8 6h2v1h-2zM2 7h2v1h-2zM8 7h2v1h-2zM1 8h3v1h-3zM8 8h3v1h-3zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM2 10h3v1h-3zM7 10h3v1h-3zM2 11h1v1h-1zM9 11h1v1h-1z"
         ]
       }
     }
