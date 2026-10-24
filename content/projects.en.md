@@ -19,6 +19,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds every human-readable string in a repo, classifies it, translates it with cheap models and proves nothing was missed: zero-dependency engine, the model never opens a source file.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turn a location into a sourced prospect list using OpenStreetMap, company registers and business websites. No API keys.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Watches videos for the agent — YouTube, Vimeo, Dailymotion and anything yt-dlp reads: a video, a playlist or a channel becomes a timestamped, chaptered transcript plus frames of what is on screen, kept on disk and searchable; every claim cites a checked [V# mm:ss] stamp. Local and keyless: yt-dlp, the video's own subtitles, local whisper.
+- **[ultrastock](https://github.com/maxgfr/ultrastock)** — Investing copilot for the agent, built for real money — US/European stocks and ETFs (PEA, CTO, assurance-vie), crypto, prediction markets: a multi-role analysis (analysts, bull/bear debate, judge, risk team), screening, valuation, market regime, portfolio, paper trading, a decision journal settled against the market, look-ahead-free backtests and FR/US tax; every figure is a sourced [E#] evidence, checked before the answer. Keyless public data; real orders only behind a deterministic risk gate, ratcheted limits and an out-of-band code only the human reads.
 - **[construct](https://github.com/maxgfr/construct)** — Turns a product idea into a grounded, buildable SRD/PRD suite (skills.sh agent skill).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyzes any repo and generates reconstruction PRDs to rebuild it from scratch.
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Rigorously evaluates a skill or codebase → grounded (file:line) findings + a TDD fix backlog; zero-dep engine with analysis (hotspots, cycles, churn) and brainstorm.
@@ -153,12 +154,6 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Uncategorized
-
-- **[ultrastock](https://github.com/maxgfr/ultrastock)** — Investing copilot for real money: US/EU stocks & ETFs (PEA), crypto and prediction markets — keyless public data, cited evidence, deterministic risk gate, paper trading and guarded opt-in brokers, FR/US tax. A skills.sh agent skill.
 
 ---
 

@@ -19,6 +19,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Trouve toutes les chaînes lisibles d'un dépôt, les classe, les traduit avec des modèles bon marché et prouve qu'aucune n'a été oubliée : moteur zéro-dépendance, le modèle n'ouvre jamais un fichier source.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu en liste de prospects sourcée grâce à OpenStreetMap, aux registres d’entreprises et aux sites web. Sans clé d’API.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Regarde les vidéos pour l'agent — YouTube, Vimeo, Dailymotion et tout ce que lit yt-dlp : une vidéo, une playlist ou une chaîne devient une transcription horodatée et chapitrée, plus les images de ce qui est à l'écran, gardées sur disque et interrogeables ; chaque affirmation cite un [V# mm:ss] vérifié. Local et sans clé : yt-dlp, les sous-titres de la vidéo, whisper en local.
+- **[ultrastock](https://github.com/maxgfr/ultrastock)** — Copilote d'investissement pour l'agent, pensé pour de l'argent réel — actions et ETF US/Europe (PEA, CTO, assurance-vie), crypto, marchés prédictifs : analyse multi-rôles (analystes, débat haussier/baissier, juge, gestion du risque), screening, valorisation, régime de marché, portefeuille, paper trading, journal des décisions réglées face au marché, backtests sans look-ahead et fiscalité FR/US ; chaque chiffre est une preuve [E#] sourcée, vérifiée avant la réponse. Données publiques sans clé ; ordres réels seulement derrière un risk gate déterministe, des limites à cliquet et un code hors bande que seul l'humain lit.
 - **[construct](https://github.com/maxgfr/construct)** — Transforme une idée produit en un cahier des charges (SRD/PRD) complet et réalisable (skill d'agent skills.sh).
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyse n'importe quel dépôt et génère des PRD de reconstruction pour le rebâtir de zéro.
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Évalue rigoureusement une skill ou un codebase → constats sourcés (file:line) + backlog de corrections en TDD ; moteur zéro-dépendance avec analyse (hotspots, cycles, churn) et brainstorm.
@@ -153,12 +154,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[ultrastock](https://github.com/maxgfr/ultrastock)** — Investing copilot for real money: US/EU stocks & ETFs (PEA), crypto and prediction markets — keyless public data, cited evidence, deterministic risk gate, paper trading and guarded opt-in brokers, FR/US tax. A skills.sh agent skill.
 
 ---
 
