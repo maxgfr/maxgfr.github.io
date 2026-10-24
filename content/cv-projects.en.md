@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 98 public repositories, totalling 339 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 100 public repositories, totalling 339 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -84,6 +84,7 @@ My 98 public repositories, totalling 339 stars — [github.com/maxgfr](https://g
 - **[swarmdeck](https://github.com/maxgfr/swarmdeck)** — Torrents from a web page, on a phone or a computer: add a .torrent or a…
 - **[tick](https://github.com/maxgfr/tick)** — Local-first timer suite, entirely in the browser: multiple simultaneous…
 - **[tok](https://github.com/maxgfr/tok)** — Local-first rally and score counter for table tennis, beach rackets…
+- **[toolbelt](https://github.com/maxgfr/toolbelt)** — A toolbox of 68 everyday utilities that run in the browser, in the spirit of…
 - **[unmark](https://github.com/maxgfr/unmark)** — Strips watermarks in the browser: invisible Unicode and steganography in text…
 - **[veil](https://github.com/maxgfr/veil)** — Private rooms between browsers: chat, files of any size and audio/video…
 
@@ -131,4 +132,8 @@ My 98 public repositories, totalling 339 stars — [github.com/maxgfr](https://g
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Curated list of repositories I've liked on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools (`brew install maxgfr/tap/…`).
+
+### 🆕 Uncategorized
+
+- **[takeone](https://github.com/maxgfr/takeone)** — Record your screen, camera and voice, edit by text, share without a server…
 

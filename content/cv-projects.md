@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 98 dépôts publics, totalisant 339 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 100 dépôts publics, totalisant 339 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -84,6 +84,7 @@ Mes 98 dépôts publics, totalisant 339 étoiles — [github.com/maxgfr](https:/
 - **[swarmdeck](https://github.com/maxgfr/swarmdeck)** — Des torrents depuis une page web, sur un téléphone comme sur un ordinateur…
 - **[tick](https://github.com/maxgfr/tick)** — Suite de minuteurs local-first, 100 % dans le navigateur : multi-minuteurs…
 - **[tok](https://github.com/maxgfr/tok)** — Compteur d'échanges et de score local-first pour le ping-pong, les raquettes…
+- **[toolbelt](https://github.com/maxgfr/toolbelt)** — Une boîte de 68 petits outils du quotidien qui tournent dans le navigateur, à…
 - **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks dans le navigateur : caractères Unicode invisibles et…
 - **[veil](https://github.com/maxgfr/veil)** — Salles privées entre navigateurs : chat, fichiers sans limite de taille et…
 
@@ -131,4 +132,8 @@ Mes 98 dépôts publics, totalisant 339 étoiles — [github.com/maxgfr](https:/
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Liste des dépôts que j'ai aimés sur GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI (`brew install maxgfr/tap/…`).
+
+### 🆕 Non classés
+
+- **[takeone](https://github.com/maxgfr/takeone)** — Record your screen, camera and voice, edit by text, share without a server…
 
