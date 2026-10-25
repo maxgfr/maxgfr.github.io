@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 100 public repositories, totalling 339 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 101 public repositories, totalling 339 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -35,6 +35,7 @@ My 100 public repositories, totalling 339 stars — [github.com/maxgfr](https://
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Skill for Codex and Claude Code with a Rust CLI: filters and aggregates…
 - **[sift](https://github.com/maxgfr/sift)** — Tells you which quantization of an LLM fits and how fast it will run — before…
 - **[skycmd](https://github.com/maxgfr/skycmd)** — Ultra-small System One decision models trained from scratch in Rust with MLX…
+- **[termrevive](https://github.com/maxgfr/termrevive)** — Saves and restores your terminal sessions across reboots — windows, tabs…
 - **[webindex](https://github.com/maxgfr/webindex)** — Zero-dependency web-retrieval engine: turns a URL or a file into clean…
 
 ### 🛠️ CLIs & system tools

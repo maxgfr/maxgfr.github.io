@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 100 dépôts publics, totalisant 339 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 101 dépôts publics, totalisant 339 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -35,6 +35,7 @@ Mes 100 dépôts publics, totalisant 339 étoiles — [github.com/maxgfr](https:
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Skill pour Codex et Claude Code avec CLI Rust : filtre et agrège les données…
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient en mémoire et à quelle vitesse elle…
 - **[skycmd](https://github.com/maxgfr/skycmd)** — Modèles de décision « System One » ultra-compacts entraînés de zéro en Rust…
+- **[termrevive](https://github.com/maxgfr/termrevive)** — Sauvegarde et restaure vos sessions de terminal après un redémarrage —…
 - **[webindex](https://github.com/maxgfr/webindex)** — Moteur de récupération web zéro-dépendance : transforme une URL ou un fichier…
 
 ### 🛠️ CLIs & outils système
