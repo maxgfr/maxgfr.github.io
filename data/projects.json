@@ -1188,8 +1188,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Sauvegarde et restaure vos sessions de terminal après un redémarrage — fenêtres, onglets, splits, dossiers et programmes en cours : chaque session Claude Code reprend sa conversation. Ghostty sur macOS. (Rust)",
-        "en": "Saves and restores your terminal sessions across reboots — windows, tabs, splits, working directories and running programs: every Claude Code session resumes its conversation. Ghostty on macOS. (Rust)"
+        "fr": "Sauvegarde et restaure vos sessions de terminal après un redémarrage — fenêtres, onglets, splits, dossiers et programmes en cours : chaque session Claude Code reprend sa conversation. Ghostty, iTerm2, kitty et Terminal.app sur macOS, terminaux ajoutables par la communauté. (Rust)",
+        "en": "Saves and restores your terminal sessions across reboots — windows, tabs, splits, working directories and running programs: every Claude Code session resumes its conversation. Ghostty, iTerm2, kitty and Terminal.app on macOS, with community-pluggable terminals. (Rust)"
       },
       "cat": 1,
       "dex": 22,
@@ -1204,8 +1204,8 @@
         "cli",
         "ghostty",
         "homebrew",
-        "launchd",
-        "macos"
+        "iterm2",
+        "kitty"
       ],
       "created": "2026-10",
       "pushed": "2026-10",
@@ -1213,8 +1213,8 @@
       "poke": {
         "type1": "fighting",
         "type2": "fire",
-        "hp": 150,
-        "level": 32,
+        "hp": 190,
+        "level": 40,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1223,8 +1223,8 @@
             "dmg": 60
           },
           {
-            "name": "launchd",
-            "dmg": 40
+            "name": "iterm2",
+            "dmg": 20
           }
         ],
         "sprite": [
