@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Generates the bilingual "Projects" pages (content/projects.md FR +
-// content/projects.en.md EN) for this Zola site from the live GitHub API, plus
+// Generates the bilingual "Projects" list pages (content/projects-list.md FR +
+// content/projects-list.en.md EN) for this Zola site from the live GitHub API, plus
 // the leaner variant of that catalogue the CV page embeds (content/cv-projects.md
 // + content/cv-projects.en.md), plus the structured data the alternate views
 // read (data/projects.json — see buildData).
@@ -147,9 +147,10 @@ function buildPage(repos, lang) {
 
   const stars = repos.reduce((a, r) => a + r.stargazers_count, 0);
   // `template` is the hook the alternate views hang off: it lets
-  // templates/projects.html add the view switcher above this generated body
-  // without anyone ever hand-editing content/projects*.md.
-  const fm = `+++\ntitle = "${t.title}"\ntemplate = "projects.html"\n+++`;
+  // templates/projects-list.html add the view switcher above this generated body
+  // without anyone ever hand-editing content/projects-list*.md. (/projects itself
+  // is the hand-written desktop view, content/projects{,.en}.md.)
+  const fm = `+++\ntitle = "${t.title}"\ntemplate = "projects-list.html"\n+++`;
   const body = [
     t.intro,
     t.stats(repos.length, stars),
@@ -732,8 +733,8 @@ function buildData(repos, now) {
 async function main() {
   CONFIG = await loadConfig();
   const repos = await allOwnedRepos();
-  writeFileSync(join(REPO_ROOT, 'content', 'projects.md'), buildPage(repos, 'fr'));
-  writeFileSync(join(REPO_ROOT, 'content', 'projects.en.md'), buildPage(repos, 'en'));
+  writeFileSync(join(REPO_ROOT, 'content', 'projects-list.md'), buildPage(repos, 'fr'));
+  writeFileSync(join(REPO_ROOT, 'content', 'projects-list.en.md'), buildPage(repos, 'en'));
   writeFileSync(join(REPO_ROOT, 'content', 'cv-projects.md'), buildCvPage(repos, 'fr'));
   writeFileSync(join(REPO_ROOT, 'content', 'cv-projects.en.md'), buildCvPage(repos, 'en'));
 

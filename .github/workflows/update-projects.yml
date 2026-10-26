@@ -43,10 +43,10 @@ jobs:
         id: commit
         run: |
           # data/projects.json must move with the Markdown: the alternate views
-          # (/projects-cards, -dex, -shell) render from it at build
-          # time, so leaving it out here would let them drift out of sync with
-          # /projects silently — the site would still build, just with stale cards.
-          FILES="content/projects.md content/projects.en.md content/cv-projects.md content/cv-projects.en.md data/projects.json"
+          # (/projects desktop, -cards, -dex, -shell) render from it at
+          # build time, so leaving it out here would let them drift out of sync with
+          # /projects-list silently — the site would still build, just with stale cards.
+          FILES="content/projects-list.md content/projects-list.en.md content/cv-projects.md content/cv-projects.en.md data/projects.json"
           if git diff --quiet -- $FILES; then
             echo "Projects pages already up to date."
             echo "changed=false" >> "$GITHUB_OUTPUT"

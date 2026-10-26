@@ -1,6 +1,6 @@
 /* ==========================================================================
-   projects.css — shared chrome for the four /projects views
-   (list, cards, pokédex, shell).
+   projects.css — shared chrome for the five /projects views
+   (desktop, list, cards, pokédex, shell).
 
    Loaded only by templates/projects.html and templates/projects-view.html, so
    nothing here reaches the rest of the site. The pokédex loads its own

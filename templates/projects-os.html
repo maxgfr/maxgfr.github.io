@@ -1,0 +1,207 @@
+{% extends "projects-view.html" %}
+
+{#
+  /projects — the default view: the catalogue as a desktop you can actually use.
+
+  42 of the repos ship a web app on https://maxgfr.github.io/<app>/, the same origin
+  as this site, and GitHub Pages sends neither X-Frame-Options nor a CSP. So those
+  apps open in real windows (iframes), fully interactive, their data kept in the
+  origin's own storage exactly as if they had been opened in a tab. Everything else
+  (npm packages, Actions, CLIs) is a shortcut that opens in a new tab — GitHub, npm
+  and skills.sh all refuse to be framed.
+
+  Same model as /projects-shell: the `.os-catalog` below is BOTH the no-JS fallback
+  (a grid of linked apps per theme) and the data static/js/projects-os.js reads on
+  startup. The script hides it once it has built the desktop from it.
+
+  The icons are the pixel sprites the generator already draws for /projects-dex
+  (three run-length paths per repo), so every app has its own icon for free.
+#}
+
+{% block view_class %}os{% endblock view_class %}
+
+{% block view_head %}
+<link rel="stylesheet" href="{{ get_url(path='css/projects-os.css') }}">
+<script src="{{ get_url(path='js/projects-os.js') }}" defer></script>
+{% endblock view_head %}
+
+{% block view %}
+{% set en = page.lang == "en" %}
+
+{# Localised strings for the script, as two literal blocks so no value is
+   interpolated. {apps}, {repos} and {stars} are filled in by the script. #}
+{% if en %}
+<script type="application/json" id="os-i18n">
+{
+  "boot": [
+    "maxOS 1.0 — booting from maxgfr.github.io",
+    "checking memory ........ 640K ought to be enough",
+    "indexing {repos} repositories ...... ok",
+    "mounting {apps} apps ............... ok",
+    "loading {stars} stars .............. ok",
+    "starting desktop"
+  ],
+  "skip": "press any key",
+  "start": "maxOS",
+  "search": "Search {repos} projects…",
+  "noResults": "nothing matched",
+  "inWindow": "opens here",
+  "newTab": "new tab",
+  "close": "Close",
+  "minimize": "Minimise",
+  "maximize": "Maximise",
+  "back": "Back",
+  "openTab": "Open in a new tab",
+  "source": "Source on GitHub",
+  "fullscreen": "Full screen",
+  "loading": "loading",
+  "readme": "README",
+  "items": "items",
+  "taskbar": "Open windows",
+  "desktop": "Desktop"
+}
+</script>
+{% else %}
+<script type="application/json" id="os-i18n">
+{
+  "boot": [
+    "maxOS 1.0 — démarrage depuis maxgfr.github.io",
+    "test mémoire ........... 640K, ça devrait suffire",
+    "indexation de {repos} dépôts ...... ok",
+    "montage de {apps} apps ............. ok",
+    "chargement de {stars} étoiles ...... ok",
+    "lancement du bureau"
+  ],
+  "skip": "appuie sur une touche",
+  "start": "maxOS",
+  "search": "Chercher parmi {repos} projets…",
+  "noResults": "aucun résultat",
+  "inWindow": "s'ouvre ici",
+  "newTab": "nouvel onglet",
+  "close": "Fermer",
+  "minimize": "Réduire",
+  "maximize": "Agrandir",
+  "back": "Retour",
+  "openTab": "Ouvrir dans un nouvel onglet",
+  "source": "Code sur GitHub",
+  "fullscreen": "Plein écran",
+  "loading": "chargement",
+  "readme": "LISEZMOI",
+  "items": "éléments",
+  "taskbar": "Fenêtres ouvertes",
+  "desktop": "Bureau"
+}
+</script>
+{% endif %}
+
+<div class="os-root" id="os-root" data-repos="{{ data.totals.repos }}" data-stars="{{ data.totals.stars }}">
+    {# Everything inside the screen but the catalogue is built or revealed by the
+       script: an empty desktop above a perfectly good grid of links is worse than
+       no desktop at all. #}
+    <div class="os-screen" id="os-screen" data-pv-jsonly>
+        <div class="os-desk" id="os-desk">
+            <p class="os-wallmark" aria-hidden="true">max<b>OS</b></p>
+            <ul class="os-icons" id="os-icons" aria-label="{% if en %}Desktop{% else %}Bureau{% endif %}"></ul>
+            <div class="os-windows" id="os-windows"></div>
+        </div>
+
+        <div class="os-bar" id="os-bar">
+            <button type="button" class="os-start" id="os-start" aria-expanded="false" aria-controls="os-launcher">
+                <span class="os-start-logo" aria-hidden="true">◆</span> maxOS
+                <kbd class="os-kbd" aria-hidden="true">⌘K</kbd>
+            </button>
+            <ul class="os-tasks" id="os-tasks" aria-label="{% if en %}Open windows{% else %}Fenêtres ouvertes{% endif %}"></ul>
+            <button type="button" class="os-tray-btn" id="os-full" aria-label="{% if en %}Full screen{% else %}Plein écran{% endif %}" title="{% if en %}Full screen{% else %}Plein écran{% endif %}">⛶</button>
+            <time class="os-clock" id="os-clock"></time>
+        </div>
+
+        <div class="os-launcher" id="os-launcher" hidden>
+            <input class="os-search" id="os-search" type="search" autocomplete="off" spellcheck="false"
+                   role="combobox" aria-expanded="true" aria-controls="os-results" aria-autocomplete="list">
+            <ul class="os-results" id="os-results" role="listbox"></ul>
+        </div>
+
+        <div class="os-boot" id="os-boot" aria-hidden="true" hidden></div>
+    </div>
+
+    {# The README window's body. A <template>, so it costs nothing until opened and
+       its wording lives with the rest of the page's prose instead of in the script. #}
+    <template id="os-readme">
+        <div class="os-readme">
+            {% if en %}
+            <p><b>Welcome to maxOS.</b> Every icon here is a real project, and the web
+            apps actually run: open one, use it, your data stays in your browser.</p>
+            <ul class="os-readme-list">
+                <li>click an icon or a folder to open it;</li>
+                <li><kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> or <kbd>/</kbd> searches all {{ data.totals.repos }} repos;</li>
+                <li>drag windows by their title, resize from the corner, double-click to maximise;</li>
+                <li>the address bar remembers what is open — share the link, share the desktop.</li>
+            </ul>
+            {% else %}
+            <p><b>Bienvenue sur maxOS.</b> Chaque icône est un vrai projet, et les web
+            apps tournent pour de vrai : ouvre-en une, sers-t'en, tes données restent dans ton navigateur.</p>
+            <ul class="os-readme-list">
+                <li>clique une icône ou un dossier pour l'ouvrir ;</li>
+                <li><kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> ou <kbd>/</kbd> cherche parmi les {{ data.totals.repos }} dépôts ;</li>
+                <li>déplace les fenêtres par leur titre, redimensionne par le coin, double-clic pour agrandir ;</li>
+                <li>l'adresse retient ce qui est ouvert — partage le lien, tu partages le bureau.</li>
+            </ul>
+            {% endif %}
+            <p class="os-readme-stats">{{ data.totals.repos }} {% if en %}repos{% else %}dépôts{% endif %} · {{ data.totals.stars }} ★</p>
+            <ul class="os-langbar" aria-label="{% if en %}Languages{% else %}Langages{% endif %}">
+                {% for language in data.languages %}
+                <li class="pv-lang" style="flex-grow: {{ language.count }}" data-lang="{{ language.name }}" title="{{ language.name }} · {{ language.count }}">
+                    <span class="sr-only">{{ language.name }} : {{ language.count }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="os-langkey">
+                {% for language in data.languages %}
+                {% if loop.index <= 5 %}
+                <li class="pv-lang" data-lang="{{ language.name }}"><i class="pv-dot" aria-hidden="true"></i>{{ language.name }} {{ language.count }}</li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <p><a href="https://github.com/maxgfr" target="_blank" rel="noopener external">github.com/maxgfr →</a></p>
+        </div>
+    </template>
+
+    {# Server-rendered catalogue: the no-JS view AND the script's data source.
+       Repos with a `home` are icons; the rest only feed the launcher. #}
+    <section class="os-catalog" id="os-catalog">
+        <h2 class="sr-only">{% if en %}Apps{% else %}Applications{% endif %}</h2>
+        {% for category in data.categories %}
+        {% set index = loop.index0 %}
+        <div class="os-cat" data-slug="{{ category.slug }}" data-label="{{ category[page.lang] }}">
+            <ul class="os-apps">
+                {% for repo in data.repos %}
+                {% if repo.cat == index %}
+                <li class="os-app{% if not repo.home %} os-app-nohome{% endif %}"
+                    data-name="{{ repo.name }}"
+                    data-url="{{ repo.url }}"
+                    data-home="{{ repo.home | default(value='') }}"
+                    data-cat="{{ index }}"
+                    data-stars="{{ repo.stars }}"
+                    data-language="{{ repo.language | default(value='') }}"
+                    data-topics="{{ repo.topics | join(sep=' ') }}"
+                    data-type="{{ repo.poke.type1 }}">
+                    <a class="os-app-link" href="{{ repo.home | default(value=repo.url) }}" target="_blank" rel="noopener external">
+                        <span class="os-tile" aria-hidden="true">
+                            <svg class="os-sprite" viewBox="0 0 10 10" shape-rendering="crispEdges">
+                                {% for pv_path in repo.poke.sprite %}
+                                {% if pv_path %}<path class="os-px{{ loop.index }}" d="{{ pv_path }}"/>{% endif %}
+                                {% endfor %}
+                            </svg>
+                        </span>
+                        <span class="os-app-name">{{ repo.name }}</span>
+                    </a>
+                    <span class="os-app-desc">{{ repo.desc[page.lang] }}</span>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </section>
+</div>
+{% endblock view %}

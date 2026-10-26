@@ -64,7 +64,8 @@ header_nav = [
 ## content/projects-<name>.md and content/projects-<name>.en.md — static/js/language.js
 ## redirects between /x and /en/x, so a missing twin is a 404, not a fallback.
 projects_views = [
-  { url = "/projects", name_en = "list", name_fr = "liste" },
+  { url = "/projects", name_en = "desktop", name_fr = "bureau" },
+  { url = "/projects-list", name_en = "list", name_fr = "liste" },
   { url = "/projects-cards", name_en = "cards", name_fr = "cartes" },
   { url = "/projects-dex", name_en = "pokédex", name_fr = "pokédex" },
   { url = "/projects-shell", name_en = "shell", name_fr = "shell" }

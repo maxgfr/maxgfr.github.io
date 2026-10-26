@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {#
-  /projects — the list. THE DEFAULT VIEW, and the one the other three are
-  alternatives to.
+  /projects-list — the list. The plain, exhaustive catalogue; /projects itself is
+  the desktop (templates/projects-os.html).
 
-  content/projects{,.en}.md is generated daily by
+  content/projects-list{,.en}.md is generated daily by
   .github/scripts/generate-projects.mjs, which is also what puts
   `template = "projects.html"` in its front-matter. That line is the only reason
   this template gets a say: it lets the switcher sit above the generated body
@@ -22,7 +22,7 @@
 <article class="post pv">
     <header class="post-header pv-header">
         <h1>{{ page.title }}</h1>
-        {% set pv_current = "/projects" %}
+        {% set pv_current = "/projects-list" %}
         {% include "partials/projects-switcher.html" %}
     </header>
     <div class="post-content">
