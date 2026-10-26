@@ -55,7 +55,6 @@
         'allow-scripts', 'allow-same-origin', 'allow-forms', 'allow-modals', 'allow-popups',
         'allow-popups-to-escape-sandbox', 'allow-downloads', 'allow-pointer-lock', 'allow-presentation',
     ].join(' ');
-    const PINNED = 8;
     const GEOM_KEY = 'maxos-geom';
     const SEEN_KEY = 'maxos-readme-seen';
     const BOOT_KEY = 'maxos-booted';
@@ -199,6 +198,8 @@
         );
     }
 
+    // Only the README and the theme folders: every app lives in exactly one
+    // folder, so a loose shortcut next to them would read as misfiled.
     function buildDesktop() {
         const items = [
             h('button', { type: 'button', class: 'os-icon', 'data-readme': true }, glyph('📄'), h('span', { class: 'os-icon-label' }, T.readme)),
@@ -206,8 +207,6 @@
         for (const cat of cats) {
             if (cat.apps.length) items.push(folderIcon(cat));
         }
-        const pinned = [...windowApps].sort((a, b) => b.stars - a.stars || a.order - b.order).slice(0, PINNED);
-        for (const app of pinned) items.push(appIcon(app));
         iconsEl.replaceChildren(...items.map((item) => h('li', null, item)));
     }
 
