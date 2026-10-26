@@ -57,7 +57,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[web-watcher](https://github.com/maxgfr/web-watcher)** — Script Bash qui surveille des API et sites web : détection de différences, seuils et notifications instantanées.
 - **[package-checker.sh](https://github.com/maxgfr/package-checker.sh)** — Scanne les projets node/bun/deno à la recherche de paquets npm vulnérables via OSV/GHSA (JSON/CSV/PURL/SBOM/SARIF/TRIVY).
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — Boîte à outils de maintenance GitHub : unstar en masse, clone d'org, nettoyage des forks, audit de dépôts, etc.
-- **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Convertit des PDF scannés en PDF cherchables et copiables grâce à l'OCR Tesseract (traitement parallèle).
+- **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Rend les PDF scannés et photos de documents cherchables et copiables, avec un OCR local (modèles PaddleOCR via RapidOCR).
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Outil de ratio torrent qui envoie de vraies requêtes d'annonce HTTP aux trackers BitTorrent.
 - **[unsleep](https://github.com/maxgfr/unsleep)** — Petit exécutable qui empêche la machine de se mettre en veille. · [npm](https://www.npmjs.com/package/unsleep)
 

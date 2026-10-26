@@ -1974,8 +1974,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Convertit des PDF scannés en PDF cherchables et copiables grâce à l'OCR Tesseract (traitement parallèle).",
-        "en": "Converts scanned PDFs into searchable, copyable PDFs with Tesseract OCR (parallel)."
+        "fr": "Rend les PDF scannés et photos de documents cherchables et copiables, avec un OCR local (modèles PaddleOCR via RapidOCR).",
+        "en": "Turns scanned PDFs and phone photos into searchable, copyable PDFs with local OCR (PaddleOCR models via RapidOCR)."
       },
       "cat": 2,
       "dex": 37,
@@ -1985,13 +1985,13 @@
       "language": "Shell",
       "topics": [
         "automation",
+        "bash",
         "cli",
         "document-processing",
+        "homebrew",
         "ocr",
-        "pdf",
-        "pdftoppm",
-        "pdfunite",
-        "poppler"
+        "onnxruntime",
+        "paddleocr"
       ],
       "created": "2026-01",
       "pushed": "2026-10",
@@ -1999,8 +1999,8 @@
       "poke": {
         "type1": "psychic",
         "type2": "steel",
-        "hp": 100,
-        "level": 25,
+        "hp": 120,
+        "level": 31,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -2009,8 +2009,8 @@
             "dmg": 10
           },
           {
-            "name": "pdftoppm",
-            "dmg": 20
+            "name": "onnxruntime",
+            "dmg": 50
           }
         ],
         "sprite": [
