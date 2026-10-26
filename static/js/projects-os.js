@@ -4,10 +4,15 @@
 // the desktop can never disagree about what exists (the same contract as
 // projects-shell.js). Absent the markup, this file does nothing anywhere else.
 //
-// The apps hosted under https://maxgfr.github.io/<app>/ open in windows: plain
-// iframes, no sandbox — they are this site's own apps, same origin, and
-// allow-scripts + allow-same-origin would cancel a sandbox anyway. Everything else
-// is a shortcut to a new tab: GitHub, npm and skills.sh all refuse to be framed.
+// The apps hosted under https://maxgfr.github.io/<app>/ open in windows. The
+// iframe is sandboxed WITHOUT allow-top-navigation: not to contain the apps (they
+// are this site's own, same origin), but so that one which busts out of frames
+// cannot navigate the whole desktop away. Everything else is a shortcut to a new
+// tab: GitHub, npm and skills.sh all refuse to be framed.
+//
+// A few of the apps encrypt what you put in them and refuse to be framed on
+// purpose, as anti-clickjacking. Their window says so and offers a tab instead;
+// weakening that protection for the sake of a desktop is not on the table.
 //
 // State that matters lives in the address bar (#open=kanbo,tick — share the link,
 // share the desktop). Window geometry is a per-visitor convenience in
@@ -39,10 +44,17 @@
     const readmeTpl = document.getElementById('os-readme');
 
     const FRAMABLE_HOST = 'maxgfr.github.io';
-    // Apps that refuse to run framed, on purpose (pdfvault throws if
-    // window.top !== window.self, as anti-clickjacking). They stay shortcuts.
-    const NO_FRAME = new Set(['pdfvault']);
+    // Known to refuse framing, each on purpose: pdfvault, hush and veil wipe
+    // themselves when window.top !== window.self (hush and veil also try to
+    // navigate the top), obscura does the same from a lazy chunk, and aparte's
+    // service worker answers with frame-ancestors 'none'. Anything else that
+    // refuses is caught at runtime — see refused().
+    const LOCKED = new Set(['pdfvault', 'hush', 'veil', 'obscura', 'aparte']);
     const ALLOW = 'clipboard-read; clipboard-write; fullscreen; camera; microphone; display-capture';
+    const SANDBOX = [
+        'allow-scripts', 'allow-same-origin', 'allow-forms', 'allow-modals', 'allow-popups',
+        'allow-popups-to-escape-sandbox', 'allow-downloads', 'allow-pointer-lock', 'allow-presentation',
+    ].join(' ');
     const PINNED = 8;
     const GEOM_KEY = 'maxos-geom';
     const SEEN_KEY = 'maxos-readme-seen';
@@ -53,8 +65,8 @@
 
     // --- model, lifted from the DOM ---------------------------------------
 
-    function framable(name, home) {
-        if (!home || NO_FRAME.has(name)) return false;
+    function framable(home) {
+        if (!home) return false;
         try {
             const url = new URL(home);
             return url.hostname === FRAMABLE_HOST && url.pathname.length > 1;
@@ -89,7 +101,9 @@
             sprite: node.querySelector('.os-sprite'),
             order,
         };
-        app.window = framable(app.name, app.home);
+        app.window = framable(app.home);
+        app.locked = app.window && LOCKED.has(app.name);
+        app.runs = app.window && !app.locked;
         app.haystack = [app.name, app.desc, app.topics, app.language, cats[app.cat]?.label || '']
             .join(' ')
             .toLowerCase();
@@ -98,7 +112,7 @@
     });
 
     const byName = new Map(apps.map((app) => [app.name, app]));
-    const windowApps = apps.filter((app) => app.window);
+    const windowApps = apps.filter((app) => app.runs);
 
     // --- small helpers ----------------------------------------------------
 
@@ -156,7 +170,7 @@
     function appIcon(app) {
         const label = h('span', { class: 'os-icon-label' }, app.name);
         if (app.window) {
-            return h('button', { type: 'button', class: 'os-icon', 'data-app': app.name, title: app.desc }, tile(app), label);
+            return h('button', { type: 'button', class: 'os-icon', 'data-app': app.name, 'data-locked': app.locked, title: app.desc }, tile(app), label);
         }
         // Leaves the desktop, so it is a real link and says so — external-links.js
         // adds the "new tab" note for screen readers like everywhere else.
@@ -447,11 +461,51 @@
             url: app.url,
             size: [920, 600],
             body(container, win) {
-                const frame = h('iframe', { class: 'os-frame', src: app.home, title: app.name, allow: ALLOW, allowfullscreen: true });
-                frame.addEventListener('load', () => win.el.classList.add('is-loaded'), { once: true });
+                if (app.locked) {
+                    win.el.classList.add('is-loaded');
+                    lockedNotice(container, app, T.locked);
+                    return;
+                }
+                const frame = h('iframe', { class: 'os-frame', src: app.home, title: app.name, allow: ALLOW, sandbox: SANDBOX, allowfullscreen: true });
+                frame.addEventListener('load', () => {
+                    win.el.classList.add('is-loaded');
+                    setTimeout(() => {
+                        if (frame.isConnected && refused(frame, app)) lockedNotice(container, app, T.refused);
+                    }, 2500);
+                }, { once: true });
                 container.append(frame, h('div', { class: 'os-loading', 'aria-hidden': 'true' }, tile(app), h('span', null, `${T.loading} ${app.name}…`)));
             },
         });
+    }
+
+    // Did the app refuse to be framed? Only answerable same-origin, i.e. on the
+    // live site; under `zola serve` the apps are cross-origin and this says no.
+    // A refusal looks like one of: an error page (frame-ancestors, which is a
+    // different origin, so no document), or a document the app emptied itself.
+    function refused(frame, app) {
+        if (new URL(app.home).origin !== location.origin) return false;
+        let doc;
+        try {
+            doc = frame.contentDocument;
+        } catch {
+            return true;
+        }
+        if (!doc) return true;
+        const body = doc.body;
+        return !doc.documentElement.childElementCount || (!!body && !body.childElementCount && !body.textContent.trim());
+    }
+
+    function lockedNotice(container, app, text) {
+        container.replaceChildren(
+            h(
+                'div',
+                { class: 'os-locked' },
+                tile(app),
+                h('p', { class: 'os-locked-title' }, `🔒 ${app.name}`),
+                h('p', null, text.replace('{name}', app.name)),
+                h('a', { class: 'os-locked-open', href: app.home, target: '_blank', rel: 'noopener external' }, `${T.lockedOpen} ${app.name} ↗`)
+            )
+        );
     }
 
     function openFolder(cat) {
@@ -462,7 +516,7 @@
             size: [600, 420],
             bodyClass: 'os-folderbody',
             body(container) {
-                const sorted = [...cat.apps].sort((a, b) => Number(b.window) - Number(a.window) || b.stars - a.stars || a.order - b.order);
+                const sorted = [...cat.apps].sort((a, b) => Number(b.runs) - Number(a.runs) || Number(b.window) - Number(a.window) || b.stars - a.stars || a.order - b.order);
                 container.append(
                     h('ul', { class: 'os-grid' }, ...sorted.map((app) => h('li', null, appIcon(app)))),
                     h('p', { class: 'os-folderfoot' }, `${cat.apps.length} ${T.items}`)
@@ -513,6 +567,10 @@
         return opened;
     }
 
+    // Following a #open= link from elsewhere on the page, or editing the address
+    // bar by hand. syncHash() uses replaceState, which never fires this.
+    window.addEventListener('hashchange', restoreFromHash);
+
     // --- launcher -----------------------------------------------------------
 
     let hits = [];
@@ -540,7 +598,7 @@
             .filter((app) => words.every((word) => app.haystack.includes(word)))
             .sort((a, b) =>
                 Number(b.name.startsWith(first) && !!first) - Number(a.name.startsWith(first) && !!first) ||
-                Number(b.window) - Number(a.window) ||
+                Number(b.runs) - Number(a.runs) ||
                 b.stars - a.stars ||
                 a.order - b.order
             )
@@ -558,7 +616,7 @@
                     { class: 'os-result', role: 'option', id: `os-r-${index}`, 'aria-selected': String(index === 0), 'data-index': String(index) },
                     tile(app),
                     h('span', { class: 'os-result-text' }, h('span', { class: 'os-result-name' }, app.name), h('span', { class: 'os-result-desc' }, app.desc)),
-                    h('span', { class: 'os-result-kind', 'data-kind': app.window ? 'window' : 'tab' }, app.window ? T.inWindow : `↗ ${T.newTab}`)
+                    h('span', { class: 'os-result-kind', 'data-kind': app.runs ? 'window' : 'tab' }, app.runs ? T.inWindow : `${app.locked ? '🔒' : '↗'} ${T.newTab}`)
                 )
             )
         );
@@ -578,7 +636,7 @@
 
     function launch(app) {
         closeLauncher(false);
-        if (app.window) openApp(app);
+        if (app.runs) openApp(app);
         else window.open(app.home || app.url, '_blank', 'noopener');
     }
 

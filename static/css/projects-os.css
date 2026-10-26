@@ -252,8 +252,10 @@
     background-color: color-mix(in srgb, var(--bg-light) 80%, transparent);
 }
 
-/* Shortcut arrow on anything that leaves the desktop. */
-.os-icon[data-external]::after {
+/* Shortcut arrow on anything that leaves the desktop, a lock on the apps that
+   refuse to be framed. */
+.os-icon[data-external]::after,
+.os-icon[data-locked]::after {
     content: "↗";
     position: absolute;
     top: 0.3rem;
@@ -266,6 +268,11 @@
     border-radius: 50%;
     background-color: var(--bg);
     font-size: 0.65rem;
+}
+
+.os-icon[data-locked]::after {
+    content: "🔒";
+    font-size: 0.55rem;
 }
 
 /* Folders: a tab on top of the tile, and the theme's emoji on its face. */
@@ -576,6 +583,48 @@
     background-color: var(--bg);
     color: var(--text-light);
     font-size: 0.75rem;
+}
+
+/* The notice shown instead of an app that refuses to be framed. */
+.os-locked {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 0.4rem;
+    min-height: 100%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.os-locked p {
+    max-width: 30rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.os-locked .os-tile {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.4rem;
+}
+
+.os-locked-title {
+    font-weight: 700;
+}
+
+.os-locked-open {
+    margin-top: 0.6rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    background-color: var(--accent);
+    color: var(--accent-text) !important;
+    font-weight: 700;
+}
+
+.os-root .os-locked-open:hover {
+    background-color: var(--bg);
+    color: var(--accent) !important;
 }
 
 /* README window */
