@@ -2060,7 +2060,7 @@
       ],
       "created": "2026-10",
       "pushed": "2026-10",
-      "license": null,
+      "license": "MIT",
       "poke": {
         "type1": "grass",
         "type2": "fire",
