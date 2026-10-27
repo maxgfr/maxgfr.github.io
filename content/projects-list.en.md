@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 102 public repos · ⭐ 338 stars**
+**📦 103 public repos · ⭐ 338 stars**
 
 ---
 
@@ -58,6 +58,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[package-checker.sh](https://github.com/maxgfr/package-checker.sh)** — Scans node/bun/deno projects for vulnerable npm packages via OSV/GHSA (JSON/CSV/PURL/SBOM/SARIF/TRIVY).
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — GitHub maintenance toolkit: bulk unstar, org clone, fork cleanup, repo audit and more.
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Turns scanned PDFs and phone photos into searchable, copyable PDFs with local OCR (PaddleOCR models via RapidOCR).
+- **[manga-anim](https://github.com/maxgfr/manga-anim)** — Turns manga pages into videos, locally on Apple Silicon: panel and bubble detection (Magi v2), multilingual OCR, per-character voices (Kokoro), captions and camera moves, AI animation of chosen panels (Wan2.2 via MLX). CBZ/EPUB/PDF or MangaDex import, a web reader to fix OCR, and an agent skill to drive it all. (Rust)
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Torrent ratio tool that sends real HTTP announce requests to BitTorrent trackers.
 - **[unsleep](https://github.com/maxgfr/unsleep)** — Tiny executable that prevents the machine from sleeping. · [npm](https://www.npmjs.com/package/unsleep)
 

@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 102 dépôts publics · ⭐ 338 étoiles**
+**📦 103 dépôts publics · ⭐ 338 étoiles**
 
 ---
 
@@ -58,6 +58,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[package-checker.sh](https://github.com/maxgfr/package-checker.sh)** — Scanne les projets node/bun/deno à la recherche de paquets npm vulnérables via OSV/GHSA (JSON/CSV/PURL/SBOM/SARIF/TRIVY).
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — Boîte à outils de maintenance GitHub : unstar en masse, clone d'org, nettoyage des forks, audit de dépôts, etc.
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Rend les PDF scannés et photos de documents cherchables et copiables, avec un OCR local (modèles PaddleOCR via RapidOCR).
+- **[manga-anim](https://github.com/maxgfr/manga-anim)** — Transforme des planches de manga en vidéo, en local sur Apple Silicon : détection des cases et des bulles (Magi v2), OCR multilingue, voix de synthèse par personnage (Kokoro), sous-titres et mouvements de caméra, animation IA de cases choisies (Wan2.2 via MLX). Import CBZ/EPUB/PDF ou MangaDex, liseuse web pour corriger l'OCR, et une skill d'agent pour tout piloter. (Rust)
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Outil de ratio torrent qui envoie de vraies requêtes d'annonce HTTP aux trackers BitTorrent.
 - **[unsleep](https://github.com/maxgfr/unsleep)** — Petit exécutable qui empêche la machine de se mettre en veille. · [npm](https://www.npmjs.com/package/unsleep)
 
