@@ -1,13 +1,13 @@
 {
   "generated": "2026-10",
   "totals": {
-    "repos": 111,
-    "stars": 341
+    "repos": 112,
+    "stars": 343
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 63
+      "count": 64
     },
     {
       "name": "JavaScript",
@@ -88,6 +88,11 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -1325,7 +1330,7 @@
         "model-switching"
       ],
       "created": "2026-08",
-      "pushed": "2026-08",
+      "pushed": "2026-10",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -1629,7 +1634,7 @@
       "cat": 2,
       "dex": 30,
       "dexLabel": "030",
-      "stars": 48,
+      "stars": 49,
       "forks": 2,
       "language": "Rust",
       "topics": [
@@ -2045,7 +2050,7 @@
       "cat": 2,
       "dex": 38,
       "dexLabel": "038",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "Rust",
       "topics": [
@@ -2064,18 +2069,18 @@
       "poke": {
         "type1": "grass",
         "type2": "fire",
-        "hp": 220,
-        "level": 47,
+        "hp": 230,
+        "level": 48,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
           {
             "name": "comics",
-            "dmg": 60
+            "dmg": 70
           },
           {
             "name": "image to video",
-            "dmg": 30
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -3215,8 +3220,8 @@
         "en": "demo"
       },
       "desc": {
-        "fr": "Scanner santé des aliments dans le navigateur : scanne un code-barres (caméra, photo ou chiffres), et une note de 0 à 100 explicable ligne par ligne sort des bases ouvertes d'Open Food Facts : Nutri-Score 2023 (calculé par goodscan quand la base n'a pas de note), transformation NOVA, additifs à risque selon l'EFSA ou interdits dans l'UE. Fonctionne pour les produits des États-Unis (encadré façon FDA par portion), de France, d'Allemagne et du monde entier, en anglais, français et allemand. Préférences « pour moi » (allergènes, végan, sel…) comparées comme le font les applis Open Food Facts. IA facultative avec ta propre clé via llm-connect : explication de la note, questions, lecture d'étiquette en photo. Lecture native ou ZXing en WebAssembly, PWA installable et hors ligne, sans compte ni serveur.",
-        "en": "Food health scanner in the browser: scan a barcode (camera, photo or digits) and get a 0–100 score you can check line by line, from Open Food Facts' open databases: the 2023 Nutri-Score (computed by goodscan when the database has none), NOVA processing, additives with an EFSA risk or not authorised in the EU. Works for products from the US (an FDA-style per-serving box), France, Germany and worldwide, in English, French and German. \"For you\" preferences (allergens, vegan, salt…) matched the way the Open Food Facts apps do. Optional AI with your own key through llm-connect: the score explained, questions, labels read from a photo. Native barcode reading or ZXing in WebAssembly, installable offline PWA, no account, no server."
+        "fr": "Scanner santé des aliments et des cosmétiques dans le navigateur : scanne un code-barres (caméra, photo ou chiffres), et une note de 0 à 100 explicable ligne par ligne sort des bases ouvertes d'Open Food Facts : Nutri-Score 2023 (calculé par goodscan quand la base n'a pas de note), transformation NOVA, additifs à risque selon l'EFSA ou interdits dans l'UE, et ce que dit la science sur chacun (positions officielles et études humaines, liées à leur DOI ou PubMed). Les cosmétiques d'Open Beauty Facts ont une note ingrédients : interdits ou restreints dans l'UE, CMR, perturbateurs endocriniens, PFAS, interdictions américaines, allergènes de parfum, chacun sourcé. Fonctionne pour les produits des États-Unis (encadré façon FDA par portion), de France, d'Allemagne et du monde entier, en anglais, français et allemand. Préférences « pour moi » (allergènes, végan, sel…) comparées comme le font les applis Open Food Facts. IA facultative avec ta propre clé via llm-connect : explication de la note, questions, lecture d'étiquette ou de liste INCI en photo. Lecture native ou ZXing en WebAssembly, PWA installable et hors ligne, sans compte ni serveur.",
+        "en": "Food and cosmetics health scanner in the browser: scan a barcode (camera, photo or digits) and get a 0–100 score you can check line by line, from Open Food Facts' open databases: the 2023 Nutri-Score (computed by goodscan when the database has none), NOVA processing, additives with an EFSA risk or not authorised in the EU, and what science says about each (official positions and human studies, linked to their DOI or PubMed). Cosmetics from Open Beauty Facts get an ingredient score: banned or restricted in the EU, CMR, endocrine disruptors, PFAS, US state bans, fragrance allergens, each sourced. Works for products from the US (an FDA-style per-serving box), France, Germany and worldwide, in English, French and German. \"For you\" preferences (allergens, vegan, salt…) matched the way the Open Food Facts apps do. Optional AI with your own key through llm-connect: the score explained, questions, labels and INCI lists read from a photo. Native barcode reading or ZXing in WebAssembly, installable offline PWA, no account, no server."
       },
       "cat": 3,
       "dex": 60,
@@ -3229,8 +3234,8 @@
         "ai-sdk",
         "barcode-scanner",
         "bun",
+        "cosmetics",
         "food",
-        "github-pages",
         "health",
         "llm"
       ],
@@ -3241,17 +3246,17 @@
         "type1": "dark",
         "type2": "water",
         "hp": 250,
-        "level": 80,
+        "level": 100,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
           {
-            "name": "food",
-            "dmg": 60
+            "name": "cosmetics",
+            "dmg": 20
           },
           {
-            "name": "nutri score",
-            "dmg": 50
+            "name": "food",
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -6010,6 +6015,48 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "amphi",
+      "url": "https://github.com/maxgfr/amphi",
+      "home": "https://maxgfr.github.io/amphi/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Follow your courses with AI, in your browser: record and import lectures, then summaries, mind maps, quizzes, flashcards, slides, podcasts and video summaries. No server, no account.",
+        "en": "Follow your courses with AI, in your browser: record and import lectures, then summaries, mind maps, quizzes, flashcards, slides, podcasts and video summaries. No server, no account."
+      },
+      "cat": 10,
+      "dex": 112,
+      "dexLabel": "112",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created": "2026-10",
+      "pushed": "2026-10",
+      "license": "MIT",
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 70,
+        "level": 15,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "TypeScript",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M2 1h8v1h-8zM1 2h10v1h-10zM0 3h12v1h-12z",
+          "M0 4h3v1h-3zM4 4h4v1h-4zM9 4h3v1h-3zM0 5h12v1h-12zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h3v1h-3zM7 7h3v1h-3zM3 8h2v1h-2zM7 8h2v1h-2z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h6v1h-6zM3 10h6v1h-6zM2 11h2v1h-2zM8 11h2v1h-2z"
         ]
       }
     }
