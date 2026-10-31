@@ -4198,7 +4198,7 @@
       "dex": 78,
       "dexLabel": "078",
       "stars": 1,
-      "forks": 1,
+      "forks": 0,
       "language": "TypeScript",
       "topics": [
         "ai-video",
@@ -4216,8 +4216,8 @@
       "poke": {
         "type1": "poison",
         "type2": "water",
-        "hp": 230,
-        "level": 48,
+        "hp": 220,
+        "level": 46,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
