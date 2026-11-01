@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10",
+  "generated": "2026-11",
   "totals": {
     "repos": 112,
     "stars": 343
@@ -131,7 +131,7 @@
         "type1": "psychic",
         "type2": "electric",
         "hp": 110,
-        "level": 25,
+        "level": 26,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -183,7 +183,7 @@
         "type1": "rock",
         "type2": "electric",
         "hp": 120,
-        "level": 26,
+        "level": 27,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -235,7 +235,7 @@
         "type1": "rock",
         "type2": "electric",
         "hp": 150,
-        "level": 32,
+        "level": 33,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -287,7 +287,7 @@
         "type1": "psychic",
         "type2": "electric",
         "hp": 120,
-        "level": 26,
+        "level": 27,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -333,13 +333,13 @@
         "log-analysis"
       ],
       "created": "2026-06",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
         "type2": "electric",
         "hp": 130,
-        "level": 29,
+        "level": 30,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -391,7 +391,7 @@
         "type1": "fairy",
         "type2": "electric",
         "hp": 140,
-        "level": 31,
+        "level": 32,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -443,7 +443,7 @@
         "type1": "psychic",
         "type2": "electric",
         "hp": 160,
-        "level": 33,
+        "level": 34,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -495,7 +495,7 @@
         "type1": "psychic",
         "type2": "electric",
         "hp": 200,
-        "level": 44,
+        "level": 45,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -547,7 +547,7 @@
         "type1": "dark",
         "type2": "electric",
         "hp": 250,
-        "level": 67,
+        "level": 68,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -599,7 +599,7 @@
         "type1": "rock",
         "type2": "electric",
         "hp": 130,
-        "level": 27,
+        "level": 28,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -651,7 +651,7 @@
         "type1": "rock",
         "type2": "electric",
         "hp": 170,
-        "level": 33,
+        "level": 34,
         "rarity": "uncommon",
         "weakness": "water",
         "moves": [
@@ -703,7 +703,7 @@
         "type1": "psychic",
         "type2": "electric",
         "hp": 120,
-        "level": 26,
+        "level": 27,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -758,7 +758,7 @@
         "type1": "dragon",
         "type2": "ice",
         "hp": 170,
-        "level": 37,
+        "level": 38,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
@@ -813,7 +813,7 @@
         "type1": "fairy",
         "type2": "fire",
         "hp": 110,
-        "level": 22,
+        "level": 23,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -868,7 +868,7 @@
         "type1": "dragon",
         "type2": "water",
         "hp": 140,
-        "level": 30,
+        "level": 31,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
@@ -1024,7 +1024,7 @@
         "type1": "dark",
         "type2": "electric",
         "hp": 180,
-        "level": 38,
+        "level": 39,
         "rarity": "uncommon",
         "weakness": "fighting",
         "moves": [
@@ -1128,7 +1128,7 @@
         "type1": "fighting",
         "type2": "fire",
         "hp": 160,
-        "level": 35,
+        "level": 36,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1232,7 +1232,7 @@
         "type1": "fighting",
         "type2": "fire",
         "hp": 200,
-        "level": 44,
+        "level": 45,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1284,7 +1284,7 @@
         "type1": "fighting",
         "type2": "steel",
         "hp": 140,
-        "level": 33,
+        "level": 34,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1336,7 +1336,7 @@
         "type1": "fighting",
         "type2": "fire",
         "hp": 110,
-        "level": 24,
+        "level": 25,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -1388,7 +1388,7 @@
         "type1": "steel",
         "type2": null,
         "hp": 120,
-        "level": 29,
+        "level": 30,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
@@ -1550,7 +1550,7 @@
         "type1": "dragon",
         "type2": "fire",
         "hp": 250,
-        "level": 60,
+        "level": 61,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
@@ -1706,7 +1706,7 @@
         "type1": "dark",
         "type2": "fire",
         "hp": 80,
-        "level": 20,
+        "level": 21,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -1758,7 +1758,7 @@
         "type1": "fairy",
         "type2": "steel",
         "hp": 100,
-        "level": 24,
+        "level": 25,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -1862,7 +1862,7 @@
         "type1": "steel",
         "type2": null,
         "hp": 140,
-        "level": 31,
+        "level": 32,
         "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
@@ -1908,13 +1908,13 @@
         "osv"
       ],
       "created": "2025-11",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
         "type2": "steel",
         "hp": 180,
-        "level": 42,
+        "level": 43,
         "rarity": "uncommon",
         "weakness": "fighting",
         "moves": [
@@ -1966,7 +1966,7 @@
         "type1": "ghost",
         "type2": "steel",
         "hp": 100,
-        "level": 23,
+        "level": 24,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -2018,7 +2018,7 @@
         "type1": "psychic",
         "type2": "steel",
         "hp": 120,
-        "level": 31,
+        "level": 32,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
@@ -2070,7 +2070,7 @@
         "type1": "grass",
         "type2": "fire",
         "hp": 230,
-        "level": 48,
+        "level": 49,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
@@ -2122,7 +2122,7 @@
         "type1": "fighting",
         "type2": "steel",
         "hp": 80,
-        "level": 21,
+        "level": 22,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -2174,7 +2174,7 @@
         "type1": "water",
         "type2": null,
         "hp": 50,
-        "level": 42,
+        "level": 43,
         "rarity": "common",
         "weakness": "grass",
         "moves": [
@@ -2229,7 +2229,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 190,
-        "level": 41,
+        "level": 42,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2339,7 +2339,7 @@
         "type1": "rock",
         "type2": "electric",
         "hp": 150,
-        "level": 35,
+        "level": 36,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -2394,7 +2394,7 @@
         "type1": "electric",
         "type2": "water",
         "hp": 250,
-        "level": 89,
+        "level": 90,
         "rarity": "common",
         "weakness": "ground",
         "moves": [
@@ -2449,7 +2449,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 240,
-        "level": 53,
+        "level": 54,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2504,7 +2504,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 250,
-        "level": 57,
+        "level": 58,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2559,7 +2559,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 230,
-        "level": 51,
+        "level": 52,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2669,7 +2669,7 @@
         "type1": "dark",
         "type2": "electric",
         "hp": 210,
-        "level": 45,
+        "level": 46,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2724,7 +2724,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 250,
-        "level": 55,
+        "level": 56,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -2832,7 +2832,7 @@
         "type1": "fairy",
         "type2": "water",
         "hp": 250,
-        "level": 58,
+        "level": 59,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -2878,7 +2878,7 @@
         "type1": "fire",
         "type2": null,
         "hp": 250,
-        "level": 88,
+        "level": 89,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -3039,7 +3039,7 @@
         "type1": "electric",
         "type2": "water",
         "hp": 250,
-        "level": 77,
+        "level": 78,
         "rarity": "common",
         "weakness": "ground",
         "moves": [
@@ -3085,7 +3085,7 @@
         "type1": "water",
         "type2": null,
         "hp": 250,
-        "level": 76,
+        "level": 77,
         "rarity": "common",
         "weakness": "grass",
         "moves": [
@@ -3286,13 +3286,13 @@
       "language": "TypeScript",
       "topics": [],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "water",
         "type2": null,
         "hp": 230,
-        "level": 55,
+        "level": 56,
         "rarity": "common",
         "weakness": "grass",
         "moves": [
@@ -3343,7 +3343,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 250,
-        "level": 86,
+        "level": 87,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -3563,7 +3563,7 @@
         "type1": "rock",
         "type2": "water",
         "hp": 250,
-        "level": 59,
+        "level": 60,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -3618,7 +3618,7 @@
         "type1": "dark",
         "type2": "fire",
         "hp": 250,
-        "level": 58,
+        "level": 59,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -3673,7 +3673,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 250,
-        "level": 79,
+        "level": 80,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -3783,7 +3783,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 170,
-        "level": 38,
+        "level": 39,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -3893,7 +3893,7 @@
         "type1": "poison",
         "type2": "water",
         "hp": 180,
-        "level": 38,
+        "level": 39,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
@@ -4058,7 +4058,7 @@
         "type1": "grass",
         "type2": "water",
         "hp": 120,
-        "level": 28,
+        "level": 29,
         "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
@@ -4110,7 +4110,7 @@
         "type1": "poison",
         "type2": "water",
         "hp": 80,
-        "level": 19,
+        "level": 20,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -4217,7 +4217,7 @@
         "type1": "poison",
         "type2": "water",
         "hp": 220,
-        "level": 46,
+        "level": 47,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
@@ -4379,7 +4379,7 @@
         "type1": "electric",
         "type2": "water",
         "hp": 130,
-        "level": 26,
+        "level": 27,
         "rarity": "common",
         "weakness": "ground",
         "moves": [
@@ -4434,7 +4434,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 210,
-        "level": 48,
+        "level": 49,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -4483,13 +4483,13 @@
         "webassembly"
       ],
       "created": "2026-09",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
         "type2": "electric",
         "hp": 230,
-        "level": 53,
+        "level": 54,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -4544,7 +4544,7 @@
         "type1": "flying",
         "type2": "electric",
         "hp": 250,
-        "level": 75,
+        "level": 76,
         "rarity": "common",
         "weakness": "electric",
         "moves": [
@@ -4599,7 +4599,7 @@
         "type1": "dragon",
         "type2": "water",
         "hp": 170,
-        "level": 37,
+        "level": 38,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
@@ -4654,7 +4654,7 @@
         "type1": "dragon",
         "type2": "water",
         "hp": 230,
-        "level": 53,
+        "level": 54,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
@@ -4709,7 +4709,7 @@
         "type1": "ground",
         "type2": "grass",
         "hp": 210,
-        "level": 40,
+        "level": 41,
         "rarity": "rare",
         "weakness": "water",
         "moves": [
@@ -4816,7 +4816,7 @@
         "type1": "dark",
         "type2": "water",
         "hp": 140,
-        "level": 32,
+        "level": 33,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -4926,7 +4926,7 @@
         "type1": "ice",
         "type2": "water",
         "hp": 120,
-        "level": 28,
+        "level": 29,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
@@ -4981,7 +4981,7 @@
         "type1": "ice",
         "type2": "water",
         "hp": 100,
-        "level": 50,
+        "level": 51,
         "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
@@ -5036,7 +5036,7 @@
         "type1": "fighting",
         "type2": "water",
         "hp": 80,
-        "level": 46,
+        "level": 47,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
@@ -5251,7 +5251,7 @@
         "type1": "fairy",
         "type2": "water",
         "hp": 50,
-        "level": 41,
+        "level": 42,
         "rarity": "common",
         "weakness": "steel",
         "moves": [
@@ -5304,7 +5304,7 @@
         "type1": "steel",
         "type2": "water",
         "hp": 70,
-        "level": 43,
+        "level": 44,
         "rarity": "common",
         "weakness": "fire",
         "moves": [
@@ -5359,7 +5359,7 @@
         "type1": "flying",
         "type2": "water",
         "hp": 90,
-        "level": 49,
+        "level": 50,
         "rarity": "uncommon",
         "weakness": "electric",
         "moves": [
@@ -5412,7 +5412,7 @@
         "type1": "flying",
         "type2": "water",
         "hp": 60,
-        "level": 43,
+        "level": 44,
         "rarity": "common",
         "weakness": "electric",
         "moves": [
@@ -5522,7 +5522,7 @@
         "type1": "ghost",
         "type2": "water",
         "hp": 200,
-        "level": 66,
+        "level": 67,
         "rarity": "rare",
         "weakness": "dark",
         "moves": [
@@ -5574,7 +5574,7 @@
         "type1": "water",
         "type2": null,
         "hp": 80,
-        "level": 65,
+        "level": 66,
         "rarity": "uncommon",
         "weakness": "grass",
         "moves": [
@@ -5629,7 +5629,7 @@
         "type1": "poison",
         "type2": "water",
         "hp": 160,
-        "level": 66,
+        "level": 67,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
@@ -5735,7 +5735,7 @@
         "type1": "electric",
         "type2": "water",
         "hp": 80,
-        "level": 52,
+        "level": 53,
         "rarity": "uncommon",
         "weakness": "ground",
         "moves": [
@@ -5845,7 +5845,7 @@
         "type1": "bug",
         "type2": "electric",
         "hp": 140,
-        "level": 59,
+        "level": 60,
         "rarity": "uncommon",
         "weakness": "flying",
         "moves": [
@@ -5893,7 +5893,7 @@
         "type1": "dragon",
         "type2": "normal",
         "hp": 250,
-        "level": 89,
+        "level": 90,
         "rarity": "rare",
         "weakness": "ice",
         "moves": [
@@ -5937,7 +5937,7 @@
         "tap"
       ],
       "created": "2025-12",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": null,
       "poke": {
         "type1": "ghost",
@@ -5998,7 +5998,7 @@
         "type1": "fairy",
         "type2": "electric",
         "hp": 80,
-        "level": 91,
+        "level": 92,
         "rarity": "uncommon",
         "weakness": "steel",
         "moves": [
@@ -6044,7 +6044,7 @@
         "type1": "water",
         "type2": null,
         "hp": 70,
-        "level": 15,
+        "level": 16,
         "rarity": "common",
         "weakness": "grass",
         "moves": [
