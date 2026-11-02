@@ -101,6 +101,14 @@
             {% set label_dark = 'Thème : sombre' %}
             {% endif %}
 
+            {% if current_lang == 'en' %}
+            {% set notice_theme = "This browser isn’t saving preferences: the theme will reset when you reload." %}
+            {% set notice_lang = "This browser isn’t saving preferences: the language will reset on your next visit." %}
+            {% else %}
+            {% set notice_theme = "Ce navigateur n’enregistre pas vos préférences : le thème reviendra au rechargement." %}
+            {% set notice_lang = "Ce navigateur n’enregistre pas vos préférences : la langue reviendra à votre prochaine visite." %}
+            {% endif %}
+
             <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0"
                 aria-label="{{ label_auto }}" title="{{ label_auto }}"
                 data-icon-base="{{ get_url(path='icons.svg') }}"
@@ -120,6 +128,11 @@
         <main>
             {% block content %}{% endblock %}
         </main>
+
+        {# Shown by window.siteNotice (static/js/script.js) when a theme or language
+           choice cannot be stored. Always in the DOM, so screen readers announce it. #}
+        <p id="site-notice" class="site-notice" role="status"
+            data-theme-msg="{{ notice_theme }}" data-lang-msg="{{ notice_lang }}"></p>
 
         <footer>
             {% include "footer.html" %}

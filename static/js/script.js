@@ -69,6 +69,7 @@ class ThemeManager {
             localStorage.setItem(THEME_STORAGE_KEY, mode);
         } catch (e) {
             // Full or blocked storage: the theme still applies, until reload.
+            if (window.siteNotice) window.siteNotice('theme'); // defined in language.js
         }
         this.applyTheme();
         this.render();

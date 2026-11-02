@@ -11,6 +11,34 @@
     const SUPPORTED_LANGUAGES = ['en', 'fr'];
     // Prefixed: the origin's localStorage is shared with every maxgfr.github.io/<app>/.
     const STORAGE_KEY = 'maxgfr:lang-preference';
+    // sessionStorage: "the language just picked could not be stored".
+    const NOTICE_KEY = 'maxgfr:lang-not-kept';
+
+    // A brief, polite word when a choice could not be stored (storage full or
+    // blocked): 'theme' or 'lang', worded per page language in templates/base.html.
+    // Defined here because this is the first site-wide script; script.js uses it too.
+    window.siteNotice = function (kind) {
+        const notice = document.getElementById('site-notice');
+        const message = notice && notice.dataset[kind + 'Msg'];
+        if (!message) return;
+        notice.textContent = message;
+        notice.classList.add('is-shown');
+        clearTimeout(window.siteNotice.timer);
+        window.siteNotice.timer = setTimeout(() => {
+            notice.classList.remove('is-shown');
+            window.siteNotice.timer = setTimeout(() => { notice.textContent = ''; }, 300);
+        }, 6000);
+    };
+
+    function showPendingNotice() {
+        try {
+            if (sessionStorage.getItem(NOTICE_KEY) === null) return;
+            sessionStorage.removeItem(NOTICE_KEY);
+        } catch (e) {
+            return;
+        }
+        window.siteNotice('lang');
+    }
 
     // Storage may be full or blocked (private mode, another app on the origin
     // filled the quota): reads give null, writes report whether they stuck.
@@ -182,9 +210,19 @@
                 newPath = toFrenchPath(currentPath);
             }
             
-            // Store preference
-            storePreference(selectedLang);
-            
+            // Store preference. If it cannot be kept, say so on the next page
+            // (flagged in sessionStorage), or here before leaving when even
+            // that is refused.
+            if (!storePreference(selectedLang)) {
+                try {
+                    sessionStorage.setItem(NOTICE_KEY, '1');
+                } catch (err) {
+                    window.siteNotice('lang');
+                    setTimeout(function () { window.location.href = newPath; }, 2500);
+                    return;
+                }
+            }
+
             // Navigate to new language version
             window.location.href = newPath;
         });
@@ -207,8 +245,10 @@
         // Initialize language selector if it exists in the DOM
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', initLanguageSelector);
+            document.addEventListener('DOMContentLoaded', showPendingNotice);
         } else {
             initLanguageSelector();
+            showPendingNotice();
         }
     }
 
