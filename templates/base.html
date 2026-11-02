@@ -27,10 +27,36 @@
 
         <!-- Prevent theme flash on page load. Anything other than an explicit
              'light'/'dark' preference — including no preference at all — means
-             auto, so the OS decides. data-theme always holds a resolved theme. -->
+             auto, so the OS decides. data-theme always holds a resolved theme.
+
+             Every maxgfr.github.io/<app>/ project page shares this origin, and so
+             this localStorage: the site's keys carry a `maxgfr:` prefix. Visits
+             from before the prefix stored them bare; copy those over once (it
+             runs first on every page). The generic old names may belong to
+             another app, so they are only read, never removed; the maxos-* ones
+             are this site's own and go once copied. Storage may be full or
+             blocked: nothing here is allowed to throw. -->
         <script>
         (function() {
-            const saved = localStorage.getItem('theme');
+            let saved = null;
+            try {
+                [
+                    ['theme', /^(auto|light|dark)$/, false],
+                    ['lang-preference', /^(en|fr)$/, false],
+                    ['runner-high-score', /^\d+$/, false],
+                    ['maxos-geom', /^\{/, true],
+                    ['maxos-readme-seen', /^1$/, true]
+                ].forEach(function ([from, valid, own]) {
+                    const to = 'maxgfr:' + from;
+                    const old = localStorage.getItem(from);
+                    if (old === null || !valid.test(old)) return;
+                    if (localStorage.getItem(to) === null) localStorage.setItem(to, old);
+                    if (own && localStorage.getItem(to) !== null) localStorage.removeItem(from);
+                });
+            } catch (e) {}
+            try {
+                saved = localStorage.getItem('maxgfr:theme');
+            } catch (e) {}
             const explicit = saved === 'light' || saved === 'dark';
             const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             document.documentElement.setAttribute('data-theme',
