@@ -432,7 +432,7 @@
         "lead-generation"
       ],
       "created": "2026-08",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
@@ -747,7 +747,7 @@
         "deterministic"
       ],
       "created": "2026-06",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "Apache-2.0",
       "poke": {
         "type1": "dragon",
@@ -802,7 +802,7 @@
         "webgpu"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "Apache-2.0",
       "poke": {
         "type1": "fairy",
@@ -1539,7 +1539,7 @@
         "machine-learning"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "Apache-2.0",
       "poke": {
         "type1": "dragon",
@@ -2218,7 +2218,7 @@
         "privacy"
       ],
       "created": "2026-08",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -2328,7 +2328,7 @@
         "react"
       ],
       "created": "2026-07",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -2493,7 +2493,7 @@
         "no-backend"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -2713,7 +2713,7 @@
         "i18n"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -3332,7 +3332,7 @@
         "maplibre"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -3387,7 +3387,7 @@
         "preact"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -3442,7 +3442,7 @@
         "indexeddb"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": null,
       "poke": {
         "type1": "electric",
@@ -3704,7 +3704,7 @@
         "image-converter"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -3746,7 +3746,7 @@
       "dex": 70,
       "dexLabel": "070",
       "stars": 0,
-      "forks": 0,
+      "forks": 1,
       "language": "TypeScript",
       "topics": [
         "agent-skill",
@@ -3764,8 +3764,8 @@
       "poke": {
         "type1": "dark",
         "type2": "water",
-        "hp": 130,
-        "level": 25,
+        "hp": 140,
+        "level": 27,
         "rarity": "common",
         "weakness": "fighting",
         "moves": [
@@ -3869,7 +3869,7 @@
         "data-visualization"
       ],
       "created": "2025-12",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -3924,7 +3924,7 @@
         "sql"
       ],
       "created": "2026-03",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "poison",
@@ -3979,7 +3979,7 @@
         "next"
       ],
       "created": "2022-05",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": null,
       "poke": {
         "type1": "fairy",
@@ -4089,7 +4089,7 @@
         "pwa"
       ],
       "created": "2026-01",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "grass",
@@ -4355,7 +4355,7 @@
         "release-notes"
       ],
       "created": "2022-11",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -4465,7 +4465,7 @@
         "privacy"
       ],
       "created": "2026-08",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -4575,7 +4575,7 @@
         "self-hosted"
       ],
       "created": "2026-09",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "flying",
@@ -4957,7 +4957,7 @@
         "ols"
       ],
       "created": "2026-04",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "ice",
@@ -5876,7 +5876,7 @@
         "prettier"
       ],
       "created": "2022-11",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "bug",
