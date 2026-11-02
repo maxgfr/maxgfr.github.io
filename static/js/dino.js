@@ -26,13 +26,25 @@
 
     const ctx = canvas.getContext('2d');
     let frame = 0;
+
+    // Prefixed: the origin's localStorage is shared with every maxgfr.github.io/<app>/.
+    const HIGH_SCORE_KEY = 'maxgfr:runner-high-score';
+
+    function readHighScore() {
+        try {
+            const value = parseInt(localStorage.getItem(HIGH_SCORE_KEY) || '0', 10);
+            return Number.isFinite(value) && value > 0 ? value : 0;
+        } catch (e) {
+            return 0;
+        }
+    }
     
     // State
     let state = {
         isRunning: false,
         isGameOver: false,
         score: 0,
-        highScore: parseInt(localStorage.getItem('runner-high-score') || '0'),
+        highScore: readHighScore(),
         targetSpeed: CONFIG.START_SPEED,
         currentSpeed: CONFIG.START_SPEED,
         distance: 0
@@ -271,7 +283,11 @@
         state.isGameOver = true;
         if (state.score > state.highScore) {
             state.highScore = state.score;
-            localStorage.setItem('runner-high-score', state.highScore);
+            try {
+                localStorage.setItem(HIGH_SCORE_KEY, String(state.highScore));
+            } catch (e) {
+                // Full or blocked storage: the record lasts until reload.
+            }
         }
     }
 

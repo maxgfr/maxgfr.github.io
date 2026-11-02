@@ -22,7 +22,10 @@ class ThemeManager {
     }
 
     setInitialTheme() {
-        const savedTheme = localStorage.getItem('theme');
+        let savedTheme = null;
+        try {
+            savedTheme = localStorage.getItem('maxgfr:theme');
+        } catch (e) {}
         const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const initialTheme = savedTheme || (systemDark ? 'dark' : 'light');
 
@@ -37,7 +40,9 @@ class ThemeManager {
 
         document.documentElement.setAttribute('data-theme', newTheme);
         this.updateIcon(!isDark);
-        localStorage.setItem('theme', newTheme);
+        try {
+            localStorage.setItem('maxgfr:theme', newTheme);
+        } catch (e) {}
 
         // Lazy load sound only when needed
         if (!this.sound && this.soundSrc) {

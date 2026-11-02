@@ -55,9 +55,11 @@
         'allow-scripts', 'allow-same-origin', 'allow-forms', 'allow-modals', 'allow-popups',
         'allow-popups-to-escape-sandbox', 'allow-downloads', 'allow-pointer-lock', 'allow-presentation',
     ].join(' ');
-    const GEOM_KEY = 'maxos-geom';
-    const SEEN_KEY = 'maxos-readme-seen';
-    const BOOT_KEY = 'maxos-booted';
+    // Prefixed: the origin's storage is shared with every maxgfr.github.io/<app>/.
+    // templates/base.html moves the old unprefixed keys over.
+    const GEOM_KEY = 'maxgfr:maxos-geom';
+    const SEEN_KEY = 'maxgfr:maxos-readme-seen';
+    const BOOT_KEY = 'maxgfr:maxos-booted';
     const lang = document.documentElement.lang === 'en' ? 'en' : 'fr';
     const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const phoneQuery = matchMedia('(max-width: 720px)');

@@ -219,7 +219,7 @@ async function main() {
             '--hide-scrollbars',
             '--force-color-profile=srgb', // keep CI and macOS output comparable
             // Incognito, NOT --user-data-dir. Both give the empty localStorage
-            // we need (no stale `theme: dark` or `lang-preference` leaking into
+            // we need (no stale `maxgfr:theme` or `maxgfr:lang-preference` leaking into
             // the render), but on macOS --user-data-dir makes Chrome write the
             // PDF and then never exit — measured, and not fixable with
             // --disable-background-networking / --disable-component-update /

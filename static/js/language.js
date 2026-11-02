@@ -9,7 +9,27 @@
     // Configuration
     const DEFAULT_LANGUAGE = 'en';
     const SUPPORTED_LANGUAGES = ['en', 'fr'];
-    const STORAGE_KEY = 'lang-preference';
+    // Prefixed: the origin's localStorage is shared with every maxgfr.github.io/<app>/.
+    const STORAGE_KEY = 'maxgfr:lang-preference';
+
+    // Storage may be full or blocked (private mode, another app on the origin
+    // filled the quota): reads give null, writes report whether they stuck.
+    function readPreference() {
+        try {
+            return localStorage.getItem(STORAGE_KEY);
+        } catch (e) {
+            return null;
+        }
+    }
+
+    function storePreference(lang) {
+        try {
+            localStorage.setItem(STORAGE_KEY, lang);
+            return localStorage.getItem(STORAGE_KEY) === lang;
+        } catch (e) {
+            return false;
+        }
+    }
 
     /**
      * Get browser language with fallback to userLanguage (IE)
@@ -43,7 +63,7 @@
      */
     function detectPreferredLanguage() {
         // Check localStorage first (user's explicit preference)
-        const storedPref = localStorage.getItem(STORAGE_KEY);
+        const storedPref = readPreference();
         if (storedPref && SUPPORTED_LANGUAGES.includes(storedPref)) {
             return storedPref;
         }
@@ -96,8 +116,10 @@
         const preferredLang = detectPreferredLanguage();
         const isEnglish = isEnglishPath(currentPath);
 
-        // Store detected preference
-        localStorage.setItem(STORAGE_KEY, preferredLang);
+        // Store detected preference. If it cannot be stored, do not redirect:
+        // every later page would look like a first visit and keep overriding
+        // the visitor's own choice of language.
+        if (!storePreference(preferredLang)) return false;
 
         // Redirect if needed
         if (preferredLang === 'en' && !isEnglish) {
@@ -161,7 +183,7 @@
             }
             
             // Store preference
-            localStorage.setItem(STORAGE_KEY, selectedLang);
+            storePreference(selectedLang);
             
             // Navigate to new language version
             window.location.href = newPath;
@@ -173,7 +195,7 @@
      */
     function init() {
         // Only redirect if this is the first visit (no stored preference)
-        const hasStoredPreference = localStorage.getItem(STORAGE_KEY) !== null;
+        const hasStoredPreference = readPreference() !== null;
         
         if (!hasStoredPreference) {
             const redirected = redirectToPreferredLanguage();

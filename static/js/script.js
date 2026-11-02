@@ -1,7 +1,8 @@
 // Three preferences, cycled in this order. 'auto' is the default: no stored
 // preference means the OS decides, which is also what a first-time visitor gets.
 const THEME_MODES = ['auto', 'light', 'dark'];
-const THEME_STORAGE_KEY = 'theme';
+// Prefixed: the origin's localStorage is shared with every maxgfr.github.io/<app>/.
+const THEME_STORAGE_KEY = 'maxgfr:theme';
 
 class ThemeManager {
     constructor() {
@@ -48,7 +49,10 @@ class ThemeManager {
     }
 
     readMode() {
-        const saved = localStorage.getItem(THEME_STORAGE_KEY);
+        let saved = null;
+        try {
+            saved = localStorage.getItem(THEME_STORAGE_KEY);
+        } catch (e) {}
         return THEME_MODES.includes(saved) ? saved : 'auto';
     }
 
@@ -61,7 +65,11 @@ class ThemeManager {
         document.body.classList.add('theme-transition');
 
         this.mode = mode;
-        localStorage.setItem(THEME_STORAGE_KEY, mode);
+        try {
+            localStorage.setItem(THEME_STORAGE_KEY, mode);
+        } catch (e) {
+            // Full or blocked storage: the theme still applies, until reload.
+        }
         this.applyTheme();
         this.render();
         this.playSound();
