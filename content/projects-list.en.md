@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 112 public repos · ⭐ 345 stars**
+**📦 113 public repos · ⭐ 345 stars**
 
 ---
 
@@ -59,6 +59,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — GitHub maintenance scripts: bulk unstar, org clone, fork cleanup and more.
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Makes scanned PDFs and photos searchable and copyable with local OCR.
 - **[manga-anim](https://github.com/maxgfr/manga-anim)** — Turns manga pages into narrated videos, locally on Apple Silicon (Rust).
+- **[otpx](https://github.com/maxgfr/otpx)** — Your 2FA codes in the terminal and the browser, encrypted and synced (Rust). · [demo](https://maxgfr.github.io/otpx/)
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Torrent ratio tool that talks to BitTorrent trackers.
 - **[unsleep](https://github.com/maxgfr/unsleep)** — Tiny executable that keeps the machine awake. · [npm](https://www.npmjs.com/package/unsleep)
 

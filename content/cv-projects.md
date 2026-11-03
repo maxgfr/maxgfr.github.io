@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 112 dépôts publics, totalisant 345 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 113 dépôts publics, totalisant 345 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -48,6 +48,7 @@ Mes 112 dépôts publics, totalisant 345 étoiles — [github.com/maxgfr](https:
 - **[subtool](https://github.com/maxgfr/subtool)** — CLI tout-en-un pour les sous-titres : télécharger, traduire, convertir…
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Rend les PDF scannés et photos cherchables et copiables, avec un OCR local.
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — Scripts de maintenance GitHub : unstar en masse, clone d'org, nettoyage des…
+- **[otpx](https://github.com/maxgfr/otpx)** — Tes codes 2FA dans le terminal et le navigateur, chiffrés et synchronisés…
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Outil de ratio torrent qui dialogue avec les trackers BitTorrent.
 - **[rshc](https://github.com/maxgfr/rshc)** — Réécriture en Rust de SHC : compile des scripts shell en binaires chiffrés.
 - **[snatch](https://github.com/maxgfr/snatch)** — Téléchargeur de vidéos : yt-dlp d'abord, extraction navigateur pour les sites…

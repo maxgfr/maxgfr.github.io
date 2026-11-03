@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 112 public repositories, totalling 345 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 113 public repositories, totalling 345 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -48,6 +48,7 @@ My 112 public repositories, totalling 345 stars — [github.com/maxgfr](https://
 - **[subtool](https://github.com/maxgfr/subtool)** — All-in-one subtitle CLI: download, translate, convert, sync and more.
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Makes scanned PDFs and photos searchable and copyable with local OCR.
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — GitHub maintenance scripts: bulk unstar, org clone, fork cleanup and more.
+- **[otpx](https://github.com/maxgfr/otpx)** — Your 2FA codes in the terminal and the browser, encrypted and synced (Rust).
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Torrent ratio tool that talks to BitTorrent trackers.
 - **[rshc](https://github.com/maxgfr/rshc)** — Rust rewrite of SHC: compiles shell scripts into encrypted binaries.
 - **[snatch](https://github.com/maxgfr/snatch)** — Video downloader: yt-dlp first, browser extraction for stubborn sites.
