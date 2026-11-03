@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 113 dépôts publics · ⭐ 345 étoiles**
+**📦 114 dépôts publics · ⭐ 344 étoiles**
 
 ---
 
@@ -40,6 +40,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[termrevive](https://github.com/maxgfr/termrevive)** — Restaure tes sessions de terminal et agents de code après un redémarrage, sur macOS (Rust).
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule Claude Code entre fournisseurs (Anthropic, OpenRouter, DeepSeek, Kimi…).
 - **[codexify](https://github.com/maxgfr/codexify)** — Boîte à outils pour Codex : profils de modèles, notifications, sauvegardes (Rust).
+- **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi) dans GitHub Actions, avec le modèle et les skills de ton choix.
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits, conflits et rebase. 100% Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Récap mensuel des commits avec résumés par IA.
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Récupère les derniers modèles LLM depuis OpenRouter et models.dev. · [npm](https://www.npmjs.com/package/llm-models)

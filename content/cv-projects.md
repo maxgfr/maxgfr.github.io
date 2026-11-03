@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 113 dépôts publics, totalisant 345 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 114 dépôts publics, totalisant 344 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -31,6 +31,7 @@ Mes 113 dépôts publics, totalisant 345 étoiles — [github.com/maxgfr](https:
 - **[codexify](https://github.com/maxgfr/codexify)** — Boîte à outils pour Codex : profils de modèles, notifications, sauvegardes…
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits, conflits et rebase. 100% Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Récap mensuel des commits avec résumés par IA.
+- **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi) dans GitHub Actions, avec le…
 - **[nuee](https://github.com/maxgfr/nuee)** — Transforme les appareils d'un groupe de confiance en cloud privé et éphémère…
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Skill avec CLI Rust qui filtre les données en local avant de les envoyer au…
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient sur ta machine et à quelle vitesse…
@@ -65,7 +66,6 @@ Mes 113 dépôts publics, totalisant 345 étoiles — [github.com/maxgfr](https:
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin via le Chrome DevTools Protocol, sans Puppeteer.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité locative.
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour où les tâches non finies attendent ta décision. Privée, hors…
-- **[troupe](https://github.com/maxgfr/troupe)** — Studio auto-hébergé de courtes vidéos IA.
 - **[agora](https://github.com/maxgfr/agora)** — Sondages anonymes et chiffrés : une personne, une voix. Sans serveur.
 - **[amphi](https://github.com/maxgfr/amphi)** — Transforme tes cours en résumés, quiz et flashcards avec l'IA.
 - **[aparte](https://github.com/maxgfr/aparte)** — Chat IA privé et chiffré dans le navigateur, avec tes clés ou des modèles…
@@ -98,6 +98,7 @@ Mes 113 dépôts publics, totalisant 345 étoiles — [github.com/maxgfr](https:
 - **[tick](https://github.com/maxgfr/tick)** — Minuteurs, chrono, intervalles, métronome et alarmes dans le navigateur.
 - **[tok](https://github.com/maxgfr/tok)** — Compte les échanges et le score avec le micro et la caméra du téléphone…
 - **[toolbelt](https://github.com/maxgfr/toolbelt)** — Plus de 100 petits outils dans le navigateur, pour les devs et le quotidien.
+- **[troupe](https://github.com/maxgfr/troupe)** — Studio auto-hébergé de courtes vidéos IA.
 - **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks des textes et images, dans le navigateur.
 - **[veil](https://github.com/maxgfr/veil)** — Salles privées P2P pour chat, fichiers et appels, chiffrées de bout en bout.
 - **[verbatim](https://github.com/maxgfr/verbatim)** — Transcris et monte audio et vidéo dans le navigateur, sans rien envoyer.

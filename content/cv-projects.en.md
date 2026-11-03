@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 113 public repositories, totalling 345 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 114 public repositories, totalling 344 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -31,6 +31,7 @@ My 113 public repositories, totalling 345 stars — [github.com/maxgfr](https://
 - **[codexify](https://github.com/maxgfr/codexify)** — Companion toolbox for Codex: model profiles, notifications, backups (Rust).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI git automation: commits, conflict resolution and rebase. Pure Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Monthly commit recap with AI summaries.
+- **[harness-action](https://github.com/maxgfr/harness-action)** — Runs a coding agent (OpenCode, Codex, Pi) in GitHub Actions, with any model…
 - **[nuee](https://github.com/maxgfr/nuee)** — Turns a group's laptops and phones into a private, short-lived cloud from one…
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Rust CLI skill that filters evidence locally before it reaches the model…
 - **[sift](https://github.com/maxgfr/sift)** — Tells you which LLM quantization fits your machine and how fast it runs…
@@ -65,7 +66,6 @@ My 113 public repositories, totalling 345 stars — [github.com/maxgfr](https://
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Leboncoin scraper using the Chrome DevTools Protocol, no Puppeteer.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Rental property ROI calculator.
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private…
-- **[troupe](https://github.com/maxgfr/troupe)** — Self-hosted studio for short AI videos.
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
 - **[amphi](https://github.com/maxgfr/amphi)** — Turn your lectures into summaries, quizzes and flashcards with AI.
 - **[aparte](https://github.com/maxgfr/aparte)** — Private, encrypted AI chat in the browser, with your keys or local models.
@@ -98,6 +98,7 @@ My 113 public repositories, totalling 345 stars — [github.com/maxgfr](https://
 - **[tick](https://github.com/maxgfr/tick)** — Timers, stopwatch, intervals, metronome and alarms in the browser.
 - **[tok](https://github.com/maxgfr/tok)** — Counts rallies and keeps score from your phone's mic and camera (ping-pong…
 - **[toolbelt](https://github.com/maxgfr/toolbelt)** — 100+ small tools in the browser, for devs and everyday life.
+- **[troupe](https://github.com/maxgfr/troupe)** — Self-hosted studio for short AI videos.
 - **[unmark](https://github.com/maxgfr/unmark)** — Removes watermarks from text and images, in the browser.
 - **[veil](https://github.com/maxgfr/veil)** — Private P2P rooms for chat, files and calls, end-to-end encrypted.
 - **[verbatim](https://github.com/maxgfr/verbatim)** — Transcribe and edit audio and video in the browser, nothing uploaded.
