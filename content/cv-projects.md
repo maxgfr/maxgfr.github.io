@@ -135,7 +135,7 @@ Mes 114 dépôts publics, totalisant 344 étoiles — [github.com/maxgfr](https:
 - **[github-change-json](https://github.com/maxgfr/github-change-json)** — GitHub Action pour modifier une valeur dans un fichier JSON.
 - **[github-commit-push-file](https://github.com/maxgfr/github-commit-push-file)** — GitHub Action pour committer et pousser un fichier.
 - **[github-multi-deployments](https://github.com/maxgfr/github-multi-deployments)** — GitHub Action pour gérer les déploiements sur plusieurs environnements.
-- **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi) dans GitHub Actions, avec le…
+- **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi, OpenClaw) dans GitHub Actions…
 
 ### 🚀 Starters & templates
 

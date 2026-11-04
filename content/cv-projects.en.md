@@ -135,7 +135,7 @@ My 114 public repositories, totalling 344 stars — [github.com/maxgfr](https://
 - **[github-change-json](https://github.com/maxgfr/github-change-json)** — GitHub Action to change a value in a JSON file.
 - **[github-commit-push-file](https://github.com/maxgfr/github-commit-push-file)** — GitHub Action to commit and push a file.
 - **[github-multi-deployments](https://github.com/maxgfr/github-multi-deployments)** — GitHub Action to manage deployments across environments.
-- **[harness-action](https://github.com/maxgfr/harness-action)** — Runs a coding agent (OpenCode, Codex, Pi) in GitHub Actions, with any model…
+- **[harness-action](https://github.com/maxgfr/harness-action)** — Runs a coding agent (OpenCode, Codex, Pi, OpenClaw) in GitHub Actions, with…
 
 ### 🚀 Starters & templates
 

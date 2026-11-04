@@ -5691,8 +5691,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Lance un agent de code (OpenCode, Codex, Pi) dans GitHub Actions, avec le modèle et les skills de ton choix.",
-        "en": "Runs a coding agent (OpenCode, Codex, Pi) in GitHub Actions, with any model and any skill."
+        "fr": "Lance un agent de code (OpenCode, Codex, Pi, OpenClaw) dans GitHub Actions, avec le modèle et les skills de ton choix.",
+        "en": "Runs a coding agent (OpenCode, Codex, Pi, OpenClaw) in GitHub Actions, with any model and any skill."
       },
       "cat": 7,
       "dex": 106,
