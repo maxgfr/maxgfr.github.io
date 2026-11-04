@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 114 dépôts publics · ⭐ 344 étoiles**
+**📦 114 dépôts publics · ⭐ 345 étoiles**
 
 ---
 
@@ -151,7 +151,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## ⚙️ GitHub Actions
 
-- **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi, OpenClaw) dans GitHub Actions, avec le modèle et les skills de ton choix.
+- **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi, OpenClaw) dans GitHub Actions, avec le modèle et les skills de ton choix. · [marketplace](https://github.com/marketplace/actions/harness-action)
 - **[github-change-json](https://github.com/maxgfr/github-change-json)** — GitHub Action pour modifier une valeur dans un fichier JSON. · [marketplace](https://github.com/marketplace/actions/github-change-json)
 - **[github-commit-push-file](https://github.com/maxgfr/github-commit-push-file)** — GitHub Action pour committer et pousser un fichier. · [marketplace](https://github.com/marketplace/actions/github-commit-push-file)
 - **[github-multi-deployments](https://github.com/maxgfr/github-multi-deployments)** — GitHub Action pour gérer les déploiements sur plusieurs environnements. · [marketplace](https://github.com/marketplace/actions/github-multi-deployments)
