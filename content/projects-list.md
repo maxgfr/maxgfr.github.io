@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 114 dépôts publics · ⭐ 345 étoiles**
+**📦 115 dépôts publics · ⭐ 347 étoiles**
 
 ---
 
@@ -34,7 +34,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[webindex](https://github.com/maxgfr/webindex)** — Transforme une URL, un document ou une vidéo en texte propre et citable, en CLI et serveur MCP.
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code entre Claude Code, Cursor et d'autres (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Pare-feu local qui masque tes secrets aux agents de code avant qu'ils n'atteignent le LLM.
-- **[scopelet](https://github.com/maxgfr/scopelet)** — Skill avec CLI Rust qui filtre les données en local avant de les envoyer au modèle (Codex, Claude Code).
+- **[scopelet](https://github.com/maxgfr/scopelet)** — Skill avec CLI Rust qui filtre les données en local avant de les envoyer au modèle (Codex, Claude Code). · [démo](https://maxgfr.github.io/scopelet/)
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient sur ta machine et à quelle vitesse, avant téléchargement (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Garde la machine éveillée pendant une session Claude Code ou Codex.
 - **[termrevive](https://github.com/maxgfr/termrevive)** — Restaure tes sessions de terminal et agents de code après un redémarrage, sur macOS (Rust).
@@ -82,6 +82,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[hush](https://github.com/maxgfr/hush)** — Messagerie et partage de fichiers chiffrés post-quantiques, sans compte. · [démo](https://maxgfr.github.io/hush/)
 - **[agora](https://github.com/maxgfr/agora)** — Sondages anonymes et chiffrés : une personne, une voix. Sans serveur. · [démo](https://maxgfr.github.io/agora/)
 - **[obscura](https://github.com/maxgfr/obscura)** — Studio d'enregistrement privé dans le navigateur, à la OBS. · [démo](https://maxgfr.github.io/obscura/)
+- **[nubes](https://github.com/maxgfr/nubes)** — Ton cloud perso dans un dépôt GitHub : glisse tes fichiers, synchronise tes dossiers. · [démo](https://maxgfr.github.io/nubes/)
 - **[stepcast](https://github.com/maxgfr/stepcast)** — Enregistre ton écran et l'IA en fait une démo interactive. · [démo](https://maxgfr.github.io/stepcast/)
 - **[takeone](https://github.com/maxgfr/takeone)** — Enregistre et monte tes vidéos en éditant le texte, à la Loom, dans le navigateur. · [démo](https://maxgfr.github.io/takeone/)
 - **[toolbelt](https://github.com/maxgfr/toolbelt)** — Plus de 100 petits outils dans le navigateur, pour les devs et le quotidien. · [démo](https://maxgfr.github.io/toolbelt/)

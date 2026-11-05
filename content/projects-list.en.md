@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 114 public repos · ⭐ 345 stars**
+**📦 115 public repos · ⭐ 347 stars**
 
 ---
 
@@ -34,7 +34,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[webindex](https://github.com/maxgfr/webindex)** — Turns any URL, document or video into clean, citable text, as a CLI and MCP server.
 - **[conforme](https://github.com/maxgfr/conforme)** — Syncs your AI coding config across Claude Code, Cursor and more (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Local firewall that hides your secrets from coding agents before they reach the LLM.
-- **[scopelet](https://github.com/maxgfr/scopelet)** — Rust CLI skill that filters evidence locally before it reaches the model (Codex, Claude Code).
+- **[scopelet](https://github.com/maxgfr/scopelet)** — Rust CLI skill that filters evidence locally before it reaches the model (Codex, Claude Code). · [demo](https://maxgfr.github.io/scopelet/)
 - **[sift](https://github.com/maxgfr/sift)** — Tells you which LLM quantization fits your machine and how fast it runs, before downloading (Rust).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Keeps your machine awake while Claude Code or Codex runs.
 - **[termrevive](https://github.com/maxgfr/termrevive)** — Restores your terminal sessions and coding agents after a reboot, on macOS (Rust).
@@ -82,6 +82,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[hush](https://github.com/maxgfr/hush)** — Post-quantum encrypted messaging and file sharing, no account. · [demo](https://maxgfr.github.io/hush/)
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server. · [demo](https://maxgfr.github.io/agora/)
 - **[obscura](https://github.com/maxgfr/obscura)** — Private recording studio in the browser, OBS-style. · [demo](https://maxgfr.github.io/obscura/)
+- **[nubes](https://github.com/maxgfr/nubes)** — Your own cloud in a GitHub repo: drop files anywhere, sync folders. · [demo](https://maxgfr.github.io/nubes/)
 - **[stepcast](https://github.com/maxgfr/stepcast)** — Record your screen and AI turns it into an interactive demo. · [demo](https://maxgfr.github.io/stepcast/)
 - **[takeone](https://github.com/maxgfr/takeone)** — Record and edit videos by editing the text, Loom-style, in the browser. · [demo](https://maxgfr.github.io/takeone/)
 - **[toolbelt](https://github.com/maxgfr/toolbelt)** — 100+ small tools in the browser, for devs and everyday life. · [demo](https://maxgfr.github.io/toolbelt/)

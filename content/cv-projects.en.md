@@ -2,20 +2,20 @@
 title = "Open-source projects"
 +++
 
-My 114 public repositories, totalling 345 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 115 public repositories, totalling 347 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyzes a repo and writes the PRDs to rebuild it from scratch.
 - **[construct](https://github.com/maxgfr/construct)** — Turns a product idea into buildable specs (SRD/PRD).
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Web research without API keys, delivered as a report with checked citations.
+- **[ultrasec](https://github.com/maxgfr/ultrasec)** — Security audit agent that traces vulnerabilities across files and verifies…
 - **[skills](https://github.com/maxgfr/skills)** — My agent skills, which change how an agent works. Install with `npx skills…
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Sourced Q&A and reference docs for any open source project, from its code…
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Evaluates a skill or codebase and returns sourced findings plus a fix backlog.
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds, translates and checks every user-facing string in a repo, with cheap…
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a huge repo into an encyclopedia an AI can navigate.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a location into a sourced prospect list. No API keys.
-- **[ultrasec](https://github.com/maxgfr/ultrasec)** — Security audit agent that traces vulnerabilities across files and verifies…
 - **[ultrastock](https://github.com/maxgfr/ultrastock)** — Investing copilot for agents: stocks, ETFs, crypto, with sourced figures.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Lets an agent watch videos: searchable transcripts and frames, with citations.
 
@@ -26,12 +26,12 @@ My 114 public repositories, totalling 345 stars — [github.com/maxgfr](https://
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Zero-dependency repo indexer: symbols, imports and link graph, as a CLI and…
 - **[feelc](https://github.com/maxgfr/feelc)** — Business rules engine in Go: an LLM writes the rules, the engine proves and…
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Fetches the latest LLM models from OpenRouter and models.dev.
+- **[nuee](https://github.com/maxgfr/nuee)** — Turns a group's laptops and phones into a private, short-lived cloud from one…
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Switch Claude Code between providers (Anthropic, OpenRouter, DeepSeek, Kimi…).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Keeps your machine awake while Claude Code or Codex runs.
 - **[codexify](https://github.com/maxgfr/codexify)** — Companion toolbox for Codex: model profiles, notifications, backups (Rust).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI git automation: commits, conflict resolution and rebase. Pure Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Monthly commit recap with AI summaries.
-- **[nuee](https://github.com/maxgfr/nuee)** — Turns a group's laptops and phones into a private, short-lived cloud from one…
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Rust CLI skill that filters evidence locally before it reaches the model…
 - **[sift](https://github.com/maxgfr/sift)** — Tells you which LLM quantization fits your machine and how fast it runs…
 - **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny decision models trained from scratch in Rust, that play games live in…
@@ -82,6 +82,7 @@ My 114 public repositories, totalling 345 stars — [github.com/maxgfr](https://
 - **[murmur](https://github.com/maxgfr/murmur)** — AI chat bubble that answers from your site's own pages. One script tag.
 - **[nook](https://github.com/maxgfr/nook)** — Encrypted, local-first Notion in the browser, with zero network requests.
 - **[notabot](https://github.com/maxgfr/notabot)** — Open source, transparent bot detection with no backend.
+- **[nubes](https://github.com/maxgfr/nubes)** — Your own cloud in a GitHub repo: drop files anywhere, sync folders.
 - **[obscura](https://github.com/maxgfr/obscura)** — Private recording studio in the browser, OBS-style.
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Desktop language learning app with an AI tutor.
 - **[pdfvault](https://github.com/maxgfr/pdfvault)** — PDF toolbox that never uploads your files: compress, merge, sign, OCR…
