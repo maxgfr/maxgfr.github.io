@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 115 dépôts publics, totalisant 347 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 116 dépôts publics, totalisant 348 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -43,15 +43,15 @@ Mes 115 dépôts publics, totalisant 347 étoiles — [github.com/maxgfr](https:
 - **[brutifi](https://github.com/maxgfr/brutifi)** — Outil de test de sécurité WiFi en Rust, pour l'apprentissage et les audits…
 - **[package-checker.sh](https://github.com/maxgfr/package-checker.sh)** — Scanne les projets JS à la recherche de paquets npm vulnérables.
 - **[andro](https://github.com/maxgfr/andro)** — Lance des applis Android depuis le terminal macOS sur un émulateur jetable…
-- **[web-watcher](https://github.com/maxgfr/web-watcher)** — Script Bash qui surveille API et sites web et prévient en cas de changement.
 - **[manga-anim](https://github.com/maxgfr/manga-anim)** — Transforme des planches de manga en vidéos narrées, en local sur Apple…
+- **[web-watcher](https://github.com/maxgfr/web-watcher)** — Script Bash qui surveille API et sites web et prévient en cas de changement.
+- **[snatch](https://github.com/maxgfr/snatch)** — Téléchargeur de vidéos : yt-dlp d'abord, extraction navigateur pour les sites…
 - **[subtool](https://github.com/maxgfr/subtool)** — CLI tout-en-un pour les sous-titres : télécharger, traduire, convertir…
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Rend les PDF scannés et photos cherchables et copiables, avec un OCR local.
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — Scripts de maintenance GitHub : unstar en masse, clone d'org, nettoyage des…
 - **[otpx](https://github.com/maxgfr/otpx)** — Tes codes 2FA dans le terminal et le navigateur, chiffrés et synchronisés…
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Outil de ratio torrent qui dialogue avec les trackers BitTorrent.
 - **[rshc](https://github.com/maxgfr/rshc)** — Réécriture en Rust de SHC : compile des scripts shell en binaires chiffrés.
-- **[snatch](https://github.com/maxgfr/snatch)** — Téléchargeur de vidéos : yt-dlp d'abord, extraction navigateur pour les sites…
 - **[unsleep](https://github.com/maxgfr/unsleep)** — Petit exécutable qui empêche la mise en veille.
 
 ### 🌐 Applications web & PWA
@@ -148,4 +148,8 @@ Mes 115 dépôts publics, totalisant 347 étoiles — [github.com/maxgfr](https:
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Les dépôts que j'ai aimés sur GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
+
+### 🆕 Non classés
+
+- **[devkit](https://github.com/maxgfr/devkit)** — Chrome extension for web developers: cache & site data, page inspection…
 

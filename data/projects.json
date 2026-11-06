@@ -1,13 +1,13 @@
 {
   "generated": "2026-11",
   "totals": {
-    "repos": 115,
-    "stars": 347
+    "repos": 116,
+    "stars": 348
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 65
+      "count": 66
     },
     {
       "name": "JavaScript",
@@ -88,6 +88,11 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
+    },
+    {
+      "fr": "🆕 Non classés",
+      "en": "🆕 Uncategorized",
+      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -1788,7 +1793,7 @@
       "cat": 2,
       "dex": 33,
       "dexLabel": "033",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "JavaScript",
       "topics": [
@@ -1807,18 +1812,18 @@
       "poke": {
         "type1": "ghost",
         "type2": "electric",
-        "hp": 80,
-        "level": 21,
+        "hp": 90,
+        "level": 23,
         "rarity": "common",
         "weakness": "dark",
         "moves": [
           {
             "name": "hls",
-            "dmg": 60
+            "dmg": 70
           },
           {
             "name": "m3u8",
-            "dmg": 40
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -1958,7 +1963,7 @@
         "github-helpers"
       ],
       "created": "2026-04",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "ghost",
@@ -2048,7 +2053,7 @@
       "cat": 2,
       "dex": 38,
       "dexLabel": "038",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "Rust",
       "topics": [
@@ -2067,18 +2072,18 @@
       "poke": {
         "type1": "grass",
         "type2": "fire",
-        "hp": 140,
-        "level": 28,
-        "rarity": "common",
+        "hp": 150,
+        "level": 30,
+        "rarity": "uncommon",
         "weakness": "fire",
         "moves": [
           {
             "name": "comics",
-            "dmg": 70
+            "dmg": 80
           },
           {
             "name": "image to video",
-            "dmg": 40
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -3967,7 +3972,7 @@
       "cat": 3,
       "dex": 74,
       "dexLabel": "074",
-      "stars": 87,
+      "stars": 86,
       "forks": 10,
       "language": "TypeScript",
       "topics": [
@@ -5343,7 +5348,7 @@
         "typescript"
       ],
       "created": "2022-04",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "flying",
@@ -6219,6 +6224,48 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
+      "name": "devkit",
+      "url": "https://github.com/maxgfr/devkit",
+      "home": "https://maxgfr.github.io/devkit/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Chrome extension for web developers: cache & site data, page inspection (JSON-LD, headers, Web Vitals…), request rules, utilities and AI analysis with your own model",
+        "en": "Chrome extension for web developers: cache & site data, page inspection (JSON-LD, headers, Web Vitals…), request rules, utilities and AI analysis with your own model"
+      },
+      "cat": 10,
+      "dex": 116,
+      "dexLabel": "116",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created": "2026-11",
+      "pushed": "2026-11",
+      "license": null,
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 70,
+        "level": 14,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "TypeScript",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM3 11h2v1h-2zM7 11h2v1h-2z"
         ]
       }
     }

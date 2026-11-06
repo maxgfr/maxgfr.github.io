@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 115 public repositories, totalling 347 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 116 public repositories, totalling 348 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -43,15 +43,15 @@ My 115 public repositories, totalling 347 stars — [github.com/maxgfr](https://
 - **[brutifi](https://github.com/maxgfr/brutifi)** — WiFi security testing tool in Rust, for learning and authorized audits.
 - **[package-checker.sh](https://github.com/maxgfr/package-checker.sh)** — Scans JS projects for vulnerable npm packages.
 - **[andro](https://github.com/maxgfr/andro)** — Run Android apps from the macOS terminal on a disposable emulator (Rust).
-- **[web-watcher](https://github.com/maxgfr/web-watcher)** — Bash script that watches APIs and websites and notifies you on changes.
 - **[manga-anim](https://github.com/maxgfr/manga-anim)** — Turns manga pages into narrated videos, locally on Apple Silicon (Rust).
+- **[web-watcher](https://github.com/maxgfr/web-watcher)** — Bash script that watches APIs and websites and notifies you on changes.
+- **[snatch](https://github.com/maxgfr/snatch)** — Video downloader: yt-dlp first, browser extraction for stubborn sites.
 - **[subtool](https://github.com/maxgfr/subtool)** — All-in-one subtitle CLI: download, translate, convert, sync and more.
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Makes scanned PDFs and photos searchable and copyable with local OCR.
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — GitHub maintenance scripts: bulk unstar, org clone, fork cleanup and more.
 - **[otpx](https://github.com/maxgfr/otpx)** — Your 2FA codes in the terminal and the browser, encrypted and synced (Rust).
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Torrent ratio tool that talks to BitTorrent trackers.
 - **[rshc](https://github.com/maxgfr/rshc)** — Rust rewrite of SHC: compiles shell scripts into encrypted binaries.
-- **[snatch](https://github.com/maxgfr/snatch)** — Video downloader: yt-dlp first, browser extraction for stubborn sites.
 - **[unsleep](https://github.com/maxgfr/unsleep)** — Tiny executable that keeps the machine awake.
 
 ### 🌐 Web apps & PWAs
@@ -148,4 +148,8 @@ My 115 public repositories, totalling 347 stars — [github.com/maxgfr](https://
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Repositories I've starred on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
+
+### 🆕 Uncategorized
+
+- **[devkit](https://github.com/maxgfr/devkit)** — Chrome extension for web developers: cache & site data, page inspection…
 

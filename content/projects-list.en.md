@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 115 public repos · ⭐ 347 stars**
+**📦 116 public repos · ⭐ 348 stars**
 
 ---
 
@@ -171,6 +171,12 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Repositories I've starred on GitHub.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Uncategorized
+
+- **[devkit](https://github.com/maxgfr/devkit)** — Chrome extension for web developers: cache & site data, page inspection (JSON-LD, headers, Web Vitals…), request rules, utilities and AI analysis with your own model · [demo](https://maxgfr.github.io/devkit/)
 
 ---
 
