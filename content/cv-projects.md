@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 116 dépôts publics, totalisant 348 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 116 dépôts publics, totalisant 350 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -27,13 +27,13 @@ Mes 116 dépôts publics, totalisant 348 étoiles — [github.com/maxgfr](https:
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier en Go : un LLM écrit les règles, le moteur les prouve…
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Récupère les derniers modèles LLM depuis OpenRouter et models.dev.
 - **[nuee](https://github.com/maxgfr/nuee)** — Transforme les appareils d'un groupe de confiance en cloud privé et éphémère…
+- **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient sur ta machine et à quelle vitesse…
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule Claude Code entre fournisseurs (Anthropic, OpenRouter, DeepSeek…
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Garde la machine éveillée pendant une session Claude Code ou Codex.
 - **[codexify](https://github.com/maxgfr/codexify)** — Boîte à outils pour Codex : profils de modèles, notifications, sauvegardes…
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits, conflits et rebase. 100% Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Récap mensuel des commits avec résumés par IA.
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Skill avec CLI Rust qui filtre les données en local avant de les envoyer au…
-- **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient sur ta machine et à quelle vitesse…
 - **[skycmd](https://github.com/maxgfr/skycmd)** — Modèles de décision minuscules entraînés de zéro en Rust, qui jouent en…
 - **[termrevive](https://github.com/maxgfr/termrevive)** — Restaure tes sessions de terminal et agents de code après un redémarrage, sur…
 - **[webindex](https://github.com/maxgfr/webindex)** — Transforme une URL, un document ou une vidéo en texte propre et citable, en…
@@ -103,6 +103,10 @@ Mes 116 dépôts publics, totalisant 348 étoiles — [github.com/maxgfr](https:
 - **[veil](https://github.com/maxgfr/veil)** — Salles privées P2P pour chat, fichiers et appels, chiffrées de bout en bout.
 - **[verbatim](https://github.com/maxgfr/verbatim)** — Transcris et monte audio et vidéo dans le navigateur, sans rien envoyer.
 
+### 🔌 Extensions Chrome
+
+- **[devkit](https://github.com/maxgfr/devkit)** — Extension Chrome pour devs web : cache et données de site, inspection de page…
+
 ### 🎮 Jeux
 
 - **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde procédural, dans le navigateur.
@@ -148,8 +152,4 @@ Mes 116 dépôts publics, totalisant 348 étoiles — [github.com/maxgfr](https:
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Les dépôts que j'ai aimés sur GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
-
-### 🆕 Non classés
-
-- **[devkit](https://github.com/maxgfr/devkit)** — Chrome extension for web developers: cache & site data, page inspection…
 

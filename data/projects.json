@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 116,
-    "stars": 348
+    "stars": 350
   },
   "languages": [
     {
@@ -60,6 +60,11 @@
       "slug": "web-apps-pwas"
     },
     {
+      "fr": "🔌 Extensions Chrome",
+      "en": "🔌 Chrome extensions",
+      "slug": "chrome-extensions"
+    },
+    {
       "fr": "🎮 Jeux",
       "en": "🎮 Games",
       "slug": "games"
@@ -88,11 +93,6 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
-    },
-    {
-      "fr": "🆕 Non classés",
-      "en": "🆕 Uncategorized",
-      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -281,7 +281,7 @@
         "research"
       ],
       "created": "2026-06",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "psychic",
@@ -1111,7 +1111,7 @@
       "cat": 1,
       "dex": 20,
       "dexLabel": "020",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "Rust",
       "topics": [
@@ -1130,18 +1130,18 @@
       "poke": {
         "type1": "fighting",
         "type2": "fire",
-        "hp": 110,
-        "level": 24,
+        "hp": 120,
+        "level": 26,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
           {
             "name": "benchmark",
-            "dmg": 10
+            "dmg": 20
           },
           {
             "name": "gguf parser",
-            "dmg": 50
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -1637,7 +1637,7 @@
       "cat": 2,
       "dex": 30,
       "dexLabel": "030",
-      "stars": 51,
+      "stars": 52,
       "forks": 3,
       "language": "Rust",
       "topics": [
@@ -4719,6 +4719,48 @@
       }
     },
     {
+      "name": "devkit",
+      "url": "https://github.com/maxgfr/devkit",
+      "home": "https://maxgfr.github.io/devkit/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Extension Chrome pour devs web : cache et données de site, inspection de page (JSON-LD, en-têtes, Web Vitals…), règles de requêtes et analyse IA avec ton propre modèle.",
+        "en": "Chrome extension for web developers: cache & site data, page inspection (JSON-LD, headers, Web Vitals…), request rules and AI analysis with your own model."
+      },
+      "cat": 4,
+      "dex": 88,
+      "dexLabel": "088",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created": "2026-11",
+      "pushed": "2026-11",
+      "license": null,
+      "poke": {
+        "type1": "water",
+        "type2": null,
+        "hp": 60,
+        "level": 13,
+        "rarity": "common",
+        "weakness": "grass",
+        "moves": [
+          {
+            "name": "TypeScript",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
+          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
+          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM3 11h2v1h-2zM7 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "terravia",
       "url": "https://github.com/maxgfr/terravia",
       "home": "https://maxgfr.github.io/terravia",
@@ -4730,9 +4772,9 @@
         "fr": "RPG de capture de créatures dans un monde procédural, dans le navigateur.",
         "en": "Creature-collecting RPG in a procedural world, in the browser."
       },
-      "cat": 4,
-      "dex": 88,
-      "dexLabel": "088",
+      "cat": 5,
+      "dex": 89,
+      "dexLabel": "089",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -4785,9 +4827,9 @@
         "fr": "114 mini-jeux à deux, face à face sur un seul téléphone.",
         "en": "114 two-player mini-games, face to face on one phone."
       },
-      "cat": 4,
-      "dex": 89,
-      "dexLabel": "089",
+      "cat": 5,
+      "dex": 90,
+      "dexLabel": "090",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4840,9 +4882,9 @@
         "fr": "Screener d'actions auto-hébergé aux scores transparents, sans clé d'API.",
         "en": "Self-hosted stock screener with transparent scores, no API keys."
       },
-      "cat": 5,
-      "dex": 90,
-      "dexLabel": "090",
+      "cat": 6,
+      "dex": 91,
+      "dexLabel": "091",
       "stars": 10,
       "forks": 0,
       "language": "Python",
@@ -4895,9 +4937,9 @@
         "fr": "Récupère les bougies historiques depuis l'API Binance.",
         "en": "Fetch historical candles from the Binance API."
       },
-      "cat": 5,
-      "dex": 91,
-      "dexLabel": "091",
+      "cat": 6,
+      "dex": 92,
+      "dexLabel": "092",
       "stars": 47,
       "forks": 6,
       "language": "TypeScript",
@@ -4947,9 +4989,9 @@
         "fr": "Décris une stratégie crypto en langage naturel et backteste-la.",
         "en": "Describe a crypto strategy in plain English and backtest it."
       },
-      "cat": 5,
-      "dex": 92,
-      "dexLabel": "092",
+      "cat": 6,
+      "dex": 93,
+      "dexLabel": "093",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -5002,9 +5044,9 @@
         "fr": "Implémentation de l'indicateur SuperTrend.",
         "en": "SuperTrend indicator implementation."
       },
-      "cat": 5,
-      "dex": 93,
-      "dexLabel": "093",
+      "cat": 6,
+      "dex": 94,
+      "dexLabel": "094",
       "stars": 4,
       "forks": 4,
       "language": "TypeScript",
@@ -5057,9 +5099,9 @@
         "fr": "Bibliothèque TypeScript zéro-dépendance de régression et stats, moteur Rust/WASM.",
         "en": "Zero-dependency TypeScript regression and stats library, with a Rust/WASM engine."
       },
-      "cat": 6,
-      "dex": 94,
-      "dexLabel": "094",
+      "cat": 7,
+      "dex": 95,
+      "dexLabel": "095",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -5112,9 +5154,9 @@
         "fr": "Trouve les similarités entre tableaux.",
         "en": "Find similarities between arrays."
       },
-      "cat": 6,
-      "dex": 95,
-      "dexLabel": "095",
+      "cat": 7,
+      "dex": 96,
+      "dexLabel": "096",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -5167,9 +5209,9 @@
         "fr": "Algorithme de vote de Condorcet en TypeScript.",
         "en": "Condorcet voting algorithm in TypeScript."
       },
-      "cat": 6,
-      "dex": 96,
-      "dexLabel": "096",
+      "cat": 7,
+      "dex": 97,
+      "dexLabel": "097",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -5222,9 +5264,9 @@
         "fr": "Vérifie si des données suivent la loi de Benford.",
         "en": "Check whether a dataset follows Benford's law."
       },
-      "cat": 6,
-      "dex": 97,
-      "dexLabel": "097",
+      "cat": 7,
+      "dex": 98,
+      "dexLabel": "098",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5276,9 +5318,9 @@
         "fr": "Utilitaires pour les calculs gaussiens.",
         "en": "Helpers for Gaussian calculations."
       },
-      "cat": 6,
-      "dex": 98,
-      "dexLabel": "098",
+      "cat": 7,
+      "dex": 99,
+      "dexLabel": "099",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5331,9 +5373,9 @@
         "fr": "Contexte minimaliste pour Node, inspiré de React Context.",
         "en": "Minimal context for Node, inspired by React Context."
       },
-      "cat": 6,
-      "dex": 99,
-      "dexLabel": "099",
+      "cat": 7,
+      "dex": 100,
+      "dexLabel": "100",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -5386,9 +5428,9 @@
         "fr": "Hooks et composants React utiles.",
         "en": "Useful React hooks and components."
       },
-      "cat": 6,
-      "dex": 100,
-      "dexLabel": "100",
+      "cat": 7,
+      "dex": 101,
+      "dexLabel": "101",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5437,9 +5479,9 @@
         "fr": "Fonctions TypeScript essentielles, zéro-dépendance.",
         "en": "Essential zero-dependency TypeScript helpers."
       },
-      "cat": 6,
-      "dex": 101,
-      "dexLabel": "101",
+      "cat": 7,
+      "dex": 102,
+      "dexLabel": "102",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5490,9 +5532,9 @@
         "fr": "Corrige l'analyse des dates en React Native sur Android.",
         "en": "Fixes date parsing in React Native on Android."
       },
-      "cat": 6,
-      "dex": 102,
-      "dexLabel": "102",
+      "cat": 7,
+      "dex": 103,
+      "dexLabel": "103",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -5545,9 +5587,9 @@
         "fr": "Modale React Native légère.",
         "en": "Lightweight React Native modal."
       },
-      "cat": 6,
-      "dex": 103,
-      "dexLabel": "103",
+      "cat": 7,
+      "dex": 104,
+      "dexLabel": "104",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -5598,9 +5640,9 @@
         "fr": "Stocke de grandes données dans l'async-storage React Native.",
         "en": "Store large data in React Native async-storage."
       },
-      "cat": 6,
-      "dex": 104,
-      "dexLabel": "104",
+      "cat": 7,
+      "dex": 105,
+      "dexLabel": "105",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5653,9 +5695,9 @@
         "fr": "Vois qui t'a unfollow sur Instagram.",
         "en": "See who unfollowed you on Instagram."
       },
-      "cat": 6,
-      "dex": 105,
-      "dexLabel": "105",
+      "cat": 7,
+      "dex": 106,
+      "dexLabel": "106",
       "stars": 10,
       "forks": 1,
       "language": "TypeScript",
@@ -5708,9 +5750,9 @@
         "fr": "SDK Node non officiel pour api-money.com.",
         "en": "Unofficial Node SDK for api-money.com."
       },
-      "cat": 6,
-      "dex": 106,
-      "dexLabel": "106",
+      "cat": 7,
+      "dex": 107,
+      "dexLabel": "107",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -5760,9 +5802,9 @@
         "fr": "Lance un agent de code (OpenCode, Codex, Pi, OpenClaw) dans GitHub Actions, avec le modèle et les skills de ton choix.",
         "en": "Runs a coding agent (OpenCode, Codex, Pi, OpenClaw) in GitHub Actions, with any model and any skill."
       },
-      "cat": 7,
-      "dex": 107,
-      "dexLabel": "107",
+      "cat": 8,
+      "dex": 108,
+      "dexLabel": "108",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -5815,9 +5857,9 @@
         "fr": "GitHub Action pour modifier une valeur dans un fichier JSON.",
         "en": "GitHub Action to change a value in a JSON file."
       },
-      "cat": 7,
-      "dex": 108,
-      "dexLabel": "108",
+      "cat": 8,
+      "dex": 109,
+      "dexLabel": "109",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -5870,9 +5912,9 @@
         "fr": "GitHub Action pour committer et pousser un fichier.",
         "en": "GitHub Action to commit and push a file."
       },
-      "cat": 7,
-      "dex": 109,
-      "dexLabel": "109",
+      "cat": 8,
+      "dex": 110,
+      "dexLabel": "110",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -5924,9 +5966,9 @@
         "fr": "GitHub Action pour gérer les déploiements sur plusieurs environnements.",
         "en": "GitHub Action to manage deployments across environments."
       },
-      "cat": 7,
-      "dex": 110,
-      "dexLabel": "110",
+      "cat": 8,
+      "dex": 111,
+      "dexLabel": "111",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -5976,9 +6018,9 @@
         "fr": "Starter TypeScript + SWC minimaliste pour paquets CJS et ESM.",
         "en": "Minimal TypeScript + SWC starter for CJS and ESM packages."
       },
-      "cat": 8,
-      "dex": 111,
-      "dexLabel": "111",
+      "cat": 9,
+      "dex": 112,
+      "dexLabel": "112",
       "stars": 32,
       "forks": 4,
       "language": "TypeScript",
@@ -6031,9 +6073,9 @@
         "fr": "Starter TypeScript + SWC minimaliste pour bibliothèques de composants React.",
         "en": "Minimal TypeScript + SWC starter for React component libraries."
       },
-      "cat": 8,
-      "dex": 112,
-      "dexLabel": "112",
+      "cat": 9,
+      "dex": 113,
+      "dexLabel": "113",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -6083,9 +6125,9 @@
         "fr": "Les dépôts que j'ai aimés sur GitHub.",
         "en": "Repositories I've starred on GitHub."
       },
-      "cat": 9,
-      "dex": 113,
-      "dexLabel": "113",
+      "cat": 10,
+      "dex": 114,
+      "dexLabel": "114",
       "stars": 23,
       "forks": 3,
       "language": null,
@@ -6131,9 +6173,9 @@
         "fr": "Tap Homebrew pour mes outils CLI.",
         "en": "Homebrew tap for my CLI tools."
       },
-      "cat": 9,
-      "dex": 114,
-      "dexLabel": "114",
+      "cat": 10,
+      "dex": 115,
+      "dexLabel": "115",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -6184,9 +6226,9 @@
         "fr": "Code source du site d'un écrivain.",
         "en": "Source of a writer's website."
       },
-      "cat": 9,
-      "dex": 115,
-      "dexLabel": "115",
+      "cat": 10,
+      "dex": 116,
+      "dexLabel": "116",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",
@@ -6224,48 +6266,6 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
-        ]
-      }
-    },
-    {
-      "name": "devkit",
-      "url": "https://github.com/maxgfr/devkit",
-      "home": "https://maxgfr.github.io/devkit/",
-      "homeLabel": {
-        "fr": "démo",
-        "en": "demo"
-      },
-      "desc": {
-        "fr": "Chrome extension for web developers: cache & site data, page inspection (JSON-LD, headers, Web Vitals…), request rules, utilities and AI analysis with your own model",
-        "en": "Chrome extension for web developers: cache & site data, page inspection (JSON-LD, headers, Web Vitals…), request rules, utilities and AI analysis with your own model"
-      },
-      "cat": 10,
-      "dex": 116,
-      "dexLabel": "116",
-      "stars": 0,
-      "forks": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created": "2026-11",
-      "pushed": "2026-11",
-      "license": null,
-      "poke": {
-        "type1": "water",
-        "type2": null,
-        "hp": 70,
-        "level": 14,
-        "rarity": "common",
-        "weakness": "grass",
-        "moves": [
-          {
-            "name": "TypeScript",
-            "dmg": 60
-          }
-        ],
-        "sprite": [
-          "M3 0h2v1h-2zM7 0h2v1h-2zM3 1h2v1h-2zM7 1h2v1h-2zM2 2h3v1h-3zM7 2h3v1h-3zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1zM7 8h1v1h-1z",
-          "M2 4h1v1h-1zM4 4h4v1h-4zM9 4h1v1h-1zM2 5h8v1h-8zM3 6h1v1h-1zM8 6h1v1h-1zM3 7h1v1h-1zM8 7h1v1h-1zM3 8h1v1h-1zM8 8h1v1h-1zM4 9h4v1h-4z",
-          "M5 7h2v1h-2zM5 8h2v1h-2zM3 9h1v1h-1zM8 9h1v1h-1zM3 10h6v1h-6zM3 11h2v1h-2zM7 11h2v1h-2z"
         ]
       }
     }

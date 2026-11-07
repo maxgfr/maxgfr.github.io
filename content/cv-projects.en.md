@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 116 public repositories, totalling 348 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 116 public repositories, totalling 350 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -27,13 +27,13 @@ My 116 public repositories, totalling 348 stars — [github.com/maxgfr](https://
 - **[feelc](https://github.com/maxgfr/feelc)** — Business rules engine in Go: an LLM writes the rules, the engine proves and…
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Fetches the latest LLM models from OpenRouter and models.dev.
 - **[nuee](https://github.com/maxgfr/nuee)** — Turns a group's laptops and phones into a private, short-lived cloud from one…
+- **[sift](https://github.com/maxgfr/sift)** — Tells you which LLM quantization fits your machine and how fast it runs…
 - **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Switch Claude Code between providers (Anthropic, OpenRouter, DeepSeek, Kimi…).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Keeps your machine awake while Claude Code or Codex runs.
 - **[codexify](https://github.com/maxgfr/codexify)** — Companion toolbox for Codex: model profiles, notifications, backups (Rust).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI git automation: commits, conflict resolution and rebase. Pure Bash.
 - **[git-recap](https://github.com/maxgfr/git-recap)** — Monthly commit recap with AI summaries.
 - **[scopelet](https://github.com/maxgfr/scopelet)** — Rust CLI skill that filters evidence locally before it reaches the model…
-- **[sift](https://github.com/maxgfr/sift)** — Tells you which LLM quantization fits your machine and how fast it runs…
 - **[skycmd](https://github.com/maxgfr/skycmd)** — Tiny decision models trained from scratch in Rust, that play games live in…
 - **[termrevive](https://github.com/maxgfr/termrevive)** — Restores your terminal sessions and coding agents after a reboot, on macOS…
 - **[webindex](https://github.com/maxgfr/webindex)** — Turns any URL, document or video into clean, citable text, as a CLI and MCP…
@@ -103,6 +103,10 @@ My 116 public repositories, totalling 348 stars — [github.com/maxgfr](https://
 - **[veil](https://github.com/maxgfr/veil)** — Private P2P rooms for chat, files and calls, end-to-end encrypted.
 - **[verbatim](https://github.com/maxgfr/verbatim)** — Transcribe and edit audio and video in the browser, nothing uploaded.
 
+### 🔌 Chrome extensions
+
+- **[devkit](https://github.com/maxgfr/devkit)** — Chrome extension for web developers: cache & site data, page inspection…
+
 ### 🎮 Games
 
 - **[terravia](https://github.com/maxgfr/terravia)** — Creature-collecting RPG in a procedural world, in the browser.
@@ -148,8 +152,4 @@ My 116 public repositories, totalling 348 stars — [github.com/maxgfr](https://
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Repositories I've starred on GitHub.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
-
-### 🆕 Uncategorized
-
-- **[devkit](https://github.com/maxgfr/devkit)** — Chrome extension for web developers: cache & site data, page inspection…
 
