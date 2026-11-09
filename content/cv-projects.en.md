@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 116 public repositories, totalling 350 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 116 public repositories, totalling 351 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -59,8 +59,8 @@ My 116 public repositories, totalling 350 stars — [github.com/maxgfr](https://
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyze CSV files with AI, in the browser.
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualize and analyze a database schema from SQL, in the browser.
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Find npm package versions with their release notes.
-- **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline app for your loyalty cards, encrypted.
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Tournament engine for any sport: brackets, leagues, groups, Elo. In the…
+- **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline app for your loyalty cards, encrypted.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first kanban, sprints and roadmap, with a git repo as backend.
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Leboncoin scraper using the Chrome DevTools Protocol, no Puppeteer.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Rental property ROI calculator.

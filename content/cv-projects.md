@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 116 dépôts publics, totalisant 350 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 116 dépôts publics, totalisant 351 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -59,8 +59,8 @@ Mes 116 dépôts publics, totalisant 350 étoiles — [github.com/maxgfr](https:
 - **[csv-ai-analyzer](https://github.com/maxgfr/csv-ai-analyzer)** — Analyse des fichiers CSV par IA, dans le navigateur.
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualise et analyse un schéma de base de données depuis du SQL, dans le…
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version.
-- **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Appli hors ligne et chiffrée pour tes cartes de fidélité.
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois pour tout sport : brackets, ligues, poules, Elo. Dans le…
+- **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Appli hors ligne et chiffrée pour tes cartes de fidélité.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Kanban, sprints et roadmap local-first, avec un dépôt git comme backend.
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin via le Chrome DevTools Protocol, sans Puppeteer.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité locative.

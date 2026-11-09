@@ -2,12 +2,12 @@
   "generated": "2026-11",
   "totals": {
     "repos": 116,
-    "stars": 350
+    "stars": 351
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 66
+      "count": 65
     },
     {
       "name": "JavaScript",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Rust",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Shell",
@@ -229,7 +229,7 @@
         "codebase"
       ],
       "created": "2026-06",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -385,7 +385,7 @@
         "internationalization"
       ],
       "created": "2026-07",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
@@ -2044,8 +2044,11 @@
     {
       "name": "manga-anim",
       "url": "https://github.com/maxgfr/manga-anim",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://maxgfr.github.io/manga-anim/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
       "desc": {
         "fr": "Transforme des planches de manga en vidéos narrées, en local sur Apple Silicon (Rust).",
         "en": "Turns manga pages into narrated videos, locally on Apple Silicon (Rust)."
@@ -2067,7 +2070,7 @@
         "kokoro"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "grass",
@@ -2651,7 +2654,7 @@
       "cat": 3,
       "dex": 49,
       "dexLabel": "049",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -2670,18 +2673,18 @@
       "poke": {
         "type1": "fighting",
         "type2": "water",
-        "hp": 150,
-        "level": 31,
-        "rarity": "common",
+        "hp": 160,
+        "level": 32,
+        "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
           {
             "name": "bracket",
-            "dmg": 70
+            "dmg": 80
           },
           {
             "name": "elimination bracket",
-            "dmg": 50
+            "dmg": 60
           }
         ],
         "sprite": [
@@ -3864,7 +3867,7 @@
       "dexLabel": "072",
       "stars": 0,
       "forks": 1,
-      "language": "TypeScript",
+      "language": "Rust",
       "topics": [
         "agent-skill",
         "bun",
@@ -3880,7 +3883,7 @@
       "license": "MIT",
       "poke": {
         "type1": "dark",
-        "type2": "water",
+        "type2": "fire",
         "hp": 140,
         "level": 27,
         "rarity": "common",
