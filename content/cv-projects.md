@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 116 dépôts publics, totalisant 351 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 116 dépôts publics, totalisant 352 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -23,12 +23,12 @@ Mes 116 dépôts publics, totalisant 351 étoiles — [github.com/maxgfr](https:
 
 - **[conforme](https://github.com/maxgfr/conforme)** — Synchronise ta config d'IA de code entre Claude Code, Cursor et d'autres…
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Pare-feu local qui masque tes secrets aux agents de code avant qu'ils…
+- **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule Claude Code entre fournisseurs (Anthropic, OpenRouter, DeepSeek…
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Indexeur de dépôt zéro-dépendance : symboles, imports et graphe de liens, en…
 - **[feelc](https://github.com/maxgfr/feelc)** — Moteur de règles métier en Go : un LLM écrit les règles, le moteur les prouve…
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Récupère les derniers modèles LLM depuis OpenRouter et models.dev.
 - **[nuee](https://github.com/maxgfr/nuee)** — Transforme les appareils d'un groupe de confiance en cloud privé et éphémère…
 - **[sift](https://github.com/maxgfr/sift)** — Dit quelle quantization d'un LLM tient sur ta machine et à quelle vitesse…
-- **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Bascule Claude Code entre fournisseurs (Anthropic, OpenRouter, DeepSeek…
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Garde la machine éveillée pendant une session Claude Code ou Codex.
 - **[codexify](https://github.com/maxgfr/codexify)** — Boîte à outils pour Codex : profils de modèles, notifications, sauvegardes…
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — Automatisation git par IA : commits, conflits et rebase. 100% Bash.
@@ -110,7 +110,7 @@ Mes 116 dépôts publics, totalisant 351 étoiles — [github.com/maxgfr](https:
 ### 🎮 Jeux
 
 - **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde procédural, dans le navigateur.
-- **[versus](https://github.com/maxgfr/versus)** — 114 mini-jeux à deux, face à face sur un seul téléphone.
+- **[versus](https://github.com/maxgfr/versus)** — 100+ mini-jeux à deux, face à face sur un seul téléphone.
 
 ### 📈 Trading & finance
 

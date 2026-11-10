@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 116 public repositories, totalling 351 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 116 public repositories, totalling 352 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -23,12 +23,12 @@ My 116 public repositories, totalling 351 stars — [github.com/maxgfr](https://
 
 - **[conforme](https://github.com/maxgfr/conforme)** — Syncs your AI coding config across Claude Code, Cursor and more (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Local firewall that hides your secrets from coding agents before they reach…
+- **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Switch Claude Code between providers (Anthropic, OpenRouter, DeepSeek, Kimi…).
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Zero-dependency repo indexer: symbols, imports and link graph, as a CLI and…
 - **[feelc](https://github.com/maxgfr/feelc)** — Business rules engine in Go: an LLM writes the rules, the engine proves and…
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Fetches the latest LLM models from OpenRouter and models.dev.
 - **[nuee](https://github.com/maxgfr/nuee)** — Turns a group's laptops and phones into a private, short-lived cloud from one…
 - **[sift](https://github.com/maxgfr/sift)** — Tells you which LLM quantization fits your machine and how fast it runs…
-- **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Switch Claude Code between providers (Anthropic, OpenRouter, DeepSeek, Kimi…).
 - **[claudfeine](https://github.com/maxgfr/claudfeine)** — Keeps your machine awake while Claude Code or Codex runs.
 - **[codexify](https://github.com/maxgfr/codexify)** — Companion toolbox for Codex: model profiles, notifications, backups (Rust).
 - **[git-pilot](https://github.com/maxgfr/git-pilot)** — AI git automation: commits, conflict resolution and rebase. Pure Bash.
@@ -110,7 +110,7 @@ My 116 public repositories, totalling 351 stars — [github.com/maxgfr](https://
 ### 🎮 Games
 
 - **[terravia](https://github.com/maxgfr/terravia)** — Creature-collecting RPG in a procedural world, in the browser.
-- **[versus](https://github.com/maxgfr/versus)** — 114 two-player mini-games, face to face on one phone.
+- **[versus](https://github.com/maxgfr/versus)** — 100+ two-player mini-games, face to face on one phone.
 
 ### 📈 Trading & finance
 

@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 116 public repos · ⭐ 351 stars**
+**📦 116 public repos · ⭐ 352 stars**
 
 ---
 
@@ -125,7 +125,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 ## 🎮 Games
 
 - **[terravia](https://github.com/maxgfr/terravia)** — Creature-collecting RPG in a procedural world, in the browser. · [demo](https://maxgfr.github.io/terravia)
-- **[versus](https://github.com/maxgfr/versus)** — 114 two-player mini-games, face to face on one phone. · [demo](https://maxgfr.github.io/versus/)
+- **[versus](https://github.com/maxgfr/versus)** — 100+ two-player mini-games, face to face on one phone. · [demo](https://maxgfr.github.io/versus/)
 
 ---
 

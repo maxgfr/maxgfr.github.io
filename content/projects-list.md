@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 116 dépôts publics · ⭐ 351 étoiles**
+**📦 116 dépôts publics · ⭐ 352 étoiles**
 
 ---
 
@@ -125,7 +125,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 ## 🎮 Jeux
 
 - **[terravia](https://github.com/maxgfr/terravia)** — RPG de capture de créatures dans un monde procédural, dans le navigateur. · [démo](https://maxgfr.github.io/terravia)
-- **[versus](https://github.com/maxgfr/versus)** — 114 mini-jeux à deux, face à face sur un seul téléphone. · [démo](https://maxgfr.github.io/versus/)
+- **[versus](https://github.com/maxgfr/versus)** — 100+ mini-jeux à deux, face à face sur un seul téléphone. · [démo](https://maxgfr.github.io/versus/)
 
 ---
 

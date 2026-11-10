@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 116,
-    "stars": 351
+    "stars": 352
   },
   "languages": [
     {
@@ -1267,7 +1267,7 @@
       "cat": 1,
       "dex": 23,
       "dexLabel": "023",
-      "stars": 0,
+      "stars": 1,
       "forks": 1,
       "language": "Shell",
       "topics": [
@@ -1286,18 +1286,18 @@
       "poke": {
         "type1": "fighting",
         "type2": "steel",
-        "hp": 140,
-        "level": 31,
+        "hp": 150,
+        "level": 33,
         "rarity": "common",
         "weakness": "psychic",
         "moves": [
           {
             "name": "deepseek",
-            "dmg": 50
+            "dmg": 60
           },
           {
             "name": "glm",
-            "dmg": 30
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -4827,8 +4827,8 @@
         "en": "demo"
       },
       "desc": {
-        "fr": "114 mini-jeux à deux, face à face sur un seul téléphone.",
-        "en": "114 two-player mini-games, face to face on one phone."
+        "fr": "100+ mini-jeux à deux, face à face sur un seul téléphone.",
+        "en": "100+ two-player mini-games, face to face on one phone."
       },
       "cat": 5,
       "dex": 90,
