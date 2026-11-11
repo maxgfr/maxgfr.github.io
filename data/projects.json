@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 116,
-    "stars": 353
+    "stars": 354
   },
   "languages": [
     {
@@ -1229,7 +1229,7 @@
         "iterm2"
       ],
       "created": "2026-10",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "fighting",
@@ -1385,7 +1385,7 @@
         "developer-tools"
       ],
       "created": "2026-03",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "steel",
@@ -1437,7 +1437,7 @@
         "gemini"
       ],
       "created": "2026-03",
-      "pushed": "2026-09",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "rock",
@@ -4888,7 +4888,7 @@
       "cat": 6,
       "dex": 91,
       "dexLabel": "091",
-      "stars": 10,
+      "stars": 11,
       "forks": 0,
       "language": "Python",
       "topics": [
@@ -4907,8 +4907,8 @@
       "poke": {
         "type1": "ground",
         "type2": "grass",
-        "hp": 180,
-        "level": 33,
+        "hp": 190,
+        "level": 35,
         "rarity": "rare",
         "weakness": "water",
         "moves": [
@@ -6246,7 +6246,7 @@
         "writer"
       ],
       "created": "2017-07",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "fairy",
