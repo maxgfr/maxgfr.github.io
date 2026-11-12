@@ -76,6 +76,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[tok](https://github.com/maxgfr/tok)** — Compte les échanges et le score avec le micro et la caméra du téléphone (ping-pong, volley…). · [démo](https://maxgfr.github.io/tok/)
 - **[lastdone](https://github.com/maxgfr/lastdone)** — Rappels récurrents qu'on pilote en parlant, grâce à un LLM qui tourne dans le navigateur. · [démo](https://maxgfr.github.io/lastdone/)
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois pour tout sport : brackets, ligues, poules, Elo. Dans le navigateur. · [démo](https://maxgfr.github.io/bracketeer)
+- **[regie](https://github.com/maxgfr/regie)** — Regarde plusieurs streams à la fois (Twitch, YouTube, Kick…), sans compte. · [démo](https://maxgfr.github.io/regie/)
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Réactions, sondages et questions en direct en WebRTC, sans backend. · [démo](https://maxgfr.github.io/ephemeral/)
 - **[murmur](https://github.com/maxgfr/murmur)** — Bulle de chat IA qui répond à partir des pages de ton site. Une balise script. · [démo](https://maxgfr.github.io/murmur/)
 - **[notabot](https://github.com/maxgfr/notabot)** — Détection de bots open source et transparente, sans backend. · [démo](https://maxgfr.github.io/notabot/)
@@ -179,12 +180,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith. · [démo](https://maxgfr.github.io/awesome-stars/)
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[regie](https://github.com/maxgfr/regie)** — A control room for watching several streams at once: Twitch, YouTube, Kick, TikTok side by side, one on air, delays lined up, chats merged, sound away from ads. Static, anonymous. · [démo](https://maxgfr.github.io/regie/)
 
 ---
 

@@ -93,11 +93,6 @@
       "fr": "🧩 Autres",
       "en": "🧩 Other",
       "slug": "other"
-    },
-    {
-      "fr": "🆕 Non classés",
-      "en": "🆕 Uncategorized",
-      "slug": "uncategorized"
     }
   ],
   "repos": [
@@ -2755,6 +2750,61 @@
       }
     },
     {
+      "name": "regie",
+      "url": "https://github.com/maxgfr/regie",
+      "home": "https://maxgfr.github.io/regie/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
+      "desc": {
+        "fr": "Regarde plusieurs streams à la fois (Twitch, YouTube, Kick…), sans compte.",
+        "en": "Watch several streams at once (Twitch, YouTube, Kick…), no account."
+      },
+      "cat": 3,
+      "dex": 51,
+      "dexLabel": "051",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "bun",
+        "github-pages",
+        "kick",
+        "multistream",
+        "multiview",
+        "remix",
+        "twitch",
+        "youtube"
+      ],
+      "created": "2026-11",
+      "pushed": "2026-11",
+      "license": "MIT",
+      "poke": {
+        "type1": "electric",
+        "type2": "water",
+        "hp": 70,
+        "level": 14,
+        "rarity": "common",
+        "weakness": "ground",
+        "moves": [
+          {
+            "name": "kick",
+            "dmg": 40
+          },
+          {
+            "name": "multistream",
+            "dmg": 50
+          }
+        ],
+        "sprite": [
+          "M4 1h4v1h-4zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
+          "M2 9h2v1h-2zM8 9h2v1h-2zM1 10h4v1h-4zM7 10h4v1h-4zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "ephemeral",
       "url": "https://github.com/maxgfr/ephemeral",
       "home": "https://maxgfr.github.io/ephemeral/",
@@ -2767,8 +2817,8 @@
         "en": "Live reactions, polls and Q&A over WebRTC, with no backend."
       },
       "cat": 3,
-      "dex": 51,
-      "dexLabel": "051",
+      "dex": 52,
+      "dexLabel": "052",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -2822,8 +2872,8 @@
         "en": "AI chat bubble that answers from your site's own pages. One script tag."
       },
       "cat": 3,
-      "dex": 52,
-      "dexLabel": "052",
+      "dex": 53,
+      "dexLabel": "053",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2877,8 +2927,8 @@
         "en": "Open source, transparent bot detection with no backend."
       },
       "cat": 3,
-      "dex": 53,
-      "dexLabel": "053",
+      "dex": 54,
+      "dexLabel": "054",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2932,8 +2982,8 @@
         "en": "Private P2P rooms for chat, files and calls, end-to-end encrypted."
       },
       "cat": 3,
-      "dex": 54,
-      "dexLabel": "054",
+      "dex": 55,
+      "dexLabel": "055",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -2985,8 +3035,8 @@
         "en": "Post-quantum encrypted messaging and file sharing, no account."
       },
       "cat": 3,
-      "dex": 55,
-      "dexLabel": "055",
+      "dex": 56,
+      "dexLabel": "056",
       "stars": 0,
       "forks": 0,
       "language": "Rust",
@@ -3027,8 +3077,8 @@
         "en": "Anonymous, encrypted polls: one person, one vote. No server."
       },
       "cat": 3,
-      "dex": 56,
-      "dexLabel": "056",
+      "dex": 57,
+      "dexLabel": "057",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3082,8 +3132,8 @@
         "en": "Private recording studio in the browser, OBS-style."
       },
       "cat": 3,
-      "dex": 57,
-      "dexLabel": "057",
+      "dex": 58,
+      "dexLabel": "058",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3137,8 +3187,8 @@
         "en": "Your own cloud in a GitHub repo: drop files anywhere, sync folders."
       },
       "cat": 3,
-      "dex": 58,
-      "dexLabel": "058",
+      "dex": 59,
+      "dexLabel": "059",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3192,8 +3242,8 @@
         "en": "Record your screen and AI turns it into an interactive demo."
       },
       "cat": 3,
-      "dex": 59,
-      "dexLabel": "059",
+      "dex": 60,
+      "dexLabel": "060",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3247,8 +3297,8 @@
         "en": "Record and edit videos by editing the text, Loom-style, in the browser."
       },
       "cat": 3,
-      "dex": 60,
-      "dexLabel": "060",
+      "dex": 61,
+      "dexLabel": "061",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3289,8 +3339,8 @@
         "en": "100+ small tools in the browser, for devs and everyday life."
       },
       "cat": 3,
-      "dex": 61,
-      "dexLabel": "061",
+      "dex": 62,
+      "dexLabel": "062",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3344,8 +3394,8 @@
         "en": "AI calorie tracker: describe, snap or say a meal and get calories and macros. No account."
       },
       "cat": 3,
-      "dex": 62,
-      "dexLabel": "062",
+      "dex": 63,
+      "dexLabel": "063",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3399,8 +3449,8 @@
         "en": "Open, sourced food and cosmetics scanner, Yuka-style: scan a barcode, get a score you can check."
       },
       "cat": 3,
-      "dex": 63,
-      "dexLabel": "063",
+      "dex": 64,
+      "dexLabel": "064",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3454,8 +3504,8 @@
         "en": "Scan a medicine box and read its official leaflet, even offline, with optional AI."
       },
       "cat": 3,
-      "dex": 64,
-      "dexLabel": "064",
+      "dex": 65,
+      "dexLabel": "065",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3496,8 +3546,8 @@
         "en": "Map notebook for your favorite places, Mapstr-style, entirely in the browser."
       },
       "cat": 3,
-      "dex": 65,
-      "dexLabel": "065",
+      "dex": 66,
+      "dexLabel": "066",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3551,8 +3601,8 @@
         "en": "Encrypted pastebin in the browser, no account."
       },
       "cat": 3,
-      "dex": 66,
-      "dexLabel": "066",
+      "dex": 67,
+      "dexLabel": "067",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3606,8 +3656,8 @@
         "en": "Study app: AI explanations from your sources, flashcards and quizzes."
       },
       "cat": 3,
-      "dex": 67,
-      "dexLabel": "067",
+      "dex": 68,
+      "dexLabel": "068",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3661,8 +3711,8 @@
         "en": "Turn your lectures into summaries, quizzes and flashcards with AI."
       },
       "cat": 3,
-      "dex": 68,
-      "dexLabel": "068",
+      "dex": 69,
+      "dexLabel": "069",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3703,8 +3753,8 @@
         "en": "Private, encrypted AI chat in the browser, with your keys or local models."
       },
       "cat": 3,
-      "dex": 69,
-      "dexLabel": "069",
+      "dex": 70,
+      "dexLabel": "070",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3758,8 +3808,8 @@
         "en": "Find a meeting slot across people and time zones."
       },
       "cat": 3,
-      "dex": 70,
-      "dexLabel": "070",
+      "dex": 71,
+      "dexLabel": "071",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3813,8 +3863,8 @@
         "en": "PDF toolbox that never uploads your files: compress, merge, sign, OCR…"
       },
       "cat": 3,
-      "dex": 71,
-      "dexLabel": "071",
+      "dex": 72,
+      "dexLabel": "072",
       "stars": 0,
       "forks": 0,
       "language": "Rust",
@@ -3868,8 +3918,8 @@
         "en": "Photo toolbox that never uploads your photos, with on-device AI."
       },
       "cat": 3,
-      "dex": 72,
-      "dexLabel": "072",
+      "dex": 73,
+      "dexLabel": "073",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -3923,8 +3973,8 @@
         "en": "Transcribe and edit audio and video in the browser, nothing uploaded."
       },
       "cat": 3,
-      "dex": 73,
-      "dexLabel": "073",
+      "dex": 74,
+      "dexLabel": "074",
       "stars": 0,
       "forks": 1,
       "language": "Rust",
@@ -3978,8 +4028,8 @@
         "en": "Encrypted Word, Excel and PowerPoint editor in the browser."
       },
       "cat": 3,
-      "dex": 74,
-      "dexLabel": "074",
+      "dex": 75,
+      "dexLabel": "075",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4033,8 +4083,8 @@
         "en": "Analyze CSV files with AI, in the browser."
       },
       "cat": 3,
-      "dex": 75,
-      "dexLabel": "075",
+      "dex": 76,
+      "dexLabel": "076",
       "stars": 86,
       "forks": 10,
       "language": "TypeScript",
@@ -4088,8 +4138,8 @@
         "en": "Visualize and analyze a database schema from SQL, in the browser."
       },
       "cat": 3,
-      "dex": 76,
-      "dexLabel": "076",
+      "dex": 77,
+      "dexLabel": "077",
       "stars": 7,
       "forks": 2,
       "language": "TypeScript",
@@ -4143,8 +4193,8 @@
         "en": "Rental property ROI calculator."
       },
       "cat": 3,
-      "dex": 77,
-      "dexLabel": "077",
+      "dex": 78,
+      "dexLabel": "078",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -4198,8 +4248,8 @@
         "en": "Password generator and encrypted vault that works offline."
       },
       "cat": 3,
-      "dex": 78,
-      "dexLabel": "078",
+      "dex": 79,
+      "dexLabel": "079",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4253,8 +4303,8 @@
         "en": "Offline app for your loyalty cards, encrypted."
       },
       "cat": 3,
-      "dex": 79,
-      "dexLabel": "079",
+      "dex": 80,
+      "dexLabel": "080",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -4305,8 +4355,8 @@
         "en": "Desktop language learning app with an AI tutor."
       },
       "cat": 3,
-      "dex": 80,
-      "dexLabel": "080",
+      "dex": 81,
+      "dexLabel": "081",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4357,8 +4407,8 @@
         "en": "Generates daily short videos and publishes them to Shorts, TikTok and Reels."
       },
       "cat": 3,
-      "dex": 81,
-      "dexLabel": "081",
+      "dex": 82,
+      "dexLabel": "082",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4412,8 +4462,8 @@
         "en": "Self-hosted studio for short AI videos."
       },
       "cat": 3,
-      "dex": 82,
-      "dexLabel": "082",
+      "dex": 83,
+      "dexLabel": "083",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4464,8 +4514,8 @@
         "en": "Leboncoin scraper using the Chrome DevTools Protocol, no Puppeteer."
       },
       "cat": 3,
-      "dex": 83,
-      "dexLabel": "083",
+      "dex": 84,
+      "dexLabel": "084",
       "stars": 2,
       "forks": 1,
       "language": "HTML",
@@ -4519,8 +4569,8 @@
         "en": "Find npm package versions with their release notes."
       },
       "cat": 3,
-      "dex": 84,
-      "dexLabel": "084",
+      "dex": 85,
+      "dexLabel": "085",
       "stars": 6,
       "forks": 0,
       "language": "TypeScript",
@@ -4574,8 +4624,8 @@
         "en": "Local-first kanban, sprints and roadmap, with a git repo as backend."
       },
       "cat": 3,
-      "dex": 85,
-      "dexLabel": "085",
+      "dex": 86,
+      "dexLabel": "086",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -4629,8 +4679,8 @@
         "en": "Removes watermarks from text and images, in the browser."
       },
       "cat": 3,
-      "dex": 86,
-      "dexLabel": "086",
+      "dex": 87,
+      "dexLabel": "087",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4684,8 +4734,8 @@
         "en": "Video downloader in the browser: paste a link, get the file."
       },
       "cat": 3,
-      "dex": 87,
-      "dexLabel": "087",
+      "dex": 88,
+      "dexLabel": "088",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -4739,8 +4789,8 @@
         "en": "Download and share torrents from a web page, on phone or desktop."
       },
       "cat": 3,
-      "dex": 88,
-      "dexLabel": "088",
+      "dex": 89,
+      "dexLabel": "089",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -4794,8 +4844,8 @@
         "en": "Chrome extension for web developers: cache & site data, page inspection (JSON-LD, headers, Web Vitals…), request rules and AI analysis with your own model."
       },
       "cat": 4,
-      "dex": 89,
-      "dexLabel": "089",
+      "dex": 90,
+      "dexLabel": "090",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4836,8 +4886,8 @@
         "en": "Creature-collecting RPG in a procedural world, in the browser."
       },
       "cat": 5,
-      "dex": 90,
-      "dexLabel": "090",
+      "dex": 91,
+      "dexLabel": "091",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -4891,8 +4941,8 @@
         "en": "100+ two-player mini-games, face to face on one phone."
       },
       "cat": 5,
-      "dex": 91,
-      "dexLabel": "091",
+      "dex": 92,
+      "dexLabel": "092",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -4946,8 +4996,8 @@
         "en": "Self-hosted stock screener with transparent scores, no API keys."
       },
       "cat": 6,
-      "dex": 92,
-      "dexLabel": "092",
+      "dex": 93,
+      "dexLabel": "093",
       "stars": 11,
       "forks": 0,
       "language": "Python",
@@ -5001,8 +5051,8 @@
         "en": "Fetch historical candles from the Binance API."
       },
       "cat": 6,
-      "dex": 93,
-      "dexLabel": "093",
+      "dex": 94,
+      "dexLabel": "094",
       "stars": 47,
       "forks": 6,
       "language": "TypeScript",
@@ -5053,8 +5103,8 @@
         "en": "Describe a crypto strategy in plain English and backtest it."
       },
       "cat": 6,
-      "dex": 94,
-      "dexLabel": "094",
+      "dex": 95,
+      "dexLabel": "095",
       "stars": 0,
       "forks": 1,
       "language": "TypeScript",
@@ -5108,8 +5158,8 @@
         "en": "SuperTrend indicator implementation."
       },
       "cat": 6,
-      "dex": 95,
-      "dexLabel": "095",
+      "dex": 96,
+      "dexLabel": "096",
       "stars": 4,
       "forks": 4,
       "language": "TypeScript",
@@ -5163,8 +5213,8 @@
         "en": "Zero-dependency TypeScript regression and stats library, with a Rust/WASM engine."
       },
       "cat": 7,
-      "dex": 96,
-      "dexLabel": "096",
+      "dex": 97,
+      "dexLabel": "097",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -5218,8 +5268,8 @@
         "en": "Find similarities between arrays."
       },
       "cat": 7,
-      "dex": 97,
-      "dexLabel": "097",
+      "dex": 98,
+      "dexLabel": "098",
       "stars": 2,
       "forks": 1,
       "language": "TypeScript",
@@ -5273,8 +5323,8 @@
         "en": "Condorcet voting algorithm in TypeScript."
       },
       "cat": 7,
-      "dex": 98,
-      "dexLabel": "098",
+      "dex": 99,
+      "dexLabel": "099",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -5328,8 +5378,8 @@
         "en": "Check whether a dataset follows Benford's law."
       },
       "cat": 7,
-      "dex": 99,
-      "dexLabel": "099",
+      "dex": 100,
+      "dexLabel": "100",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5382,8 +5432,8 @@
         "en": "Helpers for Gaussian calculations."
       },
       "cat": 7,
-      "dex": 100,
-      "dexLabel": "100",
+      "dex": 101,
+      "dexLabel": "101",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5437,8 +5487,8 @@
         "en": "Minimal context for Node, inspired by React Context."
       },
       "cat": 7,
-      "dex": 101,
-      "dexLabel": "101",
+      "dex": 102,
+      "dexLabel": "102",
       "stars": 1,
       "forks": 1,
       "language": "TypeScript",
@@ -5492,8 +5542,8 @@
         "en": "Useful React hooks and components."
       },
       "cat": 7,
-      "dex": 102,
-      "dexLabel": "102",
+      "dex": 103,
+      "dexLabel": "103",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5543,8 +5593,8 @@
         "en": "Essential zero-dependency TypeScript helpers."
       },
       "cat": 7,
-      "dex": 103,
-      "dexLabel": "103",
+      "dex": 104,
+      "dexLabel": "104",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5596,8 +5646,8 @@
         "en": "Fixes date parsing in React Native on Android."
       },
       "cat": 7,
-      "dex": 104,
-      "dexLabel": "104",
+      "dex": 105,
+      "dexLabel": "105",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -5651,8 +5701,8 @@
         "en": "Lightweight React Native modal."
       },
       "cat": 7,
-      "dex": 105,
-      "dexLabel": "105",
+      "dex": 106,
+      "dexLabel": "106",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -5704,8 +5754,8 @@
         "en": "Store large data in React Native async-storage."
       },
       "cat": 7,
-      "dex": 106,
-      "dexLabel": "106",
+      "dex": 107,
+      "dexLabel": "107",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
@@ -5759,8 +5809,8 @@
         "en": "See who unfollowed you on Instagram."
       },
       "cat": 7,
-      "dex": 107,
-      "dexLabel": "107",
+      "dex": 108,
+      "dexLabel": "108",
       "stars": 10,
       "forks": 1,
       "language": "TypeScript",
@@ -5814,8 +5864,8 @@
         "en": "Unofficial Node SDK for api-money.com."
       },
       "cat": 7,
-      "dex": 108,
-      "dexLabel": "108",
+      "dex": 109,
+      "dexLabel": "109",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -5866,8 +5916,8 @@
         "en": "Runs a coding agent (OpenCode, Codex, Pi, OpenClaw) in GitHub Actions, with any model and any skill."
       },
       "cat": 8,
-      "dex": 109,
-      "dexLabel": "109",
+      "dex": 110,
+      "dexLabel": "110",
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
@@ -5921,8 +5971,8 @@
         "en": "Turns your GitHub stars into an awesome list sorted by AI, with a searchable site."
       },
       "cat": 8,
-      "dex": 110,
-      "dexLabel": "110",
+      "dex": 111,
+      "dexLabel": "111",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
@@ -5974,8 +6024,8 @@
         "en": "GitHub Action to change a value in a JSON file."
       },
       "cat": 8,
-      "dex": 111,
-      "dexLabel": "111",
+      "dex": 112,
+      "dexLabel": "112",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -6029,8 +6079,8 @@
         "en": "GitHub Action to commit and push a file."
       },
       "cat": 8,
-      "dex": 112,
-      "dexLabel": "112",
+      "dex": 113,
+      "dexLabel": "113",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -6083,8 +6133,8 @@
         "en": "GitHub Action to manage deployments across environments."
       },
       "cat": 8,
-      "dex": 113,
-      "dexLabel": "113",
+      "dex": 114,
+      "dexLabel": "114",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -6135,8 +6185,8 @@
         "en": "Minimal TypeScript + SWC starter for CJS and ESM packages."
       },
       "cat": 9,
-      "dex": 114,
-      "dexLabel": "114",
+      "dex": 115,
+      "dexLabel": "115",
       "stars": 32,
       "forks": 4,
       "language": "TypeScript",
@@ -6190,8 +6240,8 @@
         "en": "Minimal TypeScript + SWC starter for React component libraries."
       },
       "cat": 9,
-      "dex": 115,
-      "dexLabel": "115",
+      "dex": 116,
+      "dexLabel": "116",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -6245,8 +6295,8 @@
         "en": "My GitHub stars, sorted and rebuilt daily by starsmith."
       },
       "cat": 10,
-      "dex": 116,
-      "dexLabel": "116",
+      "dex": 117,
+      "dexLabel": "117",
       "stars": 23,
       "forks": 3,
       "language": null,
@@ -6293,8 +6343,8 @@
         "en": "Homebrew tap for my CLI tools."
       },
       "cat": 10,
-      "dex": 117,
-      "dexLabel": "117",
+      "dex": 118,
+      "dexLabel": "118",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -6346,8 +6396,8 @@
         "en": "Source of a writer's website."
       },
       "cat": 10,
-      "dex": 118,
-      "dexLabel": "118",
+      "dex": 119,
+      "dexLabel": "119",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",
@@ -6385,61 +6435,6 @@
           "M2 0h1v1h-1zM9 0h1v1h-1zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10zM5 5h2v1h-2z",
           "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h4v1h-4zM7 5h4v1h-4zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
           "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
-        ]
-      }
-    },
-    {
-      "name": "regie",
-      "url": "https://github.com/maxgfr/regie",
-      "home": "https://maxgfr.github.io/regie/",
-      "homeLabel": {
-        "fr": "démo",
-        "en": "demo"
-      },
-      "desc": {
-        "fr": "A control room for watching several streams at once: Twitch, YouTube, Kick, TikTok side by side, one on air, delays lined up, chats merged, sound away from ads. Static, anonymous.",
-        "en": "A control room for watching several streams at once: Twitch, YouTube, Kick, TikTok side by side, one on air, delays lined up, chats merged, sound away from ads. Static, anonymous."
-      },
-      "cat": 11,
-      "dex": 119,
-      "dexLabel": "119",
-      "stars": 0,
-      "forks": 0,
-      "language": "TypeScript",
-      "topics": [
-        "bun",
-        "github-pages",
-        "kick",
-        "multistream",
-        "multiview",
-        "remix",
-        "twitch",
-        "youtube"
-      ],
-      "created": "2026-11",
-      "pushed": "2026-11",
-      "license": "MIT",
-      "poke": {
-        "type1": "electric",
-        "type2": "water",
-        "hp": 110,
-        "level": 23,
-        "rarity": "common",
-        "weakness": "ground",
-        "moves": [
-          {
-            "name": "kick",
-            "dmg": 40
-          },
-          {
-            "name": "multistream",
-            "dmg": 50
-          }
-        ],
-        "sprite": [
-          "M4 1h4v1h-4zM2 2h8v1h-8zM2 3h8v1h-8zM4 6h1v1h-1zM7 6h1v1h-1zM4 7h4v1h-4zM4 8h4v1h-4z",
-          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM0 5h3v1h-3zM4 5h4v1h-4zM9 5h3v1h-3zM0 6h4v1h-4zM8 6h4v1h-4zM1 7h3v1h-3zM8 7h3v1h-3zM2 8h2v1h-2zM8 8h2v1h-2zM4 9h4v1h-4z",
-          "M2 9h2v1h-2zM8 9h2v1h-2zM1 10h4v1h-4zM7 10h4v1h-4zM1 11h2v1h-2zM4 11h1v1h-1zM7 11h1v1h-1zM9 11h2v1h-2z"
         ]
       }
     }

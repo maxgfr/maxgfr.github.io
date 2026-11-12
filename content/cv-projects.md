@@ -88,6 +88,7 @@ Mes 119 dépôts publics, totalisant 355 étoiles — [github.com/maxgfr](https:
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Appli de bureau pour apprendre les langues avec un tuteur IA.
 - **[pdfvault](https://github.com/maxgfr/pdfvault)** — Boîte à outils PDF qui n'envoie jamais tes fichiers : compresser, fusionner…
 - **[pixvault](https://github.com/maxgfr/pixvault)** — Boîte à outils photo qui n'envoie jamais tes photos, avec IA sur l'appareil.
+- **[regie](https://github.com/maxgfr/regie)** — Regarde plusieurs streams à la fois (Twitch, YouTube, Kick…), sans compte.
 - **[sealbin](https://github.com/maxgfr/sealbin)** — Pastebin chiffré dans le navigateur, sans compte.
 - **[sealoffice](https://github.com/maxgfr/sealoffice)** — Éditeur Word, Excel et PowerPoint chiffré dans le navigateur.
 - **[siphon](https://github.com/maxgfr/siphon)** — Téléchargeur de vidéos dans le navigateur : colle un lien, récupère le…
@@ -154,8 +155,4 @@ Mes 119 dépôts publics, totalisant 355 étoiles — [github.com/maxgfr](https:
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
-
-### 🆕 Non classés
-
-- **[regie](https://github.com/maxgfr/regie)** — A control room for watching several streams at once: Twitch, YouTube, Kick…
 

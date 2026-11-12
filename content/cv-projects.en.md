@@ -88,6 +88,7 @@ My 119 public repositories, totalling 355 stars — [github.com/maxgfr](https://
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Desktop language learning app with an AI tutor.
 - **[pdfvault](https://github.com/maxgfr/pdfvault)** — PDF toolbox that never uploads your files: compress, merge, sign, OCR…
 - **[pixvault](https://github.com/maxgfr/pixvault)** — Photo toolbox that never uploads your photos, with on-device AI.
+- **[regie](https://github.com/maxgfr/regie)** — Watch several streams at once (Twitch, YouTube, Kick…), no account.
 - **[sealbin](https://github.com/maxgfr/sealbin)** — Encrypted pastebin in the browser, no account.
 - **[sealoffice](https://github.com/maxgfr/sealoffice)** — Encrypted Word, Excel and PowerPoint editor in the browser.
 - **[siphon](https://github.com/maxgfr/siphon)** — Video downloader in the browser: paste a link, get the file.
@@ -154,8 +155,4 @@ My 119 public repositories, totalling 355 stars — [github.com/maxgfr](https://
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
-
-### 🆕 Uncategorized
-
-- **[regie](https://github.com/maxgfr/regie)** — A control room for watching several streams at once: Twitch, YouTube, Kick…
 
