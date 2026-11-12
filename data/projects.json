@@ -1,13 +1,13 @@
 {
   "generated": "2026-11",
   "totals": {
-    "repos": 116,
-    "stars": 354
+    "repos": 117,
+    "stars": 355
   },
   "languages": [
     {
       "name": "TypeScript",
-      "count": 65
+      "count": 66
     },
     {
       "name": "JavaScript",
@@ -1375,33 +1375,33 @@
       "forks": 0,
       "language": "Shell",
       "topics": [
+        "agent-skills",
         "ai",
-        "anthropic",
         "auto-commit",
         "automation",
         "bash",
+        "claude-code",
         "cli",
-        "commit",
-        "developer-tools"
+        "codex"
       ],
       "created": "2026-03",
       "pushed": "2026-11",
       "license": "MIT",
       "poke": {
-        "type1": "steel",
-        "type2": null,
-        "hp": 100,
-        "level": 25,
+        "type1": "dark",
+        "type2": "steel",
+        "hp": 130,
+        "level": 30,
         "rarity": "common",
-        "weakness": "fire",
+        "weakness": "fighting",
         "moves": [
           {
             "name": "auto commit",
             "dmg": 40
           },
           {
-            "name": "commit",
-            "dmg": 60
+            "name": "coding agents",
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -1443,7 +1443,7 @@
         "type1": "rock",
         "type2": "steel",
         "hp": 90,
-        "level": 22,
+        "level": 23,
         "rarity": "common",
         "weakness": "water",
         "moves": [
@@ -1859,7 +1859,7 @@
         "ecommerce-monitoring"
       ],
       "created": "2026-02",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "steel",
@@ -4406,7 +4406,7 @@
       "cat": 3,
       "dex": 82,
       "dexLabel": "082",
-      "stars": 1,
+      "stars": 2,
       "forks": 1,
       "language": "HTML",
       "topics": [
@@ -4425,18 +4425,18 @@
       "poke": {
         "type1": "ghost",
         "type2": "ground",
-        "hp": 110,
-        "level": 59,
-        "rarity": "common",
+        "hp": 120,
+        "level": 61,
+        "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
           {
             "name": "browser automation",
-            "dmg": 40
+            "dmg": 50
           },
           {
             "name": "leboncoin",
-            "dmg": 70
+            "dmg": 80
           }
         ],
         "sprite": [
@@ -5849,6 +5849,56 @@
       }
     },
     {
+      "name": "starsmith",
+      "url": "https://github.com/maxgfr/starsmith",
+      "home": null,
+      "homeLabel": null,
+      "desc": {
+        "fr": "Transforme tes stars GitHub en awesome list triée par IA, avec un site de recherche.",
+        "en": "Turns your GitHub stars into an awesome list sorted by AI, with a searchable site."
+      },
+      "cat": 8,
+      "dex": 109,
+      "dexLabel": "109",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "awesome-list",
+        "github-actions",
+        "github-stars",
+        "llm",
+        "stars"
+      ],
+      "created": "2026-11",
+      "pushed": "2026-11",
+      "license": "MIT",
+      "poke": {
+        "type1": "steel",
+        "type2": "water",
+        "hp": 70,
+        "level": 13,
+        "rarity": "common",
+        "weakness": "fire",
+        "moves": [
+          {
+            "name": "awesome list",
+            "dmg": 10
+          },
+          {
+            "name": "github stars",
+            "dmg": 60
+          }
+        ],
+        "sprite": [
+          "M5 0h2v1h-2zM2 1h3v1h-3zM7 1h3v1h-3zM2 2h8v1h-8zM1 3h10v1h-10z",
+          "M1 4h2v1h-2zM4 4h4v1h-4zM9 4h2v1h-2zM1 5h10v1h-10zM2 6h3v1h-3zM7 6h3v1h-3zM1 7h10v1h-10zM1 8h10v1h-10z",
+          "M2 9h8v1h-8zM2 10h8v1h-8zM2 11h2v1h-2zM8 11h2v1h-2z"
+        ]
+      }
+    },
+    {
       "name": "github-change-json",
       "url": "https://github.com/maxgfr/github-change-json",
       "home": "https://github.com/marketplace/actions/github-change-json",
@@ -5861,8 +5911,8 @@
         "en": "GitHub Action to change a value in a JSON file."
       },
       "cat": 8,
-      "dex": 109,
-      "dexLabel": "109",
+      "dex": 110,
+      "dexLabel": "110",
       "stars": 7,
       "forks": 1,
       "language": "TypeScript",
@@ -5916,8 +5966,8 @@
         "en": "GitHub Action to commit and push a file."
       },
       "cat": 8,
-      "dex": 110,
-      "dexLabel": "110",
+      "dex": 111,
+      "dexLabel": "111",
       "stars": 3,
       "forks": 0,
       "language": "TypeScript",
@@ -5942,8 +5992,8 @@
         "weakness": "fire",
         "moves": [
           {
-            "name": "commit message",
-            "dmg": 50
+            "name": "commit",
+            "dmg": 70
           },
           {
             "name": "files",
@@ -5970,8 +6020,8 @@
         "en": "GitHub Action to manage deployments across environments."
       },
       "cat": 8,
-      "dex": 111,
-      "dexLabel": "111",
+      "dex": 112,
+      "dexLabel": "112",
       "stars": 2,
       "forks": 0,
       "language": "TypeScript",
@@ -6022,8 +6072,8 @@
         "en": "Minimal TypeScript + SWC starter for CJS and ESM packages."
       },
       "cat": 9,
-      "dex": 112,
-      "dexLabel": "112",
+      "dex": 113,
+      "dexLabel": "113",
       "stars": 32,
       "forks": 4,
       "language": "TypeScript",
@@ -6077,8 +6127,8 @@
         "en": "Minimal TypeScript + SWC starter for React component libraries."
       },
       "cat": 9,
-      "dex": 113,
-      "dexLabel": "113",
+      "dex": 114,
+      "dexLabel": "114",
       "stars": 3,
       "forks": 0,
       "language": "JavaScript",
@@ -6125,12 +6175,12 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Les dépôts que j'ai aimés sur GitHub.",
-        "en": "Repositories I've starred on GitHub."
+        "fr": "Mes stars GitHub, triées et mises à jour chaque jour par starsmith.",
+        "en": "My GitHub stars, sorted and rebuilt daily by starsmith."
       },
       "cat": 10,
-      "dex": 114,
-      "dexLabel": "114",
+      "dex": 115,
+      "dexLabel": "115",
       "stars": 23,
       "forks": 3,
       "language": null,
@@ -6147,7 +6197,7 @@
         "type1": "dragon",
         "type2": "normal",
         "hp": 250,
-        "level": 90,
+        "level": 92,
         "rarity": "rare",
         "weakness": "ice",
         "moves": [
@@ -6177,8 +6227,8 @@
         "en": "Homebrew tap for my CLI tools."
       },
       "cat": 10,
-      "dex": 115,
-      "dexLabel": "115",
+      "dex": 116,
+      "dexLabel": "116",
       "stars": 1,
       "forks": 0,
       "language": "Ruby",
@@ -6230,8 +6280,8 @@
         "en": "Source of a writer's website."
       },
       "cat": 10,
-      "dex": 116,
-      "dexLabel": "116",
+      "dex": 117,
+      "dexLabel": "117",
       "stars": 2,
       "forks": 0,
       "language": "JavaScript",

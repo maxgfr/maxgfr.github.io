@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 116 dépôts publics, totalisant 354 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 117 dépôts publics, totalisant 355 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -60,9 +60,9 @@ Mes 116 dépôts publics, totalisant 354 étoiles — [github.com/maxgfr](https:
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualise et analyse un schéma de base de données depuis du SQL, dans le…
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version.
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois pour tout sport : brackets, ligues, poules, Elo. Dans le…
+- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin via le Chrome DevTools Protocol, sans Puppeteer.
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Appli hors ligne et chiffrée pour tes cartes de fidélité.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Kanban, sprints et roadmap local-first, avec un dépôt git comme backend.
-- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin via le Chrome DevTools Protocol, sans Puppeteer.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité locative.
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour où les tâches non finies attendent ta décision. Privée, hors…
 - **[agora](https://github.com/maxgfr/agora)** — Sondages anonymes et chiffrés : une personne, une voix. Sans serveur.
@@ -141,6 +141,7 @@ Mes 116 dépôts publics, totalisant 354 étoiles — [github.com/maxgfr](https:
 - **[github-commit-push-file](https://github.com/maxgfr/github-commit-push-file)** — GitHub Action pour committer et pousser un fichier.
 - **[github-multi-deployments](https://github.com/maxgfr/github-multi-deployments)** — GitHub Action pour gérer les déploiements sur plusieurs environnements.
 - **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi, OpenClaw) dans GitHub Actions…
+- **[starsmith](https://github.com/maxgfr/starsmith)** — Transforme tes stars GitHub en awesome list triée par IA, avec un site de…
 
 ### 🚀 Starters & templates
 
@@ -149,7 +150,7 @@ Mes 116 dépôts publics, totalisant 354 étoiles — [github.com/maxgfr](https:
 
 ### 🧩 Autres
 
-- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Les dépôts que j'ai aimés sur GitHub.
+- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
 

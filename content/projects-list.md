@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 116 dépôts publics · ⭐ 354 étoiles**
+**📦 117 dépôts publics · ⭐ 355 étoiles**
 
 ---
 
@@ -159,6 +159,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 ## ⚙️ GitHub Actions
 
 - **[harness-action](https://github.com/maxgfr/harness-action)** — Lance un agent de code (OpenCode, Codex, Pi, OpenClaw) dans GitHub Actions, avec le modèle et les skills de ton choix. · [marketplace](https://github.com/marketplace/actions/harness-action)
+- **[starsmith](https://github.com/maxgfr/starsmith)** — Transforme tes stars GitHub en awesome list triée par IA, avec un site de recherche.
 - **[github-change-json](https://github.com/maxgfr/github-change-json)** — GitHub Action pour modifier une valeur dans un fichier JSON. · [marketplace](https://github.com/marketplace/actions/github-change-json)
 - **[github-commit-push-file](https://github.com/maxgfr/github-commit-push-file)** — GitHub Action pour committer et pousser un fichier. · [marketplace](https://github.com/marketplace/actions/github-commit-push-file)
 - **[github-multi-deployments](https://github.com/maxgfr/github-multi-deployments)** — GitHub Action pour gérer les déploiements sur plusieurs environnements. · [marketplace](https://github.com/marketplace/actions/github-multi-deployments)
@@ -174,7 +175,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🧩 Autres
 
-- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Les dépôts que j'ai aimés sur GitHub.
+- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
 

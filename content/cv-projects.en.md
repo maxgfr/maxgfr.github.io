@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 116 public repositories, totalling 354 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 117 public repositories, totalling 355 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -60,9 +60,9 @@ My 116 public repositories, totalling 354 stars — [github.com/maxgfr](https://
 - **[db-schema-viewer](https://github.com/maxgfr/db-schema-viewer)** — Visualize and analyze a database schema from SQL, in the browser.
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Find npm package versions with their release notes.
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Tournament engine for any sport: brackets, leagues, groups, Elo. In the…
+- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Leboncoin scraper using the Chrome DevTools Protocol, no Puppeteer.
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline app for your loyalty cards, encrypted.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first kanban, sprints and roadmap, with a git repo as backend.
-- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Leboncoin scraper using the Chrome DevTools Protocol, no Puppeteer.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Rental property ROI calculator.
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private…
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
@@ -141,6 +141,7 @@ My 116 public repositories, totalling 354 stars — [github.com/maxgfr](https://
 - **[github-commit-push-file](https://github.com/maxgfr/github-commit-push-file)** — GitHub Action to commit and push a file.
 - **[github-multi-deployments](https://github.com/maxgfr/github-multi-deployments)** — GitHub Action to manage deployments across environments.
 - **[harness-action](https://github.com/maxgfr/harness-action)** — Runs a coding agent (OpenCode, Codex, Pi, OpenClaw) in GitHub Actions, with…
+- **[starsmith](https://github.com/maxgfr/starsmith)** — Turns your GitHub stars into an awesome list sorted by AI, with a searchable…
 
 ### 🚀 Starters & templates
 
@@ -149,7 +150,7 @@ My 116 public repositories, totalling 354 stars — [github.com/maxgfr](https://
 
 ### 🧩 Other
 
-- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Repositories I've starred on GitHub.
+- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
 
