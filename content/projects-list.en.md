@@ -159,7 +159,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 ## ⚙️ GitHub Actions
 
 - **[harness-action](https://github.com/maxgfr/harness-action)** — Runs a coding agent (OpenCode, Codex, Pi, OpenClaw) in GitHub Actions, with any model and any skill. · [marketplace](https://github.com/marketplace/actions/harness-action)
-- **[starsmith](https://github.com/maxgfr/starsmith)** — Turns your GitHub stars into an awesome list sorted by AI, with a searchable site.
+- **[starsmith](https://github.com/maxgfr/starsmith)** — Turns your GitHub stars into an awesome list sorted by AI, with a searchable site. · [marketplace](https://github.com/marketplace/actions/starsmith-awesome-stars)
 - **[github-change-json](https://github.com/maxgfr/github-change-json)** — GitHub Action to change a value in a JSON file. · [marketplace](https://github.com/marketplace/actions/github-change-json)
 - **[github-commit-push-file](https://github.com/maxgfr/github-commit-push-file)** — GitHub Action to commit and push a file. · [marketplace](https://github.com/marketplace/actions/github-commit-push-file)
 - **[github-multi-deployments](https://github.com/maxgfr/github-multi-deployments)** — GitHub Action to manage deployments across environments. · [marketplace](https://github.com/marketplace/actions/github-multi-deployments)
@@ -175,7 +175,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🧩 Other
 
-- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith.
+- **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith. · [demo](https://maxgfr.github.io/awesome-stars/)
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
 

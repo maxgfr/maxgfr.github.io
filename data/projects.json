@@ -5851,8 +5851,11 @@
     {
       "name": "starsmith",
       "url": "https://github.com/maxgfr/starsmith",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://github.com/marketplace/actions/starsmith-awesome-stars",
+      "homeLabel": {
+        "fr": "marketplace",
+        "en": "marketplace"
+      },
       "desc": {
         "fr": "Transforme tes stars GitHub en awesome list triée par IA, avec un site de recherche.",
         "en": "Turns your GitHub stars into an awesome list sorted by AI, with a searchable site."
@@ -6172,8 +6175,11 @@
     {
       "name": "awesome-stars",
       "url": "https://github.com/maxgfr/awesome-stars",
-      "home": null,
-      "homeLabel": null,
+      "home": "https://maxgfr.github.io/awesome-stars/",
+      "homeLabel": {
+        "fr": "démo",
+        "en": "demo"
+      },
       "desc": {
         "fr": "Mes stars GitHub, triées et mises à jour chaque jour par starsmith.",
         "en": "My GitHub stars, sorted and rebuilt daily by starsmith."
