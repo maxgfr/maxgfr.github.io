@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 117 public repositories, totalling 355 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 119 public repositories, totalling 355 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -13,6 +13,7 @@ My 117 public repositories, totalling 355 stars — [github.com/maxgfr](https://
 - **[skills](https://github.com/maxgfr/skills)** — My agent skills, which change how an agent works. Install with `npx skills…
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Sourced Q&A and reference docs for any open source project, from its code…
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Evaluates a skill or codebase and returns sourced findings plus a fix backlog.
+- **[ultraguard](https://github.com/maxgfr/ultraguard)** — AI antivirus that checks whether the latest attacks hit your GitHub, machine…
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds, translates and checks every user-facing string in a repo, with cheap…
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a huge repo into an encyclopedia an AI can navigate.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a location into a sourced prospect list. No API keys.
@@ -153,4 +154,8 @@ My 117 public repositories, totalling 355 stars — [github.com/maxgfr](https://
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
+
+### 🆕 Uncategorized
+
+- **[regie](https://github.com/maxgfr/regie)** — A control room for watching several streams at once: Twitch, YouTube, Kick…
 

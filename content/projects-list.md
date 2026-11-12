@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 117 dépôts publics · ⭐ 355 étoiles**
+**📦 119 dépôts publics · ⭐ 355 étoiles**
 
 ---
 
@@ -16,6 +16,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un très gros dépôt en encyclopédie navigable par l'IA.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web sans clé d'API, livrée en rapport aux sources vérifiées.
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Agent d'audit de sécurité qui suit les failles entre fichiers et vérifie chaque constat.
+- **[ultraguard](https://github.com/maxgfr/ultraguard)** — Antivirus IA qui vérifie si les dernières attaques t'ont touché, sur GitHub, ta machine et ton cloud. · [site](https://www.skills.sh/maxgfr/ultraguard)
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Trouve, traduit et vérifie toutes les chaînes visibles d'un dépôt, avec des modèles bon marché.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu en liste de prospects sourcée. Sans clé d'API.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Permet à un agent de regarder des vidéos : transcriptions et images interrogeables, avec citations.
@@ -178,6 +179,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith. · [démo](https://maxgfr.github.io/awesome-stars/)
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Non classés
+
+- **[regie](https://github.com/maxgfr/regie)** — A control room for watching several streams at once: Twitch, YouTube, Kick, TikTok side by side, one on air, delays lined up, chats merged, sound away from ads. Static, anonymous. · [démo](https://maxgfr.github.io/regie/)
 
 ---
 

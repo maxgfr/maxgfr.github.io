@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 117 public repos · ⭐ 355 stars**
+**📦 119 public repos · ⭐ 355 stars**
 
 ---
 
@@ -16,6 +16,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a huge repo into an encyclopedia an AI can navigate.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Web research without API keys, delivered as a report with checked citations.
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Security audit agent that traces vulnerabilities across files and verifies each finding.
+- **[ultraguard](https://github.com/maxgfr/ultraguard)** — AI antivirus that checks whether the latest attacks hit your GitHub, machine or cloud. · [site](https://www.skills.sh/maxgfr/ultraguard)
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds, translates and checks every user-facing string in a repo, with cheap models.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a location into a sourced prospect list. No API keys.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Lets an agent watch videos: searchable transcripts and frames, with citations.
@@ -178,6 +179,12 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith. · [demo](https://maxgfr.github.io/awesome-stars/)
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Uncategorized
+
+- **[regie](https://github.com/maxgfr/regie)** — A control room for watching several streams at once: Twitch, YouTube, Kick, TikTok side by side, one on air, delays lined up, chats merged, sound away from ads. Static, anonymous. · [demo](https://maxgfr.github.io/regie/)
 
 ---
 

@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 117 dépôts publics, totalisant 355 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 119 dépôts publics, totalisant 355 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -13,6 +13,7 @@ Mes 117 dépôts publics, totalisant 355 étoiles — [github.com/maxgfr](https:
 - **[skills](https://github.com/maxgfr/skills)** — Mes skills d'agent, qui changent sa façon de travailler. Installation : `npx…
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence pour tout projet open…
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Évalue une skill ou un codebase et sort des constats sourcés avec un backlog…
+- **[ultraguard](https://github.com/maxgfr/ultraguard)** — Antivirus IA qui vérifie si les dernières attaques t'ont touché, sur GitHub…
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Trouve, traduit et vérifie toutes les chaînes visibles d'un dépôt, avec des…
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un très gros dépôt en encyclopédie navigable par l'IA.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu en liste de prospects sourcée. Sans clé d'API.
@@ -153,4 +154,8 @@ Mes 117 dépôts publics, totalisant 355 étoiles — [github.com/maxgfr](https:
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
+
+### 🆕 Non classés
+
+- **[regie](https://github.com/maxgfr/regie)** — A control room for watching several streams at once: Twitch, YouTube, Kick…
 
