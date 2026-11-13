@@ -2,18 +2,18 @@
 title = "Open-source projects"
 +++
 
-My 119 public repositories, totalling 355 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 119 public repositories, totalling 358 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
 - **[reconstruct](https://github.com/maxgfr/reconstruct)** — Analyzes a repo and writes the PRDs to rebuild it from scratch.
 - **[construct](https://github.com/maxgfr/construct)** — Turns a product idea into buildable specs (SRD/PRD).
+- **[ultraguard](https://github.com/maxgfr/ultraguard)** — AI antivirus that checks whether the latest attacks hit your GitHub, machine…
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Web research without API keys, delivered as a report with checked citations.
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Security audit agent that traces vulnerabilities across files and verifies…
 - **[skills](https://github.com/maxgfr/skills)** — My agent skills, which change how an agent works. Install with `npx skills…
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Sourced Q&A and reference docs for any open source project, from its code…
 - **[ultraeval](https://github.com/maxgfr/ultraeval)** — Evaluates a skill or codebase and returns sourced findings plus a fix backlog.
-- **[ultraguard](https://github.com/maxgfr/ultraguard)** — AI antivirus that checks whether the latest attacks hit your GitHub, machine…
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds, translates and checks every user-facing string in a repo, with cheap…
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a huge repo into an encyclopedia an AI can navigate.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a location into a sourced prospect list. No API keys.
@@ -46,10 +46,10 @@ My 119 public repositories, totalling 355 stars — [github.com/maxgfr](https://
 - **[andro](https://github.com/maxgfr/andro)** — Run Android apps from the macOS terminal on a disposable emulator (Rust).
 - **[manga-anim](https://github.com/maxgfr/manga-anim)** — Turns manga pages into narrated videos, locally on Apple Silicon (Rust).
 - **[web-watcher](https://github.com/maxgfr/web-watcher)** — Bash script that watches APIs and websites and notifies you on changes.
+- **[github-helpers](https://github.com/maxgfr/github-helpers)** — GitHub maintenance scripts: bulk unstar, org clone, fork cleanup and more.
 - **[snatch](https://github.com/maxgfr/snatch)** — Video downloader: yt-dlp first, browser extraction for stubborn sites.
 - **[subtool](https://github.com/maxgfr/subtool)** — All-in-one subtitle CLI: download, translate, convert, sync and more.
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Makes scanned PDFs and photos searchable and copyable with local OCR.
-- **[github-helpers](https://github.com/maxgfr/github-helpers)** — GitHub maintenance scripts: bulk unstar, org clone, fork cleanup and more.
 - **[otpx](https://github.com/maxgfr/otpx)** — Your 2FA codes in the terminal and the browser, encrypted and synced (Rust).
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Torrent ratio tool that talks to BitTorrent trackers.
 - **[rshc](https://github.com/maxgfr/rshc)** — Rust rewrite of SHC: compiles shell scripts into encrypted binaries.
@@ -65,6 +65,7 @@ My 119 public repositories, totalling 355 stars — [github.com/maxgfr](https://
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline app for your loyalty cards, encrypted.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first kanban, sprints and roadmap, with a git repo as backend.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Rental property ROI calculator.
+- **[regie](https://github.com/maxgfr/regie)** — Watch several streams at once (Twitch, YouTube, Kick…), no account.
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private…
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
 - **[amphi](https://github.com/maxgfr/amphi)** — Turn your lectures into summaries, quizzes and flashcards with AI.
@@ -88,7 +89,6 @@ My 119 public repositories, totalling 355 stars — [github.com/maxgfr](https://
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Desktop language learning app with an AI tutor.
 - **[pdfvault](https://github.com/maxgfr/pdfvault)** — PDF toolbox that never uploads your files: compress, merge, sign, OCR…
 - **[pixvault](https://github.com/maxgfr/pixvault)** — Photo toolbox that never uploads your photos, with on-device AI.
-- **[regie](https://github.com/maxgfr/regie)** — Watch several streams at once (Twitch, YouTube, Kick…), no account.
 - **[sealbin](https://github.com/maxgfr/sealbin)** — Encrypted pastebin in the browser, no account.
 - **[sealoffice](https://github.com/maxgfr/sealoffice)** — Encrypted Word, Excel and PowerPoint editor in the browser.
 - **[siphon](https://github.com/maxgfr/siphon)** — Video downloader in the browser: paste a link, get the file.

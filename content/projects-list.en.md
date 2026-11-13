@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 119 public repos · ⭐ 355 stars**
+**📦 119 public repos · ⭐ 358 stars**
 
 ---
 
@@ -16,7 +16,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a huge repo into an encyclopedia an AI can navigate.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Web research without API keys, delivered as a report with checked citations.
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Security audit agent that traces vulnerabilities across files and verifies each finding.
-- **[ultraguard](https://github.com/maxgfr/ultraguard)** — AI antivirus that checks whether the latest attacks hit your GitHub, machine or cloud. · [site](https://www.skills.sh/maxgfr/ultraguard)
+- **[ultraguard](https://github.com/maxgfr/ultraguard)** — AI antivirus that checks whether the latest attacks hit your GitHub, machine or cloud.
 - **[ultrai18n](https://github.com/maxgfr/ultrai18n)** — Finds, translates and checks every user-facing string in a repo, with cheap models.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a location into a sourced prospect list. No API keys.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Lets an agent watch videos: searchable transcripts and frames, with citations.
