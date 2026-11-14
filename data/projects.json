@@ -1070,7 +1070,7 @@
         "dlp"
       ],
       "created": "2026-07",
-      "pushed": "2026-10",
+      "pushed": "2026-11",
       "license": "MIT",
       "poke": {
         "type1": "dark",
@@ -1690,7 +1690,7 @@
       "dex": 31,
       "dexLabel": "031",
       "stars": 52,
-      "forks": 3,
+      "forks": 4,
       "language": "Rust",
       "topics": [
         "brute-force",
