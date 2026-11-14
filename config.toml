@@ -103,6 +103,7 @@ fairy = { fr = "Fée", en = "Fairy", icon = "✨" }
 [extra.cv]
 github = "https://github.com/maxgfr"
 linkedin = "https://www.linkedin.com/in/maxime-golfier/"
+huggingface = "https://huggingface.co/maxgfr"
 # The site's own address, spelled out rather than taken from `base_url`:
 # render-cv-pdf.mjs builds against a loopback base_url (see the comment in that
 # script), so `config.base_url` would bake http://127.0.0.1:PORT into the link

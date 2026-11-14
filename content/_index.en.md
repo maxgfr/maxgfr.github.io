@@ -24,6 +24,7 @@ Passionate about open source, I design and share open solutions, with a strong c
 
 - **GitHub**: [maxgfr](https://github.com/maxgfr)
 - **LinkedIn**: [Maxime Golfier](https://www.linkedin.com/in/maxime-golfier/)
+- **Hugging Face**: [maxgfr](https://huggingface.co/maxgfr)
 
 ---
 

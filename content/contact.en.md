@@ -26,3 +26,4 @@ You have an idea? A technical challenge? An exciting opportunity? I'm always ope
 
 - **GitHub**: [maxgfr](https://github.com/maxgfr)
 - **LinkedIn**: [Maxime Golfier](https://www.linkedin.com/in/maxime-golfier/)
+- **Hugging Face**: [maxgfr](https://huggingface.co/maxgfr)

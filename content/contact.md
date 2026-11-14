@@ -26,3 +26,4 @@ Vous avez une idée ? Un défi technique ? Une opportunité passionnante ? Je su
 
 - **GitHub** : [maxgfr](https://github.com/maxgfr)
 - **LinkedIn** : [Maxime Golfier](https://www.linkedin.com/in/maxime-golfier/)
+- **Hugging Face** : [maxgfr](https://huggingface.co/maxgfr)

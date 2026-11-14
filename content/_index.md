@@ -24,6 +24,7 @@ Passionné par l'open source, je conçois et partage des solutions ouvertes, ave
 
 - **GitHub** : [maxgfr](https://github.com/maxgfr)
 - **LinkedIn** : [Maxime Golfier](https://www.linkedin.com/in/maxime-golfier/)
+- **Hugging Face** : [maxgfr](https://huggingface.co/maxgfr)
 
 ---
 
