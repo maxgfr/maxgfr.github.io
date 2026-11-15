@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 119 dépôts publics · ⭐ 359 étoiles**
+**📦 120 dépôts publics · ⭐ 359 étoiles**
 
 ---
 
@@ -92,6 +92,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[goodscan](https://github.com/maxgfr/goodscan)** — Scanner ouvert et sourcé d'aliments et cosmétiques, à la Yuka : un code-barres, une note vérifiable. · [démo](https://maxgfr.github.io/goodscan/)
 - **[medoc-ai](https://github.com/maxgfr/medoc-ai)** — Scanne une boîte de médicament et lis sa notice officielle, même hors ligne, avec IA en option. · [démo](https://maxgfr.github.io/medoc-ai/)
 - **[spots](https://github.com/maxgfr/spots)** — Carnet de lieux sur carte, à la Mapstr, entièrement dans le navigateur. · [démo](https://maxgfr.github.io/spots/)
+- **[ways](https://github.com/maxgfr/ways)** — Carte pour se déplacer, à la Google Maps, sur données ouvertes : transports, vélo, à pied, même hors ligne. · [démo](https://maxgfr.github.io/ways/)
 - **[sealbin](https://github.com/maxgfr/sealbin)** — Pastebin chiffré dans le navigateur, sans compte. · [démo](https://maxgfr.github.io/sealbin/)
 - **[cursus](https://github.com/maxgfr/cursus)** — Appli de révision : explications IA depuis tes sources, flashcards et quiz. · [démo](https://maxgfr.github.io/cursus/)
 - **[amphi](https://github.com/maxgfr/amphi)** — Transforme tes cours en résumés, quiz et flashcards avec l'IA. · [démo](https://maxgfr.github.io/amphi/)

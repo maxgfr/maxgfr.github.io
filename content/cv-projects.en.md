@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 119 public repositories, totalling 359 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 120 public repositories, totalling 359 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -104,6 +104,7 @@ My 119 public repositories, totalling 359 stars — [github.com/maxgfr](https://
 - **[unmark](https://github.com/maxgfr/unmark)** — Removes watermarks from text and images, in the browser.
 - **[veil](https://github.com/maxgfr/veil)** — Private P2P rooms for chat, files and calls, end-to-end encrypted.
 - **[verbatim](https://github.com/maxgfr/verbatim)** — Transcribe and edit audio and video in the browser, nothing uploaded.
+- **[ways](https://github.com/maxgfr/ways)** — Map to get around, Google Maps-style, on open data: transit, bike, walking…
 
 ### 🔌 Chrome extensions
 

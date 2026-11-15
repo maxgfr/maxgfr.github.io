@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 119 dépôts publics, totalisant 359 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 120 dépôts publics, totalisant 359 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -104,6 +104,7 @@ Mes 119 dépôts publics, totalisant 359 étoiles — [github.com/maxgfr](https:
 - **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks des textes et images, dans le navigateur.
 - **[veil](https://github.com/maxgfr/veil)** — Salles privées P2P pour chat, fichiers et appels, chiffrées de bout en bout.
 - **[verbatim](https://github.com/maxgfr/verbatim)** — Transcris et monte audio et vidéo dans le navigateur, sans rien envoyer.
+- **[ways](https://github.com/maxgfr/ways)** — Carte pour se déplacer, à la Google Maps, sur données ouvertes : transports…
 
 ### 🔌 Extensions Chrome
 
