@@ -1,0 +1,23 @@
+{#
+  figure: an image with an optional caption, for articles. A Tera component
+  (Zola 0.23 replaced shortcodes with them), registered globally, so a page's
+  Markdown calls it with no import:
+
+    {{ <figure src="/articles/<slug>/diagram.svg" alt="What the image shows" caption="Figure 1. A *short* caption." width={320} height={120} /> }}
+
+  src      required. A path under static/ (it goes through get_url, so the feed
+           gets an absolute URL too) or a full http(s) URL.
+  alt      required. What the image says, for readers who cannot see it; "" only
+           for a purely decorative image.
+  caption  optional. Inline Markdown (emphasis, links, code).
+  width, height  optional, integers in braces. The image's intrinsic size in
+           pixels, so the text does not jump while it loads.
+#}
+{% component figure(src: string, alt: string, caption: string = "", width: integer = 0, height: integer = 0) -%}
+{%- if "://" in src -%}
+{%- set figure_src = src -%}
+{%- else -%}
+{%- set figure_src = get_url(path=src) -%}
+{%- endif -%}
+<figure class="article-figure"><img src="{{ figure_src }}" alt="{{ alt }}" loading="lazy" decoding="async"{% if width %} width="{{ width }}"{% endif %}{% if height %} height="{{ height }}"{% endif %}>{% if caption %}<figcaption>{{ caption | markdown(inline=true) | safe }}</figcaption>{% endif %}</figure>
+{%- endcomponent figure %}

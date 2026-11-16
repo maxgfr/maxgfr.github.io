@@ -1,0 +1,24 @@
+{#
+  note: a callout set apart from the text (a definition, an aside, a caveat), for
+  articles. A Tera component (Zola 0.23 replaced shortcodes with them), used in
+  its block form; the body is Markdown:
+
+    {% <note title="Good to know"> %}
+    Body in **Markdown**, over as many paragraphs as needed.
+    {% </note> %}
+
+  title  optional. A short label shown above the body. Not a heading, so it stays
+         out of the table of contents and the document outline.
+
+  The blank lines around {{ body }} matter: the page is templated before its
+  Markdown is rendered, and they end the <aside> HTML block so the body is read
+  as Markdown with the rest of the page (footnote references in it work too).
+#}
+{% component note(title: string = "") %}
+<aside class="note"{% if title %} aria-label="{{ title }}"{% endif %}>
+{% if title %}<p class="note-title">{{ title }}</p>{% endif %}
+
+{{ body | safe }}
+
+</aside>
+{% endcomponent note %}

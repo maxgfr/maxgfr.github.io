@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{#
+  The /articles section (content/articles/_index.md and _index.en.md): every
+  published article of the page's language, newest first (the section sorts by
+  date). Drafts are left out by Zola itself unless the build runs with --drafts.
+  Articles render with templates/article.html, set as the section's page_template.
+#}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ get_url(path='css/articles.css') }}">
+{% if section.description %}<meta name="description" content="{{ section.description }}">{% endif %}
+{% endblock extra_head %}
+
+{% block content %}
+{% if section.lang == "en" %}
+{% set label_read = "min read" %}
+{% set label_empty = "No articles yet." %}
+{% set date_locale = "en-GB" %}
+{% else %}
+{% set label_read = "min de lecture" %}
+{% set label_empty = "Pas encore d’article." %}
+{% set date_locale = "fr-FR" %}
+{% endif %}
+<section class="content-section articles">
+    <h1>{{ section.title }}</h1>
+    {{ section.content | safe }}
+
+    {% if section.pages %}
+    <ul class="article-list">
+        {% for article in section.pages %}
+        <li class="article-item">
+            <h2 class="article-item-title"><a href="{{ article.permalink }}">{{ article.title }}</a></h2>
+            <p class="article-meta">
+                <time datetime="{{ article.date }}">{{ article.date | date(format="d MMMM y", locale=date_locale) }}</time>
+                · {{ article.reading_time }} {{ label_read }}
+            </p>
+            {% if article.description %}
+            <p class="article-item-summary">{{ article.description }}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="article-empty">{{ label_empty }}</p>
+    {% endif %}
+</section>
+{% endblock content %}

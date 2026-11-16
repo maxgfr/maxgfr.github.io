@@ -8,8 +8,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
+        {# The feed of the page's language: Zola writes atom.xml (feed_filenames'
+           default), /atom.xml for French and /en/atom.xml for English; the old
+           link pointed at an rss.xml that no build ever produced. #}
         {% block rss %}
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml', trailing_slash=false) }}">
+        <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{% if lang == config.default_language %}{{ get_url(path='atom.xml', trailing_slash=false) }}{% else %}{{ get_url(path='atom.xml', lang=lang, trailing_slash=false) }}{% endif %}">
         {% endblock %}
         {# `page` is undefined on sections and on the 404, and Zola 0.23 raises on
            reaching through an undefined variable instead of treating it as falsy. #}

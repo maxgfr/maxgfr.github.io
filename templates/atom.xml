@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{#
+  Shadows the theme's atom.xml, which listed the pages of the French root section
+  (get_section("_index.md")) whatever feed it rendered, so /en/atom.xml would have
+  carried French entries. This one lists `pages`, which Zola fills per feed: the
+  pages of the feed's language (or of the section, or of the tag), drafts left
+  out. Only dated pages are entries, and on this site only articles carry a date.
+  Every value goes through escape_xml | safe, so it is escaped exactly once
+  whether or not the engine autoescapes .xml templates.
+#}
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ lang }}">
+    <title>{{ config.title | escape_xml | safe }}{% if term %} - {{ term.name | escape_xml | safe }}{% elif section and section.title %} - {{ section.title | escape_xml | safe }}{% endif %}</title>
+    {% if config.description %}<subtitle>{{ config.description | escape_xml | safe }}</subtitle>{% endif %}
+    <link rel="self" type="application/atom+xml" href="{{ feed_url | escape_xml | safe }}"/>
+    <link rel="alternate" type="text/html" href="{% if section %}{{ section.permalink | escape_xml | safe }}{% else %}{{ get_url(path='@/_index.md', lang=lang) | escape_xml | safe }}{% endif %}"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>{% if last_updated %}{{ last_updated | date(format="%Y-%m-%dT%H:%M:%S%:z") }}{% else %}{{ now() | date(format="%Y-%m-%dT%H:%M:%S%:z") }}{% endif %}</updated>
+    <id>{{ feed_url | escape_xml | safe }}</id>
+    {% for page in pages %}
+    {% if page.date %}
+    <entry xml:lang="{{ page.lang }}">
+        <title>{{ page.title | escape_xml | safe }}</title>
+        <published>{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}</published>
+        <updated>{% if page.updated %}{{ page.updated | date(format="%Y-%m-%dT%H:%M:%S%:z") }}{% else %}{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}{% endif %}</updated>
+        <author><name>{{ config.extra.author | escape_xml | safe }}</name></author>
+        <link rel="alternate" type="text/html" href="{{ page.permalink | escape_xml | safe }}"/>
+        <id>{{ page.permalink | escape_xml | safe }}</id>
+        {% if page.description %}<summary>{{ page.description | escape_xml | safe }}</summary>{% endif %}
+        <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content | escape_xml | safe }}</content>
+    </entry>
+    {% endif %}
+    {% endfor %}
+</feed>

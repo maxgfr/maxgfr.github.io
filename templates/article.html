@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{#
+  One article (content/articles/<slug>.md and <slug>.en.md), set as the
+  page_template of content/articles/_index*.md.
+
+  Front matter it reads: title, date, description (the one-line summary, also the
+  meta description), updated (optional), extra.toc (true for a table of contents
+  built from the ## and ### headings).
+
+  Two passes over the rendered Markdown, both plain string replacements:
+  - every <table> is wrapped in a focusable, labelled scroll box, so a wide table
+    scrolls sideways on a phone (by keyboard too) instead of widening the page;
+  - the header cells of Markdown tables get scope="col". Markdown only has column
+    headers, and it writes them as `<th>` or `<th style="text-align: …">`; a <th>
+    already carrying attributes of its own (raw HTML) is left alone, except for
+    a style one.
+#}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ get_url(path='css/articles.css') }}">
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+{% endblock extra_head %}
+
+{% block content %}
+{% if page.lang == "en" %}
+{% set label_read = "min read" %}
+{% set label_updated = "updated" %}
+{% set label_toc = "Contents" %}
+{% set label_table = "Table (scrolls sideways)" %}
+{% set label_other = "Lire cet article en français" %}
+{% set date_locale = "en-GB" %}
+{% else %}
+{% set label_read = "min de lecture" %}
+{% set label_updated = "mis à jour le" %}
+{% set label_toc = "Sommaire" %}
+{% set label_table = "Tableau (défile horizontalement)" %}
+{% set label_other = "Read this article in English" %}
+{% set date_locale = "fr-FR" %}
+{% endif %}
+
+{% set body = page.content
+    | replace(from="<table>", to='<div class="table-scroll" role="region" tabindex="0" aria-label="' ~ label_table ~ '"><table>')
+    | replace(from="</table>", to="</table></div>")
+    | replace(from="<th>", to='<th scope="col">')
+    | replace(from='<th style=', to='<th scope="col" style=') %}
+
+<article class="post article">
+    <header class="post-header article-header">
+        <h1>{{ page.title }}</h1>
+        <p class="article-meta">
+            {% if page.date %}
+            <time datetime="{{ page.date }}">{{ page.date | date(format="d MMMM y", locale=date_locale) }}</time> ·
+            {% endif %}
+            {{ page.reading_time }} {{ label_read }}
+            {% if page.updated %}
+            · {{ label_updated }} <time datetime="{{ page.updated }}">{{ page.updated | date(format="d MMMM y", locale=date_locale) }}</time>
+            {% endif %}
+        </p>
+        {% if page.description %}
+        <p class="article-lede">{{ page.description }}</p>
+        {% endif %}
+    </header>
+
+    {% if page.extra.toc and page.toc %}
+    <nav class="article-toc" aria-labelledby="article-toc-title">
+        <h2 id="article-toc-title">{{ label_toc }}</h2>
+        <ol>
+            {% for h in page.toc %}
+            <li>
+                <a href="#{{ h.id }}">{{ h.title }}</a>
+                {% if h.children %}
+                <ol>
+                    {% for sub in h.children %}
+                    <li><a href="#{{ sub.id }}">{{ sub.title }}</a></li>
+                    {% endfor %}
+                </ol>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </nav>
+    {% endif %}
+
+    <div class="post-content article-body">
+        {{ body | safe }}
+    </div>
+
+    {% for translation in page.translations %}
+    {% if translation.lang != page.lang %}
+    <p class="article-other-lang">
+        <a href="{{ translation.permalink }}" hreflang="{{ translation.lang }}" lang="{{ translation.lang }}">{{ label_other }} →</a>
+    </p>
+    {% endif %}
+    {% endfor %}
+</article>
+{% endblock content %}

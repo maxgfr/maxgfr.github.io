@@ -1,0 +1,261 @@
+/* The /articles section: the list (templates/articles.html) and each article
+   (templates/article.html, the components in templates/components/). Loaded by those two
+   templates only, so nothing here reaches the rest of the site.
+
+   Colours are the theme's variables (suCSS: --bg, --bg-light, --text,
+   --text-light, --accent, --border, --link), so light, dark and the manual toggle
+   come for free. Small text uses --text-light, never --accent, which is under
+   4.5:1 on the light background. */
+
+.article {
+  /* Long-form prose reads more easily in the theme's own sans stack than in the
+     site-wide monospace; headings, metadata, code and tables stay monospace.
+     Set this to var(--mono-font) to keep articles all-mono like the rest. */
+  --article-font: var(--sans-font);
+  /* About 70 characters per line of body text. */
+  --article-measure: 68ch;
+}
+
+/* ---- List ---------------------------------------------------------------- */
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.article-list li::marker,
+.article-list li:hover::marker {
+  content: none;
+}
+
+.article-item {
+  margin: 0 0 1.75rem;
+}
+
+.article-item-title {
+  font-size: 1.25rem;
+  margin: 0 0 .25rem;
+}
+
+.article-item-title::before {
+  content: none;
+}
+
+.article-item-summary {
+  margin: .25rem 0 0;
+}
+
+.article-meta {
+  margin: .25rem 0;
+  color: var(--text-light);
+  font-size: .875rem;
+}
+
+/* ---- Article ------------------------------------------------------------- */
+
+.article-header {
+  margin-bottom: 1.5rem;
+}
+
+.article-lede {
+  max-width: var(--article-measure);
+  font-family: var(--article-font);
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: var(--text-light);
+}
+
+.article-body {
+  max-width: var(--article-measure);
+}
+
+.article-body :is(p, li, blockquote, dd, dt) {
+  font-family: var(--article-font);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+/* Inline code keeps its own (monospace, smaller) face inside sans prose. */
+.article-body :is(p, li) code {
+  font-size: .9em;
+}
+
+.article-body h2 {
+  margin-top: 2.25rem;
+}
+
+.article-body h3 {
+  margin-top: 1.75rem;
+}
+
+/* A heading reached from the table of contents or a footnote link is not
+   tucked under the top edge. */
+.article :is(h2, h3, h4)[id],
+.article .footnotes li[id],
+.article sup[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+.article-body pre {
+  margin: 1.25rem 0;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.article-body blockquote {
+  margin: 1.25rem 0 1.25rem 1.25rem;
+}
+
+/* ---- Table of contents --------------------------------------------------- */
+
+.article-toc {
+  max-width: var(--article-measure);
+  margin: 0 0 2rem;
+  padding: .75rem 1rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--standard-border-radius);
+}
+
+.article-toc h2 {
+  font-size: 1rem;
+  margin: 0 0 .5rem;
+}
+
+.article-toc ol {
+  margin: 0;
+  padding-inline-start: 1.5rem;
+}
+
+.article-toc ol ol {
+  padding-inline-start: 1.25rem;
+}
+
+/* The site's links show focus only by the browser default; make it plain here,
+   where the list is a jump menu used from the keyboard. */
+.article :is(a, .table-scroll):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---- Tables -------------------------------------------------------------- */
+
+/* templates/article.html wraps every table in .table-scroll. The box scrolls;
+   the table goes back to a real table (suCSS makes every table a scrolling
+   block, which some screen readers stop announcing as a table) and back to
+   wrapping its cells' text where they need it. */
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.table-scroll table {
+  display: table;
+  margin: 0;
+  white-space: normal;
+  min-width: 100%;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.table-scroll th,
+.table-scroll td {
+  vertical-align: top;
+}
+
+.table-scroll th {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 720px) {
+  .table-scroll table {
+    white-space: nowrap;
+  }
+}
+
+/* ---- Figures (component `figure`) ---------------------------------------- */
+
+.article-figure {
+  margin: 1.75rem 0;
+  overflow: visible;
+}
+
+.article-figure img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.article-figure figcaption {
+  margin: .5rem 0 0;
+  text-align: center;
+}
+
+/* ---- Callouts (component `note`) ----------------------------------------- */
+
+/* suCSS floats every <aside> into a 35% side column; a callout spans the text. */
+.article-body aside.note {
+  float: none;
+  width: auto;
+  margin: 1.5rem 0;
+  padding: .75rem 1rem;
+  border: 1px dashed var(--border);
+  border-inline-start: .375rem solid var(--accent);
+  border-radius: var(--standard-border-radius);
+  /* Same background as the page: --bg-light would drop the links' contrast. */
+  background-color: transparent;
+}
+
+.article-body aside.note > :first-child {
+  margin-top: 0;
+}
+
+.article-body aside.note > :last-child {
+  margin-bottom: 0;
+}
+
+.article-body .note-title {
+  font-family: var(--mono-font);
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+/* ---- Footnotes (markdown.bottom_footnotes) ------------------------------- */
+
+.article-body .footnotes {
+  margin-top: 2.5rem;
+  padding-top: .5rem;
+  border-top: 1px dashed var(--accent);
+  color: var(--text-light);
+}
+
+.article-body .footnotes :is(p, li) {
+  font-size: .9375rem;
+  line-height: 1.55;
+}
+
+.article-body .footnote-reference a {
+  padding: 0 .1em;
+}
+
+/* ---- Link to the other language ------------------------------------------ */
+
+.article-other-lang {
+  max-width: var(--article-measure);
+  margin: 2.5rem 0 0;
+  padding-top: .75rem;
+  border-top: 1px dashed var(--accent);
+  font-size: .9375rem;
+}
+
+@media print {
+  .article-toc,
+  .article-other-lang {
+    display: none;
+  }
+
+  .table-scroll {
+    overflow: visible;
+  }
+}

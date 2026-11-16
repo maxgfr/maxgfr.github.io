@@ -21,6 +21,9 @@ description = "Ingénieur IT - Développeur Logiciel Indépendant, CTO, et Archi
 
 [languages.en]
 build_search_index = true
+# The top-level generate_feeds only covers the default language (fr, /atom.xml);
+# each other language opts in on its own (/en/atom.xml). Feed layout: templates/atom.xml.
+generate_feeds = true
 title = "Maxime Golfier"
 description = "IT Engineer - Independent Software Developer, CTO, and IT Solutions Architect. Building innovative solutions and systems architecture."
 
@@ -28,6 +31,9 @@ description = "IT Engineer - Independent Software Developer, CTO, and IT Solutio
 render_emoji = true
 external_links_target_blank = true
 smart_punctuation = true
+# Footnotes gather at the end of the page with a link back to each reference,
+# instead of sitting where they are defined (used by content/articles/).
+bottom_footnotes = true
 
 [slugify]
 paths = "on"
@@ -52,6 +58,7 @@ header_nav = [
   { url = "/education", name_en = "/education", name_fr = "/formation", short_en = "/lvl", short_fr = "/lvl" },
   { url = "/skills", name_en = "/skills", name_fr = "/compétences", short_en = "/++", short_fr = "/++" },
   { url = "/projects", name_en = "/projects", name_fr = "/projets", short_en = "/oss", short_fr = "/oss" },
+  { url = "/articles", name_en = "/articles", name_fr = "/articles", short_en = "/txt", short_fr = "/txt" },
   { url = "/cv", name_en = "/cv", name_fr = "/cv", short_en = "/cv", short_fr = "/cv" },
   { url = "/contact", name_en = "/contact", name_fr = "/contact", short_en = "/@", short_fr = "/@" }
 ]

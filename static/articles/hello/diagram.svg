@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" role="img">
+  <!-- Placeholder figure for the draft article content/articles/hello*.md: three
+       boxes and two arrows, drawn on its own light card so it reads on both themes. -->
+  <rect width="320" height="120" rx="12" fill="#f6f6f6"/>
+  <g fill="none" stroke="#41474e" stroke-width="2">
+    <rect x="20" y="40" width="70" height="40" rx="6"/>
+    <rect x="125" y="40" width="70" height="40" rx="6"/>
+    <rect x="230" y="40" width="70" height="40" rx="6"/>
+    <path d="M90 60h28m-7-6 7 6-7 6M195 60h28m-7-6 7 6-7 6"/>
+  </g>
+  <g font-family="Menlo, Consolas, monospace" font-size="14" fill="#41474e" text-anchor="middle">
+    <text x="55" y="65">A</text>
+    <text x="160" y="65">B</text>
+    <text x="265" y="65">C</text>
+  </g>
+</svg>
