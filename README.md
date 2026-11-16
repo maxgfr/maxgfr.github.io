@@ -106,6 +106,12 @@ and `/en/atom.xml` (only dated pages are entries, and only articles carry a date
 
    `alt` is required (`""` only for a decorative image); `caption`, `width`, `height` and
    `title` are optional. Numbers go in braces, strings in double quotes.
+
+   A chart or diagram that should follow the light/dark theme goes through
+   `{{ <inline_svg src="/articles/<slug>/chart.svg" caption="Figure 1. …" /> }}` instead: the
+   SVG is written into the page, so it can draw with `currentColor` and `var(--accent)`. It
+   names itself (`role="img"`, a `<title>` and a `<desc>` referenced by `aria-labelledby`) and
+   must hold no blank line; see `templates/components/inline_svg.html`.
 5. Every page is a Tera template since Zola 0.23: literal `{{` or `{%` in the text or in a
    code block must be wrapped in `{% raw %}…{% endraw %}`.
 6. Preview drafts with `zola serve --drafts`; a draft is in no build without `--drafts`

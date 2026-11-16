@@ -1,0 +1,21 @@
+{#
+  inline_svg: an SVG file from static/ written into the page itself, with an
+  optional caption, for charts and diagrams that follow the theme. An SVG shown
+  through <img> (the figure component) is a separate document: it cannot read
+  the page's colours, so it looks the same in light and dark. Inlined, it can
+  draw with currentColor and the theme's variables (fill: var(--accent)), and
+  the light/dark toggle reaches it.
+
+    {{ <inline_svg src="/articles/<slug>/chart.svg" caption="Figure 1. A *short* caption." /> }}
+
+  src      required. A path under static/, with its leading slash.
+  caption  optional. Inline Markdown (emphasis, links, code).
+
+  The SVG carries its own accessible name: role="img" and a <title> (plus a
+  <desc> holding the data, for a chart) referenced by aria-labelledby. Its ids
+  must be unique within the page, and it must hold no blank line, or the
+  Markdown renderer ends the HTML block in the middle of it.
+#}
+{% component inline_svg(src: string, caption: string = "") -%}
+<figure class="article-figure article-figure-inline">{{ load_data(path="static" ~ src, format="plain") | safe }}{% if caption %}<figcaption>{{ caption | markdown(inline=true) | safe }}</figcaption>{% endif %}</figure>
+{%- endcomponent inline_svg %}

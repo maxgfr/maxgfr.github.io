@@ -83,7 +83,15 @@
             {% set lang_prefix = '/en' %}
             {% endif %}
             
+            {# The articles entry shows only once the section holds a published article. #}
+            {% set articles_index = 'articles/_index.md' %}
+            {% if current_lang == 'en' %}
+            {% set articles_index = 'articles/_index.en.md' %}
+            {% endif %}
+            {% set articles_section = get_section(path=articles_index) %}
+
             {% for nav_item in config.extra.header_nav %}
+            {% if nav_item.url != '/articles' or articles_section.pages | length > 0 %}
             <a href="{{ lang_prefix }}{{ nav_item.url }}" class="nav-link {% if current_url is defined and lang_prefix ~ nav_item.url == current_url %}active{% endif %}">
                 {% set language_key = 'name_' ~ current_lang %}
                 {% set short_key = 'short_' ~ current_lang %}
@@ -92,6 +100,7 @@
                 <span class="nav-full">{{ full_name }}</span>
                 <span class="nav-short">{{ short_name }}</span>
             </a>
+            {% endif %}
             {% endfor %}
 
             {% if current_lang == 'en' %}
