@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 120,
-    "stars": 360
+    "stars": 359
   },
   "languages": [
     {
@@ -1689,7 +1689,7 @@
       "cat": 2,
       "dex": 31,
       "dexLabel": "031",
-      "stars": 53,
+      "stars": 52,
       "forks": 4,
       "language": "Rust",
       "topics": [
