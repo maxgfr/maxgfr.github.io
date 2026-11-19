@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 120 public repositories, totalling 360 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 120 public repositories, totalling 361 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -63,9 +63,9 @@ My 120 public repositories, totalling 360 stars — [github.com/maxgfr](https://
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Tournament engine for any sport: brackets, leagues, groups, Elo. In the…
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Leboncoin scraper using the Chrome DevTools Protocol, no Puppeteer.
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline app for your loyalty cards, encrypted.
+- **[regie](https://github.com/maxgfr/regie)** — Watch several streams at once (Twitch, YouTube, Kick…), no account.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first kanban, sprints and roadmap, with a git repo as backend.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Rental property ROI calculator.
-- **[regie](https://github.com/maxgfr/regie)** — Watch several streams at once (Twitch, YouTube, Kick…), no account.
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private…
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
 - **[amphi](https://github.com/maxgfr/amphi)** — Turn your lectures into summaries, quizzes and flashcards with AI.

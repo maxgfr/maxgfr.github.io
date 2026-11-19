@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 120,
-    "stars": 360
+    "stars": 361
   },
   "languages": [
     {
@@ -2761,7 +2761,7 @@
       "cat": 3,
       "dex": 51,
       "dexLabel": "051",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -2780,18 +2780,18 @@
       "poke": {
         "type1": "electric",
         "type2": "water",
-        "hp": 80,
-        "level": 15,
-        "rarity": "common",
+        "hp": 90,
+        "level": 17,
+        "rarity": "uncommon",
         "weakness": "ground",
         "moves": [
           {
             "name": "kick",
-            "dmg": 50
+            "dmg": 60
           },
           {
             "name": "multistream",
-            "dmg": 60
+            "dmg": 70
           }
         ],
         "sprite": [

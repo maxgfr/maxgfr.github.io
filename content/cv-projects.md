@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 120 dépôts publics, totalisant 360 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 120 dépôts publics, totalisant 361 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -63,9 +63,9 @@ Mes 120 dépôts publics, totalisant 360 étoiles — [github.com/maxgfr](https:
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois pour tout sport : brackets, ligues, poules, Elo. Dans le…
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin via le Chrome DevTools Protocol, sans Puppeteer.
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Appli hors ligne et chiffrée pour tes cartes de fidélité.
+- **[regie](https://github.com/maxgfr/regie)** — Regarde plusieurs streams à la fois (Twitch, YouTube, Kick…), sans compte.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Kanban, sprints et roadmap local-first, avec un dépôt git comme backend.
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité locative.
-- **[regie](https://github.com/maxgfr/regie)** — Regarde plusieurs streams à la fois (Twitch, YouTube, Kick…), sans compte.
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour où les tâches non finies attendent ta décision. Privée, hors…
 - **[agora](https://github.com/maxgfr/agora)** — Sondages anonymes et chiffrés : une personne, une voix. Sans serveur.
 - **[amphi](https://github.com/maxgfr/amphi)** — Transforme tes cours en résumés, quiz et flashcards avec l'IA.
