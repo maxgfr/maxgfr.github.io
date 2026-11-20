@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 120,
-    "stars": 361
+    "stars": 362
   },
   "languages": [
     {
@@ -1056,7 +1056,7 @@
       "cat": 1,
       "dex": 19,
       "dexLabel": "019",
-      "stars": 3,
+      "stars": 4,
       "forks": 0,
       "language": "JavaScript",
       "topics": [
@@ -1075,8 +1075,8 @@
       "poke": {
         "type1": "dark",
         "type2": "electric",
-        "hp": 150,
-        "level": 30,
+        "hp": 160,
+        "level": 32,
         "rarity": "uncommon",
         "weakness": "fighting",
         "moves": [
