@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 120,
-    "stars": 362
+    "stars": 365
   },
   "languages": [
     {
@@ -1585,7 +1585,7 @@
       "cat": 1,
       "dex": 29,
       "dexLabel": "029",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "Rust",
       "topics": [
@@ -1604,18 +1604,18 @@
       "poke": {
         "type1": "dragon",
         "type2": "fire",
-        "hp": 120,
-        "level": 24,
+        "hp": 140,
+        "level": 28,
         "rarity": "common",
         "weakness": "ice",
         "moves": [
           {
             "name": "decision model",
-            "dmg": 10
+            "dmg": 20
           },
           {
             "name": "drone",
-            "dmg": 10
+            "dmg": 20
           }
         ],
         "sprite": [
@@ -1637,7 +1637,7 @@
       "cat": 2,
       "dex": 30,
       "dexLabel": "030",
-      "stars": 2,
+      "stars": 3,
       "forks": 1,
       "language": "Rust",
       "topics": [
@@ -1656,18 +1656,18 @@
       "poke": {
         "type1": "ghost",
         "type2": "fire",
-        "hp": 140,
-        "level": 31,
+        "hp": 150,
+        "level": 32,
         "rarity": "uncommon",
         "weakness": "dark",
         "moves": [
           {
             "name": "aab",
-            "dmg": 40
+            "dmg": 50
           },
           {
             "name": "adb",
-            "dmg": 30
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -2706,7 +2706,7 @@
       "cat": 3,
       "dex": 50,
       "dexLabel": "050",
-      "stars": 2,
+      "stars": 3,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -2725,18 +2725,18 @@
       "poke": {
         "type1": "fighting",
         "type2": "water",
-        "hp": 160,
-        "level": 32,
+        "hp": 170,
+        "level": 34,
         "rarity": "uncommon",
         "weakness": "psychic",
         "moves": [
           {
             "name": "bracket",
-            "dmg": 80
+            "dmg": 90
           },
           {
             "name": "elimination bracket",
-            "dmg": 60
+            "dmg": 70
           }
         ],
         "sprite": [
