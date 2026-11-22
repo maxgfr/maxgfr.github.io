@@ -70,6 +70,7 @@ My 122 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
 - **[amphi](https://github.com/maxgfr/amphi)** — Turn your lectures into summaries, quizzes and flashcards with AI.
 - **[aparte](https://github.com/maxgfr/aparte)** — Private, encrypted AI chat in the browser, with your keys or local models.
+- **[apercura](https://github.com/maxgfr/apercura)** — A free page and free booking for every health practitioner in France, open…
 - **[basilico](https://github.com/maxgfr/basilico)** — Pomodoro timer with tasks and stats, as a PWA and Chrome extension. No…
 - **[cadence](https://github.com/maxgfr/cadence)** — Training log for any sport, on your phone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — AI calorie tracker: describe, snap or say a meal and get calories and macros…
@@ -157,8 +158,4 @@ My 122 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
-
-### 🆕 Uncategorized
-
-- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking tool for every health practitioner in…
 

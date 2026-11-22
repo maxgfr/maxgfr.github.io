@@ -70,6 +70,7 @@ Mes 122 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[agora](https://github.com/maxgfr/agora)** — Sondages anonymes et chiffrés : une personne, une voix. Sans serveur.
 - **[amphi](https://github.com/maxgfr/amphi)** — Transforme tes cours en résumés, quiz et flashcards avec l'IA.
 - **[aparte](https://github.com/maxgfr/aparte)** — Chat IA privé et chiffré dans le navigateur, avec tes clés ou des modèles…
+- **[apercura](https://github.com/maxgfr/apercura)** — Une page et la prise de RDV gratuites pour chaque soignant de France, open…
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur Pomodoro avec tâches et stats, en PWA et extension Chrome. Sans…
 - **[cadence](https://github.com/maxgfr/cadence)** — Carnet d'entraînement pour tout sport, sur téléphone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — Suivi de calories par IA : décris, photographie ou dicte un repas, et obtiens…
@@ -157,8 +158,4 @@ Mes 122 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
-
-### 🆕 Non classés
-
-- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking tool for every health practitioner in…
 
