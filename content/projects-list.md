@@ -68,7 +68,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🌐 Applications web & PWA
 
-- **[apercura](https://github.com/maxgfr/apercura)** — L'annuaire ouvert et la prise de RDV gratuite pour chaque soignant de France.
+- **[apercura](https://github.com/maxgfr/apercura)** — L'annuaire ouvert et la prise de RDV gratuite pour chaque soignant.
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour où les tâches non finies attendent ta décision. Privée, hors ligne. · [démo](https://maxgfr.github.io/today)
 - **[nook](https://github.com/maxgfr/nook)** — Notion chiffré et local-first dans le navigateur, sans aucune requête réseau. · [démo](https://maxgfr.github.io/nook/)
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur Pomodoro avec tâches et stats, en PWA et extension Chrome. Sans tracking. · [démo](https://maxgfr.github.io/basilico/)

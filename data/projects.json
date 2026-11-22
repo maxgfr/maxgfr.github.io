@@ -2312,8 +2312,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "L'annuaire ouvert et la prise de RDV gratuite pour chaque soignant de France.",
-        "en": "The open directory and free booking for every health practitioner in France."
+        "fr": "L'annuaire ouvert et la prise de RDV gratuite pour chaque soignant.",
+        "en": "The open directory and free booking for every health practitioner."
       },
       "cat": 3,
       "dex": 43,

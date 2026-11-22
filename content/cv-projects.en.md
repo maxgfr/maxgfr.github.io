@@ -70,7 +70,7 @@ My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
 - **[amphi](https://github.com/maxgfr/amphi)** — Turn your lectures into summaries, quizzes and flashcards with AI.
 - **[aparte](https://github.com/maxgfr/aparte)** — Private, encrypted AI chat in the browser, with your keys or local models.
-- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking for every health practitioner in France.
+- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking for every health practitioner.
 - **[basilico](https://github.com/maxgfr/basilico)** — Pomodoro timer with tasks and stats, as a PWA and Chrome extension. No…
 - **[cadence](https://github.com/maxgfr/cadence)** — Training log for any sport, on your phone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — AI calorie tracker: describe, snap or say a meal and get calories and macros…

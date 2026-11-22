@@ -68,7 +68,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🌐 Web apps & PWAs
 
-- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking for every health practitioner in France.
+- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking for every health practitioner.
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private, offline. · [demo](https://maxgfr.github.io/today)
 - **[nook](https://github.com/maxgfr/nook)** — Encrypted, local-first Notion in the browser, with zero network requests. · [demo](https://maxgfr.github.io/nook/)
 - **[basilico](https://github.com/maxgfr/basilico)** — Pomodoro timer with tasks and stats, as a PWA and Chrome extension. No tracking. · [demo](https://maxgfr.github.io/basilico/)
