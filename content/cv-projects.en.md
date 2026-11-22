@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 122 public repositories, totalling 365 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -70,12 +70,11 @@ My 122 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
 - **[amphi](https://github.com/maxgfr/amphi)** — Turn your lectures into summaries, quizzes and flashcards with AI.
 - **[aparte](https://github.com/maxgfr/aparte)** — Private, encrypted AI chat in the browser, with your keys or local models.
-- **[apercura](https://github.com/maxgfr/apercura)** — A free page and free booking for every health practitioner in France, open…
+- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking for every health practitioner in France.
 - **[basilico](https://github.com/maxgfr/basilico)** — Pomodoro timer with tasks and stats, as a PWA and Chrome extension. No…
 - **[cadence](https://github.com/maxgfr/cadence)** — Training log for any sport, on your phone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — AI calorie tracker: describe, snap or say a meal and get calories and macros…
 - **[cursus](https://github.com/maxgfr/cursus)** — Study app: AI explanations from your sources, flashcards and quizzes.
-- **[eau](https://github.com/maxgfr/eau)** — Fluid, acoustic hydration reminders tuned to your body's rhythm, no account…
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Live reactions, polls and Q&A over WebRTC, with no backend.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Generates daily short videos and publishes them to Shorts, TikTok and Reels.
 - **[genpass](https://github.com/maxgfr/genpass)** — Password generator and encrypted vault that works offline.

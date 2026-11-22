@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 122 public repos · ⭐ 365 stars**
+**📦 121 public repos · ⭐ 365 stars**
 
 ---
 
@@ -68,8 +68,7 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🌐 Web apps & PWAs
 
-- **[apercura](https://github.com/maxgfr/apercura)** — A free page and free booking for every health practitioner in France, open source.
-- **[eau](https://github.com/maxgfr/eau)** — Fluid, acoustic hydration reminders tuned to your body's rhythm, no account, no tracking. · [demo](https://maxgfr.github.io/eau/)
+- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking for every health practitioner in France.
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private, offline. · [demo](https://maxgfr.github.io/today)
 - **[nook](https://github.com/maxgfr/nook)** — Encrypted, local-first Notion in the browser, with zero network requests. · [demo](https://maxgfr.github.io/nook/)
 - **[basilico](https://github.com/maxgfr/basilico)** — Pomodoro timer with tasks and stats, as a PWA and Chrome extension. No tracking. · [demo](https://maxgfr.github.io/basilico/)

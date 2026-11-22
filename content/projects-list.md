@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 122 dépôts publics · ⭐ 365 étoiles**
+**📦 121 dépôts publics · ⭐ 365 étoiles**
 
 ---
 
@@ -68,8 +68,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🌐 Applications web & PWA
 
-- **[apercura](https://github.com/maxgfr/apercura)** — Une page et la prise de RDV gratuites pour chaque soignant de France, open source.
-- **[eau](https://github.com/maxgfr/eau)** — Rappels d'hydratation fluides et sonores au rythme de ton corps, sans compte ni pistage. · [démo](https://maxgfr.github.io/eau/)
+- **[apercura](https://github.com/maxgfr/apercura)** — L'annuaire ouvert et la prise de RDV gratuite pour chaque soignant de France.
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour où les tâches non finies attendent ta décision. Privée, hors ligne. · [démo](https://maxgfr.github.io/today)
 - **[nook](https://github.com/maxgfr/nook)** — Notion chiffré et local-first dans le navigateur, sans aucune requête réseau. · [démo](https://maxgfr.github.io/nook/)
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur Pomodoro avec tâches et stats, en PWA et extension Chrome. Sans tracking. · [démo](https://maxgfr.github.io/basilico/)

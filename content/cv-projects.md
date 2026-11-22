@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 122 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -70,12 +70,11 @@ Mes 122 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[agora](https://github.com/maxgfr/agora)** — Sondages anonymes et chiffrés : une personne, une voix. Sans serveur.
 - **[amphi](https://github.com/maxgfr/amphi)** — Transforme tes cours en résumés, quiz et flashcards avec l'IA.
 - **[aparte](https://github.com/maxgfr/aparte)** — Chat IA privé et chiffré dans le navigateur, avec tes clés ou des modèles…
-- **[apercura](https://github.com/maxgfr/apercura)** — Une page et la prise de RDV gratuites pour chaque soignant de France, open…
+- **[apercura](https://github.com/maxgfr/apercura)** — L'annuaire ouvert et la prise de RDV gratuite pour chaque soignant de France.
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur Pomodoro avec tâches et stats, en PWA et extension Chrome. Sans…
 - **[cadence](https://github.com/maxgfr/cadence)** — Carnet d'entraînement pour tout sport, sur téléphone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — Suivi de calories par IA : décris, photographie ou dicte un repas, et obtiens…
 - **[cursus](https://github.com/maxgfr/cursus)** — Appli de révision : explications IA depuis tes sources, flashcards et quiz.
-- **[eau](https://github.com/maxgfr/eau)** — Rappels d'hydratation fluides et sonores au rythme de ton corps, sans compte…
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Réactions, sondages et questions en direct en WebRTC, sans backend.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Génère des vidéos courtes quotidiennes et les publie sur Shorts, TikTok et…
 - **[genpass](https://github.com/maxgfr/genpass)** — Générateur de mots de passe et coffre-fort chiffré, hors ligne.
