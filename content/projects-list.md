@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 120 dépôts publics · ⭐ 365 étoiles**
+**📦 122 dépôts publics · ⭐ 365 étoiles**
 
 ---
 
@@ -68,6 +68,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 
 ## 🌐 Applications web & PWA
 
+- **[eau](https://github.com/maxgfr/eau)** — Rappels d'hydratation fluides et sonores au rythme de ton corps, sans compte ni pistage. · [démo](https://maxgfr.github.io/eau/)
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour où les tâches non finies attendent ta décision. Privée, hors ligne. · [démo](https://maxgfr.github.io/today)
 - **[nook](https://github.com/maxgfr/nook)** — Notion chiffré et local-first dans le navigateur, sans aucune requête réseau. · [démo](https://maxgfr.github.io/nook/)
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur Pomodoro avec tâches et stats, en PWA et extension Chrome. Sans tracking. · [démo](https://maxgfr.github.io/basilico/)
@@ -181,6 +182,12 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith. · [démo](https://maxgfr.github.io/awesome-stars/)
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Non classés
+
+- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking tool for every health practitioner in France. Open source, HDS-hosted, self-hostable.
 
 ---
 

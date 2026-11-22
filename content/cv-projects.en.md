@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 120 public repositories, totalling 365 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 122 public repositories, totalling 365 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -74,6 +74,7 @@ My 120 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[cadence](https://github.com/maxgfr/cadence)** — Training log for any sport, on your phone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — AI calorie tracker: describe, snap or say a meal and get calories and macros…
 - **[cursus](https://github.com/maxgfr/cursus)** — Study app: AI explanations from your sources, flashcards and quizzes.
+- **[eau](https://github.com/maxgfr/eau)** — Fluid, acoustic hydration reminders tuned to your body's rhythm, no account…
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Live reactions, polls and Q&A over WebRTC, with no backend.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Generates daily short videos and publishes them to Shorts, TikTok and Reels.
 - **[genpass](https://github.com/maxgfr/genpass)** — Password generator and encrypted vault that works offline.
@@ -156,4 +157,8 @@ My 120 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
+
+### 🆕 Uncategorized
+
+- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking tool for every health practitioner in…
 

@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 120 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 122 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -74,6 +74,7 @@ Mes 120 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[cadence](https://github.com/maxgfr/cadence)** — Carnet d'entraînement pour tout sport, sur téléphone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — Suivi de calories par IA : décris, photographie ou dicte un repas, et obtiens…
 - **[cursus](https://github.com/maxgfr/cursus)** — Appli de révision : explications IA depuis tes sources, flashcards et quiz.
+- **[eau](https://github.com/maxgfr/eau)** — Rappels d'hydratation fluides et sonores au rythme de ton corps, sans compte…
 - **[ephemeral](https://github.com/maxgfr/ephemeral)** — Réactions, sondages et questions en direct en WebRTC, sans backend.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Génère des vidéos courtes quotidiennes et les publie sur Shorts, TikTok et…
 - **[genpass](https://github.com/maxgfr/genpass)** — Générateur de mots de passe et coffre-fort chiffré, hors ligne.
@@ -156,4 +157,8 @@ Mes 120 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
+
+### 🆕 Non classés
+
+- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking tool for every health practitioner in…
 
