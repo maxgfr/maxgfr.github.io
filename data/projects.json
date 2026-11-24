@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 121,
-    "stars": 366
+    "stars": 367
   },
   "languages": [
     {
@@ -5102,7 +5102,7 @@
       "cat": 6,
       "dex": 95,
       "dexLabel": "095",
-      "stars": 11,
+      "stars": 12,
       "forks": 0,
       "language": "Python",
       "topics": [
@@ -5121,8 +5121,8 @@
       "poke": {
         "type1": "ground",
         "type2": "grass",
-        "hp": 190,
-        "level": 35,
+        "hp": 200,
+        "level": 36,
         "rarity": "rare",
         "weakness": "water",
         "moves": [
