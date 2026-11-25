@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 121 dépôts publics · ⭐ 367 étoiles**
+**📦 121 dépôts publics · ⭐ 364 étoiles**
 
 ---
 
@@ -63,6 +63,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[otpx](https://github.com/maxgfr/otpx)** — Tes codes 2FA dans le terminal et le navigateur, chiffrés et synchronisés (Rust). · [démo](https://maxgfr.github.io/otpx/)
 - **[ratio-master](https://github.com/maxgfr/ratio-master)** — Outil de ratio torrent qui dialogue avec les trackers BitTorrent.
 - **[unsleep](https://github.com/maxgfr/unsleep)** — Petit exécutable qui empêche la mise en veille. · [npm](https://www.npmjs.com/package/unsleep)
+- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Publie et gère tes annonces Leboncoin depuis du markdown, sans détection de bot.
 
 ---
 
@@ -111,7 +112,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[omnilingo](https://github.com/maxgfr/omnilingo)** — Appli de bureau pour apprendre les langues avec un tuteur IA.
 - **[feedreel](https://github.com/maxgfr/feedreel)** — Génère des vidéos courtes quotidiennes et les publie sur Shorts, TikTok et Reels.
 - **[troupe](https://github.com/maxgfr/troupe)** — Studio auto-hébergé de courtes vidéos IA. · [démo](https://maxgfr.github.io/troupe/)
-- **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Scraper Leboncoin via le Chrome DevTools Protocol, sans Puppeteer.
 - **[release-notes-finder](https://github.com/maxgfr/release-notes-finder)** — Trouve les versions d'un paquet npm avec leurs notes de version. · [démo](https://maxgfr.github.io/release-notes-finder)
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Kanban, sprints et roadmap local-first, avec un dépôt git comme backend. · [démo](https://maxgfr.github.io/kanbo/)
 - **[unmark](https://github.com/maxgfr/unmark)** — Retire les watermarks des textes et images, dans le navigateur. · [démo](https://maxgfr.github.io/unmark/)
