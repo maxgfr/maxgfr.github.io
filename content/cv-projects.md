@@ -18,6 +18,7 @@ Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un très gros dépôt en encyclopédie navigable par l'IA.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu en liste de prospects sourcée. Sans clé d'API.
 - **[ultrastock](https://github.com/maxgfr/ultrastock)** — Copilote d'investissement pour agents : actions, ETF, crypto, chiffres…
+- **[ultraview](https://github.com/maxgfr/ultraview)** — Vois ton app au lieu de lire son code : une carte interactive et sourcée.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Permet à un agent de regarder des vidéos : transcriptions et images…
 
 ### 🤖 IA & outils de dev
@@ -156,8 +157,4 @@ Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
-
-### 🆕 Non classés
-
-- **[ultraview](https://github.com/maxgfr/ultraview)** — See your app instead of reading its code: an interactive, cited map of a…
 

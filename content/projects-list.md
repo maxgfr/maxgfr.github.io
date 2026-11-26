@@ -14,6 +14,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[skills](https://github.com/maxgfr/skills)** — Mes skills d'agent, qui changent sa façon de travailler. Installation : `npx skills add maxgfr/skills`. · [site](https://www.skills.sh/maxgfr/skills)
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence pour tout projet open source, depuis son code, ses issues et PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un très gros dépôt en encyclopédie navigable par l'IA.
+- **[ultraview](https://github.com/maxgfr/ultraview)** — Vois ton app au lieu de lire son code : une carte interactive et sourcée.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web sans clé d'API, livrée en rapport aux sources vérifiées.
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Agent d'audit de sécurité qui suit les failles entre fichiers et vérifie chaque constat.
 - **[ultraguard](https://github.com/maxgfr/ultraguard)** — Antivirus IA qui vérifie si les dernières attaques t'ont touché, sur GitHub, ta machine et ton cloud.
@@ -181,12 +182,6 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — Mes stars GitHub, triées et mises à jour chaque jour par starsmith. · [démo](https://maxgfr.github.io/awesome-stars/)
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Tap Homebrew pour mes outils CLI.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Code source du site d'un écrivain. · [site](https://www.michelgolfier.fr)
-
----
-
-## 🆕 Non classés
-
-- **[ultraview](https://github.com/maxgfr/ultraview)** — See your app instead of reading its code: an interactive, cited map of a repository for the business and for developers — capabilities, systems, data, flows, saved questions and every change your agent makes. The visual layer over ultraindex. A skills.sh agent skill.
 
 ---
 

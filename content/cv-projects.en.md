@@ -18,6 +18,7 @@ My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a huge repo into an encyclopedia an AI can navigate.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a location into a sourced prospect list. No API keys.
 - **[ultrastock](https://github.com/maxgfr/ultrastock)** — Investing copilot for agents: stocks, ETFs, crypto, with sourced figures.
+- **[ultraview](https://github.com/maxgfr/ultraview)** — See your app instead of reading its code: a cited, interactive map.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Lets an agent watch videos: searchable transcripts and frames, with citations.
 
 ### 🤖 AI & dev tooling
@@ -156,8 +157,4 @@ My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website.
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
-
-### 🆕 Uncategorized
-
-- **[ultraview](https://github.com/maxgfr/ultraview)** — See your app instead of reading its code: an interactive, cited map of a…
 
