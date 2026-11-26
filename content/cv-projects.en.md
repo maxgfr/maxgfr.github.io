@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 121 public repositories, totalling 364 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -24,8 +24,8 @@ My 121 public repositories, totalling 364 stars — [github.com/maxgfr](https://
 
 - **[conforme](https://github.com/maxgfr/conforme)** — Syncs your AI coding config across Claude Code, Cursor and more (Rust).
 - **[secretgate](https://github.com/maxgfr/secretgate)** — Local firewall that hides your secrets from coding agents before they reach…
-- **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Switch Claude Code between providers (Anthropic, OpenRouter, DeepSeek, Kimi…).
 - **[codeindex](https://github.com/maxgfr/codeindex)** — Zero-dependency repo indexer: symbols, imports and link graph, as a CLI and…
+- **[claude-code-switch](https://github.com/maxgfr/claude-code-switch)** — Switch Claude Code between providers (Anthropic, OpenRouter, DeepSeek, Kimi…).
 - **[feelc](https://github.com/maxgfr/feelc)** — Business rules engine in Go: an LLM writes the rules, the engine proves and…
 - **[llm-models](https://github.com/maxgfr/llm-models)** — Fetches the latest LLM models from OpenRouter and models.dev.
 - **[nuee](https://github.com/maxgfr/nuee)** — Turns a group's laptops and phones into a private, short-lived cloud from one…
@@ -70,7 +70,7 @@ My 121 public repositories, totalling 364 stars — [github.com/maxgfr](https://
 - **[agora](https://github.com/maxgfr/agora)** — Anonymous, encrypted polls: one person, one vote. No server.
 - **[amphi](https://github.com/maxgfr/amphi)** — Turn your lectures into summaries, quizzes and flashcards with AI.
 - **[aparte](https://github.com/maxgfr/aparte)** — Private, encrypted AI chat in the browser, with your keys or local models.
-- **[apercura](https://github.com/maxgfr/apercura)** — The open directory and free booking for every health practitioner.
+- **[apercura](https://github.com/apercura-org/apercura)** — Open directory of health practitioners across Europe, with free booking.
 - **[basilico](https://github.com/maxgfr/basilico)** — Pomodoro timer with tasks and stats, as a PWA and Chrome extension. No…
 - **[cadence](https://github.com/maxgfr/cadence)** — Training log for any sport, on your phone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — AI calorie tracker: describe, snap or say a meal and get calories and macros…

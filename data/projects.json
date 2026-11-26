@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 121,
-    "stars": 364
+    "stars": 365
   },
   "languages": [
     {
@@ -900,7 +900,7 @@
       "cat": 1,
       "dex": 16,
       "dexLabel": "016",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "TypeScript",
       "topics": [
@@ -919,18 +919,18 @@
       "poke": {
         "type1": "dragon",
         "type2": "water",
-        "hp": 120,
-        "level": 26,
-        "rarity": "common",
+        "hp": 130,
+        "level": 27,
+        "rarity": "uncommon",
         "weakness": "ice",
         "moves": [
           {
             "name": "call graph",
-            "dmg": 50
+            "dmg": 60
           },
           {
             "name": "code index",
-            "dmg": 60
+            "dmg": 70
           }
         ],
         "sprite": [
@@ -2360,12 +2360,15 @@
     },
     {
       "name": "apercura",
-      "url": "https://github.com/maxgfr/apercura",
-      "home": null,
-      "homeLabel": null,
+      "url": "https://github.com/apercura-org/apercura",
+      "home": "https://apercura.org",
+      "homeLabel": {
+        "fr": "site",
+        "en": "site"
+      },
       "desc": {
-        "fr": "L'annuaire ouvert et la prise de RDV gratuite pour chaque soignant.",
-        "en": "The open directory and free booking for every health practitioner."
+        "fr": "L'annuaire ouvert des soignants en Europe, avec prise de RDV gratuite.",
+        "en": "Open directory of health practitioners across Europe, with free booking."
       },
       "cat": 3,
       "dex": 44,
