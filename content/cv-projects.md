@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 120 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -70,7 +70,6 @@ Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[agora](https://github.com/maxgfr/agora)** — Sondages anonymes et chiffrés : une personne, une voix. Sans serveur.
 - **[amphi](https://github.com/maxgfr/amphi)** — Transforme tes cours en résumés, quiz et flashcards avec l'IA.
 - **[aparte](https://github.com/maxgfr/aparte)** — Chat IA privé et chiffré dans le navigateur, avec tes clés ou des modèles…
-- **[apercura](https://github.com/apercura-org/apercura)** — L'annuaire ouvert des soignants en Europe, avec prise de RDV gratuite.
 - **[basilico](https://github.com/maxgfr/basilico)** — Minuteur Pomodoro avec tâches et stats, en PWA et extension Chrome. Sans…
 - **[cadence](https://github.com/maxgfr/cadence)** — Carnet d'entraînement pour tout sport, sur téléphone.
 - **[calorie-ai-tracker](https://github.com/maxgfr/calorie-ai-tracker)** — Suivi de calories par IA : décris, photographie ou dicte un repas, et obtiens…

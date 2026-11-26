@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 121 public repos · ⭐ 365 stars**
+**📦 120 public repos · ⭐ 365 stars**
 
 ---
 
@@ -69,7 +69,6 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 
 ## 🌐 Web apps & PWAs
 
-- **[apercura](https://github.com/apercura-org/apercura)** — Open directory of health practitioners across Europe, with free booking. · [site](https://apercura.org)
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private, offline. · [demo](https://maxgfr.github.io/today)
 - **[nook](https://github.com/maxgfr/nook)** — Encrypted, local-first Notion in the browser, with zero network requests. · [demo](https://maxgfr.github.io/nook/)
 - **[basilico](https://github.com/maxgfr/basilico)** — Pomodoro timer with tasks and stats, as a PWA and Chrome extension. No tracking. · [demo](https://maxgfr.github.io/basilico/)
