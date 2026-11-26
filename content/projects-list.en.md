@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 A selection of my open-source projects, auto-updated from my [GitHub](https://github.com/maxgfr).
 
-**📦 120 public repos · ⭐ 365 stars**
+**📦 121 public repos · ⭐ 365 stars**
 
 ---
 
@@ -181,6 +181,12 @@ A selection of my open-source projects, auto-updated from my [GitHub](https://gi
 - **[awesome-stars](https://github.com/maxgfr/awesome-stars)** — My GitHub stars, sorted and rebuilt daily by starsmith. · [demo](https://maxgfr.github.io/awesome-stars/)
 - **[homebrew-tap](https://github.com/maxgfr/homebrew-tap)** — Homebrew tap for my CLI tools.
 - **[michel-golfier](https://github.com/maxgfr/michel-golfier)** — Source of a writer's website. · [site](https://www.michelgolfier.fr)
+
+---
+
+## 🆕 Uncategorized
+
+- **[ultraview](https://github.com/maxgfr/ultraview)** — See your app instead of reading its code: an interactive, cited map of a repository for the business and for developers — capabilities, systems, data, flows, saved questions and every change your agent makes. The visual layer over ultraindex. A skills.sh agent skill.
 
 ---
 
