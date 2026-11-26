@@ -2,7 +2,7 @@
 title = "Projets open source"
 +++
 
-Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
+Mes 121 dépôts publics, totalisant 366 étoiles — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Skills d'agent
 
@@ -18,7 +18,7 @@ Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un très gros dépôt en encyclopédie navigable par l'IA.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Transforme un lieu en liste de prospects sourcée. Sans clé d'API.
 - **[ultrastock](https://github.com/maxgfr/ultrastock)** — Copilote d'investissement pour agents : actions, ETF, crypto, chiffres…
-- **[ultraview](https://github.com/maxgfr/ultraview)** — Vois ton app au lieu de lire son code : une carte interactive et sourcée.
+- **[ultraview](https://github.com/maxgfr/ultraview)** — Vois ton app au lieu de lire son code : une carte sourcée que tu peux…
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Permet à un agent de regarder des vidéos : transcriptions et images…
 
 ### 🤖 IA & outils de dev
@@ -65,6 +65,7 @@ Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Moteur de tournois pour tout sport : brackets, ligues, poules, Elo. Dans le…
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Appli hors ligne et chiffrée pour tes cartes de fidélité.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Kanban, sprints et roadmap local-first, avec un dépôt git comme backend.
+- **[medoc-ai](https://github.com/maxgfr/medoc-ai)** — Scanne une boîte de médicament et lis sa notice officielle, même hors ligne…
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Calculateur de rentabilité locative.
 - **[regie](https://github.com/maxgfr/regie)** — Regarde plusieurs streams à la fois (Twitch, YouTube, Kick…), sans compte.
 - **[today](https://github.com/maxgfr/today)** — Todolist du jour où les tâches non finies attendent ta décision. Privée, hors…
@@ -81,7 +82,6 @@ Mes 121 dépôts publics, totalisant 365 étoiles — [github.com/maxgfr](https:
 - **[goodscan](https://github.com/maxgfr/goodscan)** — Scanner ouvert et sourcé d'aliments et cosmétiques, à la Yuka : un…
 - **[hush](https://github.com/maxgfr/hush)** — Messagerie et partage de fichiers chiffrés post-quantiques, sans compte.
 - **[lastdone](https://github.com/maxgfr/lastdone)** — Rappels récurrents qu'on pilote en parlant, grâce à un LLM qui tourne dans le…
-- **[medoc-ai](https://github.com/maxgfr/medoc-ai)** — Scanne une boîte de médicament et lis sa notice officielle, même hors ligne…
 - **[murmur](https://github.com/maxgfr/murmur)** — Bulle de chat IA qui répond à partir des pages de ton site. Une balise script.
 - **[nook](https://github.com/maxgfr/nook)** — Notion chiffré et local-first dans le navigateur, sans aucune requête réseau.
 - **[notabot](https://github.com/maxgfr/notabot)** — Détection de bots open source et transparente, sans backend.

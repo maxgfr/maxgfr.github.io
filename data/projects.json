@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 121,
-    "stars": 365
+    "stars": 366
   },
   "languages": [
     {
@@ -244,8 +244,8 @@
             "dmg": 60
           },
           {
-            "name": "code navigation",
-            "dmg": 60
+            "name": "mermaid",
+            "dmg": 50
           }
         ],
         "sprite": [
@@ -261,8 +261,8 @@
       "home": null,
       "homeLabel": null,
       "desc": {
-        "fr": "Vois ton app au lieu de lire son code : une carte interactive et sourcée.",
-        "en": "See your app instead of reading its code: a cited, interactive map."
+        "fr": "Vois ton app au lieu de lire son code : une carte sourcée que tu peux interroger.",
+        "en": "See your app instead of reading its code: a cited map you can question."
       },
       "cat": 0,
       "dex": 4,
@@ -270,21 +270,34 @@
       "stars": 0,
       "forks": 0,
       "language": "JavaScript",
-      "topics": [],
+      "topics": [
+        "agent-skills",
+        "ai",
+        "ai-agents",
+        "architecture",
+        "architecture-diagram",
+        "claude-code",
+        "cli",
+        "code-navigation"
+      ],
       "created": "2026-11",
       "pushed": "2026-11",
       "license": "MIT",
       "poke": {
-        "type1": "electric",
-        "type2": null,
-        "hp": 30,
-        "level": 6,
+        "type1": "rock",
+        "type2": "electric",
+        "hp": 130,
+        "level": 26,
         "rarity": "common",
-        "weakness": "ground",
+        "weakness": "water",
         "moves": [
           {
-            "name": "JavaScript",
-            "dmg": 60
+            "name": "architecture",
+            "dmg": 40
+          },
+          {
+            "name": "architecture diagram",
+            "dmg": 40
           }
         ],
         "sprite": [
@@ -3594,7 +3607,7 @@
       "cat": 3,
       "dex": 67,
       "dexLabel": "067",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": "TypeScript",
       "topics": [],
@@ -3604,14 +3617,14 @@
       "poke": {
         "type1": "water",
         "type2": null,
-        "hp": 40,
-        "level": 8,
+        "hp": 50,
+        "level": 9,
         "rarity": "common",
         "weakness": "grass",
         "moves": [
           {
             "name": "TypeScript",
-            "dmg": 40
+            "dmg": 50
           }
         ],
         "sprite": [

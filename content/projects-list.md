@@ -5,7 +5,7 @@ template = "projects-list.html"
 
 Une sélection de mes projets open source, mise à jour automatiquement depuis mon [GitHub](https://github.com/maxgfr).
 
-**📦 121 dépôts publics · ⭐ 365 étoiles**
+**📦 121 dépôts publics · ⭐ 366 étoiles**
 
 ---
 
@@ -14,7 +14,7 @@ Une sélection de mes projets open source, mise à jour automatiquement depuis m
 - **[skills](https://github.com/maxgfr/skills)** — Mes skills d'agent, qui changent sa façon de travailler. Installation : `npx skills add maxgfr/skills`. · [site](https://www.skills.sh/maxgfr/skills)
 - **[ultradoc](https://github.com/maxgfr/ultradoc)** — Questions-réponses sourcées et docs de référence pour tout projet open source, depuis son code, ses issues et PRs.
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexe un très gros dépôt en encyclopédie navigable par l'IA.
-- **[ultraview](https://github.com/maxgfr/ultraview)** — Vois ton app au lieu de lire son code : une carte interactive et sourcée.
+- **[ultraview](https://github.com/maxgfr/ultraview)** — Vois ton app au lieu de lire son code : une carte sourcée que tu peux interroger.
 - **[ultrasearch](https://github.com/maxgfr/ultrasearch)** — Recherche web sans clé d'API, livrée en rapport aux sources vérifiées.
 - **[ultrasec](https://github.com/maxgfr/ultrasec)** — Agent d'audit de sécurité qui suit les failles entre fichiers et vérifie chaque constat.
 - **[ultraguard](https://github.com/maxgfr/ultraguard)** — Antivirus IA qui vérifie si les dernières attaques t'ont touché, sur GitHub, ta machine et ton cloud.

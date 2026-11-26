@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 121 public repositories, totalling 366 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -18,7 +18,7 @@ My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[ultraindex](https://github.com/maxgfr/ultraindex)** — Indexes a huge repo into an encyclopedia an AI can navigate.
 - **[ultraprospect](https://github.com/maxgfr/ultraprospect)** — Turns a location into a sourced prospect list. No API keys.
 - **[ultrastock](https://github.com/maxgfr/ultrastock)** — Investing copilot for agents: stocks, ETFs, crypto, with sourced figures.
-- **[ultraview](https://github.com/maxgfr/ultraview)** — See your app instead of reading its code: a cited, interactive map.
+- **[ultraview](https://github.com/maxgfr/ultraview)** — See your app instead of reading its code: a cited map you can question.
 - **[ultrawatch](https://github.com/maxgfr/ultrawatch)** — Lets an agent watch videos: searchable transcripts and frames, with citations.
 
 ### 🤖 AI & dev tooling
@@ -65,6 +65,7 @@ My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[bracketeer](https://github.com/maxgfr/bracketeer)** — Tournament engine for any sport: brackets, leagues, groups, Elo. In the…
 - **[loyalty-card-vault](https://github.com/maxgfr/loyalty-card-vault)** — Offline app for your loyalty cards, encrypted.
 - **[kanbo](https://github.com/maxgfr/kanbo)** — Local-first kanban, sprints and roadmap, with a git repo as backend.
+- **[medoc-ai](https://github.com/maxgfr/medoc-ai)** — Scan a medicine box and read its official leaflet, even offline, with…
 - **[real-estate-calculator](https://github.com/maxgfr/real-estate-calculator)** — Rental property ROI calculator.
 - **[regie](https://github.com/maxgfr/regie)** — Watch several streams at once (Twitch, YouTube, Kick…), no account.
 - **[today](https://github.com/maxgfr/today)** — Daily to-do list where unfinished tasks wait for your decision. Private…
@@ -81,7 +82,6 @@ My 121 public repositories, totalling 365 stars — [github.com/maxgfr](https://
 - **[goodscan](https://github.com/maxgfr/goodscan)** — Open, sourced food and cosmetics scanner, Yuka-style: scan a barcode, get a…
 - **[hush](https://github.com/maxgfr/hush)** — Post-quantum encrypted messaging and file sharing, no account.
 - **[lastdone](https://github.com/maxgfr/lastdone)** — Recurring reminders you talk to, powered by an LLM running in the browser.
-- **[medoc-ai](https://github.com/maxgfr/medoc-ai)** — Scan a medicine box and read its official leaflet, even offline, with…
 - **[murmur](https://github.com/maxgfr/murmur)** — AI chat bubble that answers from your site's own pages. One script tag.
 - **[nook](https://github.com/maxgfr/nook)** — Encrypted, local-first Notion in the browser, with zero network requests.
 - **[notabot](https://github.com/maxgfr/notabot)** — Open source, transparent bot detection with no backend.
