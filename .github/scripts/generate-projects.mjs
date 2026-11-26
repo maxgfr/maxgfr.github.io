@@ -81,17 +81,42 @@ async function allOwnedRepos() {
     out.push(...batch);
     if (batch.length < 100) break;
   }
-  const excluded = new Set([...(CONFIG.exclude || []), ...(CONFIG.excludeFromSite || [])]);
   // GitHub can keep transferred repositories in this endpoint temporarily, even
   // with type=owner, so verify the owner returned by the API as well.
-  return out.filter(
-    (r) =>
-      r.owner?.login.toLowerCase() === USER.toLowerCase() &&
-      !r.private &&
-      !r.fork &&
-      !r.archived &&
-      !excluded.has(r.name)
-  );
+  return out.filter((r) => r.owner?.login.toLowerCase() === USER.toLowerCase() && isListed(r));
+}
+
+// public, non-fork, non-archived, not excluded (everywhere or from the site only).
+function isListed(r) {
+  const excluded = new Set([...(CONFIG.exclude || []), ...(CONFIG.excludeFromSite || [])]);
+  return !r.private && !r.fork && !r.archived && !excluded.has(r.name);
+}
+
+// Repos owned elsewhere (e.g. transferred to an organization) that should still
+// be shown, listed by full name in projects.json "external". Optional key, so a
+// config without it simply yields none; a failed fetch only skips that repo, so
+// one bad entry never breaks the run.
+async function externalRepos() {
+  const list = Array.isArray(CONFIG.external) ? CONFIG.external : [];
+  const out = [];
+  for (const fullName of list) {
+    try {
+      const r = await gh(`/repos/${fullName}`);
+      if (isListed(r)) out.push(r);
+      else console.warn(`Skipping external repo ${fullName}: private, fork, archived or excluded.`);
+    } catch (e) {
+      console.warn(`Skipping external repo ${fullName}: ${e.message}`);
+    }
+  }
+  return out;
+}
+
+// Owned + external, deduplicated by full name (owned wins).
+async function allRepos() {
+  const owned = await allOwnedRepos();
+  const seen = new Set(owned.map((r) => r.full_name.toLowerCase()));
+  const extra = (await externalRepos()).filter((r) => !seen.has(r.full_name.toLowerCase()));
+  return [...owned, ...extra];
 }
 
 function linkKey(url) {
@@ -732,7 +757,7 @@ function buildData(repos, now) {
 
 async function main() {
   CONFIG = await loadConfig();
-  const repos = await allOwnedRepos();
+  const repos = await allRepos();
   writeFileSync(join(REPO_ROOT, 'content', 'projects-list.md'), buildPage(repos, 'fr'));
   writeFileSync(join(REPO_ROOT, 'content', 'projects-list.en.md'), buildPage(repos, 'en'));
   writeFileSync(join(REPO_ROOT, 'content', 'cv-projects.md'), buildCvPage(repos, 'fr'));
