@@ -2,7 +2,7 @@
   "generated": "2026-11",
   "totals": {
     "repos": 121,
-    "stars": 366
+    "stars": 367
   },
   "languages": [
     {
@@ -1845,7 +1845,7 @@
       "cat": 2,
       "dex": 34,
       "dexLabel": "034",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "language": "Shell",
       "topics": [
@@ -1864,18 +1864,18 @@
       "poke": {
         "type1": "fairy",
         "type2": "steel",
-        "hp": 90,
-        "level": 23,
-        "rarity": "common",
+        "hp": 100,
+        "level": 24,
+        "rarity": "uncommon",
         "weakness": "steel",
         "moves": [
           {
             "name": "ass",
-            "dmg": 40
+            "dmg": 50
           },
           {
             "name": "ffsubsync",
-            "dmg": 60
+            "dmg": 70
           }
         ],
         "sprite": [

@@ -2,7 +2,7 @@
 title = "Open-source projects"
 +++
 
-My 121 public repositories, totalling 366 stars — [github.com/maxgfr](https://github.com/maxgfr).
+My 121 public repositories, totalling 367 stars — [github.com/maxgfr](https://github.com/maxgfr).
 
 ### 🪄 Agent skills
 
@@ -47,9 +47,9 @@ My 121 public repositories, totalling 366 stars — [github.com/maxgfr](https://
 - **[andro](https://github.com/maxgfr/andro)** — Run Android apps from the macOS terminal on a disposable emulator (Rust).
 - **[leboncoin-cdp](https://github.com/maxgfr/leboncoin-cdp)** — Publish and manage your Leboncoin listings from markdown, without bot…
 - **[manga-anim](https://github.com/maxgfr/manga-anim)** — Turns manga pages into narrated videos, locally on Apple Silicon (Rust).
+- **[subtool](https://github.com/maxgfr/subtool)** — All-in-one subtitle CLI: download, translate, convert, sync and more.
 - **[web-watcher](https://github.com/maxgfr/web-watcher)** — Bash script that watches APIs and websites and notifies you on changes.
 - **[snatch](https://github.com/maxgfr/snatch)** — Video downloader: yt-dlp first, browser extraction for stubborn sites.
-- **[subtool](https://github.com/maxgfr/subtool)** — All-in-one subtitle CLI: download, translate, convert, sync and more.
 - **[copyable-pdf](https://github.com/maxgfr/copyable-pdf)** — Makes scanned PDFs and photos searchable and copyable with local OCR.
 - **[github-helpers](https://github.com/maxgfr/github-helpers)** — GitHub maintenance scripts: bulk unstar, org clone, fork cleanup and more.
 - **[otpx](https://github.com/maxgfr/otpx)** — Your 2FA codes in the terminal and the browser, encrypted and synced (Rust).
